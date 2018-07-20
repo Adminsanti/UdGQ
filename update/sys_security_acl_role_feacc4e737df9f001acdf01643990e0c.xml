@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-07-20 09:43:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>feacc4e737df9f001acdf01643990e0c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_udg_q_responsibility.x_udg_q.ConsultaUni</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_security_acl display_value="x_udg_q_responsibility">feacc4e737df9f001acdf01643990e0b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_feacc4e737df9f001acdf01643990e0c</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-07-20 09:45:07</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.ConsultaUni" name="x_udg_q.ConsultaUni">7ea2574b37df5f001acdf01643990e3c</sys_user_role>
+        <transaction_id>f2ac84e737df9f001acdf01643990e58</transaction_id>
+    </sys_security_acl_role>
+</record_update>

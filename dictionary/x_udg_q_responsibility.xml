@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_user_group" label="Responsibility" max_length="40" name="x_udg_q_responsibility" type="collection">
+        <element label="Faculty/School" max_length="32" name="faculty_school" reference="u_udgcentres" type="reference"/>
+        <index name="index">
+            <element name="faculty_school"/>
+        </index>
+    </element>
+</database>
