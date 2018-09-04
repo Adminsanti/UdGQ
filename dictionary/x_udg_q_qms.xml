@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="QMS" max_length="40" name="x_udg_q_qms" type="collection">
+        <element label="Accountable" max_length="32" name="accountable" reference="sys_user" type="reference"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Name" mandatory="true" max_length="140" name="name" type="string"/>
+        <element label="QID" max_length="40" name="qid" type="string"/>
+        <index name="index">
+            <element name="accountable"/>
+        </index>
+    </element>
+</database>

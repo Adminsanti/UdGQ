@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-09-04 08:39:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1b377c1e37186b401acdf01643990e77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_qms.x_udg_q.qms_user</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_security_acl display_value="x_udg_q_qms">df377c1e37186b401acdf01643990e72</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1b377c1e37186b401acdf01643990e77</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-09-04 08:39:31</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.qms_user" name="x_udg_q.qms_user">8737b01a37186b401acdf01643990ebe</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
