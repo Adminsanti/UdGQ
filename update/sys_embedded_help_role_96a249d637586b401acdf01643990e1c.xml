@@ -2,20 +2,20 @@
 <record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
-        <role/>
+        <role display_value="x_udg_q.User" name="x_udg_q.User">14a2c9d637586b401acdf01643990e30</role>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-09-04 08:39:30</sys_created_on>
+        <sys_created_on>2018-09-04 09:29:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>0b37b01a37186b401acdf01643990ec0</sys_id>
+        <sys_id>96a249d637586b401acdf01643990e1c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>8737b01a37186b401acdf01643990ebe</sys_name>
+        <sys_name>14a2c9d637586b401acdf01643990e30</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_embedded_help_role_0b37b01a37186b401acdf01643990ec0</sys_update_name>
+        <sys_update_name>sys_embedded_help_role_96a249d637586b401acdf01643990e1c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-04 08:39:30</sys_updated_on>
+        <sys_updated_on>2018-09-04 09:29:25</sys_updated_on>
     </sys_embedded_help_role>
 </record_update>
