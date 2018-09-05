@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_user_group" label="Responsibility" max_length="40" name="x_udg_q_responsibility" type="collection">
+        <element label="QMS" mandatory="true" max_length="32" name="qms" reference="x_udg_q_qms" type="reference"/>
+        <index name="index">
+            <element name="qms"/>
+        </index>
+    </element>
+</database>
