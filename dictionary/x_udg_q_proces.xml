@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Procés" max_length="40" name="x_udg_q_proces" type="collection">
+        <element label="Actiu" max_length="40" name="actiu" type="boolean"/>
+        <element display="true" label="Nom" max_length="100" name="nom" type="string"/>
+        <element label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
+        <element label="Sincronitzat amb" max_length="32" name="sincronitzat_amb" reference="x_udg_q_proces" type="reference"/>
+        <index name="index">
+            <element name="sincronitzat_amb"/>
+        </index>
+        <index name="index2">
+            <element name="sgq"/>
+        </index>
+    </element>
+</database>

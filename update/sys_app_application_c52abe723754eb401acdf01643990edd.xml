@@ -6,27 +6,27 @@
         <description/>
         <device_type>browser</device_type>
         <hint/>
-        <name/>
+        <name>Calendari</name>
         <order>100</order>
         <roles>x_udg_q.User</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-09-05 09:41:15</sys_created_on>
+        <sys_created_on>2018-09-06 07:28:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>76de8a2e3758ab401acdf01643990ef2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Eines</sys_name>
+        <sys_id>c52abe723754eb401acdf01643990edd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calendari</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_app_application_76de8a2e3758ab401acdf01643990ef2</sys_update_name>
+        <sys_update_name>sys_app_application_c52abe723754eb401acdf01643990edd</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-06 07:25:21</sys_updated_on>
-        <title>Eines</title>
+        <sys_updated_on>2018-09-06 07:28:24</sys_updated_on>
+        <title>Calendari</title>
         <view_name/>
     </sys_app_application>
 </record_update>

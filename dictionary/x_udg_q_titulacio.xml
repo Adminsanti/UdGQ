@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Titulació" max_length="40" name="x_udg_q_titulacio" type="collection">
+        <element default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
+        <element label="Memo" max_length="40" name="memo" type="string"/>
+        <element display="true" label="Nom" max_length="140" name="nom" type="string"/>
+        <element label="QID" max_length="40" name="qid" type="string"/>
+        <element label="QMS" max_length="32" name="qms" reference="x_udg_q_titulacio" type="reference"/>
+        <element label="Tipus" max_length="40" name="tipus" type="string"/>
+        <index name="index">
+            <element name="qms"/>
+        </index>
+    </element>
+</database>
