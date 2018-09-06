@@ -4,8 +4,8 @@
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element display="true" label="Nom" max_length="140" name="nom" type="string"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
-        <element label="Responsable Orgànic" max_length="32" name="responsable_organic" reference="sys_user" type="reference"/>
-        <element label="Responsable SGQ" max_length="32" name="responsable_sgq" reference="sys_user" type="reference"/>
+        <element label="Responsable Orgànic" max_length="32" name="responsable_organic" reference="sys_user" reference_qual="u_is_pac=true^ORu_ispas=true^EQ" reference_qual_condition="u_is_pac=true^ORu_ispas=true^EQ" type="reference"/>
+        <element label="Responsable SGQ" max_length="32" name="responsable_sgq" reference="sys_user" reference_qual="u_is_pac=true^ORu_ispas=true^EQ" reference_qual_condition="u_is_pac=true^ORu_ispas=true^EQ" type="reference"/>
         <index name="index">
             <element name="responsable_sgq"/>
         </index>
