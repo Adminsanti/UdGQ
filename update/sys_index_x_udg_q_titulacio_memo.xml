@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>memo</col_name_string>
+        <index_col_name element="memo" name="x_udg_q_titulacio">4218febe3714eb401acdf01643990eba</index_col_name>
+        <logical_table_name>x_udg_q_titulacio</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-09-06 10:38:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d95a37237d4eb401acdf01643990e51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_titulacio</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_index_x_udg_q_titulacio_memo</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-09-06 10:38:11</sys_updated_on>
+        <table display_value="Titulació" name="x_udg_q_titulacio">31d736fe3714eb401acdf01643990e23</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

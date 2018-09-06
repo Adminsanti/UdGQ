@@ -5,6 +5,7 @@
         <element label="Memo" max_length="40" name="memo" type="string"/>
         <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
+        <element label="Responsable" max_length="32" name="responsable" reference="sys_user" type="reference"/>
         <element label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
         <element choice="3" default="Grau" label="Tipus" mandatory="true" max_length="40" name="tipus" type="string">
             <choice>
@@ -13,6 +14,12 @@
             </choice>
         </element>
         <index name="index">
+            <element name="responsable"/>
+        </index>
+        <index name="index2">
+            <element name="memo"/>
+        </index>
+        <index name="index3">
             <element name="sgq"/>
         </index>
     </element>

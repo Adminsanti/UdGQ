@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>jdbc:sqlserver://ssql2r.udg.edu:1433;selectMethod=cursor;databaseName=ServiceDesk;integratedSecurity=true</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name>ServiceDesk</database_name>
+        <database_port>1433</database_port>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>com.microsoft.sqlserver.jdbc.SQLServerDriver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>CarregaTitulacions</import_set_table_label>
+        <import_set_table_name>x_udg_q_carregatitulacions</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server>ssql2r.udg.edu</jdbc_server>
+        <jdbc_user_name/>
+        <jdbcprobe_result_set_rows/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="midserverdev">6a487e5a3776a6001acdf01643990e84</mid_server>
+        <name>Carrega Titulacions</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-09-06 10:31:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bf632ffe3794eb401acdf01643990eed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Carrega Titulacions</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_data_source_bf632ffe3794eb401acdf01643990eed</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-09-06 10:31:34</sys_updated_on>
+        <table_name>dbo.ServiceNowTitulacions</table_name>
+        <type>JDBC</type>
+        <use_integrated_authentication>true</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

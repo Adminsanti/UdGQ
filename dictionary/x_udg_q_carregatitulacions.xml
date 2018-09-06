@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Carrega Titulacions" max_length="40" name="x_udg_q_carregatitulacions" type="collection">
+        <element attributes="import_attribute_name=Actiu" label="Actiu" max_length="40" name="u_actiu" type="integer"/>
+        <element attributes="import_attribute_name=CentreCodiAtributs,edge_encryption_enabled=true" label="CentreCodiAtributs" max_length="40" name="u_centrecodiatributs" type="string"/>
+        <element attributes="import_attribute_name=Codi,edge_encryption_enabled=true" label="Codi" max_length="40" name="u_codi" type="string"/>
+        <element attributes="import_attribute_name=CodiAtributs,edge_encryption_enabled=true" label="CodiAtributs" max_length="50" name="u_codiatributs" type="string"/>
+        <element attributes="import_attribute_name=Id" label="Id" max_length="40" name="u_id" type="integer"/>
+        <element attributes="import_attribute_name=Nom,edge_encryption_enabled=true" label="Nom" max_length="200" name="u_nom" type="string"/>
+        <element attributes="import_attribute_name=Responsable,edge_encryption_enabled=true" label="Responsable" max_length="40" name="u_responsable" type="string"/>
+        <element attributes="import_attribute_name=Tipus,edge_encryption_enabled=true" label="Tipus" max_length="8000" name="u_tipus" type="string"/>
+    </element>
+</database>
