@@ -3,12 +3,17 @@
     <element label="Titulació" max_length="40" name="x_udg_q_titulacio" type="collection">
         <element default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
         <element label="Memo" max_length="40" name="memo" type="string"/>
-        <element display="true" label="Nom" max_length="140" name="nom" type="string"/>
+        <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
-        <element label="QMS" max_length="32" name="qms" reference="x_udg_q_titulacio" type="reference"/>
-        <element label="Tipus" max_length="40" name="tipus" type="string"/>
+        <element label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
+        <element choice="3" default="Grau" label="Tipus" mandatory="true" max_length="40" name="tipus" type="string">
+            <choice>
+                <element label="Grau" value="Grau"/>
+                <element label="Màsters oficials" value="Màsters oficials"/>
+            </choice>
+        </element>
         <index name="index">
-            <element name="qms"/>
+            <element name="sgq"/>
         </index>
     </element>
 </database>
