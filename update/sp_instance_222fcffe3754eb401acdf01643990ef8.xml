@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">27de03323794eb401acdf01643990e2d</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-09-06 09:00:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>222fcffe3754eb401acdf01643990ef8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Sistemes de Gestió de la Qualitat</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sp_instance_222fcffe3754eb401acdf01643990ef8</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-09-06 09:02:54</sys_updated_on>
+        <title>Sistemes de Gestió de la Qualitat</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h4>A continuaci&oacute; trobareu la llista dels Sistemes de Gesti&oacute; de la Qualitat a la UdG</h4>",
+		"displayValue": "<h4>A continuaci&oacute; trobareu la llista dels Sistemes de Gesti&oacute; de la Qualitat a la UdG</h4>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+</record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="SGQ" max_length="40" name="x_udg_q_sgq" type="collection">
-        <element label="Actiu" max_length="40" name="actiu" type="boolean"/>
+    <element audit="true" label="SGQ" max_length="40" name="x_udg_q_sgq" type="collection">
+        <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element display="true" label="Nom" max_length="140" name="nom" type="string"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
         <element label="Responsable Orgànic" max_length="32" name="responsable_organic" reference="sys_user" type="reference"/>

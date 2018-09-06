@@ -29,8 +29,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7818f6fe3714eb401acdf01643990e61</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Titulaciós</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Titulacions</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -38,9 +38,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_7818f6fe3714eb401acdf01643990e61</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-06 07:19:22</sys_updated_on>
+        <sys_updated_on>2018-09-06 08:57:49</sys_updated_on>
         <timeline_page/>
-        <title>Titulaciós</title>
+        <title>Titulacions</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
