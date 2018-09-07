@@ -11,14 +11,14 @@
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="2">57c12bbe3794eb401acdf01643990ed0</sp_column>
+        <sp_column display_value="1">d7c1ef7e3794eb401acdf01643990e7a</sp_column>
         <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-06 09:01:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>167fcb323794eb401acdf01643990ef7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -26,13 +26,13 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sp_instance_167fcb323794eb401acdf01643990ef7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-06 10:21:46</sys_updated_on>
+        <sys_updated_on>2018-09-07 10:56:15</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters><![CDATA[{
 	"html": {
-		"value": "<h4>La UdG vetlla per&nbsp;la qualitat per les seg&uuml;ents <strong>Titulacions</strong></h4>",
-		"displayValue": "<h4>La UdG vetlla per&nbsp;la qualitat per les seg&uuml;ents <strong>Titulacions</strong></h4>"
+		"value": "<h4>La UdG gestiona la qualitat dels seus centres mitjan&ccedil;ant els <strong>Sistemes de Gesti&oacute; de la Qualitat</strong></h4>",
+		"displayValue": "<h4>La UdG gestiona la qualitat dels seus centres mitjan&ccedil;ant els <strong>Sistemes de Gesti&oacute; de la Qualitat</strong></h4>"
 	}
 }]]></widget_parameters>
     </sp_instance>

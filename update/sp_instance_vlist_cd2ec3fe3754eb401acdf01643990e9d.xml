@@ -7,7 +7,9 @@
         <css/>
         <display_field/>
         <field_list/>
-        <filter/>
+        <filter table="x_udg_q_sgq">actiu=true^virtual=false<item endquery="false" field="actiu" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="virtual" goto="false" newquery="false" operator="=" or="false" value="false"/>
+        </filter>
         <glyph>home</glyph>
         <id/>
         <maximum_entries>15</maximum_entries>
@@ -25,7 +27,7 @@
         <sys_created_on>2018-09-06 08:55:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2ec3fe3754eb401acdf01643990e9d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -33,7 +35,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sp_instance_vlist_cd2ec3fe3754eb401acdf01643990e9d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-06 10:21:44</sys_updated_on>
+        <sys_updated_on>2018-09-07 10:50:47</sys_updated_on>
         <table>x_udg_q_sgq</table>
         <title/>
         <url/>
