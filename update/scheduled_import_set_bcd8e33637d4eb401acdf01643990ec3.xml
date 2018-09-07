@@ -4,7 +4,7 @@
         <active>true</active>
         <condition/>
         <conditional>false</conditional>
-        <data_source display_value="Carrega Titulacions">bf632ffe3794eb401acdf01643990eed</data_source>
+        <data_source display_value="Titulacions">bf632ffe3794eb401acdf01643990eed</data_source>
         <map/>
         <name>Titulacions Diari</name>
         <order/>

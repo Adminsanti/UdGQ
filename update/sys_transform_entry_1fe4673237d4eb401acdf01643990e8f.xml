@@ -6,7 +6,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="Carrega Titulacions">8744673237d4eb401acdf01643990ec7</map>
+        <map display_value="Titulacions">8744673237d4eb401acdf01643990ec7</map>
         <reference_value_field/>
         <source_field>u_codi</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {
