@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element attributes="ref_ac_columns_search=true,global_search_config_handler=UserConfig,ref_ac_order_by=name,text_index_translations=true,hasLabels=true,ref_ac_columns=email,display_image=photo,ref_auto_completer=AJAXTableCompleter,iterativeDelete=true,metadata_link_exempt=true" audit="true" create_roles="user_admin" defaultsort="-1" dynamic_creation_script="dynamicUserCreation(current, value);" label="User" max_length="40" name="sys_user" sizeclass="78330" text_index="true" type="collection">
-        <element label="SGQ Actual" max_length="32" name="x_udg_q_sgq_actual" reference="x_udg_q_sgq" type="reference"/>
+        <element choice="1" label="SGQ Actual" max_length="32" name="x_udg_q_sgq_actual" reference="x_udg_q_sgq" type="reference">
+            <choice/>
+        </element>
         <element label="SGQ Gestionats" max_length="4000" name="x_udg_q_sgq_gestionats" reference="x_udg_q_sgq" type="glide_list"/>
         <element label="SGQ Visibles" max_length="4000" name="x_udg_q_sgq_visibles" reference="x_udg_q_sgq" type="glide_list"/>
         <index name="index">
