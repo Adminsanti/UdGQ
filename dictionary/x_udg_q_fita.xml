@@ -4,6 +4,14 @@
         <element label="Data" max_length="40" name="data" type="glide_date_time"/>
         <element display="true" label="Nom" max_length="100" name="nom" type="string"/>
         <element label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
+        <element choice="1" label="Tipus" max_length="40" name="tipus" type="string">
+            <choice>
+                <element label="Acreditació" value="Acreditació"/>
+                <element hint="Data Màxima d'Acreditació" label="DMA" value="DMA"/>
+                <element label="Verificació" value="Verificació"/>
+                <element hint="Visita del Comité d'Avaluació AQU" label="Visita Comité" value="Visita comité"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="sgq"/>
         </index>
