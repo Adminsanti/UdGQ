@@ -12,7 +12,13 @@
                 <element hint="Visita del Comité d'Avaluació AQU" label="Visita Comité" value="Visita comité"/>
             </choice>
         </element>
+        <element choice="1" label="Titulació" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference">
+            <choice/>
+        </element>
         <index name="index">
+            <element name="titulacio"/>
+        </index>
+        <index name="index2">
             <element name="sgq"/>
         </index>
     </element>

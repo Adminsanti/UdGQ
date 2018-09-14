@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Procés" max_length="40" name="x_udg_q_proces" type="collection">
-        <element label="Actiu" max_length="40" name="actiu" type="boolean"/>
-        <element display="true" label="Nom" max_length="100" name="nom" type="string"/>
-        <element label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
-        <element label="Sincronitzat amb" max_length="32" name="sincronitzat_amb" reference="x_udg_q_proces" type="reference"/>
+        <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
+        <element display="true" label="Nom" mandatory="true" max_length="100" name="nom" type="string"/>
+        <element choice="1" label="SGQ" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference">
+            <choice/>
+        </element>
+        <element choice="1" label="Sincronitzat amb" max_length="32" name="sincronitzat_amb" reference="x_udg_q_proces" reference_qual="sgq.virtual=true^EQ" reference_qual_condition="sgq.virtual=true^EQ" type="reference">
+            <choice/>
+        </element>
         <index name="index">
             <element name="sincronitzat_amb"/>
         </index>
