@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="0a4289ad372063001acdf01643990e10" sys_domain="global" table="x_udg_q_proces" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-09-14 11:48:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e4289ad372063001acdf01643990e12</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_proces" name="x_udg_q_proces" sys_domain="global" view="Default view">0a4289ad372063001acdf01643990e10</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">6deebb1137ac23001acdf01643990e5a</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-09-14 11:48:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-09-14 11:48:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a4289ad372063001acdf01643990e13</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_proces" name="x_udg_q_proces" sys_domain="global" view="Default view">0a4289ad372063001acdf01643990e10</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_udg_q_proces" sys_domain="global" view="Default view">464289ad372063001acdf01643990e0f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-09-14 11:48:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_udg_q_proces</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-09-14 11:48:00</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a4289ad372063001acdf01643990e10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_udg_q_proces</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_ui_form_sections_0a4289ad372063001acdf01643990e10</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-09-14 11:48:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
