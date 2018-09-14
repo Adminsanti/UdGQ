@@ -12,7 +12,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>SGQ</column_label>
@@ -34,7 +34,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
         <name>x_udg_q_fita</name>
         <next_element/>
@@ -56,7 +56,7 @@
         <sys_created_on>2018-09-06 07:28:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ff976723754eb401acdf01643990e83</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>SGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -64,7 +64,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_fita_sgq</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-13 11:50:08</sys_updated_on>
+        <sys_updated_on>2018-09-14 10:31:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
