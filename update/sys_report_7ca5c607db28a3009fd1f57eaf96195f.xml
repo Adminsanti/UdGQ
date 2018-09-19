@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_report">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
@@ -25,7 +24,7 @@
         <column>sys_created_on</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</created_by_user>
+        <created_by_user display_value="">dce0addc378d1600e7efd3e853990e20</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config/>
@@ -95,13 +94,11 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-19 08:33:10</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>7ca5c607db28a3009fd1f57eaf96195f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Calendari de Fites</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_7ca5c607db28a3009fd1f57eaf96195f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
@@ -115,7 +112,7 @@
         <type>calendar</type>
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>
-        <use_color_palette>false</use_color_palette>
+        <use_null_in_trend>false</use_null_in_trend>
         <user>GLOBAL</user>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>

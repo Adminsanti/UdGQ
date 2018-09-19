@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_app_module">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>false</active>
         <application display_value="Calendari">c52abe723754eb401acdf01643990edd</application>
@@ -20,12 +19,9 @@
         <query>/timeline_visualization.do?sysparm_id=0235718bdbe4a3009fd1f57eaf96192f#3DVIEW</query>
         <report/>
         <roles/>
-        <survey/>
-        <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-19 07:28:52</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dba6f50fdbe4a3009fd1f57eaf9619c7</sys_id>
@@ -34,7 +30,6 @@
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_dba6f50fdbe4a3009fd1f57eaf9619c7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>

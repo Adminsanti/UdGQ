@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sys_script_client">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_extended>false</applies_extended>
@@ -7,6 +6,7 @@
         <description/>
         <field>sincronitzat_amb</field>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>Procés - sincronitzant</name>
         <order/>
@@ -41,7 +41,6 @@ function recuperaSgq (Sgq){
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-14 07:42:42</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b69402937ac23001acdf01643990e24</sys_id>
@@ -50,7 +49,6 @@ function recuperaSgq (Sgq){
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_4b69402937ac23001acdf01643990e24</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>

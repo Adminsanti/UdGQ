@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_instance_vlist">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
     <sp_instance_vlist action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
@@ -25,13 +24,11 @@
         <sys_class_name>sp_instance_vlist</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-06 08:55:47</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2ec3fe3754eb401acdf01643990e9d</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sp_instance_vlist_cd2ec3fe3754eb401acdf01643990e9d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
@@ -74,4 +71,5 @@
 	}
 }]]></widget_parameters>
     </sp_instance_vlist>
+    <sys_translated_text action="delete_multiple" query="documentkey=cd2ec3fe3754eb401acdf01643990e9d"/>
 </record_update>

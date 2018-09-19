@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_security_acl">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
     <sys_security_acl action="INSERT_OR_UPDATE">
         <active>true</active>
         <admin_overrides>true</admin_overrides>
@@ -12,13 +11,11 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-06 07:28:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>892abe723754eb401acdf01643990ee5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_udg_q_fita</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_security_acl_892abe723754eb401acdf01643990ee5</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Procés" max_length="40" name="x_udg_q_proces" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element display="true" label="Nom" mandatory="true" max_length="100" name="nom" type="string"/>
