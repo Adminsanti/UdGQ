@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <application display_value="Calendari">c52abe723754eb401acdf01643990edd</application>
         <assessment/>
         <content_page/>
@@ -12,35 +12,35 @@
         <image/>
         <link_type>DIRECT</link_type>
         <map_page/>
-        <mobile_title>Timeline 2D</mobile_title>
+        <mobile_title>Timeline</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>1000</order>
+        <order>900</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>/timeline_visualization.do?sysparm_id=0235718bdbe4a3009fd1f57eaf96192f#2DVIEW</query>
+        <query>show_schedule_page.do?sysparm_page_schedule_type=timeline_page&amp;sysparm_timeline_page_id=e21c2ec3dba8a3009fd1f57eaf9619e5</query>
         <report/>
         <roles/>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-09-19 07:29:13</sys_created_on>
+        <sys_created_on>2018-09-19 11:26:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>88f6b90fdbe4a3009fd1f57eaf961989</sys_id>
+        <sys_id>0c1dae07dba8a3009fd1f57eaf9619cf</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Timeline 2D</sys_name>
+        <sys_name>Timeline</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_app_module_88f6b90fdbe4a3009fd1f57eaf961989</sys_update_name>
+        <sys_update_name>sys_app_module_0c1dae07dba8a3009fd1f57eaf9619cf</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-19 13:43:40</sys_updated_on>
+        <sys_updated_on>2018-09-19 13:44:40</sys_updated_on>
         <timeline_page/>
-        <title>Timeline 2D</title>
+        <title>Timeline</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

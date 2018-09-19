@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>tipus</field>
+        <global>true</global>
+        <messages/>
+        <name>Fita form - Canvi de tipus</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	if (newValue=="Acreditació" || newValue=="DMA" || newValue=="Verificació" ) {
+		var titulacio = g_form.getReference('titulacio', setName);
+		
+	} else {
+		g_form.setValue('nom','');
+		g_form.setMandatory('titulacio',true);
+	}
+	
+	function setName(titulacio){
+		if (titulacio) g_form.setValue('nom' , newValue+ " "+titulacio.nom);
+		}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-09-19 11:46:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4500f2c7dba8a3009fd1f57eaf961944</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Fita form - Canvi de tipus</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_client_4500f2c7dba8a3009fd1f57eaf961944</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-09-19 14:49:39</sys_updated_on>
+        <table>x_udg_q_fita</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
