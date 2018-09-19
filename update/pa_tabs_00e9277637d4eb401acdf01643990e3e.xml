@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_tabs">
     <pa_tabs action="INSERT_OR_UPDATE">
         <canvas_page display_value="PA New Tab">cce9277637d4eb401acdf01643990e3b</canvas_page>
         <name>New Tab</name>
@@ -6,6 +7,7 @@
         <sys_class_name>pa_tabs</sys_class_name>
         <sys_created_by>u3000070</sys_created_by>
         <sys_created_on>2018-09-06 10:56:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>00e9277637d4eb401acdf01643990e3e</sys_id>
@@ -14,6 +16,7 @@
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>pa_tabs_00e9277637d4eb401acdf01643990e3e</sys_update_name>
         <sys_updated_by>u3000070</sys_updated_by>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
     <element label="Titulació" max_length="40" name="x_udg_q_titulacio" type="collection">
         <element default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" type="string"/>
@@ -12,8 +13,8 @@
         </element>
         <element choice="3" default="Grau" label="Tipus" mandatory="true" max_length="40" name="tipus" type="string">
             <choice>
-                <element inactive_on_update="false" label="Grau" value="Grau"/>
-                <element inactive_on_update="false" label="Màsters oficials" value="Màsters oficials"/>
+                <element label="Grau" value="Grau"/>
+                <element label="Màsters oficials" value="Màsters oficials"/>
             </choice>
         </element>
         <index name="index">

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update>
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
     <sys_ui_form_sections form_id="3f905b723794eb401acdf01643990e40" sys_domain="global" table="x_udg_q_sgq" version="3">
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>0</position>
@@ -34,6 +35,7 @@
             <sys_class_name>sys_ui_form</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-09-06 09:06:37</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>3f905b723794eb401acdf01643990e40</sys_id>
@@ -42,6 +44,7 @@
             <sys_overrides/>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_form_sections_3f905b723794eb401acdf01643990e40</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>

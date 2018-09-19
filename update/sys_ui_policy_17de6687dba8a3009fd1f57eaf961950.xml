@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
         <conditions table="x_udg_q_fita">tipusINAcreditació,DMA,Verificació^EQ<item endquery="false" field="tipus" goto="false" newquery="false" operator="IN" or="false" value="Acreditació,DMA,Verificació"/>
@@ -7,7 +8,6 @@
         <description/>
         <global>true</global>
         <inherit>false</inherit>
-        <isolate_script>false</isolate_script>
         <model_id/>
         <model_table/>
         <on_load>true</on_load>
@@ -28,6 +28,7 @@
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-19 11:34:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>17de6687dba8a3009fd1f57eaf961950</sys_id>
@@ -36,6 +37,7 @@
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_17de6687dba8a3009fd1f57eaf961950</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>

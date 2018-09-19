@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
     <sys_ui_module action="INSERT_OR_UPDATE">
         <active>true</active>
         <application display_value="Calendari">412abe723754eb401acdf01643990ee2</application>
@@ -11,6 +12,7 @@
         <sys_class_name>sys_ui_module</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-06 07:28:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d2abe723754eb401acdf01643990ee3</sys_id>
@@ -18,6 +20,7 @@
         <sys_name>Fites</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_module_8d2abe723754eb401acdf01643990ee3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
