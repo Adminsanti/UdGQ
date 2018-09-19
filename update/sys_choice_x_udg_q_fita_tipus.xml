@@ -10,14 +10,14 @@
             <language>en</language>
             <name>x_udg_q_fita</name>
             <sequence/>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-10 08:20:44</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e36ca34437acaf401acdf01643990ed7</sys_id>
+            <sys_id>f1966709dba8eb401f06adc3ca9619ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-10 08:20:44</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
             <value>Acreditació</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -29,14 +29,14 @@
             <language>en</language>
             <name>x_udg_q_fita</name>
             <sequence/>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-10 08:18:35</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>cfcb674c376caf401acdf01643990e8b</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-10 08:19:00</sys_updated_on>
+            <sys_id>35966709dba8eb401f06adc3ca9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
             <value>DMA</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -48,14 +48,14 @@
             <language>en</language>
             <name>x_udg_q_fita</name>
             <sequence/>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-10 08:17:28</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7cab634437acaf401acdf01643990e09</sys_id>
+            <sys_id>75966709dba8eb401f06adc3ca9619ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-10 08:17:28</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
             <value>Verificació</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -67,24 +67,24 @@
             <language>en</language>
             <name>x_udg_q_fita</name>
             <sequence/>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-10 08:20:21</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>272c6b0437acaf401acdf01643990eb5</sys_id>
+            <sys_id>b5966709dba8eb401f06adc3ca9619ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-10 08:20:21</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
             <value>Visita comité</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>tipus</element>
             <name>x_udg_q_fita</name>
             <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-10 08:17:28</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>b6bb234437acaf401acdf01643990eed</sys_id>
+            <sys_id>b9966709dba8eb401f06adc3ca9619ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>tipus</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -92,8 +92,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_choice_x_udg_q_fita_tipus</sys_update_name>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-10 08:17:28</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

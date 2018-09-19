@@ -11,7 +11,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_proces" name="x_udg_q_proces" sys_domain="global" view="Default view">0a4289ad372063001acdf01643990e10</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">6deebb1137ac23001acdf01643990e5a</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">c9b3b785db2ceb401f06adc3ca961940</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-09-14 11:48:00</sys_updated_on>
         </sys_ui_form_section>
