@@ -11,14 +11,14 @@
         <chart_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</chart_border_color>
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
-        <chart_height/>
+        <chart_height>450</chart_height>
         <chart_size>large</chart_size>
         <chart_title/>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
-        <chart_width/>
+        <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
@@ -77,7 +77,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color/>
+        <set_color>one_color</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -97,7 +97,7 @@
         <sys_created_on>2018-09-19 08:33:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7ca5c607db28a3009fd1f57eaf96195f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Calendari de Fites</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -105,7 +105,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_7ca5c607db28a3009fd1f57eaf96195f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-19 08:49:54</sys_updated_on>
+        <sys_updated_on>2018-09-24 09:38:29</sys_updated_on>
         <table>x_udg_q_fita</table>
         <title>Calendari de Fites</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

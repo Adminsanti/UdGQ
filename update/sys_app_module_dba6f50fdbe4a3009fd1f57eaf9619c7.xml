@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>false</active>
-        <application display_value="Calendari">c52abe723754eb401acdf01643990edd</application>
+        <application display_value="Fites">c52abe723754eb401acdf01643990edd</application>
         <assessment/>
         <content_page/>
         <device_type/>

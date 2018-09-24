@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Calendari">c52abe723754eb401acdf01643990edd</application>
+        <application display_value="Fites">c52abe723754eb401acdf01643990edd</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -29,8 +29,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0c1dae07dba8a3009fd1f57eaf9619cf</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Visualització Timeline</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Fites Timeline</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -38,9 +38,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_0c1dae07dba8a3009fd1f57eaf9619cf</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-19 15:30:17</sys_updated_on>
+        <sys_updated_on>2018-09-24 09:27:19</sys_updated_on>
         <timeline_page/>
-        <title>Visualització Timeline</title>
+        <title>Fites Timeline</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
