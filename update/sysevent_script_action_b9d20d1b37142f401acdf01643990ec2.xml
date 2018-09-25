@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sysevent_script_action">
     <sysevent_script_action action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <condition_script/>
         <description/>
         <event_name>session.established</event_name>
@@ -26,7 +26,7 @@ gs.info(currentUser.getPreference('sgqActual'));
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9d20d1b37142f401acdf01643990ec2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Assignar SGQ Actual</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -35,6 +35,6 @@ gs.info(currentUser.getPreference('sgqActual'));
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_script_action_b9d20d1b37142f401acdf01643990ec2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-10 11:35:51</sys_updated_on>
+        <sys_updated_on>2018-09-25 07:19:57</sys_updated_on>
     </sysevent_script_action>
 </record_update>

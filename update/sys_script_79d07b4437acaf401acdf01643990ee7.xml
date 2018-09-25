@@ -28,21 +28,17 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	//gs.debug('holA');
-	/*
-	var currentUser = gs.getUser();
-	currentUser.savePreference('qualitat.sgqActual','c082fc9b37d02f401acdf01643990e17');//TOT
-	gs.info(currentUser.getPreference('qualitat.sgqActual'));
- 	*/
-	
-	var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
-	if (SGQpref != gs.getProperty('uidSGQvisivilitatTotal')) {
-		//Reactivar
-		//current.addQuery('sgq',SGQpref);
-	}
-	
-})(current, previous);]]></script>
+        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
+
+//gs.addInfoMessage("Visivilitat total per :"+gs.getProperty('x_udg_q.uidSGQvisivilitatTotal'));
+//gs.addInfoMessage("EL SGQ actual és : "+SGQpref);
+if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
+	//gs.addInfoMessage ("Consultarem només :"+SGQpref);
+	current.addQuery('sgq',SGQpref);
+	//falta considerar: 
+	//					- Que passa quan es crida pel portal
+}
+]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-10 08:42:27</sys_created_on>
@@ -50,7 +46,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>79d07b4437acaf401acdf01643990ee7</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>SGQ query per Fita</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -59,7 +55,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_79d07b4437acaf401acdf01643990ee7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-14 10:25:09</sys_updated_on>
+        <sys_updated_on>2018-09-25 09:46:15</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

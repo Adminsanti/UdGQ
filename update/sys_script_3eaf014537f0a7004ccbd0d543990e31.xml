@@ -4,24 +4,22 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
-        <action_query>false</action_query>
-        <action_update>true</action_update>
-        <active>false</active>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>sys_user</collection>
+        <collection>x_udg_q_titulacio</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="sys_user">x_udg_q_sgq_actualVALCHANGES^EQ<item endquery="false" field="x_udg_q_sgq_actual" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Canviar propietat  qualitat.sgqActual</name>
+        <name>SGQ query per Titulació</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,31 +28,36 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
-	//gs.getUser().savePreference('qualitat.sgqActual',current.x_udg_q_sgq_actual);//TOT
-	
+        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
 
-})(current, previous);]]></script>
+//gs.addInfoMessage("Visivilitat total per :"+gs.getProperty('x_udg_q.uidSGQvisivilitatTotal'));
+//gs.addInfoMessage("EL SGQ actual és : "+SGQpref);
+if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
+	//gs.addInfoMessage ("Consultarem només :"+SGQpref);
+	current.addQuery('sgq',SGQpref);
+	//falta considerar: 
+	//					- Que passa quan es crida pel portal
+}
+]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-09-10 12:02:13</sys_created_on>
+        <sys_created_on>2018-09-25 09:45:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>407e9cd03720ef401acdf01643990ef3</sys_id>
+        <sys_id>3eaf014537f0a7004ccbd0d543990e31</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Canviar propietat  qualitat.sgqActual</sys_name>
+        <sys_name>SGQ query per Titulació</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_script_407e9cd03720ef401acdf01643990ef3</sys_update_name>
+        <sys_update_name>sys_script_3eaf014537f0a7004ccbd0d543990e31</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-25 08:47:44</sys_updated_on>
+        <sys_updated_on>2018-09-25 09:47:22</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=407e9cd03720ef401acdf01643990ef3"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=3eaf014537f0a7004ccbd0d543990e31"/>
 </record_update>
