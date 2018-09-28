@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Subestàndard" max_length="40" name="x_udg_q_subestandard" type="collection">
+        <element choice="1" label="Estandard" max_length="32" name="estandard" reference="x_udg_q_estandard" type="reference">
+            <choice/>
+        </element>
+        <element display="true" label="Nom" max_length="140" name="nom" type="string"/>
+        <element label="Num" max_length="10" name="num" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return current.estandard.num + &quot;.&quot; + current.estandard + &quot; &quot;+ current.titol;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Titol" max_length="130" name="titol" read_only="true" type="string" virtual="true"/>
+        <index name="index">
+            <element name="estandard"/>
+        </index>
+    </element>
+</database>

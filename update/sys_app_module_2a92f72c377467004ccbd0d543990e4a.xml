@@ -6,9 +6,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_udg_q_fita">data_anticipada&lt;=javascript:gs.endOfToday()^data&gt;=javascript:gs.beginningOfToday()^NQdata_anticipadaRELATIVELE@month@ahead@6^data_anticipada&gt;=javascript:gs.beginningOfToday()^NQdataRELATIVELE@month@ahead@6^data&gt;=javascript:gs.beginningOfToday()^EQ<item endquery="false" field="data_anticipada" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.endOfToday()"/>
-            <item endquery="false" field="data" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
-            <item endquery="false" field="data_anticipada" goto="false" newquery="true" operator="RELATIVE" or="false" value="LE@month@ahead@6"/>
+        <filter table="x_udg_q_fita">data_anticipadaRELATIVELE@month@ahead@6^data_anticipada&gt;=javascript:gs.beginningOfToday()^NQdataRELATIVELE@month@ahead@6^data&gt;=javascript:gs.beginningOfToday()^EQ<item endquery="false" field="data_anticipada" goto="false" newquery="false" operator="RELATIVE" or="false" value="LE@month@ahead@6"/>
             <item endquery="false" field="data_anticipada" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
             <item endquery="false" field="data" goto="false" newquery="true" operator="RELATIVE" or="false" value="LE@month@ahead@6"/>
             <item endquery="false" field="data" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
@@ -36,7 +34,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2a92f72c377467004ccbd0d543990e4a</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Fites pels propers 6 mesos</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -45,7 +43,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_2a92f72c377467004ccbd0d543990e4a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-24 09:02:22</sys_updated_on>
+        <sys_updated_on>2018-09-28 07:26:49</sys_updated_on>
         <timeline_page/>
         <title>Fites pels propers 6 mesos</title>
         <uncancelable>false</uncancelable>

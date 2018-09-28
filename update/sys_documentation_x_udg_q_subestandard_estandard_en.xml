@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="estandard" label="Estandard" language="en" table="x_udg_q_subestandard">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>estandard</element>
+            <help/>
+            <hint/>
+            <label>Estandard</label>
+            <language>en</language>
+            <name>x_udg_q_subestandard</name>
+            <plural>Estandards</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-09-28 07:10:06</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>1fe8048637bc2b004ccbd0d543990e8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Estandard</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_q_subestandard_estandard_en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-09-28 07:10:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

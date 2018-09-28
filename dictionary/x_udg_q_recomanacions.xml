@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Recomanació" max_length="40" name="x_udg_q_recomanacions" type="collection">
+        <element label="Descripció" max_length="5000" name="descripcio" type="string"/>
+        <element label="Informe" max_length="32" name="informe" reference="x_udg_q_informevsma" type="reference"/>
+        <element label="Nom" max_length="140" name="nom" type="string"/>
+        <index name="index">
+            <element name="informe"/>
+        </index>
+    </element>
+</database>

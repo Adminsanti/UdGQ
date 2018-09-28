@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_grid_canvas" unload_date="2018-09-28 11:53:00">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</legacy_page>
+        <name>PMO Director Dashboard</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f47433dd37b0e7004ccbd0d543990eb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PMO Director Dashboard</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_grid_canvas_f47433dd37b0e7004ccbd0d543990eb3</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+        <related_items_node>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                <height>17</height>
+                <portal_widget display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_widget>
+                <posx>0</posx>
+                <posy>67</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>adminsanti</sys_created_by>
+                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                <sys_customer_update>false</sys_customer_update>
+                <sys_id>307433dd37b0e7004ccbd0d543990ebc</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_307433dd37b0e7004ccbd0d543990ebc</sys_update_name>
+                <sys_updated_by>adminsanti</sys_updated_by>
+                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                <width>6</width>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone4</dropzone>
+                        <offset>1</offset>
+                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <summary/>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                        <sys_id>dfa2b6881391120023f750f82244b0f0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                                <height>17</height>
+                                <portal_widget display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_widget>
+                                <posx>0</posx>
+                                <posy>67</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                                <sys_customer_update>false</sys_customer_update>
+                                <sys_id>307433dd37b0e7004ccbd0d543990ebc</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_307433dd37b0e7004ccbd0d543990ebc</sys_update_name>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                                <width>6</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0f1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0f2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0f1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0f2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0f1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0f2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>033bf8de1330120023f750f82244b020</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0f1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>Late Projects by Portfolio</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0f1</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0f2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_size</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0f1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>14pt</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>widget_height</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0f2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>500</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0f1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0f1</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>793337a31385120023f750f82244b0d6</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone4</dropzone>
+                        <offset>0</offset>
+                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <summary/>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                        <sys_id>d3a2b6881391120023f750f82244b0ef</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                                <height>17</height>
+                                <portal_widget display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_widget>
+                                <posx>0</posx>
+                                <posy>50</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                                <sys_customer_update>false</sys_customer_update>
+                                <sys_id>787433dd37b0e7004ccbd0d543990eba</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_787433dd37b0e7004ccbd0d543990eba</sys_update_name>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                                <width>6</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0f0</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>Open Risk</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0ef</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0f0</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0ef</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0f0</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0ef</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0f0</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>033bf8de1330120023f750f82244b020</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0f0</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>d110be7f1330120023f750f82244b0a3</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0ef</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>widget_height</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0f0</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>500</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_size</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0ef</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>14pt</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0f0</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0ef</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone1</dropzone>
+                        <offset>0</offset>
+                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <summary/>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                        <sys_id>53a2b6881391120023f750f82244b0eb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                                <height>10</height>
+                                <portal_widget display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_widget>
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                                <sys_customer_update>false</sys_customer_update>
+                                <sys_id>7c7433dd37b0e7004ccbd0d543990eb5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_7c7433dd37b0e7004ccbd0d543990eb5</sys_update_name>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                                <width>4</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0ec</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>de207e7f1330120023f750f82244b020</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0eb</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>widget_height</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0ec</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_size</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0eb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>14pt</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0ec</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0eb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0eb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0ec</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0eb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0ec</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0eb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0ec</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>033bf8de1330120023f750f82244b020</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0eb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>Open Risk</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone3</dropzone>
+                        <offset>0</offset>
+                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <summary/>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                        <sys_id>5ba2b6881391120023f750f82244b0ee</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                                <height>10</height>
+                                <portal_widget display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_widget>
+                                <posx>8</posx>
+                                <posy>20</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                                <sys_customer_update>false</sys_customer_update>
+                                <sys_id>b07433dd37b0e7004ccbd0d543990eb9</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_b07433dd37b0e7004ccbd0d543990eb9</sys_update_name>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                                <width>4</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0ef</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>033bf8de1330120023f750f82244b020</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0ee</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:45</sys_created_on>
+                                <sys_id>72b2f6881391120023f750f82244b05a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:45</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:45</sys_created_on>
+                                <sys_id>76b2f6881391120023f750f82244b05a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:45</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:45</sys_created_on>
+                                <sys_id>7ab2f6881391120023f750f82244b05a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:45</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:45</sys_created_on>
+                                <sys_id>7eb2f6881391120023f750f82244b059</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:45</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0ee</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>f3edb26313f0120023f750f82244b0f8</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0ee</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>Active Projects</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:45</sys_created_on>
+                                <sys_id>f2b2f6881391120023f750f82244b05a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:45</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>widget_height</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:45</sys_created_on>
+                                <sys_id>f6b2f6881391120023f750f82244b05a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:45</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:45</sys_created_on>
+                                <sys_id>fab2f6881391120023f750f82244b059</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:45</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_size</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:45</sys_created_on>
+                                <sys_id>feb2f6881391120023f750f82244b059</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:45</sys_updated_on>
+                                <value>14pt</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone5</dropzone>
+                        <offset>1</offset>
+                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <summary/>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                        <sys_id>d7a2b6881391120023f750f82244b0f4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                                <height>17</height>
+                                <portal_widget display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
+                                <posx>6</posx>
+                                <posy>101</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                                <sys_customer_update>false</sys_customer_update>
+                                <sys_id>bc7433dd37b0e7004ccbd0d543990ebe</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_bc7433dd37b0e7004ccbd0d543990ebe</sys_update_name>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                                <width>6</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0f5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0f6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>033bf8de1330120023f750f82244b020</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0f5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>Active Projects by Project Manager</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0f4</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0f5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0f4</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>widget_height</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0f5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>500</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0f5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0f5</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>40ece2eb13b0120023f750f82244b049</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0f4</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0f5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_size</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0f4</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>14pt</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0f5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone5</dropzone>
+                        <offset>0</offset>
+                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <summary/>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                        <sys_id>dba2b6881391120023f750f82244b0f2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                                <height>17</height>
+                                <portal_widget display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_widget>
+                                <posx>6</posx>
+                                <posy>84</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                                <sys_customer_update>false</sys_customer_update>
+                                <sys_id>f47433dd37b0e7004ccbd0d543990ebd</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_f47433dd37b0e7004ccbd0d543990ebd</sys_update_name>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                                <width>6</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0f3</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0f4</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0f3</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0f4</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>033bf8de1330120023f750f82244b020</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0f3</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>Open Issues</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0f2</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0f3</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_size</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0f3</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>14pt</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0f4</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0f3</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0f3</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>2f90b2bf1330120023f750f82244b088</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0f2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>widget_height</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0f3</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>500</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone2</dropzone>
+                        <offset>0</offset>
+                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <summary/>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                        <sys_id>5fa2b6881391120023f750f82244b0ec</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                                <height>10</height>
+                                <portal_widget display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_widget>
+                                <posx>4</posx>
+                                <posy>10</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                                <sys_customer_update>false</sys_customer_update>
+                                <sys_id>f87433dd37b0e7004ccbd0d543990eb7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_f87433dd37b0e7004ccbd0d543990eb7</sys_update_name>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                                <width>4</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0ed</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>13a2b6881391120023f750f82244b0ee</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_size</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0ed</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>14pt</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>17a2b6881391120023f750f82244b0ee</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1ba2b6881391120023f750f82244b0ed</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>1fa2b6881391120023f750f82244b0ed</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2018-09-26 16:23:43</sys_updated_on>
+                                <value>a2c0f2bf1330120023f750f82244b01b</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0ed</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>widget_height</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>93a2b6881391120023f750f82244b0ee</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0ed</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>97a2b6881391120023f750f82244b0ee</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>033bf8de1330120023f750f82244b020</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9ba2b6881391120023f750f82244b0ed</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>Open Issues</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:30</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0ec</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:30</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-01-27 05:59:31</sys_created_on>
+                                <sys_id>9fa2b6881391120023f750f82244b0ed</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-01-27 05:59:31</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                <height>17</height>
+                <portal_widget display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_widget>
+                <posx>0</posx>
+                <posy>50</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>adminsanti</sys_created_by>
+                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                <sys_customer_update>false</sys_customer_update>
+                <sys_id>787433dd37b0e7004ccbd0d543990eba</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_787433dd37b0e7004ccbd0d543990eba</sys_update_name>
+                <sys_updated_by>adminsanti</sys_updated_by>
+                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                <width>6</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                <height>10</height>
+                <portal_widget display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_widget>
+                <posx>0</posx>
+                <posy>0</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>adminsanti</sys_created_by>
+                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                <sys_customer_update>false</sys_customer_update>
+                <sys_id>7c7433dd37b0e7004ccbd0d543990eb5</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_7c7433dd37b0e7004ccbd0d543990eb5</sys_update_name>
+                <sys_updated_by>adminsanti</sys_updated_by>
+                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                <width>4</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                <height>10</height>
+                <portal_widget display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_widget>
+                <posx>8</posx>
+                <posy>20</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>adminsanti</sys_created_by>
+                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                <sys_customer_update>false</sys_customer_update>
+                <sys_id>b07433dd37b0e7004ccbd0d543990eb9</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_b07433dd37b0e7004ccbd0d543990eb9</sys_update_name>
+                <sys_updated_by>adminsanti</sys_updated_by>
+                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                <width>4</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                <height>17</height>
+                <portal_widget display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
+                <posx>6</posx>
+                <posy>101</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>adminsanti</sys_created_by>
+                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                <sys_customer_update>false</sys_customer_update>
+                <sys_id>bc7433dd37b0e7004ccbd0d543990ebe</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_bc7433dd37b0e7004ccbd0d543990ebe</sys_update_name>
+                <sys_updated_by>adminsanti</sys_updated_by>
+                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                <width>6</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                <height>17</height>
+                <portal_widget display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_widget>
+                <posx>6</posx>
+                <posy>84</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>adminsanti</sys_created_by>
+                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                <sys_customer_update>false</sys_customer_update>
+                <sys_id>f47433dd37b0e7004ccbd0d543990ebd</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_f47433dd37b0e7004ccbd0d543990ebd</sys_update_name>
+                <sys_updated_by>adminsanti</sys_updated_by>
+                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                <width>6</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
+                <height>10</height>
+                <portal_widget display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_widget>
+                <posx>4</posx>
+                <posy>10</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>adminsanti</sys_created_by>
+                <sys_created_on>2018-09-26 16:23:40</sys_created_on>
+                <sys_customer_update>false</sys_customer_update>
+                <sys_id>f87433dd37b0e7004ccbd0d543990eb7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_name>f47433dd37b0e7004ccbd0d543990eb3</sys_name>
+                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_f87433dd37b0e7004ccbd0d543990eb7</sys_update_name>
+                <sys_updated_by>adminsanti</sys_updated_by>
+                <sys_updated_on>2018-09-26 16:23:40</sys_updated_on>
+                <width>4</width>
+            </sys_grid_canvas_pane>
+        </related_items_node>
+    </sys_grid_canvas>
+</record_update>

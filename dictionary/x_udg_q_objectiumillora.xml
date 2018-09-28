@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" type="collection"/>
+</database>
