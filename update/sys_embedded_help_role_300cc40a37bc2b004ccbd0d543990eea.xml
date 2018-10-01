@@ -2,7 +2,7 @@
 <record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
-        <role display_value="x_udg_q.recomanacions_user" name="x_udg_q.recomanacions_user">b00cc40a37bc2b004ccbd0d543990ee8</role>
+        <role/>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-28 07:23:34</sys_created_on>
