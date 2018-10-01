@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Entrada/Sortida" max_length="40" name="x_udg_q_es" type="collection">
+        <element label="Activa" max_length="40" name="activa" type="boolean"/>
+        <element label="Entrada de" max_length="4000" name="entradade" reference="x_udg_q_proces" type="glide_list"/>
+        <element display="true" label="Nom" max_length="40" name="nom" type="string"/>
+        <element label="Sortida  de" max_length="4000" name="sortidade" reference="x_udg_q_proces" type="glide_list"/>
+    </element>
+</database>
