@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="responsable_organic" label="Responsable Orgànic" language="en" table="x_udg_q_sgq">
+    <sys_documentation element="sgq" label="SGQ" language="en" table="x_udg_q_objectiumillora">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>responsable_organic</element>
+            <element>sgq</element>
             <help/>
             <hint/>
-            <label>Responsable Orgànic</label>
+            <label>SGQ</label>
             <language>en</language>
-            <name>x_udg_q_sgq</name>
-            <plural>Responsable Orgànics</plural>
+            <name>x_udg_q_objectiumillora</name>
+            <plural>SGQs</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-06 07:07:25</sys_created_on>
+            <sys_created_on>2018-10-03 14:55:28</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>e955b67e3714eb401acdf01643990e13</sys_id>
+            <sys_id>d963ef6f37346f004ccbd0d543990e82</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Responsable Orgànic</sys_name>
+            <sys_name>SGQ</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_documentation_x_udg_q_sgq_responsable_organic_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_udg_q_objectiumillora_sgq_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-06 07:07:25</sys_updated_on>
+            <sys_updated_on>2018-10-03 14:55:28</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
