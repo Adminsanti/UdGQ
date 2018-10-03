@@ -3,11 +3,25 @@
     <element audit="true" label="Procés" max_length="40" name="x_udg_q_proces" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Llegat A" max_length="4000" name="llegata" reference="x_udg_q_proces" type="glide_list"/>
-        <element display="true" label="Nom" mandatory="true" max_length="100" name="nom" type="string"/>
-        <element choice="1" label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" reference_qual="actiu=true^EQ" reference_qual_condition="actiu=true^EQ" type="reference">
+        <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;&#9;if (current.pare !='') return current.pare.num + '.'+current.num +'. '+current.titol;&#13;&#10;&#9;&#9;else return current.num+'. '+current.titol;&#13;&#10;&#9;&#9;&#13;&#10;})(current);" display="true" label="Nom" max_length="100" name="nom" read_only="true" type="string" virtual="true"/>
+        <element label="Num" mandatory="true" max_length="10" name="num" type="string"/>
+        <element label="Pare" max_length="32" name="pare" reference="x_udg_q_proces" type="reference"/>
+        <element choice="1" label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" reference_qual="actiu=true^EQ" reference_qual_condition="actiu=true^EQ" type="reference">
             <choice/>
         </element>
+        <element choice="3" default="Procés" label="Tipus" mandatory="true" max_length="30" name="tipus" type="string">
+            <choice>
+                <element label="Procediment" language="ca" value="Procediment"/>
+                <element label="Procediment" value="Procediment"/>
+                <element label="Procés" value="Procés"/>
+                <element label="Procés" language="ca" value="Procés"/>
+            </choice>
+        </element>
+        <element label="Titol" mandatory="true" max_length="180" name="titol" type="string"/>
         <index name="index">
+            <element name="pare"/>
+        </index>
+        <index name="index2">
             <element name="sgq"/>
         </index>
     </element>
