@@ -183,6 +183,34 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>propietari</element>
+            <position>13</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-04 07:04:14</sys_created_on>
+            <sys_id>48218f7bdb7caf009fd1f57eaf9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">c9b3b785db2ceb401f06adc3ca961940</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-04 07:04:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>responsable</element>
+            <position>14</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-04 07:04:14</sys_created_on>
+            <sys_id>88210bbbdb7caf009fd1f57eaf9619b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">c9b3b785db2ceb401f06adc3ca961940</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-04 07:04:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
