@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="llegata" table="x_udg_q_proces">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="flux" table="x_udg_q_proces">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
+	
+	var gratt = new GlideRecord('sys_attachment');
+	gratt.addQuery('table_name','x_udg_q_proces');
+	gratt.addQuery('table_sys_id',current.sys_id);
+	gratt.setLimit(1);
+	gratt.query();
+	if (gratt.next()) {
+		var t= "a"; //No serveis més que per enganyar l¡analitzador sintàctic
+		return '<p><img style=\"align: baseline;\" title=\"\" src=\"sys_attachment.do?sys_id='+gratt.sys_id+'\" alt=\"\" align=\"baseline\" border=\"\" hspace=\"\" vspace=\"\" \/></p>';
+	}
+	else{
+		return 'No s\'ha carregat flux';
+	}
+})(current);
 
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
+]]></calculation>
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Llegat A</column_label>
+        <column_label>Flux</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -28,20 +39,20 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>llegata</element>
+        <element>flux</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">glide_list</internal_type>
+        <internal_type display_value="HTML">html</internal_type>
         <mandatory>false</mandatory>
-        <max_length>4000</max_length>
+        <max_length>8000</max_length>
         <name>x_udg_q_proces</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_udg_q_sgq">x_udg_q_sgq</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -53,25 +64,25 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-01 08:59:45</sys_created_on>
+        <sys_created_on>2018-10-04 11:28:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>574eff363778eb004ccbd0d543990efe</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Llegat A</sys_name>
+        <sys_id>10cb7fffdbfcaf009fd1f57eaf961977</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Flux</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_x_udg_q_proces_llegata</sys_update_name>
+        <sys_update_name>sys_dictionary_x_udg_q_proces_flux</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-04 09:19:38</sys_updated_on>
+        <sys_updated_on>2018-10-04 12:10:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
+        <virtual>true</virtual>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
