@@ -7,7 +7,7 @@
         <icon/>
         <kb_knowledge_base/>
         <kb_knowledge_page/>
-        <login_page/>
+        <login_page display_value="landing">36c61807cb31120000f8d856634c9ca9</login_page>
         <logo/>
         <notfound_page/>
         <quick_start_config/>
@@ -15,14 +15,14 @@
         <sc_catalog_page/>
         <sc_category_page/>
         <sp_chat_queue/>
-        <sp_rectangle_menu/>
+        <sp_rectangle_menu display_value="UdG Qualitat Header Menu">40b6f8d8dbcdef009fd1f57eaf961957</sp_rectangle_menu>
         <sqanda_knowledge_base/>
         <sys_class_name>sp_portal</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-06 08:52:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>400bc7fa3754eb401acdf01643990ebc</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>UdG Qualitat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -30,8 +30,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sp_portal_400bc7fa3754eb401acdf01643990ebc</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-06 09:49:16</sys_updated_on>
-        <theme display_value="UdG Theme">ac786a834f03a200a4e350528110c700</theme>
+        <sys_updated_on>2018-10-05 10:16:58</sys_updated_on>
+        <theme display_value="UdG Qualitat Theme">8a9d60d4dbcdef009fd1f57eaf961937</theme>
         <title>UdG Qualitat</title>
         <url_suffix>q</url_suffix>
     </sp_portal>

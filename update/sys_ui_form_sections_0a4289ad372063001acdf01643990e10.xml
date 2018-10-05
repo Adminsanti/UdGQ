@@ -25,7 +25,7 @@
             <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_proces" name="x_udg_q_proces" sys_domain="global" view="Default view">0a4289ad372063001acdf01643990e10</sys_ui_form>
-            <sys_ui_section caption="Nom" display_value="Nom" name="x_udg_q_proces" sys_domain="global" view="Default view">a4ee37b3db30ef009fd1f57eaf9619f9</sys_ui_section>
+            <sys_ui_section caption="Nom &amp; Responsabilitats de procés" display_value="Nom &amp; Responsabilitats de procés" name="x_udg_q_proces" sys_domain="global" view="Default view">a4ee37b3db30ef009fd1f57eaf9619f9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-10-04 11:34:04</sys_updated_on>
         </sys_ui_form_section>

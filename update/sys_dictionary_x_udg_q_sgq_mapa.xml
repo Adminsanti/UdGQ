@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="flux" table="x_udg_q_proces">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="mapa" table="x_udg_q_sgq">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
         <audit>false</audit>
-        <calculation/>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Flux</column_label>
+        <column_label>Mapa</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -23,7 +28,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>flux</element>
+        <element>mapa</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -31,7 +36,7 @@
         <internal_type display_value="HTML">html</internal_type>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <name>x_udg_q_proces</name>
+        <name>x_udg_q_sgq</name>
         <next_element/>
         <primary>false</primary>
         <read_only>true</read_only>
@@ -48,18 +53,18 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-04 11:28:01</sys_created_on>
+        <sys_created_on>2018-10-05 10:29:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>10cb7fffdbfcaf009fd1f57eaf961977</sys_id>
-        <sys_mod_count>19</sys_mod_count>
-        <sys_name>Flux</sys_name>
+        <sys_id>ce39389cdbcdef009fd1f57eaf9619bb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Mapa</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_x_udg_q_proces_flux</sys_update_name>
+        <sys_update_name>sys_dictionary_x_udg_q_sgq_mapa</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-05 08:49:57</sys_updated_on>
+        <sys_updated_on>2018-10-05 11:23:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

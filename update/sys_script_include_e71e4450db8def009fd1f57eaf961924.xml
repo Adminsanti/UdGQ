@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_udg_q.ProcesSGQ</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ProcesSGQ</name>
+        <script><![CDATA[var ProcesSGQ = Class.create();
+ProcesSGQ.prototype = {
+	initialize: function() {
+	},
+	
+	ActualitzaFlux: function (process_sys_id, attachment_sys_id) {
+		try {
+			var grproc = new GlideRecord('x_udg_q_proces');
+			grproc.addQuery('sys_id',process_sys_id);
+			grproc.setLimit(1);
+			grproc.query();
+			if (grproc.next()) {
+				grproc.flux= '<p><img style=\"align: baseline;\" title=\"\" src=\"sys_attachment.do?sys_id='+ attachment_sys_id +'\" alt=\"\" align=\"baseline\" border=\"\" hspace=\"\" vspace=\"\" \/></p>';
+				grproc.update();
+			}
+		}
+		catch (e) {
+			
+		}
+		return "";
+	},
+	
+	ActualitzaMapaProcessos: function (sgq_sys_id)
+	{
+		var grproc = new GlideRecord('x_udg_q_proces');
+		var html="<table border=1px><tr style=\"background-color: #b86767;\">Processos propis</tr>";
+		grproc.addQuery('sgq',sgq_sys_id);
+		grproc.orderBy('num');
+		grproc.query();
+		
+		while (grproc.next()) {
+			html+="<tr style=\"background-color: #f2c2c2;\"><td>"+grproc.nom+"</td></tr>";
+		}
+		html+="</table>";
+		var grsgq = new GlideRecord('x_udg_q_sgq');
+		grsgq.addQuery('sys_id',sgq_sys_id);
+		grsgq.query();
+		if (grsgq.next()){
+			grsgq.mapa=html;
+			grsgq.update();
+		}
+		
+		return html;
+	},
+	
+	
+	
+	type: 'ProcesSGQ'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-10-05 07:29:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>ProcesSGQ</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-10-05 11:25:53</sys_updated_on>
+    </sys_script_include>
+</record_update>

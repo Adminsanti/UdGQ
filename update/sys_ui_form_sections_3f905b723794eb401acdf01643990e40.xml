@@ -18,16 +18,44 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-05 11:03:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0810914db0123409fd1f57eaf9619d6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_sgq" name="x_udg_q_sgq" sys_domain="global" view="Default view">3f905b723794eb401acdf01643990e40</sys_ui_form>
+            <sys_ui_section caption="Responsabilitats" display_value="Responsabilitats" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-05 11:03:36</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-05 11:03:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50810914db0123409fd1f57eaf9619da</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_sgq" name="x_udg_q_sgq" sys_domain="global" view="Default view">3f905b723794eb401acdf01643990e40</sys_ui_form>
+            <sys_ui_section caption="Mapa" display_value="Mapa" name="x_udg_q_sgq" sys_domain="global" view="Default view">1081c514db0123409fd1f57eaf961920</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-05 11:03:36</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-09-06 09:06:37</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b7909b723794eb401acdf01643990e55</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_sgq" name="x_udg_q_sgq" sys_domain="global" view="Default view">3f905b723794eb401acdf01643990e40</sys_ui_form>
             <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_sgq" sys_domain="global" view="Default view">ff905b723794eb401acdf01643990e3f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-06 09:06:37</sys_updated_on>
+            <sys_updated_on>2018-10-05 11:03:36</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_udg_q_sgq</name>
