@@ -19,6 +19,7 @@ ProcesSGQ.prototype = {
 			grproc.setLimit(1);
 			grproc.query();
 			if (grproc.next()) {
+				//Aquí podriem comprovar si l'attachment es diu Flux*
 				grproc.flux= '<p><img style=\"align: baseline;\" title=\"\" src=\"sys_attachment.do?sys_id='+ attachment_sys_id +'\" alt=\"\" align=\"baseline\" border=\"\" hspace=\"\" vspace=\"\" \/></p>';
 				grproc.update();
 			}
@@ -61,7 +62,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -69,6 +70,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-05 11:25:53</sys_updated_on>
+        <sys_updated_on>2018-10-08 10:48:23</sys_updated_on>
     </sys_script_include>
 </record_update>

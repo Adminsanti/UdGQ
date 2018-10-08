@@ -35,8 +35,6 @@
 if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
 	//gs.addInfoMessage ("Consultarem només :"+SGQpref);
 	current.addQuery('sgq',SGQpref);
-	//falta considerar: 
-	//					- Que passa quan es crida pel portal
 }
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -46,7 +44,7 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3eaf014537f0a7004ccbd0d543990e31</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>SGQ query per Titulació</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -55,9 +53,22 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_3eaf014537f0a7004ccbd0d543990e31</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-25 09:47:22</sys_updated_on>
+        <sys_updated_on>2018-10-08 10:54:58</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=3eaf014537f0a7004ccbd0d543990e31"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>3eaf014537f0a7004ccbd0d543990e31</documentkey>
+        <fieldname>message</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-10-08 10:54:45</sys_created_on>
+        <sys_id>a33c1c553701a3004ccbd0d543990e2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-10-08 10:54:45</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
 </record_update>
