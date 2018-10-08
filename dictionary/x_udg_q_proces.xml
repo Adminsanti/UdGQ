@@ -6,6 +6,7 @@
         <element label="Llegat A" max_length="4000" name="llegata" reference="x_udg_q_sgq" type="glide_list"/>
         <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;&#9;if (current.pare !='') return current.pare.num + '.'+current.num +'. '+current.titol;&#13;&#10;&#9;&#9;else return current.num+'. '+current.titol;&#13;&#10;&#9;&#9;&#13;&#10;})(current);" display="true" label="Nom" max_length="100" name="nom" read_only="true" type="string" virtual="true"/>
         <element label="Num" mandatory="true" max_length="10" name="num" type="string"/>
+        <element label="Objectius" max_length="1500" name="objectius" type="string"/>
         <element label="Pare" max_length="32" name="pare" reference="x_udg_q_proces" type="reference"/>
         <element label="Propietari" max_length="32" name="propietari" reference="x_udg_q_responsabilitat" type="reference"/>
         <element label="Responsable" max_length="32" name="responsable" reference="x_udg_q_responsabilitat" type="reference"/>
