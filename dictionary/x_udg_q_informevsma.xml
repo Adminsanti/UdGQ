@@ -2,8 +2,13 @@
 <database>
     <element label="Informe VSMA" max_length="40" name="x_udg_q_informevsma" type="collection">
         <element label="Data" max_length="40" name="data" type="glide_date"/>
-        <element label="Nom" max_length="140" name="nom" type="string"/>
-        <element label="Origen" max_length="60" name="origen" type="string"/>
+        <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element choice="1" label="Origen" max_length="60" name="origen" type="string">
+            <choice>
+                <element label="Comité extern AQU" sequence="0" value="comité extern aqu"/>
+                <element label="Comité intern" sequence="1" value="comité intern"/>
+            </choice>
+        </element>
         <element label="Tipus" max_length="60" name="tipus" type="string"/>
     </element>
 </database>

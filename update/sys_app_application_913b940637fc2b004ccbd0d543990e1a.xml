@@ -8,7 +8,7 @@
         <hint/>
         <name>Millora</name>
         <order>100</order>
-        <roles>x_udg_q.Admin</roles>
+        <roles>x_udg_q.Manager</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-28 08:29:58</sys_created_on>
@@ -16,7 +16,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>913b940637fc2b004ccbd0d543990e1a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Millora</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -25,7 +25,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_application_913b940637fc2b004ccbd0d543990e1a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-01 08:43:46</sys_updated_on>
+        <sys_updated_on>2018-10-09 07:44:50</sys_updated_on>
         <title>Millora</title>
         <view_name/>
     </sys_app_application>

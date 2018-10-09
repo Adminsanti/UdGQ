@@ -3,63 +3,63 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_udg_q_informevsma" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>data</element>
-            <list_id display_value="x_udg_q_informevsma" element="NULL" name="x_udg_q_informevsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c64d408a37bc2b004ccbd0d543990ed4</list_id>
+            <element>nom</element>
+            <list_id display_value="x_udg_q_informevsma" element="NULL" name="x_udg_q_informevsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3a91e1693701e3004ccbd0d543990edb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-28 07:29:07</sys_created_on>
-            <sys_id>4e4d408a37bc2b004ccbd0d543990ed4</sys_id>
+            <sys_created_on>2018-10-09 10:36:16</sys_created_on>
+            <sys_id>be91e1693701e3004ccbd0d543990edb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-28 07:29:07</sys_updated_on>
+            <sys_updated_on>2018-10-09 10:36:16</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>nom</element>
-            <list_id display_value="x_udg_q_informevsma" element="NULL" name="x_udg_q_informevsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c64d408a37bc2b004ccbd0d543990ed4</list_id>
+            <element>origen</element>
+            <list_id display_value="x_udg_q_informevsma" element="NULL" name="x_udg_q_informevsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3a91e1693701e3004ccbd0d543990edb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-28 07:29:07</sys_created_on>
-            <sys_id>ce4d408a37bc2b004ccbd0d543990ed4</sys_id>
+            <sys_created_on>2018-10-09 10:36:16</sys_created_on>
+            <sys_id>3291e1693701e3004ccbd0d543990edc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-28 07:29:07</sys_updated_on>
+            <sys_updated_on>2018-10-09 10:36:16</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>origen</element>
-            <list_id display_value="x_udg_q_informevsma" element="NULL" name="x_udg_q_informevsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c64d408a37bc2b004ccbd0d543990ed4</list_id>
+            <element>tipus</element>
+            <list_id display_value="x_udg_q_informevsma" element="NULL" name="x_udg_q_informevsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3a91e1693701e3004ccbd0d543990edb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-28 07:29:07</sys_created_on>
-            <sys_id>424d408a37bc2b004ccbd0d543990ed5</sys_id>
+            <sys_created_on>2018-10-09 10:36:16</sys_created_on>
+            <sys_id>b291e1693701e3004ccbd0d543990edc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-28 07:29:07</sys_updated_on>
+            <sys_updated_on>2018-10-09 10:36:16</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>tipus</element>
-            <list_id display_value="x_udg_q_informevsma" element="NULL" name="x_udg_q_informevsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c64d408a37bc2b004ccbd0d543990ed4</list_id>
+            <element>data</element>
+            <list_id display_value="x_udg_q_informevsma" element="NULL" name="x_udg_q_informevsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3a91e1693701e3004ccbd0d543990edb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-28 07:29:07</sys_created_on>
-            <sys_id>c24d408a37bc2b004ccbd0d543990ed5</sys_id>
+            <sys_created_on>2018-10-09 10:36:16</sys_created_on>
+            <sys_id>3691e1693701e3004ccbd0d543990edc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-28 07:29:07</sys_updated_on>
+            <sys_updated_on>2018-10-09 10:36:16</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -73,11 +73,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-09-28 07:29:07</sys_created_on>
+            <sys_created_on>2018-10-09 10:36:16</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c64d408a37bc2b004ccbd0d543990ed4</sys_id>
+            <sys_id>3a91e1693701e3004ccbd0d543990edb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_informevsma</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -86,7 +86,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_list_x_udg_q_informevsma_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-28 07:29:07</sys_updated_on>
+            <sys_updated_on>2018-10-09 10:36:16</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

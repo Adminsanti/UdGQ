@@ -3,9 +3,13 @@
     <element label="Recomanació" max_length="40" name="x_udg_q_recomanacions" type="collection">
         <element label="Descripció" max_length="5000" name="descripcio" type="string"/>
         <element label="Informe" max_length="32" name="informe" reference="x_udg_q_informevsma" type="reference"/>
-        <element label="Nom" max_length="140" name="nom" type="string"/>
+        <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
         <index name="index">
             <element name="informe"/>
+        </index>
+        <index name="index2">
+            <element name="sgq"/>
         </index>
     </element>
 </database>
