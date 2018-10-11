@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" type="collection">
+    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" type="collection">
         <element label="Objectiu" max_length="32" name="objectiu" reference="x_udg_q_objectiumillora" type="reference"/>
         <element label="Responsable" max_length="32" name="responsable" reference="x_udg_q_responsabilitat" type="reference"/>
         <element label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>

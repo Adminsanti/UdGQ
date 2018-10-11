@@ -2,8 +2,16 @@
 <database>
     <element label="Recomanació" max_length="40" name="x_udg_q_recomanacions" type="collection">
         <element label="Descripció" max_length="5000" name="descripcio" type="string"/>
+        <element choice="3" default="1" label="Estat" max_length="40" name="estat" read_only="true" type="integer">
+            <choice>
+                <element label="Nova" sequence="0" value="1"/>
+                <element label="Objectius fixats" sequence="1" value="2"/>
+                <element label="Atesa" sequence="2" value="3"/>
+            </choice>
+        </element>
         <element label="Informe" max_length="32" name="informe" reference="x_udg_q_informevsma" type="reference"/>
         <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element label="Obligatòria" max_length="40" name="obligatoria" type="boolean"/>
         <element label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
         <index name="index">
             <element name="informe"/>
