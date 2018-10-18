@@ -25,44 +25,6 @@
             <element>tipus</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Procediment</label>
-            <language>en</language>
-            <name>x_udg_q_proces</name>
-            <sequence/>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-02 07:34:39</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>cae4781bdbfc2f009fd1f57eaf9619f5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-02 07:34:39</sys_updated_on>
-            <value>Procediment</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>tipus</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Procés</label>
-            <language>en</language>
-            <name>x_udg_q_proces</name>
-            <sequence/>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-02 07:33:56</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>36a4fc1bdbfc2f009fd1f57eaf9619e9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-02 07:33:56</sys_updated_on>
-            <value>Procés</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>tipus</element>
-            <hint/>
-            <inactive>false</inactive>
             <label>Procés</label>
             <language>ca</language>
             <name>x_udg_q_proces</name>
@@ -76,6 +38,63 @@
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-10-02 07:34:06</sys_updated_on>
             <value>Procés</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Procés</label>
+            <language>en</language>
+            <name>x_udg_q_proces</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-02 07:33:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36a4fc1bdbfc2f009fd1f57eaf9619e9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-18 10:59:11</sys_updated_on>
+            <value>Procés</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Subprocés</label>
+            <language>en</language>
+            <name>x_udg_q_proces</name>
+            <sequence>1</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-18 10:59:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>462d37183795ab004ccbd0d543990e22</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-18 10:59:11</sys_updated_on>
+            <value>Subprocés</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Procediment</label>
+            <language>en</language>
+            <name>x_udg_q_proces</name>
+            <sequence>2</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-02 07:34:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cae4781bdbfc2f009fd1f57eaf9619f5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-18 10:59:11</sys_updated_on>
+            <value>Procediment</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>tipus</element>

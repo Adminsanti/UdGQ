@@ -18,16 +18,16 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-04 11:34:04</sys_created_on>
+            <sys_created_on>2018-10-18 10:34:05</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>acee37b3db30ef009fd1f57eaf9619fc</sys_id>
+            <sys_id>e667bf143795ab004ccbd0d543990eaa</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_proces" name="x_udg_q_proces" sys_domain="global" view="Default view">0a4289ad372063001acdf01643990e10</sys_ui_form>
-            <sys_ui_section caption="Nom &amp; Responsabilitats de procés" display_value="Nom &amp; Responsabilitats de procés" name="x_udg_q_proces" sys_domain="global" view="Default view">a4ee37b3db30ef009fd1f57eaf9619f9</sys_ui_section>
+            <sys_ui_section caption="Objectius" display_value="Objectius" name="x_udg_q_proces" sys_domain="global" view="Default view">92677f143795ab004ccbd0d543990eed</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-04 11:34:04</sys_updated_on>
+            <sys_updated_on>2018-10-18 10:34:05</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>2</position>
@@ -46,16 +46,30 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-18 07:41:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0df0318db196b009fd1f57eaf961955</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_proces" name="x_udg_q_proces" sys_domain="global" view="Default view">0a4289ad372063001acdf01643990e10</sys_ui_form>
+            <sys_ui_section caption="Procés llegat" display_value="Procés llegat" name="x_udg_q_proces" sys_domain="global" view="Default view">f8df0318db196b009fd1f57eaf961951</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-18 07:41:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-10-04 09:45:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a9f523f3dbfcaf009fd1f57eaf9619f3</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_proces" name="x_udg_q_proces" sys_domain="global" view="Default view">0a4289ad372063001acdf01643990e10</sys_ui_form>
             <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_proces" sys_domain="global" view="Default view">adf523f3dbfcaf009fd1f57eaf9619f1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-04 11:34:04</sys_updated_on>
+            <sys_updated_on>2018-10-18 07:41:07</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_udg_q_proces</name>

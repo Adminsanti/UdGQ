@@ -6,7 +6,8 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_udg_q_proces">actiu=true^EQ<item endquery="false" field="actiu" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter table="x_udg_q_proces">sgq=javascript:gs.getPreference('qualitat.sgqActual')^actiu=true^EQ<item endquery="false" field="sgq" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getPreference('qualitat.sgqActual')"/>
+            <item endquery="false" field="actiu" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -31,7 +32,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>57077abe3714eb401acdf01643990e3f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Processos</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -40,7 +41,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_57077abe3714eb401acdf01643990e3f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-02 07:24:32</sys_updated_on>
+        <sys_updated_on>2018-10-18 07:56:42</sys_updated_on>
         <timeline_page/>
         <title>Processos</title>
         <uncancelable>false</uncancelable>

@@ -8,17 +8,18 @@
         <element label="Num" mandatory="true" max_length="10" name="num" type="string"/>
         <element label="Objectius" max_length="1500" name="objectius" type="string"/>
         <element label="Pare" max_length="32" name="pare" reference="x_udg_q_proces" type="reference"/>
-        <element label="Propietari" max_length="32" name="propietari" reference="x_udg_q_responsabilitat" type="reference"/>
-        <element label="Responsable" max_length="32" name="responsable" reference="x_udg_q_responsabilitat" type="reference"/>
-        <element choice="1" default="javascript:if (gs.getUser().getPreference('qualitat.sgqActual') != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" reference_qual="actiu=true^EQ" reference_qual_condition="actiu=true^EQ" type="reference">
+        <element label="Propietari" mandatory="true" max_length="32" name="propietari" reference="x_udg_q_responsabilitat" type="reference"/>
+        <element label="Responsable" mandatory="true" max_length="32" name="responsable" reference="x_udg_q_responsabilitat" type="reference"/>
+        <element choice="1" default="javascript:if (gs.getUser().getPreference('qualitat.sgqActual') != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" reference_qual="actiu=true^EQ" reference_qual_condition="actiu=true^EQ" type="reference">
             <choice/>
         </element>
         <element choice="3" default="Procés" label="Tipus" mandatory="true" max_length="30" name="tipus" type="string">
             <choice>
                 <element label="Procediment" language="ca" value="Procediment"/>
-                <element label="Procediment" value="Procediment"/>
-                <element label="Procés" value="Procés"/>
                 <element label="Procés" language="ca" value="Procés"/>
+                <element label="Procés" sequence="0" value="Procés"/>
+                <element label="Subprocés" sequence="1" value="Subprocés"/>
+                <element label="Procediment" sequence="2" value="Procediment"/>
             </choice>
         </element>
         <element label="Titol" mandatory="true" max_length="180" name="titol" type="string"/>
