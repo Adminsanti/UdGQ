@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_udg_q.ListUtil</api_name>
+        <client_callable>false</client_callable>
+        <description>Use Example:&#13;
+&#13;
+var inc = '04b28ae2c0a8016600c8f3d86e3278f4'; // INC0000066&#13;
+var usr1 = '46d44a23a9fe19810012d100cca80666'; // Beth Anglin&#13;
+var usr2 = '5137153cc611227c000bbd1bd8cd2005'; // Fred Luddy&#13;
+var usr3 = '62826bf03710200044e0bfc8bcbe5df1'; // Abel Tuter&#13;
+var gr = new GlideRecord('incident');&#13;
+&#13;
+if (!gr.get(inc)) {&#13;
+       gs.print('Error reading record.');&#13;
+&#13;
+} else {&#13;
+       var lu = new ListUtil(gr.watch_list);&#13;
+&#13;
+       gs.print('Fred is in the list: ' + lu.isInList(usr2));&#13;
+&#13;
+       lu.removeFromList(usr2); // Take Fred out of the list&#13;
+       gs.print('Removed Fred: list=' + lu.getList());&#13;
+&#13;
+       lu.addToList(usr3); // Add Abel to the list&#13;
+       gs.print('Added Abel: list=' + lu.getList());&#13;
+&#13;
+       lu.addToList(usr2); // add Fred back in&#13;
+       lu.addToList(usr3); // add Abel (again)&#13;
+       gs.print('Final: list=' + lu.getList());&#13;
+&#13;
+       // Save the current list to the record and update&#13;
+       gr.watch_list = lu.getList();&#13;
+       gr.update();&#13;
+}</description>
+        <name>ListUtil</name>
+        <script><![CDATA[var ListUtil = Class.create();
+ListUtil.prototype = {
+
+       initialize: function(list) {
+
+               this.debug = gs.getProperty('debug.ListUtil') == 'true';
+
+               if (JSUtil.notNil(list)) {
+                       this._list = list.split(',');
+               } else {
+                       this._list = [];
+               }
+       },
+
+/*
+ * isInList - check if an id is in the list
+ *
+ * @param id - sys_id to look for
+ * @return - boolean
+ * @uses - this._list
+ *
+ */
+       isInList : function(id) {
+
+               var i = this._getIndex(id);
+
+               this._debug('isInList(' + i + '): looking for ' + id + ' in ' + this.getList());
+               return (i > -1);
+       },
+
+/*
+ * addToList - add an id to the list
+ *
+ * @param id - sys_id of the id to add
+ * @return - NA
+ * @uses - this._list
+ *
+ */
+       addToList : function(id) {
+
+               if (!this.isInList(id))
+                       this._list.push(id);
+       },
+/*
+ * removeFromList - remove a id from the list
+ *
+ * @param id - sys_id to remove
+ * @return - NA
+ * @uses - this._list
+ *
+ */
+       removeFromList : function(id) {
+
+               var index = this._getIndex(id);
+
+               if (index > -1)
+                       this._list.splice(index, 1);
+       },
+
+/*
+ * getList - display the list as CSV
+ *
+ * @param - NA
+ * @return - string of CSV
+ * @uses - this._list
+ *
+ */
+       getList : function() {
+
+               return this._list.join(',');
+       },
+
+/*
+ * _getIndex - return the index of an element in list
+ *
+ * @param id - id to look for
+ * @return - position of id in list (0..n/-1 = not found)
+ * @uses - this._list
+ *
+ */
+       _getIndex : function(id) {
+
+               for (var i = 0; i < this._list.length; i++) {
+
+                       if (this._list[i] == id)
+                               return i;
+               }
+
+               return -1;
+       },
+
+/*
+ * _debug - print a message to the debug log
+ *
+ * @param s - string to print
+ * @return - NA
+ * @usrs - this._debug
+ *
+ */
+       _debug : function(s) {
+
+               if (this.debug)
+                       gs.print('>>>DEBUG: ListUtil: ' + s);
+       },
+
+       type: 'ListUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-10-19 11:59:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6f14113c3751eb004ccbd0d543990ec7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ListUtil</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_include_6f14113c3751eb004ccbd0d543990ec7</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-10-19 12:01:06</sys_updated_on>
+    </sys_script_include>
+</record_update>
