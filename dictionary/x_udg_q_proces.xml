@@ -15,8 +15,6 @@
         </element>
         <element choice="3" default="Procés" label="Tipus" mandatory="true" max_length="30" name="tipus" type="string">
             <choice>
-                <element label="Procediment" language="ca" value="Procediment"/>
-                <element label="Procés" language="ca" value="Procés"/>
                 <element label="Procés" sequence="0" value="Procés"/>
                 <element label="Subprocés" sequence="1" value="Subprocés"/>
                 <element label="Procediment" sequence="2" value="Procediment"/>
