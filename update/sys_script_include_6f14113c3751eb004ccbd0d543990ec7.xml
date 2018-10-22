@@ -38,117 +38,147 @@ if (!gr.get(inc)) {&#13;
         <name>ListUtil</name>
         <script><![CDATA[var ListUtil = Class.create();
 ListUtil.prototype = {
-
-       initialize: function(list) {
-
-               this.debug = gs.getProperty('debug.ListUtil') == 'true';
-
-               if (JSUtil.notNil(list)) {
-                       this._list = list.split(',');
-               } else {
-                       this._list = [];
-               }
-       },
-
-/*
- * isInList - check if an id is in the list
- *
- * @param id - sys_id to look for
- * @return - boolean
- * @uses - this._list
- *
- */
-       isInList : function(id) {
-
-               var i = this._getIndex(id);
-
-               this._debug('isInList(' + i + '): looking for ' + id + ' in ' + this.getList());
-               return (i > -1);
-       },
-
-/*
- * addToList - add an id to the list
- *
- * @param id - sys_id of the id to add
- * @return - NA
- * @uses - this._list
- *
- */
-       addToList : function(id) {
-
-               if (!this.isInList(id))
-                       this._list.push(id);
-       },
-/*
- * removeFromList - remove a id from the list
- *
- * @param id - sys_id to remove
- * @return - NA
- * @uses - this._list
- *
- */
-       removeFromList : function(id) {
-
-               var index = this._getIndex(id);
-
-               if (index > -1)
-                       this._list.splice(index, 1);
-       },
-
-/*
- * getList - display the list as CSV
- *
- * @param - NA
- * @return - string of CSV
- * @uses - this._list
- *
- */
-       getList : function() {
-
-               return this._list.join(',');
-       },
-
-/*
- * _getIndex - return the index of an element in list
- *
- * @param id - id to look for
- * @return - position of id in list (0..n/-1 = not found)
- * @uses - this._list
- *
- */
-       _getIndex : function(id) {
-
-               for (var i = 0; i < this._list.length; i++) {
-
-                       if (this._list[i] == id)
-                               return i;
-			   }
-
-               return -1;
-       },
-
-/*
- * _debug - print a message to the debug log
- *
- * @param s - string to print
- * @return - NA
- * @usrs - this._debug
- *
- */
-       _debug : function(s) {
-
-               if (this.debug)
-                       gs.print('>>>DEBUG: ListUtil: ' + s);
-       },
-
-       type: 'ListUtil'
+	
+	initialize: function(list) {
+		
+		this.debug = gs.getProperty('debug.ListUtil') == 'true';
+		
+		if (JSUtil.notNil(list)) {
+			this._list = list.split(',');
+		} else {
+			this._list = [];
+		}
+	},
+	
+	/*
+ 	* isInList - check if an id is in the list
+ 	*
+ 	* @param id - sys_id to look for
+ 	* @return - boolean
+ 	* @uses - this._list
+ 	*
+ 	*/
+	isInList : function(id) {
+		
+		var i = this._getIndex(id);
+		
+		this._debug('isInList(' + i + '): looking for ' + id + ' in ' + this.getList());
+		return (i > -1);
+	},
+	
+	
+	/* Santi 22-X-18
+	retorna true si tenen els mateixs elements
+	si hi ha una llista solament compara amb l'objecte
+	si hi ha dos llistes com parametre les compara entre elles
+ 	*/
+	
+	sameElements : function (list1, list2) {
+		var arr1 = [];
+		var arr2 = [];
+		
+		if(typeof list2 !== "undefined") {
+			arr1=this._list.concat().sort();
+			arr2=list1.concat().sort();
+			
+		} else {
+			arr1 = list1.concat().sort();
+			arr2 = list2.concat().sort();
+		}
+		
+		
+		for (var i = 0; i < arr1.length; i++) {
+			if (arr1[i] !== arr2[i])
+				return false;
+		}
+		return true;
+		
+	},
+		
+	
+	/*
+ 	* addToList - add an id to the list
+ 	*
+ 	* @param id - sys_id of the id to add
+ 	* @return - NA
+ 	* @uses - this._list
+ 	*
+ 	*/
+	addToList : function(id) {
+		
+		if (!this.isInList(id))
+			this._list.push(id);
+	},
+	/*
+ 	* removeFromList - remove a id from the list
+ 	*
+ 	* @param id - sys_id to remove
+ 	* @return - NA
+ 	* @uses - this._list
+ 	*
+ 	*/
+	removeFromList : function(id) {
+		
+		var index = this._getIndex(id);
+		
+		if (index > -1)
+			this._list.splice(index, 1);
+	},
+	
+	/*
+ 	* getList - display the list as CSV
+ 	*
+ 	* @param - NA
+ 	* @return - string of CSV
+ 	* @uses - this._list
+ 	*
+ 	*/
+	getList : function() {
+		
+		return this._list.join(',');
+	},
+	
+	/*
+ 	* _getIndex - return the index of an element in list
+ 	*
+ 	* @param id - id to look for
+ 	* @return - position of id in list (0..n/-1 = not found)
+ 	* @uses - this._list
+ 	*
+ 	*/
+	_getIndex : function(id) {
+		
+		for (var i = 0; i < this._list.length; i++) {
+			
+			if (this._list[i] == id)
+				return i;
+		}
+		
+		return -1;
+	},
+	
+	/*
+ 	* _debug - print a message to the debug log
+ 	*
+ 	* @param s - string to print
+ 	* @return - NA
+ 	* @usrs - this._debug
+ 	*
+ 	*/
+	_debug : function(s) {
+		
+		if (this.debug)
+			gs.print('>>>DEBUG: ListUtil: ' + s);
+	},
+	
+	type: 'ListUtil'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-19 11:59:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6f14113c3751eb004ccbd0d543990ec7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>ListUtil</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -156,6 +186,6 @@ ListUtil.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6f14113c3751eb004ccbd0d543990ec7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-22 09:43:20</sys_updated_on>
+        <sys_updated_on>2018-10-22 10:28:39</sys_updated_on>
     </sys_script_include>
 </record_update>

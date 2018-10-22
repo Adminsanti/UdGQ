@@ -12,6 +12,44 @@ ProcesSGQ.prototype = {
 	initialize: function() {
 	},
 	
+	LlistaFills: function (idProcesPare) {
+		var llistaF =[];
+		var grProc = new GlideRecord('x_udg_q_proces');
+		grProc.addQuery('pare',idProcesPare);
+		grProc.query();
+		while (grProc.next()) {
+			llistaF.push(grProc.sys_id);
+		}
+		return llistaF;
+	},
+	
+	LlegataIgualFills: function (idProcesPare) {
+		var FillsReals = this.LlistaFills (idProcesPare);
+		grPare = new GlideRecord ('x_udg_q_proces');
+		grPare.get('sys_id',idProcesPare);
+		var FillsSuposats = grPare.llegata;
+		return new x_udg_q.ListUtil().sameElements(FillsReals, FillsSuposats);
+	},
+	
+	RegenerarLlegats: function (idProcesPare, llistaLlegata) {
+		llistaFillsReals = this.LlistaFills(idProcesPare);
+		for (var i = 0; i < llistaLlegata.length; i++) { //bucle per la llista
+			var grFill = new GlideRecord ('x_udg_q_proces');
+			grFill.addQuery ('sys_id', llistaLlegata [i]);
+			grFill.setLimit(1);
+			grFill.query();
+			if (gr.next()) {
+				//Existeix
+				//if active==true tot be´
+				//if active == false -----> QUe fem
+				//treure de la llista llistaFillsReals.
+			} else {
+				//No existeix, cal crear-lo
+			}
+		}
+		//Si arribem aquí i encara hi ha element a llistaDillsReals, és que hi ha processos fills que no esatn a la llista llegats. Desactivar? (extra: cal fer una notificació al propietari i responsable)
+	},
+	
 	ActualitzaFlux: function (process_sys_id, attachment_sys_id) {
 		try {
 			var grproc = new GlideRecord('x_udg_q_proces');
@@ -25,42 +63,48 @@ ProcesSGQ.prototype = {
 			}
 		}
 		catch (e) {}
-		return "";
-	},
-	
-	ActualitzaMapaProcessos: function (sgq_sys_id)
-	{
-		var grproc = new GlideRecord('x_udg_q_proces');
-		var html="<table border=1px><tr style=\"background-color: #b86767;\">Processos propis</tr>";
-		grproc.addQuery('sgq',sgq_sys_id);
-		grproc.orderBy('num');
-		grproc.query();
+			return "";
+		},
 		
-		while (grproc.next()) {
-			html+="<tr ";
-			html+="style=\"background-color: #f2c2c2;";
-			html+="\"><td>"+grproc.nom+"</td></tr>";
-		}
-		html+="</table>";
+		ActualitzaMapaProcessos: function (sgq_sys_id)
+		{
+			var grproc = new GlideRecord('x_udg_q_proces');
+			var html="<table border=1px><tr style=\"background-color: #b86767;\">Processos propis</tr>";
+			grproc.addQuery('sgq',sgq_sys_id);
+			grproc.orderBy('num');
+			grproc.query();
+			
+			while (grproc.next()) {
+				html+="<tr ";
+				html+="style=\"background-color: #f2c2c2;";
+				html+="\"><td>"+grproc.nom+"</td>";
+				if (grproc.pare) {
+					html+="<td>Transversal</td>"
+				} else {
+					html+="<td>Propi</td>"
+				}
+				html+="</tr>";
+			}
+			html+="</table>";
+			
+			var grsgq = new GlideRecord('x_udg_q_sgq');
+			grsgq.get('sys_id',sgq_sys_id);
+			grsgq.mapa=html;
+			grsgq.update();
+			
+			return html;
+		},
 		
-		var grsgq = new GlideRecord('x_udg_q_sgq');
-		grsgq.get('sys_id',sgq_sys_id);
-		grsgq.mapa=html;
-		grsgq.update();
 		
-		return html;
-	},
-	
-	
-	
-	type: 'ProcesSGQ'
-};]]></script>
+		
+		type: 'ProcesSGQ'
+	};]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -68,6 +112,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-22 08:46:23</sys_updated_on>
+        <sys_updated_on>2018-10-22 10:56:30</sys_updated_on>
     </sys_script_include>
 </record_update>
