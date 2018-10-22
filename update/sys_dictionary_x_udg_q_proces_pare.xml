@@ -39,7 +39,7 @@
         <name>x_udg_q_proces</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference display_value="" name="x_udg_q_proces">x_udg_q_proces</reference>
         <reference_cascade_rule/>
@@ -56,7 +56,7 @@
         <sys_created_on>2018-10-02 07:39:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bed5385bdbfc2f009fd1f57eaf961940</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Pare</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -64,7 +64,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_proces_pare</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-18 07:44:22</sys_updated_on>
+        <sys_updated_on>2018-10-22 09:41:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
