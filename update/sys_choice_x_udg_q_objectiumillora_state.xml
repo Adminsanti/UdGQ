@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_udg_q_objectiumillora" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:26:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>954a8d46db59af009fd1f57eaf96190b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 08:26:59</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>ca</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:31:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e86b4986db59af009fd1f57eaf9619bd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 08:39:09</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Declared</label>
+            <language>en</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>1</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:26:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>994a8d46db59af009fd1f57eaf96190d</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 08:47:31</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Declared</label>
+            <language>ca</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>1</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:33:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f5ab0986db59af009fd1f57eaf961987</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 10:35:26</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Work in Progress</label>
+            <language>en</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>2</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:26:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>594a8d46db59af009fd1f57eaf96190f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 08:26:59</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Work in Progress</label>
+            <language>ca</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>2</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:33:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ddbb8d86db59af009fd1f57eaf961976</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 10:35:26</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Complete</label>
+            <language>en</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>3</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:26:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>194a8d46db59af009fd1f57eaf961911</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 10:35:26</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tancat</label>
+            <language>ca</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>3</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:33:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2cb8986db59af009fd1f57eaf961933</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 10:14:33</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_udg_q_objectiumillora</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:26:59</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>154a8d46db59af009fd1f57eaf96190d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_choice_x_udg_q_objectiumillora_state</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-10-23 08:26:59</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

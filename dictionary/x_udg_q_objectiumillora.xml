@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="1" type="collection">
+        <element label="Declarat" max_length="40" name="declarat" type="glide_date_time"/>
+        <element label="Declarat per" max_length="32" name="declarat_per" reference="sys_user" type="reference"/>
         <element label="Diagnòstic" max_length="1500" name="diagnostic" type="string"/>
-        <element choice="1" label="Fet fita" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="sgqSAMEASsgq^EQ" reference_qual_condition="sgqSAMEASsgq^EQ" type="reference">
-            <choice/>
-        </element>
         <element label="Implica Titulacions" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgqSAMEASsgq^EQ" reference_qual_condition="sgqSAMEASsgq^EQ" type="glide_list"/>
         <element label="Implica modificació memòria" max_length="40" name="modificacio_memoria" type="boolean"/>
         <element label="Procés Vinculat" max_length="32" name="proces" reference="x_udg_q_proces" reference_qual="sgqSAMEASsgq^EQ" reference_qual_condition="sgqSAMEASsgq^EQ" type="reference"/>
-        <element label="Respón a recomanacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" type="glide_list"/>
+        <element label="Respon a recomanacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" type="glide_list"/>
         <element choice="1" label="Responsable" max_length="32" name="responsable" reference="x_udg_q_responsabilitat" reference_qual="sgqSAMEASsgq^activa=true^EQ" reference_qual_condition="sgqSAMEASsgq^activa=true^EQ" type="reference">
             <choice/>
         </element>
-        <element label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
+        <element default="javascript:if (gs.getUser().getPreference('qualitat.sgqActual') != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
     </element>
 </database>

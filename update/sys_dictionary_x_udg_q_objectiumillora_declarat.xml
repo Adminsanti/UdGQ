@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="sgq" table="x_udg_q_objectiumillora">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="declarat" table="x_udg_q_objectiumillora">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -15,10 +15,10 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>SGQ</column_label>
+        <column_label>Declarat</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript:if (gs.getUser().getPreference('qualitat.sgqActual') != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) gs.getUser().getPreference('qualitat.sgqActual');</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -28,20 +28,20 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>sgq</element>
+        <element>declarat</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>32</max_length>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
         <name>x_udg_q_objectiumillora</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_udg_q_sgq">x_udg_q_sgq</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -53,18 +53,18 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-03 14:55:28</sys_created_on>
+        <sys_created_on>2018-10-23 10:34:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>c743af6f37346f004ccbd0d543990e6d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>SGQ</sys_name>
+        <sys_id>35d6e54edb99af009fd1f57eaf961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Declarat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_x_udg_q_objectiumillora_sgq</sys_update_name>
+        <sys_update_name>sys_dictionary_x_udg_q_objectiumillora_declarat</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-23 08:22:55</sys_updated_on>
+        <sys_updated_on>2018-10-23 10:34:18</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

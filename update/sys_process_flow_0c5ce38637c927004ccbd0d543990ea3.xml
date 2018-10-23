@@ -2,27 +2,27 @@
 <record_update table="sys_process_flow">
     <sys_process_flow action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_udg_q_recomanacions">estat=2^EQ<item endquery="false" field="estat" goto="false" newquery="false" operator="=" or="false" value="2"/>
+        <condition table="x_udg_q_objectiumillora">state=2^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description/>
-        <label>Objectius fixats</label>
-        <name>Objectius fixats</name>
-        <order>2</order>
+        <label>En curs</label>
+        <name>En curs</name>
+        <order>3</order>
         <sys_class_name>sys_process_flow</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-11 09:59:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0c5ce38637c927004ccbd0d543990ea3</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Objectius fixats</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>En curs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_process_flow_0c5ce38637c927004ccbd0d543990ea3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-11 11:09:11</sys_updated_on>
-        <table>x_udg_q_recomanacions</table>
+        <sys_updated_on>2018-10-23 10:26:23</sys_updated_on>
+        <table>x_udg_q_objectiumillora</table>
     </sys_process_flow>
 </record_update>

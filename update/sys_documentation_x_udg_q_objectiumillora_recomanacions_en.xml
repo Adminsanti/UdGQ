@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="recomanacions" label="Respón a recomanacions" language="en" table="x_udg_q_objectiumillora">
+    <sys_documentation element="recomanacions" label="Respon a recomanacions" language="en" table="x_udg_q_objectiumillora">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>recomanacions</element>
             <help/>
             <hint/>
-            <label>Respón a recomanacions</label>
+            <label>Respon a recomanacions</label>
             <language>en</language>
             <name>x_udg_q_objectiumillora</name>
-            <plural>Respón a recomanacions</plural>
+            <plural>Respon a recomanacions</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-10-09 10:15:17</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>53cc51653701e3004ccbd0d543990ee0</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Respón a recomanacions</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Respon a recomanacions</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_objectiumillora_recomanacions_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-09 10:15:54</sys_updated_on>
+            <sys_updated_on>2018-10-23 08:49:01</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
