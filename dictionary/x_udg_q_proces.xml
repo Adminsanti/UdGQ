@@ -4,7 +4,7 @@
         <element default="true" label="Actiu" max_length="40" name="actiu" read_only="true" type="boolean"/>
         <element label="Flux" max_length="8000" name="flux" read_only="true" type="html"/>
         <element label="Llegat A" max_length="4000" name="llegata" reference="x_udg_q_sgq" type="glide_list"/>
-        <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;&#9;if (current.pare !='') return current.pare.num + '.'+current.num +'. '+current.titol;&#13;&#10;&#9;&#9;else return current.num+'. '+current.titol;&#13;&#10;&#9;&#9;&#13;&#10;})(current);" display="true" label="Nom" max_length="100" name="nom" read_only="true" type="string" virtual="true"/>
+        <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;&#9;//return 'P'+current.num+current.sgq.codi+'. '+current.titol;&#13;&#10;&#9;return new x_udg_q.ProcesSGQ().nouNom(current);&#9;&#13;&#10;})(current);" display="true" label="Nom" max_length="100" name="nom" read_only="true" type="string" virtual="true"/>
         <element label="Num" mandatory="true" max_length="10" name="num" type="string"/>
         <element label="Objectius" max_length="1500" name="objectius" type="string"/>
         <element label="Pare" max_length="32" name="pare" read_only="true" reference="x_udg_q_proces" type="reference"/>

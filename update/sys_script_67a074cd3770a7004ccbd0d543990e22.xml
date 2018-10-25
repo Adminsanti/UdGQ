@@ -21,7 +21,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Assignar sgqActual al canviar  SGQ</name>
+        <name>Usuari canvi SGQ</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,14 +31,15 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
+	
 	var currentUser = gs.getUser();
 	//gs.info("currentUser: "+currentUser.getID());
 	var sgq= current.x_udg_q_sgq_actual.toString();
 	currentUser.savePreference('qualitat.sgqActual',sgq);
-		
-	gs.addInfoMessage('A partir d\ara la Visivilitat correspón a <b>'+current.x_udg_q_sgq_actual.nom+'</b>');
-													
+	currentUser.savePreference('qualitat.sgqActualCodi',current.x_udg_q_sgq_actual.codi.toString());
+	
+	gs.addInfoMessage('A partir d\ara la Visivilitat correspón <b>'+current.x_udg_q_sgq_actual.nom+'</b>');
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -47,8 +48,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>67a074cd3770a7004ccbd0d543990e22</sys_id>
-        <sys_mod_count>31</sys_mod_count>
-        <sys_name>Assignar sgqActual al canviar  SGQ</sys_name>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>Usuari canvi SGQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -56,7 +57,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_67a074cd3770a7004ccbd0d543990e22</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-19 11:12:33</sys_updated_on>
+        <sys_updated_on>2018-10-25 09:06:53</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

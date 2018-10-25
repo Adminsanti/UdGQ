@@ -23,10 +23,35 @@
         <name>Regenerar Llegats</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[for (var i = 0; i < current.llegata; i++) {
-	var a=current.llegata[i];
-	// crearProces (current.titol,current.llegata[i]);
-}]]></script>
+        <script><![CDATA[{
+	var arr = current.llegata.split(",");
+	for (i=0; i< arr.length; i++) { //Bucle llegats
+		var sgqPF = arr[i];
+		var grPF= new GlideRecord ('x_udg_q_proces');
+		grPF.addQuery('sgq',sgqPF);
+		grPF.addQuery('pare',current.sys_id);
+		grPF.query();
+		if (grPF.next()) {
+			gs.addInfoMessage("Examinant sense fer res - "+grPF.sgq);
+			
+		} else {
+			gs.addInfoMessage("Creant fill a: "+sgqPF);
+			var grNou = new GlideRecord ('x_udg_q_proces');
+			grNou.initialize();
+			grNou.titol=current.titol;
+			grNou.num=current.num;
+			grNou.sgq=sgqPF;
+			grNou.pare=current.sys_id;
+			grNou.insert();
+		}
+	}
+	// Cal fer alguna cosa amb els fills que ja no calen !!!!!!!!
+	action.setRedirectURL(current); //es queda a la plana actual
+}
+
+
+
+]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -38,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6f7b0479db596f009fd1f57eaf96199f</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Regenerar Llegats</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -47,7 +72,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_6f7b0479db596f009fd1f57eaf96199f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-22 10:56:25</sys_updated_on>
+        <sys_updated_on>2018-10-25 11:10:43</sys_updated_on>
         <table>x_udg_q_proces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
