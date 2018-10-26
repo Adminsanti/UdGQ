@@ -45,8 +45,8 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>sgqSAMEASsgq^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_responsabilitat">sgqSAMEASsgq^EQ<item endquery="false" field="sgq" goto="false" newquery="false" operator="SAMEAS" or="false" value="sgq"/>
+        <reference_qual>sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ</reference_qual>
+        <reference_qual_condition table="x_udg_q_responsabilitat">sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ<item endquery="false" field="sgq" goto="false" newquery="false" operator="=" or="false" value="javascript: gs.getPreference('qualitat.sgqActual','');"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <reference_type/>
@@ -58,7 +58,7 @@
         <sys_created_on>2018-10-03 11:39:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3306fe2737f06f004ccbd0d543990e2e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Propietari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -66,11 +66,11 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_sgq_propietari</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-25 07:32:37</sys_updated_on>
+        <sys_updated_on>2018-10-26 07:40:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
+        <use_dependent_field>true</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>

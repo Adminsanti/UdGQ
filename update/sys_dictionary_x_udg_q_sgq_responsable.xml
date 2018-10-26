@@ -45,10 +45,8 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>sgqSAMEASsgq^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_responsabilitat">sgqSAMEASsgq^EQ<item endquery="false" field="sgq" goto="false" newquery="false" operator="SAMEAS" or="false" value="sgq"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual>sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ</reference_qual>
+        <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -58,7 +56,7 @@
         <sys_created_on>2018-10-04 06:58:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>83afbaf7db7caf009fd1f57eaf9619bf</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Responsable</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -66,13 +64,13 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_sgq_responsable</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-25 07:32:45</sys_updated_on>
+        <sys_updated_on>2018-10-26 07:41:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>
