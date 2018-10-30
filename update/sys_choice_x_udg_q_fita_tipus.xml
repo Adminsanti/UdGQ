@@ -11,13 +11,13 @@
             <name>x_udg_q_fita</name>
             <sequence/>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
+            <sys_created_on>2018-09-19 15:42:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f1966709dba8eb401f06adc3ca9619ae</sys_id>
+            <sys_id>eff767cfdbe82b80ccd95bd05b9619cc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
+            <sys_updated_on>2018-09-19 15:42:55</sys_updated_on>
             <value>Acreditació</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -30,13 +30,13 @@
             <name>x_udg_q_fita</name>
             <sequence/>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
+            <sys_created_on>2018-09-19 15:42:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>35966709dba8eb401f06adc3ca9619ae</sys_id>
+            <sys_id>23f767cfdbe82b80ccd95bd05b9619cd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
+            <sys_updated_on>2018-09-19 15:42:55</sys_updated_on>
             <value>DMA</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -49,13 +49,13 @@
             <name>x_udg_q_fita</name>
             <sequence/>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
+            <sys_created_on>2018-09-19 15:42:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>75966709dba8eb401f06adc3ca9619ae</sys_id>
+            <sys_id>63f767cfdbe82b80ccd95bd05b9619cd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
+            <sys_updated_on>2018-09-19 15:42:55</sys_updated_on>
             <value>Verificació</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -68,13 +68,13 @@
             <name>x_udg_q_fita</name>
             <sequence/>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
+            <sys_created_on>2018-09-19 15:42:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b5966709dba8eb401f06adc3ca9619ae</sys_id>
+            <sys_id>a3f767cfdbe82b80ccd95bd05b9619cd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
+            <sys_updated_on>2018-09-19 15:42:55</sys_updated_on>
             <value>Visita comité</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
@@ -82,9 +82,9 @@
             <name>x_udg_q_fita</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-09-13 10:28:56</sys_created_on>
+            <sys_created_on>2018-09-19 15:42:55</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>d7ae13c3db2ca3009fd1f57eaf9619dc</sys_id>
+            <sys_id>a7f767cfdbe82b80ccd95bd05b9619cd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>tipus</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -93,7 +93,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_choice_x_udg_q_fita_tipus</sys_update_name>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-13 10:28:56</sys_updated_on>
+            <sys_updated_on>2018-09-19 15:42:55</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

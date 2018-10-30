@@ -10,14 +10,14 @@
             <language>en</language>
             <name>x_udg_q_informevsma</name>
             <sequence>0</sequence>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-09 10:32:15</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-10-09 10:48:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4cb025293701e3004ccbd0d543990e61</sys_id>
+            <sys_id>9654216ddb0da7c01f06adc3ca9619a4</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-09 10:32:15</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-09 10:48:15</sys_updated_on>
             <value>comité extern aqu</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -29,24 +29,24 @@
             <language>en</language>
             <name>x_udg_q_informevsma</name>
             <sequence>1</sequence>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-09 10:32:16</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-10-09 10:48:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>00b025293701e3004ccbd0d543990e63</sys_id>
+            <sys_id>d654216ddb0da7c01f06adc3ca9619a5</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-09 10:32:16</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-09 10:48:15</sys_updated_on>
             <value>comité intern</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>origen</element>
             <name>x_udg_q_informevsma</name>
             <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-09 10:32:16</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-10-09 10:48:15</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>88b025293701e3004ccbd0d543990e62</sys_id>
+            <sys_id>1654216ddb0da7c01f06adc3ca9619a5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>origen</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -54,8 +54,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_choice_x_udg_q_informevsma_origen</sys_update_name>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-09 10:32:16</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-09 10:48:15</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

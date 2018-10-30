@@ -4,7 +4,7 @@
         <element default="true" label="Actiu" max_length="40" name="actiu" read_only="true" type="boolean"/>
         <element label="Flux" max_length="8000" name="flux" read_only="true" type="html"/>
         <element label="Llegat A" max_length="4000" name="llegata" reference="x_udg_q_sgq" type="glide_list"/>
-        <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;&#13;&#10;&#9;//return 'P'+current.num+current.sgq.codi+'. '+current.titol;&#13;&#10;&#9;return new x_udg_q.ProcesSGQ().nouNom(current);&#9;&#13;&#10;})(current);" display="true" label="Nom" max_length="100" name="nom" read_only="true" type="string" virtual="true"/>
+        <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#10;&#9;&#10;&#9;//return 'P'+current.num+current.sgq.codi+'. '+current.titol;&#10;&#9;return new x_udg_q.ProcesSGQ().nouNom(current);&#9;&#10;})(current);" display="true" label="Nom" max_length="100" name="nom" read_only="true" type="string" virtual="true"/>
         <element label="Num" mandatory="true" max_length="10" name="num" type="string"/>
         <element label="Objectius" max_length="1500" name="objectius" type="string"/>
         <element label="Pare" max_length="32" name="pare" read_only="true" reference="x_udg_q_proces" type="reference"/>
@@ -13,11 +13,16 @@
         <element choice="1" default="javascript:if (gs.getUser().getPreference('qualitat.sgqActual') != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" reference_qual="actiu=true^EQ" reference_qual_condition="actiu=true^EQ" type="reference">
             <choice/>
         </element>
+        <element choice="1" label="Sincronitzat amb" max_length="32" name="sincronitzat_amb" reference="x_udg_q_proces" reference_qual="sgq.virtual=true^EQ" reference_qual_condition="sgq.virtual=true^EQ" type="reference">
+            <choice/>
+        </element>
         <element choice="3" default="Procés" label="Tipus" mandatory="true" max_length="30" name="tipus" type="string">
             <choice>
-                <element label="Procés" sequence="0" value="Procés"/>
+                <element label="Procediment" value="Procediment"/>
+                <element label="Procediment" value="Procediment"/>
+                <element label="Procés" value="Procés"/>
+                <element label="Procés" value="Procés"/>
                 <element label="Subprocés" sequence="1" value="Subprocés"/>
-                <element label="Procediment" sequence="2" value="Procediment"/>
             </choice>
         </element>
         <element label="Titol" mandatory="true" max_length="180" name="titol" type="string"/>
@@ -31,6 +36,9 @@
             <element name="propietari"/>
         </index>
         <index name="index4">
+            <element name="sincronitzat_amb"/>
+        </index>
+        <index name="index5">
             <element name="sgq"/>
         </index>
     </element>

@@ -11,13 +11,13 @@
             <name>x_udg_q_titulacio</name>
             <sequence/>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-09-13 10:28:57</sys_created_on>
+            <sys_created_on>2018-09-19 15:42:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c2966709dba8eb401f06adc3ca9619cd</sys_id>
+            <sys_id>fbf7a7cfdbe82b80ccd95bd05b96190c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-13 10:28:57</sys_updated_on>
+            <sys_updated_on>2018-09-19 15:42:56</sys_updated_on>
             <value>Grau</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -30,13 +30,13 @@
             <name>x_udg_q_titulacio</name>
             <sequence/>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-09-13 10:28:57</sys_created_on>
+            <sys_created_on>2018-09-19 15:42:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>02966709dba8eb401f06adc3ca9619e7</sys_id>
+            <sys_id>3ff7a7cfdbe82b80ccd95bd05b96190c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-13 10:28:57</sys_updated_on>
+            <sys_updated_on>2018-09-19 15:42:56</sys_updated_on>
             <value>Màsters oficials</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
@@ -44,9 +44,9 @@
             <name>x_udg_q_titulacio</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-09-13 10:28:57</sys_created_on>
+            <sys_created_on>2018-09-19 15:42:56</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>57ae13c3db2ca3009fd1f57eaf9619e5</sys_id>
+            <sys_id>33f7a7cfdbe82b80ccd95bd05b96190d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>tipus</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -55,7 +55,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_choice_x_udg_q_titulacio_tipus</sys_update_name>
             <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-13 10:28:57</sys_updated_on>
+            <sys_updated_on>2018-09-19 15:42:56</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

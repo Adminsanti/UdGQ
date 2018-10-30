@@ -5,69 +5,41 @@
             <element>sys_created_by</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:05:41</sys_created_on>
-            <sys_id>5b00abce378927004ccbd0d543990e0d</sys_id>
+            <sys_created_on>2018-10-30 11:50:03</sys_created_on>
+            <sys_id>18ebb518dbe563009fd1f57eaf961916</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">d38f17ce378927004ccbd0d543990e32</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:05:41</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>publicada_per</element>
-            <position>1</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:05:41</sys_created_on>
-            <sys_id>db00abce378927004ccbd0d543990e0d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">d38f17ce378927004ccbd0d543990e32</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:05:41</sys_updated_on>
+            <sys_updated_on>2018-10-30 11:50:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:05:41</sys_created_on>
-            <sys_id>5f00abce378927004ccbd0d543990e0d</sys_id>
+            <sys_created_on>2018-10-30 11:50:03</sys_created_on>
+            <sys_id>98ebb518dbe563009fd1f57eaf961916</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">d38f17ce378927004ccbd0d543990e32</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:05:41</sys_updated_on>
+            <sys_updated_on>2018-10-30 11:50:03</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sys_created_on</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:05:41</sys_created_on>
-            <sys_id>df00abce378927004ccbd0d543990e0d</sys_id>
+            <sys_created_on>2018-10-30 11:50:03</sys_created_on>
+            <sys_id>1cebb518dbe563009fd1f57eaf961916</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">d38f17ce378927004ccbd0d543990e32</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:05:41</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>publicada</element>
-            <position>4</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:05:41</sys_created_on>
-            <sys_id>5300abce378927004ccbd0d543990e0e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">d38f17ce378927004ccbd0d543990e32</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:05:41</sys_updated_on>
+            <sys_updated_on>2018-10-30 11:50:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

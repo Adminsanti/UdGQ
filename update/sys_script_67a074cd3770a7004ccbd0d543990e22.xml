@@ -62,17 +62,4 @@
         <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=67a074cd3770a7004ccbd0d543990e22"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>67a074cd3770a7004ccbd0d543990e22</documentkey>
-        <fieldname>message</fieldname>
-        <language>ca</language>
-        <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-08 10:54:16</sys_created_on>
-        <sys_id>e02cd8553701a3004ccbd0d543990e31</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-08 10:54:16</sys_updated_on>
-        <tablename>sys_script</tablename>
-        <value/>
-    </sys_translated_text>
 </record_update>

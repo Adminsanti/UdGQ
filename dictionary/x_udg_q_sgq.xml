@@ -8,12 +8,20 @@
         <element label="Propietari" max_length="32" name="propietari" reference="x_udg_q_responsabilitat" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" reference_qual_condition="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" type="reference" use_dependent_field="true"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
         <element label="Responsable" max_length="32" name="responsable" reference="x_udg_q_responsabilitat" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Responsable Orgànic" max_length="32" name="responsable_organic" reference="sys_user" reference_qual="u_is_pac=true^ORu_ispas=true^EQ" reference_qual_condition="u_is_pac=true^ORu_ispas=true^EQ" type="reference"/>
+        <element label="Responsable SGQ" max_length="32" name="responsable_sgq" reference="sys_user" reference_qual="u_is_pac=true^ORu_ispas=true^EQ" reference_qual_condition="u_is_pac=true^ORu_ispas=true^EQ" type="reference"/>
         <element label="Virtual" max_length="40" name="virtual" type="boolean"/>
         <index name="index">
-            <element name="responsable"/>
+            <element name="responsable_sgq"/>
         </index>
         <index name="index2">
+            <element name="responsable"/>
+        </index>
+        <index name="index3">
             <element name="propietari"/>
+        </index>
+        <index name="index4">
+            <element name="responsable_organic"/>
         </index>
     </element>
 </database>

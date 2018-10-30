@@ -10,14 +10,14 @@
             <language>en</language>
             <name>x_udg_q_recomanacions</name>
             <sequence>0</sequence>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:06:33</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-10-19 12:03:31</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>36202fce378927004ccbd0d543990e01</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 11:10:55</sys_updated_on>
+            <sys_id>1a759d30dbd9e7001f06adc3ca9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-19 12:03:31</sys_updated_on>
             <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -29,14 +29,14 @@
             <language>en</language>
             <name>x_udg_q_recomanacions</name>
             <sequence>1</sequence>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:09:05</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-10-19 12:03:31</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c140abce378927004ccbd0d543990e62</sys_id>
-            <sys_mod_count>5</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 11:11:10</sys_updated_on>
+            <sys_id>5a759d30dbd9e7001f06adc3ca9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-19 12:03:31</sys_updated_on>
             <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -48,24 +48,24 @@
             <language>en</language>
             <name>x_udg_q_recomanacions</name>
             <sequence>2</sequence>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:09:51</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-10-19 12:03:31</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f9d0a7ce378927004ccbd0d543990eed</sys_id>
-            <sys_mod_count>5</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 11:11:23</sys_updated_on>
+            <sys_id>9a759d30dbd9e7001f06adc3ca9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-19 12:03:31</sys_updated_on>
             <value>3</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>estat</element>
             <name>x_udg_q_recomanacions</name>
             <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 09:06:33</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-10-19 12:03:31</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>7b30e7ce378927004ccbd0d543990e85</sys_id>
+            <sys_id>9e759d30dbd9e7001f06adc3ca9619a0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>estat</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -73,8 +73,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_choice_x_udg_q_recomanacions_estat</sys_update_name>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:06:33</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-19 12:03:31</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

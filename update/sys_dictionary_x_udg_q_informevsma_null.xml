@@ -55,16 +55,16 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-28 07:20:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>f53b440a37bc2b004ccbd0d543990e48</sys_id>
+        <sys_id>5d3ac50edb3ceb801f06adc3ca96195d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_udg_q_informevsma</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_x_udg_q_informevsma_null</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-28 07:20:06</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_udg_q_informevsma_NULL</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-10-26 07:45:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
