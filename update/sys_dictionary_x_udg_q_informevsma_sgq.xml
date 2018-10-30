@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="sgq" table="x_udg_q_recomanacions">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="sgq" table="x_udg_q_informevsma">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -36,10 +36,10 @@
         <internal_type display_value="Reference">reference</internal_type>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <name>x_udg_q_recomanacions</name>
+        <name>x_udg_q_informevsma</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <reference display_value="" name="x_udg_q_sgq">x_udg_q_sgq</reference>
         <reference_cascade_rule/>
@@ -53,18 +53,18 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-09 10:33:49</sys_created_on>
+        <sys_created_on>2018-10-30 12:06:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>5654216ddb0da7c01f06adc3ca961989</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_id>4d8ef998dbe563009fd1f57eaf96194f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>SGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_x_udg_q_recomanacions_sgq</sys_update_name>
+        <sys_update_name>sys_dictionary_x_udg_q_informevsma_sgq</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-30 12:04:16</sys_updated_on>
+        <sys_updated_on>2018-10-30 12:09:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
