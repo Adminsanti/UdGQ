@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Informe VSMA" max_length="40" name="x_udg_q_informevsma" type="collection">
+        <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Data" max_length="40" name="data" type="glide_date"/>
         <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element choice="1" label="Origen" max_length="60" name="origen" type="string">

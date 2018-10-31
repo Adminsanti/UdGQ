@@ -14,8 +14,7 @@ Reco.prototype = {
 	
 	getEstat: function(recomanacio) {
 		var grObjFills = new GlideRecord('x_udg_q_objectiumillora');
-		var query="recomanacionsLIKE"+recomanacio.sys_id;
-		gs.addInfoMessage("Query: "+query);
+		var query="state!=-5^recomanacionsLIKE"+recomanacio.sys_id;
 		grObjFills.addEncodedQuery(query);
 		grObjFills.query();
 		if (!grObjFills.hasNext()) {
@@ -43,7 +42,7 @@ Reco.prototype = {
         <sys_created_on>2018-10-31 11:25:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b99cfa60dbe5a3009fd1f57eaf9619ea</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Reco</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -51,6 +50,6 @@ Reco.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_b99cfa60dbe5a3009fd1f57eaf9619ea</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-31 11:43:01</sys_updated_on>
+        <sys_updated_on>2018-10-31 13:12:18</sys_updated_on>
     </sys_script_include>
 </record_update>
