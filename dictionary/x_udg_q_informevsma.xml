@@ -9,7 +9,7 @@
                 <element label="Comité intern" sequence="1" value="comité intern"/>
             </choice>
         </element>
-        <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
+        <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
         <element label="Tipus" max_length="60" name="tipus" type="string"/>
         <index name="index">
             <element name="sgq"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Recomanació" max_length="40" name="x_udg_q_recomanacions" type="collection">
+    <element audit="true" label="Recomanació" max_length="40" name="x_udg_q_recomanacions" type="collection">
         <element label="Descripció" max_length="5000" name="descripcio" type="string"/>
         <element choice="3" default="1" label="Estat" max_length="40" name="estat" read_only="true" type="integer">
             <choice>

@@ -43,7 +43,7 @@ ListUtil.prototype = {
 		
 		this.debug = gs.getProperty('debug.ListUtil') == 'true';
 		
-		if (JSUtil.notNil(list)) {
+		if (list !="") {
 			this._list = list.split(',');
 		} else {
 			this._list = [];
@@ -94,7 +94,7 @@ ListUtil.prototype = {
 		return true;
 		
 	},
-		
+	
 	
 	/*
  	* addToList - add an id to the list
@@ -138,6 +138,24 @@ ListUtil.prototype = {
 		return this._list.join(',');
 	},
 	
+	
+	/*
+ 	* addListToList - add a List to the list
+ 	*
+ 	* @param list - list to add
+ 	* @return - NA
+ 	* @uses - this._list
+ 	* Santi 31-X-18
+ 	*/
+	addListToList : function(list) {
+		
+		var arr = list.split(",");
+		for(var i = 0; i < arr.length; i++){
+			if (!this.isInList(arr[i]))
+				this._list.push(arr[i]);
+		}
+	},
+	
 	/*
  	* _getIndex - return the index of an element in list
  	*
@@ -178,7 +196,7 @@ ListUtil.prototype = {
         <sys_created_on>2018-10-19 11:59:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6f14113c3751eb004ccbd0d543990ec7</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>ListUtil</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -186,6 +204,6 @@ ListUtil.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6f14113c3751eb004ccbd0d543990ec7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-22 10:28:39</sys_updated_on>
+        <sys_updated_on>2018-10-31 12:21:39</sys_updated_on>
     </sys_script_include>
 </record_update>
