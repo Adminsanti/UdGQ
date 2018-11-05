@@ -46,11 +46,7 @@
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual>sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_responsabilitat">sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ<item endquery="false" field="sgq" goto="false" newquery="false" operator="=" or="false" value="javascript: gs.getPreference('qualitat.sgqActual','');"/>
-            <item endquery="false" field="activa" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="false" field="usuari" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -74,7 +70,7 @@
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>
