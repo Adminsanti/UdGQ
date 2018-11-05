@@ -19,7 +19,7 @@
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2018-10-18 12:19:42</sys_updated_on>
         <table>x_udg_q_proces</table>
-        <ui_policy display_value="Proces - Amaga camps si no pare">894c446037d5ab004ccbd0d543990e05</ui_policy>
+        <ui_policy display_value="Proces - Llegat">894c446037d5ab004ccbd0d543990e05</ui_policy>
         <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>

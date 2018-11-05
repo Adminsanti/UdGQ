@@ -21,7 +21,7 @@
 	g_form.hideRelatedList('x_udg_q_proces.pare');
 }]]></script_true>
         <set_values/>
-        <short_description>Proces - Hide Proces related list si no llega</short_description>
+        <short_description>Proces - No llegat amagem Related List</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-18 11:59:32</sys_created_on>
@@ -29,8 +29,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c3e9802037d5ab004ccbd0d543990ebd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Proces - Hide Proces related list si no llega</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Proces - No llegat amagem Related List</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -38,7 +38,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_c3e9802037d5ab004ccbd0d543990ebd</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-18 12:01:04</sys_updated_on>
+        <sys_updated_on>2018-11-05 11:38:58</sys_updated_on>
         <table>x_udg_q_proces</table>
         <ui_type>10</ui_type>
         <view/>

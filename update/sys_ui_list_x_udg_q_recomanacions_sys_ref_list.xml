@@ -3,63 +3,78 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_udg_q_recomanacions" version="2" view="sys_ref_list">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>nom</element>
-            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">dfe907a8dbe5a3009fd1f57eaf961915</list_id>
+            <element>number</element>
+            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">9f24f4dadbada7009fd1f57eaf961943</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-31 12:09:31</sys_created_on>
-            <sys_id>5be907a8dbe5a3009fd1f57eaf961916</sys_id>
+            <sys_created_on>2018-11-05 11:44:37</sys_created_on>
+            <sys_id>1724f4dadbada7009fd1f57eaf961944</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-31 12:09:31</sys_updated_on>
+            <sys_updated_on>2018-11-05 11:44:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>estat</element>
-            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">dfe907a8dbe5a3009fd1f57eaf961915</list_id>
+            <element>nom</element>
+            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">9f24f4dadbada7009fd1f57eaf961943</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-31 12:09:31</sys_created_on>
-            <sys_id>dfe907a8dbe5a3009fd1f57eaf961916</sys_id>
+            <sys_created_on>2018-11-05 11:44:37</sys_created_on>
+            <sys_id>9724f4dadbada7009fd1f57eaf961944</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-31 12:09:31</sys_updated_on>
+            <sys_updated_on>2018-11-05 11:44:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>informe</element>
-            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">dfe907a8dbe5a3009fd1f57eaf961915</list_id>
+            <element>estat</element>
+            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">9f24f4dadbada7009fd1f57eaf961943</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-31 12:09:31</sys_created_on>
-            <sys_id>53e907a8dbe5a3009fd1f57eaf961917</sys_id>
+            <sys_created_on>2018-11-05 11:44:37</sys_created_on>
+            <sys_id>1b24f4dadbada7009fd1f57eaf961944</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-31 12:09:31</sys_updated_on>
+            <sys_updated_on>2018-11-05 11:44:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>informe.nom</element>
-            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">dfe907a8dbe5a3009fd1f57eaf961915</list_id>
+            <element>informe</element>
+            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">9f24f4dadbada7009fd1f57eaf961943</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-31 12:09:31</sys_created_on>
-            <sys_id>d3e907a8dbe5a3009fd1f57eaf961917</sys_id>
+            <sys_created_on>2018-11-05 11:44:37</sys_created_on>
+            <sys_id>9b24f4dadbada7009fd1f57eaf961944</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-31 12:09:31</sys_updated_on>
+            <sys_updated_on>2018-11-05 11:44:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>informe.nom</element>
+            <list_id display_value="x_udg_q_recomanacions" element="NULL" name="x_udg_q_recomanacions" parent="NULL" relationship="NULL" sys_domain="global" view="6fabd7dd378022001acdf01643990e32">9f24f4dadbada7009fd1f57eaf961943</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-05 11:44:37</sys_created_on>
+            <sys_id>1f24f4dadbada7009fd1f57eaf961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-05 11:44:37</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -73,11 +88,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-31 12:09:31</sys_created_on>
+            <sys_created_on>2018-11-05 11:44:37</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>dfe907a8dbe5a3009fd1f57eaf961915</sys_id>
+            <sys_id>9f24f4dadbada7009fd1f57eaf961943</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_recomanacions</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -86,7 +101,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_list_x_udg_q_recomanacions_sys_ref_list</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-31 12:09:31</sys_updated_on>
+            <sys_updated_on>2018-11-05 11:44:37</sys_updated_on>
             <sys_user/>
             <view display_value="Reference List" name="sys_ref_list">6fabd7dd378022001acdf01643990e32</view>
             <view_name/>
