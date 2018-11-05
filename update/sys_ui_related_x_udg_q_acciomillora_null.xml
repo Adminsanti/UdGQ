@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_udg_q_acciomillora" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Acció Millora - Default view" name="x_udg_q_acciomillora" related_list="NULL" sys_domain="global" view="Default view">c86c101edb6da7009fd1f57eaf961974</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_udg_q_m2m_accions_objectius.accio_millora</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-05 10:00:38</sys_created_on>
+            <sys_id>006c981edb6da7009fd1f57eaf961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:00:38</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Acció Millora - Default view</calculated_name>
+            <filter/>
+            <name>x_udg_q_acciomillora</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-05 10:00:38</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c86c101edb6da7009fd1f57eaf961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Acció Millora - Default view</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_ui_related_x_udg_q_acciomillora_null</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:00:38</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

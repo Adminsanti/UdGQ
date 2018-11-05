@@ -25,18 +25,75 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Work in Progress</label>
+            <label>Esborrany</label>
+            <language>ca</language>
+            <name>x_udg_q_acciomillora</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-05 09:59:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c02cd01edb6da7009fd1f57eaf9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-05 09:59:33</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defined</label>
             <language>en</language>
             <name>x_udg_q_acciomillora</name>
             <sequence>1</sequence>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-05 09:41:55</sys_created_on>
+            <sys_created_on>2018-11-05 09:54:05</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>bd18d85adb6da7009fd1f57eaf96194b</sys_id>
+            <sys_id>08ea98dadb6da7009fd1f57eaf961931</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-05 09:58:51</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Definida</label>
+            <language>ca</language>
+            <name>x_udg_q_acciomillora</name>
+            <sequence>1</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-05 09:59:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>030c541edb6da7009fd1f57eaf96196c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-05 09:41:55</sys_updated_on>
+            <sys_updated_on>2018-11-05 09:59:12</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>En curs</label>
+            <language>ca</language>
+            <name>x_udg_q_acciomillora</name>
+            <sequence>2</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-05 09:59:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cc3c101edb6da7009fd1f57eaf96196e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-05 09:59:49</sys_updated_on>
             <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -44,7 +101,7 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Closed Complete</label>
+            <label>Work in Progress</label>
             <language>en</language>
             <name>x_udg_q_acciomillora</name>
             <sequence>2</sequence>
@@ -52,10 +109,48 @@
             <sys_created_on>2018-11-05 09:41:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd18d85adb6da7009fd1f57eaf96194b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-05 09:54:05</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_udg_q_acciomillora</name>
+            <sequence>3</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-05 09:41:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
             <sys_id>bd18d85adb6da7009fd1f57eaf96194d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-05 09:58:57</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tancada</label>
+            <language>ca</language>
+            <name>x_udg_q_acciomillora</name>
+            <sequence>3</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-05 10:00:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>673c941edb6da7009fd1f57eaf961922</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-05 09:41:55</sys_updated_on>
+            <sys_updated_on>2018-11-05 10:00:03</sys_updated_on>
             <value>3</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
