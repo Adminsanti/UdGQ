@@ -11,7 +11,7 @@
         </element>
         <element label="Informe" max_length="32" name="informe" reference="x_udg_q_informevsma" type="reference"/>
         <element attributes="no_truncate=true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Compulsory" max_length="40" name="obligatoria" type="boolean"/>
         <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
         <index name="index">
