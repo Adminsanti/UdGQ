@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="1" type="collection">
+        <element default="0" label="Percentatge" max_length="40" name="percentatge" type="percent_complete"/>
         <element label="Responsable" max_length="32" name="responsable" reference="x_udg_q_responsabilitat" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" reference_qual_condition="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" type="reference"/>
         <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
     </element>

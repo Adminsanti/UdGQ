@@ -211,6 +211,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>accions</element>
+            <position>15</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-06 16:25:14</sys_created_on>
+            <sys_id>a7fdf6e2db2d23009fd1f57eaf9619fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-06 16:25:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Objectiu</caption>
             <header>false</header>

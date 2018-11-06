@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_udg_q.ObjectiuUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ObjectiuUtils</name>
+        <script><![CDATA[var ObjectiuUtils = Class.create();
+ObjectiuUtils.prototype = {
+	initialize: function() {
+	},
+	
+	actualitzaObjectiu: function (objectiu) {
+		//objectius = sys_id de l'objectiu
+		//actualitza un objectius a partir de totes les accions que hi contribueixen en funció de la ponderació
+		gs.info("SC - ObjectiuUtils.actualitzaObjectiu per objectiu: "+objectiu);
+		var assoliment=0;
+		var ponderacions=0;
+		var accions=0;
+		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
+		grM2m.addQuery('objectiu_millora', objectiu);
+		grM2m.query();
+		while (grM2m.next()){ //Per cada action
+			accions++;
+			if (grM2m.contribucio >0 && grM2m.accio_millora.state!=-5) { //L'accio ha de contribució>0 i no estar en esborrany
+				ponderacions += grM2m.contribucio;
+				assoliment += (grM2m.accio_millora.percentatge*grM2m.contribucio);
+			}
+		}
+		var grObjectiu = new GlideRecord ('x_udg_q_objectiumillora');
+		grObjectiu.get (objectiu);
+		if (grObjectiu.accions!=accions)
+			grObjectiu.accions=accions;
+		
+		if (ponderacions>0)
+			grObjectiu.assoliment = (assoliment/ponderacions);
+		
+		else
+			grObjectiu.assoliment=0;
+		
+		grObjectiu.update();
+	},
+	
+	actualitzaAccio: function (accio) {
+		//Actualitza tots els objectius als que contribueix una acció
+		gs.info("SC - ObjectiuUtils.actualitzaAccio per acció: "+accio);
+		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
+		grM2m.addQuery('accio_millora',accio);
+		grM2m.query();
+		while (grM2m.next()) {
+			this.actualitzaObjectiu(grM2m.objectiu_millora);
+		}
+	},
+	
+	
+	type: 'ObjectiuUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-11-06 16:28:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>ObjectiuUtils</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-11-06 17:23:01</sys_updated_on>
+    </sys_script_include>
+</record_update>
