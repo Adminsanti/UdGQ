@@ -3,8 +3,8 @@
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
         <access>package_private</access>
-        <action_delete>true</action_delete>
-        <action_insert>true</action_insert>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
@@ -12,17 +12,16 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_acciomillora</collection>
+        <collection>x_udg_q_responsabilitat</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_udg_q_acciomillora">percentatgeVALCHANGES^ORstateCHANGESFROM-5^EQ<item endquery="false" field="percentatge" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
-            <item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="true" value="-5"/>
+        <filter_condition table="x_udg_q_responsabilitat">usuariVALCHANGES^EQ<item endquery="false" field="usuari" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Acció canvia percentatge</name>
+        <name>Responsabilitat canvia usuari</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,30 +31,37 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
-	var a = new ObjectiuUtils();
-	a.actualitzaAccio(current.sys_id);
-
+	
+	gs.info("SC - "+ current.sgq.codi+ " - BR \'Responsabilitat canvia usuari\' "+ current.nom +" -> "+current.usuari.name);
+	msg('tots els OBJECTIUS definits');
+	new x_udg_q.ObjectiuUtils().actualitzaObjectiusResponsable(current);
+	msg('totes les ACCIONS definides');
+	new x_udg_q.AccioUtils().actualitzaAccionsResponsable(current);
+	action.setRedirectURL(current);
+	
+	function msg (param) {
+		gs.addInfoMessage('Reassignant '+param+' de la responsabilitat '+ current.nom + " de "+previous.usuari.name+ " a "+ current.usuari.name);
+	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-06 16:40:16</sys_created_on>
+        <sys_created_on>2018-11-09 10:56:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f6d04366db2d23009fd1f57eaf9619b3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Acció canvia percentatge</sys_name>
+        <sys_id>8ced852737652b004ccbd0d543990eb7</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Responsabilitat canvia usuari</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_script_f6d04366db2d23009fd1f57eaf9619b3</sys_update_name>
+        <sys_update_name>sys_script_8ced852737652b004ccbd0d543990eb7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-09 09:28:48</sys_updated_on>
+        <sys_updated_on>2018-11-09 12:56:26</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=f6d04366db2d23009fd1f57eaf9619b3"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8ced852737652b004ccbd0d543990eb7"/>
 </record_update>

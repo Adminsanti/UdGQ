@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="2" type="collection">
+    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="13" type="collection">
         <element default="0" label="Accions" max_length="40" name="accions" read_only="true" type="integer"/>
         <element default="0" label="Assoliment" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
         <element label="Codi antic" max_length="40" name="codi_antic" type="string"/>

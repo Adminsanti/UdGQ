@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Objectiu-Declarar </action_name>
+        <action_name>Recalcula-assoliment</action_name>
         <active>true</active>
         <client>false</client>
         <comments/>
-        <condition>current.state == -5 </condition>
+        <condition/>
         <form_action>true</form_action>
-        <form_button>true</form_button>
+        <form_button>false</form_button>
         <form_context_menu>false</form_context_menu>
-        <form_link>false</form_link>
+        <form_link>true</form_link>
         <form_style/>
         <hint/>
         <list_action>true</list_action>
@@ -20,48 +20,33 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Definir Objectiu</name>
+        <name>Recalcula assoliment</name>
         <onclick/>
-        <order>1000</order>
-        <script><![CDATA[if (current.responsable == '') {
-	current.update(); //gravem igualment
-	gs.addErrorMessage(current.number+" s'ha desat però NO ES POT DEFINIR per manca de responsable");
-	
-}
-else
-	{
-	current.state = 1;
-	current.active=true;
-	var ara = new GlideDateTime();
-	current.declarat= ara.toString();
-	current.declarat_per=gs.getUserID();
-	current.update();
-	gs.addInfoMessage(current.number+ " definit");
-}
-action.setRedirectURL(current);
-
-]]></script>
+        <order>100</order>
+        <script><![CDATA[var a = new x_udg_q.ObjectiuUtils();
+a.actualitzaObjectiu(current.objectiu_millora);
+action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-23 09:10:20</sys_created_on>
+        <sys_created_on>2018-11-09 09:33:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>d4c3914edb59af009fd1f57eaf96198d</sys_id>
-        <sys_mod_count>27</sys_mod_count>
-        <sys_name>Definir Objectiu</sys_name>
+        <sys_id>571cf02b37252b004ccbd0d543990e34</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Recalcula assoliment</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_action_d4c3914edb59af009fd1f57eaf96198d</sys_update_name>
+        <sys_update_name>sys_ui_action_571cf02b37252b004ccbd0d543990e34</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-09 10:51:48</sys_updated_on>
+        <sys_updated_on>2018-11-09 10:33:29</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

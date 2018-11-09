@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_udg_q.AccioUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>AccioUtils</name>
+        <script><![CDATA[var AccioUtils = Class.create();
+AccioUtils.prototype = {
+	initialize: function() {
+	},
+	
+	actualitzaAccionsResponsable: function (responsabilitat) {
+		var grAcc = new GlideRecord ('x_udg_q_acciomillora');
+		grAcc.addQuery('responsable', responsabilitat.sys_id);
+		grAcc.addQuery('state!=-5'); //No esborrany
+		grAcc.query();
+		gs.info("SC - "+responsabilitat.sgq.codi+" AccioUtils.actualitzaAccioResponsable busca accions amb responsable: "+ responsabilitat.nom);
+		while (grAcc.next()) {
+			gs.info("SC - "+grAcc.sgq.codi+" - " +grAcc.number +" AccioUtils.actualitzaAccionsResponsable actualitza ("+responsabilitat.nom +") " + grAcc.assigned_to.name +" -> "+ responsabilitat.usuari.name);
+			grAcc.assigned_to=responsabilitat.usuari;
+			grAcc.update();
+		}
+	},
+	
+	type: 'AccioUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-11-09 12:30:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a005e5e337a52b004ccbd0d543990ea7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>AccioUtils</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_include_a005e5e337a52b004ccbd0d543990ea7</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-11-09 12:54:04</sys_updated_on>
+    </sys_script_include>
+</record_update>
