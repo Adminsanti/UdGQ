@@ -12,14 +12,16 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_responsabilitat</collection>
+        <collection>x_udg_q_funcio</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_udg_q_funcio">usuariVALCHANGES^EQ<item endquery="false" field="usuari" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>SGQ query per Responsabilitat</name>
+        <name>Funcio canvia usuari</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -28,34 +30,38 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
-
-//gs.addInfoMessage("Visivilitat total per :"+gs.getProperty('x_udg_q.uidSGQvisivilitatTotal'));
-//gs.addInfoMessage("EL SGQ actual és : "+SGQpref);
-if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
-	//gs.addInfoMessage ("Consultarem només :"+SGQpref);
-	current.addQuery('sgq',SGQpref);
-}
-]]></script>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	gs.info("SC - "+ current.sgq.codi+ " - BR \'Responsabilitat canvia usuari\' "+ current.nom +" -> "+current.usuari.name);
+	msg('tots els OBJECTIUS definits');
+	new x_udg_q.ObjectiuUtils().actualitzaObjectiusResponsable(current);
+	msg('totes les ACCIONS definides');
+	new x_udg_q.AccioUtils().actualitzaAccionsResponsable(current);
+	action.setRedirectURL(current);
+	
+	function msg (param) {
+		gs.addInfoMessage('Reassignant '+param+' de la responsabilitat '+ current.nom + " de "+previous.usuari.name+ " a "+ current.usuari.name);
+	}
+})(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-09-25 09:45:14</sys_created_on>
+        <sys_created_on>2018-11-14 11:41:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3eaf014537f0a7004ccbd0d543990e31</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>SGQ query per Responsabilitat</sys_name>
+        <sys_id>b999cf45db79e7009fd1f57eaf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Funcio canvia usuari</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_script_3eaf014537f0a7004ccbd0d543990e31</sys_update_name>
+        <sys_update_name>sys_script_b999cf45db79e7009fd1f57eaf961916</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-25 11:33:35</sys_updated_on>
+        <sys_updated_on>2018-11-14 11:41:15</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=3eaf014537f0a7004ccbd0d543990e31"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=b999cf45db79e7009fd1f57eaf961916"/>
 </record_update>
