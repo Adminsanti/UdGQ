@@ -12,13 +12,13 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>3</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Responsable</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>javascript: new x_udg_q.Sgq()getResponsableSgqActual();</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -46,11 +46,7 @@
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual>sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_funcio">sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ<item endquery="false" field="sgq" goto="false" newquery="false" operator="=" or="false" value="javascript: gs.getPreference('qualitat.sgqActual','');"/>
-            <item endquery="false" field="activa" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="false" field="usuari" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -60,7 +56,7 @@
         <sys_created_on>2018-10-09 11:06:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f5413525db8da7c01f06adc3ca9619a1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Responsable</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -68,13 +64,13 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_acciomillora_responsable</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-14 10:50:12</sys_updated_on>
+        <sys_updated_on>2018-11-14 11:16:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>
