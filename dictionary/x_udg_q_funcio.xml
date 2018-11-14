@@ -5,7 +5,7 @@
         <element label="Membres" max_length="32" name="membres" read_only="true" reference="sys_user" type="glide_list"/>
         <element label="Membres funcions" max_length="4000" name="membres_funcions" reference="x_udg_q_funcio" type="glide_list"/>
         <element label="Membres títol personal" max_length="4000" name="membres_titol_personal" reference="sys_user" type="glide_list"/>
-        <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element attributes="no_truncate=true" display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
         <element label="Suport" max_length="4000" name="suport" reference="sys_user" type="glide_list"/>
         <element choice="3" default="Unipersonal" label="Tipus" mandatory="true" max_length="40" name="tipus" type="string">
