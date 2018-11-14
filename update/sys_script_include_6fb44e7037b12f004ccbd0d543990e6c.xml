@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_udg_q.FuncioUtil</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FuncioUtil</name>
+        <script><![CDATA[var FuncioUtil = Class.create();
+FuncioUtil.prototype = {
+	initialize: function() {
+	},
+	
+	registraHistoric: function (current, previous) {
+		var gr = new GlideRecord("x_udg_q_historicfuncio");
+		var ha_canviat =false;
+		gr.data= new GlideDateTime().getDisplayValue();
+		gr.funcio=previous.sys_id;
+		
+		gr.activa=current.activa;
+		
+		if (previous.activa != current.activa) {
+			ha_canviat=true;
+		}
+		
+		if (previous.nom != current.nom) {
+			ha_canviat=true;
+			gr.nomv=previous.nom;
+			gr.nomn=current.nom;
+		}
+		
+		if (previous.usuari != current.usuari) {
+			ha_canviat=true;
+			gr.usuariv=previous.usuari;
+			gr.usuarin=current.usuari;
+		}
+		
+		if (previous.tipus != current.tipus) {
+			ha_canviat=true;
+			gr.tipusv=previous.tipus;
+			gr.tipusn=current.tipus;
+		}
+		
+		if (previous.suport != current.suport) {
+			ha_canviat=true;
+			gr.suportv=previous.suport;
+			gr.suportn=current.suport;
+		}
+		
+		if (previous.membres_funcions != current.membres_funcions) {
+			ha_canviat=true;
+			gr.membres_funcionsv=previous.membres_funcions;
+			gr.membres_funcionsn=current.membres_funcions;
+		}
+		
+		if (previous.membres_titol_personal!= current.membres_titol_personal) {
+			ha_canviat=true;
+			gr.membres_titol_personalv=previous.membres_titol_personal;
+			gr.membres_titol_personaln=current.membres_titol_personal;
+		}
+		
+		
+		// Assegurar que s'ha actuaalitzat la llista per no generar dos registres
+		if (previous.membres != current.membres) {
+			ha_canviat=true;
+			gr.membresv=previous.membres;
+			gr.membresv=current.membres;
+		}
+		
+		if (ha_canviat)
+			gr.insert();
+	},
+	
+	type: 'FuncioUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-11-13 12:28:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6fb44e7037b12f004ccbd0d543990e6c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>FuncioUtil</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_include_6fb44e7037b12f004ccbd0d543990e6c</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-11-14 10:57:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

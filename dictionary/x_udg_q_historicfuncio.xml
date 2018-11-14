@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Històric Funció" max_length="40" name="x_udg_q_historicfuncio" type="collection">
+        <element label="ActivaN" max_length="40" name="activan" type="boolean"/>
+        <element label="Data" max_length="40" name="data" type="glide_date_time"/>
+        <element label="Funció" max_length="32" name="funcio" reference="x_udg_q_funcio" type="reference"/>
+        <element label="MembresN" max_length="4000" name="membresn" reference="sys_user" type="glide_list"/>
+        <element label="MembresV" max_length="4000" name="membresv" reference="sys_user" type="glide_list"/>
+        <element label="Membres funcionsN" max_length="4000" name="membres_funcionsn" reference="x_udg_q_funcio" type="glide_list"/>
+        <element label="Membres funcionsV" max_length="4000" name="membres_funcionsv" reference="x_udg_q_funcio" type="glide_list"/>
+        <element label="Membres titol personalN" max_length="4000" name="membres_titol_personaln" reference="sys_user" type="glide_list"/>
+        <element label="Membres titol personalV" max_length="4000" name="membres_titol_personalv" reference="sys_user" type="glide_list"/>
+        <element label="NomN" max_length="140" name="nomn" type="string"/>
+        <element label="NomV" max_length="140" name="nomv" type="string"/>
+        <element label="SuportN" max_length="4000" name="suportn" reference="sys_user" type="glide_list"/>
+        <element label="SuportV" max_length="4000" name="suportv" reference="sys_user" type="glide_list"/>
+        <element label="TipusN" max_length="40" name="tipusn" type="string"/>
+        <element label="TipusV" max_length="40" name="tipusv" type="string"/>
+        <element label="UsuariN" max_length="32" name="usuarin" reference="sys_user" type="reference"/>
+        <element label="UsuariV" max_length="32" name="usuariv" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="usuariv"/>
+        </index>
+        <index name="index2">
+            <element name="funcio"/>
+        </index>
+        <index name="index3">
+            <element name="usuarin"/>
+        </index>
+    </element>
+</database>

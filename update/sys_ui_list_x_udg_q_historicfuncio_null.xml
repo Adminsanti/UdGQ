@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_udg_q_historicfuncio" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>funcio</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>ff4043cddb39e7009fd1f57eaf961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>data</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>b74043cddb39e7009fd1f57eaf961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>activan</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>3b4043cddb39e7009fd1f57eaf961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>nomn</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>bb4043cddb39e7009fd1f57eaf961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>nomv</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>3f4043cddb39e7009fd1f57eaf961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>membres_funcionsn</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>bf4043cddb39e7009fd1f57eaf961929</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>membres_funcionsv</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>334043cddb39e7009fd1f57eaf96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>membres_titol_personaln</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>bb40c3cddb39e7009fd1f57eaf9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>membres_titol_personalv</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>3f40c3cddb39e7009fd1f57eaf9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>membresn</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>bf40c3cddb39e7009fd1f57eaf9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>tipusn</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>3340c3cddb39e7009fd1f57eaf9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>membresv</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>b340c3cddb39e7009fd1f57eaf9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>suportn</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>3740c3cddb39e7009fd1f57eaf9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>suportv</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>b740c3cddb39e7009fd1f57eaf9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>tipusv</element>
+            <list_id display_value="x_udg_q_historicfuncio" element="NULL" name="x_udg_q_historicfuncio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f34043cddb39e7009fd1f57eaf961928</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_id>3b40c3cddb39e7009fd1f57eaf9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_udg_q_historicfuncio</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 11:00:10</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f34043cddb39e7009fd1f57eaf961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_udg_q_historicfuncio</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_ui_list_x_udg_q_historicfuncio_null</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 11:00:10</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

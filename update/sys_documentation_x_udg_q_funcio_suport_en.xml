@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="suport" label="Suport" language="en" table="x_udg_q_funcio">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>suport</element>
+            <help/>
+            <hint/>
+            <label>Suport</label>
+            <language>en</language>
+            <name>x_udg_q_funcio</name>
+            <plural>Suports</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-14 10:45:16</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a9ec3e0ddb39e7009fd1f57eaf96190c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Suport</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_q_funcio_suport_en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-14 10:45:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
