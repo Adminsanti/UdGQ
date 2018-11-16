@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Funció" max_length="40" name="x_udg_q_funcio" type="collection">
-        <element default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
-        <element label="Membres" max_length="32" name="membres" read_only="true" reference="sys_user" type="glide_list"/>
+        <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
+        <element hint="La llista de membres es calcula automàticament com la suma dels membres que ho són a títol personal i els que ho són per la seva funció. SI ho modefiqueu, s'actualitzarà quan deseu." label="Membres" max_length="32" name="membres" read_only="true" reference="sys_user" type="glide_list"/>
         <element label="Membres funcions" max_length="4000" name="membres_funcions" reference="x_udg_q_funcio" type="glide_list"/>
         <element label="Membres títol personal" max_length="4000" name="membres_titol_personal" reference="sys_user" type="glide_list"/>
         <element attributes="no_truncate=true" display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>

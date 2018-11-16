@@ -12,14 +12,16 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_funcio</collection>
+        <collection>x_udg_q_objectiumillora</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_udg_q_objectiumillora">stateCHANGESFROM-5^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="-5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Funcio canvia</name>
+        <name>Objectiu actualitza assoliment al Defini</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,28 +32,29 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	new x_udg_q.FuncioUtil().registraHistoric(current, previous);
-	
+var a= new x_udg_q.ObjectiuUtils();
+	a.actualitzaObjectiu(current);
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-13 12:31:38</sys_created_on>
+        <sys_created_on>2018-11-16 12:27:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0b8b8a7437b12f004ccbd0d543990e50</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Funcio canvia</sys_name>
+        <sys_id>24c629f5db3163009fd1f57eaf9619d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Objectiu actualitza assoliment al Defini</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_script_0b8b8a7437b12f004ccbd0d543990e50</sys_update_name>
+        <sys_update_name>sys_script_24c629f5db3163009fd1f57eaf9619d1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-16 12:47:56</sys_updated_on>
+        <sys_updated_on>2018-11-16 12:27:28</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=0b8b8a7437b12f004ccbd0d543990e50"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=24c629f5db3163009fd1f57eaf9619d1"/>
 </record_update>

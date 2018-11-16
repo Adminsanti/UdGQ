@@ -33,9 +33,8 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	var a = new ObjectiuUtils();
-	a.actualitzaAccio(current.sys_id);
-
+	new AccioUtils(current.sys_id).actualitzaAssolimentTotsObjectius();
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -44,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f6d04366db2d23009fd1f57eaf9619b3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Acció canvia percentatge</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -53,7 +52,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_f6d04366db2d23009fd1f57eaf9619b3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-09 09:28:48</sys_updated_on>
+        <sys_updated_on>2018-11-16 12:42:34</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

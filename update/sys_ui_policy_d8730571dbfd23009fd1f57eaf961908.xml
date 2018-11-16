@@ -2,8 +2,7 @@
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_udg_q_objectiumillora">state=-5^responsableISEMPTY^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
-            <item endquery="false" field="responsable" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+        <conditions table="x_udg_q_funcio">tipus=Unipersonal^EQ<item endquery="false" field="tipus" goto="false" newquery="false" operator="=" or="false" value="Unipersonal"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -16,32 +15,38 @@
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-g_form.hideFieldMsg('responsable', true);
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-g_form.showFieldMsg('responsable',"Podeu desar l'bjectiu com esborrany, però no avançar l'estat a definit fins que tingui responsable");
+	if (g_form.getValue('membres') !='' ||
+	g_form.getValue('membres_funcions') !='' ||
+	g_form.getValue('membres_titol_personal') !='') {
+		g_form.setValue('membres','');
+		g_form.setValue('membres_funcions','');
+		g_form.setValue('membres_titol_personal','');
+		g_form.addInfoMessage('Com que heu canviat el tipus de la funció a Unipersonal, quan deseu, els membres que existien s\'eliminaran');
+	}
 }]]></script_true>
         <set_values/>
-        <short_description>Objectu avís sense Responsable</short_description>
+        <short_description>Funcio is Unipersonal</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-23 09:22:20</sys_created_on>
+        <sys_created_on>2018-11-16 10:00:11</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>4d8659cedb59af009fd1f57eaf9619a4</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Objectu avís sense Responsable</sys_name>
+        <sys_id>d8730571dbfd23009fd1f57eaf961908</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Funcio is Unipersonal</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_policy_4d8659cedb59af009fd1f57eaf9619a4</sys_update_name>
+        <sys_update_name>sys_ui_policy_d8730571dbfd23009fd1f57eaf961908</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-16 11:48:26</sys_updated_on>
-        <table>x_udg_q_objectiumillora</table>
-        <ui_type>0</ui_type>
+        <sys_updated_on>2018-11-16 10:30:51</sys_updated_on>
+        <table>x_udg_q_funcio</table>
+        <ui_type>10</ui_type>
         <view/>
     </sys_ui_policy>
 </record_update>
