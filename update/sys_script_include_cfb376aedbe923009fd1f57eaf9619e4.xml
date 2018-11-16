@@ -14,9 +14,13 @@ ObjectiuUtils.prototype = {
 	},
 	
 	actualitzaAssoliment: function () {
-		//actualitza un objectiu a partir de totes les accions que hi contribueixen en funció de la ponderació
+		gs.info("SC - ObjectiuUtils.actualitzaAssoliment: "+this._objectiu);//Actualitza l'assoliment d'un objectiu a partir de totes les accions que hi contribueixen
 		
-		gs.info("SC - ObjectiuUtils.actualitzaAssoliment: "+this._objectiu);
+		if (this._objectiu.state==-5 || this._objectiu.state==5) {
+			gs.addErrorMessage ("NO s'actualitza l'assoliment d'esborranys ni d'objectius tancats");
+			return;
+		}
+		
 		var assoliment=0;
 		var ponderacions=0;
 		var accions=0;
@@ -32,10 +36,6 @@ ObjectiuUtils.prototype = {
 		}
 		var grObjectiu = new GlideRecord ('x_udg_q_objectiumillora');
 		grObjectiu.get (this._objectiu);
-		if (grObjectiu.state==-5 || grObjectiu.state==5) {
-			gs.addErrorMessage ("NO s'actualitzen esborranys ni objectius tancats");
-			return;
-		}
 		
 		if (grObjectiu.accions!=accions)
 			grObjectiu.accions=accions;
@@ -46,7 +46,17 @@ ObjectiuUtils.prototype = {
 		else
 			grObjectiu.assoliment=0;
 		
+		grObjectiu.state=this.estatPerAssoliment(grObjectiu.assoliment);
+		
 		grObjectiu.update();
+	},
+	
+	estatPerAssoliment: function (assoliment) {
+		if (assoliment <= 0)
+			return 1;
+		if (assoliment >= 100)
+			return 3;
+		return 2;
 	},
 	
 	actualitzaObjectiusResponsable: function (funcio) {
@@ -70,7 +80,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -78,6 +88,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-16 13:05:08</sys_updated_on>
+        <sys_updated_on>2018-11-16 13:27:51</sys_updated_on>
     </sys_script_include>
 </record_update>
