@@ -12,7 +12,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_ui_action display_value="Regenerar Llegats">6f7b0479db596f009fd1f57eaf96199f</sys_ui_action>
+        <sys_ui_action display_value="Regenera Llegats">6f7b0479db596f009fd1f57eaf96199f</sys_ui_action>
         <sys_update_name>sys_ui_action_role_bc1c4839db596f009fd1f57eaf9619ba</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2018-10-22 09:24:58</sys_updated_on>

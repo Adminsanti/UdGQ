@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Observador" max_length="40" name="x_udg_q_observador" type="collection">
+        <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element display="true" label="Usuari" max_length="32" name="usuari" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="usuari"/>
+        </index>
+        <index name="index2">
+            <element name="sgq"/>
+        </index>
+    </element>
+</database>

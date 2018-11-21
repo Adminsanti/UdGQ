@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <conditions table="x_udg_q_objectiumillora">state=-5^responsable.usuariNSAMEASassigned_to^responsableISNOTEMPTY^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
             <item endquery="false" field="responsable.usuari" goto="false" newquery="false" operator="NSAMEAS" or="false" value="assigned_to"/>
             <item endquery="false" field="responsable" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
@@ -23,7 +23,7 @@ g_form.hideFieldMsg('assigned_to', true);
 g_form.showFieldMsg('assigned_to',"No s'assiganarà al responsable mentre Esborrany");
 }]]></script_true>
         <set_values/>
-        <short_description>Objectiu en esborrany avis assignat a l'usuari</short_description>
+        <short_description>RECYCLAR Objectiu en esborrany avis assignat a l'usuari</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-23 08:56:19</sys_created_on>
@@ -31,8 +31,8 @@ g_form.showFieldMsg('assigned_to',"No s'assiganarà al responsable mentre Esborr
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>49805d8adb59af009fd1f57eaf961905</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_name>Objectiu en esborrany avis assignat a l'usuari</sys_name>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>RECYCLAR Objectiu en esborrany avis assignat a l'usuari</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -40,7 +40,7 @@ g_form.showFieldMsg('assigned_to',"No s'assiganarà al responsable mentre Esborr
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_49805d8adb59af009fd1f57eaf961905</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-16 12:20:44</sys_updated_on>
+        <sys_updated_on>2018-11-19 10:36:12</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui_type>0</ui_type>
         <view/>

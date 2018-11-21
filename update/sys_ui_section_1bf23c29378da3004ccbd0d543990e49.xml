@@ -2,16 +2,30 @@
 <record_update>
     <sys_ui_section caption="Seguiment" section_id="1bf23c29378da3004ccbd0d543990e49" sys_domain="global" table="x_udg_q_objectiumillora" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>activity.xml</element>
+            <element>work_notes</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-11 07:27:45</sys_created_on>
-            <sys_id>3ca943c2378927004ccbd0d543990e06</sys_id>
+            <sys_created_on>2018-11-21 09:43:18</sys_created_on>
+            <sys_id>0ad1be1bdb3d27009fd1f57eaf961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">1bf23c29378da3004ccbd0d543990e49</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-21 09:43:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-21 09:43:18</sys_created_on>
+            <sys_id>8ad1be1bdb3d27009fd1f57eaf961961</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
             <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">1bf23c29378da3004ccbd0d543990e49</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-11 07:27:45</sys_updated_on>
+            <sys_updated_on>2018-11-21 09:43:18</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
