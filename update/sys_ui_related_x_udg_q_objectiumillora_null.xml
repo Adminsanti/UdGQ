@@ -3,17 +3,17 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_objectiumillora" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Objectiu Millora - Default view" name="x_udg_q_objectiumillora" related_list="NULL" sys_domain="global" view="Default view">2d56dcd6db6da7009fd1f57eaf9619f8</list_id>
+            <list_id display_value="Objectiu Millora - Default view" name="x_udg_q_objectiumillora" related_list="NULL" sys_domain="global" view="Default view">6a3c0c23db3167009fd1f57eaf9619aa</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_udg_q_m2m_accions_objectius.objectiu_millora</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-05 09:34:14</sys_created_on>
-            <sys_id>e556dcd6db6da7009fd1f57eaf9619f9</sys_id>
+            <sys_created_on>2018-11-21 16:18:11</sys_created_on>
+            <sys_id>223c0c23db3167009fd1f57eaf9619ab</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-05 09:34:14</sys_updated_on>
+            <sys_updated_on>2018-11-21 16:18:11</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Objectiu Millora - Default view</calculated_name>
@@ -24,11 +24,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-05 09:34:14</sys_created_on>
+            <sys_created_on>2018-11-21 16:18:11</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2d56dcd6db6da7009fd1f57eaf9619f8</sys_id>
+            <sys_id>6a3c0c23db3167009fd1f57eaf9619aa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Objectiu Millora - Default view</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -37,7 +37,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_related_x_udg_q_objectiumillora_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-05 09:34:14</sys_updated_on>
+            <sys_updated_on>2018-11-21 16:18:11</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

@@ -22,7 +22,7 @@
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
-        <column>state</column>
+        <column>accions</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
         <created_by_user display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</created_by_user>
@@ -38,9 +38,10 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>responsable</field>
+        <field>accions</field>
         <field_list/>
-        <filter/>
+        <filter table="x_udg_q_objectiumillora">closed_at&lt;=javascript:gs.endOfLastYear()<item endquery="false" field="closed_at" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.endOfLastYear()"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -76,7 +77,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>chart_colors</set_color>
+        <set_color/>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -87,31 +88,31 @@
         <show_legend>true</show_legend>
         <show_legend_border>false</show_legend_border>
         <show_marker>true</show_marker>
-        <show_zero>false</show_zero>
+        <show_zero>true</show_zero>
         <source_type>table</source_type>
         <start_time/>
         <sumfield>accions</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-06 17:29:34</sys_created_on>
+        <sys_created_on>2018-11-21 16:59:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>fdbc8f2edb2d23009fd1f57eaf961928</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Objectius per responsable apilat estat</sys_name>
+        <sys_id>3ec5906bdb3167009fd1f57eaf961940</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Tancats el darrer any</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_report_fdbc8f2edb2d23009fd1f57eaf961928</sys_update_name>
+        <sys_update_name>sys_report_3ec5906bdb3167009fd1f57eaf961940</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-21 17:30:13</sys_updated_on>
+        <sys_updated_on>2018-11-21 17:25:53</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
-        <title>Objectius per responsable apilat estat</title>
+        <title>Tancats el darrer any</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>state</trend_field>
-        <type>bar</type>
+        <trend_field>activity_due</trend_field>
+        <type>single_score</type>
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>
         <use_color_palette>false</use_color_palette>

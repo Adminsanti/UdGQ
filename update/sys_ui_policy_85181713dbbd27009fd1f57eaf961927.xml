@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>200</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	g_form.setMandatory('justificaciopercentatge',false);
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	var p= g_form.getDecimalValue('percentatge');
+	g_form.addInfoMessage("p= "+p);
+	if (p>0 && p<100) {
+		g_form.setMandatory('justificaciopercentatge',true);
+		if (p==100) {
+			if (g_form.getValue()!=5) g_form.showFieldMsg('justificaciopercentatge',"Es recomana una justificació de l\'assoliment");
+		}else {''
+			g_form.showFieldMsg('justificaciopercentatge',"Es requereix una justificació del percentatge d\execució per les accions en curs");
+		}
+	} else {
+		g_form.setMandatory('justificaciopercentatge',false);
+	}
+	
+	
+}]]></script_true>
+        <set_values/>
+        <short_description>RECYCLE Acció percentatge &gt;0 &gt;100 justificacioó mandatory</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-11-21 12:32:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85181713dbbd27009fd1f57eaf961927</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>RECYCLE Acció percentatge &gt;0 &gt;100 justificacioó mandatory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_policy_85181713dbbd27009fd1f57eaf961927</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-11-21 15:13:41</sys_updated_on>
+        <table>x_udg_q_acciomillora</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

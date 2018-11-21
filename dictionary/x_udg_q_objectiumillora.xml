@@ -2,13 +2,11 @@
 <database>
     <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="14" type="collection">
         <element default="0" label="Accions" max_length="40" name="accions" read_only="true" type="integer"/>
-        <element default="0" label="Assoliment" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
+        <element attributes="target_threshold_colors=0:#C71585;1:yellow;50:orange;99:lightgreen" default="0" label="Assoliment" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
         <element label="Codi antic" max_length="40" name="codi_antic" type="string"/>
-        <element label="Data Valoracio" max_length="40" name="datavaloracio" read_only="true" type="glide_date_time"/>
         <element label="Definit" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Definit per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
         <element label="Diagnòstic" max_length="1500" name="diagnostic" type="string"/>
-        <element label="Esborrany Valoració" max_length="4000" name="esborranyvaloracio" type="string"/>
         <element choice="1" label="Fet fita" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="sgqSAMEASsgq^EQ" reference_qual_condition="sgqSAMEASsgq^EQ" type="reference">
             <choice/>
         </element>
@@ -25,6 +23,6 @@
         <element choice="1" label="Subestàndard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" type="reference">
             <choice/>
         </element>
-        <element label="Valoració" max_length="4000" name="valoracio" read_only="true" type="string"/>
+        <element label="Valoració" max_length="4000" name="valoracio" type="string"/>
     </element>
 </database>

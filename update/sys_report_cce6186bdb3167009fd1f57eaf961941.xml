@@ -11,24 +11,24 @@
         <chart_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</chart_border_color>
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
-        <chart_height/>
+        <chart_height>450</chart_height>
         <chart_size>large</chart_size>
         <chart_title/>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
-        <chart_width/>
+        <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
-        <column>state</column>
+        <column>accio_millora</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
         <created_by_user display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
-        <custom_config/>
+        <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
         <decimal_precision>0</decimal_precision>
         <description/>
         <direction>minimize</direction>
@@ -38,9 +38,12 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>responsable</field>
-        <field_list/>
-        <filter/>
+        <field>objectiu_millora</field>
+        <field_list>accio_millora,accio_millora.state,accio_millora.short_description,contribucio,accio_millora.percentatge</field_list>
+        <filter table="x_udg_q_m2m_accions_objectius">objectiu_millora.stateNOT IN-5,5^EQ^ORDERBYobjectiu_millora.state<item endquery="false" field="objectiu_millora.state" goto="false" newquery="false" operator="NOT IN" or="false" value="-5,5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="objectiu_millora.state"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -69,14 +72,14 @@
         <report_drilldown/>
         <report_source/>
         <roles>x_udg_q.Observador</roles>
-        <row>accions</row>
+        <row>accio_millora</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>chart_colors</set_color>
+        <set_color>one_color</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -90,30 +93,30 @@
         <show_zero>false</show_zero>
         <source_type>table</source_type>
         <start_time/>
-        <sumfield>accions</sumfield>
+        <sumfield>accio_millora...</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-06 17:29:34</sys_created_on>
+        <sys_created_on>2018-11-21 17:04:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>fdbc8f2edb2d23009fd1f57eaf961928</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Objectius per responsable apilat estat</sys_name>
+        <sys_id>cce6186bdb3167009fd1f57eaf961941</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Pla Actiu</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_report_fdbc8f2edb2d23009fd1f57eaf961928</sys_update_name>
+        <sys_update_name>sys_report_cce6186bdb3167009fd1f57eaf961941</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-21 17:30:13</sys_updated_on>
-        <table>x_udg_q_objectiumillora</table>
-        <title>Objectius per responsable apilat estat</title>
+        <sys_updated_on>2018-11-21 17:34:13</sys_updated_on>
+        <table>x_udg_q_m2m_accions_objectius</table>
+        <title>Pla Actiu</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>state</trend_field>
-        <type>bar</type>
+        <trend_field>accio_millora...</trend_field>
+        <type>list</type>
         <upper_limit/>
-        <use_color_heatmap>true</use_color_heatmap>
+        <use_color_heatmap>false</use_color_heatmap>
         <use_color_palette>false</use_color_palette>
         <user>GLOBAL</user>
         <x_axis_display_grid>false</x_axis_display_grid>

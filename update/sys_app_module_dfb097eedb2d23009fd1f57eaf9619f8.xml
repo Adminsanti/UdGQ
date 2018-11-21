@@ -15,7 +15,7 @@
         <mobile_title>Resum Objectius</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>3000</order>
+        <order>50</order>
         <override_menu_roles>false</override_menu_roles>
         <query>$pa_dashboard.do?sysparm_dashboard=0aef4faedb2d23009fd1f57eaf961966</query>
         <report/>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dfb097eedb2d23009fd1f57eaf9619f8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Resum Objectius</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_dfb097eedb2d23009fd1f57eaf9619f8</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-06 17:53:16</sys_updated_on>
+        <sys_updated_on>2018-11-21 17:00:30</sys_updated_on>
         <timeline_page/>
         <title>Resum Objectius</title>
         <uncancelable>false</uncancelable>

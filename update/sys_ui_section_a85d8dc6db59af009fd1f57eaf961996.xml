@@ -5,13 +5,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>cee7b61fdb3d27009fd1f57eaf961982</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>43c0c02bdbfd27009fd1f57eaf961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Objectius Process Flow">5f80b78a37c927004ccbd0d543990e9a</sys_ui_formatter>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>46e7b61fdb3d27009fd1f57eaf961983</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>cbc0c02bdbfd27009fd1f57eaf961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>c6e7b61fdb3d27009fd1f57eaf961983</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>4fc0c02bdbfd27009fd1f57eaf961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,111 +47,111 @@
             <element>state</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>4ae7b61fdb3d27009fd1f57eaf961983</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>cfc0c02bdbfd27009fd1f57eaf961968</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>responsable</element>
-            <position>4</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>cae7b61fdb3d27009fd1f57eaf961983</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>priority</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>4ee7b61fdb3d27009fd1f57eaf961983</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>43c0c02bdbfd27009fd1f57eaf961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>accions</element>
-            <position>6</position>
+            <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>cee7b61fdb3d27009fd1f57eaf961983</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>c3c0c02bdbfd27009fd1f57eaf961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assoliment</element>
-            <position>7</position>
+            <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>42e7b61fdb3d27009fd1f57eaf961984</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>47c0c02bdbfd27009fd1f57eaf961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>8</position>
+            <position>7</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>c2e7b61fdb3d27009fd1f57eaf961984</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>c7c0c02bdbfd27009fd1f57eaf961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sgq</element>
-            <position>9</position>
+            <position>8</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>46e7b61fdb3d27009fd1f57eaf961984</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>4bc0c02bdbfd27009fd1f57eaf961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
-            <position>10</position>
+            <position>9</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>c6e7b61fdb3d27009fd1f57eaf961984</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>cbc0c02bdbfd27009fd1f57eaf961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>responsable</element>
+            <position>10</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>4fc0c02bdbfd27009fd1f57eaf961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -159,13 +159,13 @@
             <element>assigned_to</element>
             <position>11</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>4ae7b61fdb3d27009fd1f57eaf961984</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>cfc0c02bdbfd27009fd1f57eaf961969</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -173,13 +173,13 @@
             <element>.end_split</element>
             <position>12</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>cae7b61fdb3d27009fd1f57eaf961984</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>43c0c02bdbfd27009fd1f57eaf96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -187,13 +187,13 @@
             <element>short_description</element>
             <position>13</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>4ee7b61fdb3d27009fd1f57eaf961984</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>c3c0c02bdbfd27009fd1f57eaf96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -201,13 +201,13 @@
             <element>description</element>
             <position>14</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>cee7b61fdb3d27009fd1f57eaf961984</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>47c0c02bdbfd27009fd1f57eaf96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -215,13 +215,13 @@
             <element>diagnostic</element>
             <position>15</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>42e7b61fdb3d27009fd1f57eaf961985</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>c7c0c02bdbfd27009fd1f57eaf96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -229,13 +229,13 @@
             <element>esborranyvaloracio</element>
             <position>16</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>c2e7b61fdb3d27009fd1f57eaf961985</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>4bc0c02bdbfd27009fd1f57eaf96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -243,27 +243,13 @@
             <element>valoracio</element>
             <position>17</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:09:48</sys_created_on>
-            <sys_id>46e7b61fdb3d27009fd1f57eaf961985</sys_id>
+            <sys_created_on>2018-11-21 15:28:15</sys_created_on>
+            <sys_id>cbc0c02bdbfd27009fd1f57eaf96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:09:48</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>datavaloracio</element>
-            <position>18</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 10:11:10</sys_created_on>
-            <sys_id>5a38361fdb3d27009fd1f57eaf96197d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 10:11:10</sys_updated_on>
+            <sys_updated_on>2018-11-21 15:28:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
