@@ -10,53 +10,59 @@
         <script><![CDATA[var ObjectiuUtils = Class.create();
 ObjectiuUtils.prototype = {
 	initialize: function(objectiu) {
-		
-		this._objectiu=objectiu;
-		// Millor, pero sense provar: if (objectiu) this._objectiu=objectiu;
-	},
+		if (objectiu) this._objectiu=objectiu;
+		},
 	
 	actualitzaAssoliment: function () {
-		gs.info("SC - ObjectiuUtils.actualitzaAssoliment: "+this._objectiu);//Actualitza l'assoliment d'un objectiu a partir de totes les accions que hi contribueixen
+		new x_udg_q.log("ObjectiuUtils.actualitzaAssoliment "+this._objectiu.number);
+		var grObjectiu = new GlideRecord ('x_udg_q_objectiumillora');
+		grObjectiu.get (this._objectiu);
+		grObjectiu.accions=this.getAccions();
+		grObjectiu.assoliment = this.getAssoliment();
 		
-		if (this._objectiu.state==-5 || this._objectiu.state==5) {
-			gs.addErrorMessage ("NO s'actualitza l'assoliment d'esborranys ni d'objectius tancats");
-			return;
+		if (grObjectiu.actiu == true) grObjectiu.state=this.getEstatPerAssoliment();
+			
+		grObjectiu.update();
+	},
+	
+	getAccions: function() {
+		new x_udg_q.log("ObjectiuUtils.getAccions "+this._objectiu.number);
+		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
+		grM2m.addQuery('objectiu_millora', grObjectiu.sys_id);
+		grM2m.query();
+		return grM2m.getRowCount();
+	},
+	
+	getAssoliment: function() {
+		new x_udg_q.log("ObjectiuUtils.assoliment "+this._objectiu.number);
+		//Retorna l'assoliment d'un objectiu a partir de totes les accions que hi contribueixen
+		var grObjectiu = new GlideRecord ('x_udg_q_objectiumillora');
+		grObjectiu.get (this._objectiu);
+		
+		if (grObjectiu.state==-5 || grObjectiu.state==5) {
+			new x_udg_q.log("ObjectiuUtils.actualitzaAssoliment: L'assoliment que ja té: "+grObjectiu.number);
+			return grObjectiu.assoliment;
 		}
-		
 		var assoliment=0;
 		var ponderacions=0;
-		var accions=0;
 		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
-		grM2m.addQuery('objectiu_millora', this._objectiu);
+		grM2m.addQuery('objectiu_millora', grObjectiu.sys_id);
 		grM2m.query();
 		while (grM2m.next()){ //Per cada action
-			accions++;
 			if (grM2m.contribucio >0 && grM2m.accio_millora.state!=-5) { //L'accio ha de contribució>0 i no ser esborrany
 				ponderacions += grM2m.contribucio;
 				assoliment += (grM2m.accio_millora.percentatge*grM2m.contribucio);
 			}
 		}
-		var grObjectiu = new GlideRecord ('x_udg_q_objectiumillora');
-		grObjectiu.get (this._objectiu);
-		
-		if (grObjectiu.accions!=accions)
-			grObjectiu.accions=accions;
-		
-		if (ponderacions>0)
-			grObjectiu.assoliment = (assoliment/ponderacions);
-		
-		else
-			grObjectiu.assoliment=0;
-		
-		grObjectiu.state=this.estatPerAssoliment(grObjectiu.assoliment);
-		
-		grObjectiu.update();
+		if (ponderacions>0) return (assoliment/ponderacions);
+			else return 0;
 	},
 	
-	estatPerAssoliment: function (assoliment) {
-		if (assoliment <= 0)
+	
+	getEstatPerAssoliment: function () {
+		if (this._objectiu.assoliment <= 0)
 			return 1;
-		if (assoliment >= 100)
+		if (this._objectiu.assoliment >= 100)
 			return 3;
 		return 2;
 	},
@@ -66,7 +72,7 @@ ObjectiuUtils.prototype = {
 		var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
 		var gr = new GlideRecord ('x_udg_q_sgq');
 		gr.get("sys_id="+SGQpref);
-		return gr.propietari;	
+		return gr.propietari;
 	},
 	
 	actualitzaObjectiusResponsable: function (funcio) {
@@ -90,7 +96,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -98,6 +104,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-19 10:42:07</sys_updated_on>
+        <sys_updated_on>2018-11-22 11:47:23</sys_updated_on>
     </sys_script_include>
 </record_update>

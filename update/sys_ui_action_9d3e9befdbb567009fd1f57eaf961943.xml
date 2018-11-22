@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Tanca Objectiu</action_name>
+        <action_name>Desisteix Objectiu</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <comments/>
-        <condition>current.state == 3</condition>
+        <condition>current.state == 1 || current.state== 2</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -20,39 +20,49 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Tanca Objectiu</name>
-        <onclick/>
+        <name>Desisteix Objectiu</name>
+        <onclick>onClick()</onclick>
         <order>100</order>
-        <script><![CDATA[if (current.valoracio != "") {
+        <script><![CDATA[function onClick() {
+	g_form.setMandatory('valoracio',true);
+	//g_form.addInfoMessage ("Per desistir de l'objectiu cal que redacteu una justificació en el camp valoració i després torneu a premer [Desisteix Objectiu]");	
+	gsftSubmit (null, g_form.getFormElement(), 'Desisteix Objectiu');
+	//g_form.setMandatory('valoracio',false);
+}
+
+if (typeof window == 'undefined') desisteix();
+
+
+function desisteix() {
 	current.active=false;
 	current.state=5;
 	current.update();
-} else {
-	gs.addErrorMessage ("No es pot tancar un objectiu sense valoració");
-	g_form.setVisible('valoracio',true);
+	
+action.setRedirectURL(current);
 }
-action.setRedirectURL(current);]]></script>
+
+]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-21 15:59:35</sys_created_on>
+        <sys_created_on>2018-11-22 07:35:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>4417406fdbfd27009fd1f57eaf9619df</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Tanca Objectiu</sys_name>
+        <sys_id>9d3e9befdbb567009fd1f57eaf961943</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Desisteix Objectiu</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_action_4417406fdbfd27009fd1f57eaf9619df</sys_update_name>
+        <sys_update_name>sys_ui_action_9d3e9befdbb567009fd1f57eaf961943</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 07:37:37</sys_updated_on>
+        <sys_updated_on>2018-11-22 08:17:56</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

@@ -16,16 +16,17 @@
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
 	//g_form.addInfoMessage("state :"+g_form.getValue('state'));
-	
+	/*
 	g_form.setReadOnly('valoracio',true);
 	if (g_form.getValue('state') != 3 && g_form.getValue('state') !=5) {
 		g_form.setDisplay('valoracio',false);
 	}
+	*/
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
 	g_form.setVisible('valoracio',true);
 	if (g_form.getValue('state') == 3){
-		g_form.showFieldMsg('valoracio',"Per tancar un objectiu complert cal fer-ne una valoració i desprès premer Tanca");
+		g_form.showFieldMsg('valoracio',"Per tancar un objectiu complert cal fer-ne una valoració i desprès premer [Tanca Objetiu]");
 		g_form.setReadOnly('valoracio',false);
 	}
 }]]></script_true>
@@ -38,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3bf1006bdbfd27009fd1f57eaf961977</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Objectiu Valoració si Complert</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -47,7 +48,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_3bf1006bdbfd27009fd1f57eaf961977</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-21 16:45:40</sys_updated_on>
+        <sys_updated_on>2018-11-22 07:43:53</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui_type>10</ui_type>
         <view/>
