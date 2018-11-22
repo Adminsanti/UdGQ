@@ -60,7 +60,6 @@ ObjectiuUtils.prototype = {
 			else return 0;
 	},
 	
-	
 	getEstatPerAssoliment: function (assoliment) {
 		if (assoliment <= 0)
 			return 1;
@@ -69,7 +68,6 @@ ObjectiuUtils.prototype = {
 		return 2;
 	},
 	
-	
 	responsableObjectiuDefecte: function () {
 		var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
 		var gr = new GlideRecord ('x_udg_q_sgq');
@@ -77,20 +75,19 @@ ObjectiuUtils.prototype = {
 		return gr.propietari;
 	},
 	
-	actualitzaObjectiusResponsable: function (funcio) {
-		var grObj = new GlideRecord ('x_udg_q_objectiumillora');
-		grObj.addQuery('funcio', funcio.sys_id);
-		grObj.addQuery('state=-5^ORstate=5'); //No s'actualitzan Esborranys ni Tancats'
+	setAllResponsables: function (funcio) {
+		var gr = new GlideRecord ('x_udg_q_objectiumillora');
+		gr.addQuery('funcio', funcio);
+		gr.addQuery('state=-5'); //No s'actualitzan Esborranys
 		grObj.query();
-		new x_udg_q.log(funcio.sgq.codi+" ObjectiuUtils.actualitzaObjectiusResponsable busca objectius amb responsable: "+ funcio.nom);
-		while (grObj.next()) {
-			new x_udg_q.log(grObj.number +" ObjectiuUtils.actualitzaObjectiusResponsable actualitza ("+funcio.nom +") " + grObj.assigned_to.name +" -> "+ funcio.usuari.name);
+		new x_udg_q.log(funcio.sgq.codi+" ObjectiuUtils.setAllResponsables busca objectius amb responsable: "+ funcio.nom);
+		while (gr.next()) {
+			new x_udg_q.log(gr.number +" ObjectiuUtils.setAllResponsables actualitza ("+funcio.nom +") " + gr.assigned_to.name +" -> "+ funcio.usuari.name);
 			grObj.assigned_to=funcio.usuari;
 			grObj.update();
 		}
 	},
-	
-	
+		
 	type: 'ObjectiuUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -98,7 +95,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -106,6 +103,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 12:48:06</sys_updated_on>
+        <sys_updated_on>2018-11-22 15:39:14</sys_updated_on>
     </sys_script_include>
 </record_update>

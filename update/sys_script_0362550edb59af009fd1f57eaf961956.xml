@@ -8,21 +8,21 @@
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
-        <add_message>false</add_message>
+        <add_message>true</add_message>
         <advanced>false</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_objectiumillora</collection>
+        <collection>x_udg_q_acciomillora</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_udg_q_objectiumillora">responsable.usuariNSAMEASassigned_to^state!=-5^EQ<item endquery="false" field="responsable.usuari" goto="false" newquery="false" operator="NSAMEAS" or="false" value="assigned_to"/>
+        <filter_condition table="x_udg_q_acciomillora">responsable.usuariNSAMEASassigned_to^state!=-5^EQ<item endquery="false" field="responsable.usuari" goto="false" newquery="false" operator="NSAMEAS" or="false" value="assigned_to"/>
             <item endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message><![CDATA[<p>${current.number} s&#39;ha assignat a ${current.assigned_to}</p>]]></message>
-        <name>Objectius assignar al responsable</name>
+        <name>Acció assignar al responsable</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -43,8 +43,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0362550edb59af009fd1f57eaf961956</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Objectius assignar al responsable</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Acció assignar al responsable</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -52,7 +52,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0362550edb59af009fd1f57eaf961956</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-16 11:49:34</sys_updated_on>
+        <sys_updated_on>2018-11-22 14:58:58</sys_updated_on>
         <template>assigned_toSAMEASresponsable.usuari^EQ</template>
         <when>before</when>
     </sys_script>

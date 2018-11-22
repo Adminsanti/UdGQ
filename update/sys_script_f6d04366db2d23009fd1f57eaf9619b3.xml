@@ -32,11 +32,9 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	/*var a;
-	if (current) a=new x_udg_q.AccioUtils(current);
-	else a=new x_udg_q.AccioUtils(previous); */
-	var a=new x_udg_q.AccioUtils(current);
-	if (current.active) current.state=a.calculaEstat();
+	
+	var a=new x_udg_q.AccioUtils();
+	if (current.active) current.state=a.calculaEstat(current);
 	a.actualitzaAssolimentTotsObjectius();
 	
 })(current, previous);]]></script>
@@ -47,7 +45,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f6d04366db2d23009fd1f57eaf9619b3</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Acció canvia percentatge</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -56,7 +54,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_f6d04366db2d23009fd1f57eaf9619b3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 11:15:06</sys_updated_on>
+        <sys_updated_on>2018-11-22 15:55:06</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
