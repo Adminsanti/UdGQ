@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_udg_q.Usuari</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Usuari</name>
+        <script><![CDATA[var Usuari = Class.create();
+Usuari.prototype = {
+	initialize: function(usuari) {
+		this.usuari = usuari; //sys_id d'un usuari
+	},
+	
+	addSGQ: function(sgq_id) {
+		var gr = new GlideRecord("sys_user");
+		gr.addQuery('sys_id', this.usuari);
+		gr.query();
+		if (gr.next()) {
+			var l = new ListUtil(gr.x_udg_q_sgq_visibles);
+			if (! l.isInList(sgq_id)) { //no inclou
+				l.addToList(sgq_id);
+				if (gr.x_udg_q_sgq_actual == '' ) gr.x_udg_q_sgq_actual=sgq_id;
+				gr.x_udg_q_sgq_visibles=l.getList();
+				gr.update();
+			}
+		}
+	},
+	
+	addRole: function (role_name) { //Role is the role name
+		var gr = new GlideRecord('sys_user_has_role');
+		gr.addQuery('user',this.usuari);
+		gr.addQuery('role',role_name);
+		gr.query();
+		if(gr.next()) {
+			new log("Ja té el rol");
+		} else {
+			gr.user=this.usuari;
+			gr.role= this._getRoleIdByName(role_name);
+			if (gr.role !="" && gr.user!="")
+				gr.insert();
+			else
+				new log ("Error insert addRole");
+		}
+	},
+	
+	_getRoleIdByName: function(role){
+		var gr = new GlideRecord("sys_user_role");
+		gr.addQuery("name", role);
+		gr.query();
+		if (gr.next())
+			return gr.sys_id;
+		else
+			return "";
+	},
+	type: 'Usuari'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-11-28 12:02:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Usuari</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-11-29 10:58:35</sys_updated_on>
+    </sys_script_include>
+</record_update>

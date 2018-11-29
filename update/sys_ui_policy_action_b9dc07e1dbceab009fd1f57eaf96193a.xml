@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>false</disabled>
+        <field>usuari</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-11-28 11:27:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b9dc07e1dbceab009fd1f57eaf96193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>usuari</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b9dc07e1dbceab009fd1f57eaf96193a</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-11-28 11:27:54</sys_updated_on>
+        <table>x_udg_q_observador</table>
+        <ui_policy display_value="Observador is empty">d28c4325dbceab009fd1f57eaf961938</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>
