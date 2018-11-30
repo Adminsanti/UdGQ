@@ -5,41 +5,41 @@
             <element>subestandard</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-16 13:32:53</sys_created_on>
-            <sys_id>9076bdb1db7163009fd1f57eaf96199f</sys_id>
+            <sys_created_on>2018-11-30 11:05:46</sys_created_on>
+            <sys_id>f90b5d56db0e2f009fd1f57eaf9619b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vinculacions &amp; Implicacions" display_value="Vinculacions &amp; Implicacions" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">973d91653701e3004ccbd0d543990ec8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-16 13:32:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>recomanacions</element>
-            <position>1</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-16 13:32:53</sys_created_on>
-            <sys_id>1876bdb1db7163009fd1f57eaf96199f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Vinculacions &amp; Implicacions" display_value="Vinculacions &amp; Implicacions" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">973d91653701e3004ccbd0d543990ec8</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-16 13:32:53</sys_updated_on>
+            <sys_updated_on>2018-11-30 11:05:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>proces</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-16 13:32:53</sys_created_on>
-            <sys_id>9876bdb1db7163009fd1f57eaf96199f</sys_id>
+            <sys_created_on>2018-11-30 11:05:46</sys_created_on>
+            <sys_id>f10b5d56db0e2f009fd1f57eaf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vinculacions &amp; Implicacions" display_value="Vinculacions &amp; Implicacions" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">973d91653701e3004ccbd0d543990ec8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-16 13:32:53</sys_updated_on>
+            <sys_updated_on>2018-11-30 11:05:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recomanacions</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-30 11:05:46</sys_created_on>
+            <sys_id>750b5d56db0e2f009fd1f57eaf9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vinculacions &amp; Implicacions" display_value="Vinculacions &amp; Implicacions" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">973d91653701e3004ccbd0d543990ec8</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-30 11:05:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>implica_titulacions</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-16 13:32:53</sys_created_on>
-            <sys_id>1c76bdb1db7163009fd1f57eaf96199f</sys_id>
+            <sys_created_on>2018-11-30 11:05:46</sys_created_on>
+            <sys_id>f50b5d56db0e2f009fd1f57eaf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vinculacions &amp; Implicacions" display_value="Vinculacions &amp; Implicacions" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">973d91653701e3004ccbd0d543990ec8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-16 13:32:53</sys_updated_on>
+            <sys_updated_on>2018-11-30 11:05:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>modificacio_memoria</element>
             <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-16 13:32:53</sys_created_on>
-            <sys_id>9c76bdb1db7163009fd1f57eaf96199f</sys_id>
+            <sys_created_on>2018-11-30 11:05:46</sys_created_on>
+            <sys_id>790b5d56db0e2f009fd1f57eaf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vinculacions &amp; Implicacions" display_value="Vinculacions &amp; Implicacions" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">973d91653701e3004ccbd0d543990ec8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-16 13:32:53</sys_updated_on>
+            <sys_updated_on>2018-11-30 11:05:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,27 @@
             <element>codi_antic</element>
             <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-16 13:32:53</sys_created_on>
-            <sys_id>1076bdb1db7163009fd1f57eaf9619a0</sys_id>
+            <sys_created_on>2018-11-30 11:05:46</sys_created_on>
+            <sys_id>f90b5d56db0e2f009fd1f57eaf9619ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Vinculacions &amp; Implicacions" display_value="Vinculacions &amp; Implicacions" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">973d91653701e3004ccbd0d543990ec8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-16 13:32:53</sys_updated_on>
+            <sys_updated_on>2018-11-30 11:05:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compartit</element>
+            <position>6</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-30 11:05:46</sys_created_on>
+            <sys_id>7d0b5d56db0e2f009fd1f57eaf9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vinculacions &amp; Implicacions" display_value="Vinculacions &amp; Implicacions" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">973d91653701e3004ccbd0d543990ec8</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-30 11:05:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

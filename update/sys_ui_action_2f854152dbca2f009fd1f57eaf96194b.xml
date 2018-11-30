@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Defineix i Roman</action_name>
-        <active>false</active>
-        <client>false</client>
+        <action_name>Defineix Objectiu</action_name>
+        <active>true</active>
+        <client>true</client>
         <comments/>
         <condition>current.state == -5 </condition>
         <form_action>true</form_action>
@@ -12,18 +12,70 @@
         <form_link>false</form_link>
         <form_style/>
         <hint/>
-        <list_action>false</list_action>
+        <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
-        <list_choice>false</list_choice>
+        <list_choice>true</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Defineix i Roman</name>
-        <onclick/>
+        <name>Defineix</name>
+        <onclick>onClick()</onclick>
         <order>30</order>
-        <script><![CDATA[doDefinirObjectiu ();
+        <script><![CDATA[// Client side onclick function
+function onClick(){
+	
+	var mandatoryFields = ['state'];
+	var state=g_form.getValue('state');
+	
+	//Cal determinar quins són els camps oblgatoris en cada cas
+	/*
+	switch (state) {
+		case -5: {
+			mandatoryFields.push('monitor_addicional_instal_lat');
+			mandatoryFields.push('etiqueta_1');
+		}
+		break;
+		
+		case 1: // sense break, igual que el seguent
+		case 2:
+		case 3: {
+			mandatoryFields.push('ordinador_insta_lat');
+			mandatoryFields.push('etiqueta_1');
+		}
+		break;
+		
+		default: {
+			//Pel cas de que algun tipus s'escapi
+			mandatoryFields.push('monitor_addicional_instal_lat');
+			mandatoryFields.push('etiqueta_2');
+			mandatoryFields.push('ordinador_insta_lat');
+			mandatoryFields.push('etiqueta_1');
+		}
+	}
+ 	*/
+	
+	mandatoryFields.push('responsable');
+	mandatoryFields.push('priority');
+	mandatoryFields.push('due_date');
+	mandatoryFields.push('short_description');
+	
+	var errorMessage = g_form.checkMandatoryFields(mandatoryFields);
+	
+	if (!errorMessage){
+		gsftSubmit(null, g_form.getFormElement(), 'Defineix Objectiu'); //MUST call the 'Action name' set in this UI Action
+	}else{
+		g_form.clearMessages();
+		g_form.addInfoMessage("Manquen camps obligatoris: "+ errorMessage );
+	}
+}
+
+
+// Code that runs without 'onclick'
+// Ensure call to server side function with no browser errors
+if (typeof window == 'undefined')
+	doDefinirObjectiu();
 
 function doDefinirObjectiu() {
 	
@@ -31,13 +83,12 @@ function doDefinirObjectiu() {
 		current.update(); //gravem igualment
 		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO ES POT DEFINIR per <B>manca de responsable</B>");
 	}
-	else
-		{
+	else {
 		var o= new ObjectiuUtils();
 		current.state = 1;
 		current.active=true;
-		current.accions=o.getAccions(current);
-		current.assoliment=o.getAssoliment(current);
+		current.accions=o.getAccions(current.sys_id);
+		current.assoliment=o.getAssoliment(current.sys_id);
 		var ara = new GlideDateTime();
 		current.declarat= ara.toString();
 		current.declarat_per=gs.getUserID();
@@ -46,7 +97,7 @@ function doDefinirObjectiu() {
 		current.update();
 		gs.addInfoMessage(current.number+ " Definit");
 	}
-	action.setRedirectURL(current);
+	//action.setRedirectURL(current);  NO Roman
 }
 ]]></script>
         <show_insert>true</show_insert>
@@ -55,21 +106,21 @@ function doDefinirObjectiu() {
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-23 09:10:20</sys_created_on>
+        <sys_created_on>2018-11-30 09:31:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>d4c3914edb59af009fd1f57eaf96198d</sys_id>
-        <sys_mod_count>43</sys_mod_count>
-        <sys_name>Defineix i Roman</sys_name>
+        <sys_id>2f854152dbca2f009fd1f57eaf96194b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Defineix</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_action_d4c3914edb59af009fd1f57eaf96198d</sys_update_name>
+        <sys_update_name>sys_ui_action_2f854152dbca2f009fd1f57eaf96194b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-30 11:48:59</sys_updated_on>
+        <sys_updated_on>2018-11-30 12:21:44</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

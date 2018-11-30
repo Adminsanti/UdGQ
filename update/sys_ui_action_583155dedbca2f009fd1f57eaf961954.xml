@@ -12,15 +12,15 @@
         <form_link>false</form_link>
         <form_style/>
         <hint/>
-        <list_action>false</list_action>
+        <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
-        <list_choice>false</list_choice>
+        <list_choice>true</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Defineix i Roman</name>
+        <name>Defineix</name>
         <onclick/>
         <order>1000</order>
         <script><![CDATA[doDefineixAccio ();
@@ -40,7 +40,7 @@ function doDefineixAccio () {
 		gs.addInfoMessage(current.number+ " Definit");
 		new AccioUtils().actualitzaAssolimentTotsObjectius(current);
 	}
-	action.setRedirectURL(current);
+	//action.setRedirectURL(current);    NO Roman
 }
 ]]></script>
         <show_insert>true</show_insert>
@@ -49,21 +49,21 @@ function doDefineixAccio () {
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-05 10:04:55</sys_created_on>
+        <sys_created_on>2018-11-30 10:22:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>7e5d145edb6da7009fd1f57eaf96190b</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Defineix i Roman</sys_name>
+        <sys_id>583155dedbca2f009fd1f57eaf961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Defineix</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_action_7e5d145edb6da7009fd1f57eaf96190b</sys_update_name>
+        <sys_update_name>sys_ui_action_583155dedbca2f009fd1f57eaf961954</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-30 10:22:15</sys_updated_on>
+        <sys_updated_on>2018-11-30 10:22:47</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

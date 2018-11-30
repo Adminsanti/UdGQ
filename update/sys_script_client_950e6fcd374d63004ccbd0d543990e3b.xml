@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <applies_extended>false</applies_extended>
         <condition/>
         <description>El SGQ no és editable MAI&#13;
@@ -9,7 +9,7 @@ ATENCIÓ: De moment només funciona amb una taula!!!!!</description>
         <field>sys_created_on</field>
         <global>true</global>
         <messages/>
-        <name>SGQ UI</name>
+        <name>DESACTIVAT SGQ UI</name>
         <order/>
         <script><![CDATA[function onLoad() {
 	if (g_form.getValue('sgq') !='') g_form.setReadOnly('sgq',true);
@@ -21,8 +21,8 @@ ATENCIÓ: De moment només funciona amb una taula!!!!!</description>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>950e6fcd374d63004ccbd0d543990e3b</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>SGQ UI</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>DESACTIVAT SGQ UI</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -30,7 +30,7 @@ ATENCIÓ: De moment només funciona amb una taula!!!!!</description>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_950e6fcd374d63004ccbd0d543990e3b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-11 10:15:28</sys_updated_on>
+        <sys_updated_on>2018-11-30 09:48:30</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

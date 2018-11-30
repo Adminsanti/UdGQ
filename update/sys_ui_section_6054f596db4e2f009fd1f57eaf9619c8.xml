@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Compliment" section_id="6054f596db4e2f009fd1f57eaf9619c8" sys_domain="global" table="x_udg_q_acciomillora" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>indicador</element>
+            <position>0</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-30 12:56:16</sys_created_on>
+            <sys_id>2854f996db4e2f009fd1f57eaf961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Compliment" display_value="Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>llindarindicador</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-30 12:56:16</sys_created_on>
+            <sys_id>a854f996db4e2f009fd1f57eaf961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Compliment" display_value="Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>percentatge</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-30 12:56:16</sys_created_on>
+            <sys_id>2c54f996db4e2f009fd1f57eaf961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Compliment" display_value="Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>justificaciopercentatge</element>
+            <position>3</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-30 12:56:16</sys_created_on>
+            <sys_id>ac54f996db4e2f009fd1f57eaf961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Compliment" display_value="Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Compliment</caption>
+            <header>false</header>
+            <name>x_udg_q_acciomillora</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-30 12:56:16</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6054f596db4e2f009fd1f57eaf9619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Compliment</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_ui_section_6054f596db4e2f009fd1f57eaf9619c8</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

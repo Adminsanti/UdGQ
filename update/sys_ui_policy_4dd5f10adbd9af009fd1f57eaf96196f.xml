@@ -15,12 +15,12 @@
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-	g_form.setDisplay('due_date',false);
+	//g_form.setDisplay('due_date',false);
 	g_form.setDisplay('closed_at',true);
 	g_form.setDisplay('closed_by',true);	
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	g_form.setDisplay('due_date',true);
+	//g_form.setDisplay('due_date',true);
 	g_form.setDisplay('closed_at',false);
 	g_form.setDisplay('closed_by',false);
 	g_form.setDispaly('valoracio',true);
@@ -34,7 +34,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4dd5f10adbd9af009fd1f57eaf96196f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Objectiu Tancat</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -43,7 +43,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_4dd5f10adbd9af009fd1f57eaf96196f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-21 15:32:59</sys_updated_on>
+        <sys_updated_on>2018-11-30 09:57:55</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui_type>10</ui_type>
         <view/>

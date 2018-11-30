@@ -8,8 +8,8 @@
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
-        <add_message>true</add_message>
-        <advanced>false</advanced>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_udg_q_objectiumillora</collection>
@@ -21,7 +21,7 @@
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
-        <message><![CDATA[<p>${current.number} s&#39;ha assignat a ${current.assigned_to}</p>]]></message>
+        <message><![CDATA[<p>${current.number} Assignat a ${current.assigned_to}</p>]]></message>
         <name>Objectiu assignar al responsable</name>
         <order>100</order>
         <priority>100</priority>
@@ -33,7 +33,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	// Add your code here
+	gs.addInfoMessage(current.number+ ' Assignat a '+ current.assigned_to.name);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -43,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>03d305b3dbf967009fd1f57eaf961915</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Objectiu assignar al responsable</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -52,7 +52,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_03d305b3dbf967009fd1f57eaf961915</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 14:59:44</sys_updated_on>
+        <sys_updated_on>2018-11-30 11:59:58</sys_updated_on>
         <template>assigned_toSAMEASresponsable.usuari^EQ</template>
         <when>before</when>
     </sys_script>
