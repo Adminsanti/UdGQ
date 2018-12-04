@@ -28,34 +28,7 @@ function onClick(){
 	
 	var mandatoryFields = ['state'];
 	var state=g_form.getValue('state');
-	
-	//Cal determinar quins són els camps oblgatoris en cada cas
-	/*
-	switch (state) {
-		case -5: {
-			mandatoryFields.push('monitor_addicional_instal_lat');
-			mandatoryFields.push('etiqueta_1');
-		}
-		break;
-		
-		case 1: // sense break, igual que el seguent
-		case 2:
-		case 3: {
-			mandatoryFields.push('ordinador_insta_lat');
-			mandatoryFields.push('etiqueta_1');
-		}
-		break;
-		
-		default: {
-			//Pel cas de que algun tipus s'escapi
-			mandatoryFields.push('monitor_addicional_instal_lat');
-			mandatoryFields.push('etiqueta_2');
-			mandatoryFields.push('ordinador_insta_lat');
-			mandatoryFields.push('etiqueta_1');
-		}
-	}
- 	*/
-	
+
 	mandatoryFields.push('responsable');
 	mandatoryFields.push('priority');
 	mandatoryFields.push('due_date');
@@ -67,7 +40,7 @@ function onClick(){
 		gsftSubmit(null, g_form.getFormElement(), 'Defineix Objectiu'); //MUST call the 'Action name' set in this UI Action
 	}else{
 		g_form.clearMessages();
-		g_form.addInfoMessage("Manquen camps obligatoris: "+ errorMessage );
+		g_form.addErrorMessage("Manquen camps obligatoris: "+ errorMessage );
 	}
 }
 
@@ -111,7 +84,7 @@ function doDefinirObjectiu() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f854152dbca2f009fd1f57eaf96194b</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Defineix</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -120,7 +93,7 @@ function doDefinirObjectiu() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_2f854152dbca2f009fd1f57eaf96194b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-30 12:21:44</sys_updated_on>
+        <sys_updated_on>2018-12-04 12:07:24</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
