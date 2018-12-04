@@ -5,13 +5,13 @@
             <element>fet_fita</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-30 09:41:40</sys_created_on>
-            <sys_id>b5c7015adbca2f009fd1f57eaf9619cf</sys_id>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>06089d23dbc223409fd1f57eaf9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-30 09:41:40</sys_updated_on>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,83 +19,111 @@
             <element>declarat_per</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-30 09:41:40</sys_created_on>
-            <sys_id>3dc7015adbca2f009fd1f57eaf9619cf</sys_id>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>86089d23dbc223409fd1f57eaf9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-30 09:41:40</sys_updated_on>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>valorat_per</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>0a089d23dbc223409fd1f57eaf9619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>closed_by</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-30 09:41:40</sys_created_on>
-            <sys_id>bdc7015adbca2f009fd1f57eaf9619cf</sys_id>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>8a089d23dbc223409fd1f57eaf9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-30 09:41:40</sys_updated_on>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-30 09:41:40</sys_created_on>
-            <sys_id>31c7015adbca2f009fd1f57eaf9619d0</sys_id>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>0e089d23dbc223409fd1f57eaf9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-30 09:41:40</sys_updated_on>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>due_date</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-30 09:41:40</sys_created_on>
-            <sys_id>b1c7015adbca2f009fd1f57eaf9619d0</sys_id>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>8e089d23dbc223409fd1f57eaf9619c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-30 09:41:40</sys_updated_on>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>declarat</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-30 09:41:40</sys_created_on>
-            <sys_id>35c7015adbca2f009fd1f57eaf9619d0</sys_id>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>02089d23dbc223409fd1f57eaf9619c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-30 09:41:40</sys_updated_on>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>valorat</element>
+            <position>7</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>82089d23dbc223409fd1f57eaf9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>closed_at</element>
-            <position>6</position>
+            <position>8</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-30 09:41:40</sys_created_on>
-            <sys_id>b5c7015adbca2f009fd1f57eaf9619d0</sys_id>
+            <sys_created_on>2018-12-04 08:05:04</sys_created_on>
+            <sys_id>06089d23dbc223409fd1f57eaf9619c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-30 09:41:40</sys_updated_on>
+            <sys_updated_on>2018-12-04 08:05:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
