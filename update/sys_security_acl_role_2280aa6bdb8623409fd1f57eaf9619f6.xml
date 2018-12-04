@@ -3,20 +3,20 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-06 12:01:25</sys_created_on>
+        <sys_created_on>2018-12-04 13:22:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>07918aeedb6923009fd1f57eaf961914</sys_id>
+        <sys_id>2280aa6bdb8623409fd1f57eaf9619f6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_udg_q_m2m_accions_objectius.snc_internal</sys_name>
+        <sys_name>x_udg_q_subestandard.x_udg_q.Observador</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_security_acl display_value="x_udg_q_m2m_accions_objectius">07918aeedb6923009fd1f57eaf961913</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_07918aeedb6923009fd1f57eaf961914</sys_update_name>
+        <sys_security_acl display_value="x_udg_q_subestandard">0e08c84637bc2b004ccbd0d543990e76</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2280aa6bdb8623409fd1f57eaf9619f6</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-06 12:01:25</sys_updated_on>
-        <sys_user_role display_value="snc_internal" name="snc_internal">fa4a0127db442200a55072e9bf961930</sys_user_role>
-        <transaction_id>0f91c2aedb6923009fd1f57eaf9619b0</transaction_id>
+        <sys_updated_on>2018-12-04 13:22:01</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.Observador" name="x_udg_q.Observador">03d28d31dbfd23009fd1f57eaf9619ea</sys_user_role>
+        <transaction_id/>
     </sys_security_acl_role>
 </record_update>
