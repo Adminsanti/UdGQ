@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="cmn_timeline_page">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_timeline_page">
     <cmn_timeline_page action="INSERT_OR_UPDATE">
         <allow_drag_left>true</allow_drag_left>
         <allow_drag_right>true</allow_drag_right>

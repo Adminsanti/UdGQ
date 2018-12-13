@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="tipus" table="x_udg_q_fita" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

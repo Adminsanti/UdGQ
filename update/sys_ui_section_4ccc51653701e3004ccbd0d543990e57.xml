@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
-    <sys_ui_section caption="" section_id="a021fa28dba5a3009fd1f57eaf96192d" sys_domain="global" table="x_udg_q_recomanacions" version="3" view="">
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="4ccc51653701e3004ccbd0d543990e57" sys_domain="global" table="x_udg_q_recomanacions" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>process_flow.xml</element>
             <position>0</position>
@@ -9,7 +8,7 @@
             <sys_id>58e3f0dadbada7009fd1f57eaf961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">7f2c01c6db59af009fd1f57eaf961991</sys_ui_formatter>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -23,7 +22,7 @@
             <sys_id>dce3f0dadbada7009fd1f57eaf961990</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -37,7 +36,7 @@
             <sys_id>50e3f0dadbada7009fd1f57eaf961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -51,7 +50,7 @@
             <sys_id>d0e3f0dadbada7009fd1f57eaf961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -65,7 +64,7 @@
             <sys_id>54e3f0dadbada7009fd1f57eaf961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -79,7 +78,7 @@
             <sys_id>d4e3f0dadbada7009fd1f57eaf961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -93,7 +92,7 @@
             <sys_id>58e3f0dadbada7009fd1f57eaf961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -107,7 +106,7 @@
             <sys_id>d8e3f0dadbada7009fd1f57eaf961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -121,7 +120,7 @@
             <sys_id>5ce3f0dadbada7009fd1f57eaf961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -135,7 +134,7 @@
             <sys_id>dce3f0dadbada7009fd1f57eaf961991</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -149,7 +148,7 @@
             <sys_id>50e3f0dadbada7009fd1f57eaf961992</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -163,7 +162,7 @@
             <sys_id>d0e3f0dadbada7009fd1f57eaf961992</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">a021fa28dba5a3009fd1f57eaf96192d</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">4ccc51653701e3004ccbd0d543990e57</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 11:43:19</sys_updated_on>
             <sys_user/>
@@ -180,7 +179,7 @@
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a021fa28dba5a3009fd1f57eaf96192d</sys_id>
+            <sys_id>4ccc51653701e3004ccbd0d543990e57</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_recomanacions</sys_name>
             <sys_overrides/>
@@ -188,7 +187,7 @@
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_ui_section_a021fa28dba5a3009fd1f57eaf96192d</sys_update_name>
+            <sys_update_name>sys_ui_section_4ccc51653701e3004ccbd0d543990e57</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-10-31 10:21:11</sys_updated_on>
             <sys_user/>

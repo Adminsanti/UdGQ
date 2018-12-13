@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="" label="Titulació" language="ca" table="x_udg_q_titulacio">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element/>

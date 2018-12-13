@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Recomanació" max_length="40" name="x_udg_q_recomanacions" text_index="true" type="collection">
         <element label="Descripció" max_length="5000" name="descripcio" type="string"/>
         <element choice="3" default="1" label="Estat" max_length="40" name="estat" read_only="true" type="integer">
             <choice>
-                <element label="Nova" sequence="0" value="1"/>
-                <element label="Objectius fixats" sequence="1" value="2"/>
-                <element label="Atesa" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Nova" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Objectius fixats" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Atesa" sequence="2" value="3"/>
             </choice>
         </element>
         <element label="Informe" max_length="32" name="informe" reference="x_udg_q_informevsma" type="reference"/>

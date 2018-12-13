@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_dictionary_override">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
     <sys_dictionary_override action="INSERT_OR_UPDATE">
         <attributes>ref_auto_completer=AJAXReferenceChoice</attributes>
         <attributes_override>true</attributes_override>

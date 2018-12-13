@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="inici_anticipat" label="Inici anticipat" language="en" table="x_udg_q_fita">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>inici_anticipat</element>

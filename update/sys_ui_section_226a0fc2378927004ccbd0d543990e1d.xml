@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Seguiment" section_id="226a0fc2378927004ccbd0d543990e1d" sys_domain="global" table="x_udg_q_acciomillora" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>activity.xml</element>

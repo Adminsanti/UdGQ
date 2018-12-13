@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_user_role_contains">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
     <sys_user_role_contains action="INSERT_OR_UPDATE">
         <contains display_value="x_udg_q.Manager" name="x_udg_q.Manager">1d414d9637586b401acdf01643990e73</contains>
         <role display_value="x_udg_q.ManagerUniversitat" name="x_udg_q.ManagerUniversitat">485294bddb596f009fd1f57eaf9619ef</role>

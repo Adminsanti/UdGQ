@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="pa_dashboards">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_dashboards">
     <pa_dashboards action="INSERT_OR_UPDATE">
         <active>true</active>
         <breakdown_source/>
+        <color>#ffffff</color>
         <group/>
         <groups/>
         <is_breakdown>false</is_breakdown>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="pa_dashboards_permissions">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
     <pa_dashboards_permissions action="INSERT_OR_UPDATE">
         <dashboard display_value="Incident Overview">63c9a39037f51300e7efd3e853990e88</dashboard>
         <delete>false</delete>

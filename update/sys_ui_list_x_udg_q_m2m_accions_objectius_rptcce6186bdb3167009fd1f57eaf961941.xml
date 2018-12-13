@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_udg_q_m2m_accions_objectius" version="2" view="RPTcce6186bdb3167009fd1f57eaf961941">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="dd4794abdb3167009fd1f57eaf961907">cbbd1023db7167009fd1f57eaf961968</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="1deae0bfdb3d6300ccd95bd05b9619fd">cbbd1023db7167009fd1f57eaf961968</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -19,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora.state</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="dd4794abdb3167009fd1f57eaf961907">cbbd1023db7167009fd1f57eaf961968</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="1deae0bfdb3d6300ccd95bd05b9619fd">cbbd1023db7167009fd1f57eaf961968</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -34,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora.short_description</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="dd4794abdb3167009fd1f57eaf961907">cbbd1023db7167009fd1f57eaf961968</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="1deae0bfdb3d6300ccd95bd05b9619fd">cbbd1023db7167009fd1f57eaf961968</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -49,7 +48,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>contribucio</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="dd4794abdb3167009fd1f57eaf961907">cbbd1023db7167009fd1f57eaf961968</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="1deae0bfdb3d6300ccd95bd05b9619fd">cbbd1023db7167009fd1f57eaf961968</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -64,7 +63,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora.percentatge</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="dd4794abdb3167009fd1f57eaf961907">cbbd1023db7167009fd1f57eaf961968</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="1deae0bfdb3d6300ccd95bd05b9619fd">cbbd1023db7167009fd1f57eaf961968</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -103,7 +102,7 @@
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-21 17:34:41</sys_updated_on>
             <sys_user/>
-            <view display_value="Rptcce6186bdb3167009fd1f57eaf961941" name="RPTcce6186bdb3167009fd1f57eaf961941">dd4794abdb3167009fd1f57eaf961907</view>
+            <view display_value="Rptcce6186bdb3167009fd1f57eaf961941" name="RPTcce6186bdb3167009fd1f57eaf961941">1deae0bfdb3d6300ccd95bd05b9619fd</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

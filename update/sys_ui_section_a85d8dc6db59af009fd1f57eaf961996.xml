@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Objectiu" section_id="a85d8dc6db59af009fd1f57eaf961996" sys_domain="global" table="x_udg_q_objectiumillora" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>process_flow.xml</element>

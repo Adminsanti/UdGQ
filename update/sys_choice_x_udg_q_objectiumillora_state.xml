@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_udg_q_objectiumillora" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -198,7 +197,7 @@
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-10-23 08:26:59</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>d29d5c4bdb95af001f06adc3ca9619fb</sys_id>
+            <sys_id>f58326afdbc66f00ccd95bd05b9619a9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>state</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>

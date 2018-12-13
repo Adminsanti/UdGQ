@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="roadmap_page">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="roadmap_page">
     <roadmap_page action="INSERT_OR_UPDATE">
         <color1_choice>Acreditació</color1_choice>
         <color1_val>#7FBF7F</color1_val>

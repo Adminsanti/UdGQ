@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Històric Funció" max_length="40" name="x_udg_q_historicfuncio" type="collection">
         <element label="ActivaN" max_length="40" name="activan" type="boolean"/>
         <element label="Data" max_length="40" name="data" type="glide_date_time"/>

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="19" text_index="true" type="collection">
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="102" text_index="true" type="collection">
         <element label="Indicador" max_length="1500" name="indicador" type="string"/>
         <element label="Justificació Percentatge" max_length="1500" name="justificaciopercentatge" type="string"/>
         <element label="Llindar Indicador" max_length="1500" name="llindarindicador" type="string"/>
+        <element active="false" label="Objectiu" max_length="32" name="objectiu" reference="x_udg_q_objectiumillora" type="reference"/>
         <element attributes="target_threshold_colors=0:tomato;25:orange;50:yellow;99:lightgreen" default="0" label="Percentatge" mandatory="true" max_length="40" name="percentatge" type="percent_complete"/>
-        <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" type="reference" use_reference_qualifier="advanced">
+        <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" reference_qual_condition="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" type="reference">
             <choice/>
         </element>
         <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>

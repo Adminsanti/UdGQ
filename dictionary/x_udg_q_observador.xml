@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Observador" max_length="40" name="x_udg_q_observador" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Notes" max_length="4000" name="notes" type="string"/>

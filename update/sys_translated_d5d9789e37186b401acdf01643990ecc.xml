@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_translated">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
     <sys_translated action="INSERT_OR_UPDATE">
         <element>title</element>
         <id/>

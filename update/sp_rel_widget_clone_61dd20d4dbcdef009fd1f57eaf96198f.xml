@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_rel_widget_clone">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
     <sp_rel_widget_clone action="INSERT_OR_UPDATE">
         <child display_value="UdG Qualitat Header">69dd20d4dbcdef009fd1f57eaf96198b</child>
         <cloned>2018-10-05 09:37:40</cloned>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="scheduled_import_set">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_import_set">
     <scheduled_import_set action="INSERT_OR_UPDATE">
         <active>true</active>
         <condition/>

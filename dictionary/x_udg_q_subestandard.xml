@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Subestàndard" max_length="40" name="x_udg_q_subestandard" type="collection">
         <element choice="1" label="Estandard" max_length="32" name="estandard" reference="x_udg_q_estandard" type="reference">
             <choice/>

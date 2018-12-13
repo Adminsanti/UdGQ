@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_theme">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
     <sp_theme action="INSERT_OR_UPDATE">
         <css_variables>$sp-logo-margin-x: 		15px !default;&#13;
 $sp-tagline-color:		$text-color !default;&#13;

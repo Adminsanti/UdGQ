@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_process_flow">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
     <sys_process_flow action="INSERT_OR_UPDATE">
         <active>true</active>
         <condition table="x_udg_q_recomanacions">estat=1^EQ<item endquery="false" field="estat" goto="false" newquery="false" operator="=" or="false" value="1"/>

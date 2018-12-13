@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_instance_vlist">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
     <sp_instance_vlist action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>

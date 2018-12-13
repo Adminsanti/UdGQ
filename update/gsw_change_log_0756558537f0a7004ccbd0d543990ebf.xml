@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="gsw_change_log">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2018-09-25 10:14:29</change_date>
         <changed_by display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</changed_by>

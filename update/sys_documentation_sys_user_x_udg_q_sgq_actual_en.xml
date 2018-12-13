@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="x_udg_q_sgq_actual" label="SGQ Actual" language="en" table="sys_user">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>x_udg_q_sgq_actual</element>

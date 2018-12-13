@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
-    <sys_ui_section caption="" section_id="a097545adb6da7009fd1f57eaf96190e" sys_domain="global" table="x_udg_q_acciomillora" version="3" view="">
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="2a07616d3701e3004ccbd0d543990ef9" sys_domain="global" table="x_udg_q_acciomillora" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>process_flow.xml</element>
             <position>0</position>
@@ -9,7 +8,7 @@
             <sys_id>e854f996db4e2f009fd1f57eaf96192a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Accions Process Flow">ca903a64dba5a3009fd1f57eaf9619da</sys_ui_formatter>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -23,7 +22,7 @@
             <sys_id>6054f996db4e2f009fd1f57eaf96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -37,7 +36,7 @@
             <sys_id>e054f996db4e2f009fd1f57eaf96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -51,7 +50,7 @@
             <sys_id>6454f996db4e2f009fd1f57eaf96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -65,7 +64,7 @@
             <sys_id>e454f996db4e2f009fd1f57eaf96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -79,7 +78,7 @@
             <sys_id>6854f996db4e2f009fd1f57eaf96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -93,7 +92,7 @@
             <sys_id>e854f996db4e2f009fd1f57eaf96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -107,7 +106,7 @@
             <sys_id>6c54f996db4e2f009fd1f57eaf96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -121,7 +120,7 @@
             <sys_id>ec54f996db4e2f009fd1f57eaf96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -135,7 +134,7 @@
             <sys_id>6054f996db4e2f009fd1f57eaf96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -149,7 +148,7 @@
             <sys_id>e054f996db4e2f009fd1f57eaf96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -163,7 +162,7 @@
             <sys_id>6454f996db4e2f009fd1f57eaf96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -177,7 +176,7 @@
             <sys_id>e454f996db4e2f009fd1f57eaf96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a097545adb6da7009fd1f57eaf96190e</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
             <sys_user/>
@@ -194,7 +193,7 @@
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a097545adb6da7009fd1f57eaf96190e</sys_id>
+            <sys_id>2a07616d3701e3004ccbd0d543990ef9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_acciomillora</sys_name>
             <sys_overrides/>
@@ -202,7 +201,7 @@
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_ui_section_a097545adb6da7009fd1f57eaf96190e</sys_update_name>
+            <sys_update_name>sys_ui_section_2a07616d3701e3004ccbd0d543990ef9</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-05 09:39:38</sys_updated_on>
             <sys_user/>

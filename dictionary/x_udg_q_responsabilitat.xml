@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Responsabilitat" max_length="40" name="x_udg_q_responsabilitat" type="collection">
+        <element default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
+        <element label="Membres títol personal" max_length="4000" name="membres_personal" reference="sys_user" type="glide_list"/>
+        <element label="Membres responsabilitat" max_length="32" name="membres_responsabilitat" reference="x_udg_q_responsabilitat" type="glide_list"/>
+        <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element label="Usuari" mandatory="true" max_length="32" name="usuari" reference="sys_user" reference_qual="u_is_pac=true^ORu_ispas=true^EQ" reference_qual_condition="u_is_pac=true^ORu_ispas=true^EQ" type="reference"/>
+        <index name="index">
+            <element name="membres_responsabilitat"/>
+        </index>
+        <index name="index2">
+            <element name="usuari"/>
+        </index>
+        <index name="index3">
+            <element name="sgq"/>
+        </index>
+    </element>
+</database>

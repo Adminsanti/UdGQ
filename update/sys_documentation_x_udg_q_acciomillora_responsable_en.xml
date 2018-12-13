@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="responsable" label="Responsable" language="en" table="x_udg_q_acciomillora">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>responsable</element>

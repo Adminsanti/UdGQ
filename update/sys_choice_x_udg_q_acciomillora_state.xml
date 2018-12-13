@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_udg_q_acciomillora" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -198,7 +197,7 @@
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-11-05 09:41:55</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>3918d85adb6da7009fd1f57eaf96194b</sys_id>
+            <sys_id>a98326afdbc66f00ccd95bd05b96196e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>state</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>

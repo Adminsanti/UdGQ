@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_instance_menu">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu">
     <sp_instance_menu action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>

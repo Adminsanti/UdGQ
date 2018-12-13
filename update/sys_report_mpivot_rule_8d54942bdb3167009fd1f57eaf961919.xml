@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_report_mpivot_rule">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_mpivot_rule">
     <sys_report_mpivot_rule action="INSERT_OR_UPDATE">
         <bg_color>background-color:</bg_color>
         <bg_color_id/>

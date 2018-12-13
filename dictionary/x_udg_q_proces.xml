@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Procés" max_length="40" name="x_udg_q_proces" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" read_only="true" type="boolean"/>
         <element label="Fluxograma" max_length="8000" name="flux" read_only="true" type="html"/>
@@ -18,11 +17,11 @@
         </element>
         <element choice="3" default="Procés" label="Tipus" mandatory="true" max_length="30" name="tipus" type="string">
             <choice>
-                <element label="Procediment" value="Procediment"/>
-                <element label="Procediment" value="Procediment"/>
-                <element label="Procés" value="Procés"/>
-                <element label="Procés" value="Procés"/>
-                <element label="Subprocés" sequence="1" value="Subprocés"/>
+                <element inactive_on_update="false" label="Procediment" value="Procediment"/>
+                <element inactive_on_update="false" label="Procés" value="Procés"/>
+                <element inactive="true" inactive_on_update="true" label="Procediment" sequence="0" value="Procediment"/>
+                <element inactive="true" inactive_on_update="true" label="Procés" sequence="1" value="Procés"/>
+                <element inactive_on_update="false" label="Subprocés" sequence="2" value="Subprocés"/>
             </choice>
         </element>
         <element label="Titol" mandatory="true" max_length="180" name="titol" type="string"/>
