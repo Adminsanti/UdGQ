@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="propietari" table="x_udg_q_sgq">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_udg_q_gestorsuniversitat">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
-        <audit>false</audit>
+        <audit>true</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	// Add your code here
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Propietari</column_label>
+        <column_label/>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,24 +27,24 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>propietari</element>
+        <element/>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Collection">collection</internal_type>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <name>x_udg_q_sgq</name>
+        <max_length>40</max_length>
+        <name>x_udg_q_gestorsuniversitat</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_udg_q_funcio">x_udg_q_funcio</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ</reference_qual>
+        <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
@@ -52,24 +52,24 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-03 11:39:01</sys_created_on>
+        <sys_created_on>2018-12-14 10:38:02</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>7429c404db41a3c01f06adc3ca96191c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Propietari</sys_name>
+        <sys_id>0cfad972371a27004ccbd0d543990ee2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_udg_q_gestorsuniversitat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_x_udg_q_sgq_propietari</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-12-04 13:34:51</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_udg_q_gestorsuniversitat_null</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-12-14 12:10:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
-        <use_dependent_field>true</use_dependent_field>
+        <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

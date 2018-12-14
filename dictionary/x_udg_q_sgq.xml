@@ -4,7 +4,7 @@
         <element display="true" label="Codi" mandatory="true" max_length="6" name="codi" type="string"/>
         <element label="Mapa" max_length="8000" name="mapa" read_only="true" type="html"/>
         <element label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
-        <element label="Propietari" max_length="32" name="propietari" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" reference_qual_condition="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" type="reference" use_dependent_field="true"/>
+        <element label="Propietari" max_length="32" name="propietari" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
         <element label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" reference_qual_condition="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" type="reference"/>
         <element label="Responsable Orgànic" max_length="32" name="responsable_organic" reference="sys_user" reference_qual="u_is_pac=true^ORu_ispas=true^EQ" reference_qual_condition="u_is_pac=true^ORu_ispas=true^EQ" type="reference"/>

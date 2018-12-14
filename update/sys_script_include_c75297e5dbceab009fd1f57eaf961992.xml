@@ -54,6 +54,56 @@ Usuari.prototype = {
 		else
 			return "";
 	},
+	
+	isGestorUniversitat: function(){
+		var gr = new GlideRecord("x_udg_q_gestorsuniversitat");
+		gr.addQuery('actiu',true);
+		gr.addQuery('usuari',this.usuari);
+		gr.setLimit(1);
+		gr.query();
+		var itIs = gr.next();
+		return itIs;
+	},
+	
+	isObservador: function (sgq) {
+		var gr = new GlideRecord("x_udg_q_observador");
+		if (sgq) gr.addQuery('sgq',sgq);
+			gr.addQuery('actiu',true);
+		gr.addQuery('sys_id',this.usuari);
+		gr.setLimit(1);
+		gr.query();
+		var itIs = gr.next();
+		return itIs;
+	},
+	
+	_isManager: function (sgq) {
+		var gr = new GlideRecord("x_udg_q_sgq");
+		if (sgq) gr.addQuery('sgq',sgq);
+			gr.addQuery('actiu',true);
+		var qc = gr.addQuery('responsable.usuai', this.usuari);
+		qc.addOrCondition('responsable.suport','CONTAINS',this.usuari);
+		qc.addOrCondition('propietari.usuari', this.usuari);
+		qc.addOrCondition('propietari.suport','CONTAINS',this.usuari);
+		gr.setLimit(1);
+		gr.query();
+		var itIs = gr.next();
+		return itIs;
+	},
+	
+	_isUser: function (sgq) {
+		/*
+		var gr = new GlideRecord("x_udg_q_observador");
+		if (sgq) gr.addQuery('sgq',sgq);
+			gr.addQuery('actiu',true);
+		gr.addQuery('sys_id',this.usuari);
+		gr.setLimit(1);
+		gr.query();
+		var exists = gr.next();
+		return exists;
+ 		*/
+	},
+	
+	
 	type: 'Usuari'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -61,7 +111,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -69,6 +119,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-29 11:21:11</sys_updated_on>
+        <sys_updated_on>2018-12-14 12:07:58</sys_updated_on>
     </sys_script_include>
 </record_update>
