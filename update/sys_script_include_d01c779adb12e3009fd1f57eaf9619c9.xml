@@ -21,6 +21,16 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		
 		var SGQ = gs.getUser().getPreference("qualitat.sgqActualCodi");
 		
+		//var SGQ = gs.getUser().getRecord().x_udg_q_sgq_actual.codi.toString();
+		/*
+		var currentUser = gs.getUser();
+		var gr= new GlideRecord('sys_user');
+		gr.get('sys_id',currentUser);
+		var SGQ=gr.x_udg_q_sgq_actual.codi.toString();
+		*/
+		
+		
+		
 		var linkDivOpen = '<div><span style="' + theStyle + '">';
 		var linkDivClose = "</span></div>";
 		
@@ -46,7 +56,7 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2018-12-13 09:06:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d01c779adb12e3009fd1f57eaf9619c9</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Banner</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -54,6 +64,6 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_d01c779adb12e3009fd1f57eaf9619c9</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-12-13 09:27:01</sys_updated_on>
+        <sys_updated_on>2018-12-13 10:20:27</sys_updated_on>
     </sys_script_include>
 </record_update>

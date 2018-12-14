@@ -11,12 +11,11 @@
 //var gestionats=gs.getUser().getRecord().getValue('x_udg_q_sgq_gestionats');
 var currentUser = gs.getUser();
 var gr= new GlideRecord('sys_user');
-gr.addQuery('sys_id',currentUser);
-gr.setLimit(1);
-gr.query();
-currentUser.savePreference('qualitat.sgqActual',gr.actual);
-currentUser.savePreference('qualitat.sgqActualCodi',gr.actual.codi);
-gs.info(currentUser.getPreference('sgqActual'));
+if (gr.get(currentUser)) {
+	currentUser.savePreference('qualitat.sgqActual',gr.x_udg_q_sgq_actual);
+	currentUser.savePreference('qualitat.sgqActualCodi',gr.x_udg_q_sgq_actual.codi.toString());
+}
+//gs.info(currentUser.getPreference('sgqActual'));
 ]]></script>
         <synchronous>false</synchronous>
         <sys_class_name>sysevent_script_action</sys_class_name>
@@ -26,7 +25,7 @@ gs.info(currentUser.getPreference('sgqActual'));
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9d20d1b37142f401acdf01643990ec2</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Assignar SGQ Actual al establir sessió</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -35,6 +34,6 @@ gs.info(currentUser.getPreference('sgqActual'));
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_script_action_b9d20d1b37142f401acdf01643990ec2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-25 08:28:12</sys_updated_on>
+        <sys_updated_on>2018-12-13 10:46:06</sys_updated_on>
     </sysevent_script_action>
 </record_update>
