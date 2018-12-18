@@ -34,14 +34,14 @@ Usuari.prototype = {
 		gr.addQuery('role',role_name);
 		gr.query();
 		if(gr.next()) {
-			new log("Ja té el rol");
+			// new log("Ja té el rol");
 		} else {
 			gr.user=this.usuari;
 			gr.role= this._getRoleIdByName(role_name);
 			if (gr.role !="" && gr.user!="")
 				gr.insert();
 			else
-				new log ("Error insert addRole");
+				new log ("Error insert x_udg_q.Usuari.addRole() "+this.usuari);
 		}
 	},
 	
@@ -55,7 +55,7 @@ Usuari.prototype = {
 			return "";
 	},
 	
-	isGestorUniversitat: function(){
+	isManagerUniversitat: function(){
 		var gr = new GlideRecord("x_udg_q_gestorsuniversitat");
 		gr.addQuery('actiu',true);
 		gr.addQuery('usuari',this.usuari);
@@ -67,20 +67,22 @@ Usuari.prototype = {
 	
 	isObservador: function (sgq) {
 		var gr = new GlideRecord("x_udg_q_observador");
-		if (sgq) gr.addQuery('sgq',sgq);
-			gr.addQuery('actiu',true);
-		gr.addQuery('sys_id',this.usuari);
+		if (sgq)
+			gr.addQuery('sgq',sgq);
+		gr.addQuery('actiu',true);
+		gr.addQuery('usuari',this.usuari);
 		gr.setLimit(1);
 		gr.query();
 		var itIs = gr.next();
+		//gs.info("Observador ? "+this.usuari+" "+itIs+" sgq: "+sgq.codi);
 		return itIs;
 	},
 	
-	_isManager: function (sgq) {
+	isManager: function (sgq) {
 		var gr = new GlideRecord("x_udg_q_sgq");
-		if (sgq) gr.addQuery('sgq',sgq);
+		if (sgq) gr.addQuery('sys_id',sgq);
 			gr.addQuery('actiu',true);
-		var qc = gr.addQuery('responsable.usuai', this.usuari);
+		var qc = gr.addQuery('responsable.usuari', this.usuari);
 		qc.addOrCondition('responsable.suport','CONTAINS',this.usuari);
 		qc.addOrCondition('propietari.usuari', this.usuari);
 		qc.addOrCondition('propietari.suport','CONTAINS',this.usuari);
@@ -90,19 +92,32 @@ Usuari.prototype = {
 		return itIs;
 	},
 	
-	_isUser: function (sgq) {
-		/*
-		var gr = new GlideRecord("x_udg_q_observador");
+	isUser: function (sgq) {
+		var gr = new GlideRecord("x_udg_q_funcio");
 		if (sgq) gr.addQuery('sgq',sgq);
-			gr.addQuery('actiu',true);
-		gr.addQuery('sys_id',this.usuari);
+			gr.addQuery('activa',true);
+		var qc = gr.addQuery('usuari',this.usuari);
+		qc.addOrCondition('suport', 'CONTAINS',this.usuari);
 		gr.setLimit(1);
 		gr.query();
-		var exists = gr.next();
-		return exists;
- 		*/
+		var itIs = gr.next();
+		return itIs;
 	},
 	
+	sgqVisibles: function () {
+		var llistaSgq = [];
+		var grSgq = new GlideRecord('x_udg_q_sgq');
+		grSgq.addQuery('actiu',true);
+		grSgq.query();
+		while (grSgq.next()) {
+			if (this.isManagerUniversitat() || this.isManager(grSgq.sys_id)|| this.isUser(grSgq.sys_id) || this.isObservador(grSgq.sys_id)) {
+				//gs.info("afegir: "+grSgq.sys_id.toString());
+				llistaSgq.push(grSgq.sys_id.toString());
+				//gs.info("ara llistaSgq és: "+llistaSgq);
+			}
+		}
+		return llistaSgq;
+	},
 	
 	type: 'Usuari'
 };]]></script>
@@ -111,7 +126,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -119,6 +134,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-12-14 12:07:58</sys_updated_on>
+        <sys_updated_on>2018-12-18 09:06:26</sys_updated_on>
     </sys_script_include>
 </record_update>

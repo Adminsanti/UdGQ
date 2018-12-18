@@ -12,7 +12,7 @@
         <sys_created_on>2018-11-28 11:10:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5af80761dbceab009fd1f57eaf9619d4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>glide.ui.x_udg_q_observador_activity.fields</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -20,9 +20,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_properties_5af80761dbceab009fd1f57eaf9619d4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-28 12:48:58</sys_updated_on>
+        <sys_updated_on>2018-12-14 12:32:46</sys_updated_on>
         <type>string</type>
-        <value>sgq,usuari,actiu,sys_updated_by,sys_updated_on,notes</value>
+        <value>sgq,usuari,actiu,sys_updated_by,sys_updated_on,notes,sys_created_on,sys_created_by</value>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=5af80761dbceab009fd1f57eaf9619d4"/>

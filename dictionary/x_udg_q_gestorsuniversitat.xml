@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Gestor Universitat" max_length="40" name="x_udg_q_gestorsuniversitat" type="collection">
-        <element label="Actiu" max_length="40" name="actiu" type="boolean"/>
+        <element default="True" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Notes" max_length="4000" name="notes" type="string"/>
         <element display="true" label="Usuari" max_length="32" name="usuari" reference="sys_user" type="reference"/>
         <index name="index">
