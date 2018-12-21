@@ -4,13 +4,13 @@
             <element>codi</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:27:55</sys_created_on>
-            <sys_id>23ef432e3715ef004ccbd0d543990eb0</sys_id>
+            <sys_created_on>2018-12-19 14:40:15</sys_created_on>
+            <sys_id>0d52c860372e6b004ccbd0d543990e1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_sgq" sys_domain="global" view="c7402b100a0a0b8400cf971d83ee4384">38b7c8ac3795ab004ccbd0d543990ecb</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:27:55</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>nom</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:27:55</sys_created_on>
-            <sys_id>a3ef432e3715ef004ccbd0d543990eb0</sys_id>
+            <sys_created_on>2018-12-19 14:40:15</sys_created_on>
+            <sys_id>8d52c860372e6b004ccbd0d543990e1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_sgq" sys_domain="global" view="c7402b100a0a0b8400cf971d83ee4384">38b7c8ac3795ab004ccbd0d543990ecb</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:27:55</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:27:55</sys_created_on>
-            <sys_id>27ef432e3715ef004ccbd0d543990eb0</sys_id>
+            <sys_created_on>2018-12-19 14:40:15</sys_created_on>
+            <sys_id>0152c860372e6b004ccbd0d543990e20</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_sgq" sys_domain="global" view="c7402b100a0a0b8400cf971d83ee4384">38b7c8ac3795ab004ccbd0d543990ecb</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:27:55</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:40:15</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,27 +46,55 @@
             <element>propietari</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:27:55</sys_created_on>
-            <sys_id>a7ef432e3715ef004ccbd0d543990eb0</sys_id>
+            <sys_created_on>2018-12-19 14:40:15</sys_created_on>
+            <sys_id>8152c860372e6b004ccbd0d543990e20</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_sgq" sys_domain="global" view="c7402b100a0a0b8400cf971d83ee4384">38b7c8ac3795ab004ccbd0d543990ecb</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:27:55</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:40:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>propietari.usuari.name</element>
+            <position>4</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-12-19 14:40:15</sys_created_on>
+            <sys_id>0552c860372e6b004ccbd0d543990e20</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_sgq" sys_domain="global" view="c7402b100a0a0b8400cf971d83ee4384">38b7c8ac3795ab004ccbd0d543990ecb</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-12-19 14:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>responsable</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:27:55</sys_created_on>
-            <sys_id>2bef432e3715ef004ccbd0d543990eb0</sys_id>
+            <sys_created_on>2018-12-19 14:40:15</sys_created_on>
+            <sys_id>8552c860372e6b004ccbd0d543990e20</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_sgq" sys_domain="global" view="c7402b100a0a0b8400cf971d83ee4384">38b7c8ac3795ab004ccbd0d543990ecb</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:27:55</sys_updated_on>
+            <sys_updated_on>2018-12-19 14:40:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>responsable.usuari.name</element>
+            <position>6</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-12-19 14:40:15</sys_created_on>
+            <sys_id>0952c860372e6b004ccbd0d543990e20</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_sgq" sys_domain="global" view="c7402b100a0a0b8400cf971d83ee4384">38b7c8ac3795ab004ccbd0d543990ecb</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2018-12-19 14:40:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

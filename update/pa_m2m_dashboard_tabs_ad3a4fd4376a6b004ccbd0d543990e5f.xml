@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Llicències">bc1acbd4376a6b004ccbd0d543990e6d</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-12-19 10:35:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad3a4fd4376a6b004ccbd0d543990e5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bc1acbd4376a6b004ccbd0d543990e6d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_ad3a4fd4376a6b004ccbd0d543990e5f</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-12-19 10:35:04</sys_updated_on>
+        <tab display_value="New Tab">1d3a4fd4376a6b004ccbd0d543990e5d</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

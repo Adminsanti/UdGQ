@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2018-12-19 10:04:50</change_date>
+        <changed_by display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</changed_by>
+        <content display_value="Jelly/JS Interpolation *">44535ed6db580300f3b3546fdf9619ac</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-12-19 10:04:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a6438750376a6b004ccbd0d543990e72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2018-12-19 10:04:50</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>gsw_change_log_a6438750376a6b004ccbd0d543990e72</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-12-19 10:04:50</sys_updated_on>
+        <type>4</type>
+    </gsw_change_log>
+</record_update>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>Recalcula SGQ visibles</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2/>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Recalcula SGQ visibles &amp; Rols</name>
+        <onclick/>
+        <order>500</order>
+        <script><![CDATA[var u= new x_udg_q.Usuari(current.sys_id);
+current.x_udg_q_sgq_visibles= u.sgqVisibles();
+var llista_visibles = current.x_udg_q_sgq_visibles.split(',');
+var actual=current.x_udg_q_sgq_actual.toString();
+new log("Buscarem: "+current.x_udg_q_sgq_actual+" dins "+current.x_udg_q_sgq_visibles+ " o "+ llista_visibles+" i donarà " +llista_visibles.indexOf(actual));
+if (llista_visibles.indexOf(actual)==-1) //En cas que el sgq_actual no estigui entre els visibles
+	current.x_udg_q_sgq_actual=llista_visibles[0].toString();
+current.update();
+u.setRoles(current.x_udg_q_sgq_actual);
+action.setRedirectURL(current); //Es queda a la plana on s'ha cridat
+
+]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-12-18 10:29:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e1beb18c37a62b004ccbd0d543990ee2</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Recalcula SGQ visibles &amp; Rols</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_action_e1beb18c37a62b004ccbd0d543990ee2</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-12-19 16:35:22</sys_updated_on>
+        <table>sys_user</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

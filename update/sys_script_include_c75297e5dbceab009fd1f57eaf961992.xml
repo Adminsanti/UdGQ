@@ -28,6 +28,15 @@ Usuari.prototype = {
 		}
 	},
 	
+	_getSysIdRol: function (rol) {
+		var grManagerUniversitat = new GlideRecord('sys_user_role');
+		grManagerUniversitat.get('name',rol);
+		return grManagerUniversitat.sys_id.toString();
+	},
+	
+	
+	
+	
 	addRole: function (role_name) { //Role is the role name
 		var gr = new GlideRecord('sys_user_has_role');
 		gr.addQuery('user',this.usuari);
@@ -104,6 +113,8 @@ Usuari.prototype = {
 		return itIs;
 	},
 	
+	
+	
 	sgqVisibles: function () {
 		var llistaSgq = [];
 		var grSgq = new GlideRecord('x_udg_q_sgq');
@@ -111,12 +122,99 @@ Usuari.prototype = {
 		grSgq.query();
 		while (grSgq.next()) {
 			if (this.isManagerUniversitat() || this.isManager(grSgq.sys_id)|| this.isUser(grSgq.sys_id) || this.isObservador(grSgq.sys_id)) {
-				//gs.info("afegir: "+grSgq.sys_id.toString());
+				//new log("Afegir: "+grSgq.sys_id.toString());
 				llistaSgq.push(grSgq.sys_id.toString());
-				//gs.info("ara llistaSgq és: "+llistaSgq);
+				//new log("Ara llistaSgq és: "+llistaSgq);
 			}
 		}
-		return llistaSgq;
+		//new log("Definitivament la llista toString és: "+llistaSgq.toString());
+		return llistaSgq.toString();
+	},
+	
+	setRoles: function (sgq) {
+		new log("setRoles per "+this.usuari);
+		
+		//ManagerUniversitat
+		var idMU= this._getSysIdRol('x_udg_q.ManagerUniversitat');
+		var gr1 = new GlideRecord('sys_user_has_role');
+		gr1.addQuery('user', this.usuari);
+		gr1.addQuery('role', idMU);
+		gr1.query();
+		var foundMU=gr1.next();
+		var isMU= this.isManagerUniversitat();
+		if (isMU && !foundMU) {
+			gr1.initialize();
+			gr1.user=this.usuari;
+			gr1.role=idMU;
+			new log("Afegim ManagerUniversitat per "+gr1.user);
+			gr1.insert();
+		}
+		if (!isMU && foundMU) {
+			new log("Esborrem ManagerUniversitat per "+gr1.user);
+			gr1.deleteRecord();
+		}
+		//Manager
+		var idManager = this._getSysIdRol('x_udg_q.Manager');
+		var gr2 = new GlideRecord('sys_user_has_role');
+		gr2.addQuery('user', this.usuari);
+		gr2.addQuery('role', idManager);
+		gr2.addQuery('inherited', false);
+		gr2.query();
+		var foundManager=gr2.next();
+		var isManager= this.isManager(sgq);
+		if (isManager && !foundManager) {
+			gr2.initialize();
+			gr2.user=this.usuari;
+			gr2.role=idManager;
+			new log("Afegim manager per "+gr2.user);
+			gr2.insert();
+		}
+		if (!isManager && foundManager) {
+			new log("Esborrem manager per "+gr2.user);
+			gr2.deleteRecord();
+		}
+		
+		//User
+		var idUser = this._getSysIdRol('x_udg_q.User');
+		var gr3 = new GlideRecord('sys_user_has_role');
+		gr3.addQuery('user', this.usuari);
+		gr3.addQuery('role', idUser);
+		gr3.addQuery('inherited', false);
+		gr3.query();
+		var foundUser=gr3.next();
+		var isUser= this.isUser(sgq);
+		if (isUser && !foundUser) {
+			gr3.initialize();
+			gr3.user=this.usuari;
+			gr3.role=idUser;
+			new log("Afegim user per "+gr3.user);
+			gr3.insert();
+		}
+		if (!isUser && foundUser) {
+			new log("Esborrem user per "+gr3.user);
+			gr3.deleteRecord();
+		}
+		
+		//Observador
+		var idOb = this._getSysIdRol('x_udg_q.Observador');
+		var gr4 = new GlideRecord('sys_user_has_role');
+		gr4.addQuery('user', this.usuari);
+		gr4.addQuery('role', idOb);
+		gr4.addQuery('inherited', false);
+		gr4.query();
+		var foundOb=gr4.next();
+		var isOb= this.isObservador(sgq);
+		if (isOb && !foundOb) {
+			gr4.initialize();
+			gr4.user=this.usuari;
+			gr4.role=idOb;
+			new log("Afegim Observador per "+gr4.user);
+			gr4.insert();
+		}
+		if (!isOb && foundOb) {
+			new log("Esborrem Observador per "+gr4.user);
+			gr4.deleteRecord();
+		}
 	},
 	
 	type: 'Usuari'
@@ -126,7 +224,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -134,6 +232,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-12-18 09:06:26</sys_updated_on>
+        <sys_updated_on>2018-12-19 16:52:09</sys_updated_on>
     </sys_script_include>
 </record_update>
