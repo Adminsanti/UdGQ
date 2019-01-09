@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Defineix Objectiu</action_name>
+        <action_name>Declara Objectiu</action_name>
         <active>true</active>
         <client>true</client>
         <client_script_v2/>
@@ -23,7 +23,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Defineix</name>
+        <name>Declara Objectiu</name>
         <onclick>onClick()</onclick>
         <order>30</order>
         <script><![CDATA[// Client side onclick function
@@ -40,7 +40,7 @@ function onClick(){
 	var errorMessage = g_form.checkMandatoryFields(mandatoryFields);
 	
 	if (!errorMessage){
-		gsftSubmit(null, g_form.getFormElement(), 'Defineix Objectiu'); //MUST call the 'Action name' set in this UI Action
+		gsftSubmit(null, g_form.getFormElement(), 'Declara Objectiu'); //MUST call the 'Action name' set in this UI Action
 	}else{
 		g_form.clearMessages();
 		g_form.addErrorMessage("Manquen camps obligatoris: "+ errorMessage );
@@ -57,11 +57,11 @@ function doDefinirObjectiu() {
 	
 	if (current.responsable == '') { //Check de tots els camps obligatoris
 		current.update(); //gravem igualment
-		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO ES POT DEFINIR per <B>manca de responsable</B>");
+		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO ES POT DECLARAR per <B>manca de responsable</B>");
 	}
 	else {
 		var o= new ObjectiuUtils();
-		current.state = 1;
+		current.state = 2;
 		current.active=true;
 		current.accions=o.getAccions(current.sys_id);
 		current.assoliment=o.getAssoliment(current.sys_id);
@@ -71,9 +71,9 @@ function doDefinirObjectiu() {
 		current.closed_by="";
 		current.closed_at="";
 		current.update();
-		gs.addInfoMessage(current.number+ " Definit");
+		gs.addInfoMessage(current.number+ " Declarat");
 	}
-	//action.setRedirectURL(current);  NO Roman
+	action.setRedirectURL(current);  //Roman (Si no, no es veuen els camps obligatoris)
 }
 ]]></script>
         <show_insert>true</show_insert>
@@ -87,8 +87,8 @@ function doDefinirObjectiu() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f854152dbca2f009fd1f57eaf96194b</sys_id>
-        <sys_mod_count>23</sys_mod_count>
-        <sys_name>Defineix</sys_name>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Declara Objectiu</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -96,7 +96,7 @@ function doDefinirObjectiu() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_2f854152dbca2f009fd1f57eaf96194b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-12-17 10:24:29</sys_updated_on>
+        <sys_updated_on>2019-01-08 18:38:44</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

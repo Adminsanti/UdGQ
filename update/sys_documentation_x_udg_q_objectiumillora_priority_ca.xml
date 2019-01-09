@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="assoliment" label="Percentatge execució" language="en" table="x_udg_q_objectiumillora">
+    <sys_documentation element="priority" label="Prioritat" language="ca" table="x_udg_q_objectiumillora">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>assoliment</element>
+            <element>priority</element>
             <help/>
             <hint/>
-            <label>Percentatge execució</label>
-            <language>en</language>
+            <label>Prioritat</label>
+            <language>ca</language>
             <name>x_udg_q_objectiumillora</name>
-            <plural>Percentatges execució</plural>
+            <plural>Prioritats</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-06 12:52:59</sys_created_on>
+            <sys_created_on>2019-01-08 17:41:53</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>d26d0a6adba923009fd1f57eaf9619a5</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_name>Percentatge execució</sys_name>
+            <sys_id>469b23b61b3ae3005fab4002cd4bcb11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Prioritat</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_documentation_x_udg_q_objectiumillora_assoliment_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_udg_q_objectiumillora_priority_ca</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-08 17:21:18</sys_updated_on>
+            <sys_updated_on>2019-01-08 17:41:53</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

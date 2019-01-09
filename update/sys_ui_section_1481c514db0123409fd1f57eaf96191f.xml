@@ -4,13 +4,13 @@
             <element>qid</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:29:50</sys_created_on>
-            <sys_id>7b50d72e3715ef004ccbd0d543990eaf</sys_id>
+            <sys_created_on>2019-01-08 18:56:39</sys_created_on>
+            <sys_id>73cc3bf21b7ae3005fab4002cd4bcb9b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:29:50</sys_updated_on>
+            <sys_updated_on>2019-01-08 18:56:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>propietari</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:29:50</sys_created_on>
-            <sys_id>fb50d72e3715ef004ccbd0d543990eaf</sys_id>
+            <sys_created_on>2019-01-08 18:56:39</sys_created_on>
+            <sys_id>f3cc3bf21b7ae3005fab4002cd4bcb9b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:29:50</sys_updated_on>
+            <sys_updated_on>2019-01-08 18:56:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>responsable</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:29:50</sys_created_on>
-            <sys_id>7f50d72e3715ef004ccbd0d543990eaf</sys_id>
+            <sys_created_on>2019-01-08 18:56:39</sys_created_on>
+            <sys_id>77cc3bf21b7ae3005fab4002cd4bcb9b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:29:50</sys_updated_on>
+            <sys_updated_on>2019-01-08 18:56:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,15 +46,57 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-25 07:29:50</sys_created_on>
-            <sys_id>ff50d72e3715ef004ccbd0d543990eaf</sys_id>
+            <sys_created_on>2019-01-08 18:56:39</sys_created_on>
+            <sys_id>f7cc3bf21b7ae3005fab4002cd4bcb9b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-25 07:29:50</sys_updated_on>
+            <sys_updated_on>2019-01-08 18:56:39</sys_updated_on>
             <sys_user/>
             <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>actiu</element>
+            <position>4</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-08 18:56:39</sys_created_on>
+            <sys_id>7bcc3bf21b7ae3005fab4002cd4bcb9b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-08 18:56:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>propietari.usuari.name</element>
+            <position>5</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-08 18:56:39</sys_created_on>
+            <sys_id>fbcc3bf21b7ae3005fab4002cd4bcb9b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-08 18:56:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>responsable.usuari.name</element>
+            <position>6</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-08 18:56:39</sys_created_on>
+            <sys_id>7fcc3bf21b7ae3005fab4002cd4bcb9b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-08 18:56:39</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Responsabilitats sobre el SGQ</caption>

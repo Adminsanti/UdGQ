@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_dictionary action="INSERT_OR_UPDATE" element="virtual" table="x_udg_q_sgq">
-        <active>true</active>
+        <active>false</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
@@ -55,15 +55,15 @@
         <sys_created_on>2018-09-07 10:48:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>33f767cfdbe82b80ccd95bd05b9619ea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Virtual</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_sgq_virtual</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-12-04 13:34:51</sys_updated_on>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-01-08 19:03:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

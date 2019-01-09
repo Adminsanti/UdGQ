@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2018-12-21 08:26:14">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2019-01-09 08:18:51">
     <sys_portal_page action="INSERT_OR_UPDATE">
         <layout/>
         <order/>
@@ -118,6 +118,17 @@
                         <value>true</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 19/12/2018 11:35:18">744a8bd4376a6b004ccbd0d543990e0b</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-01-05 05:03:06</sys_created_on>
+                        <sys_id>d44125f51b3223005fab4002cd4bcb3b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-01-05 05:03:06</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
                         <portal_section display_value="Created 19/12/2018 11:35:18">744a8bd4376a6b004ccbd0d543990e0b</portal_section>
                         <sys_created_by>adminsanti</sys_created_by>
@@ -209,6 +220,17 @@
                         <sys_updated_by>adminsanti</sys_updated_by>
                         <sys_updated_on>2018-12-19 10:35:30</sys_updated_on>
                         <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 19/12/2018 11:35:30">bf4acbd4376a6b004ccbd0d543990e0d</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-01-05 05:03:06</sys_created_on>
+                        <sys_id>dc4125f51b3223005fab4002cd4bcb32</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-01-05 05:03:06</sys_updated_on>
+                        <value>false</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
@@ -313,6 +335,17 @@
                         <sys_updated_by>adminsanti</sys_updated_by>
                         <sys_updated_on>2018-12-19 10:35:40</sys_updated_on>
                         <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 19/12/2018 11:35:40">c65a4fd4376a6b004ccbd0d543990e98</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-01-05 05:03:06</sys_created_on>
+                        <sys_id>984125f51b3223005fab4002cd4bcb36</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-01-05 05:03:06</sys_updated_on>
+                        <value>false</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
