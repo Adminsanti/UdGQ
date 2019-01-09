@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>OBJ tots amb estats 1 i 3 canvien a 2</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[var gr = new GlideRecord('x_udg_q_objectiumillora');
+var gc= gr.addQuery('state', 1);
+gc.addOrCondition('state', 3);
+
+gr.query();
+var n=0;
+while(gr.next()) {
+    n++;
+    gs.info(n + " - "+ gr.number + " - "+gr.state);
+    gr.state=2;
+  
+    gr.update();       
+    }]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-01-09 16:38:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d3962c971b7a27005fab4002cd4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OBJ tots amb estats 1 i 3 canvien a 2</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_fix_d3962c971b7a27005fab4002cd4bcb5f</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-01-09 16:38:48</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>
