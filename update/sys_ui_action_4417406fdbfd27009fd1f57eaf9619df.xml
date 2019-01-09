@@ -29,7 +29,7 @@
         <script><![CDATA[if (current.valoracio != "") {
 	current.active=false;
 	current.state=5;
-	current.update();
+	current.uopdate();
 } else {
 	gs.addErrorMessage ("No es pot tancar un objectiu sense valoració");
 	g_form.setVisible('valoracio',true);
@@ -46,7 +46,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4417406fdbfd27009fd1f57eaf9619df</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Tanca Objectiu</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -55,7 +55,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_4417406fdbfd27009fd1f57eaf9619df</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 07:37:37</sys_updated_on>
+        <sys_updated_on>2019-01-09 12:43:58</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
