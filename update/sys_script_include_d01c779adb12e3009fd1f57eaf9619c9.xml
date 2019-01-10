@@ -9,11 +9,6 @@
         <script><![CDATA[var Banner = Class.create();
 Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	getAll: function () {
-		/*
-		var theStyle = "float: right; padding:0px;font-size: 1.3rem; margin: 5px 0px 0px 0px;" +
-		"width: auto; height: 2px; text-align: center;" +
-		"color: white";
- 		*/
 		
 		var theStyle = "float: right; padding:0px;font-size: 1.4rem; " +
 		"width: auto; height: 2px; text-align: center;" +
@@ -21,26 +16,16 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		
 		var SGQ = gs.getUser().getPreference("qualitat.sgqActualCodi");
 		
-		//var SGQ = gs.getUser().getRecord().x_udg_q_sgq_actual.codi.toString();
-		/*
-		var currentUser = gs.getUser();
-		var gr= new GlideRecord('sys_user');
-		gr.get('sys_id',currentUser);
-		var SGQ=gr.x_udg_q_sgq_actual.codi.toString();
-		*/
-		
-		
-		
 		var linkDivOpen = '<div><span style="' + theStyle + '">';
 		var linkDivClose = "</span></div>";
 		
 		//Link
 		
-		/*
-		var sneLink = "<a href='/nav_to.do?uri=%2Fsys_user.do%3Fsysparm_view=SGQ&sysparm_query=sys_id=javascript:gs.getUserID()&sysparm_stack=no' id='sneLink' class='headerlink' style='color: inherit;text-decoration: none;border: 2px solid white;border-radius: 3px;padding:8px;'>Qualitat<span class='btn btn-icon icon-preview' style='font-size: 20px;'/> "+SGQ+"</a>";
- 		*/
 		
-		var sneLink = "<a href='/nav_to.do?uri=%2Fsys_user.do%3Fsysparm_view=SGQ&sysparm_query=sys_id=javascript:gs.getUserID()&sysparm_stack=no' id='sneLink' class='headerlink' style='color: inherit;text-decoration: none;border: 0px solid white;border-radius: 3px;padding:10px;vertical-align: middle; display: table-cell'> Qualitat: "+SGQ+"</a>"; //class='navpage-header-content'
+		var sneLink = "<a href='/nav_to.do?uri=%2Fsys_user.do%3Fsys_id%3D"
+		+
+		gs.getUserID() 
+		+	"%26sysparm_view%3DSGQ%26sysparm_record_target%3Dsys_user%26sysparm_record_row%3D14%26sysparm_record_rows%3D97249%26sysparm_record_list' id='sneLink' class='headerlink' style='color: inherit;text-decoration: none;border: 0px solid white;border-radius: 3px;padding:10px;vertical-align: middle; display: table-cell'> Qualitat: "+SGQ+"</a>"; //class='navpage-header-content'
 		
 		if (SGQ) { // Cal comprovar que té rol o bé return "";
 			return linkDivOpen + sneLink + linkDivClose;
@@ -56,7 +41,7 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2018-12-13 09:06:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d01c779adb12e3009fd1f57eaf9619c9</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Banner</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -64,6 +49,6 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_d01c779adb12e3009fd1f57eaf9619c9</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-12-13 10:20:27</sys_updated_on>
+        <sys_updated_on>2019-01-10 11:00:15</sys_updated_on>
     </sys_script_include>
 </record_update>
