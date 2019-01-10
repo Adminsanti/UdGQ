@@ -23,7 +23,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Defineix i Roman</name>
+        <name>RECYCLE Afegeix al PM i Roman</name>
         <onclick/>
         <order>30</order>
         <script><![CDATA[doDefinirObjectiu ();
@@ -32,22 +32,21 @@ function doDefinirObjectiu() {
 	
 	if (current.responsable == '') { //Check de tots els camps obligatoris
 		current.update(); //gravem igualment
-		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO ES POT DEFINIR per <B>manca de responsable</B>");
+		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO es pot afegir al PM per <B>manca de responsable</B>");
 	}
-	else
-		{
+	else {
 		var o= new ObjectiuUtils();
-		current.state = 1;
+		current.state = 2;
 		current.active=true;
 		current.accions=o.getAccions(current);
-		current.assoliment=o.getAssoliment(current);
+		current.assoliment=o.getExecucio(current);
 		var ara = new GlideDateTime();
 		current.declarat= ara.toString();
 		current.declarat_per=gs.getUserID();
 		current.closed_by="";
 		current.closed_at="";
 		current.update();
-		gs.addInfoMessage(current.number+ " Definit");
+		gs.addInfoMessage(current.number+ " Afegit al PM");
 	}
 	action.setRedirectURL(current);
 }
@@ -63,8 +62,8 @@ function doDefinirObjectiu() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d4c3914edb59af009fd1f57eaf96198d</sys_id>
-        <sys_mod_count>43</sys_mod_count>
-        <sys_name>Defineix i Roman</sys_name>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>RECYCLE Afegeix al PM i Roman</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -72,7 +71,7 @@ function doDefinirObjectiu() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_d4c3914edb59af009fd1f57eaf96198d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-30 11:48:59</sys_updated_on>
+        <sys_updated_on>2019-01-10 12:00:53</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
