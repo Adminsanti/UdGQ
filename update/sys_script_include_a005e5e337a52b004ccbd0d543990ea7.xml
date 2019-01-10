@@ -12,15 +12,15 @@ AccioUtils.prototype = {
 		this._accio=accio;
 	},
 	
-	actualitzaAssolimentTotsObjectius: function (accio_id) {
+	actualitzaExecucioTotsObjectius: function (accio_id) {
 		//Actualitza tots els objectius als que contribueix una acció
-		new x_udg_q.log("AccioUtils.actualitzaAssolimentTotsObjectius: "+accio_id);
+		new x_udg_q.log("AccioUtils.actualitzaExecucioTotsObjectius: "+accio_id);
 		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
 		grM2m.addQuery('accio_millora',accio_id);
 		grM2m.query();
 		while (grM2m.next()) {
-			new x_udg_q.log("AccioUtils.actualitzaAssolimentTotsObjectius crida ObjectiuUtils.actualitzaAssoliment per : "+grM2m.objectiu_millora.number);
-			new ObjectiuUtils().actualitzaAssoliment(grM2m.objectiu_millora);
+			new x_udg_q.log("AccioUtils.actualitzaExecucioTotsObjectius crida ObjectiuUtils.actualitzaExecucio per : "+grM2m.objectiu_millora.number);
+			new ObjectiuUtils().actualitzaExecucio(grM2m.objectiu_millora);
 		}
 	},
 	
@@ -37,14 +37,6 @@ AccioUtils.prototype = {
 		}
 	},
 	
-	calculaEstat: function (current) {
-		if (current.percentatge <= 0)
-			return 1;
-		if (current.percentatge >= 100)
-			return 3;
-		return 2;	
-	},
-	
 	type: 'AccioUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -52,7 +44,7 @@ AccioUtils.prototype = {
         <sys_created_on>2018-11-09 12:30:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a005e5e337a52b004ccbd0d543990ea7</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>AccioUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -60,6 +52,6 @@ AccioUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_a005e5e337a52b004ccbd0d543990ea7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 15:39:31</sys_updated_on>
+        <sys_updated_on>2019-01-10 11:24:49</sys_updated_on>
     </sys_script_include>
 </record_update>

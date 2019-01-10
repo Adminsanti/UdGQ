@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>DefineixAccio</action_name>
+        <action_name>Accio-AfegeixalPM</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2/>
@@ -13,7 +13,7 @@
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
-        <hint/>
+        <hint>Afegeix l'acció al Pla de Millora</hint>
         <isolate_script>false</isolate_script>
         <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
@@ -23,7 +23,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Defineix</name>
+        <name>Afegeix al PM</name>
         <onclick/>
         <order>1000</order>
         <script><![CDATA[doDefineixAccio ();
@@ -31,17 +31,17 @@
 function doDefineixAccio () {
 	if (current.responsable == '') {
 		current.update(); //gravem igualment
-		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO ES POT DEFINIR per <B>manca de responsable</B>");
+		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO es pot Afegir al Pla de Millora per <B>manca de responsable</B>");
 	}
 	else {
-		current.state = 1;
+		current.state = 2;
 		current.active=true;
 		var ara = new GlideDateTime();
 		current.declarat= ara.toString();
 		current.declarat_per=gs.getUserID();
 		current.update();
-		gs.addInfoMessage(current.number+ " Definit");
-		new AccioUtils().actualitzaAssolimentTotsObjectius(current);
+		gs.addInfoMessage(current.number+ " Afegida al Pla de Millora");
+		new AccioUtils().actualitzaExecucioTotsObjectius(current);
 	}
 	//action.setRedirectURL(current);    NO Roman
 }
@@ -57,8 +57,8 @@ function doDefineixAccio () {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>583155dedbca2f009fd1f57eaf961954</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Defineix</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Afegeix al PM</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -66,7 +66,7 @@ function doDefineixAccio () {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_583155dedbca2f009fd1f57eaf961954</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-12-17 10:25:20</sys_updated_on>
+        <sys_updated_on>2019-01-10 11:41:39</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
