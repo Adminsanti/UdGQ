@@ -20,7 +20,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Usuari canvi SGQ</name>
+        <name>Usuari canvia de SGQ</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,14 +32,45 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
 	new log("Canvi SGQACtual per "+current.sys_id.toString());
+	
+	var grP1 = new GlideRecord('sys_user_preference');
+	var grP2 = new GlideRecord('sys_user_preference');
+	var e1 = "name=qualitat.sgqActual^user="+current.sys_id.toString();
+	var e2 = "name=qualitat.sgqActualCodi^user="+current.sys_id.toString();
+	grP1.addEncodedQuery(e1);
+	grP2.addEncodedQuery(e2);
+	grP1.query();
+	grP2.query();
+	if (!grP1.next()) { //L'usuari no té aquesta preferència
+		grP1.initialize();
+		grP1.user=current.sys_id;
+		grP1.name='qualitat.sgqActual';
+		grP1.value=current.x_udg_q_sgq_actual;
+		grP1.insert(); //Inserta
+		if (!grP2.next()) { //Tampoc té l'altra
+			grP2.initialize();
+			grP2.user=current.sys_id;
+			grP2.name='qualitat.sgqActualCodi';
+			grP2.value=current.x_udg_q_sgq_actual.codi;
+			grP2.insert();
+		}
+	} else {//l'usuari té la preferència P1
+		grP1.value = current.x_udg_q_sgq_actual.toString();
+		grP1.update();
+		grP2.next(); //accedim a la segonas propietat
+		grP2.value=current.x_udg_q_sgq_actual.codi.toString();
+		grP2.update();
+	}
+	
 	new Usuari(current.sys_id.toString()).setRoles();
 	
-	var currentUser = gs.getUser().getUserByID(current.sys_id.toString());
+	gs.addInfoMessage('A partir d\'ara la visibilitat de '+current.name+' correspón només a <b>'+current.x_udg_q_sgq_actual.nom+'</b>');
+	
+	/*	var currentUser = gs.getUser().getUserByID(current.sys_id.toString());
 	
 	currentUser.savePreference('qualitat.sgqActual',current.x_udg_q_sgq_actual.toString());
 	currentUser.savePreference('qualitat.sgqActualCodi',current.x_udg_q_sgq_actual.codi.toString());
-		
-	gs.addInfoMessage('A partir d\'ara la visibilitat de '+current.name+' correspón només a <b>'+current.x_udg_q_sgq_actual.nom+'</b>');
+ 	*/
 	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -49,8 +80,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>67a074cd3770a7004ccbd0d543990e22</sys_id>
-        <sys_mod_count>70</sys_mod_count>
-        <sys_name>Usuari canvi SGQ</sys_name>
+        <sys_mod_count>78</sys_mod_count>
+        <sys_name>Usuari canvia de SGQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -58,7 +89,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_67a074cd3770a7004ccbd0d543990e22</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-09 18:16:11</sys_updated_on>
+        <sys_updated_on>2019-01-10 09:48:47</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
