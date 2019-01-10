@@ -20,19 +20,9 @@
 			g_form.setValue('percentatge',oldValue);
 		}
 		
-		if (newValue!=100 ) {
-			g_form.clearValue('justificaciopercentatge');
-			g_form.setMandatory('justificaciopercentatge',true);
-			g_form.showFieldMsg('justificaciopercentatge',"Cal una nova justificació del grau d\'assoliment");
-			
-		}
-		
-		if (newValue == 100) {
-			g_form.setMandatory('justificaciopercentatge',false);
-			if (g_form.getValue('justificaciopercentatge')=="") {
-				g_form.clearValue('justificaciopercentatge');
-				g_form.showFieldMsg('justificaciopercentatge',"Es recomana una justificació de l\'assoliment");
-			}
+		if (newValue!=0 ) {
+			g_form.setMandatory('valoracio',true);
+			g_form.showFieldMsg('valoracio',"Cal ampliar el desenvolupament i valoració d'acord amb l\'indicador definit per justificar el canvi del percentatge d\'execució");			
 		}
 	}
 }]]></script>
@@ -43,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>88cbb357dbfd27009fd1f57eaf9619bc</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Acció Canvi percentatge</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -52,7 +42,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_88cbb357dbfd27009fd1f57eaf9619bc</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-30 09:48:56</sys_updated_on>
+        <sys_updated_on>2019-01-10 13:31:11</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
