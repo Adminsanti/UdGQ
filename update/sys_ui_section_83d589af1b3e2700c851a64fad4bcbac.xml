@@ -1,44 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Dates" section_id="83d589af1b3e2700c851a64fad4bcbac" sys_domain="global" table="x_udg_q_acciomillora" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>valoratper</element>
+            <element>declarat_per</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 13:32:46</sys_created_on>
-            <sys_id>43d50daf1b3e2700c851a64fad4bcb0b</sys_id>
+            <sys_created_on>2019-01-11 12:07:20</sys_created_on>
+            <sys_id>ddebb1bb1b7a6700c851a64fad4bcbd6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">83d589af1b3e2700c851a64fad4bcbac</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
+            <sys_updated_on>2019-01-11 12:07:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>valoratper</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-11 12:07:20</sys_created_on>
+            <sys_id>51ebb1bb1b7a6700c851a64fad4bcbd7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">83d589af1b3e2700c851a64fad4bcbac</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-11 12:07:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>closed_by</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-11 12:07:20</sys_created_on>
+            <sys_id>d1ebb1bb1b7a6700c851a64fad4bcbd7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">83d589af1b3e2700c851a64fad4bcbac</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-11 12:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
+            <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 13:32:46</sys_created_on>
-            <sys_id>c3d50daf1b3e2700c851a64fad4bcb0b</sys_id>
+            <sys_created_on>2019-01-11 12:07:20</sys_created_on>
+            <sys_id>55ebb1bb1b7a6700c851a64fad4bcbd7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">83d589af1b3e2700c851a64fad4bcbac</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
+            <sys_updated_on>2019-01-11 12:07:20</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>valorat</element>
-            <position>2</position>
+            <element>declarat</element>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 13:32:46</sys_created_on>
-            <sys_id>47d50daf1b3e2700c851a64fad4bcb0b</sys_id>
+            <sys_created_on>2019-01-11 12:07:20</sys_created_on>
+            <sys_id>d5ebb1bb1b7a6700c851a64fad4bcbd7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">83d589af1b3e2700c851a64fad4bcbac</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
+            <sys_updated_on>2019-01-11 12:07:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>valorat</element>
+            <position>5</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-11 12:07:20</sys_created_on>
+            <sys_id>59ebb1bb1b7a6700c851a64fad4bcbd7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">83d589af1b3e2700c851a64fad4bcbac</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-11 12:07:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>closed_at</element>
+            <position>6</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-11 12:07:20</sys_created_on>
+            <sys_id>d9ebb1bb1b7a6700c851a64fad4bcbd7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">83d589af1b3e2700c851a64fad4bcbac</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-11 12:07:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

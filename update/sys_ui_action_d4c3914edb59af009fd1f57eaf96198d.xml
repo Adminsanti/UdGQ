@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Defineix i Roman</action_name>
-        <active>false</active>
+        <action_name>NetejarActivitats</action_name>
+        <active>true</active>
         <client>false</client>
         <client_script_v2/>
         <comments/>
-        <condition>current.state == -5 </condition>
+        <condition>gs.hasRole('x_udg_q.ManagerUniversitat')</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -15,39 +15,22 @@
         <form_style/>
         <hint/>
         <isolate_script>false</isolate_script>
-        <list_action>false</list_action>
+        <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
-        <list_choice>false</list_choice>
+        <list_choice>true</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>RECYCLE Afegeix al PM i Roman</name>
+        <name>Netejar activitats</name>
         <onclick/>
         <order>30</order>
-        <script><![CDATA[doDefinirObjectiu ();
+        <script><![CDATA[doAction();
 
-function doDefinirObjectiu() {
+function doAction() {
 	
-	if (current.responsable == '') { //Check de tots els camps obligatoris
-		current.update(); //gravem igualment
-		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO es pot afegir al PM per <B>manca de responsable</B>");
-	}
-	else {
-		var o= new ObjectiuUtils();
-		current.state = 2;
-		current.active=true;
-		current.accions=o.getAccions(current);
-		current.assoliment=o.getExecucio(current);
-		var ara = new GlideDateTime();
-		current.declarat= ara.toString();
-		current.declarat_per=gs.getUserID();
-		current.closed_by="";
-		current.closed_at="";
-		current.update();
-		gs.addInfoMessage(current.number+ " Afegit al PM");
-	}
+	new ActivitiesUtils().clean(current.sys_id);
 	action.setRedirectURL(current);
 }
 ]]></script>
@@ -62,8 +45,8 @@ function doDefinirObjectiu() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d4c3914edb59af009fd1f57eaf96198d</sys_id>
-        <sys_mod_count>46</sys_mod_count>
-        <sys_name>RECYCLE Afegeix al PM i Roman</sys_name>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_name>Netejar activitats</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -71,7 +54,7 @@ function doDefinirObjectiu() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_d4c3914edb59af009fd1f57eaf96198d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-10 12:00:53</sys_updated_on>
+        <sys_updated_on>2019-01-11 12:15:24</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

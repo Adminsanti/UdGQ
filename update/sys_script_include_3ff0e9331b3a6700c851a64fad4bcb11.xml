@@ -2,31 +2,44 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>package_private</access>
         <active>true</active>
-        <api_name>x_udg_q.JournalUtils</api_name>
+        <api_name>x_udg_q.ActivitiesUtils</api_name>
         <client_callable>false</client_callable>
         <description/>
-        <name>JournalUtils</name>
-        <script><![CDATA[var JournalUtils = Class.create();
-JournalUtils.prototype = {
-    initialize: function() {
-    },
-A: function (accio_id) {
-},
-    type: 'JournalUtils'
+        <name>ActivitiesUtils</name>
+        <script><![CDATA[var ActivitiesUtils = Class.create();
+ActivitiesUtils.prototype = {
+	initialize: function() {
+	},
+	
+	clean: function (Record) {
+		var grSet1 = new GlideRecord('sys_journal_field');
+		grSet1.addQuery('element_id', Record);
+		grSet1.deleteMultiple();
+		
+		var grSet2 = new GlideRecord('sys_audit');
+		grSet2.addQuery('documentkey', Record);
+		grSet2.deleteMultiple();
+		
+		var grSet3 = new GlideRecord('sys_history_set');
+		grSet3.addQuery('id', Record);
+		grSet3.deleteMultiple();
+		
+	},
+	type: 'ActivitiesUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-01-11 10:10:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3ff0e9331b3a6700c851a64fad4bcb11</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>JournalUtils</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ActivitiesUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_3ff0e9331b3a6700c851a64fad4bcb11</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-11 10:10:56</sys_updated_on>
+        <sys_updated_on>2019-01-11 11:50:24</sys_updated_on>
     </sys_script_include>
 </record_update>

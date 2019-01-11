@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Seguiment" section_id="226a0fc2378927004ccbd0d543990e1d" sys_domain="global" table="x_udg_q_acciomillora" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>work_notes</element>
+            <element>activity.xml</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 11:49:48</sys_created_on>
-            <sys_id>7a4ea0ab1bfa2700c851a64fad4bcb66</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">226a0fc2378927004ccbd0d543990e1d</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 11:49:48</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>activity.xml</element>
-            <position>1</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 11:49:48</sys_created_on>
-            <sys_id>fa4ea0ab1bfa2700c851a64fad4bcb66</sys_id>
+            <sys_created_on>2019-01-11 11:04:38</sys_created_on>
+            <sys_id>8b8dad3f1b3a6700c851a64fad4bcb54</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
             <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">226a0fc2378927004ccbd0d543990e1d</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 11:49:48</sys_updated_on>
+            <sys_updated_on>2019-01-11 11:04:38</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
