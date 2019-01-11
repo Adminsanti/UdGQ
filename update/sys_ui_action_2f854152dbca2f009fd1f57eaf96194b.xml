@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Objectiu-AfegeixPMiR</action_name>
+        <action_name>Objectiu-DefiniriR</action_name>
         <active>true</active>
         <client>true</client>
         <client_script_v2/>
@@ -23,59 +23,46 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Afegeix al PM i Roman</name>
+        <name>Defineix al PM i Roman</name>
         <onclick>onClick()</onclick>
         <order>30</order>
         <script><![CDATA[// Client side onclick function
 function onClick(){
 	
-	var mandatoryFields = ['state'];
-	var state=g_form.getValue('state');
-
+	var mandatoryFields = [];
 	mandatoryFields.push('responsable');
 	mandatoryFields.push('priority');
-	//mandatoryFields.push('due_date');
 	mandatoryFields.push('short_description');
 	
 	var errorMessage = g_form.checkMandatoryFields(mandatoryFields);
 	
 	if (!errorMessage){
-		gsftSubmit(null, g_form.getFormElement(), 'Objectiu-AfegeixPMiR'); //MUST call the 'Action name' set in this UI Action
-	}else{
+		gsftSubmit(null, g_form.getFormElement(), 'Objectiu-DefiniriR'); //MUST call the 'Action name' set in this UI Action
+	} else {
 		g_form.clearMessages();
 		g_form.addErrorMessage("Manquen camps obligatoris: "+ errorMessage );
 	}
 }
 
-
 // Code that runs without 'onclick'
 // Ensure call to server side function with no browser errors
-if (typeof window == 'undefined')
-	doDefinirObjectiu();
-
-function doDefinirObjectiu() {
+if (typeof window == 'undefined') definirObjectiu();
 	
-	if (current.responsable == '') { //Check de tots els camps obligatoris
-		current.update(); //gravem igualment
-		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO es pot Afegir al Pla de Millora per <B>manca de responsable</B>");
-	}
-	else {
-		var o= new ObjectiuUtils();
-		current.state = 2;
-		current.active=true;
-		current.accions=o.getAccions(current.sys_id);
-		current.assoliment=o.getExecucio(current.sys_id);
-		var ara = new GlideDateTime();
-		current.declarat= ara.toString();
-		current.declarat_per=gs.getUserID();
-		//current.closed_by="";
-		//current.closed_at="";
-		current.update();
-		gs.addInfoMessage(current.number+ " Afegit al Pla de Millora");
-	}
+function definirObjectiu() {
+	
+	var o= new ObjectiuUtils();
+	current.state = 2;
+	current.active=true;
+	current.accions=o.getAccions(current.sys_id);
+	current.assoliment=o.getExecucio(current.sys_id);
+	current.declarat= new GlideDateTime().toString();
+	current.declarat_per=gs.getUserID();
+	
+	current.update();
+	gs.addInfoMessage(current.number+ " Definit i afegit al Pla de Millora");
+	
 	action.setRedirectURL(current);  //Roman (Si no, no es veuen els camps obligatoris)
-}
-]]></script>
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -87,8 +74,8 @@ function doDefinirObjectiu() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f854152dbca2f009fd1f57eaf96194b</sys_id>
-        <sys_mod_count>30</sys_mod_count>
-        <sys_name>Afegeix al PM i Roman</sys_name>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>Defineix al PM i Roman</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -96,7 +83,7 @@ function doDefinirObjectiu() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_2f854152dbca2f009fd1f57eaf96194b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-10 12:00:02</sys_updated_on>
+        <sys_updated_on>2019-01-11 09:12:43</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
