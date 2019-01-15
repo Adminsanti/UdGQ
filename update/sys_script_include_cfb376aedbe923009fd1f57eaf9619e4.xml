@@ -8,24 +8,21 @@
         <name>ObjectiuUtils</name>
         <script><![CDATA[var ObjectiuUtils = Class.create();
 ObjectiuUtils.prototype = {
-	initialize: function(objectiu) {
+	initialize: function(objectiu) { //sys_id de l'objectiu
 		if (objectiu) this._objectiu=objectiu;
 		},
 	
 	actualitzaExecucio: function () {
-		new x_udg_q.log("ObjectiuUtils.actualitzaExecucio "+this._objectiu.number);
+		new x_udg_q.log("ObjectiuUtils.actualitzaExecucio per sys_id: "+this._objectiu);
 		var grObjectiu = new GlideRecord ('x_udg_q_objectiumillora');
 		grObjectiu.get (this._objectiu);
-		grObjectiu.accions=this.getAccions(this._objectiu);
+		grObjectiu.accions = this.getAccions(this._objectiu);
 		grObjectiu.assoliment = this.getExecucio(this._objectiu);
-		
-		//if (grObjectiu.actiu == true) grObjectiu.state=this.getEstatPerAssoliment();
-			
 		grObjectiu.update();
 	},
 	
 	getAccions: function(objectiu_id) { //Retorna el nombre d'accions que depenen de l'objectiu (sense esborranys)
-		var accions=0;
+		var accions = 0;
 		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
 		grM2m.addQuery('objectiu_millora', objectiu_id);
 		grM2m.addQuery("accio_millora.state!=-5"); //Les accions en Draft no compten
@@ -33,12 +30,12 @@ ObjectiuUtils.prototype = {
 		if (grM2m.next()) {
 			accions= grM2m.getRowCount();
 		}
-		new x_udg_q.log("ObjectiuUtils.getAccions "+objectiu_id.number+" accions= "+accions);
+		new x_udg_q.log("ObjectiuUtils.getAccions "+objectiu_id+" accions= "+accions);
 		return accions;
 	},
 	
 	getExecucio: function(objectiu_id) {
-		new x_udg_q.log("ObjectiuUtils.getExecucio "+objectiu_id.number);
+		//new x_udg_q.log("INICI ObjectiuUtils.getExecucio "+objectiu_id.number);
 		//Retorna l'assoliment d'un objectiu a partir de totes les accions que hi contribueixen
 		var grObjectiu = new GlideRecord ('x_udg_q_objectiumillora');
 		grObjectiu.get (objectiu_id);
@@ -46,7 +43,7 @@ ObjectiuUtils.prototype = {
 		if (grObjectiu.state==-5)
 			return 0;
 		if (grObjectiu.state==5) {
-			new x_udg_q.log("ObjectiuUtils.getAssoliment: L'assoliment que ja té: "+grObjectiu.number);
+			//new x_udg_q.log("ObjectiuUtils.getAssoliment: L'assoliment que ja té: "+grObjectiu.number);
 			return grObjectiu.assoliment;
 		}
 		var assoliment=0;
@@ -64,7 +61,7 @@ ObjectiuUtils.prototype = {
 		}
 		if (ponderacions>0)
 			assoliment=acumulat/ponderacions;
-		new x_udg_q.log("ObjectiuUtils.getExecucio "+objectiu_id.number+" assoliment = "+assoliment);
+		//new x_udg_q.log("FINAL ObjectiuUtils.getExecucio "+objectiu_id.number+" assoliment = "+assoliment);
 		return assoliment;
 	},
 	
@@ -96,7 +93,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>83</sys_mod_count>
+        <sys_mod_count>86</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -104,6 +101,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-10 11:27:41</sys_updated_on>
+        <sys_updated_on>2019-01-15 11:18:40</sys_updated_on>
     </sys_script_include>
 </record_update>

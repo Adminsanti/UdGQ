@@ -26,6 +26,9 @@ while (gr2.next()) {
 	if (gr2.declarat_per=="") gr2.declarat_per=gr2.opened_by;
 	if (gr2.valorat=="" && gr2.valoracio!="") gr2.valorat=gr2.opened_at;
 	if (gr2.valorat_per=="" && gr2.valoracio!="") gr2.valorat_per=gr2.opened_by;
+	gr2.closed_by="";
+	gr2.closed_at="";
+	gr2.assigned_to=gr2.responsable.usuari;
 	gr2.update();
 }]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
@@ -33,7 +36,7 @@ while (gr2.next()) {
         <sys_created_on>2019-01-09 16:38:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d3962c971b7a27005fab4002cd4bcb5f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>OBJ Regularitzar</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -41,7 +44,7 @@ while (gr2.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_d3962c971b7a27005fab4002cd4bcb5f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-11 12:33:47</sys_updated_on>
+        <sys_updated_on>2019-01-15 11:20:40</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
