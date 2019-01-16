@@ -6,7 +6,7 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -20,7 +20,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Funcio canvia usuari</name>
+        <name>RECYCLE Funcio canvia usuari</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,9 +32,9 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
 	x_udg_q.log(current.sgq.codi+ " - BR \'Responsabilitat canvia usuari\' "+ current.nom +" -> "+current.usuari.name);
-	msg('tots els OBJECTIUS definits');
+	//msg('tots els OBJECTIUS definits');
 	new x_udg_q.ObjectiuUtils().setAllResponsables(current);
-	msg('totes les ACCIONS definides');
+	//msg('totes les ACCIONS definides');
 	new x_udg_q.AccioUtils().setAllResponsablea(current);
 	action.setRedirectURL(current);
 	
@@ -50,8 +50,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b999cf45db79e7009fd1f57eaf961916</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Funcio canvia usuari</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RECYCLE Funcio canvia usuari</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -59,7 +59,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_b999cf45db79e7009fd1f57eaf961916</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 15:39:33</sys_updated_on>
+        <sys_updated_on>2019-01-16 15:35:40</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

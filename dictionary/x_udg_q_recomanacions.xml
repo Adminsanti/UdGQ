@@ -4,7 +4,7 @@
         <element choice="3" default="1" label="Estat" max_length="40" name="estat" read_only="true" type="integer">
             <choice>
                 <element inactive_on_update="false" label="Nova" sequence="0" value="1"/>
-                <element inactive_on_update="false" label="Objectius fixats" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Objectius en curs" sequence="1" value="2"/>
                 <element inactive_on_update="false" label="Atesa" sequence="2" value="3"/>
             </choice>
         </element>

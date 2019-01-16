@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="INSERT_OR_UPDATE">
+        <field>accio_millora</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-01-15 12:47:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c55baa091b4b6b00c851a64fad4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>accio_millora</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_db_view_table_field_c55baa091b4b6b00c851a64fad4bcba2</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-01-15 12:47:02</sys_updated_on>
+        <table>x_udg_q_m2m_accions_objectius</table>
+        <view_table display_value="x_udg_q_m2m_accions_objectius">3b38a2811b4b6b00c851a64fad4bcb3e</view_table>
+    </sys_db_view_table_field>
+</record_update>

@@ -18,16 +18,15 @@
         <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
-        <list_choice>false</list_choice>
-        <list_context_menu>true</list_context_menu>
+        <list_choice>true</list_choice>
+        <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Recalcula Estat</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var R = new x_udg_q.Reco();
-var NouEstat=R.getEstat(current);
+        <script><![CDATA[var NouEstat=new x_udg_q.Reco().getEstat(current);
 if (NouEstat != current.estat) {
 	current.estat=NouEstat;
 	current.update();
@@ -47,7 +46,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ba208324dbe5a3009fd1f57eaf961937</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Recalcula Estat</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -56,7 +55,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_ba208324dbe5a3009fd1f57eaf961937</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-21 09:10:40</sys_updated_on>
+        <sys_updated_on>2019-01-15 17:42:02</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

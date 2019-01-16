@@ -28,8 +28,13 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
+	
 	new x_udg_q.FuncioUtil().registraHistoric(current, previous);
+	new log('Voy '+current.usuari+" - "+previous.usuari+" - "+current.activa);
+	if (current.usuari != previous.usuari && current.activa) {
+		new log('Voy 2 '+current.usuari+" - "+previous.usuari+" - "+current.activa);
+		new FuncioUtil(current).actualitzar_tots_assignats();
+	}
 	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -39,7 +44,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0b8b8a7437b12f004ccbd0d543990e50</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Funcio canvia</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -48,9 +53,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0b8b8a7437b12f004ccbd0d543990e50</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-16 12:47:56</sys_updated_on>
+        <sys_updated_on>2019-01-16 16:03:38</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=0b8b8a7437b12f004ccbd0d543990e50"/>
 </record_update>

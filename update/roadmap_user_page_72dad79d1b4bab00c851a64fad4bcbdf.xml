@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="roadmap_user_page">
+    <roadmap_user_page action="INSERT_OR_UPDATE">
+        <color1_choice>Acreditació</color1_choice>
+        <color1_val>#7FBF7F</color1_val>
+        <color2_choice>DMA</color2_choice>
+        <color2_val>#FF9933</color2_val>
+        <color3_choice>Verificació</color3_choice>
+        <color3_val>#B8DBFF</color3_val>
+        <color4_choice>Visita comité</color4_choice>
+        <color4_val>#FF4D4D</color4_val>
+        <color5_val>#F18302</color5_val>
+        <isdefault>false</isdefault>
+        <item_color_key>tipus</item_color_key>
+        <item_conditions/>
+        <item_date_field>data</item_date_field>
+        <item_short_description>nom</item_short_description>
+        <item_table>x_udg_q_fita</item_table>
+        <lane_condition_table>x_udg_q_fita</lane_condition_table>
+        <lane_conditions table="x_udg_q_fita">sgq.actiu=true^EQ<item endquery="false" field="sgq.actiu" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </lane_conditions>
+        <lane_item_mapper_table/>
+        <lane_name>sgq</lane_name>
+        <lane_table>x_udg_q_fita</lane_table>
+        <lane_to_item_map_key>sgq</lane_to_item_map_key>
+        <max_fetch_duration>2</max_fetch_duration>
+        <max_fetch_duration_2d>2</max_fetch_duration_2d>
+        <max_items_per_lane>500</max_items_per_lane>
+        <max_items_per_lane_2d>99</max_items_per_lane_2d>
+        <max_lanes>100</max_lanes>
+        <max_lanes_per_road>8</max_lanes_per_road>
+        <min_2d_months>12</min_2d_months>
+        <min_3d_months>12</min_3d_months>
+        <name>Fites</name>
+        <quarter_start_month>1</quarter_start_month>
+        <roadmap display_value="Fites">0235718bdbe4a3009fd1f57eaf96192f</roadmap>
+        <show_slider>true</show_slider>
+        <sys_class_name>roadmap_user_page</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-09-19 07:22:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>72dad79d1b4bab00c851a64fad4bcbdf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Fites</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>roadmap_user_page_72dad79d1b4bab00c851a64fad4bcbdf</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-01-16 10:55:18</sys_updated_on>
+        <user display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</user>
+    </roadmap_user_page>
+</record_update>

@@ -39,7 +39,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>accions</field>
         <field_list/>
-        <filter table="x_udg_q_objectiumillora">closed_at&lt;=javascript:gs.endOfLastYear()<item endquery="false" field="closed_at" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.endOfLastYear()"/>
+        <filter table="x_udg_q_objectiumillora">closed_atONLast 12 months@javascript:gs.beginningOfLast12Months()@javascript:gs.endOfLast12Months()<item endquery="false" field="closed_at" goto="false" newquery="false" operator="ON" or="false" value="Last 12 months@javascript:gs.beginningOfLast12Months()@javascript:gs.endOfLast12Months()"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -96,7 +96,7 @@
         <sys_created_on>2018-11-21 16:59:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3ec5906bdb3167009fd1f57eaf961940</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Tancats el darrer any</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -104,7 +104,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_3ec5906bdb3167009fd1f57eaf961940</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-21 17:25:53</sys_updated_on>
+        <sys_updated_on>2019-01-16 17:15:40</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Tancats el darrer any</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

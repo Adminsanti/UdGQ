@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>Tanca Objectiu</action_name>
-        <active>true</active>
+        <active>false</active>
         <client>false</client>
         <client_script_v2/>
         <comments/>
@@ -23,13 +23,13 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Tanca Objectiu</name>
+        <name>RECYCLE Tanca Objectiu</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[if (current.valoracio != "") {
 	current.active=false;
 	current.state=5;
-	current.uopdate();
+	current.update();
 } else {
 	gs.addErrorMessage ("No es pot tancar un objectiu sense valoració");
 	g_form.setVisible('valoracio',true);
@@ -46,8 +46,8 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4417406fdbfd27009fd1f57eaf9619df</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Tanca Objectiu</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>RECYCLE Tanca Objectiu</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -55,7 +55,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_4417406fdbfd27009fd1f57eaf9619df</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-11 08:25:21</sys_updated_on>
+        <sys_updated_on>2019-01-16 14:41:20</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

@@ -17,7 +17,7 @@
         <mobile_title>Fites actuals</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_udg_q_fita</name>
-        <order>2100</order>
+        <order>500</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2402f72c377467004ccbd0d543990e3a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Fites actuals</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -40,7 +40,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_2402f72c377467004ccbd0d543990e3a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-24 08:19:56</sys_updated_on>
+        <sys_updated_on>2019-01-16 10:50:16</sys_updated_on>
         <timeline_page/>
         <title>Fites actuals</title>
         <uncancelable>false</uncancelable>

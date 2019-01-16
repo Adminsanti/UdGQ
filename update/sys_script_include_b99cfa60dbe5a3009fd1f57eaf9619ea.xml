@@ -16,23 +16,22 @@ Reco.prototype = {
 		var query="state!=-5^recomanacionsLIKE"+recomanacio.sys_id;
 		grObjFills.addEncodedQuery(query);
 		grObjFills.query();
-		if (!grObjFills.hasNext()) {
+		if (!grObjFills.hasNext()) { //No hi ha objectius ni en curs ni tancats
 			return 1;  //nova
-		} else {
+		} else { //Hi ha objectius en curs o tancats
 			var grObjFills2 = new GlideRecord('x_udg_q_objectiumillora');
 			var query1="recomanacionsLIKE"+recomanacio.sys_id;
-			var query2="state==2";
+			var query2="state=2"; //Algun és en curs?
 			grObjFills2.addEncodedQuery(query1);
 			grObjFills2.addEncodedQuery(query2);
 			grObjFills2.query();
-			if (grObjFills2.hasNext()) {
-				return 2; //objectius fixats
-			} else {
+			if (grObjFills2.hasNext()) { //algun és en curs
+				return 2; //objectius en curs
+			} else { //cap és en curs
 				return 3;  //tancada
 			}
 		}
 	},
-	
 	
 	type: 'Reco'
 };]]></script>
@@ -41,7 +40,7 @@ Reco.prototype = {
         <sys_created_on>2018-10-31 11:25:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b99cfa60dbe5a3009fd1f57eaf9619ea</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Reco</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -49,6 +48,6 @@ Reco.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_b99cfa60dbe5a3009fd1f57eaf9619ea</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-09 08:39:37</sys_updated_on>
+        <sys_updated_on>2019-01-15 17:41:31</sys_updated_on>
     </sys_script_include>
 </record_update>

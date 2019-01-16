@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-01-15 12:34:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3b38a2811b4b6b00c851a64fad4bcb3e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_udg_q_m2m_accions_objectius</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_db_view_table_3b38a2811b4b6b00c851a64fad4bcb3e</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-01-15 12:57:06</sys_updated_on>
+        <table>x_udg_q_m2m_accions_objectius</table>
+        <variable_prefix>M</variable_prefix>
+        <view display_value="x_udg_q_objectiusiaccions">a4e76e411b4b6b00c851a64fad4bcb79</view>
+        <where_clause>M_sys_id=M_sys_id</where_clause>
+    </sys_db_view_table>
+</record_update>

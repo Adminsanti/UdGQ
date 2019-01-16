@@ -23,6 +23,17 @@
         <element choice="1" label="Subestàndard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" type="reference">
             <choice/>
         </element>
+        <element choice="1" label="Tancament" max_length="40" name="tancament" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Assoliment molt satisfactori" sequence="0" value="5"/>
+                <element inactive_on_update="false" label="Assoliment satisfactori" sequence="1" value="4"/>
+                <element inactive_on_update="false" label="Assoliment mitjà" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Assoliment baix" sequence="3" value="2"/>
+                <element inactive_on_update="false" label="No assoliment" sequence="4" value="1"/>
+                <element inactive_on_update="false" label="Desistiment" sequence="5" value="0"/>
+                <element inactive_on_update="false" label="Error - Esborrat" sequence="6" value="-5"/>
+            </choice>
+        </element>
         <element label="Valoració" max_length="4000" name="valoracio" type="string"/>
         <element label="Valorat" max_length="40" name="valorat" read_only="true" type="glide_date_time"/>
         <element label="Valorat per" max_length="32" name="valorat_per" read_only="true" reference="sys_user" type="reference"/>

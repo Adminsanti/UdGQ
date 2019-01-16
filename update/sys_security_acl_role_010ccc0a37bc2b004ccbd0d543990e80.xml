@@ -5,8 +5,8 @@
         <sys_created_on>2018-09-28 07:23:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>010ccc0a37bc2b004ccbd0d543990e80</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>x_udg_q_recomanacions.x_udg_q.User</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_udg_q_recomanacions.x_udg_q.ManagerUniversitat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -14,8 +14,8 @@
         <sys_security_acl display_value="x_udg_q_recomanacions">890ccc0a37bc2b004ccbd0d543990e7b</sys_security_acl>
         <sys_update_name>sys_security_acl_role_010ccc0a37bc2b004ccbd0d543990e80</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-01 15:14:00</sys_updated_on>
-        <sys_user_role display_value="x_udg_q.User" name="x_udg_q.User">14a2c9d637586b401acdf01643990e30</sys_user_role>
+        <sys_updated_on>2019-01-15 18:18:55</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.ManagerUniversitat" name="x_udg_q.ManagerUniversitat">485294bddb596f009fd1f57eaf9619ef</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

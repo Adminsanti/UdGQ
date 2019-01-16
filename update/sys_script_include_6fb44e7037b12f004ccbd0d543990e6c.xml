@@ -8,7 +8,22 @@
         <name>FuncioUtil</name>
         <script><![CDATA[var FuncioUtil = Class.create();
 FuncioUtil.prototype = {
-	initialize: function() {
+	initialize: function (fun_record) { //funcio Gliderecord
+		this._funcio = fun_record;
+		new log( "Registrant "+fun_record);
+	},
+	
+	actualitzar_tots_assignats: function () {
+		var gr1 = new GlideRecord("x_udg_q_objectiumillora");
+		gr1.addQuery ('responsable',this._funcio.sys_id);
+		new log( "Buscant "+this._funcio.sys_id);
+		gr1.query();
+		while (gr1.next()) {
+			new log( "Era "+gr1.assigned_to);
+			new log( "Sera "+this._funcio.usuari);
+			gr1.assigned_to = this._funcio.usuari;
+			gr1.update();
+		}
 	},
 	
 	registraHistoric: function (current, previous) {
@@ -78,7 +93,7 @@ FuncioUtil.prototype = {
         <sys_created_on>2018-11-13 12:28:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fb44e7037b12f004ccbd0d543990e6c</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>FuncioUtil</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -86,6 +101,6 @@ FuncioUtil.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6fb44e7037b12f004ccbd0d543990e6c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-16 10:34:56</sys_updated_on>
+        <sys_updated_on>2019-01-16 16:04:48</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -14,7 +14,7 @@
         <mobile_title>Timeline</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>900</order>
+        <order>2000</order>
         <override_menu_roles>false</override_menu_roles>
         <query>show_schedule_page.do?sysparm_page_schedule_type=timeline_page&amp;sysparm_timeline_page_id=e21c2ec3dba8a3009fd1f57eaf9619e5</query>
         <report/>
@@ -28,8 +28,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0c1dae07dba8a3009fd1f57eaf9619cf</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Fites Timeline</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Planificació</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -37,9 +37,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_0c1dae07dba8a3009fd1f57eaf9619cf</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-24 09:27:19</sys_updated_on>
+        <sys_updated_on>2019-01-16 10:54:42</sys_updated_on>
         <timeline_page/>
-        <title>Fites Timeline</title>
+        <title>Planificació</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
