@@ -3,25 +3,22 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
-        <action_query>true</action_query>
-        <action_update>false</action_update>
-        <active>false</active>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_objectiumillora</collection>
+        <collection>x_udg_q_fita</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_udg_q_objectiumillora">responsable.usuariNSAMEASassigned_to^state=2^EQ<item endquery="false" field="responsable.usuari" goto="false" newquery="false" operator="NSAMEAS" or="false" value="assigned_to"/>
-            <item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message><![CDATA[<p>${current.number} Assignat a ${current.assigned_to}</p>]]></message>
-        <name>RECYCLE ar al responsable query</name>
+        <name>Fita sempre que gravem-  start_date</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,7 +29,8 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	if (previous.state == -5) gs.addInfoMessage(current.number+ ' Assignat a '+ current.assigned_to.name);
+		current.start_date=new GlideDateTime(current.data_anticipada);
+		current.end_date=new GlideDateTime(current.data);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -42,8 +40,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b95690291b0fab00c851a64fad4bcb9a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>RECYCLE ar al responsable query</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Fita sempre que gravem-  start_date</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -51,9 +49,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_b95690291b0fab00c851a64fad4bcb9a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-16 17:06:24</sys_updated_on>
-        <template>assigned_toSAMEASresponsable.usuari^EQ</template>
-        <when>before_display</when>
+        <sys_updated_on>2019-01-17 10:18:07</sys_updated_on>
+        <template/>
+        <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=b95690291b0fab00c851a64fad4bcb9a"/>
 </record_update>

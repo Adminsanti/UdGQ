@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Fita" max_length="40" name="x_udg_q_fita" type="collection">
-        <element label="Data" mandatory="true" max_length="40" name="data" type="glide_date"/>
-        <element label="Data anticipada" max_length="40" name="data_anticipada" type="glide_date"/>
-        <element label="Inici anticipat" max_length="40" name="inici_anticipat" type="boolean"/>
+        <element label="Data final" mandatory="true" max_length="40" name="data" type="glide_date"/>
+        <element label="Data inici" max_length="40" name="data_anticipada" type="glide_date"/>
+        <element label="End date" max_length="40" name="end_date" type="glide_date_time"/>
         <element attributes="no_truncate=True" display="true" label="Name" max_length="100" name="nom" type="string"/>
-        <element label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
+        <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element label="Start date" max_length="40" name="start_date" type="glide_date_time"/>
         <element choice="1" label="Tipus" max_length="40" name="tipus" type="string">
             <choice>
                 <element inactive_on_update="false" label="Acreditació" value="Acreditació"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="103" text_index="true" type="collection">
-        <element label="Declarat" max_length="40" name="declarat" type="glide_date_time"/>
-        <element label="Declarat per" max_length="32" name="declarat_per" reference="sys_user" type="reference"/>
+        <element label="Declarat" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
+        <element label="Declarat per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
         <element label="Indicador" max_length="1500" name="indicador" type="string"/>
         <element label="Justificació Percentatge" max_length="1500" name="justificaciopercentatge" type="string"/>
         <element label="Llindar Indicador" max_length="1500" name="llindarindicador" type="string"/>

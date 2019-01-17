@@ -6,7 +6,7 @@
         <auto_refresh>0</auto_refresh>
         <condition/>
         <css_span_color/>
-        <end_date_field>data</end_date_field>
+        <end_date_field>end_date</end_date_field>
         <labels>titulacio</labels>
         <name>x_udg_q.Timeline Fites</name>
         <perform_custom_sort>true</perform_custom_sort>
@@ -16,16 +16,16 @@
         <show_span_text>false</show_span_text>
         <show_summary_pane>true</show_summary_pane>
         <show_tooltips>true</show_tooltips>
-        <sort_by>sgq</sort_by>
+        <sort_by>titulacio</sort_by>
         <sort_by_order>ASC</sort_by_order>
-        <start_date_field>data_anticipada</start_date_field>
+        <start_date_field>start_date</start_date_field>
         <suffix>Timeline Fites</suffix>
         <sys_class_name>cmn_timeline_page</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-19 11:21:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e21c2ec3dba8a3009fd1f57eaf9619e5</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>x_udg_q.Timeline Fites</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -33,7 +33,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>cmn_timeline_page_e21c2ec3dba8a3009fd1f57eaf9619e5</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-24 08:26:03</sys_updated_on>
+        <sys_updated_on>2019-01-17 10:32:46</sys_updated_on>
         <table>x_udg_q_fita</table>
         <tooltip_label>sgq,nom,tipus,data</tooltip_label>
     </cmn_timeline_page>

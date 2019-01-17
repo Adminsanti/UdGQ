@@ -14,9 +14,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>954a8d46db59af009fd1f57eaf96190b</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>6</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-22 09:19:27</sys_updated_on>
+            <sys_updated_on>2019-01-17 11:49:15</sys_updated_on>
             <value>-5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -33,9 +33,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e86b4986db59af009fd1f57eaf9619bd</sys_id>
-            <sys_mod_count>6</sys_mod_count>
+            <sys_mod_count>10</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-16 10:26:06</sys_updated_on>
+            <sys_updated_on>2019-01-17 11:49:10</sys_updated_on>
             <value>-5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -52,16 +52,16 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>994a8d46db59af009fd1f57eaf96190d</sys_id>
-            <sys_mod_count>6</sys_mod_count>
+            <sys_mod_count>11</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-08 17:30:51</sys_updated_on>
+            <sys_updated_on>2019-01-17 11:53:26</sys_updated_on>
             <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>state</element>
             <hint/>
-            <inactive>true</inactive>
+            <inactive>false</inactive>
             <label>Definit</label>
             <language>ca</language>
             <name>x_udg_q_objectiumillora</name>
@@ -71,29 +71,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f5ab0986db59af009fd1f57eaf961987</sys_id>
-            <sys_mod_count>6</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-16 10:26:17</sys_updated_on>
-            <value>1</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>En curs</label>
-            <language>ca</language>
-            <name>x_udg_q_objectiumillora</name>
-            <sequence>1</sequence>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-23 08:33:16</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>ddbb8d86db59af009fd1f57eaf961976</sys_id>
             <sys_mod_count>7</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-16 16:56:58</sys_updated_on>
-            <value>2</value>
+            <sys_updated_on>2019-01-17 11:32:29</sys_updated_on>
+            <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -118,20 +99,20 @@
             <dependent_value/>
             <element>state</element>
             <hint/>
-            <inactive>true</inactive>
-            <label>Complete</label>
-            <language>en</language>
+            <inactive>false</inactive>
+            <label>En curs</label>
+            <language>ca</language>
             <name>x_udg_q_objectiumillora</name>
-            <sequence>1</sequence>
+            <sequence>2</sequence>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-23 08:26:59</sys_created_on>
+            <sys_created_on>2018-10-23 08:33:16</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>194a8d46db59af009fd1f57eaf961911</sys_id>
-            <sys_mod_count>6</sys_mod_count>
+            <sys_id>ddbb8d86db59af009fd1f57eaf961976</sys_id>
+            <sys_mod_count>8</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-08 17:30:51</sys_updated_on>
-            <value>3</value>
+            <sys_updated_on>2019-01-17 11:45:48</sys_updated_on>
+            <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -147,9 +128,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c5b01579dbfd23009fd1f57eaf961926</sys_id>
-            <sys_mod_count>6</sys_mod_count>
+            <sys_mod_count>8</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-16 16:57:00</sys_updated_on>
+            <sys_updated_on>2019-01-17 11:53:26</sys_updated_on>
             <value>5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -157,25 +138,6 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Tancat</label>
-            <language>ca</language>
-            <name>x_udg_q_objectiumillora</name>
-            <sequence>2</sequence>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-16 10:46:38</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>f4509579dbfd23009fd1f57eaf961978</sys_id>
-            <sys_mod_count>8</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-16 16:56:49</sys_updated_on>
-            <value>5</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>true</inactive>
             <label>Complert</label>
             <language>ca</language>
             <name>x_udg_q_objectiumillora</name>
@@ -185,10 +147,48 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e2cb8986db59af009fd1f57eaf961933</sys_id>
-            <sys_mod_count>4</sys_mod_count>
+            <sys_mod_count>7</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-16 10:26:32</sys_updated_on>
+            <sys_updated_on>2019-01-17 11:50:51</sys_updated_on>
             <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>3</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-10-23 08:26:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>194a8d46db59af009fd1f57eaf961911</sys_id>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-17 11:53:26</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tancat</label>
+            <language>ca</language>
+            <name>x_udg_q_objectiumillora</name>
+            <sequence>4</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2018-11-16 10:46:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f4509579dbfd23009fd1f57eaf961978</sys_id>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-17 11:57:18</sys_updated_on>
+            <value>5</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>state</element>

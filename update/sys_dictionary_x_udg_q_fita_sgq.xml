@@ -17,7 +17,7 @@
         <column_label>SGQ</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>javascript: gs.getUser().getPreference('qualitat.sgqActual');</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -38,7 +38,7 @@
         <name>x_udg_q_fita</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference display_value="" name="x_udg_q_sgq">x_udg_q_sgq</reference>
         <reference_cascade_rule/>
@@ -55,15 +55,15 @@
         <sys_created_on>2018-09-06 07:28:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a3f767cfdbe82b80ccd95bd05b9619b4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>SGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_fita_sgq</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-12-04 13:34:44</sys_updated_on>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-01-17 10:14:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

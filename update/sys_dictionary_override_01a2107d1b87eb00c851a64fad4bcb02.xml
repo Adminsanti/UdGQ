@@ -5,32 +5,32 @@
         <base_table>task</base_table>
         <calculation/>
         <calculation_override>false</calculation_override>
-        <default_value>false</default_value>
+        <default_value/>
         <default_value_override>false</default_value_override>
         <dependent/>
         <dependent_override>false</dependent_override>
         <display_override>false</display_override>
-        <element>active</element>
+        <element>closed_at</element>
         <mandatory>false</mandatory>
         <mandatory_override>false</mandatory_override>
-        <name>x_udg_q_objectiumillora</name>
+        <name>x_udg_q_acciomillora</name>
         <read_only>true</read_only>
         <read_only_override>true</read_only_override>
         <reference_qual/>
         <reference_qual_override>false</reference_qual_override>
         <sys_class_name>sys_dictionary_override</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-23 08:26:59</sys_created_on>
+        <sys_created_on>2019-01-17 09:35:22</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>d14a8d46db59af009fd1f57eaf961916</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>active</sys_name>
+        <sys_id>01a2107d1b87eb00c851a64fad4bcb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>closed_at</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_override_d14a8d46db59af009fd1f57eaf961916</sys_update_name>
+        <sys_update_name>sys_dictionary_override_01a2107d1b87eb00c851a64fad4bcb02</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-17 12:12:27</sys_updated_on>
+        <sys_updated_on>2019-01-17 09:35:22</sys_updated_on>
     </sys_dictionary_override>
 </record_update>
