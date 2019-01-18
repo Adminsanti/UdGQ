@@ -21,6 +21,28 @@ ObjectiuUtils.prototype = {
 		grObjectiu.update();
 	},
 	
+	actualitzaPercentatgeAccions: function () {
+		var ponderacions = 0;
+		var ga = new GlideRecord ('x_udg_q_m2m_accions_objectius');
+		ga.addQuery('objectiu_millora', this._objectiu);
+		ga.addEncodedQuery('accio_millora.state!=-5'); //Les accions en Draft no compten
+		ga.query();
+		while (ga.next()) {
+			ponderacions += ga.contribucio;
+		}
+		
+		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
+		grM2m.addQuery('objectiu_millora', this._objectiu);
+		grM2m.addEncodedQuery('accio_millora.state!=-5'); //Les accions en Draft no compten
+		grM2m.query();
+		while (grM2m.next()) {
+			if (ponderacions >0) {
+				grM2m.percentatge=grM2m.contribucio/ponderacions*100;
+				grM2m.update();
+			}
+		}
+	},
+	
 	getAccions: function(objectiu_id) { //Retorna el nombre d'accions que depenen de l'objectiu (sense esborranys)
 		var accions = 0;
 		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
@@ -51,7 +73,7 @@ ObjectiuUtils.prototype = {
 		var ponderacions=0;
 		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
 		grM2m.addQuery('objectiu_millora', grObjectiu.sys_id);
-		grM2m.addQuery("accio_millora.state!=-5"); //Les accions en Draft no compten
+		grM2m.addEncodedQuery("accio_millora.state!=-5"); //Les accions en Draft no compten
 		grM2m.query();
 		while (grM2m.next()){ //Per cada action
 			if (grM2m.contribucio >0 && grM2m.accio_millora.state!=-5) { //L'accio ha de contribució>0 i no ser esborrany
@@ -93,7 +115,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>99</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -101,6 +123,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-15 11:18:40</sys_updated_on>
+        <sys_updated_on>2019-01-18 16:57:16</sys_updated_on>
     </sys_script_include>
 </record_update>

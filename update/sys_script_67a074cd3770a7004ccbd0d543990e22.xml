@@ -31,8 +31,8 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	new log("Canvi SGQACtual per "+current.sys_id.toString());
-	
+	new log("BR:Usuari canvia de SGQ - Canvi SGQACtual per "+current.sys_id.toString());
+	/*
 	var grP1 = new GlideRecord('sys_user_preference');
 	var grP2 = new GlideRecord('sys_user_preference');
 	var e1 = "name=qualitat.sgqActual^user="+current.sys_id.toString();
@@ -61,17 +61,15 @@
 		grP2.value=current.x_udg_q_sgq_actual.codi.toString();
 		grP2.update();
 	}
-	
-	new Usuari(current.sys_id.toString()).setRoles();
-	
-	gs.addInfoMessage('A partir d\'ara la visibilitat de '+current.name+' correspón només a <b>'+current.x_udg_q_sgq_actual.nom+'</b>');
+	*/
 	
 	var currentUser = gs.getUser().getUserByID(current.sys_id.toString());
 	
 	currentUser.savePreference('qualitat.sgqActual',current.x_udg_q_sgq_actual.toString());
 	currentUser.savePreference('qualitat.sgqActualCodi',current.x_udg_q_sgq_actual.codi.toString());
+	new Usuari(current.sys_id.toString()).setRoles();
+	gs.addInfoMessage('A partir d\'ara la visibilitat de '+current.name+' correspón només a <b>'+current.x_udg_q_sgq_actual.nom+'</b>');
  
-	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -80,7 +78,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>67a074cd3770a7004ccbd0d543990e22</sys_id>
-        <sys_mod_count>79</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>Usuari canvia de SGQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -89,7 +87,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_67a074cd3770a7004ccbd0d543990e22</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-16 10:29:00</sys_updated_on>
+        <sys_updated_on>2019-01-18 18:39:56</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

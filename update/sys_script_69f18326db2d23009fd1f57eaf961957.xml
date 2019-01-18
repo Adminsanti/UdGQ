@@ -29,7 +29,9 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	new ObjectiuUtils(current.objectiu_millora).actualitzaExecucio();
+	var Obj = new ObjectiuUtils(current.objectiu_millora);
+	Obj.actualitzaExecucio(); //Actualitza percentatge d'execució de l'objectiu corresponent
+	Obj.actualitzaPercentatgeAccions(); //Actualitza percentatge de contribució de les accions relacionades
 	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -39,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>69f18326db2d23009fd1f57eaf961957</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>M2M Acció Objetiu canvia</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -48,7 +50,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_69f18326db2d23009fd1f57eaf961957</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-16 17:07:28</sys_updated_on>
+        <sys_updated_on>2019-01-18 16:51:15</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

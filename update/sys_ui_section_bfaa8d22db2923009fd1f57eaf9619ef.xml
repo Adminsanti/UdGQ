@@ -4,13 +4,13 @@
             <element>objectiu_millora</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-06 13:09:10</sys_created_on>
-            <sys_id>ab11962edba923009fd1f57eaf96192c</sys_id>
+            <sys_created_on>2019-01-17 13:31:09</sys_created_on>
+            <sys_id>6b98c9791b4beb00c851a64fad4bcb13</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_m2m_accions_objectius" sys_domain="global" view="Default view">bfaa8d22db2923009fd1f57eaf9619ef</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-06 13:09:10</sys_updated_on>
+            <sys_updated_on>2019-01-17 13:31:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>accio_millora</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-06 13:09:10</sys_created_on>
-            <sys_id>2f11962edba923009fd1f57eaf96192c</sys_id>
+            <sys_created_on>2019-01-17 13:31:09</sys_created_on>
+            <sys_id>eb98c9791b4beb00c851a64fad4bcb13</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_m2m_accions_objectius" sys_domain="global" view="Default view">bfaa8d22db2923009fd1f57eaf9619ef</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-06 13:09:10</sys_updated_on>
+            <sys_updated_on>2019-01-17 13:31:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-06 13:09:10</sys_created_on>
-            <sys_id>af11962edba923009fd1f57eaf96192c</sys_id>
+            <sys_created_on>2019-01-17 13:31:09</sys_created_on>
+            <sys_id>6f98c9791b4beb00c851a64fad4bcb13</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_m2m_accions_objectius" sys_domain="global" view="Default view">bfaa8d22db2923009fd1f57eaf9619ef</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-06 13:09:10</sys_updated_on>
+            <sys_updated_on>2019-01-17 13:31:09</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>contribucio</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-06 13:09:10</sys_created_on>
-            <sys_id>2311962edba923009fd1f57eaf96192d</sys_id>
+            <sys_created_on>2019-01-17 13:31:09</sys_created_on>
+            <sys_id>ef98c9791b4beb00c851a64fad4bcb13</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_m2m_accions_objectius" sys_domain="global" view="Default view">bfaa8d22db2923009fd1f57eaf9619ef</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-06 13:09:10</sys_updated_on>
+            <sys_updated_on>2019-01-17 13:31:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>accio_millora.percentatge</element>
             <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-06 13:09:10</sys_created_on>
-            <sys_id>a311962edba923009fd1f57eaf96192d</sys_id>
+            <sys_created_on>2019-01-17 13:31:09</sys_created_on>
+            <sys_id>6398c9791b4beb00c851a64fad4bcb14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_m2m_accions_objectius" sys_domain="global" view="Default view">bfaa8d22db2923009fd1f57eaf9619ef</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-06 13:09:10</sys_updated_on>
+            <sys_updated_on>2019-01-17 13:31:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
