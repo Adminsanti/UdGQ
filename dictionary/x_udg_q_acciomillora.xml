@@ -11,6 +11,12 @@
             <choice/>
         </element>
         <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element choice="3" label="Tancament" max_length="40" name="tancament" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Desistiment" value="0"/>
+                <element inactive_on_update="false" label="Executada" value="5"/>
+            </choice>
+        </element>
         <element label="Desenvolupament i valoració" max_length="10000" name="valoracio" type="string"/>
         <element label="Valorat" max_length="40" name="valorat" read_only="true" type="glide_date_time"/>
         <element label="Valorat per" max_length="32" name="valoratper" read_only="true" reference="sys_user" type="reference"/>
