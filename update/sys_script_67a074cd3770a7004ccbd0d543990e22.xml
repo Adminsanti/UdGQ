@@ -61,15 +61,19 @@
 		grP2.value=current.x_udg_q_sgq_actual.codi.toString();
 		grP2.update();
 	}
-	*/
+ 	*/
 	
-	var currentUser = gs.getUser().getUserByID(current.sys_id.toString());
+	var currentUser = gs.getUser();
+	//NO FUNCIONA var currentUser = gs.getUser().getUserByID(current.sys_id.toString());
+	//if (currentUser == gs.getUser()) { //Usuari actual
+		var sgqactual=current.x_udg_q_sgq_actual.toString();
+		currentUser.savePreference('qualitat.sgqActual',sgqactual);
+		currentUser.savePreference('qualitat.sgqActualCodi',current.x_udg_q_sgq_actual.codi.toString());
+	//}
 	
-	currentUser.savePreference('qualitat.sgqActual',current.x_udg_q_sgq_actual.toString());
-	currentUser.savePreference('qualitat.sgqActualCodi',current.x_udg_q_sgq_actual.codi.toString());
 	new Usuari(current.sys_id.toString()).setRoles();
 	gs.addInfoMessage('A partir d\'ara la visibilitat de '+current.name+' correspón només a <b>'+current.x_udg_q_sgq_actual.nom+'</b>');
- 
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -78,7 +82,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>67a074cd3770a7004ccbd0d543990e22</sys_id>
-        <sys_mod_count>81</sys_mod_count>
+        <sys_mod_count>88</sys_mod_count>
         <sys_name>Usuari canvia de SGQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -87,7 +91,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_67a074cd3770a7004ccbd0d543990e22</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-18 18:39:56</sys_updated_on>
+        <sys_updated_on>2019-01-21 09:33:06</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
