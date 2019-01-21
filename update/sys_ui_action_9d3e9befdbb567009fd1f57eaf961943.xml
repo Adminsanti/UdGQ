@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Desisteix Objectiu</action_name>
+        <action_name>Generar proces</action_name>
         <active>false</active>
         <client>true</client>
         <client_script_v2/>
         <comments/>
-        <condition>( current.state == 1 || current.state== 2)&amp;&amp; gs.hasRole("x_udg_q_user") &amp;&amp; current.sgq == gs.getUser().getPreference('qualitat.sgqActual');</condition>
-        <form_action>true</form_action>
-        <form_button>true</form_button>
+        <condition>current.sgq != gs.getUser().getPreference('qualitat.sgqActual') &amp;&amp; gs.hasRole('x_udg_q_ManagerUniversitat')</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
@@ -23,25 +23,29 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>RECYCLE Desisteix Objectiu</name>
+        <name>RECYCLE Generar procés llegat</name>
         <onclick>onClick()</onclick>
         <order>100</order>
-        <script><![CDATA[function onClick() {
-	g_form.setMandatory('valoracio',true);
-	//g_form.addInfoMessage ("Per desistir de l'objectiu cal que redacteu una justificació en el camp valoració i després torneu a premer [Desisteix Objectiu]");
-	gsftSubmit (null, g_form.getFormElement(), 'Desisteix Objectiu');
-	//g_form.setMandatory('valoracio',false);
-}
+        <script><![CDATA[crea();
 
-if (typeof window == 'undefined') desisteix();
+function crea() {
+	var gr= new GlideRecord('x_udg_q_proces');
+	gr.addQuery('SGQ',gs.getUser().getPreference('qualitat.sgqActual'));
+	gr.addQuery('pare',gr.sys_id);
+	gr.query();
+	if (!gr.next()) { //NO te fills
+		new log ("Creant nou procés");
+		gr.inicitialize();
+		gr.pare=current.sys_id;
+		gr.nom=current.nom;
+		gr.num=current.num;
+		
+		
+		//gr.insert();
+		
+	}
 	
 
-function desisteix() {
-	current.active=false;
-	current.state=5;
-	current.update();
-	
-	action.setRedirectURL(current);
 }
 
 ]]></script>
@@ -56,8 +60,8 @@ function desisteix() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d3e9befdbb567009fd1f57eaf961943</sys_id>
-        <sys_mod_count>22</sys_mod_count>
-        <sys_name>RECYCLE Desisteix Objectiu</sys_name>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>RECYCLE Generar procés llegat</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -65,8 +69,8 @@ function desisteix() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_9d3e9befdbb567009fd1f57eaf961943</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-16 14:41:33</sys_updated_on>
-        <table>x_udg_q_objectiumillora</table>
+        <sys_updated_on>2019-01-21 20:45:36</sys_updated_on>
+        <table>x_udg_q_proces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>

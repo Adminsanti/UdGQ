@@ -4,13 +4,13 @@
             <element>pare</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-21 11:48:40</sys_created_on>
-            <sys_id>5587114b1b03ef00c851a64fad4bcb44</sys_id>
+            <sys_created_on>2019-01-21 12:03:54</sys_created_on>
+            <sys_id>ec0b914f1b03ef00c851a64fad4bcb77</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Procés llegat" display_value="Procés llegat" name="x_udg_q_proces" sys_domain="global" view="Default view">f8df0318db196b009fd1f57eaf961951</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-21 11:48:40</sys_updated_on>
+            <sys_updated_on>2019-01-21 12:03:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,41 +18,69 @@
             <element>pare.sgq</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-21 11:48:40</sys_created_on>
-            <sys_id>d987114b1b03ef00c851a64fad4bcb44</sys_id>
+            <sys_created_on>2019-01-21 12:03:54</sys_created_on>
+            <sys_id>640b914f1b03ef00c851a64fad4bcb78</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Procés llegat" display_value="Procés llegat" name="x_udg_q_proces" sys_domain="global" view="Default view">f8df0318db196b009fd1f57eaf961951</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-21 11:48:40</sys_updated_on>
+            <sys_updated_on>2019-01-21 12:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pare.propietari</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-21 12:03:54</sys_created_on>
+            <sys_id>e40b914f1b03ef00c851a64fad4bcb78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Procés llegat" display_value="Procés llegat" name="x_udg_q_proces" sys_domain="global" view="Default view">f8df0318db196b009fd1f57eaf961951</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-21 12:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pare.responsable</element>
+            <position>3</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-21 12:03:54</sys_created_on>
+            <sys_id>680b914f1b03ef00c851a64fad4bcb78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Procés llegat" display_value="Procés llegat" name="x_udg_q_proces" sys_domain="global" view="Default view">f8df0318db196b009fd1f57eaf961951</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-21 12:03:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-21 11:48:40</sys_created_on>
-            <sys_id>5d87114b1b03ef00c851a64fad4bcb44</sys_id>
+            <sys_created_on>2019-01-21 12:03:54</sys_created_on>
+            <sys_id>e80b914f1b03ef00c851a64fad4bcb78</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Procés llegat" display_value="Procés llegat" name="x_udg_q_proces" sys_domain="global" view="Default view">f8df0318db196b009fd1f57eaf961951</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-21 11:48:40</sys_updated_on>
+            <sys_updated_on>2019-01-21 12:03:54</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>llegata</element>
-            <position>3</position>
+            <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-21 11:48:40</sys_created_on>
-            <sys_id>dd87114b1b03ef00c851a64fad4bcb44</sys_id>
+            <sys_created_on>2019-01-21 12:03:54</sys_created_on>
+            <sys_id>6c0b914f1b03ef00c851a64fad4bcb78</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Procés llegat" display_value="Procés llegat" name="x_udg_q_proces" sys_domain="global" view="Default view">f8df0318db196b009fd1f57eaf961951</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-21 11:48:40</sys_updated_on>
+            <sys_updated_on>2019-01-21 12:03:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
