@@ -44,8 +44,9 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>actiu=true^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_proces">actiu=true^EQ<item endquery="false" field="actiu" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <reference_qual>actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ</reference_qual>
+        <reference_qual_condition table="x_udg_q_proces">actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ<item endquery="false" field="actiu" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="sgq" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getPreference('qualitat.sgqActual')"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <reference_type/>
@@ -57,7 +58,7 @@
         <sys_created_on>2018-10-09 10:08:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ca54216ddb0da7c01f06adc3ca96196b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Procés Vinculat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -65,7 +66,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_objectiumillora_proces</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-21 10:30:43</sys_updated_on>
+        <sys_updated_on>2019-01-21 11:52:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

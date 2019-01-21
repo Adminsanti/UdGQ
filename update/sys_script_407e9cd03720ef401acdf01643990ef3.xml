@@ -32,8 +32,8 @@
 if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
 	//gs.addInfoMessage ("Consultarem només :"+SGQpref);
 	var qc = current.addQuery('sgq',SGQpref);
-	//qc.addOrCondition('pare.sqg',SGQpref); //fills
-	//qc.addOrCondition('llegata','CONTAINS',SGQpref); //pares
+	qc.addOrCondition('pare.sqg',SGQpref); //fills
+	qc.addOrCondition('llegata','CONTAINS',SGQpref); //pares
 	
 	//falta considerar: 
 	//					- Que passa quan es crida pel portal
@@ -45,7 +45,7 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>407e9cd03720ef401acdf01643990ef3</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>SGQ query per Proces</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -54,7 +54,7 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_407e9cd03720ef401acdf01643990ef3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-21 11:34:17</sys_updated_on>
+        <sys_updated_on>2019-01-21 11:53:13</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
