@@ -4,21 +4,24 @@
         <access>package_private</access>
         <action_delete>false</action_delete>
         <action_insert>false</action_insert>
-        <action_query>true</action_query>
-        <action_update>false</action_update>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
-        <advanced>true</advanced>
+        <advanced>false</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_proces</collection>
+        <collection>x_udg_q_acciomillora</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_udg_q_acciomillora">state=2^tancament!=^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="false" field="tancament" goto="false" newquery="false" operator="!=" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>SGQ query per Proces</name>
+        <name>Accio tancar</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,36 +30,30 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
-	//gs.addInfoMessage ("Consultarem només :"+SGQpref);
-	var qc = current.addQuery('sgq',SGQpref);
-	//qc.addOrCondition('pare.sqg',SGQpref); //fills
-	//qc.addOrCondition('llegata','CONTAINS',SGQpref); //pares
-	
-	//falta considerar: 
-	//					- Que passa quan es crida pel portal
-}]]></script>
+	// Add your code here
+
+})(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-09-10 12:02:13</sys_created_on>
+        <sys_created_on>2019-01-21 10:36:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>407e9cd03720ef401acdf01643990ef3</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>SGQ query per Proces</sys_name>
+        <sys_id>8f07498b1bcfaf00c851a64fad4bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Accio tancar</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_script_407e9cd03720ef401acdf01643990ef3</sys_update_name>
+        <sys_update_name>sys_script_8f07498b1bcfaf00c851a64fad4bcb70</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-21 11:34:17</sys_updated_on>
-        <template/>
+        <sys_updated_on>2019-01-21 10:36:41</sys_updated_on>
+        <template>state=5^active=false^closed_atSAMEASsys_updated_on^closed_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</template>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=407e9cd03720ef401acdf01643990ef3"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=8f07498b1bcfaf00c851a64fad4bcb70"/>
 </record_update>
