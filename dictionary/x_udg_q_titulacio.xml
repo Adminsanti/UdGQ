@@ -3,7 +3,7 @@
         <element default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" type="string"/>
         <element display="true" label="Memo" max_length="40" name="memo" type="string"/>
-        <element label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element attributes="no_truncate=true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
         <element label="QMS" max_length="32" name="qms" reference="x_udg_q_titulacio" type="reference"/>
         <element label="Responsable" max_length="32" name="responsable" reference="sys_user" type="reference"/>
