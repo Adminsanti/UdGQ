@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_recomanacions" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Recomanacions - Default view" name="x_udg_q_recomanacions" related_list="NULL" sys_domain="global" view="Default view">ceffd9e53701e3004ccbd0d543990e44</list_id>
+            <list_id display_value="Recomanació - Default view" name="x_udg_q_recomanacions" related_list="NULL" sys_domain="global" view="Default view">ceffd9e53701e3004ccbd0d543990e44</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_udg_q_objectiumillora.recomanacions</related_list>
@@ -15,7 +15,7 @@
             <sys_updated_on>2018-10-09 10:29:08</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Recomanacions - Default view</calculated_name>
+            <calculated_name>Recomanació - Default view</calculated_name>
             <filter/>
             <name>x_udg_q_recomanacions</name>
             <order_by/>

@@ -31,47 +31,23 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	new log("BR:Usuari canvia de SGQ - Canvi SGQACtual per "+current.sys_id.toString());
-	/*
-	var grP1 = new GlideRecord('sys_user_preference');
-	var grP2 = new GlideRecord('sys_user_preference');
-	var e1 = "name=qualitat.sgqActual^user="+current.sys_id.toString();
-	var e2 = "name=qualitat.sgqActualCodi^user="+current.sys_id.toString();
-	grP1.addEncodedQuery(e1);
-	grP2.addEncodedQuery(e2);
-	grP1.query();
-	grP2.query();
-	if (!grP1.next()) { //L'usuari no té aquesta preferència
-		grP1.initialize();
-		grP1.user=current.sys_id;
-		grP1.name='qualitat.sgqActual';
-		grP1.value=current.x_udg_q_sgq_actual;
-		grP1.insert(); //Inserta
-		if (!grP2.next()) { //Tampoc té l'altra
-			grP2.initialize();
-			grP2.user=current.sys_id;
-			grP2.name='qualitat.sgqActualCodi';
-			grP2.value=current.x_udg_q_sgq_actual.codi;
-			grP2.insert();
-		}
-	} else {//l'usuari té la preferència P1
-		grP1.value = current.x_udg_q_sgq_actual.toString();
-		grP1.update();
-		grP2.next(); //accedim a la segonas propietat
-		grP2.value=current.x_udg_q_sgq_actual.codi.toString();
-		grP2.update();
-	}
- 	*/
+	var interactiveUserId = gs.getUser().getID();
+	var changingUserId = current.sys_id;
+	new log("Canvi SGQ Actual - "+ gs.getUser().getDisplayName() + " li canvia a "+ current.name +" ("+current.sys_id+ ") el SGQACtual que era "+previous.x_udg_q_sgq_actual.codi.toString()+" a "+current.x_udg_q_sgq_actual.codi.toString()+" ("+current.x_udg_q_sgq_actual+")");
 	
-	var currentUser = gs.getUser();
-	//NO FUNCIONA var currentUser = gs.getUser().getUserByID(current.sys_id.toString());
-	//if (currentUser == gs.getUser()) { //Usuari actual
-		var sgqactual=current.x_udg_q_sgq_actual.toString();
-		currentUser.savePreference('qualitat.sgqActual',sgqactual);
+	var us = new Usuari(changingUserId);
+	
+	if (interactiveUserId == changingUserId) { //Qui canvia és l'usuari interactiu
+		var currentUser = gs.getUser();
+		currentUser.savePreference('qualitat.sgqActual',current.x_udg_q_sgq_actual.toString());
 		currentUser.savePreference('qualitat.sgqActualCodi',current.x_udg_q_sgq_actual.codi.toString());
-	//}
-	
-	new Usuari(current.sys_id.toString()).setRoles();
+		// Hauriem d'actualitzar el banner!!!!!!!!!
+	}
+	else {
+		us.actualitzaPreferencia('qualitat.sgqActual',current.x_udg_q_sgq_actual.toString());
+		us.actualitzaPreferencia('qualitat.sgqActualCodi',current.x_udg_q_sgq_actual.codi.toString());
+	}
+	us.setAllRoles(current.x_udg_q_sgq_actual); //semprere calcular els rols
 	gs.addInfoMessage('A partir d\'ara la visibilitat de '+current.name+' correspón només a <b>'+current.x_udg_q_sgq_actual.nom+'</b>');
 	
 })(current, previous);]]></script>
@@ -82,7 +58,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>67a074cd3770a7004ccbd0d543990e22</sys_id>
-        <sys_mod_count>88</sys_mod_count>
+        <sys_mod_count>114</sys_mod_count>
         <sys_name>Usuari canvia de SGQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -91,9 +67,22 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_67a074cd3770a7004ccbd0d543990e22</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-21 09:33:06</sys_updated_on>
+        <sys_updated_on>2019-01-24 10:55:56</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=67a074cd3770a7004ccbd0d543990e22"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>67a074cd3770a7004ccbd0d543990e22</documentkey>
+        <fieldname>message</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-01-24 08:07:53</sys_created_on>
+        <sys_id>94c100041b9f6340c851a64fad4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-01-24 08:07:53</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
 </record_update>
