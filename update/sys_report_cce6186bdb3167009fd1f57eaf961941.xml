@@ -38,7 +38,7 @@
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field>objectiu_millora</field>
-        <field_list>accio_millora,accio_millora.state,accio_millora.short_description,contribucio,accio_millora.percentatge</field_list>
+        <field_list>accio_millora,accio_millora.state,accio_millora.short_description,percentatge,accio_millora.percentatge</field_list>
         <filter table="x_udg_q_m2m_accions_objectius">objectiu_millora.stateNOT IN-5,5^EQ^ORDERBYobjectiu_millora.state<item endquery="false" field="objectiu_millora.state" goto="false" newquery="false" operator="NOT IN" or="false" value="-5,5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="objectiu_millora.state"/>
@@ -92,13 +92,13 @@
         <show_zero>false</show_zero>
         <source_type>table</source_type>
         <start_time/>
-        <sumfield>accio_millora...</sumfield>
+        <sumfield>contribucio</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-11-21 17:04:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cce6186bdb3167009fd1f57eaf961941</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Pla Actiu</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -106,13 +106,13 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_cce6186bdb3167009fd1f57eaf961941</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-21 17:34:13</sys_updated_on>
+        <sys_updated_on>2019-01-24 12:02:53</sys_updated_on>
         <table>x_udg_q_m2m_accions_objectius</table>
         <title>Pla Actiu</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>accio_millora...</trend_field>
+        <trend_field>sys_created_on</trend_field>
         <type>list</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>

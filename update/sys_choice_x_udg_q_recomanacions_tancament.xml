@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="tancament" table="x_udg_q_recomanacions" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tancament</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Desistiment</label>
+            <language>en</language>
+            <name>x_udg_q_recomanacions</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-28 09:26:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>702a78151b9b6740c851a64fad4bcb8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-28 09:26:46</sys_updated_on>
+            <value>0</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tancament</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Recollida al pla de millora</label>
+            <language>en</language>
+            <name>x_udg_q_recomanacions</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-28 09:27:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6f2a78151b9b6740c851a64fad4bcbff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-28 09:27:24</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>tancament</element>
+            <name>x_udg_q_recomanacions</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-28 09:26:46</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>c32a78151b9b6740c851a64fad4bcbf0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>tancament</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_choice_x_udg_q_recomanacions_tancament</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-28 09:26:46</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

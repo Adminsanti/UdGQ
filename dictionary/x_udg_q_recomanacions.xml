@@ -4,8 +4,9 @@
         <element choice="3" default="1" label="Estat" max_length="40" name="estat" read_only="true" type="integer">
             <choice>
                 <element inactive_on_update="false" label="Nova" sequence="0" value="1"/>
-                <element inactive_on_update="false" label="Objectius en curs" sequence="1" value="2"/>
-                <element inactive_on_update="false" label="Atesa" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="En espera" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Objectius en curs" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Tancada" sequence="3" value="5"/>
             </choice>
         </element>
         <element label="Informe" max_length="32" name="informe" reference="x_udg_q_informevsma" type="reference"/>
@@ -13,6 +14,13 @@
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Compulsory" max_length="40" name="obligatoria" type="boolean"/>
         <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element choice="1" label="Tancament" max_length="40" name="tancament" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Desistiment" value="0"/>
+                <element inactive_on_update="false" label="Recollida al pla de millora" value="3"/>
+            </choice>
+        </element>
+        <element label="Valoració" max_length="4000" name="valoracio" type="string"/>
         <index name="index">
             <element name="informe"/>
         </index>

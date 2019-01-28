@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="valoracio" label="Valoració" language="en" table="x_udg_q_recomanacions">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>valoracio</element>
+            <help/>
+            <hint/>
+            <label>Valoració</label>
+            <language>en</language>
+            <name>x_udg_q_recomanacions</name>
+            <plural>Valoracions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-28 08:21:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>613b20951b5b6740c851a64fad4bcbd4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Valoració</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_q_recomanacions_valoracio_en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-28 08:39:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
