@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Gestió del SGQ">5555767e3714eb401acdf01643990ecf</application>
+        <application display_value="Informes i Recomanacions VSMA">d766791adb4e2f009fd1f57eaf961935</application>
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_udg_q_funcio">activa=true^EQ<item endquery="false" field="activa" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter table="x_udg_q_informevsma">actiu=true^EQ<item endquery="false" field="actiu" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -13,10 +13,10 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Funcios</mobile_title>
+        <mobile_title>Informes Actius</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_udg_q_funcio</name>
-        <order>200</order>
+        <name>x_udg_q_informevsma</name>
+        <order>900</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,23 +25,23 @@
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-13 11:20:16</sys_created_on>
+        <sys_created_on>2019-01-28 11:07:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a85b7db837712f004ccbd0d543990e17</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Funcions i Càrrecs</sys_name>
+        <sys_id>5601d9d51bdb6740c851a64fad4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Informes Actius</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_app_module_a85b7db837712f004ccbd0d543990e17</sys_update_name>
+        <sys_update_name>sys_app_module_5601d9d51bdb6740c851a64fad4bcb56</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-28 11:19:14</sys_updated_on>
+        <sys_updated_on>2019-01-28 11:07:08</sys_updated_on>
         <timeline_page/>
-        <title>Funcions i Càrrecs</title>
+        <title>Informes Actius</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
