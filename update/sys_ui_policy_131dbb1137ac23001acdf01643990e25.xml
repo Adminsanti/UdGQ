@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <conditions/>
+        <active>true</active>
+        <conditions table="x_udg_q_recomanacions">tancament=0^EQ<item endquery="false" field="tancament" goto="false" newquery="false" operator="=" or="false" value="0"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
         <description/>
         <global>true</global>
         <inherit>false</inherit>
@@ -13,17 +15,15 @@
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-	g_form.clearMessages();
-	g_form.setReadOnly('nom',false);
+
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
 
-	g_form.setReadOnly('nom',true);
-	g_form.addInfoMessage("Aquest procés està sincronitzat amb un altre i, per tant, no pot canviar de nom");
+
 
 }]]></script_true>
         <set_values/>
-        <short_description>RECYCLE</short_description>
+        <short_description>Recomanació desistida vol valoració</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-14 06:47:45</sys_created_on>
@@ -31,8 +31,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>131dbb1137ac23001acdf01643990e25</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>RECYCLE</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Recomanació desistida vol valoració</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -40,8 +40,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_131dbb1137ac23001acdf01643990e25</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-05 11:05:50</sys_updated_on>
-        <table>x_udg_q_proces</table>
+        <sys_updated_on>2019-01-28 12:04:14</sys_updated_on>
+        <table>x_udg_q_recomanacions</table>
         <ui_type>0</ui_type>
         <view/>
     </sys_ui_policy>
