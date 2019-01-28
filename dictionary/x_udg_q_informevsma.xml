@@ -3,7 +3,7 @@
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Data" max_length="40" name="data" type="glide_date"/>
         <element label="Document" max_length="40" name="document" type="file_attachment"/>
-        <element display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element attributes="no_truncate=true" display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element choice="1" label="Origen" max_length="60" name="origen" type="string">
             <choice>
                 <element inactive_on_update="false" label="Comité extern AQU" sequence="0" value="comité extern aqu"/>
