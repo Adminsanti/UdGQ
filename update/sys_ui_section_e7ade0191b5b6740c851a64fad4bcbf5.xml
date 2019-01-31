@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Objectius" section_id="e7ade0191b5b6740c851a64fad4bcbf5" sys_domain="global" table="x_udg_q_recomanacions" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>objectius</element>
+            <position>0</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-31 11:01:15</sys_created_on>
+            <sys_id>d09c241a1b536b405fab4002cd4bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectius" display_value="Objectius" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">e7ade0191b5b6740c851a64fad4bcbf5</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-31 11:01:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-31 11:01:15</sys_created_on>
+            <sys_id>549c241a1b536b405fab4002cd4bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectius" display_value="Objectius" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">e7ade0191b5b6740c851a64fad4bcbf5</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-31 11:01:15</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Objectius</caption>
             <header>false</header>

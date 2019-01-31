@@ -25,25 +25,42 @@ Reco.prototype = {
 					return 2; //Te valoració
 			}
 			else { //Hi ha objectius en curs o tancats
-				return 3; //objectius en curs	
+				return 3; //objectius en curs
 			}
 		}
 	},
 	
+	getNObjectius: function(recomanacio) {
+		var grObjFills = new GlideRecord('x_udg_q_objectiumillora');
+		grObjFills.addEncodedQuery("state!=-5^recomanacionsLIKE"+recomanacio.sys_id);
+		grObjFills.query();
+		return grObjFills.getRowCount();
+	},
+	
 	actualitzaEstatLlista: function (recomanacions) {
-		gs.addInfoMessage('Cridat actualitzaEstatLlista per '+recomanacions);
+		new log ('Cridat actualitzaEstatLlista per '+recomanacions);
 		var grR = new GlideRecord('x_udg_q_recomanacions');
 		grR.addEncodedQuery("sys_idIN"+recomanacions);
 		grR.query();
 		while (grR.next()) {
-			var nouEstat=this.getEstat(grR);
-			gs.addInfoMessage('actualitzaEstatLlista per '+grR.sys_id+ " - "+grR.number + " Nou estat "+nouEstat);
-			if (nouEstat != grR.estat) {
-				gs.addInfoMessage("Actualitzo");
-				grR.estat=nouEstat;
-				grR.update();
+			new log('actualitzaEstatLlista per '+grR.sys_id+ " - "+grR.number + " Nou estat "+nouEstat);
+			grR.estat=this.getEstat(grR);
+			grR.objectius=getNObjectius(grR);
+			grR.update();
+		}
+	},
+	
+	algunaObligatoria: function (llista_recomanacions) {
+		var obligatoria=false;
+		var arr = llista_recomanacions.split(",");
+		for (var i = 0; i < arr.length; i++){
+			var gr = new GlideRecord('x_udg_q_recomanacions');
+			if(gr.get(arr[i])){
+				if (gr.obligatoria)
+					obligatoria=true;
 			}
 		}
+		return obligatoria;
 	},
 	
 	type: 'Reco'
@@ -53,7 +70,7 @@ Reco.prototype = {
         <sys_created_on>2018-10-31 11:25:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b99cfa60dbe5a3009fd1f57eaf9619ea</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Reco</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -61,6 +78,6 @@ Reco.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_b99cfa60dbe5a3009fd1f57eaf9619ea</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-28 11:03:52</sys_updated_on>
+        <sys_updated_on>2019-01-31 11:16:17</sys_updated_on>
     </sys_script_include>
 </record_update>

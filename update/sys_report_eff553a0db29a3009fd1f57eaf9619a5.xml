@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
-        <additional_groupby>obligatoria</additional_groupby>
+        <additional_groupby/>
         <aggregate>COUNT</aggregate>
         <allow_data_label_overlap>false</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
@@ -12,7 +12,7 @@
         <chart_border_width>1</chart_border_width>
         <chart_height>450</chart_height>
         <chart_size>large</chart_size>
-        <chart_title/>
+        <chart_title>Actives</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
@@ -32,7 +32,7 @@
         <description/>
         <direction>minimize</direction>
         <display_column_lines>false</display_column_lines>
-        <display_grid>false</display_grid>
+        <display_grid>true</display_grid>
         <display_row_lines>false</display_row_lines>
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
@@ -79,7 +79,7 @@
         <series_name_text/>
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
-        <show_chart_data_label>false</show_chart_data_label>
+        <show_chart_data_label>true</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
         <show_data_label_position_middle>false</show_data_label_position_middle>
@@ -97,7 +97,7 @@
         <sys_created_on>2018-10-31 13:02:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>eff553a0db29a3009fd1f57eaf9619a5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Recomanacions no tancades</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -105,7 +105,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_eff553a0db29a3009fd1f57eaf9619a5</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-28 11:09:53</sys_updated_on>
+        <sys_updated_on>2019-01-31 11:45:23</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <title>Recomanacions no tancades</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

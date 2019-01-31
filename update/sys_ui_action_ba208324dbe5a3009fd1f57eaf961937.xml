@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Recalcular Estat</action_name>
+        <action_name>Recalcular Estat i objectius</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2/>
@@ -23,17 +23,13 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Recalcula Estat</name>
+        <name>Recalcula Estat i Objectius</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var NouEstat=new x_udg_q.Reco().getEstat(current);
-if (NouEstat != current.estat) {
-	current.estat=NouEstat;
-	current.update();
-	gs.addInfoMessage("Estat Actualitzat");
-} else {
-	gs.addInfoMessage("Estat No requereix actualització");
-}
+        <script><![CDATA[current.estat=new Reco().getEstat(current);
+current.objectius=new Reco().getNObjectius(current);
+current.update();
+
 action.setRedirectURL(current);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -46,8 +42,8 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ba208324dbe5a3009fd1f57eaf961937</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Recalcula Estat</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Recalcula Estat i Objectius</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -55,7 +51,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_ba208324dbe5a3009fd1f57eaf961937</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-28 11:58:18</sys_updated_on>
+        <sys_updated_on>2019-01-31 11:20:13</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

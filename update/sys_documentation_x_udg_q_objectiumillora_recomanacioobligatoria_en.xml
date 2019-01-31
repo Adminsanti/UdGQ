@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="recomanacioobligatoria" label="Recomanació obligatoria" language="en" table="x_udg_q_objectiumillora">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>recomanacioobligatoria</element>
+            <help/>
+            <hint/>
+            <label>Recomanació obligatoria</label>
+            <language>en</language>
+            <name>x_udg_q_objectiumillora</name>
+            <plural>Recomanació obligatorias</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-01-31 09:37:59</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>e88910561b136b405fab4002cd4bcbad</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Recomanació obligatoria</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_q_objectiumillora_recomanacioobligatoria_en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-01-31 10:25:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

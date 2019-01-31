@@ -20,7 +20,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Objectiu canvien recomanacions</name>
+        <name>Objectiu canvien recomanacions after</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -42,8 +42,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>24c629f5db3163009fd1f57eaf9619d1</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Objectiu canvien recomanacions</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Objectiu canvien recomanacions after</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -51,7 +51,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_24c629f5db3163009fd1f57eaf9619d1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-28 10:42:47</sys_updated_on>
+        <sys_updated_on>2019-01-31 09:42:04</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

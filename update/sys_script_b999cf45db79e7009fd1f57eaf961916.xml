@@ -2,23 +2,25 @@
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
         <access>package_private</access>
-        <action_delete>true</action_delete>
-        <action_insert>true</action_insert>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_m2m_accions_objectius</collection>
+        <collection>x_udg_q_recomanacions</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_udg_q_recomanacions">obligatoriaVALCHANGES^EQ<item endquery="false" field="obligatoria" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>RECYCLA M2m Recalcula percentatge</name>
+        <name>Recomanacio canvia obligatori</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,7 +31,13 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	new x_udg_q.ObjectiuUtils(current.sys_id).actualitzaPercentatgeAccions();
+	var gr = new GlideRecord('x_udg_q_objectiumillora');
+	gr.addEncodedQuery("recomanacionsLIKE"+current.sys_id);
+	gr.query();
+	while (gr.next()) {
+		gr.recomanacioobligatoria = new Reco().algunaObligatoria(gr.recomanacions);
+		gr.update();
+	}
 	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -39,8 +47,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b999cf45db79e7009fd1f57eaf961916</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>RECYCLA M2m Recalcula percentatge</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Recomanacio canvia obligatori</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -48,7 +56,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_b999cf45db79e7009fd1f57eaf961916</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-18 16:49:29</sys_updated_on>
+        <sys_updated_on>2019-01-31 10:24:40</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

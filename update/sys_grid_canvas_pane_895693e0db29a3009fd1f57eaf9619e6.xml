@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
     <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
         <grid_canvas display_value="PA New Tab">c8823e68dba5a3009fd1f57eaf961991</grid_canvas>
-        <height>15</height>
+        <height>19</height>
         <portal_widget display_value="Created 31/10/2018 14:03:42">8d5693e0db29a3009fd1f57eaf9619e3</portal_widget>
-        <posx>0</posx>
+        <posx>6</posx>
         <posy>0</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-31 13:03:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>895693e0db29a3009fd1f57eaf9619e6</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>c8823e68dba5a3009fd1f57eaf961991</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -18,7 +18,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_grid_canvas_pane_895693e0db29a3009fd1f57eaf9619e6</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-28 11:16:54</sys_updated_on>
+        <sys_updated_on>2019-01-31 12:04:22</sys_updated_on>
         <width>6</width>
     </sys_grid_canvas_pane>
 </record_update>

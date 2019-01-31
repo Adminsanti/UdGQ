@@ -12,7 +12,7 @@
         <chart_border_width>1</chart_border_width>
         <chart_height>450</chart_height>
         <chart_size>large</chart_size>
-        <chart_title/>
+        <chart_title>Obligatories per valorar</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
@@ -39,7 +39,9 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>nom</field>
         <field_list/>
-        <filter/>
+        <filter table="x_udg_q_recomanacions">obligatoria=true^estatIN1<item endquery="false" field="obligatoria" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="estat" goto="false" newquery="false" operator="IN" or="false" value="1"/>
+        </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -95,22 +97,22 @@
         <sys_created_on>2018-10-31 12:40:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6001dfacdbe5a3009fd1f57eaf9619e2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Estat de les Recomanacions</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Recomanacions obligatories per valorar</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_6001dfacdbe5a3009fd1f57eaf9619e2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-28 11:15:54</sys_updated_on>
+        <sys_updated_on>2019-01-31 11:39:24</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
-        <title>Estat de les Recomanacions</title>
+        <title>Recomanacions obligatories per valorar</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
         <trend_field>sys_created_on</trend_field>
-        <type>pivot_v2</type>
+        <type>single_score</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_color_palette>false</use_color_palette>
