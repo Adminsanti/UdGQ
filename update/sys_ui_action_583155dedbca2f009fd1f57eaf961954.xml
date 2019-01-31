@@ -5,12 +5,12 @@
         <client>false</client>
         <client_script_v2/>
         <comments/>
-        <condition>current.state == -5 &amp;&amp; gs.hasRole("x_udg_q_user") &amp;&amp; current.sgq == gs.getUser().getPreference('qualitat.sgqActual');</condition>
+        <condition>current.state == -5 &amp;&amp; gs.hasRole("x_udg_q.Manager") &amp;&amp; current.sgq ==gs.getUser().getPreference('qualitat.sgqActual')</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
-        <form_context_menu>true</form_context_menu>
-        <form_link>false</form_link>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <hint>Afegeix l'acció al Pla de Millora</hint>
@@ -23,7 +23,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Declara - Incopora al PM</name>
+        <name>Declara - Incorpora al PM</name>
         <onclick/>
         <order>1000</order>
         <script><![CDATA[doDefineixAccio ();
@@ -31,19 +31,18 @@
 function doDefineixAccio () {
 	if (current.responsable == '') {
 		current.update(); //gravem igualment
-		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO es pot Afegir al Pla de Millora per <B>manca de responsable</B>");
+		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO es pot incorporar al Pla de Millora per <B>manca de responsable</B>");
 	}
 	else {
 		current.state = 2;
-		current.active=true;
 		var ara = new GlideDateTime();
-		current.declarat= ara.toString();
+		current.declarat= new GlideDateTime().toString();
 		current.declarat_per=gs.getUserID();
 		current.update();
-		gs.addInfoMessage(current.number+ " Afegida al Pla de Millora");
+		gs.addInfoMessage(current.number+ " Incorporada al Pla de Millora");
 		new AccioUtils().actualitzaExecucioTotsObjectius(current);
 	}
-	//action.setRedirectURL(current);    NO Roman
+	action.setRedirectURL(current);    //Roman
 }
 ]]></script>
         <show_insert>true</show_insert>
@@ -57,8 +56,8 @@ function doDefineixAccio () {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>583155dedbca2f009fd1f57eaf961954</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Declara - Incopora al PM</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Declara - Incorpora al PM</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -66,7 +65,7 @@ function doDefineixAccio () {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_583155dedbca2f009fd1f57eaf961954</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-11 12:10:06</sys_updated_on>
+        <sys_updated_on>2019-01-30 12:58:52</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
