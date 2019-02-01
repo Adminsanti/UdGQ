@@ -10,14 +10,14 @@
         <chart_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</chart_border_color>
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
-        <chart_height/>
+        <chart_height>450</chart_height>
         <chart_size>large</chart_size>
-        <chart_title/>
+        <chart_title>En curs depen de recomanació obligatòria</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
-        <chart_width/>
+        <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
@@ -37,9 +37,9 @@
         <donut_width_percent>50</donut_width_percent>
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
-        <field>state</field>
+        <field>recomanacioobligatoria</field>
         <field_list/>
-        <filter table="x_udg_q_objectiumillora">^ORDERBYstate<item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="state"/>
+        <filter table="x_udg_q_objectiumillora">state=2<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -76,7 +76,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>chart_colors</set_color>
+        <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -96,22 +96,22 @@
         <sys_created_on>2018-11-06 17:41:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e38f07aedb2d23009fd1f57eaf9619a7</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Objectius per estat apilat responsable</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Objectiu en curs depén de recomanació obligatòria</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_e38f07aedb2d23009fd1f57eaf9619a7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-15 17:26:44</sys_updated_on>
+        <sys_updated_on>2019-02-01 10:46:10</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
-        <title>Objectius per estat apilat responsable</title>
+        <title>Objectiu en curs depén de recomanació obligatòria</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>responsable</trend_field>
-        <type>bar</type>
+        <trend_field>activity_due</trend_field>
+        <type>semi_donut</type>
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>
         <use_color_palette>false</use_color_palette>

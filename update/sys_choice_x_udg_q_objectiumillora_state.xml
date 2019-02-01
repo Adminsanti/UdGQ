@@ -99,7 +99,7 @@
             <dependent_value/>
             <element>state</element>
             <hint/>
-            <inactive>true</inactive>
+            <inactive>false</inactive>
             <label>Tancat</label>
             <language>ca</language>
             <name>x_udg_q_objectiumillora</name>
@@ -109,9 +109,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f4509579dbfd23009fd1f57eaf961978</sys_id>
-            <sys_mod_count>13</sys_mod_count>
+            <sys_mod_count>14</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-02-01 08:12:20</sys_updated_on>
+            <sys_updated_on>2019-02-01 10:16:11</sys_updated_on>
             <value>3</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">

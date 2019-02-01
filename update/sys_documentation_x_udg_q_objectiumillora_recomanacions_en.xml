@@ -7,13 +7,13 @@
             <label>Recomanacions a que respon</label>
             <language>en</language>
             <name>x_udg_q_objectiumillora</name>
-            <plural>Recomanacions a que respons</plural>
+            <plural>Recomanacions a que respon</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-10-09 10:15:17</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>53cc51653701e3004ccbd0d543990ee0</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_name>Recomanacions a que respon</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
@@ -21,7 +21,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_objectiumillora_recomanacions_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-31 10:17:51</sys_updated_on>
+            <sys_updated_on>2019-02-01 10:50:54</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
