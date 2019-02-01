@@ -42,7 +42,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0ff390a51b0fab00c851a64fad4bcb93</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Objectiu tancar</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -51,8 +51,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0ff390a51b0fab00c851a64fad4bcb93</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-16 17:08:51</sys_updated_on>
-        <template>state=5^active=false^closed_atSAMEASsys_updated_on^closed_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</template>
+        <sys_updated_on>2019-02-01 08:21:04</sys_updated_on>
+        <template>state=3^active=false^closed_atSAMEASsys_updated_on^closed_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</template>
         <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=0ff390a51b0fab00c851a64fad4bcb93"/>

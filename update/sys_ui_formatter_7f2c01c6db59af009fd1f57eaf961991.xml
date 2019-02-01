@@ -3,21 +3,21 @@
         <active>true</active>
         <angular_module/>
         <formatter>process_flow.xml</formatter>
-        <name>Process Flow</name>
+        <name>Recomanacions Process Flow</name>
         <sys_class_name>sys_ui_formatter</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-23 08:35:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7f2c01c6db59af009fd1f57eaf961991</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Process Flow</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Recomanacions Process Flow</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_formatter_7f2c01c6db59af009fd1f57eaf961991</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-23 08:35:20</sys_updated_on>
+        <sys_updated_on>2019-02-01 08:20:09</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <type>formatter</type>
     </sys_ui_formatter>

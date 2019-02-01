@@ -8,15 +8,14 @@
         <record_for_rollback>false</record_for_rollback>
         <run_once>true</run_once>
         <script><![CDATA[var gr = new GlideRecord('x_udg_q_objectiumillora');
-var gc= gr.addQuery('state', 1);
-gc.addOrCondition('state', 3);
-
+gr.addQuery('state', 5);
 gr.query();
 while(gr.next()) {
     gs.info(gr.number + " - "+gr.state);
-    gr.state=2;
+    gr.state=3;
     gr.update();       
     }
+/*
 
 var gr2 = new GlideRecord('x_udg_q_objectiumillora');
 gr2.addQuery('state', 2);
@@ -30,13 +29,14 @@ while (gr2.next()) {
 	gr2.closed_at="";
 	gr2.assigned_to=gr2.responsable.usuari;
 	gr2.update();
-}]]></script>
+}
+*/]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-01-09 16:38:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d3962c971b7a27005fab4002cd4bcb5f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>OBJ Regularitzar</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -44,7 +44,7 @@ while (gr2.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_d3962c971b7a27005fab4002cd4bcb5f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-15 11:20:40</sys_updated_on>
+        <sys_updated_on>2019-02-01 08:15:00</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
