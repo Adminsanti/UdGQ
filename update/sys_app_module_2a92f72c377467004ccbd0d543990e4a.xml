@@ -5,11 +5,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_udg_q_fita">data_anticipadaRELATIVELE@month@ahead@6^data_anticipada&gt;=javascript:gs.beginningOfToday()^NQdataRELATIVELE@month@ahead@6^data&gt;=javascript:gs.beginningOfToday()^EQ<item endquery="false" field="data_anticipada" goto="false" newquery="false" operator="RELATIVE" or="false" value="LE@month@ahead@6"/>
-            <item endquery="false" field="data_anticipada" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
-            <item endquery="false" field="data" goto="false" newquery="true" operator="RELATIVE" or="false" value="LE@month@ahead@6"/>
-            <item endquery="false" field="data" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <filter table="x_udg_q_fita">data_anticipadaRELATIVELE@month@ahead@6^data_anticipada&gt;=javascript:gs.beginningOfToday()^NQdataRELATIVELE@month@ahead@6^data&gt;=javascript:gs.beginningOfToday()^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
         <homepage/>

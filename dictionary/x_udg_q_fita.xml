@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Fita" max_length="40" name="x_udg_q_fita" type="collection">
-        <element label="Data final" mandatory="true" max_length="40" name="data" type="glide_date"/>
-        <element label="Data inici" max_length="40" name="data_anticipada" type="glide_date"/>
-        <element label="End date" max_length="40" name="end_date" type="glide_date_time"/>
+        <element label="Compartit" max_length="4000" name="compartit" reference="x_udg_q_sgq" type="glide_list"/>
+        <element label="End date" mandatory="true" max_length="40" name="end_date" type="glide_date_time"/>
         <element attributes="no_truncate=True" display="true" label="Name" max_length="100" name="nom" type="string"/>
         <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
         <element label="Start date" max_length="40" name="start_date" type="glide_date_time"/>
