@@ -79,10 +79,10 @@ table.blueTable tfoot .links a{
 }
 </style>
 	
-	<g:evaluate var="sysparm_id">
-	 var sysparm_id = RP.getParameterValue("sysparm_id");
-     sysparm_id;
-	</g:evaluate>
+<g:evaluate var="sysparm_id">
+var sysparm_id = RP.getParameterValue("sysparm_id");
+sysparm_id;
+</g:evaluate>
 	
 	<g2:evaluate jelly="true">
 	 var sgq="FC";
@@ -90,9 +90,23 @@ table.blueTable tfoot .links a{
 
     <p>$[gs.getMessage("Pla de Millora")] $[sgq] - Query $[sysparm_id]</p>
 	
+<g:evaluate var="jvar_grS" object="true">
+    var grS = new GlideRecord("x_udg_q_subestandard");
+	grS.orderBy('nom')
+    grS.query();
+    grS;
+</g:evaluate>
+
+
+<j:while test="${jvar_grS.next()}">
+	<H3>
+	${grS.nom}
+	</H3>
+	<BR></BR>
 	<g:evaluate var="jvar_grO" object="true">
     var grO = new GlideRecord("x_udg_q_objectiumillora");
 	//if ($[sysparm_id] !="") grO.addEncodedQuery($[sysparm_id]);
+	grO.addQuery('subestandard',"${grS.sys_id}");
     grO.query();
     grO;
 	</g:evaluate>
@@ -101,7 +115,7 @@ table.blueTable tfoot .links a{
 			<g2:macro_invoke macro="x_udg_q_taulaObjectiu" number="${jvar_grO.getValue('number')}" short="${jvar_grO.getValue('short_description')}" sysid="${grO.sys_id}" estat="${grO.state.getDisplayValue()}" assoliment="${grO.assoliment}" valoracio="${grO.valoracio}" />	
 			<BR></BR>
 	</j:while>
-
+	</j:while>
 </j:jelly>]]></html>
         <name>informeseguiment</name>
         <processing_script/>
@@ -110,7 +124,7 @@ table.blueTable tfoot .links a{
         <sys_created_on>2019-01-24 13:56:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>565115c01b93a340c851a64fad4bcb41</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_name>informeseguiment</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -118,6 +132,6 @@ table.blueTable tfoot .links a{
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_page_565115c01b93a340c851a64fad4bcb41</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-07 12:22:48</sys_updated_on>
+        <sys_updated_on>2019-02-07 12:50:57</sys_updated_on>
     </sys_ui_page>
 </record_update>
