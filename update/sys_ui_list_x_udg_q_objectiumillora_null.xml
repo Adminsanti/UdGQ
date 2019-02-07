@@ -3,107 +3,122 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df5ccc23db3167009fd1f57eaf96194f</list_id>
+            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24f1cd181b6faf405fab4002cd4bcb10</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 16:18:48</sys_created_on>
-            <sys_id>575ccc23db3167009fd1f57eaf961950</sys_id>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
+            <sys_id>20f1cd181b6faf405fab4002cd4bcb11</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 16:18:48</sys_updated_on>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>state</element>
-            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df5ccc23db3167009fd1f57eaf96194f</list_id>
+            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24f1cd181b6faf405fab4002cd4bcb10</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 16:18:48</sys_created_on>
-            <sys_id>d75ccc23db3167009fd1f57eaf961950</sys_id>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
+            <sys_id>e4f1cd181b6faf405fab4002cd4bcb11</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 16:18:48</sys_updated_on>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df5ccc23db3167009fd1f57eaf96194f</list_id>
+            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24f1cd181b6faf405fab4002cd4bcb10</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 16:18:48</sys_created_on>
-            <sys_id>5b5ccc23db3167009fd1f57eaf961950</sys_id>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
+            <sys_id>68f1cd181b6faf405fab4002cd4bcb11</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 16:18:48</sys_updated_on>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assoliment</element>
-            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df5ccc23db3167009fd1f57eaf96194f</list_id>
+            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24f1cd181b6faf405fab4002cd4bcb10</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 16:18:48</sys_created_on>
-            <sys_id>db5ccc23db3167009fd1f57eaf961950</sys_id>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
+            <sys_id>e8f1cd181b6faf405fab4002cd4bcb11</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 16:18:48</sys_updated_on>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accions</element>
-            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df5ccc23db3167009fd1f57eaf96194f</list_id>
+            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24f1cd181b6faf405fab4002cd4bcb10</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 16:18:48</sys_created_on>
-            <sys_id>5f5ccc23db3167009fd1f57eaf961950</sys_id>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
+            <sys_id>6cf1cd181b6faf405fab4002cd4bcb11</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 16:18:48</sys_updated_on>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>responsable</element>
-            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df5ccc23db3167009fd1f57eaf96194f</list_id>
+            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24f1cd181b6faf405fab4002cd4bcb10</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 16:18:48</sys_created_on>
-            <sys_id>df5ccc23db3167009fd1f57eaf961950</sys_id>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
+            <sys_id>ecf1cd181b6faf405fab4002cd4bcb11</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 16:18:48</sys_updated_on>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assigned_to</element>
-            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">df5ccc23db3167009fd1f57eaf96194f</list_id>
+            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24f1cd181b6faf405fab4002cd4bcb10</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 16:18:48</sys_created_on>
-            <sys_id>535ccc23db3167009fd1f57eaf961951</sys_id>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
+            <sys_id>60f1cd181b6faf405fab4002cd4bcb12</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 16:18:48</sys_updated_on>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>recomanacioobligatoria</element>
+            <list_id display_value="x_udg_q_objectiumillora" element="NULL" name="x_udg_q_objectiumillora" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24f1cd181b6faf405fab4002cd4bcb10</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
+            <sys_id>e0f1cd181b6faf405fab4002cd4bcb12</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -117,11 +132,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-21 16:18:48</sys_created_on>
+            <sys_created_on>2019-02-06 17:42:31</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>df5ccc23db3167009fd1f57eaf96194f</sys_id>
+            <sys_id>24f1cd181b6faf405fab4002cd4bcb10</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_objectiumillora</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -130,7 +145,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_list_x_udg_q_objectiumillora_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-21 16:18:48</sys_updated_on>
+            <sys_updated_on>2019-02-06 17:42:31</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

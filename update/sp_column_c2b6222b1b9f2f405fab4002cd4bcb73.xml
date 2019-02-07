@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
     <sp_column action="INSERT_OR_UPDATE">
         <class_name/>
-        <order>2</order>
-        <size>6</size>
+        <order>1</order>
+        <size>12</size>
         <size_lg/>
         <size_sm/>
         <size_xs/>
-        <sp_row display_value="2">178914513701a3004ccbd0d543990eea</sp_row>
+        <sp_row display_value="1">42b6222b1b9f2f405fab4002cd4bcb71</sp_row>
         <sys_class_name>sp_column</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-08 10:42:59</sys_created_on>
+        <sys_created_on>2019-02-04 17:07:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>d78914513701a3004ccbd0d543990eed</sys_id>
+        <sys_id>c2b6222b1b9f2f405fab4002cd4bcb73</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>2</sys_name>
+        <sys_name>1</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sp_column_d78914513701a3004ccbd0d543990eed</sys_update_name>
+        <sys_update_name>sp_column_c2b6222b1b9f2f405fab4002cd4bcb73</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-08 10:42:59</sys_updated_on>
+        <sys_updated_on>2019-02-04 17:07:21</sys_updated_on>
     </sp_column>
 </record_update>

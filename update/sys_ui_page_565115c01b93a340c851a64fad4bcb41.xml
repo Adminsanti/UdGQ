@@ -4,66 +4,120 @@
         <client_script/>
         <description/>
         <direct>false</direct>
-        <endpoint>x_udg_q_plademillora.do</endpoint>
+        <endpoint>x_udg_q_informeseguiment.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+<style>
+table { 
+  display: table;
+  border-collapse: separate;
+  border-spacing: 5px;
+  border-color: gray;
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.blueTable thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #D0E4F5;
+  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444444;
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+</style>
+	
+	<g:evaluate var="sysparm_id">
+	 var sysparm_id = RP.getParameterValue("sysparm_id");
+     sysparm_id;
+	</g:evaluate>
 	
 	<g2:evaluate jelly="true">
-		var sgq="FC";
+	 var sgq="FC";
 	</g2:evaluate>
 
-    <p>$[gs.getMessage("Pla de Millora")] $[sgq]
-    </p>
+    <p>$[gs.getMessage("Pla de Millora")] $[sgq] - Query $[sysparm_id]</p>
 	
 	<g:evaluate var="jvar_grO" object="true">
     var grO = new GlideRecord("x_udg_q_objectiumillora");
+	//if ($[sysparm_id] !="") grO.addEncodedQuery($[sysparm_id]);
     grO.query();
     grO;
 	</g:evaluate>
-	
-	<ul>
-		<j:while test="${jvar_grO.next()}">
-			<li>${jvar_grO.getValue('number')} - ${jvar_grO.getValue('short_description')} </li>
-			<g:evaluate var="jvar_grM2M" object="true">
-			var grM2M = new GlideRecord("x_udg_q_m2m_accions_objectius");
-			grM2M.addEncodedQuery("objectiu_millora="+grO.sys_id);
-			grM2M.query();
-			grM2M;
-			</g:evaluate>
-			<ul>
-			<j:while test="${jvar_grM2M.next()}">
-				<g:evaluate var="jvar_grA" object="true">
-				var grA = new GlideRecord("x_udg_q_acciomillora");
-				grA.get(grM2M.accio_millora);
-				grA;
-				</g:evaluate>
-				<li>${jvar_grA.getValue('number')} - ${jvar_grA.getValue('short_description')}
-					<BR>Contribució ${jvar_grM2M.getValue('percentatge')}%</BR>
-					</li>
-			</j:while>
 
-			</ul>
-		</j:while>
-	</ul>	
-	
-	<H1>FI</H1>
+	<j:while test="${jvar_grO.next()}">
+			<g2:macro_invoke macro="x_udg_q_taulaObjectiu" number="${jvar_grO.getValue('number')}" short="${jvar_grO.getValue('short_description')}" sysid="${grO.sys_id}" estat="${grO.state.getDisplayValue()}" assoliment="${grO.assoliment}" valoracio="${grO.valoracio}" />	
+			<BR></BR>
+	</j:while>
 
 </j:jelly>]]></html>
-        <name>plademillora</name>
+        <name>informeseguiment</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-01-24 13:56:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>565115c01b93a340c851a64fad4bcb41</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>plademillora</sys_name>
+        <sys_mod_count>63</sys_mod_count>
+        <sys_name>informeseguiment</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_page_565115c01b93a340c851a64fad4bcb41</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-29 13:05:36</sys_updated_on>
+        <sys_updated_on>2019-02-07 12:22:48</sys_updated_on>
     </sys_ui_page>
 </record_update>

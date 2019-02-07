@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>add_titulacions_actives</name>
+        <scoped_name>x_udg_q_add_titulacions_actives</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-02-05 08:29:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c0d735731bd76f405fab4002cd4bcb18</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>add_titulacions_actives</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_macro_c0d735731bd76f405fab4002cd4bcb18</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-02-05 11:46:23</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+ <j:set var="jvar_n" value="add_titulacions_actives_${ref}"/>
+	<g:reference_decoration id="${jvar_n}" field="${ref}"
+  onclick="addTitulacionsActives('${ref}'); "
+  title="${gs.getMessage('Afegir totes les titulacions')}" image="images/icons/tasks.gifx" icon="icon-tree-right"/>
+	<script>
+
+function addTitulacionsActives(reference) {
+
+   var s = reference.split('.');
+   var referenceField = s[1];
+   var grT = new GlideRecord('x_udg_q_titulacions');
+   grT.addQuery('activa', true);
+   grT.addQuery('sgq', 
+	
+		
+   grT.query(titulacionsCallback);
+
+   //After the server returns the query recordset, continue here
+   function titulacionsCallback(grT){
+      //Hide any previous field messages
+      try{
+         g_form.hideFieldMsg(referenceField, true);
+      }catch(e){}
+      
+
+	 //Fablicar la llista de titulacions var titulacions=
+	
+        g_form.setValue(referenceField, titulacions);
+  
+   }
+}
+</script>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

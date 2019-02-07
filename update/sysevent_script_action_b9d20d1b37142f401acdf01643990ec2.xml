@@ -5,13 +5,33 @@
         <description/>
         <event_name>session.established</event_name>
         <name>Assignar SGQ Actual al establir sessió</name>
-        <order>100</order>
-        <script><![CDATA[var currentUser = gs.getUser();
+        <order>400</order>
+        <script><![CDATA[var username = event.parm1;
+
+var currentUser = gs.getUser();
 var gr= new GlideRecord('sys_user');
-if (gr.get(currentUser)) {
+gr.addQuery ('user_name', username );
+gr.query();
+if (gr.next()) {
+	new log("Nou Login: "+username);
+	var u = new Usuari(gr.sys_id);
+	var sgqVisibles= u.sgqVisibles();
+	//new log("Visibles calculats: "+sgqVisibles);
+	if (gr.x_udg_q_sgq_visibles!=sgqVisibles) {
+		gr.x_udg_q_sgq_visibles=sgqVisibles;
+		gr.update();
+	}
+	//new log("Visibles: "+gr.x_udg_q_sgq_visibles+" Actual: "+gr.x_udg_q_sgq_actual);
+	if (!gr.x_udg_q_sgq_visibles.includes(gr.x_udg_q_sgq_actual)) {
+		gr.x_udg_q_sgq_actual=gr.x_udg_q_sgq_visibles.split(",")[0]; //Agafem el primer de la llista
+		gr.update();
+	}
 	currentUser.savePreference('qualitat.sgqActual',gr.x_udg_q_sgq_actual);
 	currentUser.savePreference('qualitat.sgqActualCodi',gr.x_udg_q_sgq_actual.codi.toString());
-	new Usuari(gr.sys_id.toString()).setRoles();
+	u.setRoles();
+}
+else {
+	new log("ERRROR Usuari no trobat: "+username);
 }]]></script>
         <synchronous>false</synchronous>
         <sys_class_name>sysevent_script_action</sys_class_name>
@@ -21,7 +41,7 @@ if (gr.get(currentUser)) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9d20d1b37142f401acdf01643990ec2</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Assignar SGQ Actual al establir sessió</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -30,6 +50,6 @@ if (gr.get(currentUser)) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_script_action_b9d20d1b37142f401acdf01643990ec2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-10 11:04:15</sys_updated_on>
+        <sys_updated_on>2019-02-06 19:49:44</sys_updated_on>
     </sysevent_script_action>
 </record_update>
