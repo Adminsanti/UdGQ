@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_mpivot_rule">
+    <sys_report_mpivot_rule action="INSERT_OR_UPDATE">
+        <bg_color>background-color:</bg_color>
+        <bg_color_id/>
+        <color>background-color:#FF0000</color>
+        <color_id display_value="Red">65b30395a9fe3dba003277a7b660b5db</color_id>
+        <operator>&gt;</operator>
+        <order>-1</order>
+        <report_id display_value="Objectius valorats fa més d'un any">580a46b81baf23805fab4002cd4bcbc5</report_id>
+        <sys_class_name>sys_report_mpivot_rule</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-02-08 12:14:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>500a46b81baf23805fab4002cd4bcbc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>&gt;</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_report_mpivot_rule_500a46b81baf23805fab4002cd4bcbc9</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-02-08 12:14:18</sys_updated_on>
+        <value1>0</value1>
+        <value2/>
+    </sys_report_mpivot_rule>
+</record_update>

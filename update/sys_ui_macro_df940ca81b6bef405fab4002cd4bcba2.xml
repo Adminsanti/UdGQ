@@ -11,7 +11,7 @@
         <sys_created_on>2019-02-07 07:55:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>df940ca81b6bef405fab4002cd4bcba2</sys_id>
-        <sys_mod_count>84</sys_mod_count>
+        <sys_mod_count>93</sys_mod_count>
         <sys_name>taulaObjectiu</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -19,7 +19,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_macro_df940ca81b6bef405fab4002cd4bcba2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-08 09:58:52</sys_updated_on>
+        <sys_updated_on>2019-02-08 12:05:52</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 <!-- Parametres 
@@ -31,23 +31,26 @@ sysid
 <TABLE class="blueTable">
 	<thead>
 		<TR>
-			<td> ${jvar_number} -  ${jvar_short} </td>
+			<td> <b>${jvar_number}</b> -  ${jvar_short} </td>
 			<td> ${jvar_estat}
 				<j:if test="${jvar_estat=='Tancat'}"> <BR>${jvar_tipustancament}</BR>
 				</j:if>
-			
-			
 			</td>
 			<td> ${jvar_assoliment}</td>
 		</TR>
 		<TR>
-			<TD colspan="3">
+			<TD colspan="2">
 				<j:if test="${jvar_titulacions!=''}"> Titulacions implicades: ${jvar_titulacions}
 				</j:if>
-				<j:if test="${jvar_recomanacions!=''}"> <BR> Respón a recomanacions: ${jvar_recomanacions}</BR>
+				<j:if test="${jvar_recomanacions!=''}"> 
+					<BR> Respón a recomanacions: ${jvar_recomanacions}</BR>
 				</j:if>
-				<j:if test="${jvar_recomanacioobl}"> <BR>RECOMANACIÓ OBLIGATÒRIA</BR>
+				<j:if test="${jvar_recomanacioobl}"> 
+					<BR>RECOMANACIÓ OBLIGATÒRIA</BR>
 				</j:if>		
+			</TD>
+			<TD>
+				${jvar_sgq}
 			</TD>
 		</TR>
 		<TR>
@@ -67,7 +70,7 @@ sysid
 	<j:while test="${grM2M.next()}">
 
 				<TR>
-					<TD>${grM2M.accio_millora.number} - ${grM2M.accio_millora.short_description}</TD>
+					<TD><b>${grM2M.accio_millora.number}</b> - ${grM2M.accio_millora.short_description}</TD>
 					<TD>${grM2M.accio_millora.state.getDisplayValue()} </TD>
 					<TD>${grM2M.accio_millora.percentatge}</TD>
 		</TR>

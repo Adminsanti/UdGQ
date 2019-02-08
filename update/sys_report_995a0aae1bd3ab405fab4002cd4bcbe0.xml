@@ -14,7 +14,7 @@
         <chart_size>large</chart_size>
         <chart_title>No planificats</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
-        <chart_title_size>16</chart_title_size>
+        <chart_title_size>14</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
@@ -97,7 +97,7 @@
         <sys_created_on>2019-02-01 12:29:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>995a0aae1bd3ab405fab4002cd4bcbe0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Objectius no planificats</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -105,7 +105,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_995a0aae1bd3ab405fab4002cd4bcbe0</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-01 12:30:29</sys_updated_on>
+        <sys_updated_on>2019-02-08 12:21:13</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectius no planificats</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

@@ -12,7 +12,7 @@
         <chart_border_width>1</chart_border_width>
         <chart_height>450</chart_height>
         <chart_size>large</chart_size>
-        <chart_title>En curs depen de recomanació obligatòria</chart_title>
+        <chart_title>En curs amb recomanació obligatòria</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
@@ -96,7 +96,7 @@
         <sys_created_on>2018-11-06 17:41:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e38f07aedb2d23009fd1f57eaf9619a7</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Objectiu en curs depén de recomanació obligatòria</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -104,7 +104,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_e38f07aedb2d23009fd1f57eaf9619a7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-01 10:46:10</sys_updated_on>
+        <sys_updated_on>2019-02-08 12:18:43</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectiu en curs depén de recomanació obligatòria</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -122,7 +122,7 @@
         <x_axis_grid_dotted>false</x_axis_grid_dotted>
         <x_axis_grid_width>1</x_axis_grid_width>
         <x_axis_label_bold>false</x_axis_label_bold>
-        <x_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_label_color>
+        <x_axis_label_color/>
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_opposite>false</x_axis_opposite>
         <x_axis_title/>
@@ -135,7 +135,7 @@
         <y_axis_grid_dotted>false</y_axis_grid_dotted>
         <y_axis_grid_width>1</y_axis_grid_width>
         <y_axis_label_bold>false</y_axis_label_bold>
-        <y_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_label_color>
+        <y_axis_label_color/>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_opposite>false</y_axis_opposite>
         <y_axis_title/>

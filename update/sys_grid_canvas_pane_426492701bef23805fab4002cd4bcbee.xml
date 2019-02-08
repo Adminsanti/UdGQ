@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
     <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
-        <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
-        <height>6</height>
-        <portal_widget display_value="Created 21/11/2018 18:15:45">796994ebdb3167009fd1f57eaf961900</portal_widget>
-        <posx>4</posx>
+        <grid_canvas display_value="PA New Tab 3">72449ab01bef23805fab4002cd4bcbc8</grid_canvas>
+        <height>30</height>
+        <portal_widget display_value="Created 08/02/2019 13:59:45">ca6492701bef23805fab4002cd4bcbec</portal_widget>
+        <posx>0</posx>
         <posy>0</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-21 17:15:45</sys_created_on>
+        <sys_created_on>2019-02-08 12:59:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>b56994ebdb3167009fd1f57eaf961902</sys_id>
-        <sys_mod_count>53</sys_mod_count>
-        <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
+        <sys_id>426492701bef23805fab4002cd4bcbee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>72449ab01bef23805fab4002cd4bcbc8</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_grid_canvas_pane_b56994ebdb3167009fd1f57eaf961902</sys_update_name>
+        <sys_update_name>sys_grid_canvas_pane_426492701bef23805fab4002cd4bcbee</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-08 12:17:01</sys_updated_on>
-        <width>2</width>
+        <sys_updated_on>2019-02-08 13:00:00</sys_updated_on>
+        <width>12</width>
     </sys_grid_canvas_pane>
 </record_update>
