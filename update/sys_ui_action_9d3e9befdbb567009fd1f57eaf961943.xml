@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Generar proces</action_name>
-        <active>false</active>
-        <client>true</client>
+        <action_name>Tancament2017</action_name>
+        <active>true</active>
+        <client>false</client>
         <client_script_v2/>
         <comments/>
-        <condition>current.sgq != gs.getUser().getPreference('qualitat.sgqActual') &amp;&amp; gs.hasRole('x_udg_q_ManagerUniversitat')</condition>
-        <form_action>false</form_action>
+        <condition>gs.hasRole('x_udg_q_ManagerUniversitat') &amp;&amp; current.state==3</condition>
+        <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>false</form_link>
+        <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <hint/>
@@ -26,27 +26,11 @@
         <name>RECYCLE Generar procés llegat</name>
         <onclick>onClick()</onclick>
         <order>100</order>
-        <script><![CDATA[crea();
-
-function crea() {
-	var gr= new GlideRecord('x_udg_q_proces');
-	gr.addQuery('SGQ',gs.getUser().getPreference('qualitat.sgqActual'));
-	gr.addQuery('pare',gr.sys_id);
-	gr.query();
-	if (!gr.next()) { //NO te fills
-		new log ("Creant nou procés");
-		gr.inicitialize();
-		gr.pare=current.sys_id;
-		gr.nom=current.nom;
-		gr.num=current.num;
-		
-		
-		//gr.insert();
-		
-	}
+        <script><![CDATA[var gDT = new GlideDateTime("2017-12-1 08:00:00");
+current.closed_at=gDT;
+current.valorat=gDT;
+current.update();
 	
-
-}
 
 ]]></script>
         <show_insert>false</show_insert>
@@ -60,7 +44,7 @@ function crea() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d3e9befdbb567009fd1f57eaf961943</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>RECYCLE Generar procés llegat</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -69,8 +53,8 @@ function crea() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_9d3e9befdbb567009fd1f57eaf961943</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-21 20:45:36</sys_updated_on>
-        <table>x_udg_q_proces</table>
+        <sys_updated_on>2019-02-08 10:41:22</sys_updated_on>
+        <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>
