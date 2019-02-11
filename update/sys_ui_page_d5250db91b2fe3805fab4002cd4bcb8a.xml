@@ -4,7 +4,7 @@
         <client_script/>
         <description/>
         <direct>false</direct>
-        <endpoint>x_udg_q_informeseguiment.do</endpoint>
+        <endpoint>x_udg_q_fitxaObjectiu.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 
@@ -84,53 +84,32 @@ table.blueTable tfoot .links a{
 }
 </style>
 	
-	<H2>$[gs.getMessage("Pla de Millora")]</H2> 
-	<p>$[sysparm_id]</p>
+	<H2>$[gs.getMessage("Fitxa de l'Objectiu")]</H2> 
 	
-<g:evaluate var="jvar_grS" object="true">
-    var grS = new GlideRecord("x_udg_q_subestandard");
-	grS.orderBy('nom')
-    grS.query();
-    grS;
-</g:evaluate>
-
-<j:while test="${jvar_grS.next()}">
-	<H3>
-	${grS.nom}
-	</H3>
-	<BR></BR>
 	<g:evaluate var="jvar_grO" object="true">
     var grO = new GlideRecord("x_udg_q_objectiumillora");
-	var qpar=RP.getParameterValue("sysparm_id");
-	if (qpar!="") grO.addEncodedQuery(RP.getParameterValue("sysparm_id"));
-	grO.addEncodedQuery('state!=-5'); //No esborranys
-	grO.addEncodedQuery('tancament!=-5^state=3'); //No tancats esborrat
-	grO.addEncodedQuery("state=2^ORstate=3^closed_at>=javascript:gs.beginningOfOneYearAgo()");	
-    grO.query();
+	grO.get(RP.getParameterValue("sysparm_id"));
     grO;
 	</g:evaluate>
 
-	<j:while test="${jvar_grO.next()}">
-			<g2:macro_invoke macro="x_udg_q_taulaObjectiu" number="${jvar_grO.getValue('number')}" short="${jvar_grO.getValue('short_description')}" sysid="${grO.sys_id}" estat="${grO.state.getDisplayValue()}" assoliment="${grO.assoliment}" valoracio="${grO.valoracio}" tipustancament="${grO.tancament.getDisplayValue()}" datatancament="${grO.closed_at.getDisplayValue()}" titulacions="${grO.implica_titulacions.getDisplayValue()}" recomanacions="${grO.recomanacions.getDisplayValue()}" recomanacioobl="${grO.recomanacioobligatoria}" sgq="${grO.sgq.getDisplayValue()}"/>	
-			<BR></BR>
-	</j:while>
-</j:while>
+	<g2:macro_invoke macro="x_udg_q_taulaObjectiu" number="${jvar_grO.getValue('number')}" short="${jvar_grO.getValue('short_description')}" sysid="${grO.sys_id}" estat="${grO.state.getDisplayValue()}" assoliment="${grO.assoliment}" valoracio="${grO.valoracio}" tipustancament="${grO.tancament.getDisplayValue()}" datatancament="${grO.closed_at.getDisplayValue()}" titulacions="${grO.implica_titulacions.getDisplayValue()}" recomanacions="${grO.recomanacions.getDisplayValue()}" recomanacioobl="${grO.recomanacioobligatoria}" sgq="${grO.sgq.getDisplayValue()}"/>	
+
 </j:jelly>]]></html>
-        <name>informeseguiment</name>
+        <name>fitxaObjectiu</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-01-24 13:56:15</sys_created_on>
+        <sys_created_on>2019-02-11 09:49:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>565115c01b93a340c851a64fad4bcb41</sys_id>
-        <sys_mod_count>94</sys_mod_count>
-        <sys_name>informeseguiment</sys_name>
+        <sys_id>d5250db91b2fe3805fab4002cd4bcb8a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>fitxaObjectiu</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_page_565115c01b93a340c851a64fad4bcb41</sys_update_name>
+        <sys_update_name>sys_ui_page_d5250db91b2fe3805fab4002cd4bcb8a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-11 09:43:54</sys_updated_on>
+        <sys_updated_on>2019-02-11 10:06:09</sys_updated_on>
     </sys_ui_page>
 </record_update>
