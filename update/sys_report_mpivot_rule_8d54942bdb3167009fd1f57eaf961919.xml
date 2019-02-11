@@ -6,7 +6,7 @@
         <color_id display_value="Tomato">65b303bda9fe3dba017bf727042853b8</color_id>
         <operator>&gt;</operator>
         <order/>
-        <report_id display_value="Esborranys Meus">86f398a7db3167009fd1f57eaf96194e</report_id>
+        <report_id display_value="Objectius Esborrany">86f398a7db3167009fd1f57eaf96194e</report_id>
         <sys_class_name>sys_report_mpivot_rule</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-11-21 16:54:05</sys_created_on>
