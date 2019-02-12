@@ -4,55 +4,41 @@
             <element>valoracio</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 13:32:46</sys_created_on>
-            <sys_id>4fd50daf1b3e2700c851a64fad4bcb04</sys_id>
+            <sys_created_on>2019-02-12 10:07:05</sys_created_on>
+            <sys_id>77335ace1b67e380c851a64fad4bcbec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Desenvolupament i Compliment" display_value="Desenvolupament i Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>percentatge</element>
-            <position>1</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 13:32:46</sys_created_on>
-            <sys_id>07d50daf1b3e2700c851a64fad4bcb05</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Desenvolupament i Compliment" display_value="Desenvolupament i Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
+            <sys_updated_on>2019-02-12 10:07:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>indicador</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 13:32:46</sys_created_on>
-            <sys_id>87d50daf1b3e2700c851a64fad4bcb05</sys_id>
+            <sys_created_on>2019-02-12 10:07:05</sys_created_on>
+            <sys_id>f7335ace1b67e380c851a64fad4bcbec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Desenvolupament i Compliment" display_value="Desenvolupament i Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
+            <sys_updated_on>2019-02-12 10:07:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>llindarindicador</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-10 13:32:46</sys_created_on>
-            <sys_id>0bd50daf1b3e2700c851a64fad4bcb05</sys_id>
+            <sys_created_on>2019-02-12 10:07:05</sys_created_on>
+            <sys_id>7b335ace1b67e380c851a64fad4bcbec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Desenvolupament i Compliment" display_value="Desenvolupament i Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
+            <sys_updated_on>2019-02-12 10:07:05</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
