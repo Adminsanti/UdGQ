@@ -3,14 +3,14 @@
         <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
         <height>5</height>
         <portal_widget display_value="Created 08/02/2019 13:16:55">3e9a8ab81baf23805fab4002cd4bcb61</portal_widget>
-        <posx>8</posx>
+        <posx>10</posx>
         <posy>5</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-02-08 12:16:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>729a8eb81baf23805fab4002cd4bcbd1</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -18,7 +18,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_grid_canvas_pane_729a8eb81baf23805fab4002cd4bcbd1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-11 18:29:28</sys_updated_on>
+        <sys_updated_on>2019-02-12 10:27:15</sys_updated_on>
         <width>2</width>
     </sys_grid_canvas_pane>
 </record_update>

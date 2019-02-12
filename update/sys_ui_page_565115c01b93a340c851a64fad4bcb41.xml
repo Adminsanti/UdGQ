@@ -9,79 +9,7 @@
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 
 <style>
-table { 
-  display: table;
-  border-collapse: separate;
-  border-spacing: 5px;
-  border-color: gray;
-  border: 1px solid #1C6EA4;
-  background-color: #EEEEEE;
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-}
-table.blueTable {
-  border: 0px solid #1C6EA4;
-  background-color: #EEEEEE;
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-}
-table.blueTable td, table.blueTable th {
-  border: 0px solid #AAAAAA;
-  padding: 3px 2px;
-}
-table.blueTable tbody td {
-  font-size: 13px;
-}
-table.blueTable tr:nth-child(even) {
-  background: #D0E4F5;
-}
-table.blueTable thead {
-  background: #1C6EA4;
-  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-  border-bottom: 2px solid #444444;
-  color: #FFFFFF;
-}
-table.blueTable thead tr:nth-child(even) {
-  background: #D0E4F5;
-  color: #000000;
-}
-	
-table.blueTable thead th {
-  font-size: 18px;
-  color: #FFFFFF;
-  border-left: 2px solid #D0E4F5;
-}
-
-table.blueTable thead th:first-child {
-  border-left: none;
-}
-table.blueTable tfoot {
-  font-size: 14px;
-  font-weight: bold;
-  color: #FFFFFF;
-  background: #D0E4F5;
-  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  border-top: 2px solid #444444;
-}
-table.blueTable tfoot td {
-  font-size: 14px;
-}
-table.blueTable tfoot .links {
-  text-align: right;
-}
-table.blueTable tfoot .links a{
-  display: inline-block;
-  background: #1C6EA4;
-  color: #FFFFFF;
-  padding: 2px 8px;
-  border-radius: 5px;
-}
+	<g2:macro_invoke macro="x_udg_q_blueTable" />	
 </style>
 	
 	<H2>$[gs.getMessage("Informe de Seguiment")]</H2> 
@@ -123,7 +51,7 @@ table.blueTable tfoot .links a{
         <sys_created_on>2019-01-24 13:56:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>565115c01b93a340c851a64fad4bcb41</sys_id>
-        <sys_mod_count>95</sys_mod_count>
+        <sys_mod_count>97</sys_mod_count>
         <sys_name>informeseguiment</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -131,6 +59,6 @@ table.blueTable tfoot .links a{
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_page_565115c01b93a340c851a64fad4bcb41</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-11 10:37:19</sys_updated_on>
+        <sys_updated_on>2019-02-12 10:35:35</sys_updated_on>
     </sys_ui_page>
 </record_update>

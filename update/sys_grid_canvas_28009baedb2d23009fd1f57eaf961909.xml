@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_grid_canvas" unload_date="2019-02-12 10:14:36">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_grid_canvas" unload_date="2019-02-12 11:43:56">
     <sys_grid_canvas action="INSERT_OR_UPDATE">
         <legacy_page display_value="PA Resum">a4009baedb2d23009fd1f57eaf961908</legacy_page>
         <name>PA New Tab</name>
@@ -28,7 +28,7 @@
                 <sys_created_on>2018-11-06 17:44:24</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>03101faedb2d23009fd1f57eaf96191f</sys_id>
-                <sys_mod_count>76</sys_mod_count>
+                <sys_mod_count>80</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -36,7 +36,7 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_03101faedb2d23009fd1f57eaf96191f</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:32:08</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:26:50</sys_updated_on>
                 <width>6</width>
                 <related_items_node>
                     <sys_portal action="INSERT_OR_UPDATE">
@@ -62,7 +62,7 @@
                                 <sys_created_on>2018-11-06 17:44:24</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>03101faedb2d23009fd1f57eaf96191f</sys_id>
-                                <sys_mod_count>76</sys_mod_count>
+                                <sys_mod_count>80</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -70,7 +70,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_03101faedb2d23009fd1f57eaf96191f</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:32:08</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:26:50</sys_updated_on>
                                 <width>6</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -109,6 +109,61 @@
                                 <value>bar</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:29:12</sys_created_on>
+                                <sys_id>73481ec21ba7e380c851a64fad4bcb00</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:29:12</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:29:12</sys_created_on>
+                                <sys_id>77481ec21ba7e380c851a64fad4bcb00</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:29:12</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:29:12</sys_created_on>
+                                <sys_id>7748dac21ba7e380c851a64fad4bcbff</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:29:12</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_header</name>
+                                <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:29:12</sys_created_on>
+                                <sys_id>7b48dac21ba7e380c851a64fad4bcbff</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:29:12</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:29:12</sys_created_on>
+                                <sys_id>7f48dac21ba7e380c851a64fad4bcbff</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:29:12</sys_updated_on>
+                                <value>left</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_subscribe</name>
                                 <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
                                 <sys_created_by>adminsanti</sys_created_by>
@@ -118,6 +173,39 @@
                                 <sys_updated_by>adminsanti</sys_updated_by>
                                 <sys_updated_on>2018-11-06 17:44:23</sys_updated_on>
                                 <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:29:12</sys_created_on>
+                                <sys_id>b348dec21ba7e380c851a64fad4bcbd7</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:29:21</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:29:12</sys_created_on>
+                                <sys_id>b748dec21ba7e380c851a64fad4bcbd7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:29:12</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 06/11/2018 18:44:23">c3101faedb2d23009fd1f57eaf96191d</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:29:12</sys_created_on>
+                                <sys_id>bb48dec21ba7e380c851a64fad4bcbd7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:29:12</sys_updated_on>
+                                <value>false</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
@@ -168,7 +256,7 @@
                                 <sys_created_on>2019-01-16 17:19:32</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>1b4374211b8fab00c851a64fad4bcb16</sys_id>
-                                <sys_mod_count>55</sys_mod_count>
+                                <sys_mod_count>62</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -176,7 +264,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_1b4374211b8fab00c851a64fad4bcb16</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:32:00</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:27:15</sys_updated_on>
                                 <width>3</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -274,7 +362,7 @@
                                 <sys_created_on>2018-11-21 16:54:42</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>2594582bdb3167009fd1f57eaf96198b</sys_id>
-                                <sys_mod_count>51</sys_mod_count>
+                                <sys_mod_count>54</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -282,7 +370,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_2594582bdb3167009fd1f57eaf96198b</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:31:16</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:26:50</sys_updated_on>
                                 <width>2</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -460,6 +548,222 @@
                         <dropzone/>
                         <offset/>
                         <page display_value="PA Resum">a4009baedb2d23009fd1f57eaf961908</page>
+                        <summary>Objectius sense accions</summary>
+                        <sys_created_by>adminsanti</sys_created_by>
+                        <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                        <sys_id>f0b712c21ba7e380c851a64fad4bcbe9</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>adminsanti</sys_updated_by>
+                        <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
+                                <height>5</height>
+                                <portal_widget display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_widget>
+                                <posx>8</posx>
+                                <posy>0</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:33</sys_created_on>
+                                <sys_customer_update>false</sys_customer_update>
+                                <sys_id>38b756c21ba7e380c851a64fad4bcbc1</sys_id>
+                                <sys_mod_count>4</sys_mod_count>
+                                <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
+                                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_38b756c21ba7e380c851a64fad4bcbc1</sys_update_name>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:04</sys_updated_on>
+                                <width>2</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_publish</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                                <sys_id>30b712c21ba7e380c851a64fad4bcbeb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>is_using_database_view</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                                <sys_id>74b712c21ba7e380c851a64fad4bcbec</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                                <sys_id>78b712c21ba7e380c851a64fad4bcbeb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                                <value>Objectius sense accions</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                                <sys_id>7cb712c21ba7e380c851a64fad4bcbea</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                                <value>report_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>report_type</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                                <sys_id>b4b712c21ba7e380c851a64fad4bcbeb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                                <value>single_score</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                                <sys_id>b8b712c21ba7e380c851a64fad4bcbea</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                                <sys_id>bcb712c21ba7e380c851a64fad4bcbe9</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                                <value>9e47de821ba7e380c851a64fad4bcbcb</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:27:48</sys_created_on>
+                                <sys_id>d3f7d6c21ba7e380c851a64fad4bcb5f</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:48</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:27:48</sys_created_on>
+                                <sys_id>d3f7d6c21ba7e380c851a64fad4bcb60</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:48</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:27:48</sys_created_on>
+                                <sys_id>d7f7d6c21ba7e380c851a64fad4bcb5e</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:48</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:27:48</sys_created_on>
+                                <sys_id>d7f7d6c21ba7e380c851a64fad4bcb5f</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:48</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_header</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:27:48</sys_created_on>
+                                <sys_id>dbf7d6c21ba7e380c851a64fad4bcb5e</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:48</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:27:48</sys_created_on>
+                                <sys_id>dbf7d6c21ba7e380c851a64fad4bcb5f</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:48</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:27:48</sys_created_on>
+                                <sys_id>dff7d6c21ba7e380c851a64fad4bcb5e</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:48</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:27:48</sys_created_on>
+                                <sys_id>dff7d6c21ba7e380c851a64fad4bcb5f</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:27:48</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_section>
+                                <sys_created_by>adminsanti</sys_created_by>
+                                <sys_created_on>2019-02-12 10:26:32</sys_created_on>
+                                <sys_id>f0b712c21ba7e380c851a64fad4bcbeb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>adminsanti</sys_updated_by>
+                                <sys_updated_on>2019-02-12 10:26:32</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page display_value="PA Resum">a4009baedb2d23009fd1f57eaf961908</page>
                         <summary>Definits (sense començar)</summary>
                         <sys_created_by>adminsanti</sys_created_by>
                         <sys_created_on>2018-12-04 13:27:59</sys_created_on>
@@ -479,7 +783,7 @@
                                 <sys_created_on>2018-12-04 13:27:59</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>44f1a2abdb8623409fd1f57eaf96191a</sys_id>
-                                <sys_mod_count>37</sys_mod_count>
+                                <sys_mod_count>39</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -487,7 +791,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_44f1a2abdb8623409fd1f57eaf96191a</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:29:19</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:26:46</sys_updated_on>
                                 <width>2</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -677,14 +981,14 @@
                                 <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
                                 <height>5</height>
                                 <portal_widget display_value="Created 21/11/2018 18:15:14">0a49906bdb3167009fd1f57eaf96195e</portal_widget>
-                                <posx>10</posx>
-                                <posy>0</posy>
+                                <posx>8</posx>
+                                <posy>5</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
                                 <sys_created_by>adminsanti</sys_created_by>
                                 <sys_created_on>2018-11-21 17:15:14</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>4649906bdb3167009fd1f57eaf961960</sys_id>
-                                <sys_mod_count>52</sys_mod_count>
+                                <sys_mod_count>56</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -692,7 +996,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_4649906bdb3167009fd1f57eaf961960</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:29:04</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:27:13</sys_updated_on>
                                 <width>2</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -871,14 +1175,14 @@
                                 <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
                                 <height>5</height>
                                 <portal_widget display_value="Created 01/02/2019 13:30:33">029a8aae1bd3ab405fab4002cd4bcb1b</portal_widget>
-                                <posx>8</posx>
+                                <posx>10</posx>
                                 <posy>0</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
                                 <sys_created_by>adminsanti</sys_created_by>
                                 <sys_created_on>2019-02-01 12:30:33</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>5e9a0eae1bd3ab405fab4002cd4bcbc6</sys_id>
-                                <sys_mod_count>28</sys_mod_count>
+                                <sys_mod_count>32</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -886,7 +1190,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_5e9a0eae1bd3ab405fab4002cd4bcbc6</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:29:02</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:27:08</sys_updated_on>
                                 <width>2</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -1094,7 +1398,7 @@
                                 <sys_created_on>2018-11-06 17:44:17</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>69105faedb2d23009fd1f57eaf961970</sys_id>
-                                <sys_mod_count>87</sys_mod_count>
+                                <sys_mod_count>94</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -1102,7 +1406,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_69105faedb2d23009fd1f57eaf961970</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:32:04</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:27:15</sys_updated_on>
                                 <width>3</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -1193,14 +1497,14 @@
                                 <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
                                 <height>5</height>
                                 <portal_widget display_value="Created 08/02/2019 13:16:55">3e9a8ab81baf23805fab4002cd4bcb61</portal_widget>
-                                <posx>8</posx>
+                                <posx>10</posx>
                                 <posy>5</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
                                 <sys_created_by>adminsanti</sys_created_by>
                                 <sys_created_on>2019-02-08 12:16:56</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>729a8eb81baf23805fab4002cd4bcbd1</sys_id>
-                                <sys_mod_count>12</sys_mod_count>
+                                <sys_mod_count>19</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -1208,7 +1512,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_729a8eb81baf23805fab4002cd4bcbd1</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:29:28</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:27:15</sys_updated_on>
                                 <width>2</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -1416,7 +1720,7 @@
                                 <sys_created_on>2018-11-21 17:15:45</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>b56994ebdb3167009fd1f57eaf961902</sys_id>
-                                <sys_mod_count>53</sys_mod_count>
+                                <sys_mod_count>55</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -1424,7 +1728,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_b56994ebdb3167009fd1f57eaf961902</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-08 12:17:01</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:26:46</sys_updated_on>
                                 <width>2</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -1610,7 +1914,7 @@
                                 <sys_created_on>2019-02-01 12:33:59</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>d06b46ee1bd3ab405fab4002cd4bcb2f</sys_id>
-                                <sys_mod_count>28</sys_mod_count>
+                                <sys_mod_count>31</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -1618,7 +1922,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_d06b46ee1bd3ab405fab4002cd4bcb2f</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:29:33</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:26:46</sys_updated_on>
                                 <width>2</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -1826,7 +2130,7 @@
                                 <sys_created_on>2018-11-21 17:14:51</sys_created_on>
                                 <sys_customer_update>false</sys_customer_update>
                                 <sys_id>ec3914ebdb3167009fd1f57eaf96198d</sys_id>
-                                <sys_mod_count>43</sys_mod_count>
+                                <sys_mod_count>45</sys_mod_count>
                                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                                 <sys_policy/>
@@ -1834,7 +2138,7 @@
                                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_ec3914ebdb3167009fd1f57eaf96198d</sys_update_name>
                                 <sys_updated_by>adminsanti</sys_updated_by>
-                                <sys_updated_on>2019-02-11 18:28:40</sys_updated_on>
+                                <sys_updated_on>2019-02-12 10:26:46</sys_updated_on>
                                 <width>2</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -2008,7 +2312,7 @@
                 <sys_created_on>2019-01-16 17:19:32</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>1b4374211b8fab00c851a64fad4bcb16</sys_id>
-                <sys_mod_count>55</sys_mod_count>
+                <sys_mod_count>62</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2016,7 +2320,7 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_1b4374211b8fab00c851a64fad4bcb16</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:32:00</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:27:15</sys_updated_on>
                 <width>3</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
@@ -2030,7 +2334,7 @@
                 <sys_created_on>2018-11-21 16:54:42</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>2594582bdb3167009fd1f57eaf96198b</sys_id>
-                <sys_mod_count>51</sys_mod_count>
+                <sys_mod_count>54</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2038,7 +2342,29 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_2594582bdb3167009fd1f57eaf96198b</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:31:16</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:26:50</sys_updated_on>
+                <width>2</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
+                <height>5</height>
+                <portal_widget display_value="Created 12/02/2019 11:26:32">f0b712c21ba7e380c851a64fad4bcbe9</portal_widget>
+                <posx>8</posx>
+                <posy>0</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>adminsanti</sys_created_by>
+                <sys_created_on>2019-02-12 10:26:33</sys_created_on>
+                <sys_customer_update>false</sys_customer_update>
+                <sys_id>38b756c21ba7e380c851a64fad4bcbc1</sys_id>
+                <sys_mod_count>4</sys_mod_count>
+                <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
+                <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_38b756c21ba7e380c851a64fad4bcbc1</sys_update_name>
+                <sys_updated_by>adminsanti</sys_updated_by>
+                <sys_updated_on>2019-02-12 10:27:04</sys_updated_on>
                 <width>2</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
@@ -2052,7 +2378,7 @@
                 <sys_created_on>2018-12-04 13:27:59</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>44f1a2abdb8623409fd1f57eaf96191a</sys_id>
-                <sys_mod_count>37</sys_mod_count>
+                <sys_mod_count>39</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2060,21 +2386,21 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_44f1a2abdb8623409fd1f57eaf96191a</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:29:19</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:26:46</sys_updated_on>
                 <width>2</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
                 <height>5</height>
                 <portal_widget display_value="Created 21/11/2018 18:15:14">0a49906bdb3167009fd1f57eaf96195e</portal_widget>
-                <posx>10</posx>
-                <posy>0</posy>
+                <posx>8</posx>
+                <posy>5</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
                 <sys_created_by>adminsanti</sys_created_by>
                 <sys_created_on>2018-11-21 17:15:14</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>4649906bdb3167009fd1f57eaf961960</sys_id>
-                <sys_mod_count>52</sys_mod_count>
+                <sys_mod_count>56</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2082,21 +2408,21 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_4649906bdb3167009fd1f57eaf961960</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:29:04</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:27:13</sys_updated_on>
                 <width>2</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
                 <height>5</height>
                 <portal_widget display_value="Created 01/02/2019 13:30:33">029a8aae1bd3ab405fab4002cd4bcb1b</portal_widget>
-                <posx>8</posx>
+                <posx>10</posx>
                 <posy>0</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
                 <sys_created_by>adminsanti</sys_created_by>
                 <sys_created_on>2019-02-01 12:30:33</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>5e9a0eae1bd3ab405fab4002cd4bcbc6</sys_id>
-                <sys_mod_count>28</sys_mod_count>
+                <sys_mod_count>32</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2104,7 +2430,7 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_5e9a0eae1bd3ab405fab4002cd4bcbc6</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:29:02</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:27:08</sys_updated_on>
                 <width>2</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
@@ -2118,7 +2444,7 @@
                 <sys_created_on>2018-11-06 17:44:17</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>69105faedb2d23009fd1f57eaf961970</sys_id>
-                <sys_mod_count>87</sys_mod_count>
+                <sys_mod_count>94</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2126,21 +2452,21 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_69105faedb2d23009fd1f57eaf961970</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:32:04</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:27:15</sys_updated_on>
                 <width>3</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
                 <height>5</height>
                 <portal_widget display_value="Created 08/02/2019 13:16:55">3e9a8ab81baf23805fab4002cd4bcb61</portal_widget>
-                <posx>8</posx>
+                <posx>10</posx>
                 <posy>5</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
                 <sys_created_by>adminsanti</sys_created_by>
                 <sys_created_on>2019-02-08 12:16:56</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>729a8eb81baf23805fab4002cd4bcbd1</sys_id>
-                <sys_mod_count>12</sys_mod_count>
+                <sys_mod_count>19</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2148,7 +2474,7 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_729a8eb81baf23805fab4002cd4bcbd1</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:29:28</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:27:15</sys_updated_on>
                 <width>2</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
@@ -2162,7 +2488,7 @@
                 <sys_created_on>2018-11-21 17:15:45</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>b56994ebdb3167009fd1f57eaf961902</sys_id>
-                <sys_mod_count>53</sys_mod_count>
+                <sys_mod_count>55</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2170,7 +2496,7 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_b56994ebdb3167009fd1f57eaf961902</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-08 12:17:01</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:26:46</sys_updated_on>
                 <width>2</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
@@ -2184,7 +2510,7 @@
                 <sys_created_on>2019-02-01 12:33:59</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>d06b46ee1bd3ab405fab4002cd4bcb2f</sys_id>
-                <sys_mod_count>28</sys_mod_count>
+                <sys_mod_count>31</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2192,7 +2518,7 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_d06b46ee1bd3ab405fab4002cd4bcb2f</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:29:33</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:26:46</sys_updated_on>
                 <width>2</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
@@ -2206,7 +2532,7 @@
                 <sys_created_on>2018-11-21 17:14:51</sys_created_on>
                 <sys_customer_update>false</sys_customer_update>
                 <sys_id>ec3914ebdb3167009fd1f57eaf96198d</sys_id>
-                <sys_mod_count>43</sys_mod_count>
+                <sys_mod_count>45</sys_mod_count>
                 <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
                 <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
                 <sys_policy/>
@@ -2214,7 +2540,7 @@
                 <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_ec3914ebdb3167009fd1f57eaf96198d</sys_update_name>
                 <sys_updated_by>adminsanti</sys_updated_by>
-                <sys_updated_on>2019-02-11 18:28:40</sys_updated_on>
+                <sys_updated_on>2019-02-12 10:26:46</sys_updated_on>
                 <width>2</width>
             </sys_grid_canvas_pane>
         </related_items_node>
