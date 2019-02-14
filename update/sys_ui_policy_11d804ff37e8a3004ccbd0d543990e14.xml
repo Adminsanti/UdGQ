@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <conditions table="x_udg_q_fita">inici_anticipat=true^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <active>true</active>
+        <conditions table="x_udg_q_recomanacions">estat=1^EQ<item endquery="false" field="estat" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
         <global>true</global>
@@ -15,16 +16,12 @@
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
 
-	g_form.setMandatory('data_anticipada',false);
-	g_form.setVisible('data_anticipada',false);
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	if ( g_form.getValue('data') == g_form.getValue('data_anticipada')) g_form.setValue('data_anticipada','');
-	g_form.setVisible('data_anticipada',true);
-	g_form.setMandatory('data_anticipada',true);
+	g_form.showFieldMsg('valoracio',"Quan la recomanació té una valoració, avança el seu estat a En espera)");
 }]]></script_true>
         <set_values/>
-        <short_description>RECYCLE Fita - si inci anticipat</short_description>
+        <short_description>Recomanacio nova demana valoracio</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-21 07:26:15</sys_created_on>
@@ -32,8 +29,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>11d804ff37e8a3004ccbd0d543990e14</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>RECYCLE Fita - si inci anticipat</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Recomanacio nova demana valoracio</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -41,8 +38,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_11d804ff37e8a3004ccbd0d543990e14</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-17 10:11:31</sys_updated_on>
-        <table>x_udg_q_fita</table>
+        <sys_updated_on>2019-02-14 13:02:38</sys_updated_on>
+        <table>x_udg_q_recomanacions</table>
         <ui_type>10</ui_type>
         <view/>
     </sys_ui_policy>
