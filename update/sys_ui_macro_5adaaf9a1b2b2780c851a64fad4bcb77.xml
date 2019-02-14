@@ -11,7 +11,7 @@
         <sys_created_on>2019-02-13 11:08:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5adaaf9a1b2b2780c851a64fad4bcb77</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>resumObjectius</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -19,7 +19,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_macro_5adaaf9a1b2b2780c851a64fad4bcb77</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-13 12:57:00</sys_updated_on>
+        <sys_updated_on>2019-02-14 10:09:01</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 <g:evaluate var="jvar_grSe" object="true">
@@ -61,19 +61,20 @@
 				<j:if test="${grOb.state==2}">${grOb.assoliment.getDisplayValue()}%
 					
 					<g:evaluate var="jvar_Dat" object="true">
-					 var Dat = new GlideDateTime(grOb.due_date.getDisplayValue());
-					 var Caducat = Dat.onOrBefore(new GlideDateTime());
+			         Dat = new GlideDate();
+					 Dat.setValue(grOb.due_date);
+					 var Caducat = Dat.onOrBefore(new GlideDate());
 					 Dat
 					</g:evaluate>
 					
 					<j:if test="${Caducat}">
 					<p style="color: red;">
-					${Dat.getDate()}
+					${Dat.getDisplayValue()}
 					</p>
 					</j:if>
 					<j:if test="${!Caducat}">
 					<p>
-					${Dat.getDate()}
+						${Dat.getDisplayValue()}
 						</p>
 					</j:if>
 				</j:if>
