@@ -2,7 +2,7 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
-        <allow_data_label_overlap>false</allow_data_label_overlap>
+        <allow_data_label_overlap>true</allow_data_label_overlap>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>true</bar_unstack>
@@ -97,7 +97,7 @@
         <sys_created_on>2018-11-06 17:29:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fdbc8f2edb2d23009fd1f57eaf961928</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Objectius per responsable</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -105,7 +105,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_fdbc8f2edb2d23009fd1f57eaf961928</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-12 09:18:19</sys_updated_on>
+        <sys_updated_on>2019-02-12 16:30:52</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectius per responsable</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -139,7 +139,7 @@
         <y_axis_label_color/>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_opposite>false</y_axis_opposite>
-        <y_axis_title/>
+        <y_axis_title>Objectius</y_axis_title>
         <y_axis_title_bold>true</y_axis_title_bold>
         <y_axis_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_title_color>
         <y_axis_title_size>12</y_axis_title_size>

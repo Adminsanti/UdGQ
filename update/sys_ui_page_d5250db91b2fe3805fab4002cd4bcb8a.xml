@@ -20,7 +20,7 @@
     grO;
 	</g:evaluate>
 
-	<g2:macro_invoke macro="x_udg_q_taulaObjectiu" number="${jvar_grO.getValue('number')}" short="${jvar_grO.getValue('short_description')}" sysid="${grO.sys_id}" estat="${grO.state.getDisplayValue()}" assoliment="${grO.assoliment}" valoracio="${grO.valoracio}" tipustancament="${grO.tancament.getDisplayValue()}" datatancament="${grO.closed_at.getDisplayValue()}" titulacions="${grO.implica_titulacions.getDisplayValue()}" recomanacions="${grO.recomanacions.getDisplayValue()}" recomanacioobl="${grO.recomanacioobligatoria}" sgq="${grO.sgq.getDisplayValue()}"/>	
+	<g2:macro_invoke macro="x_udg_q_taulaObjectiu" number="${jvar_grO.getValue('number')}" short="${jvar_grO.getValue('short_description')}" sysid="${grO.sys_id}" estat="${grO.state.getDisplayValue()}" estatn="${grO.state}" assoliment="${grO.assoliment}" valoracio="${grO.valoracio}" tipustancament="${grO.tancament.getDisplayValue()}" datatancament="${grO.closed_at.getDisplayValue()}" titulacions="${grO.implica_titulacions.getDisplayValue()}" recomanacions="${grO.recomanacions.getDisplayValue()}" recomanacioobl="${grO.recomanacioobligatoria}" sgq="${grO.sgq.getDisplayValue()}"/>	
 
 </j:jelly>]]></html>
         <name>fitxaObjectiu</name>
@@ -30,7 +30,7 @@
         <sys_created_on>2019-02-11 09:49:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d5250db91b2fe3805fab4002cd4bcb8a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>fitxaObjectiu</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -38,6 +38,6 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_page_d5250db91b2fe3805fab4002cd4bcb8a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-12 10:36:21</sys_updated_on>
+        <sys_updated_on>2019-02-13 11:06:35</sys_updated_on>
     </sys_ui_page>
 </record_update>
