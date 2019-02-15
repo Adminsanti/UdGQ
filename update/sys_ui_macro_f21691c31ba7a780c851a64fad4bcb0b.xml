@@ -11,7 +11,7 @@
         <sys_created_on>2019-02-15 08:13:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f21691c31ba7a780c851a64fad4bcb0b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>resumRecomanacions</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -19,24 +19,33 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_macro_f21691c31ba7a780c851a64fad4bcb0b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-15 08:23:53</sys_updated_on>
+        <sys_updated_on>2019-02-15 09:58:11</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
-<g:evaluate var="jvar_grSe" object="true">
+<g:evaluate var="jvar_grRe" object="true">
     var grRe = new GlideRecord("x_udg_q_recomanacions");
-	grRe.orderBy('number')
+	grRe.orderBy('number');
     grRe.query();
     grRe;
 </g:evaluate>
 
 	
-<TABLE class="blueTable" style="width:1000px">
+<TABLE class="blueTable">
 
 <j:while test="${jvar_grRe.next()}">
 	
 	<TR>
 		<TD >
 			${grRe.number}
+			<BR>${grRe.nom}</BR>
+		</TD>
+		<TD>
+			
+			${grRe.informe.nom} 
+			<BR>${grRe.informe.data}</BR>
+		</TD>
+		<TD>
+			${grRe.estat.getDisplayValue()} 
 		</TD>
 
 	<g:evaluate var="jvar_grOb" object="true">
