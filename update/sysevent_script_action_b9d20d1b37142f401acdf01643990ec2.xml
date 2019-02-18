@@ -37,7 +37,7 @@ if (gr.next()) {
 	}
 }
 else {
-	new log("ERRROR Usuari logat no trobat: "+username);
+	// new log("ERRROR Usuari logat no trobat: "+username);
 }]]></script>
         <synchronous>false</synchronous>
         <sys_class_name>sysevent_script_action</sys_class_name>
@@ -47,7 +47,7 @@ else {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9d20d1b37142f401acdf01643990ec2</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Assignar SGQ Actual al establir sessió</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -56,6 +56,6 @@ else {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_script_action_b9d20d1b37142f401acdf01643990ec2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-08 08:02:56</sys_updated_on>
+        <sys_updated_on>2019-02-18 10:15:28</sys_updated_on>
     </sysevent_script_action>
 </record_update>
