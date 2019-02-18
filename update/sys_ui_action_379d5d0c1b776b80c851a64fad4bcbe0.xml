@@ -5,7 +5,7 @@
         <client>false</client>
         <client_script_v2/>
         <comments/>
-        <condition>current.estat == 2 &amp;&amp; gs.hasRoles('x_udg_q.ManagerUniversitat');</condition>
+        <condition>current.accio_millora.state==2 &amp;&amp; gs.hasRoles('x_udg_q.ManagerUniversitat');</condition>
         <form_action>false</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -23,12 +23,13 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Força tancat -&gt;  Executat</name>
+        <name>Força tancat accions -&gt;  Executat</name>
         <onclick/>
         <order>1000</order>
-        <script><![CDATA[current.tancament=5;
-current.update();
-]]></script>
+        <script><![CDATA[var grA = new GlideRecord('x_udg_q_acciomillora');
+grA.get(current.accio_millora);
+grA.tancament=5;
+grA.update();]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -40,8 +41,8 @@ current.update();
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>379d5d0c1b776b80c851a64fad4bcbe0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Força tancat -&gt;  Executat</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Força tancat accions -&gt;  Executat</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -49,8 +50,8 @@ current.update();
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_379d5d0c1b776b80c851a64fad4bcbe0</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-18 11:20:38</sys_updated_on>
-        <table>x_udg_q_acciomillora</table>
+        <sys_updated_on>2019-02-18 11:32:18</sys_updated_on>
+        <table>x_udg_q_m2m_accions_objectius</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>
