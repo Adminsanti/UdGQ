@@ -14,7 +14,7 @@
         <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
         <element choice="3" label="Tancament" max_length="40" name="tancament" type="integer">
             <choice>
-                <element inactive_on_update="false" label="Desistiment" value="0"/>
+                <element inactive_on_update="false" label="Desistiment" value="1"/>
                 <element inactive_on_update="false" label="Executada" value="5"/>
             </choice>
         </element>
