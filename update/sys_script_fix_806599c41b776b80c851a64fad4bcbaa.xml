@@ -4,17 +4,14 @@
         <before>false</before>
         <description/>
         <flush_cache>false</flush_cache>
-        <name>OBJ actualitzar dates fites</name>
+        <name>OBJ Actualitzar dates fites</name>
         <record_for_rollback>false</record_for_rollback>
         <run_once>true</run_once>
         <script><![CDATA[var gr = new GlideRecord('x_udg_q_objectiumillora');
 gr.addEncodedQuery('fet_fitaANYTHING');
 gr.query();
 while(gr.next()) {
-    
-	
-	
-	
+	gr.due_date=gr.fet_fita.end_date;
     gr.update();       
     }]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
@@ -22,15 +19,15 @@ while(gr.next()) {
         <sys_created_on>2019-02-18 11:17:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>806599c41b776b80c851a64fad4bcbaa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>OBJ actualitzar dates fites</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>OBJ Actualitzar dates fites</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_806599c41b776b80c851a64fad4bcbaa</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-18 11:17:54</sys_updated_on>
+        <sys_updated_on>2019-02-19 11:36:07</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

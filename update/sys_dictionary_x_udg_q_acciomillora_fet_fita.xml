@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="percentatge" table="x_udg_q_acciomillora">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="fet_fita" table="x_udg_q_acciomillora">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>target_threshold_colors=0:tomato;25:orange;50:yellow;99:lightgreen</attributes>
+        <attributes/>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -11,13 +11,13 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label>Percent execució</column_label>
+        <choice>1</choice>
+        <choice_field>tipus</choice_field>
+        <choice_table>x_udg_q_fita</choice_table>
+        <column_label>Fita prevista</column_label>
         <comments/>
         <create_roles/>
-        <default_value>0</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -27,43 +27,45 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>percentatge</element>
+        <element>fet_fita</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">percent_complete</internal_type>
-        <mandatory>true</mandatory>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_udg_q_acciomillora</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_udg_q_fita">x_udg_q_fita</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>end_date&gt;=javascript:gs.beginningOfToday()^EQ</reference_qual>
+        <reference_qual_condition table="x_udg_q_fita">end_date&gt;=javascript:gs.beginningOfToday()^EQ<item endquery="false" field="end_date" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-06 13:05:56</sys_created_on>
+        <sys_created_on>2019-02-19 11:41:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>87a2d726db2d6b401f06adc3ca9619f5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Percent execució</sys_name>
+        <sys_id>7dcb6e101bf7ab80c851a64fad4bcbe4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Fita prevista</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_x_udg_q_acciomillora_percentatge</sys_update_name>
+        <sys_update_name>sys_dictionary_x_udg_q_acciomillora_fet_fita</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-19 11:42:47</sys_updated_on>
+        <sys_updated_on>2019-02-19 11:46:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
