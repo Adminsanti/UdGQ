@@ -3,92 +3,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">9f8a02f11b0feb00c851a64fad4bcb89</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">15ef65591bb36f80c851a64fad4bcb45</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-17 18:19:13</sys_created_on>
-            <sys_id>578a02f11b0feb00c851a64fad4bcb8a</sys_id>
+            <sys_created_on>2019-02-22 09:52:53</sys_created_on>
+            <sys_id>ddef65591bb36f80c851a64fad4bcb45</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-17 18:19:13</sys_updated_on>
+            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora.state</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">9f8a02f11b0feb00c851a64fad4bcb89</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">15ef65591bb36f80c851a64fad4bcb45</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-17 18:19:13</sys_created_on>
-            <sys_id>d78a02f11b0feb00c851a64fad4bcb8a</sys_id>
+            <sys_created_on>2019-02-22 09:52:53</sys_created_on>
+            <sys_id>55ef65591bb36f80c851a64fad4bcb46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-17 18:19:13</sys_updated_on>
+            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora.short_description</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">9f8a02f11b0feb00c851a64fad4bcb89</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">15ef65591bb36f80c851a64fad4bcb45</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-17 18:19:13</sys_created_on>
-            <sys_id>5b8a02f11b0feb00c851a64fad4bcb8a</sys_id>
+            <sys_created_on>2019-02-22 09:52:53</sys_created_on>
+            <sys_id>d5ef65591bb36f80c851a64fad4bcb46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-17 18:19:13</sys_updated_on>
+            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>percentatge</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">9f8a02f11b0feb00c851a64fad4bcb89</list_id>
+            <element>order</element>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">15ef65591bb36f80c851a64fad4bcb45</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-17 18:19:13</sys_created_on>
-            <sys_id>db8a02f11b0feb00c851a64fad4bcb8a</sys_id>
+            <sys_created_on>2019-02-22 09:52:53</sys_created_on>
+            <sys_id>59ef65591bb36f80c851a64fad4bcb46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-17 18:19:13</sys_updated_on>
+            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>contribucio</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">9f8a02f11b0feb00c851a64fad4bcb89</list_id>
+            <element>percentatge</element>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">15ef65591bb36f80c851a64fad4bcb45</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-17 18:19:13</sys_created_on>
-            <sys_id>5f8a02f11b0feb00c851a64fad4bcb8a</sys_id>
+            <sys_created_on>2019-02-22 09:52:53</sys_created_on>
+            <sys_id>d9ef65591bb36f80c851a64fad4bcb46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-17 18:19:13</sys_updated_on>
+            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>accio_millora.percentatge</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">9f8a02f11b0feb00c851a64fad4bcb89</list_id>
+            <element>contribucio</element>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">15ef65591bb36f80c851a64fad4bcb45</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-17 18:19:13</sys_created_on>
-            <sys_id>df8a02f11b0feb00c851a64fad4bcb8a</sys_id>
+            <sys_created_on>2019-02-22 09:52:53</sys_created_on>
+            <sys_id>5def65591bb36f80c851a64fad4bcb46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-17 18:19:13</sys_updated_on>
+            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>accio_millora.percentatge</element>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="x_udg_q_objectiumillora" relationship="NULL" sys_domain="global" view="Default view">15ef65591bb36f80c851a64fad4bcb45</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-02-22 09:52:53</sys_created_on>
+            <sys_id>ddef65591bb36f80c851a64fad4bcb46</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -102,11 +117,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-17 18:19:13</sys_created_on>
+            <sys_created_on>2019-02-22 09:52:53</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9f8a02f11b0feb00c851a64fad4bcb89</sys_id>
+            <sys_id>15ef65591bb36f80c851a64fad4bcb45</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_m2m_accions_objectius</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -115,7 +130,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_list_x_udg_q_m2m_accions_objectius_x_udg_q_objectiumillora_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-17 18:19:13</sys_updated_on>
+            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

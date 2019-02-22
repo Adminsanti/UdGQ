@@ -10,7 +10,7 @@
         <element label="Justificació Percentatge" max_length="1500" name="justificaciopercentatge" type="string"/>
         <element label="Llindar Indicador" max_length="1500" name="llindarindicador" type="string"/>
         <element active="false" label="Objectiu" max_length="32" name="objectiu" reference="x_udg_q_objectiumillora" type="reference"/>
-        <element attributes="target_threshold_colors=0:tomato;25:orange;50:yellow;99:lightgreen" default="0" label="Percent execució" mandatory="true" max_length="40" name="percentatge" type="percent_complete"/>
+        <element attributes="target_threshold_colors=0:tomato;25:orange;50:yellow;99:lightgreen" default="0" label="Execució %" mandatory="true" max_length="40" name="percentatge" type="percent_complete"/>
         <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" reference_qual_condition="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" type="reference">
             <choice/>
         </element>
