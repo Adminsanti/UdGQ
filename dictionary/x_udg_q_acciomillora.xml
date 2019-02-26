@@ -4,7 +4,12 @@
         <element label="Declarat" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Declarat per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
         <element choice="1" choice_field="tipus" choice_table="x_udg_q_fita" label="Fita prevista" max_length="40" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" reference_qual_condition="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="Acreditació" sequence="0" value="Acreditació"/>
+                <element inactive_on_update="false" label="DMA" sequence="1" value="DMA"/>
+                <element inactive_on_update="false" label="Verificació" sequence="2" value="Verificació"/>
+                <element inactive_on_update="false" label="Visita Comité" sequence="3" value="Visita comité"/>
+            </choice>
         </element>
         <element label="Indicador" max_length="1500" name="indicador" type="string"/>
         <element label="Justificació Percentatge" max_length="1500" name="justificaciopercentatge" type="string"/>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Titulació" max_length="40" name="x_udg_q_titulacio" type="collection">
-        <element default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
+        <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" type="string"/>
-        <element display="true" label="Memo" max_length="40" name="memo" type="string"/>
-        <element attributes="no_truncate=true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element display="true" label="Memo" max_length="40" name="memo" read_only="true" type="string"/>
+        <element attributes="no_truncate=true" label="Nom" max_length="140" name="nom" read_only="true" type="string"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
         <element label="QMS" max_length="32" name="qms" reference="x_udg_q_titulacio" type="reference"/>
-        <element label="Responsable" max_length="32" name="responsable" reference="sys_user" type="reference"/>
+        <element label="Responsable" max_length="32" name="responsable" read_only="true" reference="sys_user" type="reference"/>
         <element choice="1" label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="Grau" label="Tipus" mandatory="true" max_length="40" name="tipus" type="string">
+        <element choice="3" default="Grau" label="Tipus" max_length="40" name="tipus" read_only="true" type="string">
             <choice>
                 <element inactive_on_update="false" label="Grau" value="Grau"/>
                 <element inactive_on_update="false" label="Màsters oficials" value="Màsters oficials"/>

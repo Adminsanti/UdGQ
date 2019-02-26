@@ -6,7 +6,7 @@
         <device_type>browser</device_type>
         <hint/>
         <name>Millora</name>
-        <order>500</order>
+        <order>800</order>
         <roles>x_udg_q.Observador,x_udg_q.User</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -15,7 +15,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>913b940637fc2b004ccbd0d543990e1a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Accions de Millora</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -24,7 +24,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_application_913b940637fc2b004ccbd0d543990e1a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-12-03 11:18:40</sys_updated_on>
+        <sys_updated_on>2019-02-25 10:17:38</sys_updated_on>
         <title>Accions de Millora</title>
         <view_name/>
     </sys_app_application>
