@@ -22,6 +22,14 @@ FuncioUtil.prototype = {
 			gr1.assigned_to = this._funcio.usuari;
 			gr1.update();
 		}
+		var gr2 = new GlideRecord("x_udg_q_acciomillora");
+		gr2.addQuery ('responsable',this._funcio.sys_id);
+		//new log( "Buscant "+this._funcio.sys_id);
+		gr2.query();
+		while (gr2.next()) {
+			gr2.assigned_to = this._funcio.usuari;
+			gr2.update();
+		}
 	},
 	
 	registraHistoric: function (current, previous) {
@@ -91,7 +99,7 @@ FuncioUtil.prototype = {
         <sys_created_on>2018-11-13 12:28:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fb44e7037b12f004ccbd0d543990e6c</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>FuncioUtil</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -99,6 +107,6 @@ FuncioUtil.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6fb44e7037b12f004ccbd0d543990e6c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-17 11:14:30</sys_updated_on>
+        <sys_updated_on>2019-02-28 13:00:21</sys_updated_on>
     </sys_script_include>
 </record_update>
