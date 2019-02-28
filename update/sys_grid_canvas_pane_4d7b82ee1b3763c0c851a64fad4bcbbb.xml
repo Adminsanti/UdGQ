@@ -10,7 +10,7 @@
         <sys_created_on>2019-02-26 09:05:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4d7b82ee1b3763c0c851a64fad4bcbbb</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>37a9c66e1b3763c0c851a64fad4bcb0d</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -18,7 +18,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_grid_canvas_pane_4d7b82ee1b3763c0c851a64fad4bcbbb</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-26 09:15:34</sys_updated_on>
+        <sys_updated_on>2019-02-26 09:50:35</sys_updated_on>
         <width>2</width>
     </sys_grid_canvas_pane>
 </record_update>

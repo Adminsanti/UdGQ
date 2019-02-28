@@ -12,7 +12,7 @@
         <chart_border_width>1</chart_border_width>
         <chart_height>450</chart_height>
         <chart_size>large</chart_size>
-        <chart_title>Assignades a mi vençudes</chart_title>
+        <chart_title>Vençudes</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
@@ -39,8 +39,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>number,caller_id,short_description,business_service,u_in_progress_by,priority,state,assignment_group,assigned_to,sys_updated_on,sys_updated_by</field_list>
-        <filter table="x_udg_q_acciomillora">assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^due_dateRELATIVELT@minute@ago@0^state=2<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
-            <item endquery="false" field="due_date" goto="false" newquery="false" operator="RELATIVE" or="false" value="LT@minute@ago@0"/>
+        <filter table="x_udg_q_acciomillora">due_dateRELATIVELT@minute@ago@0^state=2<item endquery="false" field="due_date" goto="false" newquery="false" operator="RELATIVE" or="false" value="LT@minute@ago@0"/>
             <item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
         </filter>
         <from/>
@@ -95,20 +94,20 @@
         <sumfield/>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-02-26 09:08:00</sys_created_on>
+        <sys_created_on>2019-02-26 09:49:07</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>43fb86ee1b3763c0c851a64fad4bcb9e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Accions assignades a mi vençudes</sys_name>
+        <sys_id>016512e61b7763c0c851a64fad4bcb4c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Accions vençudes</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_report_43fb86ee1b3763c0c851a64fad4bcb9e</sys_update_name>
+        <sys_update_name>sys_report_016512e61b7763c0c851a64fad4bcb4c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-26 09:45:55</sys_updated_on>
+        <sys_updated_on>2019-02-26 09:51:36</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
-        <title>Accions assignades a mi vençudes</title>
+        <title>Accions vençudes</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>

@@ -14,6 +14,7 @@
             <choice>
                 <element inactive_on_update="false" label="Grau" value="Grau"/>
                 <element inactive_on_update="false" label="Màsters oficials" value="Màsters oficials"/>
+                <element inactive_on_update="false" label="Doctorat" sequence="0" value="Doctorat"/>
             </choice>
         </element>
         <index name="index">
