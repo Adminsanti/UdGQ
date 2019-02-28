@@ -4,7 +4,7 @@
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
-        <audit>false</audit>
+        <audit>true</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
 	// Add your code here
@@ -33,7 +33,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
         <name>x_udg_q_funcio</name>
         <next_element/>
@@ -55,15 +55,15 @@
         <sys_created_on>2018-11-13 11:20:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ff5103c1db71ef40ccd95bd05b9619be</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_funcio_usuari</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-12-04 13:34:45</sys_updated_on>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-02-28 12:33:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

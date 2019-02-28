@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_block_iframe">
+    <content_block_iframe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <frame_name>Planificació</frame_name>
+        <height>600</height>
+        <logged_on>false</logged_on>
+        <name>Planificació Fites</name>
+        <sizing>expand</sizing>
+        <sys_class_name>content_block_iframe</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-02-28 12:20:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d02b0d5f1bb3e3c0c851a64fad4bcbb2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Planificació Fites</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>content_block_iframe_d02b0d5f1bb3e3c0c851a64fad4bcbb2</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-02-28 12:20:31</sys_updated_on>
+        <url>/show_schedule_page.do?sysparm_page_schedule_type=timeline_page&amp;sysparm_timeline_page_id=e21c2ec3dba8a3009fd1f57eaf9619e5</url>
+        <width>400</width>
+    </content_block_iframe>
+</record_update>

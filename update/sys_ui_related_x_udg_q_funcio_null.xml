@@ -2,17 +2,17 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_funcio" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Funció - Default view" name="x_udg_q_funcio" related_list="NULL" sys_domain="global" view="Default view">c655123c37b12f004ccbd0d543990e15</list_id>
+            <list_id display_value="Funció - Default view" name="x_udg_q_funcio" related_list="NULL" sys_domain="global" view="Default view">efde49531bf3e3c0c851a64fad4bcbc6</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>x_udg_q_historicfuncio.funcio</related_list>
+            <related_list>REL:366eda7b0a0004970a7d925c9258806b</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-13 13:13:58</sys_created_on>
-            <sys_id>8e55123c37b12f004ccbd0d543990e15</sys_id>
+            <sys_created_on>2019-02-28 12:36:26</sys_created_on>
+            <sys_id>6bde49531bf3e3c0c851a64fad4bcbc7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-13 13:13:58</sys_updated_on>
+            <sys_updated_on>2019-02-28 12:36:26</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Funció - Default view</calculated_name>
@@ -23,11 +23,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-13 13:13:58</sys_created_on>
+            <sys_created_on>2019-02-28 12:36:26</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c655123c37b12f004ccbd0d543990e15</sys_id>
+            <sys_id>efde49531bf3e3c0c851a64fad4bcbc6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Funció - Default view</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -36,7 +36,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_related_x_udg_q_funcio_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-11-13 13:13:58</sys_updated_on>
+            <sys_updated_on>2019-02-28 12:36:26</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
