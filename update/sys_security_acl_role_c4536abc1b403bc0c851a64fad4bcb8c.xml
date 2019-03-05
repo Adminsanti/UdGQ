@@ -2,20 +2,20 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-09 10:34:28</sys_created_on>
+        <sys_created_on>2019-03-05 10:36:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>90312d293701e3004ccbd0d543990e10</sys_id>
+        <sys_id>c4536abc1b403bc0c851a64fad4bcb8c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_udg_q_informevsma.x_udg_q.Manager</sys_name>
+        <sys_name>x_udg_q_informevsma.snc_internal</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_security_acl display_value="x_udg_q_informevsma">1c312d293701e3004ccbd0d543990e0b</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_90312d293701e3004ccbd0d543990e10</sys_update_name>
+        <sys_security_acl display_value="x_udg_q_informevsma">043169293701e3004ccbd0d543990eb1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c4536abc1b403bc0c851a64fad4bcb8c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-09 10:34:28</sys_updated_on>
-        <sys_user_role display_value="x_udg_q.Manager" name="x_udg_q.Manager">1d414d9637586b401acdf01643990e73</sys_user_role>
-        <transaction_id/>
+        <sys_updated_on>2019-03-05 10:36:16</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">fa4a0127db442200a55072e9bf961930</sys_user_role>
+        <transaction_id>c4532e3c1b403bc0c851a64fad4bcbc2</transaction_id>
     </sys_security_acl_role>
 </record_update>
