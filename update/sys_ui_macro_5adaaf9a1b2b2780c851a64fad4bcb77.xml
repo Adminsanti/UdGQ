@@ -11,7 +11,7 @@
         <sys_created_on>2019-02-13 11:08:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5adaaf9a1b2b2780c851a64fad4bcb77</sys_id>
-        <sys_mod_count>81</sys_mod_count>
+        <sys_mod_count>82</sys_mod_count>
         <sys_name>resumObjectius</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -19,7 +19,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_macro_5adaaf9a1b2b2780c851a64fad4bcb77</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-19 13:09:37</sys_updated_on>
+        <sys_updated_on>2019-03-06 09:22:17</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 <g:evaluate var="jvar_grSe" object="true">
@@ -73,18 +73,16 @@
 					</j:if>
 					<j:if test="${!Caducat}">
 						${Dat.getDisplayValue()}
-					</j:if>
-					
+					</j:if>				
 				</j:if>
 			</TD>
-		 			
-			<j:choose>
-			   <j:when test="${grOb.priority==2}"><TD style="background-color:tomato;">${grOb.priority.getDisplayValue()}</TD></j:when>
-			   <j:when test="${grOb.priority==3}"><TD>${grOb.priority.getDisplayValue()}</TD></j:when>
-			   <j:otherwise><TD>${grOb.priority.getDisplayValue()}</TD></j:otherwise>
-			</j:choose>
+		 	<TD>
+				${grOb.priority.getDisplayValue()}
+			</TD>	
 	
-			<TD>${grOb.recomanacions.getDisplayValue()}</TD>
+			<TD>
+				${grOb.recomanacions.getDisplayValue()}
+			</TD>
 		</TR>
 		</j:while>
 	</j:while>
