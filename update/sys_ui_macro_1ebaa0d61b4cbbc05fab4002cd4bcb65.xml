@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>tdPercent</name>
+        <scoped_name>x_udg_q_tdPercent</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-03-09 17:40:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1ebaa0d61b4cbbc05fab4002cd4bcb65</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>tdPercent</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_macro_1ebaa0d61b4cbbc05fab4002cd4bcb65</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-03-09 22:52:47</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+<g:evaluate var="jvar_R" object="true">
+	var R="${jvar_pt}";
+	R.split(',')[0];
+</g:evaluate>
+	
+	<j:set var="jvar_color" value="green"/>
+	<j:if test="${jvar_pt lt 99}">
+		<j:set var="jvar_color" value="yellow"/>
+	</j:if>
+	<j:if test="${jvar_pt lt 51}">
+		<j:set var="jvar_color" value="orange"/>
+	</j:if>
+	<j:if test="${jvar_pt lt 11}">
+		<j:set var="jvar_color" value="red"/>
+	</j:if>
+	
+<td style="width: ${jvar_ample}px;" ng-non-bindable="" tabindex="0" gwt-make-visible="true">
+	<div class="percent_complete_wrapper">
+		<span class="percent_complete_text">${jvar_pt}%</span>
+		<span class="percent_complete_total" title="" data-original-title="Current: ${jvar_pt}%">
+			<span class="percent_complete_actual" style="background-color: ${jvar_color}; width: ${jvar_R}%; height:100%;"> </span>
+		</span>
+	</div>
+</td>
+
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

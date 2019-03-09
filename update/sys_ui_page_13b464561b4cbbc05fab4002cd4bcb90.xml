@@ -4,35 +4,32 @@
         <client_script/>
         <description/>
         <direct>false</direct>
-        <endpoint>x_udg_q_informeseguiment.do</endpoint>
+        <endpoint>x_udg_q_resumobjectius.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 
 <style>
 	<g2:macro_invoke macro="x_udg_q_blueTable" />	
 </style>
-	<p>$[sysparm_id]</p>
-	<H3>Resum Recomanacions</H3>	
-	<g2:macro_invoke macro="x_udg_q_resumRecomanacions" />
-	<BR></BR>
-	<H3> Detall</H3>
-	<g2:macro_invoke macro="x_udg_q_detallTotsObjectius" />
+	
+	<g2:macro_invoke macro="x_udg_q_resumObjectius" />
+
 </j:jelly>]]></html>
-        <name>informeseguiment</name>
+        <name>resumobjectius</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-01-24 13:56:15</sys_created_on>
+        <sys_created_on>2019-03-09 17:15:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>565115c01b93a340c851a64fad4bcb41</sys_id>
-        <sys_mod_count>105</sys_mod_count>
-        <sys_name>informeseguiment</sys_name>
+        <sys_id>13b464561b4cbbc05fab4002cd4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>resumobjectius</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_page_565115c01b93a340c851a64fad4bcb41</sys_update_name>
+        <sys_update_name>sys_ui_page_13b464561b4cbbc05fab4002cd4bcb90</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-09 22:41:25</sys_updated_on>
+        <sys_updated_on>2019-03-09 17:15:24</sys_updated_on>
     </sys_ui_page>
 </record_update>

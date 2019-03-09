@@ -11,7 +11,7 @@
         <sys_created_on>2019-02-13 11:08:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5adaaf9a1b2b2780c851a64fad4bcb77</sys_id>
-        <sys_mod_count>82</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name>resumObjectius</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -19,46 +19,27 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_macro_5adaaf9a1b2b2780c851a64fad4bcb77</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-06 09:22:17</sys_updated_on>
+        <sys_updated_on>2019-03-09 22:53:22</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
-<g:evaluate var="jvar_grSe" object="true">
-    var grSe = new GlideRecord("x_udg_q_subestandard");
-	grSe.orderBy('nom')
-    grSe.query();
-    grSe;
-</g:evaluate>
 
-<TABLE class="blueTable" >   <!-- style="width:1000px" -->
-<j:while test="${jvar_grSe.next()}">
-	
-	<!--
-	<TR>
-		<TD COLSPAN="5">
-			${grSe.nom}
-		</TD>
-	</TR>
--->	
+<TABLE class="Lleugera" >   <!-- style="width:1000px" -->
 	<g:evaluate var="jvar_grOb" object="true">
     var grOb = new GlideRecord("x_udg_q_objectiumillora");
-	grOb.addEncodedQuery('state=2^NQstate=3^closed_at>=javascript:gs.beginningOfLastYear()^tancament!=-5'); 
-	grOb.addQuery('subestandard',grSe.sys_id);
+	grOb.addEncodedQuery('state=2^NQstate=3^closed_at>=javascript:gs.beginningOfLastYear()^tancament!=-5');
+	grOb.orderBy('number');
     grOb.query();
     grOb;
 	</g:evaluate>
 	<j:while test="${jvar_grOb.next()}">
-		<TR>
-			<TD>
+		<TR class="Obj">
+			<TD COLSPAN="2">
 				 <B>${jvar_grOb.getValue('number')}</B> - ${jvar_grOb.getValue('short_description')} 
-				
-			</TD>
-			<TD>
-				${grOb.state.getDisplayValue()}
 			</TD>
 			<TD>
 				<j:if test="${grOb.state==3}">${grOb.tancament.getDisplayValue()}
 				</j:if>
-				<j:if test="${grOb.state==2}">${grOb.assoliment.getDisplayValue()}% 			
+				<j:if test="${grOb.state==2}">			
 					<g:evaluate var="jvar_Dat" object="true">
 			         Dat = new GlideDate();
 					 Dat.setValue(grOb.due_date);
@@ -76,16 +57,30 @@
 					</j:if>				
 				</j:if>
 			</TD>
-		 	<TD>
-				${grOb.priority.getDisplayValue()}
-			</TD>	
-	
-			<TD>
-				${grOb.recomanacions.getDisplayValue()}
-			</TD>
+			<g:macro_invoke macro="x_udg_q_tdPercent" pt="${grOb.assoliment.getDisplayValue()}"  ample="200" />
+			
 		</TR>
+		<g:evaluate var="jvar_grM2M" object="true">
+		var grM2M = new GlideRecord("x_udg_q_m2m_accions_objectius");
+		grM2M.addQuery('objectiu_millora',"${grOb.sys_id}");
+		grM2M.addEncodedQuery("accio_millora.state!=-5");
+		grM2M.orderBy('order');
+		grM2M.query();
+		grM2M;
+		</g:evaluate>
+
+		<j:while test="${grM2M.next()}">
+
+					<TR class="Acc">
+						<TD><span style="display:inline-block; width: 20px;"></span></TD>
+						<TD ><b>${grM2M.accio_millora.number}</b> - ${grM2M.accio_millora.short_description}</TD>
+						<g:macro_invoke macro="x_udg_q_tdPercent" pt="${grM2M.accio_millora.percentatge}" ample="160"/>
+						<TD></TD>
+				</TR>
+			</j:while>
+		
 		</j:while>
-	</j:while>
+	
 </TABLE>
 </j:jelly>]]></xml>
     </sys_ui_macro>
