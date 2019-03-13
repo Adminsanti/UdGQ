@@ -2,7 +2,7 @@
     <element label="Titulació" max_length="40" name="x_udg_q_titulacio" type="collection">
         <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" type="string"/>
-        <element display="true" label="Memo" max_length="40" name="memo" read_only="true" type="string"/>
+        <element display="true" label="Memo" max_length="40" name="memo" type="string"/>
         <element attributes="no_truncate=true" label="Nom" max_length="140" name="nom" read_only="true" type="string"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
         <element label="QMS" max_length="32" name="qms" reference="x_udg_q_titulacio" type="reference"/>
