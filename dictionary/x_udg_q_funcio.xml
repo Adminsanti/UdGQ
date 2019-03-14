@@ -5,7 +5,7 @@
         <element audit="true" hint="La llista de membres es calcula automàticament com la suma dels membres que ho són a títol personal i els que ho són per la seva funció. SI ho modefiqueu, s'actualitzarà quan deseu." label="Membres" max_length="32" name="membres" read_only="true" reference="sys_user" type="glide_list"/>
         <element audit="true" label="Membres funcions" max_length="4000" name="membres_funcions" reference="x_udg_q_funcio" type="glide_list"/>
         <element audit="true" label="Membres títol personal" max_length="4000" name="membres_titol_personal" reference="sys_user" type="glide_list"/>
-        <element attributes="no_truncate=true" audit="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element attributes="no_truncate=true" audit="true" display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element audit="true" default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
         <element audit="true" label="Suport" max_length="4000" name="suport" reference="sys_user" type="glide_list"/>
         <element audit="true" choice="3" default="Unipersonal" label="Tipus" mandatory="true" max_length="40" name="tipus" type="string">
