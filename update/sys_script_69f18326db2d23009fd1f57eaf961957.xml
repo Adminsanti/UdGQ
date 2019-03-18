@@ -30,8 +30,9 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
 	var Obj = new ObjectiuUtils(current.objectiu_millora);
-	Obj.actualitzaExecucio(); //Actualitza percentatge d'execució de l'objectiu corresponent
 	Obj.actualitzaPercentatgeAccions(); //Actualitza percentatge de contribució de les accions relacionades
+	Obj.actualitzaExecucio(); //Actualitza percentatge d'execució de l'objectiu corresponent
+	
 	if (current.objectiu_millora.compartit.index(current.accio_millora.sgq) == -1) {
 		//compartir amb 
 	}
@@ -46,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>69f18326db2d23009fd1f57eaf961957</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>M2M Acció Objetiu canvia</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -55,9 +56,22 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_69f18326db2d23009fd1f57eaf961957</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-05 11:22:44</sys_updated_on>
+        <sys_updated_on>2019-03-18 18:06:46</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=69f18326db2d23009fd1f57eaf961957"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>69f18326db2d23009fd1f57eaf961957</documentkey>
+        <fieldname>message</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-03-18 18:06:46</sys_created_on>
+        <sys_id>b11787091b14f3045fab4002cd4bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-03-18 18:06:46</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
 </record_update>

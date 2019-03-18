@@ -7,28 +7,32 @@
         <name>Assignar SGQ Actual al establir sessió</name>
         <order>400</order>
         <script><![CDATA[var username = event.parm1;
-
+new log("Login nou: "+username);
 var currentUser = gs.getUser();
 var gr= new GlideRecord('sys_user');
 gr.addQuery ('user_name', username );
 gr.query();
 if (gr.next()) {
-	//new log("Nou Login: "+username);
 	var u = new Usuari(gr.sys_id);
 	var sgqVisibles= u.sgqVisibles();
+	new log("Login: "+username + " és usuari de l'aplicació en els sgq: "+sgqVisibles);
 	if (sgqVisibles!="") {
-		new log("Login: "+username + " és usuari de l'aplicació en els sgq: "+sgqVisibles);
+		new log("Visibles");
 		if (gr.x_udg_q_sgq_visibles!=sgqVisibles) {
+			new log("Update 1");
 			gr.x_udg_q_sgq_visibles=sgqVisibles;
 			gr.update();
 		}
 		if (!gr.x_udg_q_sgq_visibles.includes(gr.x_udg_q_sgq_actual)) {
+				new log("Update 2");
 			gr.x_udg_q_sgq_actual=gr.x_udg_q_sgq_visibles.split(",")[0]; //Agafem el primer de la llista
 			gr.update();
 		}
 		if (gr.x_udg_q_sgq_actual!="") {
-			currentUser.savePreference('qualitat.sgqActual',gr.x_udg_q_sgq_actual);
-			currentUser.savePreference('qualitat.sgqActualCodi',gr.x_udg_q_sgq_actual.codi.toString());
+			new log("Actual not empty");
+			currentUser.savePreference('qualitat.sgqActual',gr.x_udg_q_sgq_actual.toString());
+		currentUser.savePreference('qualitat.sgqActualCodi',gr.x_udg_q_sgq_actual.codi.toString());
+			new log("Cal posar-hi els rols");
 			u.setAllRoles(gr.x_udg_q_sgq_actual);
 		}
 	}
@@ -47,7 +51,7 @@ else {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9d20d1b37142f401acdf01643990ec2</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>Assignar SGQ Actual al establir sessió</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -56,6 +60,6 @@ else {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_script_action_b9d20d1b37142f401acdf01643990ec2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-18 10:15:28</sys_updated_on>
+        <sys_updated_on>2019-03-18 17:51:35</sys_updated_on>
     </sysevent_script_action>
 </record_update>
