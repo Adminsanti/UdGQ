@@ -5,8 +5,8 @@
         <sys_created_on>2018-11-06 12:01:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a491c2eedb6923009fd1f57eaf9619d3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_udg_q_m2m_accions_objectius.snc_internal</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_udg_q_m2m_accions_objectius.x_udg_q.User</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -14,8 +14,8 @@
         <sys_security_acl display_value="x_udg_q_m2m_accions_objectius">a491c2eedb6923009fd1f57eaf9619d2</sys_security_acl>
         <sys_update_name>sys_security_acl_role_a491c2eedb6923009fd1f57eaf9619d3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-06 12:01:15</sys_updated_on>
-        <sys_user_role display_value="snc_internal" name="snc_internal">fa4a0127db442200a55072e9bf961930</sys_user_role>
+        <sys_updated_on>2019-03-19 15:13:00</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.User" name="x_udg_q.User">14a2c9d637586b401acdf01643990e30</sys_user_role>
         <transaction_id>e09106eedb6923009fd1f57eaf961963</transaction_id>
     </sys_security_acl_role>
 </record_update>
