@@ -7,15 +7,15 @@
         <element label="Definit" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Definit per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
         <element label="Diagnòstic" max_length="1500" name="diagnostic" type="string"/>
-        <element choice="1" label="Fita prevista" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference" use_reference_qualifier="advanced">
+        <element choice="1" label="Fita prevista" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" reference_qual_condition="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference">
             <choice/>
         </element>
-        <element label="Implica Titulacions" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Implica Titulacions" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" reference_qual_condition="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" type="glide_list"/>
         <element attributes="ref_contributions=x_udg_q_add_titulacions_actives" hint="Enllaç al document d'AQU sobre modificacions de títols" label="Implica modificació memòria" max_length="40" name="modificacio_memoria" type="boolean"/>
-        <element choice="1" label="Procés vinculat" max_length="32" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="reference" use_reference_qualifier="advanced">
+        <element choice="1" label="Procés vinculat" max_length="32" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" reference_qual_condition="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="reference">
             <choice/>
         </element>
-        <element label="Recomanacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');^estat!=5^EQ" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Recomanacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');^estat!=5^EQ" reference_qual_condition="sgq=javascript:gs.getPreference('qualitat.sgqActual','');^estat!=5^EQ" type="glide_list"/>
         <element label="Recomanació obligatoria" max_length="40" name="recomanacioobligatoria" read_only="true" type="boolean"/>
         <element choice="1" default="javascript: current.sgq.responsable" label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^activa=true^EQ&quot;;" type="reference" use_reference_qualifier="advanced">
             <choice/>

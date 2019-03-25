@@ -12,10 +12,7 @@
 	<g2:macro_invoke macro="x_udg_q_blueTable" />	
 </style>
 	<p>$[sysparm_id]</p>
-	<H3>Resum Recomanacions</H3>	
-	<g2:macro_invoke macro="x_udg_q_resumRecomanacions" />
-	<BR></BR>
-	<H3> Detall</H3>
+
 	<g2:macro_invoke macro="x_udg_q_detallTotsObjectius" />
 </j:jelly>]]></html>
         <name>informeseguiment</name>
@@ -25,7 +22,7 @@
         <sys_created_on>2019-01-24 13:56:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>565115c01b93a340c851a64fad4bcb41</sys_id>
-        <sys_mod_count>105</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name>informeseguiment</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -33,6 +30,6 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_page_565115c01b93a340c851a64fad4bcb41</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-09 22:41:25</sys_updated_on>
+        <sys_updated_on>2019-03-20 12:42:40</sys_updated_on>
     </sys_ui_page>
 </record_update>
