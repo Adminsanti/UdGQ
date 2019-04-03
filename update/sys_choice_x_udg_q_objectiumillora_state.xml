@@ -111,7 +111,7 @@
             <sys_id>f4509579dbfd23009fd1f57eaf961978</sys_id>
             <sys_mod_count>14</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-02-01 10:16:11</sys_updated_on>
+            <sys_updated_on>2019-02-01 10:13:09</sys_updated_on>
             <value>3</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
@@ -121,7 +121,7 @@
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-10-23 08:26:59</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>f58326afdbc66f00ccd95bd05b9619a9</sys_id>
+            <sys_id>9f8aed6edb57ef00ccd95bd05b961982</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>state</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>

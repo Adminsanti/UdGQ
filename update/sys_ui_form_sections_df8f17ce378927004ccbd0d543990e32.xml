@@ -16,31 +16,17 @@
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-28 08:32:12</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-01-28 11:47:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a3ade0191b5b6740c851a64fad4bcbf8</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_id>354a5111db1fab001f06adc3ca9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_recomanacions" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">df8f17ce378927004ccbd0d543990e32</sys_ui_form>
             <sys_ui_section caption="Objectius" display_value="Objectius" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">e7ade0191b5b6740c851a64fad4bcbf5</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-31 09:30:23</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>2</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-01-28 08:29:39</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>da1da8d51b5b6740c851a64fad4bcbe7</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_udg_q_recomanacions" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">df8f17ce378927004ccbd0d543990e32</sys_ui_form>
-            <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_recomanacions" sys_domain="global" view="Default view">9e1da8d51b5b6740c851a64fad4bcbe5</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-31 09:30:23</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-01-28 11:47:02</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_udg_q_recomanacions</name>

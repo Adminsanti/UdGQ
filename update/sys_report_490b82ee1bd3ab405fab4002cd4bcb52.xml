@@ -14,7 +14,7 @@
         <chart_size>large</chart_size>
         <chart_title>Vençuts</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
-        <chart_title_size>14</chart_title_size>
+        <chart_title_size>16</chart_title_size>
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
@@ -105,7 +105,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_490b82ee1bd3ab405fab4002cd4bcb52</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-08 12:20:53</sys_updated_on>
+        <sys_updated_on>2019-02-01 12:58:36</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectius vençuts</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
