@@ -39,8 +39,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>objectiu_millora</field>
         <field_list>accio_millora,accio_millora.state,accio_millora.short_description,percentatge,accio_millora.percentatge</field_list>
-        <filter table="x_udg_q_m2m_accions_objectius">objectiu_millora.stateNOT IN-5,5^EQ^ORDERBYobjectiu_millora.state<item endquery="false" field="objectiu_millora.state" goto="false" newquery="false" operator="NOT IN" or="false" value="-5,5"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <filter table="x_udg_q_m2m_accions_objectius">objectiu_millora.stateNOT IN-5,3^ORDERBYobjectiu_millora.state<item endquery="false" field="objectiu_millora.state" goto="false" newquery="false" operator="NOT IN" or="false" value="-5,3"/>
             <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="objectiu_millora.state"/>
         </filter>
         <from/>
@@ -49,7 +48,7 @@
         <group/>
         <import_table/>
         <interval>year</interval>
-        <is_published>false</is_published>
+        <is_published>true</is_published>
         <is_scheduled>false</is_scheduled>
         <legend_background_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</legend_background_color>
         <legend_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</legend_border_color>
@@ -70,7 +69,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>x_udg_q.Observador</roles>
+        <roles>x_udg_q.Observador,public</roles>
         <row>accio_millora</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -98,7 +97,7 @@
         <sys_created_on>2018-11-21 17:04:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cce6186bdb3167009fd1f57eaf961941</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Pla Actiu</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -106,7 +105,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_cce6186bdb3167009fd1f57eaf961941</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-24 12:02:53</sys_updated_on>
+        <sys_updated_on>2019-04-03 09:14:31</sys_updated_on>
         <table>x_udg_q_m2m_accions_objectius</table>
         <title>Pla Actiu</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -124,7 +123,7 @@
         <x_axis_grid_dotted>false</x_axis_grid_dotted>
         <x_axis_grid_width>1</x_axis_grid_width>
         <x_axis_label_bold>false</x_axis_label_bold>
-        <x_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_label_color>
+        <x_axis_label_color/>
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_opposite>false</x_axis_opposite>
         <x_axis_title/>
@@ -137,7 +136,7 @@
         <y_axis_grid_dotted>false</y_axis_grid_dotted>
         <y_axis_grid_width>1</y_axis_grid_width>
         <y_axis_label_bold>false</y_axis_label_bold>
-        <y_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_label_color>
+        <y_axis_label_color/>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_opposite>false</y_axis_opposite>
         <y_axis_title/>
