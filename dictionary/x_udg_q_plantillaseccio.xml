@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_udg_q_plantillacomu" label="Plantilla Secció" max_length="40" name="x_udg_q_plantillaseccio" type="collection">
+        <element label="Plantilla Document" max_length="32" name="plantilladocument" reference="x_udg_q_plantilladocument" type="reference"/>
+        <index name="index">
+            <element name="plantilladocument"/>
+        </index>
+    </element>
+</database>
