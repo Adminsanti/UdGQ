@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Generador Informes">20af6bb21b81bf405fab4002cd4bcb9b</application>
+        <application display_value="Generadors Informes">20af6bb21b81bf405fab4002cd4bcb9b</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -28,8 +28,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>76e13f361b81bf405fab4002cd4bcb34</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Documents</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Generadors Documents </sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -37,9 +37,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_76e13f361b81bf405fab4002cd4bcb34</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-04-30 14:40:39</sys_updated_on>
+        <sys_updated_on>2019-05-02 10:50:43</sys_updated_on>
         <timeline_page/>
-        <title>Documents</title>
+        <title>Generadors Documents </title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

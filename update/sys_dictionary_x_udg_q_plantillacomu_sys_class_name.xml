@@ -20,7 +20,7 @@
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value/>
+        <dynamic_default_value display_value="Get Current Table Name">b5cb83a85f220100a9ad2572f2b4773c</dynamic_default_value>
         <dynamic_ref_qual/>
         <element>sys_class_name</element>
         <element_reference>false</element_reference>
@@ -63,7 +63,7 @@
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
+        <use_dynamic_default>true</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>

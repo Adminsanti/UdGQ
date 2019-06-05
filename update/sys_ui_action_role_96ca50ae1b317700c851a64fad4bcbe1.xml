@@ -2,19 +2,19 @@
     <sys_ui_action_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_ui_action_role</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-11 09:22:50</sys_created_on>
+        <sys_created_on>2019-06-05 10:59:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>2cb2a74237c927004ccbd0d543990e0b</sys_id>
+        <sys_id>96ca50ae1b317700c851a64fad4bcbe1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>.x_udg_q.Manager</sys_name>
+        <sys_name>Resum de Seguiment.x_udg_q.ManagerUniversitat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_ui_action display_value="Mostra Resum de Seguiment">47a26b4237c927004ccbd0d543990ec5</sys_ui_action>
-        <sys_update_name>sys_ui_action_role_2cb2a74237c927004ccbd0d543990e0b</sys_update_name>
+        <sys_update_name>sys_ui_action_role_96ca50ae1b317700c851a64fad4bcbe1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-11 09:22:50</sys_updated_on>
-        <sys_user_role display_value="x_udg_q.Manager" name="x_udg_q.Manager">1d414d9637586b401acdf01643990e73</sys_user_role>
+        <sys_updated_on>2019-06-05 10:59:24</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.ManagerUniversitat" name="x_udg_q.ManagerUniversitat">485294bddb596f009fd1f57eaf9619ef</sys_user_role>
     </sys_ui_action_role>
 </record_update>

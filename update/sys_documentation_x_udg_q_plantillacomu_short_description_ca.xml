@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="" label="Document Generador" language="en" table="x_udg_q_generadordocument">
+    <sys_documentation element="short_description" label="Breu descripció" language="ca" table="x_udg_q_plantillacomu">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element/>
+            <element>short_description</element>
             <help/>
             <hint/>
-            <label>Document Generador</label>
-            <language>en</language>
-            <name>x_udg_q_generadordocument</name>
-            <plural>Document Generadors</plural>
+            <label>Breu descripció</label>
+            <language>ca</language>
+            <name>x_udg_q_plantillacomu</name>
+            <plural>Breus descripcions</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-30 14:30:21</sys_created_on>
+            <sys_created_on>2019-05-02 08:37:10</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>87e1f3761b81bf405fab4002cd4bcbbf</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_name>Document Generador</sys_name>
+            <sys_id>b8443c6b1b0133805fab4002cd4bcb11</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Breu descripció</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_documentation_x_udg_q_generadordocument__en</sys_update_name>
+            <sys_update_name>sys_documentation_x_udg_q_plantillacomu_short_description_ca</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-05-02 08:34:42</sys_updated_on>
+            <sys_updated_on>2019-05-02 08:37:10</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
