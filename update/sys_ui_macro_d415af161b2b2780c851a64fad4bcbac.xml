@@ -11,7 +11,7 @@
         <sys_created_on>2019-02-13 10:43:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d415af161b2b2780c851a64fad4bcbac</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>detallTotsObjectius</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -19,7 +19,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_macro_d415af161b2b2780c851a64fad4bcbac</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-13 12:09:40</sys_updated_on>
+        <sys_updated_on>2019-06-06 10:21:05</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 <g:evaluate var="jvar_grS" object="true">
@@ -30,27 +30,28 @@
 </g:evaluate>
 
 <j:while test="${jvar_grS.next()}">
-	<H3>
+	<H4>
 	${grS.nom}
-	</H3>
-	<BR></BR>
+	</H4>
+	
 	<g:evaluate var="jvar_grO" object="true">
     var grO = new GlideRecord("x_udg_q_objectiumillora");
-	//var qpar=RP.getParameterValue("sysparm_id");
-	//if (qpar!="") grO.addEncodedQuery(RP.getParameterValue("sysparm_id"));
-	grO.addEncodedQuery('state=2^NQstate=3^closed_at>=javascript:gs.beginningOfLastYear()^tancament!=-5');
+	var query = RP.getParameterValue("query");
+	if (query!="") grO.addEncodedQuery(query);
+	//Antiga query ---> grO.addEncodedQuery('state=2^NQstate=3^closed_at>=javascript:gs.beginningOfLastYear()^tancament!=-5');
 	grO.addQuery('subestandard',grS.sys_id);
     grO.query();
     grO;
 	</g:evaluate>
-
+	
 	<j:while test="${jvar_grO.next()}">
 
 		<g:x_udg_q_taulaObjectiu number="${jvar_grO.getValue('number')}" short="${jvar_grO.getValue('short_description')}" sysid="${grO.sys_id}" estat="${grO.state.getDisplayValue()}" estatn="${grO.state}" assoliment="${grO.assoliment}" valoracio="${grO.valoracio}" tipustancament="${grO.tancament.getDisplayValue()}" datatancament="${grO.closed_at.getDisplayValue()}" titulacions="${grO.implica_titulacions.getDisplayValue()}" recomanacions="${grO.recomanacions.getDisplayValue()}" recomanacioobl="${grO.recomanacioobligatoria}" sgq="${grO.sgq.getDisplayValue()}"/>
 		
-		<BR></BR>
+		<p></p>	
 		
 	</j:while>
+	<BR></BR>
 </j:while>
 </j:jelly>]]></xml>
     </sys_ui_macro>

@@ -9,7 +9,7 @@
         <script><![CDATA[function sections() {
 	return {
 		'Informe de Seguiment': {
-			'type': 'informeseguiment'
+			'type': 'informeSeguimentPM'
 		},
 		'Resum Objectius ': {
 			'type': 'resumObjectius'
@@ -22,7 +22,6 @@ function render() {
 	var scope = gs.getCurrentScopeName();
 	scope = (scope == "rhino.global" ? "" : scope + "_");
 	var page = renderer.getPreference('type');
-	var filtre= "sysparm_id=state=2^ORstate=3^closed_at>=javascript:gs.beginningOfOneYearAgo()";
 	return renderer.getRenderedPage(scope + page);
 }
 
@@ -31,7 +30,6 @@ function getEditLink() {
 	var scope = gs.getCurrentScopeName();
 	scope = (scope == "rhino.global" ? "" : scope + "_");
 	var page = renderer.getPreference('type');
-	var filtre= "sysparm_id=state=2^ORstate=3^closed_at>=javascript:gs.beginningOfOneYearAgo()";
 	return "sys_ui_page.do?sysparm_query=name=" + scope + page ;
 }]]></script>
         <sys_class_name>sys_widgets</sys_class_name>
@@ -39,7 +37,7 @@ function getEditLink() {
         <sys_created_on>2019-02-08 12:33:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>612dc67c1baf23805fab4002cd4bcb76</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Objectius de Millora</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -47,7 +45,7 @@ function getEditLink() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_widgets_612dc67c1baf23805fab4002cd4bcb76</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-20 12:40:26</sys_updated_on>
+        <sys_updated_on>2019-06-06 11:48:39</sys_updated_on>
         <top_level_category>false</top_level_category>
     </sys_widgets>
 </record_update>
