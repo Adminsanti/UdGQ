@@ -15,12 +15,19 @@
 <g:evaluate var="jvar_grS" object="true">
 	query = RP.getParameterValue("query");
 	// Quan ve del widget, no porta el parametre "query" i cal aplicar un filtre predefinit
-	if (!RP.getReferringURL().includes("query")) {query = 'state=2^NQstate=3^closed_at>=javascript:gs.beginningOfLastYear()^tancament!=-5'} 
+	if (!RP.getReferringURL().includes("query")) {
+		query = 'state=2^NQstate=3^closed_at>=javascript:gs.beginningOfLastYear()^tancament!=-5'
+	}
+	else {
+		if (query!="") query=query+"^";
+		query=query+"state!=-5";
+	}
 </g:evaluate>
 
-<p>Filtre: $[query]</p>
+<TABLE>	
+	<TH>Filtre: $[query]</TH>
+</TABLE>
 
-<BR></BR>
 
 <g2:macro_invoke macro="x_udg_q_detallTotsObjectius" query="${query}"/>
 
@@ -32,7 +39,7 @@
         <sys_created_on>2019-01-24 13:56:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>565115c01b93a340c851a64fad4bcb41</sys_id>
-        <sys_mod_count>128</sys_mod_count>
+        <sys_mod_count>132</sys_mod_count>
         <sys_name>informeSeguimentPM</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -40,6 +47,6 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_page_565115c01b93a340c851a64fad4bcb41</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-06-06 12:09:51</sys_updated_on>
+        <sys_updated_on>2019-07-04 11:03:01</sys_updated_on>
     </sys_ui_page>
 </record_update>
