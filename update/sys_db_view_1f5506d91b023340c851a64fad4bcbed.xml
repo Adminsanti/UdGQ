@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
     <sys_db_view action="INSERT_OR_UPDATE">
-        <description>Join objectius i accions</description>
-        <label>Objectiu i acció</label>
-        <name>x_udg_q_objectiusiaccions</name>
-        <plural>Objectius i accions</plural>
+        <description/>
+        <label>obac</label>
+        <name>x_udg_q_obac</name>
+        <plural>obacs</plural>
         <sys_class_name>sys_db_view</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-01-15 12:32:52</sys_created_on>
+        <sys_created_on>2019-06-14 07:48:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>a4e76e411b4b6b00c851a64fad4bcb79</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>x_udg_q_objectiusiaccions</sys_name>
+        <sys_id>1f5506d91b023340c851a64fad4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_obac</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_db_view_a4e76e411b4b6b00c851a64fad4bcb79</sys_update_name>
+        <sys_update_name>sys_db_view_1f5506d91b023340c851a64fad4bcbed</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-06-11 10:05:37</sys_updated_on>
+        <sys_updated_on>2019-06-14 07:48:20</sys_updated_on>
     </sys_db_view>
 </record_update>

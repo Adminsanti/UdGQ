@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="" label="Secció Generador" language="en" table="x_udg_q_generadorseccio">
+    <sys_documentation element="" label="Generador Secció" language="en" table="x_udg_q_generadorseccio">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element/>
             <help/>
             <hint/>
-            <label>Secció Generador</label>
+            <label>Generador Secció</label>
             <language>en</language>
             <name>x_udg_q_generadorseccio</name>
-            <plural>Secció Generadors</plural>
+            <plural>Generador Secciós</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2019-04-30 14:31:05</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>bd12b7761b81bf405fab4002cd4bcbac</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_name>Secció Generador</sys_name>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>Generador Secció</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_generadorseccio__en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-05-02 08:35:04</sys_updated_on>
+            <sys_updated_on>2019-06-14 07:38:09</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

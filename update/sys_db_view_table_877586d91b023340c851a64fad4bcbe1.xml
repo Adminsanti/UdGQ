@@ -2,24 +2,24 @@
     <sys_db_view_table action="INSERT_OR_UPDATE">
         <active>true</active>
         <left_join>false</left_join>
-        <order>200</order>
+        <order>100</order>
         <sys_class_name>sys_db_view_table</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-01-15 12:34:37</sys_created_on>
+        <sys_created_on>2019-06-14 07:48:46</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>576826811b4b6b00c851a64fad4bcb6e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>877586d91b023340c851a64fad4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_udg_q_objectiumillora</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_db_view_table_576826811b4b6b00c851a64fad4bcb6e</sys_update_name>
+        <sys_update_name>sys_db_view_table_877586d91b023340c851a64fad4bcbe1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-15 12:48:30</sys_updated_on>
+        <sys_updated_on>2019-06-14 07:48:46</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <variable_prefix>O</variable_prefix>
-        <view display_value="x_udg_q_objectiusiaccions">a4e76e411b4b6b00c851a64fad4bcb79</view>
-        <where_clause>M_objectiu_millora=O_sys_id</where_clause>
+        <view display_value="x_udg_q_obac">1f5506d91b023340c851a64fad4bcbed</view>
+        <where_clause/>
     </sys_db_view_table>
 </record_update>

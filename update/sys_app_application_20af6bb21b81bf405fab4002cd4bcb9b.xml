@@ -7,7 +7,7 @@
         <hint/>
         <name>Generador Informes</name>
         <order>100</order>
-        <roles>x_udg_q.Admin,x_udg_q.ManagerUniversitat</roles>
+        <roles>x_udg_q.Admin</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-04-30 14:20:21</sys_created_on>
@@ -15,7 +15,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>20af6bb21b81bf405fab4002cd4bcb9b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Generadors Informes</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -24,7 +24,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_application_20af6bb21b81bf405fab4002cd4bcb9b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-06-07 08:48:05</sys_updated_on>
+        <sys_updated_on>2019-07-04 10:48:31</sys_updated_on>
         <title>Generadors Informes</title>
         <view_name/>
     </sys_app_application>
