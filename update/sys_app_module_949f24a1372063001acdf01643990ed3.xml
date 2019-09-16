@@ -28,8 +28,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>949f24a1372063001acdf01643990ed3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Propietats SGQ</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Propietats aplicació SGQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -37,9 +37,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_949f24a1372063001acdf01643990ed3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-25 10:39:35</sys_updated_on>
+        <sys_updated_on>2019-09-16 09:08:02</sys_updated_on>
         <timeline_page/>
-        <title>Propietats SGQ</title>
+        <title>Propietats aplicació SGQ</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
