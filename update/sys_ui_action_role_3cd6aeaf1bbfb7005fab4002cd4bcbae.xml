@@ -11,7 +11,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_ui_action display_value="Crear procés llegat">7d65aa6f1bbfb7005fab4002cd4bcbc6</sys_ui_action>
+        <sys_ui_action display_value="Crea procés llegat">7d65aa6f1bbfb7005fab4002cd4bcbc6</sys_ui_action>
         <sys_update_name>sys_ui_action_role_3cd6aeaf1bbfb7005fab4002cd4bcbae</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2019-09-16 09:52:46</sys_updated_on>

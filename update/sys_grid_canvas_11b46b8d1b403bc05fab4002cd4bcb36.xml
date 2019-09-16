@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_grid_canvas" unload_date="2019-09-16 11:25:04">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_grid_canvas" unload_date="2019-09-16 11:57:20">
     <sys_grid_canvas action="INSERT_OR_UPDATE">
-        <legacy_page display_value="PA Planificació">11b46b4d1b403bc05fab4002cd4bcbe7</legacy_page>
+        <legacy_page display_value="PA Planificació objectius">11b46b4d1b403bc05fab4002cd4bcbe7</legacy_page>
         <name>PA New Tab 5</name>
         <sys_class_name>sys_grid_canvas</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -42,7 +42,7 @@
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone/>
                         <offset/>
-                        <page display_value="PA Planificació">11b46b4d1b403bc05fab4002cd4bcbe7</page>
+                        <page display_value="PA Planificació objectius">11b46b4d1b403bc05fab4002cd4bcbe7</page>
                         <summary>Planificació Objectius</summary>
                         <sys_created_by>adminsanti</sys_created_by>
                         <sys_created_on>2019-03-06 10:01:00</sys_created_on>
