@@ -47,12 +47,7 @@ if (current.sgq.codi=='UdG') { //cal comprovar la condition per si es crida desd
 		grFill.responsable=grFill.sgq.responsable;
 		if (grFill.insert()) { 
 			gs.addInfoMessage('Procés '+grFill.num+ 'insertat amb èxit a '+SGQprof.codi);
-			if (current.llegata==""){
-				current.llegata=SGQpref;
-			} 
-			else {
-				current.llegata=current.llegata+','+SGQpref;
-			}
+			current.llegata= new x_udg_q.ProcesSGQ().LlistaFillsCodiSGQ(current.sys_id).join(',');
 			current.update();
 			action.setRedirectURL(current);
 		} 
@@ -75,7 +70,7 @@ if (current.sgq.codi=='UdG') { //cal comprovar la condition per si es crida desd
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d65aa6f1bbfb7005fab4002cd4bcbc6</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Crea procés llegat</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -84,7 +79,7 @@ if (current.sgq.codi=='UdG') { //cal comprovar la condition per si es crida desd
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_7d65aa6f1bbfb7005fab4002cd4bcbc6</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-09-17 08:05:25</sys_updated_on>
+        <sys_updated_on>2019-09-17 09:24:34</sys_updated_on>
         <table>x_udg_q_proces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
