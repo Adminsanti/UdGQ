@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Crearllegat</action_name>
+        <action_name>ActualitzarLlistaLlegats</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2/>
@@ -23,46 +23,12 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Crea procés llegat</name>
+        <name>Actualitzar llista de llegats</name>
         <onclick/>
-        <order>100</order>
-        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
-if (current.sgq.codi=='UdG') { //cal comprovar la condition per si es crida desde llista
-	var grFill = new GlideRecord('x_udg_q_proces');
-	grFill.addQuery('pare',current.sys_id);
-	grFill.addQuery('sgq',SGQpref);
-	grFill.query();
-	if (grFill.next()) {
-		gs.addErrorMessage('Aquest procés ja té un fill en aquest SGQ');
-	} else { //NO existeix el fill
-		//new x_udg_q.ProcesSGQ().ActualitzaMapaProcessos(current.sgq);
-		grFill.initialize();
-		grFill.num=current.num;
-		grFill.sgq=SGQpref;
-		grFill.actiu=true;
-		grFill.titol=current.titol;
-		grFill.titpus=current.tipus;
-		grFill.pare=current.sys_id;
-		grFill.propietari=grFill.sgq.propietari;
-		grFill.responsable=grFill.sgq.responsable;
-		if (grFill.insert()) { 
-			gs.addInfoMessage('Procés '+grFill.num+ 'insertat amb èxit a '+SGQprof.codi);
-			if (current.llegata==""){
-				current.llegata=SGQpref;
-			} 
-			else {
-				current.llegata=current.llegata+','+SGQpref;
-			}
-			current.update();
-			action.setRedirectURL(current);
-		} 
-		else {
-			gs.addErrorMessage('ERROR en l\'Insert');
-		}
-	}
-} else {
-	gs.addErrorMessage('No es pot llegar el procés P'+ current.num+SGQpref.codi +' perquè no és UdG');
-}
+        <order>200</order>
+        <script><![CDATA[current.llegata= new x_udg_q.ProcesSGQ().LlistaFillsCodiSGQ(current.sys_id).join(',');
+current.update();
+//action.setRedirectURL(current);
 ]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -70,21 +36,21 @@ if (current.sgq.codi=='UdG') { //cal comprovar la condition per si es crida desd
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-09-16 09:48:04</sys_created_on>
+        <sys_created_on>2019-09-17 06:57:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>7d65aa6f1bbfb7005fab4002cd4bcbc6</sys_id>
-        <sys_mod_count>23</sys_mod_count>
-        <sys_name>Crea procés llegat</sys_name>
+        <sys_id>c43847fb1bfbf7005fab4002cd4bcb3e</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Actualitzar llista de llegats</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_action_7d65aa6f1bbfb7005fab4002cd4bcbc6</sys_update_name>
+        <sys_update_name>sys_ui_action_c43847fb1bfbf7005fab4002cd4bcb3e</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-09-17 08:05:25</sys_updated_on>
+        <sys_updated_on>2019-09-17 08:04:32</sys_updated_on>
         <table>x_udg_q_proces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
