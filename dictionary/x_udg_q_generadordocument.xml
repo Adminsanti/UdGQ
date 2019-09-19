@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="live_feed=true" extends="x_udg_q_generador" label="Generador Document" max_length="40" name="x_udg_q_generadordocument" type="collection">
-        <element label="Plantilla" max_length="32" name="plantilla" reference="x_udg_q_plantilladocument" type="reference"/>
-    </element>
-</database>
