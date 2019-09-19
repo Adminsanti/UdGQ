@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_udg_q_plantillacomu" label="Plantilla VSMA" max_length="40" name="x_udg_q_plantillavsma" type="collection"/>
+</database>

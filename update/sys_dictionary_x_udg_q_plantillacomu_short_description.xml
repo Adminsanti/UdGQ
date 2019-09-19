@@ -3,7 +3,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>no_truncate=true</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Short description</column_label>
+        <column_label>Descripció curta</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -55,15 +55,15 @@
         <sys_created_on>2019-05-02 08:33:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2b6170671b0133805fab4002cd4bcbf4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Short description</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Descripció curta</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_plantillacomu_short_description</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-05-02 08:33:34</sys_updated_on>
+        <sys_updated_on>2019-09-19 16:53:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
