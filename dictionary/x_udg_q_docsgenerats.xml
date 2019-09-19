@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="DocsGenerats" max_length="40" name="x_udg_q_docsgenerats" type="collection">
+        <element label="Fitxer" max_length="40" name="fitxer" type="file_attachment"/>
+        <element attributes="no_truncate=true" display="true" label="Nom" max_length="140" name="nom" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Número" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Tipus" max_length="60" name="tipus" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

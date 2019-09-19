@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="live_feed=true" extends="x_udg_q_generador" label="Generador Secció" max_length="40" name="x_udg_q_generadorseccio" type="collection"/>
-</database>
