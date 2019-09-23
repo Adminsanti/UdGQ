@@ -6,7 +6,7 @@
         <element attributes="no_truncate=true" display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element choice="1" label="Origen" max_length="60" name="origen" type="string">
             <choice>
-                <element inactive_on_update="false" label="AQU" sequence="0" value="AQU"/>
+                <element inactive_on_update="false" label="AQU" sequence="0" value="aqu"/>
                 <element inactive_on_update="false" label="ANECA" sequence="1" value="ANECA"/>
                 <element inactive_on_update="false" label="Comitè intern" sequence="2" value="comitè intern"/>
             </choice>

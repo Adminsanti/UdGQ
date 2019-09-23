@@ -22,10 +22,10 @@
             <element name="usuari"/>
         </index>
         <index name="index2">
-            <element name="membres"/>
             <element name="sgq"/>
         </index>
         <index name="index3">
+            <element name="membres"/>
             <element name="sgq"/>
         </index>
     </element>

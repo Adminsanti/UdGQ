@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="212" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="217" text_index="true" type="collection">
         <element label="Compartida" max_length="4000" name="compartida" reference="x_udg_q_sgq" type="glide_list"/>
         <element label="Declarat" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Declarat per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>

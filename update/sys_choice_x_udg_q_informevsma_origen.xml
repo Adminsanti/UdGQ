@@ -16,8 +16,8 @@
             <sys_id>9654216ddb0da7c01f06adc3ca9619a4</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-09-06 11:20:11</sys_updated_on>
-            <value>AQU</value>
+            <sys_updated_on>2019-09-06 11:17:01</sys_updated_on>
+            <value>aqu</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -29,13 +29,13 @@
             <name>x_udg_q_informevsma</name>
             <sequence>1</sequence>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-09-06 11:20:41</sys_created_on>
+            <sys_created_on>2019-09-06 11:18:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c49b579c1bbff3805fab4002cd4bcb73</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>4dfa5750db3bf340e43f8a3a4896197d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-09-06 11:20:41</sys_updated_on>
+            <sys_updated_on>2019-09-06 11:18:30</sys_updated_on>
             <value>ANECA</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -52,9 +52,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d654216ddb0da7c01f06adc3ca9619a5</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-09-06 11:20:28</sys_updated_on>
+            <sys_updated_on>2019-09-06 11:18:22</sys_updated_on>
             <value>comitè intern</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">

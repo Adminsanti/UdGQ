@@ -55,15 +55,15 @@
         <sys_created_on>2018-09-07 11:12:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>06f727cfdbe82b80ccd95bd05b9619b7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>SGQ Gestionats</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_sys_user_x_udg_q_sgq_gestionats</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-04-05 10:41:41</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-09-19 17:07:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
