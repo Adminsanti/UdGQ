@@ -2,31 +2,31 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_plantillavsma" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Plantilla VSMA - Default view" name="x_udg_q_plantillavsma" related_list="NULL" sys_domain="global" view="Default view">3475ebe01b088c10c851a64fad4bcb78</list_id>
+            <list_id display_value="Plantilla VSMA - Default view" name="x_udg_q_plantillavsma" related_list="NULL" sys_domain="global" view="Default view">16955e351b0840105fab4002cd4bcb47</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>x_udg_q_plantillavsma.parent</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-09-19 16:57:54</sys_created_on>
-            <sys_id>bc75ebe01b088c10c851a64fad4bcb78</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-09-19 16:57:54</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Plantilla VSMA - Default view" name="x_udg_q_plantillavsma" related_list="NULL" sys_domain="global" view="Default view">3475ebe01b088c10c851a64fad4bcb78</list_id>
-            <order_by/>
-            <position>1</position>
             <related_list>x_udg_q_docgeneratvsma.plantilla</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-09-19 16:57:54</sys_created_on>
-            <sys_id>3475ebe01b088c10c851a64fad4bcb79</sys_id>
+            <sys_created_on>2019-09-23 08:21:26</sys_created_on>
+            <sys_id>56955e351b0840105fab4002cd4bcb48</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-09-19 16:57:54</sys_updated_on>
+            <sys_updated_on>2019-09-23 08:21:26</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Plantilla VSMA - Default view" name="x_udg_q_plantillavsma" related_list="NULL" sys_domain="global" view="Default view">16955e351b0840105fab4002cd4bcb47</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_udg_q_plantillavsma.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-09-23 08:21:26</sys_created_on>
+            <sys_id>22955e351b0840105fab4002cd4bcb49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-09-23 08:21:26</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Plantilla VSMA - Default view</calculated_name>
@@ -37,11 +37,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-09-19 16:57:54</sys_created_on>
+            <sys_created_on>2019-09-23 08:21:26</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>3475ebe01b088c10c851a64fad4bcb78</sys_id>
+            <sys_id>16955e351b0840105fab4002cd4bcb47</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Plantilla VSMA - Default view</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -50,7 +50,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_related_x_udg_q_plantillavsma_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-09-19 16:57:54</sys_updated_on>
+            <sys_updated_on>2019-09-23 08:21:26</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
