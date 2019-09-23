@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Plantilla Comú" max_length="40" name="x_udg_q_plantillacomu" type="collection">
         <element label="Activa" max_length="40" name="active" type="boolean"/>
-        <element label="Compartit" max_length="4000" name="compartit" reference="x_udg_q_sgq" type="glide_list"/>
+        <element label="Compartida" max_length="4000" name="compartit" reference="x_udg_q_sgq" type="glide_list"/>
         <element label="Fitxer" max_length="40" name="file" type="file_attachment"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Número" max_length="40" name="number" type="string"/>
-        <element label="Ordre" max_length="40" name="order" type="integer"/>
-        <element label="Pare" max_length="32" name="parent" reference="x_udg_q_plantillacomu" type="reference"/>
-        <element default="javascript:gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Número" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="100" label="Ordre" max_length="40" name="order" type="integer"/>
+        <element label="Pare" max_length="32" name="parent" read_only="true" reference="x_udg_q_plantillacomu" type="reference"/>
+        <element default="javascript:gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
         <element attributes="no_truncate=true" display="true" label="Descripció curta" max_length="160" name="short_description" type="string"/>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <index name="index">
