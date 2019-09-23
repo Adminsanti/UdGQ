@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Plantilla Comú" max_length="40" name="x_udg_q_plantillacomu" type="collection">
-        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Activa" max_length="40" name="active" type="boolean"/>
         <element label="Compartit" max_length="4000" name="compartit" reference="x_udg_q_sgq" type="glide_list"/>
         <element label="Fitxer" max_length="40" name="file" type="file_attachment"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Número" max_length="40" name="number" type="string"/>
