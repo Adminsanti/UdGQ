@@ -37,12 +37,29 @@ grPlantilla.get(current.file); //GlideRecord del fitxer
 var gsaPlantilla = new GlideSysAttachment();
 var contingut=gsaPlantilla.getContent(grPlantilla);
 
-contingut=contingut.replace("##nomSGQ##",current.sgq.nom);
 
+var rtf1= new rtf(contingut);
+rtf1.replace (/##NomSGQ##/g,current.sgq.nom);
+rtf1.replace (/##LlistaTitulacions##/g,rtf1.llista(new Sgq().getLlistaNomsTitulacionsSgqActual()));
+var subestandards= rtf1.getContent().match(/##TSubestandard#.\..##/g).toString().match(/.\../g);
+for (index=0; index<subestandards.length; ++index) {
+	var sysidS = new EstandardVSMA().getSysidSubestandardNum(subestandards[index]);
+	var nom= new EstandardVSMA().getNomSubestandard(sysidS);
+	rtf1.replace("##TSubestandard#"+subestandards[index]+"##",nom);
+}
+var Dsubestandards= rtf1.getContent().match(/##DSubestandard#.\..##/g).toString().match(/.\../g);
+gs.addInfoMessage("Dsubstandards "+Dsubestandards);
+for (index=0; index<Dsubestandards.length; ++index) {
+	var sysidS = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
+	var Obj= new ObjectiuUtils();
+	gs.addInfoMessage("Dsubstandards "+Dsubestandards[index]+" sysISD "+sysidS);
+/*	var text= Obj.getRtfperSubestandard(sysidS);
+/*	rtf1.replace("##DSubestandard#"+Dsubestandards[index]+"##",text);*/
+}	
 
-var num=grDG.number.slice(3,10);
+var numDoc=grDG.number.slice(3,10);
 var newDocAttachment = new GlideSysAttachment();
-var newDocAttachment_sys_id= newDocAttachment.write(grDG,SGQprefCodi+num+".rtf","tetx/rtf",contingut);
+var newDocAttachment_sys_id= newDocAttachment.write(grDG,SGQprefCodi+numDoc+".rtf","text/rtf",rtf1.escape().getContent());
 grDG.fitxer=newDocAttachment_sys_id;
 grDG.sgq=SGQpref;
 grDG.nom=current.short_description+" "+SGQprefCodi+" "+grDG.sys_created_on.getDisplayValue();
@@ -51,7 +68,7 @@ grDG.plantilla=current.sys_id;
 grDG.update();
 gs.addInfoMessage("Generat nou document "+grDG.number+" "+grDG.nom);
 action.setRedirectURL(current);  //Roman ]]></script>
-        <show_insert>true</show_insert>
+        <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -62,7 +79,7 @@ action.setRedirectURL(current);  //Roman ]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c855029c1b0448105fab4002cd4bcb83</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>134</sys_mod_count>
         <sys_name>Genera Doc</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -71,7 +88,7 @@ action.setRedirectURL(current);  //Roman ]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_c855029c1b0448105fab4002cd4bcb83</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-09-23 09:50:06</sys_updated_on>
+        <sys_updated_on>2019-09-25 12:04:11</sys_updated_on>
         <table>x_udg_q_plantillavsma</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

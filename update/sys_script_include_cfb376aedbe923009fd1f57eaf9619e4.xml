@@ -100,11 +100,10 @@ ObjectiuUtils.prototype = {
 		return gr.propietari;
 	},
 	
-	setAllResponsables: function (funcio) {
-		
+	setAllResponsables: function (funcio) {		
 		var gr = new GlideRecord ('x_udg_q_objectiumillora');
 		gr.addQuery('funcio', funcio);
-		gr.addQuery('state=-5'); //No s'actualitzan Esborranys
+		gr.addQuery('state=-5'); //No s'actualitzen Esborranys
 		grObj.query();
 		new x_udg_q.log(funcio.sgq.codi+" ObjectiuUtils.setAllResponsables busca objectius amb responsable: "+ funcio.nom);
 		while (gr.next()) {
@@ -112,6 +111,22 @@ ObjectiuUtils.prototype = {
 			grObj.assigned_to=funcio.usuari;
 			grObj.update();
 		}
+	},
+
+	getRtfperSubestandard: function (sysidS) {
+		var grObj = new GlideRecord ('x_udg_q_objectiumillora');
+		var rtf = new rtf();
+		grObj.addQuery('subestandard',sysidS);
+		grObj.query();
+		var text="";
+		while (grObj.next()) {
+			text=rtf.table(3);
+			text+=rtf.row();
+			text+=rtf.rowend();
+			text+=rtf.tableend();
+		}
+		
+		return text;
 	},
 	
 	type: 'ObjectiuUtils'
@@ -121,7 +136,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -129,6 +144,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-12 09:33:21</sys_updated_on>
+        <sys_updated_on>2019-09-25 11:59:17</sys_updated_on>
     </sys_script_include>
 </record_update>

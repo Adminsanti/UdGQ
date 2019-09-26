@@ -10,6 +10,7 @@
         </element>
         <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;return current.estandard.num+'.'+current.num+'. '+current.titol;  // return the calculated value&#10;&#10;})(current);" display="true" label="Nom" max_length="240" name="nom" read_only="true" type="string" virtual="true"/>
         <element label="Num" max_length="10" name="num" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return current.estandard.num+'.'+current.num;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="NumComplet" max_length="10" name="numcomplet" read_only="true" type="string" virtual="true"/>
         <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;return current.estandard.num + &quot;.&quot; + current.estandard.num + &quot; &quot;+ current.titol;  // return the calculated value&#10;&#10;})(current);" label="Titol" max_length="230" name="titol" type="string"/>
         <index name="index">
             <element name="estandard"/>

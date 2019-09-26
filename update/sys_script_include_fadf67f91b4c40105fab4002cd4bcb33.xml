@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_udg_q.rtf</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>rtf</name>
+        <script><![CDATA[var rtf = Class.create();
+rtf.prototype = {
+	
+	initialize: function(cadena){
+		this._cadena= cadena;
+		this._table="{\\rtf1\\ansi\\deff0\n";
+		this._tableend="}\n";
+		this._row="\\trowd\n";
+		this._rowend="\\row";
+		this.escape();
+	},
+		
+	replace: function (cadena1, cadena2){ //cadena1 Pot ser una cadena o una regex
+		this._cadena=this._cadena.replace(cadena1,cadena2);
+	},
+		
+	getContent: function () {
+		return this._cadena;
+	},
+		
+	escape: function () {
+		this._cadena= this._cadena.replace(/À/g,"\\'c0");
+		this._cadena= this._cadena.replace(/Á/g,"\\'c1");
+		this._cadena= this._cadena.replace(/Ç/g,"\\'c7");
+		this._cadena= this._cadena.replace(/È/g,"\\'c8");
+		this._cadena= this._cadena.replace(/É/g,"\\'c9");
+		this._cadena= this._cadena.replace(/Í/g,"\\'cd");
+		this._cadena= this._cadena.replace(/Ò/g,"\\'d2");
+		this._cadena= this._cadena.replace(/Ó/g,"\\'d3");			
+		this._cadena= this._cadena.replace(/Ú/g,"\\'da");
+		this._cadena= this._cadena.replace(/Ü/g,"\\'dc");
+		this._cadena= this._cadena.replace(/à/g,"\\'e0");
+		this._cadena= this._cadena.replace(/á/g,"\\'e1");
+		this._cadena= this._cadena.replace(/ç/g,"\\'e7");
+		this._cadena= this._cadena.replace(/è/g,"\\'e8");
+		this._cadena= this._cadena.replace(/é/g,"\\'e9");			
+		this._cadena= this._cadena.replace(/í/g,"\\'ed");
+		this._cadena= this._cadena.replace(/ò/g,"\\'f2");
+		this._cadena= this._cadena.replace(/ó/g,"\\'f3");
+		this._cadena= this._cadena.replace(/ú/g,"\\'fa");
+		this._cadena= this._cadena.replace(/ü/g,"\\'fc");			
+		return this;
+	},
+		
+	li: function (li) {
+		var cadena="\\par {\\listtext\\pard\\plain\\ltrpar \\s15 \\rtlch\\fcs1 \\af31507\\ltrch\\fcs0\\f3\\lang1027\\langfe1033\\langnp1027\\insrsid15291472 \\loch\\af3\\dbch\\af31506\\hich\\f3 \\'b7\\tab}\n";
+		return cadena+li;
+	},
+	
+	llista: function (llista) {
+		var cadena_rtf="";
+		var index=0;
+		for (index=0; index<llista.length; ++index) 
+			cadena_rtf+= this.li(llista[index]);
+		return cadena_rtf;
+	},
+			
+	table: function (ncolumns) {
+		var cadena_rtf=this._table;			
+		for (var i=1; i<=ncolumns; i++)
+			cadena_rtf += "\cellx"+i+"000";
+		return cadena_rtf;
+	},
+			
+	row: function () {
+		return this._row;
+	},
+	
+	tableend: function () {
+		return this._tableend;
+	},
+			
+	rowend: function () {
+		return this._rowend;
+	},
+	
+	
+	
+	type: 'rtf'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-09-23 14:55:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fadf67f91b4c40105fab4002cd4bcb33</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>rtf</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_include_fadf67f91b4c40105fab4002cd4bcb33</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-09-25 11:40:38</sys_updated_on>
+    </sys_script_include>
+</record_update>
