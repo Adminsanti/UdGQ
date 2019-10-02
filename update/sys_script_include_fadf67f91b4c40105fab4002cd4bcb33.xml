@@ -14,7 +14,7 @@ rtf.prototype = {
 		this._table="{\\rtf1\\ansi\\deff0\n";
 		this._tableend="}\n";
 		this._row="\\trowd\n";
-		this._rowend="\\row";
+		this._rowend="\\row\n";
 		this.escape();
 	},
 		
@@ -63,15 +63,20 @@ rtf.prototype = {
 		return cadena_rtf;
 	},
 			
-	table: function (ncolumns) {
-		var cadena_rtf=this._table;			
-		for (var i=1; i<=ncolumns; i++)
-			cadena_rtf += "\cellx"+i+"000";
-		return cadena_rtf;
+	tablestart: function () {
+
+		return this._table;
 	},
 			
-	row: function () {
-		return this._row;
+	row: function (ncols) {
+		var cadena_rtf=this._row;
+		for (var i=1; i<=ncols; i++) {	
+			var mida=i*3000;
+			cadena_rtf +="\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs\n"; //bora
+			cadena_rtf += "\\cellx"+mida;
+		}
+		
+		return cadena_rtf;
 	},
 	
 	tableend: function () {
@@ -82,8 +87,7 @@ rtf.prototype = {
 		return this._rowend;
 	},
 	
-	
-	
+		
 	type: 'rtf'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -91,7 +95,7 @@ rtf.prototype = {
         <sys_created_on>2019-09-23 14:55:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fadf67f91b4c40105fab4002cd4bcb33</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>rtf</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -99,6 +103,6 @@ rtf.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_fadf67f91b4c40105fab4002cd4bcb33</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-09-25 11:40:38</sys_updated_on>
+        <sys_updated_on>2019-10-02 10:12:34</sys_updated_on>
     </sys_script_include>
 </record_update>

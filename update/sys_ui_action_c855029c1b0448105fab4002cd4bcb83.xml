@@ -41,20 +41,23 @@ var contingut=gsaPlantilla.getContent(grPlantilla);
 var rtf1= new rtf(contingut);
 rtf1.replace (/##NomSGQ##/g,current.sgq.nom);
 rtf1.replace (/##LlistaTitulacions##/g,rtf1.llista(new Sgq().getLlistaNomsTitulacionsSgqActual()));
+
+
 var subestandards= rtf1.getContent().match(/##TSubestandard#.\..##/g).toString().match(/.\../g);
 for (index=0; index<subestandards.length; ++index) {
 	var sysidS = new EstandardVSMA().getSysidSubestandardNum(subestandards[index]);
 	var nom= new EstandardVSMA().getNomSubestandard(sysidS);
 	rtf1.replace("##TSubestandard#"+subestandards[index]+"##",nom);
 }
+
 var Dsubestandards= rtf1.getContent().match(/##DSubestandard#.\..##/g).toString().match(/.\../g);
-gs.addInfoMessage("Dsubstandards "+Dsubestandards);
 for (index=0; index<Dsubestandards.length; ++index) {
 	var sysidS = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
 	var Obj= new ObjectiuUtils();
-	gs.addInfoMessage("Dsubstandards "+Dsubestandards[index]+" sysISD "+sysidS);
-/*	var text= Obj.getRtfperSubestandard(sysidS);
-/*	rtf1.replace("##DSubestandard#"+Dsubestandards[index]+"##",text);*/
+	//gs.addInfoMessage("Trobat Dsubstandard "+Dsubestandards[index]+" sysISD "+sysidS);
+	var textstring= Obj.getRtfperSubestandard(sysidS);
+	//gs.addInfoMessage("Textstring tornat: "+textstring);
+	rtf1.replace("##DSubestandard#"+Dsubestandards[index]+"##",textstring);
 }	
 
 var numDoc=grDG.number.slice(3,10);
@@ -79,7 +82,7 @@ action.setRedirectURL(current);  //Roman ]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c855029c1b0448105fab4002cd4bcb83</sys_id>
-        <sys_mod_count>134</sys_mod_count>
+        <sys_mod_count>150</sys_mod_count>
         <sys_name>Genera Doc</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -88,7 +91,7 @@ action.setRedirectURL(current);  //Roman ]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_c855029c1b0448105fab4002cd4bcb83</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-09-25 12:04:11</sys_updated_on>
+        <sys_updated_on>2019-10-02 10:16:16</sys_updated_on>
         <table>x_udg_q_plantillavsma</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
