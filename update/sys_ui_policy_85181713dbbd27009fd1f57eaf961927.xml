@@ -9,26 +9,28 @@
         <model_id/>
         <model_table/>
         <on_load>true</on_load>
-        <order>200</order>
-        <reverse_if_false>true</reverse_if_false>
+        <order>300</order>
+        <reverse_if_false>false</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
 	
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-if (g_form.getValue('sgq') != g_scratchpad.sgqActual)
-	{
-		g_form.setReadOnly('responsable',true);
-		g_form.setReadOnly('prioritat',true);
-		g_form.setReadOnly('fet_fita',true);
-		g_form.setReadOnly('due_date',true);
-		g_form.setReadOnly('short_description',true);
-		g_form.setReadOnly('compartit',true);
-	}
+	
+	changeButtonColor('Objectiu-DefineixalPM', '#CC0000');
+}
 
+function changeButtonColor(buttonID, backgroundColor) {
+	try{
+		//Find the button(s) by ID and change the background color
+		$$('button[id=' + buttonID + ']').each(function(elmt) {
+			elmt.style.backgroundColor = backgroundColor;
+			elmt.style.color = '#ffffff'; //make the button text white
+		});
+	} catch(e){}		
 }]]></script_true>
         <set_values/>
-        <short_description>RECYCLE Objectiu d'un altre SGQ</short_description>
+        <short_description>RECYLE NO VA Botó afegir objectiu a pla de millora Color </short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-11-21 12:32:11</sys_created_on>
@@ -36,8 +38,8 @@ if (g_form.getValue('sgq') != g_scratchpad.sgqActual)
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>85181713dbbd27009fd1f57eaf961927</sys_id>
-        <sys_mod_count>36</sys_mod_count>
-        <sys_name>RECYCLE Objectiu d'un altre SGQ</sys_name>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>RECYLE NO VA Botó afegir objectiu a pla de millora Color </sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -45,7 +47,7 @@ if (g_form.getValue('sgq') != g_scratchpad.sgqActual)
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_85181713dbbd27009fd1f57eaf961927</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-11 21:14:30</sys_updated_on>
+        <sys_updated_on>2019-10-02 17:17:09</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui_type>0</ui_type>
         <view/>
