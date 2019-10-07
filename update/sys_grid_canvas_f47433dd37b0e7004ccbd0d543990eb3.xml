@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_grid_canvas" unload_date="2019-10-07 15:02:56">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_grid_canvas" unload_date="2019-10-07 17:15:39">
     <sys_grid_canvas action="INSERT_OR_UPDATE">
-        <legacy_page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</legacy_page>
+        <legacy_page display_value="Tablero de instrumentos de director de PMO">033bf8de1330120023f750f82244b020</legacy_page>
         <name>PMO Director Dashboard</name>
         <sys_class_name>sys_grid_canvas</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -20,7 +20,7 @@
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                 <height>17</height>
-                <portal_widget display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_widget>
+                <portal_widget display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_widget>
                 <posx>0</posx>
                 <posy>67</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -42,7 +42,7 @@
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone>dropzone4</dropzone>
                         <offset>1</offset>
-                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <page display_value="Tablero de instrumentos de director de PMO">033bf8de1330120023f750f82244b020</page>
                         <summary/>
                         <sys_created_by>molly.feterl</sys_created_by>
                         <sys_created_on>2016-01-27 05:59:31</sys_created_on>
@@ -54,7 +54,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                                 <height>17</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_widget>
                                 <posx>0</posx>
                                 <posy>67</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -76,7 +76,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">0c9ac28fdba02b80ccd95bd05b9619fb</grid_canvas>
                                 <height>17</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_widget>
                                 <posx>0</posx>
                                 <posy>67</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -99,7 +99,7 @@
                         <related_items_node>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_align</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0f1</sys_id>
@@ -110,7 +110,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>subscriber_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0f2</sys_id>
@@ -121,7 +121,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>filter_indicator</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0f1</sys_id>
@@ -132,7 +132,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>publisher_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0f2</sys_id>
@@ -143,7 +143,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_border</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0f1</sys_id>
@@ -154,7 +154,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>current_page</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0f2</sys_id>
@@ -165,7 +165,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0f1</sys_id>
@@ -176,7 +176,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>renderer</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0f1</sys_id>
@@ -187,7 +187,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0f2</sys_id>
@@ -198,7 +198,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_size</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0f1</sys_id>
@@ -209,7 +209,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>widget_height</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0f2</sys_id>
@@ -220,7 +220,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_subscribe</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0f1</sys_id>
@@ -231,7 +231,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dfa2b6881391120023f750f82244b0f0</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0f1</sys_id>
@@ -247,7 +247,7 @@
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone>dropzone4</dropzone>
                         <offset>0</offset>
-                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <page display_value="Tablero de instrumentos de director de PMO">033bf8de1330120023f750f82244b020</page>
                         <summary/>
                         <sys_created_by>molly.feterl</sys_created_by>
                         <sys_created_on>2016-01-27 05:59:31</sys_created_on>
@@ -259,7 +259,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                                 <height>17</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_widget>
                                 <posx>0</posx>
                                 <posy>50</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -281,7 +281,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">0c9ac28fdba02b80ccd95bd05b9619fb</grid_canvas>
                                 <height>17</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_widget>
                                 <posx>0</posx>
                                 <posy>50</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -304,7 +304,7 @@
                         <related_items_node>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0f0</sys_id>
@@ -315,7 +315,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_align</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0ef</sys_id>
@@ -326,7 +326,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>subscriber_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0f0</sys_id>
@@ -337,7 +337,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>filter_indicator</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0ef</sys_id>
@@ -348,7 +348,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0f0</sys_id>
@@ -359,7 +359,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_border</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0ef</sys_id>
@@ -370,7 +370,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>current_page</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0f0</sys_id>
@@ -381,7 +381,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0f0</sys_id>
@@ -392,7 +392,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>renderer</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0ef</sys_id>
@@ -403,7 +403,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>widget_height</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0f0</sys_id>
@@ -414,7 +414,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_size</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0ef</sys_id>
@@ -425,7 +425,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>publisher_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0f0</sys_id>
@@ -436,7 +436,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_subscribe</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0ef</sys_id>
@@ -452,7 +452,7 @@
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone>dropzone1</dropzone>
                         <offset>0</offset>
-                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <page display_value="Tablero de instrumentos de director de PMO">033bf8de1330120023f750f82244b020</page>
                         <summary/>
                         <sys_created_by>molly.feterl</sys_created_by>
                         <sys_created_on>2016-01-27 05:59:30</sys_created_on>
@@ -464,7 +464,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                                 <height>10</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_widget>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -486,7 +486,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">0c9ac28fdba02b80ccd95bd05b9619fb</grid_canvas>
                                 <height>10</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_widget>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -509,7 +509,7 @@
                         <related_items_node>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0ec</sys_id>
@@ -520,7 +520,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>renderer</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0eb</sys_id>
@@ -531,7 +531,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>widget_height</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0ec</sys_id>
@@ -542,7 +542,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_size</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0eb</sys_id>
@@ -553,7 +553,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>publisher_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0ec</sys_id>
@@ -564,7 +564,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_subscribe</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0eb</sys_id>
@@ -575,7 +575,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_align</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0eb</sys_id>
@@ -586,7 +586,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>subscriber_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0ec</sys_id>
@@ -597,7 +597,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>filter_indicator</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0eb</sys_id>
@@ -608,7 +608,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0ec</sys_id>
@@ -619,7 +619,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_border</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0eb</sys_id>
@@ -630,7 +630,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>current_page</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0ec</sys_id>
@@ -641,7 +641,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0eb</sys_id>
@@ -657,7 +657,7 @@
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone>dropzone3</dropzone>
                         <offset>0</offset>
-                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <page display_value="Tablero de instrumentos de director de PMO">033bf8de1330120023f750f82244b020</page>
                         <summary/>
                         <sys_created_by>molly.feterl</sys_created_by>
                         <sys_created_on>2016-01-27 05:59:31</sys_created_on>
@@ -669,7 +669,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                                 <height>10</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_widget>
                                 <posx>8</posx>
                                 <posy>20</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -691,7 +691,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">0c9ac28fdba02b80ccd95bd05b9619fb</grid_canvas>
                                 <height>10</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_widget>
                                 <posx>8</posx>
                                 <posy>20</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -714,7 +714,7 @@
                         <related_items_node>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>current_page</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0ef</sys_id>
@@ -725,7 +725,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>renderer</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0ee</sys_id>
@@ -736,7 +736,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_border</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:45</sys_created_on>
                                 <sys_id>72b2f6881391120023f750f82244b05a</sys_id>
@@ -747,7 +747,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>subscriber_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:45</sys_created_on>
                                 <sys_id>76b2f6881391120023f750f82244b05a</sys_id>
@@ -758,7 +758,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>filter_indicator</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:45</sys_created_on>
                                 <sys_id>7ab2f6881391120023f750f82244b05a</sys_id>
@@ -769,7 +769,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_align</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:45</sys_created_on>
                                 <sys_id>7eb2f6881391120023f750f82244b059</sys_id>
@@ -780,7 +780,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0ee</sys_id>
@@ -791,7 +791,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0ee</sys_id>
@@ -802,7 +802,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>publisher_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:45</sys_created_on>
                                 <sys_id>f2b2f6881391120023f750f82244b05a</sys_id>
@@ -813,7 +813,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>widget_height</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:45</sys_created_on>
                                 <sys_id>f6b2f6881391120023f750f82244b05a</sys_id>
@@ -824,7 +824,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:45</sys_created_on>
                                 <sys_id>fab2f6881391120023f750f82244b059</sys_id>
@@ -835,7 +835,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_size</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:45</sys_created_on>
                                 <sys_id>feb2f6881391120023f750f82244b059</sys_id>
@@ -851,7 +851,7 @@
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone>dropzone5</dropzone>
                         <offset>1</offset>
-                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <page display_value="Tablero de instrumentos de director de PMO">033bf8de1330120023f750f82244b020</page>
                         <summary/>
                         <sys_created_by>molly.feterl</sys_created_by>
                         <sys_created_on>2016-01-27 05:59:31</sys_created_on>
@@ -863,7 +863,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                                 <height>17</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
                                 <posx>6</posx>
                                 <posy>101</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -885,7 +885,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">0c9ac28fdba02b80ccd95bd05b9619fb</grid_canvas>
                                 <height>17</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
                                 <posx>6</posx>
                                 <posy>101</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -908,7 +908,7 @@
                         <related_items_node>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_border</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0f5</sys_id>
@@ -919,7 +919,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>current_page</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0f6</sys_id>
@@ -930,7 +930,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0f5</sys_id>
@@ -941,7 +941,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_align</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0f4</sys_id>
@@ -952,7 +952,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>subscriber_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0f5</sys_id>
@@ -963,7 +963,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>filter_indicator</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0f4</sys_id>
@@ -974,7 +974,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>widget_height</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0f5</sys_id>
@@ -985,7 +985,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_subscribe</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0f5</sys_id>
@@ -996,7 +996,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0f5</sys_id>
@@ -1007,7 +1007,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>renderer</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0f4</sys_id>
@@ -1018,7 +1018,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>publisher_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0f5</sys_id>
@@ -1029,7 +1029,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_size</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0f4</sys_id>
@@ -1040,7 +1040,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0f5</sys_id>
@@ -1056,7 +1056,7 @@
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone>dropzone5</dropzone>
                         <offset>0</offset>
-                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <page display_value="Tablero de instrumentos de director de PMO">033bf8de1330120023f750f82244b020</page>
                         <summary/>
                         <sys_created_by>molly.feterl</sys_created_by>
                         <sys_created_on>2016-01-27 05:59:31</sys_created_on>
@@ -1068,7 +1068,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">0c9ac28fdba02b80ccd95bd05b9619fb</grid_canvas>
                                 <height>17</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_widget>
                                 <posx>6</posx>
                                 <posy>84</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1090,7 +1090,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                                 <height>17</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_widget>
                                 <posx>6</posx>
                                 <posy>84</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1113,7 +1113,7 @@
                         <related_items_node>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>filter_indicator</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0f3</sys_id>
@@ -1124,7 +1124,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>publisher_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0f4</sys_id>
@@ -1135,7 +1135,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_border</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0f3</sys_id>
@@ -1146,7 +1146,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>current_page</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0f4</sys_id>
@@ -1157,7 +1157,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0f3</sys_id>
@@ -1168,7 +1168,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>renderer</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0f2</sys_id>
@@ -1179,7 +1179,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>subscriber_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0f3</sys_id>
@@ -1190,7 +1190,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_size</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0f3</sys_id>
@@ -1201,7 +1201,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0f4</sys_id>
@@ -1212,7 +1212,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_subscribe</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0f3</sys_id>
@@ -1223,7 +1223,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0f3</sys_id>
@@ -1234,7 +1234,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_align</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0f2</sys_id>
@@ -1245,7 +1245,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>widget_height</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0f3</sys_id>
@@ -1261,7 +1261,7 @@
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone>dropzone2</dropzone>
                         <offset>0</offset>
-                        <page display_value="PMO Director Dashboard">033bf8de1330120023f750f82244b020</page>
+                        <page display_value="Tablero de instrumentos de director de PMO">033bf8de1330120023f750f82244b020</page>
                         <summary/>
                         <sys_created_by>molly.feterl</sys_created_by>
                         <sys_created_on>2016-01-27 05:59:31</sys_created_on>
@@ -1273,7 +1273,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">0c9ac28fdba02b80ccd95bd05b9619fb</grid_canvas>
                                 <height>10</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_widget>
                                 <posx>4</posx>
                                 <posy>10</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1295,7 +1295,7 @@
                             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                                 <height>10</height>
-                                <portal_widget display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_widget>
+                                <portal_widget display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_widget>
                                 <posx>4</posx>
                                 <posy>10</posy>
                                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1318,7 +1318,7 @@
                         <related_items_node>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>renderer</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0ed</sys_id>
@@ -1329,7 +1329,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>13a2b6881391120023f750f82244b0ee</sys_id>
@@ -1340,7 +1340,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_size</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0ed</sys_id>
@@ -1351,7 +1351,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>publisher_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>17a2b6881391120023f750f82244b0ee</sys_id>
@@ -1362,7 +1362,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_subscribe</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1ba2b6881391120023f750f82244b0ed</sys_id>
@@ -1373,7 +1373,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>1fa2b6881391120023f750f82244b0ed</sys_id>
@@ -1384,7 +1384,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>filter_indicator</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0ed</sys_id>
@@ -1395,7 +1395,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>widget_height</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>93a2b6881391120023f750f82244b0ee</sys_id>
@@ -1406,7 +1406,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>show_border</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0ed</sys_id>
@@ -1417,7 +1417,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>current_page</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>97a2b6881391120023f750f82244b0ee</sys_id>
@@ -1428,7 +1428,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9ba2b6881391120023f750f82244b0ed</sys_id>
@@ -1439,7 +1439,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>title_align</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:30</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0ec</sys_id>
@@ -1450,7 +1450,7 @@
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>subscriber_widget</name>
-                                <portal_section display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
+                                <portal_section display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-01-27 05:59:31</sys_created_on>
                                 <sys_id>9fa2b6881391120023f750f82244b0ed</sys_id>
@@ -1466,7 +1466,7 @@
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                 <height>17</height>
-                <portal_widget display_value="Created 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_widget>
+                <portal_widget display_value="Creado 27/01/2016 06:59:31">d3a2b6881391120023f750f82244b0ef</portal_widget>
                 <posx>0</posx>
                 <posy>50</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1488,7 +1488,7 @@
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                 <height>10</height>
-                <portal_widget display_value="Created 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_widget>
+                <portal_widget display_value="Creado 27/01/2016 06:59:30">53a2b6881391120023f750f82244b0eb</portal_widget>
                 <posx>0</posx>
                 <posy>0</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1510,7 +1510,7 @@
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                 <height>10</height>
-                <portal_widget display_value="Created 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_widget>
+                <portal_widget display_value="Creado 27/01/2016 06:59:31">5ba2b6881391120023f750f82244b0ee</portal_widget>
                 <posx>8</posx>
                 <posy>20</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1532,7 +1532,7 @@
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                 <height>17</height>
-                <portal_widget display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
+                <portal_widget display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
                 <posx>6</posx>
                 <posy>101</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1554,7 +1554,7 @@
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                 <height>17</height>
-                <portal_widget display_value="Created 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_widget>
+                <portal_widget display_value="Creado 27/01/2016 06:59:31">dba2b6881391120023f750f82244b0f2</portal_widget>
                 <posx>6</posx>
                 <posy>84</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
@@ -1576,7 +1576,7 @@
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
                 <height>10</height>
-                <portal_widget display_value="Created 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_widget>
+                <portal_widget display_value="Creado 27/01/2016 06:59:31">5fa2b6881391120023f750f82244b0ec</portal_widget>
                 <posx>4</posx>
                 <posy>10</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>

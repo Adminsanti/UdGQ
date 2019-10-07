@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_grid_canvas" unload_date="2019-10-07 15:02:55">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_grid_canvas" unload_date="2019-10-07 17:15:38">
     <sys_grid_canvas action="INSERT_OR_UPDATE">
-        <legacy_page display_value="PA New Tab">100aa77637d4eb401acdf01643990e97</legacy_page>
+        <legacy_page display_value="Nueva pestaña de PA">100aa77637d4eb401acdf01643990e97</legacy_page>
         <name>PA New Tab</name>
         <sys_class_name>sys_grid_canvas</sys_class_name>
         <sys_created_by>u3000070</sys_created_by>

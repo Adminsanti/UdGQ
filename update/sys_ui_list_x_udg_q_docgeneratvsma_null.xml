@@ -87,7 +87,7 @@
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-09-18 15:24:10</sys_updated_on>
             <sys_user/>
-            <view display_value="Default view" name="NULL">Default view</view>
+            <view display_value="Vista predeterminada" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column/>
-        <sp_widget display_value="Header Menu">5ef595c1cb12020000f8d856634c9c6e</sp_widget>
+        <sp_widget display_value="Menú de encabezado">5ef595c1cb12020000f8d856634c9c6e</sp_widget>
         <sys_class_name>sp_instance_menu</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-05 10:16:21</sys_created_on>

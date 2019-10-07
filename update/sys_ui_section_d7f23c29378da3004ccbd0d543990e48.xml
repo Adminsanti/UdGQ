@@ -8,7 +8,7 @@
             <sys_id>381ef4541b6faf405fab4002cd4bcb00</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_ui_section caption="Dates" display_value="Fechas" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-02-06 17:25:36</sys_updated_on>
             <sys_user/>
@@ -22,7 +22,7 @@
             <sys_id>b81ef4541b6faf405fab4002cd4bcb00</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_ui_section caption="Dates" display_value="Fechas" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-02-06 17:25:36</sys_updated_on>
             <sys_user/>
@@ -36,7 +36,7 @@
             <sys_id>3c1ef4541b6faf405fab4002cd4bcb00</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_ui_section caption="Dates" display_value="Fechas" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-02-06 17:25:36</sys_updated_on>
             <sys_user/>
@@ -50,7 +50,7 @@
             <sys_id>bc1ef4541b6faf405fab4002cd4bcb00</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_ui_section caption="Dates" display_value="Fechas" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-02-06 17:25:36</sys_updated_on>
             <sys_user/>
@@ -64,7 +64,7 @@
             <sys_id>301ef4541b6faf405fab4002cd4bcb01</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_ui_section caption="Dates" display_value="Fechas" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-02-06 17:25:36</sys_updated_on>
             <sys_user/>
@@ -78,7 +78,7 @@
             <sys_id>b01ef4541b6faf405fab4002cd4bcb01</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_ui_section caption="Dates" display_value="Fechas" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-02-06 17:25:36</sys_updated_on>
             <sys_user/>
@@ -92,7 +92,7 @@
             <sys_id>341ef4541b6faf405fab4002cd4bcb01</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
+            <sys_ui_section caption="Dates" display_value="Fechas" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-02-06 17:25:36</sys_updated_on>
             <sys_user/>
@@ -122,7 +122,7 @@
             <sys_updated_on>2018-10-09 07:12:36</sys_updated_on>
             <sys_user/>
             <title>false</title>
-            <view display_value="Default view" name="NULL">Default view</view>
+            <view display_value="Vista predeterminada" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_section>
     </sys_ui_section>

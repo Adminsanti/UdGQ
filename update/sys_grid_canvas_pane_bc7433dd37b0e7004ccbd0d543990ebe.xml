@@ -2,7 +2,7 @@
     <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
         <grid_canvas display_value="PMO Director Dashboard">f47433dd37b0e7004ccbd0d543990eb3</grid_canvas>
         <height>17</height>
-        <portal_widget display_value="Created 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
+        <portal_widget display_value="Creado 27/01/2016 06:59:31">d7a2b6881391120023f750f82244b0f4</portal_widget>
         <posx>6</posx>
         <posy>101</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
