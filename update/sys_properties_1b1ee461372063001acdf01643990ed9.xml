@@ -12,7 +12,7 @@
         <sys_created_on>2018-09-14 10:22:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1b1ee461372063001acdf01643990ed9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>x_udg_q.uidSGQvisivilitatTotal</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -20,10 +20,23 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_properties_1b1ee461372063001acdf01643990ed9</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-09-16 08:59:56</sys_updated_on>
+        <sys_updated_on>2019-10-08 11:32:20</sys_updated_on>
         <type>string</type>
-        <value>4baaafcddba8eb401f06adc3ca9619d8</value>
+        <value/>
         <write_roles>x_udg_q.Admin</write_roles>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=1b1ee461372063001acdf01643990ed9"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey name="x_udg_q.uidSGQvisivilitatTotal" tablename="sys_properties">1b1ee461372063001acdf01643990ed9</documentkey>
+        <fieldname>description</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-10-08 11:32:20</sys_created_on>
+        <sys_id>412118761b9480105fab4002cd4bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-10-08 11:32:20</sys_updated_on>
+        <tablename>sys_properties</tablename>
+        <value>SGQ que activa la Visivilitat Total</value>
+    </sys_translated_text>
 </record_update>

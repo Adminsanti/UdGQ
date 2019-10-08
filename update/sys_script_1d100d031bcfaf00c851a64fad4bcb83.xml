@@ -29,10 +29,8 @@
         <role_conditions/>
         <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
 
-if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser().hasRole('admin')) {	
-	current.addQuery("sgq="+SGQpref+"^ORcompartitLIKE"+SGQpref);
-	//current.addQuery("state!=-5^ORassigned_to="+gs.getUserID());
-}
+if ( !gs.getUser().hasRole('admin')) current.addQuery("sgq="+SGQpref+"^ORcompartitLIKE"+SGQpref);
+
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -41,7 +39,7 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser()
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1d100d031bcfaf00c851a64fad4bcb83</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>SGQ query per Objectiu</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -50,9 +48,22 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser()
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_1d100d031bcfaf00c851a64fad4bcb83</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-06-14 07:30:23</sys_updated_on>
+        <sys_updated_on>2019-10-08 11:33:45</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=1d100d031bcfaf00c851a64fad4bcb83"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>1d100d031bcfaf00c851a64fad4bcb83</documentkey>
+        <fieldname>message</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-10-08 11:32:04</sys_created_on>
+        <sys_id>5111d0761b9480105fab4002cd4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-10-08 11:32:04</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
 </record_update>
