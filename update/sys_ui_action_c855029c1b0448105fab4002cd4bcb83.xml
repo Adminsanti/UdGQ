@@ -28,8 +28,9 @@
         <order>100</order>
         <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
 var SGQprefCodi=gs.getUser().getPreference('qualitat.sgqActualCodi');
-var grSGQ= new GlideRecord ('x_udg_q_sgq');
+var grSGQ= new GlideRecord('x_udg_q_sgq');
 grSGQ.get(SGQpref);
+var ObjUtils= new ObjectiuUtils();
 
 var grDG = new GlideRecord ('x_udg_q_docgeneratvsma');
 grDG.initialize();
@@ -40,16 +41,13 @@ grPlantilla.get(current.file); //GlideRecord del fitxer
 var gsaPlantilla = new GlideSysAttachment();
 var contingut=gsaPlantilla.getContent(grPlantilla);
 
-
 var rtf1= new rtf(contingut);
 rtf1.replace (/##NomSGQ##/g,grSGQ.nom);
 rtf1.replace (/##LlistaTitulacions##/g,rtf1.llista(new Sgq().getLlistaNomsTitulacionsSgqActual()));
-
-  
-  
-var filtre=rtf1.getContent().match(/##FiltreMillora#.+##/g).toString().replace("##FiltreMillora#",'').replace("##",'');
-rtf1.replace (/##FiltreMillora#.+##/g,''); // Netejar filtre
-
+ 
+var filtre=rtf1.getTagParameter("FiltreMillora");
+rtf1.clearTag ('FiltreMillora'); // Netejar filtre
+rtf1.replace ('##ResumMillora##',ObjUtils.getRtfResumMillora(filtre,SGQpref));
 
 if (rtf1.getContent().match(/##TSubestandard#.\..##/g)) {
 	var subestandards= rtf1.getContent().match(/##TSubestandard#.\..##/g).toString().match(/.\../g);
@@ -64,13 +62,10 @@ if (rtf1.getContent().match(/##DSubestandard#.\..##/g)) {
 	var Dsubestandards= rtf1.getContent().match(/##DSubestandard#.\..##/g).toString().match(/.\../g);
 	for (index=0; index<Dsubestandards.length; ++index) {
 		var sysidS = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
-		var Obj= new ObjectiuUtils();
-		var textstring= Obj.getRtfperSubestandard(sysidS,filtre,SGQpref);
+		var textstring= ObjUtils.getRtfperSubestandard(sysidS,filtre,SGQpref);
 		rtf1.replace("##DSubestandard#"+Dsubestandards[index]+"##",textstring);
 	}	
 }
-
-//var numDoc=grDG.number.slice(3,10);
 var newDocAttachment = new GlideSysAttachment();
 var newDocAttachment_sys_id= newDocAttachment.write(grDG,grDG.number+".rtf","text/rtf",rtf1.escape().getContent());
 grDG.fitxer=newDocAttachment_sys_id;
@@ -80,8 +75,7 @@ grDG.tipus="Seguiment";
 grDG.plantilla=current.sys_id;
 grDG.filtre=filtre;
 grDG.update();
-gs.addInfoMessage("Generat nou document "+grDG.number+" "+grDG.nom);
-if (filtre !="") gs.addInfoMessage("Aplicat filtre "+filtre);
+gs.addInfoMessage("Generat <B>"+grDG.number+"</B> - "+grDG.nom+"  (filtre: "+filtre+")");
 //action.setRedirectURL(current);  //Roman a la plantilla
 action.setRedirectURL(grDG); ]]></script>
         <show_insert>false</show_insert>
@@ -95,7 +89,7 @@ action.setRedirectURL(grDG); ]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c855029c1b0448105fab4002cd4bcb83</sys_id>
-        <sys_mod_count>187</sys_mod_count>
+        <sys_mod_count>201</sys_mod_count>
         <sys_name>Genera Doc</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -104,7 +98,7 @@ action.setRedirectURL(grDG); ]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_c855029c1b0448105fab4002cd4bcb83</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-10-08 11:47:00</sys_updated_on>
+        <sys_updated_on>2019-10-08 17:09:13</sys_updated_on>
         <table>x_udg_q_plantillavsma</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

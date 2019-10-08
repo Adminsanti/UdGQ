@@ -145,7 +145,7 @@ ObjectiuUtils.prototype = {
 			text+=rtfstring.rowstart(["7700","9000","9700"],36);
 			text+="\\b "+grObj.number+" \\b0 - "+grObj.short_description+"\\intbl\\ql\\cell\n";
 			text+=textestatO(grObj.state)+"\\par ("+grObj.sgq.getDisplayValue()+")\\intbl\\ql\\cell\n";
-			text+=grObj.assoliment+"%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
+			text+=parseInt(grObj.assoliment)+"%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
 			text+=rtfstring.rowend();
 			
 			text+=rtfstring.rowstart(["9700"]); //comença filera de valoració
@@ -155,15 +155,55 @@ ObjectiuUtils.prototype = {
 			if (grObj.valoracio =="") text+="{\\cf6 Manca Valoració}"+"\\intbl\\ql\\cell\n";
 			text+=rtfstring.rowend();
 			
+			var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
+			grM2m.addQuery('objectiu_millora',grObj.sys_id);
+			grM2m.query();
+			while (grM2m.next()) {
+				if (grM2m.accio_millora.state != -5) {
+					text+=rtfstring.rowstart(["7700","9000","9700"]);
+					text+="  \\b   "+grM2m.accio_millora.number+" \\b0 - "+grM2m.accio_millora.short_description+"\\intbl\\ql\\cell\n";
+					text+=textestatA(grM2m.accio_millora.state)+"\\par ("+grM2m.accio_millora.sgq.getDisplayValue()+")\\intbl\\ql\\cell\n";
+					text+=parseInt(grM2m.accio_millora.percentatge)+"%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
+					text+=rtfstring.rowend();
+				}
+			}
+			text+=rtfstring.tableend();
+			text+="\\par\n";
+		}
+		return text;
+	},
+	
+	getRtfResumMillora: function(filtre,sgq) {
+		
+		new x_udg_q.log("Generant informe resum per "+sgq);
+		var text="";
+		var col=[0,7000,7800,8300,8600,9200,9500,9900]; 
+		var grObj = new GlideRecord ('x_udg_q_objectiumillora');
+		var rtfstring = new rtf("");
+		grObj.addQuery("state!=-5^active=true");
+		grObj.addQuery('sgq='+sgq+'^ORcompartitLIKE'+sgq);
+		if (typeof filtre !== 'undefined' && filtre!="" ) grObj.addQuery(filtre);
+		grObj.query();
+		text+=rtfstring.tablestart();
+		while (grObj.next()) {
+			col[6]=parseInt(col[5]+(((col[7]-col[5])*grObj.assoliment)/100));
+			//gs.addInfoMessage("col 5,6 i 7: "+col[5]+" "+col[6]+" "+col[7]);
+			text+=rtfstring.rowstart([col[1],col[4],col[5],col[6],col[7]],36);
+			text+="\\b "+grObj.number+" \\b0 - "+grObj.short_description+"\\ql\\cell\n";
+			if (grObj.state==3) {
+				text+=grObj.tancament.getDisplayValue()+"\\ql\\cell\n";
+				} else {
+					text+="data\\intbl\\ql\\cell\n";
+				}
+			text+=parseInt(grObj.assoliment)+"%\\qr\\cell\n";
 			
+			//No sabem perquè no funcionen aquestes linies
+			//text+=" AA \\ql\\cell\n";
+			//text+="BB \\ql\\cell\n";
+			
+			text+=rtfstring.rowend();
 			
 			/*
-			if (grObj.description !="") {
-				text+=rtfstring.rowstart(["9700"]);
-				text+=grObj.description+"\\intbl\\ql\\cell\n"; // \ql per tornar a alinear a l'esquerra
-				text+=rtfstring.rowend();
-			}
-			*/
 			var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
 			grM2m.addQuery('objectiu_millora',grObj.sys_id);
 			grM2m.query();
@@ -176,17 +216,11 @@ ObjectiuUtils.prototype = {
 					text+=rtfstring.rowend();
 				}
 				
-			/*if (grM2m.accio_millora.description !="") {
-				text+=rtfstring.rowstart(["9700"]);
-				text+=grM2m.accio_millora.description+"\\intbl\\ql\\cell\n"; // \ql per tornar a alinear a l'esquerra
-				text+=rtfstring.rowend();
 			}
-			*/
-			}
-			text+=rtfstring.tableend();
-			text+="\\par\n";
+			*/	
 		}
-		return text;
+		text+=rtfstring.tableend();
+		return text;			
 	},
 	
 	type: 'ObjectiuUtils'
@@ -196,7 +230,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>208</sys_mod_count>
+        <sys_mod_count>236</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -204,6 +238,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-10-08 11:50:04</sys_updated_on>
+        <sys_updated_on>2019-10-08 17:12:09</sys_updated_on>
     </sys_script_include>
 </record_update>
