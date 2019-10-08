@@ -2,7 +2,7 @@
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2018-12-19 10:04:53</change_date>
         <changed_by display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</changed_by>
-        <content display_value="Comprobación de tipo de contenido de SOAP">8b8ff7e311632200964f016bcc1bddbe</content>
+        <content display_value="SOAP Content Type Checking">8b8ff7e311632200964f016bcc1bddbe</content>
         <related_change_log_entry/>
         <related_task_entry/>
         <sys_class_name>gsw_change_log</sys_class_name>

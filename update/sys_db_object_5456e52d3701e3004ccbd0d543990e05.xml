@@ -16,7 +16,7 @@
         <number_ref display_value="ACC">35c64902db59af009fd1f57eaf9619f9</number_ref>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Tarea" name="task">28cc135137c022001acdf01643990efe</super_class>
+        <super_class display_value="Task" name="task">28cc135137c022001acdf01643990efe</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>

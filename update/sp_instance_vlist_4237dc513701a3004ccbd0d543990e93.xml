@@ -18,7 +18,7 @@
         <size>md</size>
         <sp_column display_value="1">df8914513701a3004ccbd0d543990eeb</sp_column>
         <sp_page/>
-        <sp_widget display_value="Lista simple">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
         <sys_class_name>sp_instance_vlist</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-08 10:32:47</sys_created_on>

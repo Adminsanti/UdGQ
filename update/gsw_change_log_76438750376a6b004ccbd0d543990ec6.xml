@@ -2,7 +2,7 @@
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2018-12-19 10:04:51</change_date>
         <changed_by display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</changed_by>
-        <content display_value="Seguridad de la aplicación móvil">08651e9adb580300f3b3546fdf961904</content>
+        <content display_value=" Mobile Application Security">08651e9adb580300f3b3546fdf961904</content>
         <related_change_log_entry display_value="19/12/2018 11:04:51">be438750376a6b004ccbd0d543990ec2</related_change_log_entry>
         <related_task_entry/>
         <sys_class_name>gsw_change_log</sys_class_name>

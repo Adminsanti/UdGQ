@@ -2,7 +2,7 @@
     <gsw_change_log action="INSERT_OR_UPDATE">
         <change_date>2018-12-19 10:04:58</change_date>
         <changed_by display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</changed_by>
-        <content display_value="Compruebe las llamadas de paquetes de listas blancas*">f2d7521edb580300f3b3546fdf96198d</content>
+        <content display_value="Check Whitelist Package Calls *">f2d7521edb580300f3b3546fdf96198d</content>
         <related_change_log_entry/>
         <related_task_entry/>
         <sys_class_name>gsw_change_log</sys_class_name>

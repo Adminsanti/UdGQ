@@ -136,7 +136,7 @@
             <sys_updated_on>2019-01-17 10:08:14</sys_updated_on>
             <sys_user/>
             <title>false</title>
-            <view display_value="Vista predeterminada" name="NULL">Default view</view>
+            <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_section>
     </sys_ui_section>

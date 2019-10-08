@@ -19,7 +19,7 @@
         <chart_title_y_position>0</chart_title_y_position>
         <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
-        <color_palette display_value="UI14 predeterminado">aa558ab3d7732100fa6c0c12ce610377</color_palette>
+        <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
         <column>accions</column>
         <compute_percent>aggregate</compute_percent>
@@ -60,7 +60,7 @@
         <list_ui_view/>
         <location_field/>
         <lower_limit/>
-        <map display_value="Mundo">93b8a3a2d7101200bd4a4ebfae61033a</map>
+        <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
         <orderby_list/>
         <other_threshold>-2</other_threshold>

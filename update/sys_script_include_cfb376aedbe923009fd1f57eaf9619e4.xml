@@ -125,7 +125,7 @@ ObjectiuUtils.prototype = {
 		function textestatA(estat) {
 			if (estat==-5) return "Esborrany";
 			if (estat==2) return "En curs";
-			if (estat==3) return "Complert";
+			if (estat==3) return "Complerta";
 			return "ERROR!!!!";
 		}
 		
@@ -137,19 +137,19 @@ ObjectiuUtils.prototype = {
 		grObj.query();
 		var text="";
 		while (grObj.next()) {
-			text+=rtfstring.tablestart();
 
-			text+=rtfstring.rowstart(["8000","9000","9700"],3);
+			text+=rtfstring.tablestart();
+			text+=rtfstring.rowstart(["8000","8700","9700"],4);
 			text+="\\b "+grObj.number+" \\b0 - "+grObj.short_description+"\\intbl\\ql\\cell\n";
 			text+=textestatO(grObj.state)+"\\par ("+grObj.sgq.getDisplayValue()+")\\intbl\\ql\\cell\n";
 			text+=grObj.assoliment+"%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
 			text+=rtfstring.rowend();
 			
-			text+=rtfstring.rowstart(["9700"],0); //comença filera de valoració
+			text+=rtfstring.rowstart(["9700"]); //comença filera de valoració
 			//if (grObj.valoracio =="") {text+="Manca Valoració";}
 			//if (grObj.valoracio !="" && gr.valorat ) {text+="Valoració vençuda";}
 			if (grObj.valoracio !="") {text+="Valoració: "+grObj.valoracio+"\\intbl\\ql\\cell\n";}
-			if (grObj.valoracio =="") text+="Manca Valoració"+"\\intbl\\ql\\cell\n";
+			if (grObj.valoracio =="") text+="{\\cf6 Manca Valoració}"+"\\intbl\\ql\\cell\n";
 			text+=rtfstring.rowend();
 			
 			
@@ -166,7 +166,7 @@ ObjectiuUtils.prototype = {
 			grM2m.query();
 			while (grM2m.next()) {
 				if (grM2m.accio_millora.state != -5) {
-					text+=rtfstring.rowstart(["8000","9000","9700"]);
+					text+=rtfstring.rowstart(["8000","8700","9700"]);
 					text+="\\b   "+grM2m.accio_millora.number+" \\b0 - "+grM2m.accio_millora.short_description+"\\intbl\\ql\\cell\n";
 					text+=textestatA(grM2m.accio_millora.state)+"\\par ("+grM2m.accio_millora.sgq.getDisplayValue()+")\\intbl\\ql\\cell\n";
 					text+=grM2m.accio_millora.percentatge+"%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
@@ -193,7 +193,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>182</sys_mod_count>
+        <sys_mod_count>200</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -201,6 +201,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-10-07 16:17:00</sys_updated_on>
+        <sys_updated_on>2019-10-08 09:40:27</sys_updated_on>
     </sys_script_include>
 </record_update>
