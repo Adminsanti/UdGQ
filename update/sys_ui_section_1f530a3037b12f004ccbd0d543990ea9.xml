@@ -1,100 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="1f530a3037b12f004ccbd0d543990ea9" sys_domain="global" table="x_udg_q_funcio" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>nom</element>
+            <element>tipus</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>c35fb6481bb4bb00c851a64fad4bcbb5</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>d054e19b1bd40410c851a64fad4bcb8d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>tipus</element>
-            <position>1</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>475fb6481bb4bb00c851a64fad4bcbb5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>usuari</element>
-            <position>2</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>c75fb6481bb4bb00c851a64fad4bcbb5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>4b5fb6481bb4bb00c851a64fad4bcbb5</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>9854e19b1bd40410c851a64fad4bcb8d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sgq</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>cb5fb6481bb4bb00c851a64fad4bcbb5</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>1c54e19b1bd40410c851a64fad4bcb8d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>5</position>
+            <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>4f5fb6481bb4bb00c851a64fad4bcbb5</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>9c54e19b1bd40410c851a64fad4bcb8d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nom</element>
+            <position>4</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>1054e19b1bd40410c851a64fad4bcb8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>usuari</element>
+            <position>5</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>9054e19b1bd40410c851a64fad4bcb8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>membres_titol_personal</element>
             <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>cf5fb6481bb4bb00c851a64fad4bcbb5</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>1454e19b1bd40410c851a64fad4bcb8e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>membres_funcions</element>
             <position>7</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>435fb6481bb4bb00c851a64fad4bcbb6</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>9454e19b1bd40410c851a64fad4bcb8e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>membres</element>
             <position>8</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>c35fb6481bb4bb00c851a64fad4bcbb6</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>1854e19b1bd40410c851a64fad4bcb8e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>suport</element>
             <position>9</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>475fb6481bb4bb00c851a64fad4bcbb6</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>9854e19b1bd40410c851a64fad4bcb8e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>.begin_split</element>
             <position>10</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>c75fb6481bb4bb00c851a64fad4bcbb6</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>1c54e19b1bd40410c851a64fad4bcb8e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>activa</element>
             <position>11</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>4b5fb6481bb4bb00c851a64fad4bcbb6</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>9c54e19b1bd40410c851a64fad4bcb8e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>acces</element>
             <position>12</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>cb5fb6481bb4bb00c851a64fad4bcbb6</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>1054e19b1bd40410c851a64fad4bcb8f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -186,57 +186,15 @@
             <element>.split</element>
             <position>13</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>4f5fb6481bb4bb00c851a64fad4bcbb6</sys_id>
+            <sys_created_on>2019-10-10 06:52:42</sys_created_on>
+            <sys_id>9054e19b1bd40410c851a64fad4bcb8f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
+            <sys_updated_on>2019-10-10 06:52:42</sys_updated_on>
             <sys_user/>
             <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>observador</element>
-            <position>14</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>cf5fb6481bb4bb00c851a64fad4bcbb6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>millora</element>
-            <position>15</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>435fb6481bb4bb00c851a64fad4bcbb7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>pla</element>
-            <position>16</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-04-09 11:30:28</sys_created_on>
-            <sys_id>c35fb6481bb4bb00c851a64fad4bcbb7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-04-09 11:30:28</sys_updated_on>
-            <sys_user/>
-            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
