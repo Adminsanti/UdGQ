@@ -151,16 +151,16 @@ ObjectiuUtils.prototype = {
 			text+=rtfstring.rowstart(["9700"]); //comença filera de valoració
 			//if (grObj.valoracio !="" && gr.valorat ) {text+="Valoració vençuda";}
 			
-			var gdt = new GlideDateTime();
-			var year= gdt.getYearLocalTime();
-			gdt.setYearLocalTime(gdt.getYearLocalTime()-1);
+			var venciment = new GlideDateTime();
+			venciment.setYearLocalTime(venciment.getYearLocalTime()-1); // venciment fa un any
 			var valorat = new GlideDateTime(grObj.valorat);
 			
 			if (grObj.valoracio !="") {
-				if (valorat>gdt) text+="{Valoració: ";
+				if (valorat>venciment) text+="{Valoració: ";
 				else text+="{\\cf6 Valoració vençuda: ";
 				text+=grObj.valoracio+"}\\intbl\\ql\\cell\n";
-			} else text+="{\\cf6 Manca Valoració}"+"\\intbl\\ql\\cell\n";
+			} 
+			else text+="{\\cf6 Manca Valoració}"+"\\intbl\\ql\\cell\n";
 			
 			text+=rtfstring.rowend();
 			
@@ -195,7 +195,7 @@ ObjectiuUtils.prototype = {
 		grObj.query();
 		text+=rtfstring.tablestart();
 		while (grObj.next()) {
-			//col[6]=parseInt(col[5]+(((col[7]-col[5]+1)*grObj.assoliment)/100));
+			col[6]=parseInt(col[5]+(((col[7]-col[5]+1)*grObj.assoliment)/100));
 			//gs.addInfoMessage("col 5,6 i 7: "+col[5]+" "+col[6]+" "+col[7]);
 			
 			text+=rtfstring.rowstart([col[1],col[4],col[5],col[7]],36);
@@ -207,10 +207,9 @@ ObjectiuUtils.prototype = {
 				}
 			text+=parseInt(grObj.assoliment)+"\\qr\\cell\n";
 			
-			//No sabem com fer cel·les anidades text+="\\itap2\\ql{HOLA}\\nestcell\n";
+		//No sabem com fer cel·les anidades text+="\\itap2\\ql{HOLA}\\nestcell\n";
 			
-			text+="ADEU2\\cell\n";
-				
+			text+="GRAFIC\\cell\n";	
 			text+=rtfstring.rowend();
 			
 			/*
@@ -240,7 +239,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>261</sys_mod_count>
+        <sys_mod_count>265</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -248,6 +247,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-10-10 17:26:50</sys_updated_on>
+        <sys_updated_on>2019-10-10 17:34:59</sys_updated_on>
     </sys_script_include>
 </record_update>
