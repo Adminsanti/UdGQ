@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="DELETE">
+        <legacy_page display_value="PA New Tab 6">d1588b2b1b2d00105fab4002cd4bcb75</legacy_page>
+        <name>PA New Tab 6</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-12-12 12:06:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>95588b2b1b2d00105fab4002cd4bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA New Tab 6</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_grid_canvas_95588b2b1b2d00105fab4002cd4bcb76</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-12-12 12:06:38</sys_updated_on>
+    </sys_grid_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_grid_canvas_95588b2b1b2d00105fab4002cd4bcb76</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas"><sys_grid_canvas action="INSERT_OR_UPDATE"><legacy_page display_value="PA New Tab 6">d1588b2b1b2d00105fab4002cd4bcb75</legacy_page><name>PA New Tab 6</name><sys_class_name>sys_grid_canvas</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2019-12-12 12:06:38</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>95588b2b1b2d00105fab4002cd4bcb76</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PA New Tab 6</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_grid_canvas_95588b2b1b2d00105fab4002cd4bcb76</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2019-12-12 12:06:38</sys_updated_on></sys_grid_canvas></record_update>]]></payload>
+        <payload_hash>1223294294</payload_hash>
+        <record_name>PA New Tab 6</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-12-12 12:06:38</sys_created_on>
+        <sys_id>55588b2b1b2d00105fab4002cd4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16efa00fc7d0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-12-12 12:06:38</sys_updated_on>
+        <type>Grid Canvas</type>
+        <update_guid>5d588b2b282d001033243441e24d7a77</update_guid>
+        <update_guid_history>5d588b2b282d001033243441e24d7a77:1223294294</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-12-12 12:12:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_grid_canvas">sys_grid_canvas</sys_db_object>
+        <sys_id>34876047cd7c48fe8b55705171d773c4</sys_id>
+        <sys_metadata>95588b2b1b2d00105fab4002cd4bcb76</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA New Tab 6</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_95588b2b1b2d00105fab4002cd4bcb76</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_95588b2b1b2d00105fab4002cd4bcb76">55588b2b1b2d00105fab4002cd4bcb78</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-12-12 12:12:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

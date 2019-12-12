@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="DELETE">
+        <dashboard display_value="Resum Objectius">0aef4faedb2d23009fd1f57eaf961966</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>6</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-12-12 12:06:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>d958cf2b1b2d00105fab4002cd4bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0aef4faedb2d23009fd1f57eaf961966</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_d958cf2b1b2d00105fab4002cd4bcb3d</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-12-12 12:06:39</sys_updated_on>
+        <tab display_value="New Tab 6">d9588b2b1b2d00105fab4002cd4bcb78</tab>
+    </pa_m2m_dashboard_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>pa_m2m_dashboard_tabs_d958cf2b1b2d00105fab4002cd4bcb3d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs"><pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE"><dashboard display_value="Resum Objectius">0aef4faedb2d23009fd1f57eaf961966</dashboard><home>false</home><homepage/><order>6</order><sys_class_name>pa_m2m_dashboard_tabs</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2019-12-12 12:06:39</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>d958cf2b1b2d00105fab4002cd4bcb3d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>0aef4faedb2d23009fd1f57eaf961966</sys_name><sys_overrides/><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>pa_m2m_dashboard_tabs_d958cf2b1b2d00105fab4002cd4bcb3d</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2019-12-12 12:06:39</sys_updated_on><tab display_value="New Tab 6">d9588b2b1b2d00105fab4002cd4bcb78</tab></pa_m2m_dashboard_tabs></record_update>]]></payload>
+        <payload_hash>-673309676</payload_hash>
+        <record_name>0aef4faedb2d23009fd1f57eaf961966</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-12-12 12:06:39</sys_created_on>
+        <sys_id>dd58cf2b1b2d00105fab4002cd4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16efa00fcd00000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-12-12 12:06:39</sys_updated_on>
+        <type>Dashboard Tab</type>
+        <update_guid>d558cf2b012d00109fca7f0adf654e3f</update_guid>
+        <update_guid_history>d558cf2b012d00109fca7f0adf654e3f:-673309676</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12/12/2019 13:12:37">f8b943eb1b2d00105fab4002cd4bcb24</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-12-12 12:12:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="pa_m2m_dashboard_tabs">pa_m2m_dashboard_tabs</sys_db_object>
+        <sys_id>9e2aa621b66b4d2ea6830a02df9115c9</sys_id>
+        <sys_metadata>d958cf2b1b2d00105fab4002cd4bcb3d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0aef4faedb2d23009fd1f57eaf961966</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="Resum Objectius">0aef4faedb2d23009fd1f57eaf961966</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>pa_m2m_dashboard_tabs_d958cf2b1b2d00105fab4002cd4bcb3d</sys_update_name>
+        <sys_update_version display_value="pa_m2m_dashboard_tabs_d958cf2b1b2d00105fab4002cd4bcb3d">dd58cf2b1b2d00105fab4002cd4bcb3f</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-12-12 12:12:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
