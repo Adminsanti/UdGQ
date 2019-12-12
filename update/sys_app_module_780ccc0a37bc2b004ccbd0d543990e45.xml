@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>false</active>
-        <application display_value="VSMA">a9a4804237bc2b004ccbd0d543990e20</application>
+        <application display_value="Recomanacions VSMA">d766791adb4e2f009fd1f57eaf961935</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -30,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>780ccc0a37bc2b004ccbd0d543990e45</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Recomanacions no ateses</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_780ccc0a37bc2b004ccbd0d543990e45</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-30 13:12:34</sys_updated_on>
+        <sys_updated_on>2019-12-12 12:52:32</sys_updated_on>
         <timeline_page/>
         <title>Recomanacions no ateses</title>
         <uncancelable>false</uncancelable>
