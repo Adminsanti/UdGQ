@@ -31,8 +31,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e6f26e16db99ef009fd1f57eaf9619a4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Meus Objectius</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Objectius meus</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -40,9 +40,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_e6f26e16db99ef009fd1f57eaf9619a4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-12 11:18:11</sys_updated_on>
+        <sys_updated_on>2019-12-12 12:41:39</sys_updated_on>
         <timeline_page/>
-        <title>Meus Objectius</title>
+        <title>Objectius meus</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

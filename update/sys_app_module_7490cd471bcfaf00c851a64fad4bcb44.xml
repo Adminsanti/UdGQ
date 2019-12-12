@@ -31,8 +31,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7490cd471bcfaf00c851a64fad4bcb44</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Meves Accions</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Accions meves</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -40,9 +40,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_7490cd471bcfaf00c851a64fad4bcb44</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-12 11:18:06</sys_updated_on>
+        <sys_updated_on>2019-12-12 12:42:02</sys_updated_on>
         <timeline_page/>
-        <title>Meves Accions</title>
+        <title>Accions meves</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
