@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
     <sys_process_flow action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_udg_q_recomanacions">estat=5^EQ<item endquery="false" field="estat" goto="false" newquery="false" operator="=" or="false" value="5"/>
+        <condition table="x_udg_q_recomanacions">estat=5^EQ<item display_value="Tancada" endquery="false" field="estat" goto="false" newquery="false" operator="=" or="false" value="5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description/>

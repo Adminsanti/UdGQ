@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2019-10-10 17:37:56">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2019-12-12 11:46:27">
     <sys_portal_page action="INSERT_OR_UPDATE">
         <layout/>
         <order/>
@@ -37,30 +37,6 @@
                 <sys_mod_count>1</sys_mod_count>
                 <sys_updated_by>adminsanti</sys_updated_by>
                 <sys_updated_on>2019-01-31 12:04:00</sys_updated_on>
-                <related_items_node>
-                    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
-                        <grid_canvas display_value="PA New Tab">c8823e68dba5a3009fd1f57eaf961991</grid_canvas>
-                        <height>13</height>
-                        <portal_widget display_value="Created 31/01/2019 13:04:00">53ea74161b936b405fab4002cd4bcb24</portal_widget>
-                        <posx>0</posx>
-                        <posy>6</posy>
-                        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
-                        <sys_created_by>adminsanti</sys_created_by>
-                        <sys_created_on>2019-01-31 12:04:00</sys_created_on>
-                        <sys_customer_update>false</sys_customer_update>
-                        <sys_id>9fea74161b936b405fab4002cd4bcb26</sys_id>
-                        <sys_mod_count>3</sys_mod_count>
-                        <sys_name>c8823e68dba5a3009fd1f57eaf961991</sys_name>
-                        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
-                        <sys_policy/>
-                        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-                        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-                        <sys_update_name>sys_grid_canvas_pane_9fea74161b936b405fab4002cd4bcb26</sys_update_name>
-                        <sys_updated_by>adminsanti</sys_updated_by>
-                        <sys_updated_on>2019-01-31 12:04:20</sys_updated_on>
-                        <width>6</width>
-                    </sys_grid_canvas_pane>
-                </related_items_node>
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
@@ -141,30 +117,6 @@
                 <sys_mod_count>1</sys_mod_count>
                 <sys_updated_by>adminsanti</sys_updated_by>
                 <sys_updated_on>2019-01-31 11:40:56</sys_updated_on>
-                <related_items_node>
-                    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
-                        <grid_canvas display_value="PA New Tab">c8823e68dba5a3009fd1f57eaf961991</grid_canvas>
-                        <height>6</height>
-                        <portal_widget display_value="Created 31/01/2019 12:40:56">65a5b0de1b536b405fab4002cd4bcb65</portal_widget>
-                        <posx>2</posx>
-                        <posy>0</posy>
-                        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
-                        <sys_created_by>adminsanti</sys_created_by>
-                        <sys_created_on>2019-01-31 11:40:56</sys_created_on>
-                        <sys_customer_update>false</sys_customer_update>
-                        <sys_id>a5a5f4de1b536b405fab4002cd4bcbf1</sys_id>
-                        <sys_mod_count>4</sys_mod_count>
-                        <sys_name>c8823e68dba5a3009fd1f57eaf961991</sys_name>
-                        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
-                        <sys_policy/>
-                        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-                        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-                        <sys_update_name>sys_grid_canvas_pane_a5a5f4de1b536b405fab4002cd4bcbf1</sys_update_name>
-                        <sys_updated_by>adminsanti</sys_updated_by>
-                        <sys_updated_on>2019-01-31 12:04:04</sys_updated_on>
-                        <width>2</width>
-                    </sys_grid_canvas_pane>
-                </related_items_node>
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>show_border</name>
@@ -356,30 +308,6 @@
                 <sys_updated_by>adminsanti</sys_updated_by>
                 <sys_updated_on>2018-10-31 13:03:42</sys_updated_on>
                 <related_items_node>
-                    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
-                        <grid_canvas display_value="PA New Tab">c8823e68dba5a3009fd1f57eaf961991</grid_canvas>
-                        <height>19</height>
-                        <portal_widget display_value="Created 31/10/2018 14:03:42">8d5693e0db29a3009fd1f57eaf9619e3</portal_widget>
-                        <posx>6</posx>
-                        <posy>0</posy>
-                        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
-                        <sys_created_by>adminsanti</sys_created_by>
-                        <sys_created_on>2018-10-31 13:03:42</sys_created_on>
-                        <sys_customer_update>false</sys_customer_update>
-                        <sys_id>895693e0db29a3009fd1f57eaf9619e6</sys_id>
-                        <sys_mod_count>27</sys_mod_count>
-                        <sys_name>c8823e68dba5a3009fd1f57eaf961991</sys_name>
-                        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
-                        <sys_policy/>
-                        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-                        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-                        <sys_update_name>sys_grid_canvas_pane_895693e0db29a3009fd1f57eaf9619e6</sys_update_name>
-                        <sys_updated_by>adminsanti</sys_updated_by>
-                        <sys_updated_on>2019-01-31 12:04:22</sys_updated_on>
-                        <width>6</width>
-                    </sys_grid_canvas_pane>
-                </related_items_node>
-                <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
                         <portal_section display_value="Created 31/10/2018 14:03:42">8d5693e0db29a3009fd1f57eaf9619e3</portal_section>
@@ -547,30 +475,6 @@
                 <sys_mod_count>1</sys_mod_count>
                 <sys_updated_by>adminsanti</sys_updated_by>
                 <sys_updated_on>2019-01-31 11:31:26</sys_updated_on>
-                <related_items_node>
-                    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
-                        <grid_canvas display_value="PA New Tab">c8823e68dba5a3009fd1f57eaf961991</grid_canvas>
-                        <height>6</height>
-                        <portal_widget display_value="Created 31/01/2019 12:31:26">de73f85e1b536b405fab4002cd4bcb26</portal_widget>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
-                        <sys_created_by>adminsanti</sys_created_by>
-                        <sys_created_on>2019-01-31 11:31:26</sys_created_on>
-                        <sys_customer_update>false</sys_customer_update>
-                        <sys_id>5e73f85e1b536b405fab4002cd4bcb29</sys_id>
-                        <sys_mod_count>14</sys_mod_count>
-                        <sys_name>c8823e68dba5a3009fd1f57eaf961991</sys_name>
-                        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
-                        <sys_policy/>
-                        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-                        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-                        <sys_update_name>sys_grid_canvas_pane_5e73f85e1b536b405fab4002cd4bcb29</sys_update_name>
-                        <sys_updated_by>adminsanti</sys_updated_by>
-                        <sys_updated_on>2019-01-31 12:04:04</sys_updated_on>
-                        <width>2</width>
-                    </sys_grid_canvas_pane>
-                </related_items_node>
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>

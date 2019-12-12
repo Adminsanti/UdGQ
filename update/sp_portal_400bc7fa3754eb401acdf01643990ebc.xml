@@ -21,25 +21,41 @@
         <sys_created_on>2018-09-06 08:52:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>400bc7fa3754eb401acdf01643990ebc</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>UdG Qualitat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sp_portal_400bc7fa3754eb401acdf01643990ebc</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-05 10:16:58</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-12-09 00:21:56</sys_updated_on>
         <theme display_value="UdG Qualitat Theme">8a9d60d4dbcdef009fd1f57eaf961937</theme>
         <title>UdG Qualitat</title>
+        <ts_index_group display_value="portal_index_group">2c3e7d1513c93300e618bfd63244b0d7</ts_index_group>
         <url_suffix>q</url_suffix>
     </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=400bc7fa3754eb401acdf01643990ebc"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>400bc7fa3754eb401acdf01643990ebc</documentkey>
+        <fieldname>title</fieldname>
+        <language>ca</language>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-12-09 00:21:56</sys_created_on>
+        <sys_id>0d4a0d62dbe10010ccd95bd05b9619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-12-09 00:21:56</sys_updated_on>
+        <tablename>sp_portal</tablename>
+        <value>UdG Qualitat</value>
+    </sys_translated_text>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color>#0</average_image_color>
         <chunk_size_bytes>734003</chunk_size_bytes>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
         <file_name>logo</file_name>
+        <hash/>
         <image_height>204</image_height>
         <image_width>300</image_width>
         <size_bytes>36301</size_bytes>

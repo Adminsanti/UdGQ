@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_udg_q_funcio">tipus=Unipersonal^EQ<item endquery="false" field="tipus" goto="false" newquery="false" operator="=" or="false" value="Unipersonal"/>
+        <conditions table="x_udg_q_funcio">tipus=Unipersonal^EQ<item display_value="Unipersonal" endquery="false" field="tipus" goto="false" newquery="false" operator="=" or="false" value="Unipersonal"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>

@@ -15,8 +15,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ea4505cedb19af009fd1f57eaf961984</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Objectius</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Pla de Millora</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -24,8 +24,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_application_ea4505cedb19af009fd1f57eaf961984</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-11 17:07:33</sys_updated_on>
-        <title>Objectius</title>
+        <sys_updated_on>2019-12-12 10:46:28</sys_updated_on>
+        <title>Pla de Millora</title>
         <view_name/>
     </sys_app_application>
 </record_update>

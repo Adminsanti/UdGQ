@@ -25,4 +25,5 @@
         <sys_updated_on>2018-09-06 09:04:52</sys_updated_on>
         <title>UdG Qualitat Home</title>
     </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=8eadcfbe3754eb401acdf01643990e39"/>
 </record_update>

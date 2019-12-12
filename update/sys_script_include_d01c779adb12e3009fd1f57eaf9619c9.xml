@@ -3,6 +3,7 @@
         <access>public</access>
         <active>true</active>
         <api_name>x_udg_q.Banner</api_name>
+        <caller_access/>
         <client_callable>true</client_callable>
         <description>Envia tot el que cal dibuixar al Banner d' UdG Qualitat - SC Desembre 2018</description>
         <name>Banner</name>

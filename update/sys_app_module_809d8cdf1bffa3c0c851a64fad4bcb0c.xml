@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Accions de Millora">913b940637fc2b004ccbd0d543990e1a</application>
+        <application display_value="Pla de Millora">ea4505cedb19af009fd1f57eaf961984</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -14,7 +14,7 @@
         <mobile_title>Planificació actuals</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>3500</order>
+        <order>1800</order>
         <override_menu_roles>false</override_menu_roles>
         <query>show_schedule_page.do?sysparm_page_schedule_type=timeline_page&amp;sysparm_timeline_page_id=6deb889f1bffa3c0c851a64fad4bcb5f</query>
         <report/>
@@ -28,8 +28,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>809d8cdf1bffa3c0c851a64fad4bcb0c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Planificació actuals</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Planificació accions</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -37,9 +37,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_809d8cdf1bffa3c0c851a64fad4bcb0c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-28 07:51:35</sys_updated_on>
+        <sys_updated_on>2019-12-12 11:17:20</sys_updated_on>
         <timeline_page/>
-        <title>Planificació actuals</title>
+        <title>Planificació accions</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

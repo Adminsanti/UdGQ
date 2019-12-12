@@ -2,7 +2,7 @@
     <sys_report_mpivot_rule action="INSERT_OR_UPDATE">
         <bg_color>background-color:</bg_color>
         <bg_color_id/>
-        <color>background-color:#FF0000</color>
+        <color>background-color:#ff0000</color>
         <color_id display_value="Red">65b30395a9fe3dba003277a7b660b5db</color_id>
         <operator>&gt;</operator>
         <order>-1</order>
