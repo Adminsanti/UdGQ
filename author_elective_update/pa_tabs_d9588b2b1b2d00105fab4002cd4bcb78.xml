@@ -47,7 +47,7 @@
         <update_guid_history>a4688f2bf42d0010f9b3dc7cae5af93d:382209156,a4688f2bf42d0010f9b3dc7cae5af93d:382209156,a4688f2bf42d0010f9b3dc7cae5af93d:382209156,1d588b2b142d0010a021ee6098f6ab79:257438265</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 12/12/2019 13:12:37">7cb907eb1b2d00105fab4002cd4bcb2f</sys_audit_delete>
+        <sys_audit_delete display_value="">7cb907eb1b2d00105fab4002cd4bcb2f</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-12-12 12:12:37</sys_created_on>

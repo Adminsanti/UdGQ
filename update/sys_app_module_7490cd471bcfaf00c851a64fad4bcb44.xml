@@ -6,7 +6,7 @@
         <content_page/>
         <device_type/>
         <filter table="x_udg_q_acciomillora">assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=2^EQ<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
-            <item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item display_value="En curs" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
