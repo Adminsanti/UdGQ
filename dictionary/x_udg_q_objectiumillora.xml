@@ -11,7 +11,7 @@
             <choice/>
         </element>
         <element label="Implica Titulacions" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" reference_qual_condition="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" type="glide_list"/>
-        <element attributes="ref_contributions=x_udg_q_add_titulacions_actives" hint="Enllaç al document d'AQU sobre modificacions de títols" label="Implica modificació memòria" max_length="40" name="modificacio_memoria" type="boolean"/>
+        <element attributes="ref_contributions=x_udg_q_add_titulacions_actives" label="Implica modificació memòria" max_length="40" name="modificacio_memoria" type="boolean"/>
         <element choice="1" label="Procés vinculat" max_length="32" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" reference_qual_condition="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="reference">
             <choice/>
         </element>

@@ -49,7 +49,7 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-09-18 15:10:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>18c13b9d1b02cc10c851a64fad4bcb6e</sys_id>
+        <sys_id>c6f430a91b0acc10c851a64fad4bcb34</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Class</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -58,7 +58,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_docsgenerats_sys_class_name</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-30 11:53:30</sys_updated_on>
+        <sys_updated_on>2019-12-30 16:47:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
