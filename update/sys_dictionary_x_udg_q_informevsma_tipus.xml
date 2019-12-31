@@ -54,7 +54,7 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-28 07:20:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>f8b26cb91b464010c851a64fad4bcb60</sys_id>
+        <sys_id>953ac50edb3ceb801f06adc3ca961963</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Tipus</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_informevsma_tipus</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-31 10:05:50</sys_updated_on>
+        <sys_updated_on>2019-12-13 10:27:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

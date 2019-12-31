@@ -14,11 +14,13 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var linkDivOpen = '<div class="navpage-header-content" style="border: 2px solid; border-radius: 5px;"">';
 		var linkDivClose = "</div>";
 
-		var Link = "<a href='/nav_to.do?uri=%2Fsys_user.do%3Fsys_id%3D" +
-		gs.getUserID() +	"%26sysparm_view%3DSGQ%26sysparm_record_target%3Dsys_user%26sysparm_record_row%3D14%26sysparm_record_rows%3D97249%26sysparm_record_list' id='BannerQualitat' class='headerlink' style='color: inherit;text-decoration: none;border: 0px solid white;border-radius: 3px;padding:10px;vertical-align: middle; display: table-cell'>"+SGQ+"</a>";
+		var sneLink = "<a href='/nav_to.do?uri=%2Fsys_user.do%3Fsys_id%3D"
+		+
+		gs.getUserID() 
+		+	"%26sysparm_view%3DSGQ%26sysparm_record_target%3Dsys_user%26sysparm_record_row%3D14%26sysparm_record_rows%3D97249%26sysparm_record_list' id='sneLink' class='headerlink' style='color: inherit;text-decoration: none;border: 0px solid white;border-radius: 3px;padding:10px;vertical-align: middle; display: table-cell'>"+SGQ+"</a>";
 		
 		if (SGQ) { // Cal comprovar que té rol o bé return "";
-			return linkDivOpen + Link + linkDivClose;
+			return linkDivOpen + sneLink + linkDivClose;
 		} else {
 			return "";
 		}
@@ -31,7 +33,7 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2018-12-13 09:06:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d01c779adb12e3009fd1f57eaf9619c9</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Banner</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -39,6 +41,6 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_d01c779adb12e3009fd1f57eaf9619c9</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-13 10:37:05</sys_updated_on>
+        <sys_updated_on>2019-12-13 10:17:59</sys_updated_on>
     </sys_script_include>
 </record_update>

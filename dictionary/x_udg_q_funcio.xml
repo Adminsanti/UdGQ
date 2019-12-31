@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Funció" max_length="40" name="x_udg_q_funcio" type="collection">
-        <element audit="true" default="true" label="Accés" max_length="40" name="acces" type="boolean"/>
+        <element audit="true" default="true" hint="L'usuari té accés interactiu a l'eina degut a aquesta funció. Atenció: encara que no en tingui per aquesta, podria tenir-la per una altra." label="Accés" max_length="40" name="acces" type="boolean"/>
         <element audit="true" default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
         <element audit="true" label="Membres" max_length="32" name="membres" read_only="true" reference="sys_user" type="glide_list"/>
         <element audit="true" label="Membres funcions" max_length="4000" name="membres_funcions" reference="x_udg_q_funcio" type="glide_list"/>

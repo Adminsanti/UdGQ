@@ -47,14 +47,14 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass/>
+        <sizeclass>370</sizeclass>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-09 10:57:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>5cc260f91b464010c851a64fad4bcbb2</sys_id>
+        <sys_id>71413525db8da7c01f06adc3ca96199c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_udg_q_acciomillora</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_acciomillora_NULL</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-31 10:05:43</sys_updated_on>
+        <sys_updated_on>2019-12-13 10:27:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>true</text_index>
         <unique>false</unique>

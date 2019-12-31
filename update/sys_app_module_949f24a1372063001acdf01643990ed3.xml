@@ -14,7 +14,7 @@
         <mobile_title>Propietats SGQ</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>2500</order>
+        <order>2000</order>
         <override_menu_roles>false</override_menu_roles>
         <query>system_properties_ui.do?sysparm_title=Propietats SGQ&amp;sysparm_category=SGQ</query>
         <report/>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>949f24a1372063001acdf01643990ed3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Propietats aplicació SGQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_949f24a1372063001acdf01643990ed3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-13 11:31:16</sys_updated_on>
+        <sys_updated_on>2019-09-16 09:08:02</sys_updated_on>
         <timeline_page/>
         <title>Propietats aplicació SGQ</title>
         <uncancelable>false</uncancelable>

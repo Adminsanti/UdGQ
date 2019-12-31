@@ -4,7 +4,7 @@
         <allow_drag_right>false</allow_drag_right>
         <allow_dragging>false</allow_dragging>
         <auto_refresh>0</auto_refresh>
-        <condition table="x_udg_q_acciomillora">state=2^EQ<item display_value="En curs" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+        <condition table="x_udg_q_acciomillora">state=2^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <css_span_color/>

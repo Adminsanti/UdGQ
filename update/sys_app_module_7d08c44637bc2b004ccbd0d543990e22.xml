@@ -14,7 +14,7 @@
         <mobile_title>Subestandards</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_udg_q_subestandard</name>
-        <order>3200</order>
+        <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,8 +28,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d08c44637bc2b004ccbd0d543990e22</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Subestàndards</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Subestàndards VSMA</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -37,9 +37,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_7d08c44637bc2b004ccbd0d543990e22</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-13 11:33:02</sys_updated_on>
+        <sys_updated_on>2019-12-12 12:51:51</sys_updated_on>
         <timeline_page/>
-        <title>Subestàndards</title>
+        <title>Subestàndards VSMA</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
