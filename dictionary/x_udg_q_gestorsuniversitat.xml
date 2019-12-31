@@ -2,7 +2,7 @@
     <element audit="true" label="Gestor Universitat" max_length="40" name="x_udg_q_gestorsuniversitat" type="collection">
         <element default="True" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Notes" max_length="4000" name="notes" type="string"/>
-        <element display="true" label="Usuari" max_length="32" name="usuari" reference="sys_user" type="reference"/>
+        <element display="true" label="Usuari" max_length="32" name="usuari" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <index name="index">
             <element name="usuari"/>
         </index>
