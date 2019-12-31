@@ -39,8 +39,7 @@ if (!gr.get(inc)) {&#13;
         <script><![CDATA[var ListUtil = Class.create();
 ListUtil.prototype = {
 	
-	initialize: function(list) {
-		
+	initialize: function(list) {		
 		if (list !="") {
 			this._list = list.split(',');
 		} else {
@@ -57,13 +56,10 @@ ListUtil.prototype = {
  	*
  	*/
 	isInList : function(id) {
-		
 		var i = this._getIndex(id);
-		
 		return (i > -1);
 	},
-	
-	
+		
 	/* Santi 22-X-18
 	retorna true si tenen els mateixs elements
 	si hi ha una llista solament compara amb l'objecte
@@ -82,20 +78,17 @@ ListUtil.prototype = {
 			arr1 = list1.concat().sort();
 			arr2 = list2.concat().sort();
 		}
-		
-		
+			
 		for (var i = 0; i < arr1.length; i++) {
 			if (arr1[i] !== arr2[i])
 				return false;
 		}
-		return true;
-		
+		return true;	
 	},
-	
-	
+		
 	/*
  	* addToList - add an id to the list
- 	*
+ 	* Santi: sense duplicats
  	* @param id - sys_id of the id to add
  	* @return - NA
  	* @uses - this._list
@@ -114,10 +107,8 @@ ListUtil.prototype = {
  	* @uses - this._list
  	*
  	*/
-	removeFromList : function(id) {
-		
+	removeFromList : function(id) {	
 		var index = this._getIndex(id);
-		
 		if (index > -1)
 			this._list.splice(index, 1);
 	},
@@ -130,8 +121,7 @@ ListUtil.prototype = {
  	* @uses - this._list
  	*
  	*/
-	getList : function() {
-		
+	getList : function() {	
 		return this._list.join(',');
 	},
 	
@@ -161,14 +151,11 @@ ListUtil.prototype = {
  	* @uses - this._list
  	*
  	*/
-	_getIndex : function(id) {
-		
-		for (var i = 0; i < this._list.length; i++) {
-			
+	_getIndex : function(id) {		
+		for (var i = 0; i < this._list.length; i++) {			
 			if (this._list[i] == id)
 				return i;
-		}
-		
+		}		
 		return -1;
 	},
 	
@@ -179,7 +166,7 @@ ListUtil.prototype = {
         <sys_created_on>2018-10-19 11:59:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6f14113c3751eb004ccbd0d543990ec7</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>ListUtil</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -187,6 +174,6 @@ ListUtil.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6f14113c3751eb004ccbd0d543990ec7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 12:13:34</sys_updated_on>
+        <sys_updated_on>2019-12-31 16:31:40</sys_updated_on>
     </sys_script_include>
 </record_update>
