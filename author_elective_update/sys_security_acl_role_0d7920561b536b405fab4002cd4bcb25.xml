@@ -32,7 +32,7 @@
         <source>bec840031b2100106a314002cd4bcb1d</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-12-10 08:52:50</sys_created_on>
         <sys_id>dc4b40041b7d80105fab4002cd4bcb4f</sys_id>
         <sys_mod_count>0</sys_mod_count>

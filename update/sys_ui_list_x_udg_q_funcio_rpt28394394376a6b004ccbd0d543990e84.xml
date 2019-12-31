@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>usuari</element>
-            <list_id display_value="x_udg_q_funcio" element="NULL" name="x_udg_q_funcio" parent="NULL" relationship="NULL" sys_domain="global" view="fdfed3d11b4e8c10c851a64fad4bcbae">82db0758376a6b004ccbd0d543990e99</list_id>
+            <list_id display_value="x_udg_q_funcio" element="NULL" name="x_udg_q_funcio" parent="NULL" relationship="NULL" sys_domain="global" view="8413a87d1b464010c851a64fad4bcb60">82db0758376a6b004ccbd0d543990e99</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sgq</element>
-            <list_id display_value="x_udg_q_funcio" element="NULL" name="x_udg_q_funcio" parent="NULL" relationship="NULL" sys_domain="global" view="fdfed3d11b4e8c10c851a64fad4bcbae">82db0758376a6b004ccbd0d543990e99</list_id>
+            <list_id display_value="x_udg_q_funcio" element="NULL" name="x_udg_q_funcio" parent="NULL" relationship="NULL" sys_domain="global" view="8413a87d1b464010c851a64fad4bcb60">82db0758376a6b004ccbd0d543990e99</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -57,7 +57,7 @@
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-12-19 10:42:13</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt28394394376a6b004ccbd0d543990e84" name="RPT28394394376a6b004ccbd0d543990e84">fdfed3d11b4e8c10c851a64fad4bcbae</view>
+            <view display_value="Rpt28394394376a6b004ccbd0d543990e84" name="RPT28394394376a6b004ccbd0d543990e84">8413a87d1b464010c851a64fad4bcb60</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

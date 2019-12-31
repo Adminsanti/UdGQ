@@ -54,7 +54,7 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-02 07:39:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>ed0534a91b0acc10c851a64fad4bcb80</sys_id>
+        <sys_id>48c260f91b464010c851a64fad4bcb6e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Titol</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_proces_titol</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-30 16:47:19</sys_updated_on>
+        <sys_updated_on>2019-12-31 10:05:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

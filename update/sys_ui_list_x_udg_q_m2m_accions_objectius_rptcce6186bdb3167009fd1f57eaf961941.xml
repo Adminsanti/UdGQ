@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="86fed3d11b4e8c10c851a64fad4bcbc4">f246274e1ba0b300c851a64fad4bcb44</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="4c13a87d1b464010c851a64fad4bcb75">f246274e1ba0b300c851a64fad4bcb44</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora.state</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="86fed3d11b4e8c10c851a64fad4bcbc4">f246274e1ba0b300c851a64fad4bcb44</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="4c13a87d1b464010c851a64fad4bcb75">f246274e1ba0b300c851a64fad4bcb44</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora.short_description</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="86fed3d11b4e8c10c851a64fad4bcbc4">f246274e1ba0b300c851a64fad4bcb44</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="4c13a87d1b464010c851a64fad4bcb75">f246274e1ba0b300c851a64fad4bcb44</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -48,7 +48,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>percentatge</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="86fed3d11b4e8c10c851a64fad4bcbc4">f246274e1ba0b300c851a64fad4bcb44</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="4c13a87d1b464010c851a64fad4bcb75">f246274e1ba0b300c851a64fad4bcb44</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -63,7 +63,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>accio_millora.percentatge</element>
-            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="86fed3d11b4e8c10c851a64fad4bcbc4">f246274e1ba0b300c851a64fad4bcb44</list_id>
+            <list_id display_value="x_udg_q_m2m_accions_objectius" element="NULL" name="x_udg_q_m2m_accions_objectius" parent="NULL" relationship="NULL" sys_domain="global" view="4c13a87d1b464010c851a64fad4bcb75">f246274e1ba0b300c851a64fad4bcb44</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -102,7 +102,7 @@
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2019-04-03 09:12:43</sys_updated_on>
             <sys_user/>
-            <view display_value="Rptcce6186bdb3167009fd1f57eaf961941" name="RPTcce6186bdb3167009fd1f57eaf961941">86fed3d11b4e8c10c851a64fad4bcbc4</view>
+            <view display_value="Rptcce6186bdb3167009fd1f57eaf961941" name="RPTcce6186bdb3167009fd1f57eaf961941">4c13a87d1b464010c851a64fad4bcb75</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>
