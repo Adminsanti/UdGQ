@@ -20,7 +20,6 @@ AccioUtils.prototype = {
 		grM2m.addQuery('accio_millora',accio_id);
 		grM2m.query();
 		while (grM2m.next()) {
-			//new x_udg_q.log("AccioUtils.actualitzaExecucioTotsObjectius crida ObjectiuUtils.actualitzaExecucio per : "+grM2m.objectiu_millora.number+" - "+grM2m.objectiu_millora.sys_id);
 			var Obj= new ObjectiuUtils(grM2m.objectiu_millora.sys_id);
 			Obj.actualitzaPercentatgeAccions();
 			Obj.actualitzaExecucio();
@@ -34,7 +33,6 @@ AccioUtils.prototype = {
 		grAcc.query();
 		gs.info("SC - "+responsabilitat.sgq.codi+" AccioUtils.actualitzaAccioResponsable busca accions amb responsable: "+ responsabilitat.nom);
 		while (grAcc.next()) {
-			//gs.info("SC - "+grAcc.sgq.codi+" - " +grAcc.number +" AccioUtils.actualitzaAccionsResponsable actualitza ("+responsabilitat.nom +") " + grAcc.assigned_to.name +" -> "+ responsabilitat.usuari.name);
 			grAcc.assigned_to=responsabilitat.usuari;
 			grAcc.update();
 		}
@@ -46,14 +44,17 @@ AccioUtils.prototype = {
 		grM2m.addQuery('accio_millora',this._accio);
 		grM2m.query();
 		var grObj = new GlideRecord('x_udg_q_objectiumillora');
-		while (grM2m.next()) {
+		while (grM2m.next()) {			
 			if (grObj.get(grM2m.objectiu_millora)) {
-				llista.addListToList(grObj.compartit);
-				llista.addToList(grObj.sgq);
+				if (grObj.compartit) llista.addListToList(grObj.compartit);
+				if (grObj.sgq) llista.addToList(grObj.sgq.toString()); //toString() per passar per valor
 			}
 		}
-		llista.removeFromList(current.sgq);
-		return llista.getList();
+		var grAcc = new GlideRecord ('x_udg_q_acciomillora');
+		grAcc.get(this._accio);
+		llista.removeFromList(grAcc.sgq.toString());
+		var l = llista.getList();
+		return l;
 	},
 	
 	type: 'AccioUtils'
@@ -63,7 +64,7 @@ AccioUtils.prototype = {
         <sys_created_on>2018-11-09 12:30:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a005e5e337a52b004ccbd0d543990ea7</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>AccioUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -71,6 +72,6 @@ AccioUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_a005e5e337a52b004ccbd0d543990ea7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-31 18:49:16</sys_updated_on>
+        <sys_updated_on>2020-01-01 17:12:17</sys_updated_on>
     </sys_script_include>
 </record_update>
