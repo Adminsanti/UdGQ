@@ -27,18 +27,28 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    if (previous) {
+        var Obj = new ObjectiuUtils(previous.objectiu_millora.toString());
+        Obj.actualitzaPercentatgeAccions(); //Actualitza percentatge de contribució de les accions relacionades
+        Obj.actualitzaExecucio(); //Actualitza percentatge d'execució de l'objectiu corresponent
+    }
 	
-	var Obj = new ObjectiuUtils(current.objectiu_millora);
-	Obj.actualitzaPercentatgeAccions(); //Actualitza percentatge de contribució de les accions relacionades
-	Obj.actualitzaExecucio(); //Actualitza percentatge d'execució de l'objectiu corresponent
+	if (!previous || current.objectiu_millora != previous.objectiu_millora) {
+        var Obj2 = new ObjectiuUtils(current.objectiu_millora.toString());
+        Obj2.actualitzaPercentatgeAccions(); //Actualitza percentatge de contribució de les accions relacionades
+        Obj2.actualitzaExecucio(); //Actualitza percentatge d'execució de l'objectiu corresponent
+    }
 	
-	if (current.objectiu_millora.compartit.index(current.accio_millora.sgq) == -1) {
-		//compartir amb 
-	}
-	if (current.accio_millora.compartit.index(current.objectiu_millora.sgq) == -1) {
-		//compartir amb 
-	}
+    if (previous && previous.accio_millora.compratidasync) {
+        new x_udg_q.AccioUtils(previous.accio_millora.toString()).actualitzaLlistaCompartidaSync();
+    }
+
+    if (!previous || (current.accio_millora && current.accio_millora.compratidasync && previous.accio_millora != current.accio_millora)) {
+         new x_udg_q.AccioUtils(current.accio_millora.toString()).actualitzaLlistaCompartidaSync();
+    }
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -47,7 +57,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>69f18326db2d23009fd1f57eaf961957</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>M2M Acció Objetiu canvia</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -56,7 +66,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_69f18326db2d23009fd1f57eaf961957</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-18 18:06:46</sys_updated_on>
+        <sys_updated_on>2020-01-01 22:27:55</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

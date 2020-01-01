@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Objectiu-DefineixalPM</action_name>
+        <action_name>Objectiu-DefineixalPMR</action_name>
         <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
@@ -16,7 +16,7 @@
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <hint/>
-        <isolate_script>false</isolate_script>
+        <isolate_script>true</isolate_script>
         <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
@@ -25,9 +25,9 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Afegeix al Pla de Millora</name>
+        <name>Afegeix al Pla de Millora &amp; Roman</name>
         <onclick>onClick()</onclick>
-        <order>30</order>
+        <order>40</order>
         <script><![CDATA[// Client side onclick function
 function onClick(){
 	
@@ -39,7 +39,7 @@ function onClick(){
 	var errorMessage = g_form.checkMandatoryFields(mandatoryFields);
 	
 	if (!errorMessage){
-		gsftSubmit(null, g_form.getFormElement(), 'Objectiu-DefineixalPM'); //MUST call the 'Action name' set in this UI Action
+		gsftSubmit(null, g_form.getFormElement(), 'Objectiu-DefineixalPMR'); //MUST call the 'Action name' set in this UI Action
 	} else {
 		g_form.clearMessages();
 		g_form.addErrorMessage("Manquen camps obligatoris: "+ errorMessage );
@@ -48,9 +48,9 @@ function onClick(){
 
 // Code that runs without 'onclick'
 // Ensure call to server side function with no browser errors
-if (typeof window == 'undefined') definirObjectiu();
+if (typeof window == 'undefined') definirObjectiuR();
 	
-function definirObjectiu() {
+function definirObjectiuR() {
 	var o= new ObjectiuUtils(current.sys_id);
 	current.state = 2;
 	current.active=true;
@@ -61,6 +61,8 @@ function definirObjectiu() {
 	
 	current.update();
 	gs.addInfoMessage(current.number+ " Afegit al Pla de Millora");
+	
+	action.setRedirectURL(current);  //Roman (Si no, no es veuen els camps obligatoris)
 }]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -68,21 +70,21 @@ function definirObjectiu() {
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-30 09:31:57</sys_created_on>
+        <sys_created_on>2020-01-01 22:48:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>2f854152dbca2f009fd1f57eaf96194b</sys_id>
-        <sys_mod_count>50</sys_mod_count>
-        <sys_name>Afegeix al Pla de Millora</sys_name>
+        <sys_id>3dfa181a1b8ac010c851a64fad4bcbd7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Afegeix al Pla de Millora &amp; Roman</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_action_2f854152dbca2f009fd1f57eaf96194b</sys_update_name>
+        <sys_update_name>sys_ui_action_3dfa181a1b8ac010c851a64fad4bcbd7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-01 22:51:19</sys_updated_on>
+        <sys_updated_on>2020-01-01 22:52:22</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

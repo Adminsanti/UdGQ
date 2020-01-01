@@ -9,62 +9,70 @@
         <name>AccioUtils</name>
         <script><![CDATA[var AccioUtils = Class.create();
 AccioUtils.prototype = {
-	initialize: function(accio) { //sys_id de l'acció
-		this._accio=accio;
-	},
-	
-	actualitzaExecucioTotsObjectius: function (accio_id) {
-		//Actualitza tots els objectius als que contribueix una acció
-		//new x_udg_q.log("AccioUtils.actualitzaExecucioTotsObjectius: "+accio_id);
-		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
-		grM2m.addQuery('accio_millora',accio_id);
-		grM2m.query();
-		while (grM2m.next()) {
-			var Obj= new ObjectiuUtils(grM2m.objectiu_millora.sys_id);
-			Obj.actualitzaPercentatgeAccions();
-			Obj.actualitzaExecucio();
-		}
-	},
-	
-	setAllResponsables: function (responsabilitat) {
-		var grAcc = new GlideRecord ('x_udg_q_acciomillora');
-		grAcc.addQuery('responsable', responsabilitat.sys_id);
-		grAcc.addQuery('state!=-5'); //No esborrany
-		grAcc.query();
-		gs.info("SC - "+responsabilitat.sgq.codi+" AccioUtils.actualitzaAccioResponsable busca accions amb responsable: "+ responsabilitat.nom);
-		while (grAcc.next()) {
-			grAcc.assigned_to=responsabilitat.usuari;
-			grAcc.update();
-		}
-	},
-	
-	getLlistaCompartidaSync: function () {
-		var llista = new x_udg_q.ListUtil("");
-		var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
-		grM2m.addQuery('accio_millora',this._accio);
-		grM2m.query();
-		var grObj = new GlideRecord('x_udg_q_objectiumillora');
-		while (grM2m.next()) {			
-			if (grObj.get(grM2m.objectiu_millora)) {
-				if (grObj.compartit) llista.addListToList(grObj.compartit);
-				if (grObj.sgq) llista.addToList(grObj.sgq.toString()); //toString() per passar per valor
-			}
-		}
-		var grAcc = new GlideRecord ('x_udg_q_acciomillora');
-		grAcc.get(this._accio);
-		llista.removeFromList(grAcc.sgq.toString());
-		var l = llista.getList();
-		return l;
-	},
-	
-	type: 'AccioUtils'
+    initialize: function(accio) { //sys_id de l'acció
+        this._accio = accio;
+    },
+
+    actualitzaExecucioTotsObjectius: function(accio_id) {
+        //Actualitza tots els objectius als que contribueix una acció
+        //new x_udg_q.log("AccioUtils.actualitzaExecucioTotsObjectius: "+accio_id);
+        var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
+        grM2m.addQuery('accio_millora', accio_id);
+        grM2m.query();
+        while (grM2m.next()) {
+            var Obj = new ObjectiuUtils(grM2m.objectiu_millora.sys_id);
+            Obj.actualitzaPercentatgeAccions();
+            Obj.actualitzaExecucio();
+        }
+    },
+
+    setAllResponsables: function(responsabilitat) {
+        var grAcc = new GlideRecord('x_udg_q_acciomillora');
+        grAcc.addQuery('responsable', responsabilitat.sys_id);
+        grAcc.addQuery('state!=-5'); //No esborrany
+        grAcc.query();
+        gs.info("SC - " + responsabilitat.sgq.codi + " AccioUtils.actualitzaAccioResponsable busca accions amb responsable: " + responsabilitat.nom);
+        while (grAcc.next()) {
+            grAcc.assigned_to = responsabilitat.usuari;
+            grAcc.update();
+        }
+    },
+
+    getLlistaCompartidaSync: function() {
+        var llista = new x_udg_q.ListUtil("");
+        var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
+        grM2m.addQuery('accio_millora', this._accio);
+        grM2m.query();
+        var grObj = new GlideRecord('x_udg_q_objectiumillora');
+        while (grM2m.next()) {
+            if (grObj.get(grM2m.objectiu_millora)) {
+                if (grObj.compartit) llista.addListToList(grObj.compartit);
+                if (grObj.sgq) llista.addToList(grObj.sgq.toString()); //toString() per passar per valor
+            }
+        }
+        var grAcc = new GlideRecord('x_udg_q_acciomillora');
+        grAcc.get(this._accio);
+        llista.removeFromList(grAcc.sgq.toString());
+        var l = llista.getList();
+        return l;
+    },
+
+    actualitzaLlistaCompartidaSync: function() {
+        var grAcc = new GlideRecord('x_udg_q_acciomillora');
+        if (grAcc.get(this._accio) && grAcc.compratidasync) {
+            grAcc.compartida = this.getLlistaCompartidaSync();
+            grAcc.update();
+        }
+    },
+
+    type: 'AccioUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-11-09 12:30:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a005e5e337a52b004ccbd0d543990ea7</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>AccioUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -72,6 +80,6 @@ AccioUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_a005e5e337a52b004ccbd0d543990ea7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-01 17:12:17</sys_updated_on>
+        <sys_updated_on>2020-01-01 22:09:21</sys_updated_on>
     </sys_script_include>
 </record_update>

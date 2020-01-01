@@ -67,13 +67,13 @@
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
-            <sum>false</sum>
+            <sum>true</sum>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2019-02-22 09:52:53</sys_created_on>
             <sys_id>d9ef65591bb36f80c851a64fad4bcb46</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
+            <sys_updated_on>2020-01-01 22:32:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -82,13 +82,13 @@
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
-            <sum>false</sum>
+            <sum>true</sum>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2019-02-22 09:52:53</sys_created_on>
             <sys_id>5def65591bb36f80c851a64fad4bcb46</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-02-22 09:52:53</sys_updated_on>
+            <sys_updated_on>2020-01-01 22:32:43</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
