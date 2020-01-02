@@ -17,7 +17,7 @@
         <column_label>SGQ</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript: gs.getUser().getPreference('qualitat.sgqActual');</default_value>
+        <default_value>javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -25,7 +25,7 @@
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value/>
+        <dynamic_default_value display_value="SGQ Actual">5fff67561bce0410c851a64fad4bcb0a</dynamic_default_value>
         <dynamic_ref_qual/>
         <element>sgq</element>
         <element_reference>false</element_reference>
@@ -55,7 +55,7 @@
         <sys_created_on>2018-10-09 10:33:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5654216ddb0da7c01f06adc3ca961989</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>SGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,12 +63,12 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_recomanacions_sgq</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-13 10:27:19</sys_updated_on>
+        <sys_updated_on>2020-01-02 14:52:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
+        <use_dynamic_default>true</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>

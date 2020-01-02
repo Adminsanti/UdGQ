@@ -6,7 +6,7 @@
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Número" max_length="40" name="number" read_only="true" type="string"/>
         <element default="100" label="Ordre" max_length="40" name="order" type="integer"/>
         <element label="Pare" max_length="32" name="parent" read_only="true" reference="x_udg_q_plantillacomu" type="reference"/>
-        <element default="javascript:gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
         <element attributes="no_truncate=true" display="true" label="Descripció curta" max_length="160" name="short_description" type="string"/>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <index name="index">

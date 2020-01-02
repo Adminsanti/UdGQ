@@ -20,7 +20,7 @@
         <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
-        <element default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
         <element choice="3" label="Tancament" max_length="40" name="tancament" type="integer">
             <choice>
                 <element inactive_on_update="false" label="Desistiment" value="1"/>

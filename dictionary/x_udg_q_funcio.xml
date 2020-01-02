@@ -9,7 +9,7 @@
         <element attributes="no_truncate=true" audit="true" display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element label="Observador" max_length="40" name="observador" type="boolean"/>
         <element label="Gestió Plans de Millora" max_length="40" name="pla" type="boolean"/>
-        <element audit="true" default="javascript: gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element audit="true" default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
         <element audit="true" label="Suports" max_length="4000" name="suport" reference="sys_user" type="glide_list"/>
         <element audit="true" choice="3" default="Unipersonal" label="Tipus" mandatory="true" max_length="40" name="tipus" type="string">
             <choice>

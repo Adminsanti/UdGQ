@@ -2,31 +2,45 @@
     <sys_ui_related sys_domain="global" table="sys_user" version="2" view="SGQ">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="User - SGQ" name="sys_user" related_list="NULL" sys_domain="global" view="63f8bc1337142f401acdf01643990e33">211d597ddbd263009fd1f57eaf9619ea</list_id>
+            <list_id display_value="User - SGQ" name="sys_user" related_list="NULL" sys_domain="global" view="63f8bc1337142f401acdf01643990e33">65c91f9e1b0e0410c851a64fad4bcb69</list_id>
             <order_by/>
             <position>0</position>
             <related_list>sys_user_has_role.user</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-12-11 08:13:30</sys_created_on>
-            <sys_id>291d597ddbd263009fd1f57eaf9619ea</sys_id>
+            <sys_created_on>2020-01-02 12:41:50</sys_created_on>
+            <sys_id>e9c91f9e1b0e0410c851a64fad4bcb6a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-12-11 08:13:30</sys_updated_on>
+            <sys_updated_on>2020-01-02 12:41:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="User - SGQ" name="sys_user" related_list="NULL" sys_domain="global" view="63f8bc1337142f401acdf01643990e33">211d597ddbd263009fd1f57eaf9619ea</list_id>
+            <list_id display_value="User - SGQ" name="sys_user" related_list="NULL" sys_domain="global" view="63f8bc1337142f401acdf01643990e33">65c91f9e1b0e0410c851a64fad4bcb69</list_id>
             <order_by/>
             <position>1</position>
             <related_list>sys_user_grmember.user</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-12-11 08:13:30</sys_created_on>
-            <sys_id>2d1d597ddbd263009fd1f57eaf9619ea</sys_id>
+            <sys_created_on>2020-01-02 12:41:50</sys_created_on>
+            <sys_id>25c91f9e1b0e0410c851a64fad4bcb6b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-12-11 08:13:30</sys_updated_on>
+            <sys_updated_on>2020-01-02 12:41:50</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - SGQ" name="sys_user" related_list="NULL" sys_domain="global" view="63f8bc1337142f401acdf01643990e33">65c91f9e1b0e0410c851a64fad4bcb69</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>cmdb_ci_acc.assigned_to</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-01-02 12:41:50</sys_created_on>
+            <sys_id>29c91f9e1b0e0410c851a64fad4bcb6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-01-02 12:41:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>User - SGQ</calculated_name>
@@ -37,11 +51,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-12-11 08:13:30</sys_created_on>
+            <sys_created_on>2020-01-02 12:41:50</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>211d597ddbd263009fd1f57eaf9619ea</sys_id>
+            <sys_id>65c91f9e1b0e0410c851a64fad4bcb69</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>User - SGQ</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -50,7 +64,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_related_sys_user_SGQ</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-12-11 08:13:30</sys_updated_on>
+            <sys_updated_on>2020-01-02 12:41:50</sys_updated_on>
             <sys_user/>
             <view display_value="SGQ" name="SGQ">63f8bc1337142f401acdf01643990e33</view>
             <view_name/>
