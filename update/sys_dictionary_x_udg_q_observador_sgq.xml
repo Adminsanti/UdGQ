@@ -25,7 +25,7 @@
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value/>
+        <dynamic_default_value display_value="SGQ Actual (de preferència)">1bdb5bd21b4e0410c851a64fad4bcba6</dynamic_default_value>
         <dynamic_ref_qual/>
         <element>sgq</element>
         <element_reference>false</element_reference>
@@ -68,7 +68,7 @@
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
+        <use_dynamic_default>true</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>

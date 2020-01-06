@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>add_centres_adscrits</name>
+        <scoped_name>x_udg_q_add_centres_adscrits</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-01-06 22:22:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2f4c2ff1b8e8010c851a64fad4bcb21</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>add_centres_adscrits</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_macro_c2f4c2ff1b8e8010c851a64fad4bcb21</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-01-06 22:23:36</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+ <j:set var="jvar_n" value="x_udg_q_add_centres_adscrits_${ref}"/>
+	<g:reference_decoration id="${jvar_n}" field="${ref}"
+  onclick="addCentresAdscrits(); "
+  title="${gs.getMessage('Compartir només amb els centres adscrits')}" image="images/icons/task.gifx" icon="icon-open-document-new-tab"/>
+	<script>
+
+function addCentresAdscrits() {
+
+	var sgqActual = g_form.getValue('sgq');
+	var grSgq = new GlideRecord('x_udg_q_sgq');
+	grSgq.setEncodedQuery("actiu=true^sys_id!="+sgqActual+"^tipus=2");
+	grSgq.query(sgqCallback);
+
+   //After the server returns the query recordset, continue here
+   function sgqCallback(grSgq){
+	
+		var llistasgq=[];
+		while (grSgq.next()) {
+			llistasgq.push(grSgq.sys_id);
+		}
+		g_form.setValue('compartit', llistasgq);
+		g_form.addInfoMessage("S'ha compartit els centres adscrits");
+   }
+}
+</script>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

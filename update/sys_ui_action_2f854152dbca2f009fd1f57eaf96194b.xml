@@ -2,7 +2,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>Objectiu-DefineixalPM</action_name>
         <active>true</active>
-        <client>true</client>
+        <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
@@ -12,7 +12,7 @@
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>true</form_link>
+        <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <hint/>
@@ -26,39 +26,22 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Afegeix al Pla de Millora</name>
-        <onclick>onClick()</onclick>
+        <onclick/>
         <order>30</order>
-        <script><![CDATA[// Client side onclick function
-function onClick(){
-	
-	var mandatoryFields = [];
-	mandatoryFields.push('responsable');
-	mandatoryFields.push('priority');
-	mandatoryFields.push('short_description');
-	
-	var errorMessage = g_form.checkMandatoryFields(mandatoryFields);
-	
-	if (!errorMessage){
-		gsftSubmit(null, g_form.getFormElement(), 'Objectiu-DefineixalPM'); //MUST call the 'Action name' set in this UI Action
-	} else {
-		g_form.clearMessages();
-		g_form.addErrorMessage("Manquen camps obligatoris: "+ errorMessage );
-	}
-}
-
-// Code that runs without 'onclick'
-// Ensure call to server side function with no browser errors
-if (typeof window == 'undefined') definirObjectiu();
+        <script><![CDATA[definirObjectiu();
 	
 function definirObjectiu() {
-	var o= new ObjectiuUtils(current.sys_id);
+	var o= new x_udg_q.ObjectiuUtils(current.sys_id);
 	current.state = 2;
 	current.active=true;
 	current.accions=o.getAccions(current.sys_id);
 	current.assoliment=o.getExecucio(current.sys_id);
 	current.declarat= new GlideDateTime().toString();
 	current.declarat_per=gs.getUserID();
-	
+	if (current.valoracio != "") { 
+		current.valoratper=current.assigned_to;
+		current.valorat=new GlideDateTime().toString();	
+	}
 	current.update();
 	gs.addInfoMessage(current.number+ " Afegit al Pla de Millora");
 }]]></script>
@@ -73,7 +56,7 @@ function definirObjectiu() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f854152dbca2f009fd1f57eaf96194b</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name>Afegeix al Pla de Millora</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -82,7 +65,7 @@ function definirObjectiu() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_2f854152dbca2f009fd1f57eaf96194b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-01 22:51:19</sys_updated_on>
+        <sys_updated_on>2020-01-02 23:25:24</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

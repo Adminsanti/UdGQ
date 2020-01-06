@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="370" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="376" text_index="true" type="collection">
         <element label="Compartida" max_length="4000" name="compartida" reference="x_udg_q_sgq" type="glide_list"/>
         <element default="true" hint="Es comparteix automàticament amb tots els SGQs on es comparteiexen tots els objectius als que contribueix." label="Compartida Sincronitzada" max_length="40" name="compratidasync" type="boolean"/>
         <element label="Declarada" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Declarada per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
-        <element choice="1" choice_field="tipus" choice_table="x_udg_q_fita" label="Fita prevista" max_length="40" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference" use_reference_qualifier="advanced">
+        <element choice="1" choice_field="tipus" choice_table="x_udg_q_fita" label="Fita prevista" max_length="40" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" reference_qual_condition="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference">
             <choice>
                 <element inactive_on_update="false" label="Acreditació" sequence="0" value="Acreditació"/>
                 <element inactive_on_update="false" label="DMA" sequence="1" value="DMA"/>
@@ -17,7 +17,7 @@
         <element label="Llindar Indicador" max_length="1500" name="llindarindicador" type="string"/>
         <element active="false" label="Objectiu" max_length="32" name="objectiu" reference="x_udg_q_objectiumillora" type="reference"/>
         <element attributes="target_threshold_colors=0:tomato;25:orange;50:yellow;99:lightgreen" default="0" label="Execució %" mandatory="true" max_length="40" name="percentatge" type="percent_complete"/>
-        <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" type="reference" use_reference_qualifier="advanced">
+        <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" reference_qual_condition="sgq=javascript: gs.getPreference('qualitat.sgqActual','');^activa=true^usuariISNOTEMPTY^EQ" type="reference">
             <choice/>
         </element>
         <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>

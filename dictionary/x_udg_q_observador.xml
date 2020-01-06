@@ -3,7 +3,7 @@
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Caducitat" max_length="40" name="caducitat" type="glide_date"/>
         <element label="Notes" max_length="4000" name="notes" type="string"/>
-        <element default="javascript:gs.getUser().getPreference('qualitat.sgqActual');" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <element default="javascript:gs.getUser().getPreference('qualitat.sgqActual');" dynamic_default_value="1bdb5bd21b4e0410c851a64fad4bcba6" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
         <element display="true" label="Usuari" mandatory="true" max_length="32" name="usuari" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="usuari"/>

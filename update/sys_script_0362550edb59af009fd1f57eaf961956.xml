@@ -20,7 +20,7 @@
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
-        <message><![CDATA[<p>${current.number} s&#39;ha assignat a ${current.assigned_to}</p>]]></message>
+        <message><![CDATA[<p> ${current.number} s&#39;ha assignat a ${current.assigned_to.name}</p>]]></message>
         <name>Acció assignar al responsable</name>
         <order>100</order>
         <priority>100</priority>
@@ -42,7 +42,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0362550edb59af009fd1f57eaf961956</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Acció assignar al responsable</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -51,7 +51,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0362550edb59af009fd1f57eaf961956</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-22 14:58:58</sys_updated_on>
+        <sys_updated_on>2020-01-02 23:27:18</sys_updated_on>
         <template>assigned_toSAMEASresponsable.usuari^EQ</template>
         <when>before</when>
     </sys_script>

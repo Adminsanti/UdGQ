@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
     <sys_dictionary_override action="INSERT_OR_UPDATE">
         <attributes/>
-        <attributes_override>false</attributes_override>
+        <attributes_override>true</attributes_override>
         <base_table>task</base_table>
         <calculation/>
         <calculation_override>false</calculation_override>
@@ -23,7 +23,7 @@
         <sys_created_on>2018-10-24 07:47:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bbba8296db59ef009fd1f57eaf9619ac</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>priority</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -31,6 +31,6 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_override_bbba8296db59ef009fd1f57eaf9619ac</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-08 17:39:34</sys_updated_on>
+        <sys_updated_on>2020-01-02 21:17:59</sys_updated_on>
     </sys_dictionary_override>
 </record_update>
