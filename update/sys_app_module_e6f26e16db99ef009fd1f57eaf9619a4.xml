@@ -21,7 +21,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_udg_q.User</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -31,8 +31,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e6f26e16db99ef009fd1f57eaf9619a4</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Objectius meus</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Objectius Meus</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -40,9 +40,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_e6f26e16db99ef009fd1f57eaf9619a4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-02 21:46:52</sys_updated_on>
+        <sys_updated_on>2020-01-07 10:01:45</sys_updated_on>
         <timeline_page/>
-        <title>Objectius meus</title>
+        <title>Objectius Meus</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
