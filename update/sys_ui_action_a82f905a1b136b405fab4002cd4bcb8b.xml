@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>CopiaNouEsborrany</action_name>
+        <action_name>NouEsborranyCopiant</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
@@ -25,7 +25,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Copia com Esborrany</name>
+        <name>Nou Esborrany Copiant</name>
         <onclick/>
         <order>300</order>
         <script><![CDATA[doCopy();
@@ -66,8 +66,8 @@ function doCopy() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a82f905a1b136b405fab4002cd4bcb8b</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Copia com Esborrany</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Nou Esborrany Copiant</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -75,7 +75,7 @@ function doCopy() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_a82f905a1b136b405fab4002cd4bcb8b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-02 20:01:13</sys_updated_on>
+        <sys_updated_on>2020-01-07 11:39:35</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
