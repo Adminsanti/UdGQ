@@ -11,19 +11,19 @@
         <dependent_override>true</dependent_override>
         <display_override>false</display_override>
         <element>assigned_to</element>
-        <mandatory>false</mandatory>
-        <mandatory_override>false</mandatory_override>
+        <mandatory>true</mandatory>
+        <mandatory_override>true</mandatory_override>
         <name>x_udg_q_objectiumillora</name>
-        <read_only>true</read_only>
-        <read_only_override>true</read_only_override>
-        <reference_qual/>
-        <reference_qual_override>false</reference_qual_override>
+        <read_only>false</read_only>
+        <read_only_override>false</read_only_override>
+        <reference_qual>javascript: "sys_idIN"+current.responsable.membres</reference_qual>
+        <reference_qual_override>true</reference_qual_override>
         <sys_class_name>sys_dictionary_override</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-09 07:23:30</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c675fc69378da3004ccbd0d543990ecd</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>assigned_to</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -31,6 +31,6 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_override_c675fc69378da3004ccbd0d543990ecd</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-08 17:58:40</sys_updated_on>
+        <sys_updated_on>2020-01-08 19:27:58</sys_updated_on>
     </sys_dictionary_override>
 </record_update>
