@@ -15,19 +15,17 @@
 		return;
 	}
 	
-	if (!g_form.getControl('assigned_to')) {
-		return;
-	}
+	if (!g_form.getControl('assigned_to')) return;
 	
-	if (g_form.getValue('state') == -5) { //No actualitzarem el responsable mentre l'acció està en Esborrany
-		return;
-	} 
+	if (g_form.getValue('state') == -5) return; //No actualitzarem el responsable mentre l'acció està en Esborrany 
 	var responsable = 	g_form.getReference('responsable', setAssignedTo);
 }
 
 function setAssignedTo(responsable) {
 	if (responsable) {
 		g_form.setValue('assigned_to', responsable.usuari);
+		if (responsable.membres==responsable.usuari) g_form.setReadOnly('assigned_to',true); //Només hi ha un
+		else g_form.setReadOnly('assigned_to',false);
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -37,7 +35,7 @@ function setAssignedTo(responsable) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9fde65ed3701e3004ccbd0d543990e6b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Acció - canvi responsable</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -46,7 +44,7 @@ function setAssignedTo(responsable) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_9fde65ed3701e3004ccbd0d543990e6b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-01 22:54:06</sys_updated_on>
+        <sys_updated_on>2020-01-09 08:58:49</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
     <sys_dictionary_override action="INSERT_OR_UPDATE">
-        <attributes/>
-        <attributes_override>false</attributes_override>
+        <attributes>ref_auto_completer=AJAXReferenceChoice,max_ref_dropdown=25,is_searchable_choice=true,edge_encryption_enabled=true</attributes>
+        <attributes_override>true</attributes_override>
         <base_table>task</base_table>
         <calculation/>
         <calculation_override>false</calculation_override>
         <default_value>javascript: gs.getUserID();</default_value>
         <default_value_override>true</default_value_override>
-        <dependent/>
-        <dependent_override>false</dependent_override>
+        <dependent>responsable</dependent>
+        <dependent_override>true</dependent_override>
         <display_override>false</display_override>
         <element>assigned_to</element>
-        <mandatory>false</mandatory>
-        <mandatory_override>false</mandatory_override>
+        <mandatory>true</mandatory>
+        <mandatory_override>true</mandatory_override>
         <name>x_udg_q_acciomillora</name>
-        <read_only>true</read_only>
-        <read_only_override>true</read_only_override>
-        <reference_qual/>
-        <reference_qual_override>false</reference_qual_override>
+        <read_only>false</read_only>
+        <read_only_override>false</read_only_override>
+        <reference_qual>javascript: "sys_idIN"+current.responsable.membres</reference_qual>
+        <reference_qual_override>true</reference_qual_override>
         <sys_class_name>sys_dictionary_override</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-09 11:06:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5b782d6d3701e3004ccbd0d543990ef1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>assigned_to</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -31,6 +31,6 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_override_5b782d6d3701e3004ccbd0d543990ef1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-06 08:00:36</sys_updated_on>
+        <sys_updated_on>2020-01-09 09:00:51</sys_updated_on>
     </sys_dictionary_override>
 </record_update>

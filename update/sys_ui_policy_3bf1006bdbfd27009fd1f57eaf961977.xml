@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <conditions table="x_udg_q_objectiumillora">state=^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <active>true</active>
+        <conditions table="x_udg_q_objectiumillora">responsable.tipus=Unipersonal^NQresponsable.tipus=Col·lectiva^responsable.membres_titol_personalISEMPTY^responsable.membres_funcionsISEMPTY^EQ<item display_value="Unipersonal" endquery="false" field="responsable.tipus" goto="false" newquery="false" operator="=" or="false" value="Unipersonal"/>
+            <item display_value="Col·lectiva" endquery="false" field="responsable.tipus" goto="false" newquery="true" operator="=" or="false" value="Col·lectiva"/>
+            <item endquery="false" field="responsable.membres_titol_personal" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="responsable.membres_funcions" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -15,23 +18,13 @@
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-	//g_form.addInfoMessage("state :"+g_form.getValue('state'));
-	/*
-	g_form.setReadOnly('valoracio',true);
-	if (g_form.getValue('state') != 3 && g_form.getValue('state') !=5) {
-		g_form.setDisplay('valoracio',false);
-	}
-	*/
+	g_form.setReadOnly('assigned_to',false);
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	g_form.setVisible('valoracio',true);
-	if (g_form.getValue('state') == 3){
-		g_form.showFieldMsg('valoracio',"Per tancar un objectiu complert cal fer-ne una valoració i desprès premer [Tanca Objetiu]");
-		g_form.setReadOnly('valoracio',false);
-	}
+	g_form.setReadOnly('assigned_to',true);
 }]]></script_true>
         <set_values/>
-        <short_description>RECYCLE Objectiu Valoració si Complert</short_description>
+        <short_description>Objectius funció colectiva</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-11-21 15:34:48</sys_created_on>
@@ -39,8 +32,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3bf1006bdbfd27009fd1f57eaf961977</sys_id>
-        <sys_mod_count>35</sys_mod_count>
-        <sys_name>RECYCLE Objectiu Valoració si Complert</sys_name>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>Objectius funció colectiva</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -48,7 +41,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_3bf1006bdbfd27009fd1f57eaf961977</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-11 08:32:42</sys_updated_on>
+        <sys_updated_on>2020-01-09 08:38:18</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui_type>10</ui_type>
         <view/>

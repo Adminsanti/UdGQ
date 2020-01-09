@@ -11,27 +11,24 @@
         <name>Objectiu - canvi responsable</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	
 	if (isLoading) {
 		return;
 	}
 	
-	if (!g_form.getControl('assigned_to')) {
-		return;
-	}
+	if (!g_form.getControl('assigned_to')) return;
 	
-	if (g_form.getValue('state') == -5) { //No actualitzarem el responsable mentre l'objectiu està en Esborrany
-		return;
-	}
+	if (g_form.getValue('state') == -5) return; //No actualitzarem l'assigned_to mentre estem en esborrany
 	
 	var responsable = 	g_form.getReference('responsable', setAssignedTo);
-	
 }
-
 
 function setAssignedTo(responsable) {
 	
 	if (responsable) {
 		g_form.setValue('assigned_to', responsable.usuari);
+		if (responsable.membres==responsable.usuari) g_form.setReadOnly('assigned_to',true); //Només hi ha un
+		else g_form.setReadOnly('assigned_to',false);
 	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -41,7 +38,7 @@ function setAssignedTo(responsable) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9b5891ad37cda3004ccbd0d543990e5e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Objectiu - canvi responsable</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -50,7 +47,7 @@ function setAssignedTo(responsable) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_9b5891ad37cda3004ccbd0d543990e5e</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-10-23 09:27:04</sys_updated_on>
+        <sys_updated_on>2020-01-09 08:57:24</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
