@@ -44,7 +44,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>accions</field>
         <field_list/>
-        <filter table="x_udg_q_objectiumillora">state=2<item display_value="En curs" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+        <filter table="x_udg_q_objectiumillora">state=2<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>

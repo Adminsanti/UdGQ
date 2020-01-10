@@ -29,23 +29,24 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	
-	new Usuari(current.usuari).setAllRoles(current.sgq);
-	if (previous)
-		new Usuari(previous.usuari).setAllRoles(current.sgq);
-	//ULL cal fer-ho també pels suports
-	
-	if (current.usuari != previous.usuari && current.activa) {
-		new FuncioUtil(current).actualitzar_tots_assignats();
-		//ULL cal fer-ho també pels suports
-	}
-	
-	
-	if (current.usuari.x_udg_q_sgq_actual =="") {
-		new Usuari(current.usuari).setSGQ(current.sgq);
+	var usuarisNousiVells = new x_udg_q.ListUtil([]);
+	if (previous.membres) usuarisNousiVells.addListToList(previous.membres);
+	if (current.membres) usuarisNousiVells.addListToList(current.membres);
+	var arrayUsuaris = usuarisNousiVells.getList().toString().split(",");
+	for (var i = 0; i < arrayUsuaris.length; i++){
+		var usuari = new x_udg_q.Usuari(arrayUsuaris[i]);
+		usuari.setAllRoles(current.sgq);
+		if (usuari.getSGQ()=="" ) usuari.setSGQ(current.sgq);
 	}
 
-	
+/* CAL FER LA REASIGNACIÓ de tot el que quedi penjat ***************************
+
+	if (current.usuari != previous.usuari && current.activa) {
+		new FuncioUtil(current).actualitzar_tots_assignats();
+	//ULL cal fer-ho també pels suports
+	}
+*/
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -54,7 +55,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0b8b8a7437b12f004ccbd0d543990e50</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Funcio canvia after</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -63,7 +64,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0b8b8a7437b12f004ccbd0d543990e50</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-08 11:54:56</sys_updated_on>
+        <sys_updated_on>2020-01-10 08:26:45</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

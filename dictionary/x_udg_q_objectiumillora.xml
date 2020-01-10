@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="217" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="220" text_index="true" type="collection">
         <element default="0" label="Número accions" max_length="40" name="accions" read_only="true" type="integer"/>
         <element attributes="target_threshold_colors=0:#C71585;1:yellow;50:orange;99:lightgreen" default="0" label="Percentatge execució" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
         <element label="Codi antic" max_length="40" name="codi_antic" type="string"/>
-        <element label="Compartit" max_length="4000" name="compartit" reference="x_udg_q_sgq" reference_qual="javascript:&quot;sys_id!=&quot;+current.sgq" type="glide_list" use_reference_qualifier="advanced"/>
+        <element attributes="ref_contributions=x_udg_q_add_tots_centres ;x_udg_q_add_centres_integrats ;x_udg_q_add_centres_adscrits" label="Compartit" max_length="4000" name="compartit" reference="x_udg_q_sgq" reference_qual="javascript:&quot;sys_id!=&quot;+current.sgq" type="glide_list" use_reference_qualifier="advanced"/>
         <element label="Definit" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Definit per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
         <element label="Diagnòstic" max_length="1500" name="diagnostic" type="string"/>
