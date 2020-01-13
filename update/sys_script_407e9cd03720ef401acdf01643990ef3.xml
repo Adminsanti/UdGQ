@@ -29,7 +29,7 @@
         <role_conditions/>
         <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
 var qc = current.addQuery('sgq',SGQpref);
-qc.addOrCondition('pare.sqg',SGQpref); //fills
+qc.addOrCondition('pare.sgq',SGQpref); //fills
 qc.addOrCondition('llegata','CONTAINS',SGQpref); //pares
 if (gs.getUser().hasRole('x_udg_q.ManagerUniversitat') || gs.getUser().hasRole('admin')) {
 	//qc.addOrCondition('sgq',gs.getProperty('x_udg_q.uidSGQvisivilitatTotal'));
@@ -45,7 +45,7 @@ if (gs.getUser().hasRole('x_udg_q.ManagerUniversitat') || gs.getUser().hasRole('
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>407e9cd03720ef401acdf01643990ef3</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>SGQ query per Proces</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -54,7 +54,7 @@ if (gs.getUser().hasRole('x_udg_q.ManagerUniversitat') || gs.getUser().hasRole('
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_407e9cd03720ef401acdf01643990ef3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-13 12:04:54</sys_updated_on>
+        <sys_updated_on>2020-01-13 12:26:11</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
