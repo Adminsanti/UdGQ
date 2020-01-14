@@ -27,13 +27,14 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
+        <script><![CDATA[if (!gs.getUser().hasRole('admin')) { //permet, entre d'altres coses, fer backups
+    var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
 
-if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser().hasRole('x_udg_q.Admin')) {	
-	current.addQuery("sgq="+SGQpref);
-	//current.addQuery("state!=-5^ORassigned_to="+gs.getUserID());
-}
-]]></script>
+    if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser().hasRole('x_udg_q.Admin')) {
+        current.addQuery("sgq=" + SGQpref);
+        //current.addQuery("state!=-5^ORassigned_to="+gs.getUserID());
+    }
+}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-03-20 12:27:10</sys_created_on>
@@ -41,7 +42,7 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser()
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fe8cc4b91b54b704c851a64fad4bcb82</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>SGQ query per Informe rebut VSMA</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -50,7 +51,7 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser()
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fe8cc4b91b54b704c851a64fad4bcb82</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-07 09:47:44</sys_updated_on>
+        <sys_updated_on>2020-01-14 11:28:50</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

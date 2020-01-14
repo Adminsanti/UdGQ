@@ -27,11 +27,13 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
+        <script><![CDATA[if (!gs.getUser().hasRole('admin')) { //permet, entre d'altres coses, fer backups
 
-if ( !gs.getUser().hasRole('x_udg_q.Admin')) current.addQuery("sgq="+SGQpref+"^ORcompartitLIKE"+SGQpref);
+    var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
+    if (!gs.getUser().hasRole('x_udg_q.Admin'))
+        current.addQuery("sgq=" + SGQpref + "^ORcompartitLIKE" + SGQpref);
 
-]]></script>
+}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-01-21 10:06:16</sys_created_on>
@@ -39,7 +41,7 @@ if ( !gs.getUser().hasRole('x_udg_q.Admin')) current.addQuery("sgq="+SGQpref+"^O
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1d100d031bcfaf00c851a64fad4bcb83</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>SGQ query per Objectiu</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -48,7 +50,7 @@ if ( !gs.getUser().hasRole('x_udg_q.Admin')) current.addQuery("sgq="+SGQpref+"^O
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_1d100d031bcfaf00c851a64fad4bcb83</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-07 10:09:39</sys_updated_on>
+        <sys_updated_on>2020-01-14 11:28:22</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
