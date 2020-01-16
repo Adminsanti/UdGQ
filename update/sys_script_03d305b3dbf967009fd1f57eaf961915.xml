@@ -15,10 +15,7 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_udg_q_objectiumillora">responsable.usuariNSAMEASassigned_to^stateCHANGESFROM-5^ORstateCHANGESFROM^NQstate!=-5^responsable.membresNOT LIKEjavascript: current.assign_to;^EQ<item endquery="false" field="responsable.usuari" goto="false" newquery="false" operator="NSAMEAS" or="false" value="assigned_to"/>
-            <item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="-5"/>
-            <item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="true" value=""/>
-            <item display_value="Draft" endquery="false" field="state" goto="false" newquery="true" operator="!=" or="false" value="-5"/>
+        <filter_condition table="x_udg_q_objectiumillora">state!=-5^responsable.membresNOT LIKEjavascript: current.assign_to;^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
             <item endquery="false" field="responsable.membres" goto="false" newquery="false" operator="NOT LIKE" or="false" value="javascript: current.assign_to;"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
@@ -43,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>03d305b3dbf967009fd1f57eaf961915</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Objectiu assignar al responsable</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -52,7 +49,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_03d305b3dbf967009fd1f57eaf961915</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-09 12:41:25</sys_updated_on>
+        <sys_updated_on>2020-01-16 13:25:16</sys_updated_on>
         <template>assigned_toSAMEASresponsable.usuari^EQ</template>
         <when>before</when>
     </sys_script>
