@@ -16,9 +16,9 @@
         <description/>
         <execute_function>false</execute_function>
         <filter_condition table="x_udg_q_objectiumillora">responsable.usuariNSAMEASassigned_to^stateCHANGESFROM-5^ORstateCHANGESFROM^NQstate!=-5^responsable.membresNOT LIKEjavascript: current.assign_to;^EQ<item endquery="false" field="responsable.usuari" goto="false" newquery="false" operator="NSAMEAS" or="false" value="assigned_to"/>
-            <item display_value="Esborrany" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="-5"/>
+            <item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="-5"/>
             <item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="true" value=""/>
-            <item display_value="Esborrany" endquery="false" field="state" goto="false" newquery="true" operator="!=" or="false" value="-5"/>
+            <item display_value="Draft" endquery="false" field="state" goto="false" newquery="true" operator="!=" or="false" value="-5"/>
             <item endquery="false" field="responsable.membres" goto="false" newquery="false" operator="NOT LIKE" or="false" value="javascript: current.assign_to;"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>

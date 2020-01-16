@@ -21,6 +21,6 @@
         <sys_update_name>pa_m2m_dashboard_tabs_764452f01bef23805fab4002cd4bcb04</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2020-01-10 08:45:51</sys_updated_on>
-        <tab display_value="Resum de Seguiment">f2449ab01bef23805fab4002cd4bcbca</tab>
+        <tab display_value="Informe de Seguiment">f2449ab01bef23805fab4002cd4bcbca</tab>
     </pa_m2m_dashboard_tabs>
 </record_update>
