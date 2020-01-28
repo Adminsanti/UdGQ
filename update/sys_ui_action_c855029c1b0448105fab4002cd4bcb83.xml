@@ -3,7 +3,9 @@
         <action_name>sysverb_Genera</action_name>
         <active>true</active>
         <client>false</client>
-        <client_script_v2/>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
         <comments/>
         <condition>current.parent=="" &amp;&amp; current.attachment!=""&amp;&amp;current.active==true</condition>
         <form_action>true</form_action>
@@ -36,8 +38,8 @@ var grDG = new GlideRecord ('x_udg_q_docgeneratvsma');
 grDG.initialize();
 grDG.insert();
 
-var grPlantilla= new GlideRecord('sys_attachment');
-grPlantilla.get(current.file); //GlideRecord del fitxer
+var grPlantilla = new GlideRecord('sys_attachment');
+grPlantilla.get(current.file); //GlideRecord del fitxer del camp file
 var gsaPlantilla = new GlideSysAttachment();
 var contingut=gsaPlantilla.getContent(grPlantilla);
 
@@ -61,8 +63,8 @@ if (rtf1.getContent().match(/##TSubestandard#.\..##/g)) {
 if (rtf1.getContent().match(/##DSubestandard#.\..##/g)) {
 	var Dsubestandards= rtf1.getContent().match(/##DSubestandard#.\..##/g).toString().match(/.\../g);
 	for (index=0; index<Dsubestandards.length; ++index) {
-		var sysidS = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
-		var textstring= ObjUtils.getRtfperSubestandard(sysidS,filtre,SGQpref);
+		var sysidS2 = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
+		var textstring= ObjUtils.getRtfperSubestandard(sysidS2,filtre,SGQpref);
 		rtf1.replace("##DSubestandard#"+Dsubestandards[index]+"##",textstring);
 	}	
 }
@@ -89,7 +91,7 @@ action.setRedirectURL(grDG); ]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c855029c1b0448105fab4002cd4bcb83</sys_id>
-        <sys_mod_count>201</sys_mod_count>
+        <sys_mod_count>203</sys_mod_count>
         <sys_name>Genera Doc</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -98,7 +100,7 @@ action.setRedirectURL(grDG); ]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_c855029c1b0448105fab4002cd4bcb83</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-10-08 17:09:13</sys_updated_on>
+        <sys_updated_on>2020-01-27 14:39:44</sys_updated_on>
         <table>x_udg_q_plantillavsma</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
