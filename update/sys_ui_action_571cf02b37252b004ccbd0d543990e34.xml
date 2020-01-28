@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>Recalcula-execucio</action_name>
-        <active>true</active>
+        <active>false</active>
         <client>false</client>
-        <client_script_v2/>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
         <comments/>
         <condition>gs.hasRole('x_udg_q.ManagerUniversitat')</condition>
         <form_action>true</form_action>
@@ -23,7 +25,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Recalcula recomanacio obligatoria</name>
+        <name>RECYCLE Recalcula recomanacio obligatori</name>
         <onclick/>
         <order>1200</order>
         <script><![CDATA[current.recomanacioobligatoria = new Reco().algunaObligatoria(current.recomanacions);
@@ -40,8 +42,8 @@ action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>571cf02b37252b004ccbd0d543990e34</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>Recalcula recomanacio obligatoria</sys_name>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>RECYCLE Recalcula recomanacio obligatori</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -49,7 +51,7 @@ action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_571cf02b37252b004ccbd0d543990e34</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-11 10:03:55</sys_updated_on>
+        <sys_updated_on>2020-01-28 10:20:05</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
