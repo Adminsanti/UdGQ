@@ -30,8 +30,9 @@
         <script><![CDATA[if (!gs.getUser().hasRole('admin')) { //permet, entre d'altres coses, fer backups
     
 	var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
-	current.addQuery("sgq=" + SGQpref);
-}]]></script>
+	current.addQuery("sgq=" + SGQpref+ "^NQplantilla.sgq=" + SGQpref);
+}
+]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-10-10 06:44:08</sys_created_on>
@@ -39,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8b526dd71bd40410c851a64fad4bcbf9</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>SGQ query per Doc Generats</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -48,7 +49,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_8b526dd71bd40410c851a64fad4bcbf9</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-30 12:44:14</sys_updated_on>
+        <sys_updated_on>2020-01-30 15:06:06</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

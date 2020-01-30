@@ -126,19 +126,17 @@ ObjectiuUtils.prototype = {
         }
 
         new x_udg_q.log("Generant detall informe per " + sgq + " per l'estandard " + sysidSubestandard);
-
+		var col = [7600, 9100, 9700];
         var grObj = new GlideRecord('x_udg_q_objectiumillora');
         var rtfstring = new rtf("");
-        grObj.addQuery('subestandard', sysidSubestandard);
-        grObj.addQuery("state!=-5"); // que no sigui esborrany
-        grObj.addQuery("tancament!=-5"); //que no s'hagi tancar com esborrat
-        grObj.addQuery('sgq=' + sgq + '^ORcompartitLIKE' + sgq);
-        if (typeof filtre !== 'undefined' && filtre != "") grObj.addQuery(filtre);
+		var filtreplus=filtre+"^subestandard="+sysidSubestandard;
+		grObj.addEncodedQuery(filtreplus);
         grObj.query();
-        var text = "";
+        var text ="";
+		//text +="Query: "+q+"\\par"; //Per debugar
         while (grObj.next()) {
             text += rtfstring.tablestart();
-            text += rtfstring.rowstart(["8200", "9350", "9700"], 36);
+            text += rtfstring.rowstart(col, 36);
             text += "\\b " + grObj.number + " \\b0 ";
             text += sgqSiNoActual(grObj);
             text += " - " + grObj.short_description + "\\intbl\\ql\\cell\n";
@@ -151,7 +149,7 @@ ObjectiuUtils.prototype = {
             text += parseInt(grObj.assoliment) + "%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
             text += rtfstring.rowend();
 
-            text += rtfstring.rowstart(["9700"]); //comença filera de valoració
+            text += rtfstring.rowstart([col[2]]); //comença filera de valoració
             //if (grObj.valoracio !="" && gr.valorat ) {text+="Valoració vençuda";}
 
             var venciment = new GlideDateTime();
@@ -171,7 +169,7 @@ ObjectiuUtils.prototype = {
             grM2m.query();
             while (grM2m.next()) {
                 if (grM2m.accio_millora.state != -5) {
-                    text += rtfstring.rowstart(["8200", "9350", "9700"]);
+                    text += rtfstring.rowstart(col);
                     text += "  \\b   " + grM2m.accio_millora.number + " \\b0";
                     text += sgqSiNoActual(grM2m.accio_millora);
                     text += " - " + grM2m.accio_millora.short_description + "\\intbl\\ql\\cell\n";
@@ -187,49 +185,39 @@ ObjectiuUtils.prototype = {
     },
 
     getRtfResumMillora: function(filtre, sgq) {
+	
+		function sgqSiNoActual(x) {
+            var text = "";
+            if (x.sgq != gs.getUser().getPreference('qualitat.sgqActual')) text = "(" + x.sgq.getDisplayValue() + ")";
+            return text;
+        }
 
-        new x_udg_q.log("Generant informe resum per " + sgq);
+        new x_udg_q.log("Generant reum de l'informe per " + sgq);
+		var rtfstring = new rtf("");
         var text = "";
         var col = [8300, 9450, 9800];
         var grObj = new GlideRecord('x_udg_q_objectiumillora');
-        var rtfstring = new rtf("");
-        grObj.addQuery("state!=-5");
-        grObj.addQuery('sgq=' + sgq + '^ORcompartitLIKE' + sgq);
-        if (typeof filtre !== 'undefined' && filtre != "") grObj.addQuery(filtre);
+		grObj.addEncodedQuery(filtre);
+        //if (typeof filtre !== 'undefined' && filtre != "") grObj.addEncodedQuery(filtre);
         grObj.query();
         text += rtfstring.tablestart();
         while (grObj.next()) {
 
             text += rtfstring.rowstart(col, 36);
-            text += "\\b " + grObj.number + " \\b0 - " + grObj.short_description + "\\ql\\cell\n";
+            text += "\\b " + grObj.number + " \\b0 ";
+			text += sgqSiNoActual(grObj);
+			text += " - " + grObj.short_description + "\\ql\\cell\n";
             if (grObj.state == 3) {
-                text += grObj.tancament.getDisplayValue() + "\\ql\\cell\n";
+                text += grObj.tancament.getDisplayValue();
             } else {
                 if (grObj.state == 2) text += "En Curs";
-                //text+="data";
-                text += "\\ql\\cell\n";
             }
+			text += "\\ql\\cell\n";
             text += parseInt(grObj.assoliment) + "%\\qr\\cell\n";
 
             //No sabem com fer cel·les anidades text+="\\itap2\\ql{HOLA}\\nestcell\n";
 
             text += rtfstring.rowend();
-
-            /*
-            var grM2m = new GlideRecord ('x_udg_q_m2m_accions_objectius');
-            grM2m.addQuery('objectiu_millora',grObj.sys_id);
-            grM2m.query();
-            while (grM2m.next()) {
-            	if (grM2m.accio_millora.state != -5) {
-            		text+=rtfstring.rowstart(["7700","9000","9700"]);
-            		text+="  \\b   "+grM2m.accio_millora.number+" \\b0 - "+grM2m.accio_millora.short_description+"\\intbl\\ql\\cell\n";
-            		text+=textestatA(grM2m.accio_millora.state)+"\\par ("+grM2m.accio_millora.sgq.getDisplayValue()+")\\intbl\\ql\\cell\n";
-            		text+=grM2m.accio_millora.percentatge+"%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
-            		text+=rtfstring.rowend();
-            	}
-            	
-            }
-            */
         }
         text += rtfstring.tableend();
         return text;
@@ -242,7 +230,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>306</sys_mod_count>
+        <sys_mod_count>331</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -250,6 +238,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-30 12:20:22</sys_updated_on>
+        <sys_updated_on>2020-01-30 17:37:56</sys_updated_on>
     </sys_script_include>
 </record_update>
