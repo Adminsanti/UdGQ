@@ -9,112 +9,116 @@
         <name>rtf</name>
         <script><![CDATA[var rtf = Class.create();
 rtf.prototype = {
-	
-	initialize: function(cadena){
-		this._cadena= cadena;
-		this._table="{"; //{\\rtf1\\ansi\\deff0\n";
-		this._tableend="}\n";
-		this._row="\\trowd\n";
-		this._rowend="\\row\n";
-		this.escape();
-	},
-		
-	replace: function (cadena1, cadena2){ //cadena1 Pot ser una cadena o una regex
-		this._cadena=this._cadena.replace(cadena1,cadena2);
-	},
-		
-	getContent: function () {
-		return this._cadena;
-	},
-	
-	getTagParameter: function (tag) {
-		/*
-		var exp="##"+tag+"#(.+)##";
-		var myRe = new RegExp (exp,'g');
-		var myArray = myRe.exec(this._cadena); //pot donar null si no troba
-		*/
-		var exp="##"+tag+"#.+##";
-		var myRe = new RegExp (exp,'g');
-		var resposta=this._cadena.match(myRe);
-		if (resposta) resposta= resposta.toString().replace("##"+tag+"#",'').replace("##",'');
-		return resposta;
-	},
-	
-	clearTag: function (tag) {
-		var reg = new RegExp ('##'+tag+'#.+##','g');
-		this._cadena=this._cadena.replace(reg,''); 
-	}, 
-		
-	escape: function () {
-		this._cadena= this._cadena.replace(/À/g,"\\'c0");
-		this._cadena= this._cadena.replace(/Á/g,"\\'c1");
-		this._cadena= this._cadena.replace(/Ç/g,"\\'c7");
-		this._cadena= this._cadena.replace(/È/g,"\\'c8");
-		this._cadena= this._cadena.replace(/É/g,"\\'c9");
-		this._cadena= this._cadena.replace(/Í/g,"\\'cd");
-		this._cadena= this._cadena.replace(/Ò/g,"\\'d2");
-		this._cadena= this._cadena.replace(/Ó/g,"\\'d3");			
-		this._cadena= this._cadena.replace(/Ú/g,"\\'da");
-		this._cadena= this._cadena.replace(/Ü/g,"\\'dc");
-		this._cadena= this._cadena.replace(/à/g,"\\'e0");
-		this._cadena= this._cadena.replace(/á/g,"\\'e1");
-		this._cadena= this._cadena.replace(/ç/g,"\\'e7");
-		this._cadena= this._cadena.replace(/è/g,"\\'e8");
-		this._cadena= this._cadena.replace(/é/g,"\\'e9");			
-		this._cadena= this._cadena.replace(/í/g,"\\'ed");
-		this._cadena= this._cadena.replace(/ò/g,"\\'f2");
-		this._cadena= this._cadena.replace(/ó/g,"\\'f3");
-		this._cadena= this._cadena.replace(/ú/g,"\\'fa");
-		this._cadena= this._cadena.replace(/ü/g,"\\'fc");
-		this._cadena= this._cadena.replace(/·/g,"\\'b7");
-		return this;
-	},
-		
-	li: function (li) {
-		var cadena="\\par {\\listtext\\pard\\plain\\ltrpar \\s15 \\rtlch\\fcs1 \\af31507\\ltrch\\fcs0\\f3\\lang1027\\langfe1033\\langnp1027\\insrsid15291472 \\loch\\af3\\dbch\\af31506\\hich\\f3 \\'b7\\tab}\n";
-		return cadena+li;
-	},
-	
-	llista: function (llista) {
-		var cadena_rtf="";
-		var index=0;
-		for (index=0; index<llista.length; ++index) 
-			cadena_rtf+= this.li(llista[index]);
-		return cadena_rtf;
-	},
-			
-	tablestart: function () {
 
-		return this._table;
-	},
-			
-	rowstart: function (llistacols, color) {
-		var cadena_rtf=this._row;
-		
-		for (var i=0; i<llistacols.length; i++) {	
-			cadena_rtf +="\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs"; //bora
-			if (color) cadena_rtf += "\\clcbpat"+color;
-			cadena_rtf += "\\cellx"+llistacols[i]+"\n";
-		}
-		return cadena_rtf;
-	},
+    initialize: function(cadena) {
+        this._cadena = cadena;
+        this._table = "{"; //{\\rtf1\\ansi\\deff0\n";
+        this._tableend = "}\n";
+        this._row = "\\trowd\n";
+        this._rowend = "\\row\n";
+        this.escape();
+    },
+
+    replace: function(cadena1, cadena2) { //cadena1 Pot ser una cadena o una regex
+        this._cadena = this._cadena.replace(cadena1, cadena2);
+    },
+
+    getContent: function() {
+        return this._cadena;
+    },
+
+    getTagParameter: function(tag) {
+        /*
+        var exp="##"+tag+"#(.+)##";
+        var myRe = new RegExp (exp,'g');
+        var myArray = myRe.exec(this._cadena); //pot donar null si no troba
+        */
+        var exp = "##" + tag + "#.+##";
+        var myRe = new RegExp(exp, 'g');
+        var resposta = this._cadena.match(myRe);
+        if (resposta) resposta = resposta.toString().replace("##" + tag + "#", '').replace("##", '');
+        return resposta;
+    },
+
+    clearTag: function(tag) {
+        var reg = new RegExp('##' + tag + '#.+##', 'g');
+        this._cadena = this._cadena.replace(reg, '');
+    },
 	
-	tableend: function () {
-		return this._tableend;
-	},
-			
-	rowend: function () {
-		return this._rowend;
-	},
-		
-	type: 'rtf'
+
+    escape: function() {
+        this._cadena = this._cadena.replace(/À/g, "\\'c0");
+        this._cadena = this._cadena.replace(/Á/g, "\\'c1");
+        this._cadena = this._cadena.replace(/Ç/g, "\\'c7");
+        this._cadena = this._cadena.replace(/È/g, "\\'c8");
+        this._cadena = this._cadena.replace(/É/g, "\\'c9");
+        this._cadena = this._cadena.replace(/Í/g, "\\'cd");
+        this._cadena = this._cadena.replace(/Ò/g, "\\'d2");
+        this._cadena = this._cadena.replace(/Ó/g, "\\'d3");
+        this._cadena = this._cadena.replace(/Ú/g, "\\'da");
+        this._cadena = this._cadena.replace(/Ü/g, "\\'dc");
+        this._cadena = this._cadena.replace(/à/g, "\\'e0");
+        this._cadena = this._cadena.replace(/á/g, "\\'e1");
+        this._cadena = this._cadena.replace(/ç/g, "\\'e7");
+        this._cadena = this._cadena.replace(/è/g, "\\'e8");
+        this._cadena = this._cadena.replace(/é/g, "\\'e9");
+        this._cadena = this._cadena.replace(/í/g, "\\'ed");
+        this._cadena = this._cadena.replace(/ò/g, "\\'f2");
+        this._cadena = this._cadena.replace(/ó/g, "\\'f3");
+        this._cadena = this._cadena.replace(/ú/g, "\\'fa");
+        this._cadena = this._cadena.replace(/ü/g, "\\'fc");
+        this._cadena = this._cadena.replace(/·/g, "\\'b7");
+        return this;
+    },
+
+    li: function(li) {
+        var cadena = "\\par {\\listtext\\pard\\plain\\ltrpar \\s15 \\rtlch\\fcs1 \\af31507\\ltrch\\fcs0\\f3\\lang1027\\langfe1033\\langnp1027\\insrsid15291472 \\loch\\af3\\dbch\\af31506\\hich\\f3 \\'b7\\tab}\n";
+        return cadena + li;
+    },
+
+    llista: function(llista) {
+        var cadena_rtf = "";
+        if (llista[0]) {
+            cadena_rtf =llista[0];
+            for (var index = 1; index < llista.length; ++index)
+                cadena_rtf += this.li(llista[index]);
+        }
+        return cadena_rtf;
+
+    },
+
+    tablestart: function() {
+
+        return this._table;
+    },
+
+    rowstart: function(llistacols, color) {
+        var cadena_rtf = this._row;
+
+        for (var i = 0; i < llistacols.length; i++) {
+            cadena_rtf += "\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs"; //bora
+            if (color) cadena_rtf += "\\clcbpat" + color;
+            cadena_rtf += "\\cellx" + llistacols[i] + "\n";
+        }
+        return cadena_rtf;
+    },
+
+    tableend: function() {
+        return this._tableend;
+    },
+
+    rowend: function() {
+        return this._rowend;
+    },
+
+    type: 'rtf'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-09-23 14:55:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fadf67f91b4c40105fab4002cd4bcb33</sys_id>
-        <sys_mod_count>104</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name>rtf</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -122,6 +126,6 @@ rtf.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_fadf67f91b4c40105fab4002cd4bcb33</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-28 09:08:15</sys_updated_on>
+        <sys_updated_on>2020-01-30 11:02:58</sys_updated_on>
     </sys_script_include>
 </record_update>
