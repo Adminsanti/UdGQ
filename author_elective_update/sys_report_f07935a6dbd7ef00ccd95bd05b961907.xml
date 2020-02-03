@@ -171,7 +171,7 @@
         <update_guid_history>f66902ae9c1bef0002b8535379eb2c07:-276903591,c6a9f5a601d7ef004d5d7468078d1235:-675493559,f87935a6dbd7ef0098ab1697f7fc4c0a:-563757447</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">a4bf8a2adb5bef00ccd95bd05b961918</sys_audit_delete>
+        <sys_audit_delete display_value="Record deleted 01/02/2019 13:52:50">a4bf8a2adb5bef00ccd95bd05b961918</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-02-01 12:52:50</sys_created_on>

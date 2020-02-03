@@ -3,9 +3,7 @@
         <action_name>Tancament2017</action_name>
         <active>true</active>
         <client>false</client>
-        <client_script_v2><![CDATA[function onClick(g_form) {
-
-}]]></client_script_v2>
+        <client_script_v2/>
         <comments/>
         <condition>gs.hasRole('x_udg_q.ManagerUniversitat') &amp;&amp; current.state==3</condition>
         <form_action>true</form_action>
@@ -32,7 +30,7 @@
 current.closed_at=gDT;
 current.valorat=gDT;
 current.update();
-//action.setRedirectURL(current);]]></script>
+action.setRedirectURL(current);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -44,7 +42,7 @@ current.update();
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d3e9befdbb567009fd1f57eaf961943</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Tancament a desembre 2017</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -53,7 +51,7 @@ current.update();
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_9d3e9befdbb567009fd1f57eaf961943</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-08 11:03:52</sys_updated_on>
+        <sys_updated_on>2019-02-18 11:46:50</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
