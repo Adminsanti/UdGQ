@@ -47,12 +47,7 @@ var rtf1= new rtf(contingut);
 rtf1.replace (/##NomSGQ##/g,grSGQ.nom);
 rtf1.replace (/##LlistaTitulacions##/g,rtf1.llista(new Sgq().getLlistaNomsTitulacionsSgqActual()));
  
-
-rtf1.clearTag ('FiltreMillora'); // Netejar filtre
-//filtre+="^state!=-5";
-//filtre+="^tancament!=-5";
-//filtre+="^sgq=" + SGQpref + "^ORcompartitLIKE" + SGQpref;
-//CAL una protecció per evitar que el filtre porti un ^NQ
+rtf1.clearTag ('FiltreMillora'); // Netejar filtre si és que encara hi és
 rtf1.replace ('##ResumMillora##',ObjUtils.getRtfResumMillora(current.condicions,SGQpref));
 
 if (rtf1.getContent().match(/##TSubestandard#.\..##/g)) {
@@ -68,7 +63,9 @@ if (rtf1.getContent().match(/##DSubestandard#.\..##/g)) {
 	var Dsubestandards= rtf1.getContent().match(/##DSubestandard#.\..##/g).toString().match(/.\../g);
 	for (index=0; index<Dsubestandards.length; ++index) {
 		var sysidS2 = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
-		var textstring= ObjUtils.getRtfperSubestandard(sysidS2,current.condicions,SGQpref);
+		var textstring="";
+		textstring+= ObjUtils.getRtfperSubestandard(sysidS2,current.condicions,2,SGQpref);
+		textstring+= ObjUtils.getRtfperSubestandard(sysidS2,current.condicions,3,SGQpref);
 		rtf1.replace("##DSubestandard#"+Dsubestandards[index]+"##",textstring);
 	}	
 }
@@ -95,7 +92,7 @@ action.setRedirectURL(current);  //Roman a la plantilla
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c855029c1b0448105fab4002cd4bcb83</sys_id>
-        <sys_mod_count>211</sys_mod_count>
+        <sys_mod_count>213</sys_mod_count>
         <sys_name>Genera Doc</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -104,7 +101,7 @@ action.setRedirectURL(current);  //Roman a la plantilla
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_c855029c1b0448105fab4002cd4bcb83</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-03 11:30:25</sys_updated_on>
+        <sys_updated_on>2020-02-03 17:59:18</sys_updated_on>
         <table>x_udg_q_plantillavsma</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
