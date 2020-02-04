@@ -135,8 +135,8 @@ ObjectiuUtils.prototype = {
 		grObj.orderBy('number');
         grObj.query();
         var text ="";
-		if (grObj.hasNext() && status==2) text="Durant aquest període s'han tancat els següents objectius de millora relacionats amb aquest subestàndard:\\par\\par";
-		if (grObj.hasNext() && status==3) text="Durant aquest període s'han obert nous o continuen oberts els següents objectius de millora relacionats amb aquest subestàndard:\\par\\par";
+		if (grObj.hasNext() && status==3) text="Durant aquest període s'han tancat els següents objectius de millora relacionats amb aquest subestàndard:\\par\\par";
+		if (grObj.hasNext() && status==2) text="Durant aquest període s'han obert nous o continuen en curs els següents objectius de millora relacionats amb aquest subestàndard:\\par\\par";
         while (grObj.next()) {
             text += rtfstring.tablestart();
             text += rtfstring.rowstart(col, 36);
@@ -182,6 +182,11 @@ ObjectiuUtils.prototype = {
                     text += rtfstring.rowend();
                 }
             }
+			if (grObj.modificacio_memoria) {
+				text += rtfstring.rowstart(col[2]);
+                text += "Aquest objectiu implica la modificació de la memòria";
+                text += rtfstring.rowend();
+			}
             text += rtfstring.tableend();
             text += "\\par\n";
         }
@@ -196,7 +201,7 @@ ObjectiuUtils.prototype = {
             return text;
         }
 
-        new x_udg_q.log("Generant reum de l'informe per " + sgq);
+        new x_udg_q.log("Generant resum de l'informe per " + sgq);
 		var rtfstring = new rtf("");
         var text = "";
         var col = [8300, 9450, 9800];
@@ -209,7 +214,9 @@ ObjectiuUtils.prototype = {
         while (grObj.next()) {
 
             text += rtfstring.rowstart(col, 36);
-            text += "\\b " + grObj.number + " \\b0 ";
+            text += "\\b " + grObj.number;
+			if (grObj.modificacio_memoria) text+="*";
+			text += " \\b0 ";
 			text += sgqSiNoActual(grObj);
 			text += " - " + grObj.short_description + "\\ql\\cell\n";
             if (grObj.state == 3) {
@@ -235,7 +242,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>347</sys_mod_count>
+        <sys_mod_count>348</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -243,6 +250,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-03 19:15:32</sys_updated_on>
+        <sys_updated_on>2020-02-04 09:14:37</sys_updated_on>
     </sys_script_include>
 </record_update>
