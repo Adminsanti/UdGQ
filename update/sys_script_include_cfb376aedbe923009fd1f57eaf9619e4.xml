@@ -158,11 +158,10 @@ ObjectiuUtils.prototype = {
             if (grObj.valoracio != "") {
                 if (valorat > venciment) text += "{Valoració: ";
                 else text += "{\\cf6 Valoració vençuda: ";
-				text += grObj.valoracio.replace("\n", " \\par "); //Per incloure els retorns de linia
-                //text += grObj.valoracio;
-                text += "}\\intbl\\ql\\cell\n";
-            } else text += "{\\cf6 Manca Valoració}" + "\\intbl\\ql\\cell\n";
-
+				text += grObj.valoracio.replace("\n", " \\ql\\par "); //Per incloure els retorns de linia
+                //text += grObj.valoracio;               
+            } else text += "{\\cf6 Manca Valoració";
+			text += "}\\intbl\\ql\\cell\n";
             text += rtfstring.rowend();
 
             var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
@@ -249,7 +248,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>375</sys_mod_count>
+        <sys_mod_count>377</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -257,6 +256,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-04 12:50:43</sys_updated_on>
+        <sys_updated_on>2020-02-05 08:08:39</sys_updated_on>
     </sys_script_include>
 </record_update>
