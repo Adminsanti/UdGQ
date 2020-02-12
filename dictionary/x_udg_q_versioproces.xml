@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="use_document_viewer=true" label="Versió Procés" max_length="40" name="x_udg_q_versioproces" type="collection">
+        <element label="Document" max_length="8000" name="document" read_only="true" type="html"/>
+        <element label="Final Vigència" max_length="40" name="finalvigencia" type="glide_date"/>
+        <element active="false" label="Fitxer" max_length="40" name="fitxer" type="file_attachment"/>
+        <element label="Inici Vigència" max_length="40" name="inicivigencia" type="glide_date"/>
+        <element label="Procés" max_length="32" name="proces" read_only="true" reference="x_udg_q_proces" type="reference"/>
+        <element choice="1" default="1" label="Estat" max_length="40" name="state" read_only="true" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Esborrany" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Vigent" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Extinta" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element display="true" label="Versió" max_length="40" name="versio" type="string"/>
+        <index name="index">
+            <element name="proces"/>
+        </index>
+    </element>
+</database>

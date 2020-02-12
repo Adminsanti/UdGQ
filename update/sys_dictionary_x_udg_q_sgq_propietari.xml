@@ -45,7 +45,10 @@
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual>activa=true^sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ</reference_qual>
-        <reference_qual_condition/>
+        <reference_qual_condition table="x_udg_q_funcio">activa=true^sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ<item endquery="false" field="activa" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="sgq" goto="false" newquery="false" operator="=" or="false" value="javascript: gs.getPreference('qualitat.sgqActual','');"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -69,7 +72,7 @@
         <unique>false</unique>
         <use_dependent_field>true</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

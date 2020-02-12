@@ -3,22 +3,27 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
-        <active>false</active>
+        <action_update>true</action_update>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>task</collection>
+        <collection>x_udg_q_versioproces</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_udg_q_versioproces">stateCHANGESTO2^NQstate=2^versioVALCHANGES^ORdocumentVALCHANGES^EQ<item display_value="Vigent" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+            <item display_value="Vigent" endquery="false" field="state" goto="false" newquery="true" operator="=" or="false" value="2"/>
+            <item endquery="false" field="versio" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="document" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message><![CDATA[<p>COnsulta $current.sys_class_name</p>]]></message>
-        <name>RECYCLE SGQ Task Esborranys</name>
+        <name>Versió Procés canvia vigent</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,10 +34,11 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
-
-	if (current.sys_class_name=='x_udg_q_objectiumillora') current.addQuery("sgq="+SGQpref+"^ORcompartitLIKE"+SGQpref);
-	if (current.sys_class_name=='x_udg_q_acciomillora') current.addQuery("sgq="+SGQpref+"^ORcompartidaLIKE"+SGQpref);
+	var grP = new GlideRecord('x_udg_q_proces');
+	grP.get(current.proces);
+	grP.versio=current.versio;
+	grP.document=current.document;
+	grP.update();
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -42,8 +48,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0037747b1b836340c851a64fad4bcbd3</sys_id>
-        <sys_mod_count>16</sys_mod_count>
-        <sys_name>RECYCLE SGQ Task Esborranys</sys_name>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Versió Procés canvia vigent</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -51,9 +57,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0037747b1b836340c851a64fad4bcbd3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-02 21:50:49</sys_updated_on>
+        <sys_updated_on>2020-02-11 10:44:52</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=0037747b1b836340c851a64fad4bcbd3"/>
     <sys_translated_text action="INSERT_OR_UPDATE">

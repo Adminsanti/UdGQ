@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Procés" max_length="40" name="x_udg_q_proces" type="collection">
+    <element attributes="no_attachment=false,use_document_viewer=true" audit="true" label="Procés" max_length="40" name="x_udg_q_proces" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" read_only="true" type="boolean"/>
-        <element label="Fluxograma" max_length="8000" name="flux" read_only="true" type="html"/>
+        <element label="Document" max_length="8000" name="document" read_only="true" type="html"/>
+        <element active="false" label="Fitxer Document" max_length="40" name="fitxerdocument" read_only="true" type="file_attachment"/>
+        <element active="false" label="Fluxograma" max_length="8000" name="flux" read_only="true" type="html"/>
         <element label="Llegat A" max_length="4000" name="llegata" reference="x_udg_q_sgq" reference_qual="actiu=true^EQ" reference_qual_condition="actiu=true^EQ" type="glide_list"/>
         <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#10;&#9;&#10;&#9;//return 'P'+current.num+current.sgq.codi+'. '+current.titol;&#10;&#9;return new x_udg_q.ProcesSGQ().nouNom(current);&#9;&#10;})(current);" display="true" label="Nom" max_length="100" name="nom" read_only="true" type="string" virtual="true"/>
         <element label="Num" mandatory="true" max_length="10" name="num" type="string"/>
         <element label="Objectius" max_length="1500" name="objectius" type="string"/>
         <element label="Pare" max_length="32" name="pare" read_only="true" reference="x_udg_q_proces" type="reference"/>
-        <element default="javascript:new x_udg_q.Sgq().getResponsableSgqActual();" label="Propietari" mandatory="true" max_length="32" name="propietari" reference="x_udg_q_funcio" type="reference"/>
-        <element default="javascript: new x_udg_q.Sgq().getResponsableSgqActual();" label="Responsable" mandatory="true" max_length="32" name="responsable" reference="x_udg_q_funcio" type="reference"/>
+        <element default="javascript:new x_udg_q.Sgq().getPropietariSgqActual();" dynamic_default_value="598354041b920410c851a64fad4bcbf4" label="Propietari" mandatory="true" max_length="32" name="propietari" reference="x_udg_q_funcio" reference_qual="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^EQ" reference_qual_condition="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^EQ" type="reference" use_dynamic_default="true"/>
+        <element default="javascript: new x_udg_q.Sgq().getResponsableSgqActual();" label="Responsable" mandatory="true" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^EQ" reference_qual_condition="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^EQ" type="reference"/>
         <element choice="1" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" reference_qual="actiu=true^EQ" reference_qual_condition="actiu=true^EQ" type="reference">
             <choice/>
         </element>
+        <element label="Sincronitzat" max_length="40" name="sincronitzat" type="boolean"/>
         <element choice="1" label="Sincronitzat amb" max_length="32" name="sincronitzat_amb" reference="x_udg_q_proces" reference_qual="sgq.virtual=true^EQ" reference_qual_condition="sgq.virtual=true^EQ" type="reference">
             <choice/>
         </element>
-        <element choice="3" default="Procés" label="Tipus" mandatory="true" max_length="30" name="tipus" type="string">
+        <element choice="3" default="Propi" label="Tipus" mandatory="true" max_length="30" name="tipus" read_only="true" type="string">
             <choice>
-                <element inactive_on_update="false" label="Procediment" value="Procediment"/>
-                <element inactive_on_update="false" label="Procés" value="Procés"/>
-                <element inactive="true" inactive_on_update="true" label="Procediment" sequence="0" value="Procediment"/>
-                <element inactive="true" inactive_on_update="true" label="Procés" sequence="1" value="Procés"/>
-                <element inactive_on_update="false" label="Subprocés" sequence="2" value="Subprocés"/>
+                <element inactive_on_update="false" label="Propi" sequence="1" value="Propi"/>
+                <element inactive_on_update="false" label="Llegat" sequence="2" value="Llegat"/>
+                <element inactive_on_update="false" label="Adaptat" sequence="3" value="Adaptat"/>
             </choice>
         </element>
         <element label="Titol" mandatory="true" max_length="180" name="titol" type="string"/>
+        <element label="Versió" max_length="2" name="versio" read_only="true" type="string"/>
         <index name="index">
             <element name="pare"/>
         </index>

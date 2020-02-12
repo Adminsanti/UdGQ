@@ -2,31 +2,45 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_proces" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">4d66e4c41b160410c851a64fad4bcbed</list_id>
+            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">7cb628971bfe80105fab4002cd4bcb86</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_udg_q_proces.pare</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-07 10:07:28</sys_created_on>
-            <sys_id>8566e4c41b160410c851a64fad4bcbef</sys_id>
+            <sys_created_on>2020-02-11 09:00:28</sys_created_on>
+            <sys_id>f4b628971bfe80105fab4002cd4bcb87</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-07 10:07:28</sys_updated_on>
+            <sys_updated_on>2020-02-11 09:00:28</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">4d66e4c41b160410c851a64fad4bcbed</list_id>
+            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">7cb628971bfe80105fab4002cd4bcb86</list_id>
             <order_by/>
             <position>1</position>
             <related_list>x_udg_q_objectiumillora.proces</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-07 10:07:28</sys_created_on>
-            <sys_id>4166a8c41b160410c851a64fad4bcb45</sys_id>
+            <sys_created_on>2020-02-11 09:00:28</sys_created_on>
+            <sys_id>f8b628971bfe80105fab4002cd4bcb87</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-07 10:07:28</sys_updated_on>
+            <sys_updated_on>2020-02-11 09:00:28</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">7cb628971bfe80105fab4002cd4bcb86</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_udg_q_versioproces.proces</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-02-11 09:00:28</sys_created_on>
+            <sys_id>fcb628971bfe80105fab4002cd4bcb87</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-02-11 09:00:28</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Procés - Default view</calculated_name>
@@ -37,11 +51,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-07 10:07:28</sys_created_on>
+            <sys_created_on>2020-02-11 09:00:28</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4d66e4c41b160410c851a64fad4bcbed</sys_id>
+            <sys_id>7cb628971bfe80105fab4002cd4bcb86</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Procés - Default view</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -50,7 +64,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_related_x_udg_q_proces_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-07 10:07:28</sys_updated_on>
+            <sys_updated_on>2020-02-11 09:00:28</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

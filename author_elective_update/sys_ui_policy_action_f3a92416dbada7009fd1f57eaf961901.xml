@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>false</disabled>
+        <field>tipus</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-11-05 10:58:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f3a92416dbada7009fd1f57eaf961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tipus</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_policy_action_f3a92416dbada7009fd1f57eaf961901</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-11-05 10:58:54</sys_updated_on>
+        <table>x_udg_q_proces</table>
+        <ui_policy display_value="Proces - P">894c446037d5ab004ccbd0d543990e05</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_ui_policy_action_f3a92416dbada7009fd1f57eaf961901</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>false</disabled><field>tipus</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2018-11-05 10:58:54</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>f3a92416dbada7009fd1f57eaf961901</sys_id><sys_mod_count>0</sys_mod_count><sys_name>tipus</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_ui_policy_action_f3a92416dbada7009fd1f57eaf961901</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2018-11-05 10:58:54</sys_updated_on><table>x_udg_q_proces</table><ui_policy display_value="Proces - P">894c446037d5ab004ccbd0d543990e05</ui_policy><visible>ignore</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>14549622</payload_hash>
+        <record_name>tipus</record_name>
+        <reverted_from/>
+        <source>ab2b94321b3200105fab4002cd4bcb07</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2020-02-09 18:53:10</sys_created_on>
+        <sys_id>88f9419b1bb2c0105fab4002cd4bcbe1</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1702b4c5df00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UI Policy Action</type>
+        <update_guid>48f9419beab2c0101755eecdc8ba36e1</update_guid>
+        <update_guid_history>48f9419beab2c0101755eecdc8ba36e1:14549622</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-02-11 11:34:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>138f114d0bf1426c94b12b0384922c51</sys_id>
+        <sys_metadata>f3a92416dbada7009fd1f57eaf961901</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tipus</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="Proces - Propi">894c446037d5ab004ccbd0d543990e05</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_f3a92416dbada7009fd1f57eaf961901</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_f3a92416dbada7009fd1f57eaf961901">88f9419b1bb2c0105fab4002cd4bcbe1</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-02-11 11:34:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

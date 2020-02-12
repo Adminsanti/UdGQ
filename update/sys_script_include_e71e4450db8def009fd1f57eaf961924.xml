@@ -9,115 +9,164 @@
         <name>ProcesSGQ</name>
         <script><![CDATA[var ProcesSGQ = Class.create();
 ProcesSGQ.prototype = {
-	initialize: function() {
-	},
-	
-	nouNom: function (proces) {
-		return 'P'+proces.num+proces.sgq.codi+'. '+proces.titol;
-	},
-	
-	LlistaFills: function (idProcesPare) {
-		var llistaF =[];
-		var grProc = new GlideRecord('x_udg_q_proces');
-		
-		grProc.addQuery('pare',idProcesPare);
-		grProc.query();
-		while (grProc.next()) {
-			llistaF.push(grProc.sys_id);
-		}
-		return llistaF;
-	},
-	
-	LlistaFillsCodiSGQ: function (idProcesPare) {
-		var llistaF =[];
-		var grProc = new GlideRecord('x_udg_q_proces');
-		grProc.setWorkflow(false); //Així no s'executa la query rule -- ATENCIÓ!!!
-		grProc.addQuery('pare',idProcesPare);
-		grProc.query();
-		while (grProc.next()) {
-			llistaF.push(grProc.sgq.codi);
-		}
-		return llistaF;
-	},
-	
-	LlegataIgualFills: function (idProcesPare) {
-		var FillsReals = this.LlistaFills (idProcesPare);
-		grPare = new GlideRecord ('x_udg_q_proces');
-		grPare.get('sys_id',idProcesPare);
-		var FillsSuposats = grPare.llegata;
-		return new x_udg_q.ListUtil().sameElements(FillsReals, FillsSuposats);
-	},
-	
-	RegenerarLlegats: function (idProcesPare, llistaLlegata) {
-		llistaFillsReals = this.LlistaFills(idProcesPare);
-		for (var i = 0; i < llistaLlegata.length; i++) { //bucle per la llista
-			var grFill = new GlideRecord ('x_udg_q_proces');
-			grFill.addQuery ('sys_id', llistaLlegata [i]);
-			grFill.setLimit(1);
-			grFill.query();
-			if (gr.next()) {
-				//Existeix
-				//if active==true tot be´
-				//if active == false -----> QUe fem
-				//treure de la llista llistaFillsReals.
-			} else {
-				//No existeix, cal crear-lo
+    initialize: function() {},
+
+    nouNom: function(proces) {
+        return 'P' + proces.num + proces.sgq.codi + '. ' + proces.titol;
+    },
+
+    LlistaFills: function(idProcesPare) {
+        var llistaF = [];
+        var grProc = new GlideRecord('x_udg_q_proces');
+
+        grProc.addQuery('pare', idProcesPare);
+        grProc.query();
+        while (grProc.next()) {
+            llistaF.push(grProc.sys_id);
+        }
+        return llistaF;
+    },
+
+    LlistaFillsCodiSGQ: function(idProcesPare) {
+        var llistaF = [];
+        var grProc = new GlideRecord('x_udg_q_proces');
+        grProc.setWorkflow(false); //Així no s'executa la query rule -- ATENCIÓ!!!
+        grProc.addQuery('pare', idProcesPare);
+        grProc.query();
+        while (grProc.next()) {
+            llistaF.push(grProc.sgq.codi);
+        }
+        return llistaF;
+    },
+
+
+    creaFillsInexistents: function(grPare) {
+
+        var llegats = grPare.llegata.split(",");
+        for (i = 0; i < llegats.length; i++) { //Bucle llegats
+            var grF = new GlideRecord('x_udg_q_proces');
+			grF.setWorkflow(false); //Així no s'executa la query rule i podem veure'ls tots -- ATENCIÓ!!!
+            grF.addQuery('pare', grPare.sys_id);
+            grF.addQuery('sgq', llegats[i]);
+            grF.query();
+            if (!grF.next()) this.creaFill(grPare, llegats[i]); //si el fill no existeix el creem mitg buit
+			if (grF.next()) { //mai hauria d'entrar en aquest segon next(), vol dir que té dos fills en el mateix SGQ
+				gs.addErrorMessage('Atenció '+grPare.nom+'te més d\'un fill al sgq '+llegats[i]);
 			}
-		}
-		//Si arribem aquí i encara hi ha element a llistaDillsReals, és que hi ha processos fills que no esatn a la llista llegats. Desactivar? (extra: cal fer una notificació al propietari i responsable)
-	},
-	
-	ActualitzaFlux: function (process_sys_id, attachment_sys_id) {
-		try {
-			var grproc = new GlideRecord('x_udg_q_proces');
-			grproc.addQuery('sys_id',process_sys_id);
-			grproc.setLimit(1);
-			grproc.query();
-			if (grproc.next()) {
-				//Aquí podriem comprovar si l'attachment es diu Flux* o fer-ne més d'un
-				grproc.flux= '<p><img style=\"align: baseline;\" title=\"\" src=\"sys_attachment.do?sys_id='+ attachment_sys_id +'\" alt=\"\" align=\"baseline\" border=\"\" hspace=\"\" vspace=\"\" \/></p>';
-				grproc.update();
-			}
-		}
-		catch (e) {}
-			return "";
-		},
-		
-	ActualitzaMapaProcessos: function (sgq_sys_id) {
-		var grproc = new GlideRecord('x_udg_q_proces');
-		var html="<table border=1px><tr style=\"background-color: #b86767;\">Processos propis</tr>";
-		grproc.addQuery('sgq',sgq_sys_id);
-		grproc.orderBy('num');
-		grproc.query();
 			
-		while (grproc.next()) {
-			html+="<tr ";
-			html+="style=\"background-color: #f2c2c2;";
-			html+="\"><td>"+grproc.nom+"</td>";
-			if (grproc.pare) {
-				html+="<td>Transversal</td>";
-			} else {
-				html+="<td>Propi</td>";
-			}
-			html+="</tr>";
-		}
-		html+="</table>";
-			
-		var grsgq = new GlideRecord('x_udg_q_sgq');
-		grsgq.get('sys_id',sgq_sys_id);
-		grsgq.mapa=html;
-		grsgq.update();
-		return html;
-	},
-				
-	type: 'ProcesSGQ'
+        }
+    },
+
+    sincroTotsFills: function(grPare) { //sincronitza tots els fills
+        var grFill = new GlideRecord('x_udg_q_proces');
+        grFill.addQuery('pare', grPare.sys_id);
+		grFill.setWorkflow(false); //Així no s'executa la query rule i podem veure'ls tots -- ATENCIÓ!!!
+        grFill.query();
+        while (grFill.next()) {
+            this.sincronitzaFill(grPare, grFill);
+        }
+    },
+
+    creaFill: function(grPare, sgqFill) {
+        var grFill = new GlideRecord('x_udg_q_proces');
+        grFill.initialize();
+        grFill.pare = grPare.sys_id;
+        grFill.actiu = true;
+        grFill.tipus = 'Llegat';
+        grFill.sgq = sgqFill;
+		var grSGQFill = new GlideRecord('x_udg_q_sgq');
+		grSGQFill.get(sgqFill);
+		grFill.propietari=grSGQFill.propietari;
+		grFill.responsable=grSGQFill.responsable;
+        this.sincronitzaFill(grPare, grFill); //és nou, el sinconitzem ara i ja estarà ben gravat
+    },
+
+    sincronitzaFill: function(grPare, grFill) {
+		var llegats = new x_udg_q.ListUtil(grPare.llegata);
+        if (llegats.isInList(grFill.sys_id)) { //És a la llista de llegats
+            grFill.actiu = true;
+        } else {
+            grFill.actiu = false;
+        }
+        if (grFill.actiu) {
+            if (grFill.tipus == 'Llegat') {
+                grFill.nom = grPare.nom;
+                grFill.num = grPare.num;
+                grFill.titol = grPare.titol;
+                grFill.document = grPare.document;
+                grFill.versio = grPare.versio;
+                grFill.sincronitzat = true;
+            }
+            if (grFill.tipus == 'Adaptat') {
+                grFill.nom = grPare.nom;
+                grFill.num = grPare.num;
+                grFill.titol = grPare.titol;
+                //com dessincronitzem? ****************************************
+            }
+        }
+        grFill.update();
+    },
+
+    fillDocumentVersioProces: function(process_sys_id, attachment_sys_id) {
+        try {
+            var grvproc = new GlideRecord('x_udg_q_versioproces');
+            grvproc.get(process_sys_id); //canvia per get
+            grvproc.document = this.getHTMLDocument(attachment_sys_id);
+            grvproc.update();
+        } catch (e) {}
+        return "";
+    },
+
+    getHTMLDocument: function(sys_id) {
+        if (sys_id && sys_id != "") {
+            var html = '<p>';
+            html += '<iframe src=\"$viewer.do?sysparm_stack=no&amp;sysparm_sys_id=';
+            html += sys_id + '\" width=\"100%\" height=\"700px\">';
+            html += '</p>';
+            html += '<p>&nbsp;</p>';
+            return html;
+        } else {
+            return '<P><H2>No hi ha document</H2></P>';
+        }
+        /* //Aquest és el codi de quan era insertat com imatge
+        grproc.flux = '<p><img style=\"align: baseline;\" title=\"\" src=\"sys_attachment.do?sys_id=' + attachment_sys_id + '\" alt=\"\" align=\"baseline\" border=\"\" hspace=\"\" vspace=\"\" \/></p>';  */
+    },
+
+    ActualitzaMapaProcessos: function(sgq_sys_id) {
+        var grproc = new GlideRecord('x_udg_q_proces');
+        var html = "<table border=1px><tr style=\"background-color: #b86767;\">Processos propis</tr>";
+        grproc.addQuery('sgq', sgq_sys_id);
+        grproc.orderBy('num');
+        grproc.query();
+
+        while (grproc.next()) {
+            html += "<tr ";
+            html += "style=\"background-color: #f2c2c2;";
+            html += "\"><td>" + grproc.nom + "</td>";
+            if (grproc.pare) {
+                html += "<td>Transversal</td>";
+            } else {
+                html += "<td>Propi</td>";
+            }
+            html += "</tr>";
+        }
+        html += "</table>";
+
+        var grsgq = new GlideRecord('x_udg_q_sgq');
+        grsgq.get('sys_id', sgq_sys_id);
+        grsgq.mapa = html;
+        grsgq.update();
+        return html;
+    },
+
+    type: 'ProcesSGQ'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -125,6 +174,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-09-25 09:06:44</sys_updated_on>
+        <sys_updated_on>2020-02-12 09:51:35</sys_updated_on>
     </sys_script_include>
 </record_update>

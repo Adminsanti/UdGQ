@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_udg_q_proces">pareISEMPTY^EQ<item endquery="false" field="pare" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+        <conditions table="x_udg_q_proces">tipus=Propi^EQ<item display_value="Propi" endquery="false" field="tipus" goto="false" newquery="false" operator="=" or="false" value="Propi"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -15,13 +15,13 @@
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-	g_form.showFieldMsg('titol',"Aquest procés és llegat d'un altre i, en conseqüencia, no pot canviar de nom títol, ni número");
+	//g_form.showFieldMsg('titol',"Aquest procés és llegat d'un altre i, en conseqüencia, no pot canviar de nom títol, ni número");
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
 
 }]]></script_true>
         <set_values/>
-        <short_description>Proces - Llegat</short_description>
+        <short_description>Proces - Propi</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-18 12:05:11</sys_created_on>
@@ -29,8 +29,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>894c446037d5ab004ccbd0d543990e05</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Proces - Llegat</sys_name>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Proces - Propi</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -38,7 +38,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_894c446037d5ab004ccbd0d543990e05</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-21 20:55:33</sys_updated_on>
+        <sys_updated_on>2020-02-11 13:35:53</sys_updated_on>
         <table>x_udg_q_proces</table>
         <ui_type>10</ui_type>
         <view/>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>Actualitzar tipus dels processos</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[var grP = new GlideRecord('x_udg_q_proces');
+grP.query();
+while (grP.next()) {
+	if (grP.pare=='') grP.tipus='Propi'; 
+	else {
+		grP.tipus='Llegat';
+		sincronitzat=true;
+	}
+	
+	grP.update();
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-02-11 11:56:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a8dd45df1bb2c0105fab4002cd4bcb7e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Actualitzar tipus dels processos</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_fix_a8dd45df1bb2c0105fab4002cd4bcb7e</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-02-11 12:04:25</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

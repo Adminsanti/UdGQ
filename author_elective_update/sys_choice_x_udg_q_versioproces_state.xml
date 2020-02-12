@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_udg_q_versioproces" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Esborrany</label>
+            <language>en</language>
+            <name>x_udg_q_versioproces</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-02-11 08:56:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1cd560571bfe80105fab4002cd4bcbda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-02-11 08:56:36</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vigent</label>
+            <language>en</language>
+            <name>x_udg_q_versioproces</name>
+            <sequence>1</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-02-11 08:56:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90d560571bfe80105fab4002cd4bcbdc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-02-11 08:56:36</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Extinta</label>
+            <language>en</language>
+            <name>x_udg_q_versioproces</name>
+            <sequence>2</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-02-11 08:56:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90d560571bfe80105fab4002cd4bcbdd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-02-11 08:56:36</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_udg_q_versioproces</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-02-11 08:56:36</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>54d560571bfe80105fab4002cd4bcbdb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_choice_x_udg_q_versioproces_state</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-02-11 08:56:36</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

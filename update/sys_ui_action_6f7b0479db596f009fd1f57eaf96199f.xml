@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments>Genera els procesos fills que no existeixen a partir del camp llegat a</comments>
-        <condition/>
+        <condition>current.tipus=='Propi' &amp;&amp; current.llegata !=''</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -28,36 +28,10 @@
         <name>Regenera Llegats</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[	var arr = current.llegata.split(",");
-	for (i=0; i< arr.length; i++) { //Bucle llegats
-		var sgqPF = arr[i];
-		var grSgqPF= new GlideRecord('x_udg_q_sgq');
-		grSgqPF.get('sys_id', sgqPF);
-		var grPF= new GlideRecord ('x_udg_q_proces');
-		grPF.addQuery('sgq',sgqPF);
-		grPF.addQuery('pare',current.sys_id);
-		grPF.query();
-		if (grPF.next()) {
-			gs.addInfoMessage("Examinant sense fer res - "+grPF.sgq);
-			if (!grPF.propietari) grPF.propietari=grPF.sgq.propietari;
-			if (!grPF.responsable) grPF.responsable=grPF.sgq.responsable;
-			grPF.update();
-		}
-		else {
-			gs.addInfoMessage("Creant fill a: "+grSgqPF.nom);
-			var grNou = new GlideRecord ('x_udg_q_proces');
-			grNou.initialize();
-			grNou.titol=current.titol;
-			grNou.num=current.num;
-			grNou.sgq=sgqPF;
-			grNou.pare=current.sys_id;
-			grNou.propietari=grSgqPF.propietari;
-			grNou.responsable=grSgqPF.responsable;
-			grNou.insert();
-		}
-	}
-	// Cal fer alguna cosa amb els fills que ja no calen !!!!!!!!
-	//action.setRedirectURL(current); //es queda a la plana actual]]></script>
+        <script><![CDATA[var p = new x_udg_q.ProcesSGQ();
+p.creaFillsInexistents(current);
+p.sincroTotsFills(current);
+action.setRedirectURL(current); //es queda a la plana actual]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -69,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6f7b0479db596f009fd1f57eaf96199f</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>Regenera Llegats</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -78,7 +52,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_6f7b0479db596f009fd1f57eaf96199f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-13 12:16:47</sys_updated_on>
+        <sys_updated_on>2020-02-11 13:28:42</sys_updated_on>
         <table>x_udg_q_proces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
