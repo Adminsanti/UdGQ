@@ -54,8 +54,8 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-02-11 11:17:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>4a9b30571b72c0105fab4002cd4bcb5d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>a9de1aa7dbbe00101f06adc3ca9619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Sincronitzat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_proces_sincronitzat</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-11 11:23:35</sys_updated_on>
+        <sys_updated_on>2020-02-12 12:24:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

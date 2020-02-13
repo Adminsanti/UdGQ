@@ -36,13 +36,13 @@
         <source>ab2b94321b3200105fab4002cd4bcb07</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-02-09 18:53:10</sys_created_on>
         <sys_id>88f9419b1bb2c0105fab4002cd4bcbe1</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>1702b4c5df00000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-02-12 12:25:20</sys_updated_on>
         <type>UI Policy Action</type>
         <update_guid>48f9419beab2c0101755eecdc8ba36e1</update_guid>
         <update_guid_history>48f9419beab2c0101755eecdc8ba36e1:14549622</update_guid_history>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_udg_q_objectiumillora</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_udg_q_objectiumillora">compartitVALCHANGES^EQ<item endquery="false" field="compartit" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Objectiu - canvi compartit</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
+    grM2m.addQuery('objectiu_millora', current.sys_id);
+    grM2m.query();
+    while (grM2m.next()) {
+        if (grM2m.accio_millora.compratidasync) { //només actualitzarem les compartides
+            var grAccio = new GlideRecord('x_udg_q_acciomillora');
+            grAccio.get(grM2m.accio_millora);
+            grAccio.compartida = new x_udg_q.AccioUtils(grAccio.sys_id).getLlistaCompartidaSync();
+            grAccio.update();
+        }
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-02-13 17:13:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c58e4c41b4700105fab4002cd4bcb62</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Objectiu - canvi compartit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_9c58e4c41b4700105fab4002cd4bcb62</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:24:12</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9c58e4c41b4700105fab4002cd4bcb62"/>
+</record_update>

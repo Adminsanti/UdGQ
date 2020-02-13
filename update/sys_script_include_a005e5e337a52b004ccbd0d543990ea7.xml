@@ -20,9 +20,11 @@ AccioUtils.prototype = {
         grM2m.addQuery('accio_millora', accio_id);
         grM2m.query();
         while (grM2m.next()) {
+			if (grM2m.objectiu_millora.state==2) { //Només objectius en Curs
             var Obj = new ObjectiuUtils(grM2m.objectiu_millora.sys_id);
             Obj.actualitzaPercentatgeAccions();
             Obj.actualitzaExecucio();
+			}
         }
     },
 
@@ -72,7 +74,7 @@ AccioUtils.prototype = {
         <sys_created_on>2018-11-09 12:30:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a005e5e337a52b004ccbd0d543990ea7</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name>AccioUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -80,6 +82,6 @@ AccioUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_a005e5e337a52b004ccbd0d543990ea7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-01 22:09:21</sys_updated_on>
+        <sys_updated_on>2020-02-13 16:24:01</sys_updated_on>
     </sys_script_include>
 </record_update>
