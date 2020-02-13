@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>(gs.hasRole('x_udg_q_ManagerUniversitat') || gs.hasRole('x_udg_q_Manager'))</condition>
+        <condition/>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -60,7 +60,7 @@ action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d90f905a1b136b405fab4002cd4bcbab</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Recalcula accions, % i recomacions</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -69,7 +69,7 @@ action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_d90f905a1b136b405fab4002cd4bcbab</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-13 17:25:53</sys_updated_on>
+        <sys_updated_on>2020-02-13 17:35:43</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
