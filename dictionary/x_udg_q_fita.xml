@@ -13,7 +13,7 @@
                 <element inactive_on_update="false" label="Acreditació" value="Acreditació"/>
                 <element hint="Data Màxima d'Acreditació" inactive_on_update="false" label="DMA" value="DMA"/>
                 <element inactive_on_update="false" label="Verificació" value="Verificació"/>
-                <element hint="Visita del Comité d'Avaluació AQU" inactive_on_update="false" label="Visita Comité" value="Visita comité"/>
+                <element hint="Visita del Comité d'Avaluació AQU" inactive_on_update="false" label="Visita CAE" value="Visita CAE"/>
             </choice>
         </element>
         <element choice="1" dependent="sgq" dependent_on_field="sgq" label="Titulació" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference" use_dependent_field="true">

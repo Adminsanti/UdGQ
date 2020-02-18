@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_status_of_content">
+    <gsw_status_of_content action="INSERT_OR_UPDATE">
+        <best_practice_allowed_ever>0</best_practice_allowed_ever>
+        <checksum/>
+        <content display_value="Agent Assist">25dd01efdb081300c47f5f135e961916</content>
+        <effective_weight>1</effective_weight>
+        <more_info_visited>false</more_info_visited>
+        <previous_status>0</previous_status>
+        <progress>0</progress>
+        <related_log_entry display_value="14/02/2020 12:36:26">b227ec541b8b8010c851a64fad4bcbb8</related_log_entry>
+        <status>0</status>
+        <sys_class_name>gsw_status_of_content</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-02-14 11:36:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fa27ec541b8b8010c851a64fad4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>gsw_status_of_content_fa27ec541b8b8010c851a64fad4bcbb8</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-02-14 11:36:26</sys_updated_on>
+    </gsw_status_of_content>
+</record_update>

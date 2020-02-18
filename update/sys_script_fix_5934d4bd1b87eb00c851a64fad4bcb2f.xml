@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <before>false</before>
         <description/>
         <flush_cache>false</flush_cache>
@@ -10,19 +10,18 @@
         <script><![CDATA[var gr = new GlideRecord('x_udg_q_fita');
 gr.query();
 while (gr.next()) {
-	if (gr.start_date =='')
-		gr.start_date=new GlideDateTime(gr.data_anticipada);
-	if (gr.end_date =='')
-		gr.end_date=new GlideDateTime(gr.data);
-	gr.update();
-}
-]]></script>
+    if (gr.tipus == "Visita comité") gr.tipus = "Visita CAE";
+    if (gr.tipus == "Acreditació" || gr.tipus == "DMA" || gr.tipus == "Verificació" || gr.tipus == "Visita CAE") {
+        gr.nom = gr.tipus + " " + gr.titulacio.nom;
+    }
+    gr.update();
+}]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-01-17 09:48:02</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5934d4bd1b87eb00c851a64fad4bcb2f</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Fita Regularitzar</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -30,7 +29,7 @@ while (gr.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_5934d4bd1b87eb00c851a64fad4bcb2f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-19 11:35:23</sys_updated_on>
+        <sys_updated_on>2020-02-18 11:57:56</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
