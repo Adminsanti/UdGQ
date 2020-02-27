@@ -11,7 +11,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_ui_action display_value="RECYCLE Recalcu execució">47a26b4237c927004ccbd0d543990ec5</sys_ui_action>
+        <sys_ui_action display_value="Mostra resum de seguiment del PM">47a26b4237c927004ccbd0d543990ec5</sys_ui_action>
         <sys_update_name>sys_ui_action_role_96ca50ae1b317700c851a64fad4bcbe1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2019-06-05 10:59:24</sys_updated_on>
