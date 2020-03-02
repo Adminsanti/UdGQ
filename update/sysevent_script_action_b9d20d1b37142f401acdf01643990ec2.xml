@@ -7,7 +7,7 @@
         <name>UdGQualitat Login</name>
         <order>400</order>
         <script><![CDATA[var username = event.parm1;
-new log("Login nou: "+username);
+//new log("Login nou: "+username);
 var currentUser = gs.getUser();
 var gr= new GlideRecord('sys_user');
 gr.addQuery ('user_name', username );
@@ -15,29 +15,28 @@ gr.query();
 if (gr.next()) {
 	var u = new Usuari(gr.sys_id);
 	var sgqVisibles= u.sgqVisibles();
-	new log("UdGQualitat Login: "+username + " és usuari de l'aplicació en els sgq: "+sgqVisibles);
+	new log("Login: "+username +" ("+gr.name+") és usuari de l'aplicació en els sgq: "+sgqVisibles.toString());
 	if (sgqVisibles!="") {
-		new log("Visibles");
+		//new log("Login Té SGQs visibles");
 		if (gr.x_udg_q_sgq_visibles!=sgqVisibles) {
-			new log("UdGQualitat Login - Update 1");
+			new log("Login Actualitzant llista de visibles");
 			gr.x_udg_q_sgq_visibles=sgqVisibles;
 			gr.update();
 		}
 		if (!gr.x_udg_q_sgq_visibles.includes(gr.x_udg_q_sgq_actual)) {
-				new log("UdGQualitat Login - Update 2");
+			new log("Login Actualitzant sgq_actual perquè no és a la llista dels visibles");
 			gr.x_udg_q_sgq_actual=gr.x_udg_q_sgq_visibles.split(",")[0]; //Agafem el primer de la llista
 			gr.update();
 		}
 		if (gr.x_udg_q_sgq_actual!="") {
-			new log("UdGQualitat Login - Actual not empty");
+			//new log("Login - Tenim un sgq_actual - Gravem preferències i posem rols");
 			currentUser.savePreference('qualitat.sgqActual',gr.x_udg_q_sgq_actual.toString());
 			currentUser.savePreference('qualitat.sgqActualCodi',gr.x_udg_q_sgq_actual.codi.toString());
-			new log("UdGQualitat Login -Cal posar-hi els rols");
 			u.setAllRoles(gr.x_udg_q_sgq_actual);
 		}
 	}
 	else {
-		//new log("Login: "+username+ "No és usuari de l'aplicació");
+		new log("Login: "+username+" ("+gr.name+") No és usuari de l'aplicació");
 	}
 }
 else {
@@ -51,7 +50,7 @@ else {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9d20d1b37142f401acdf01643990ec2</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name>UdGQualitat Login</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -60,6 +59,6 @@ else {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_script_action_b9d20d1b37142f401acdf01643990ec2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-31 12:20:17</sys_updated_on>
+        <sys_updated_on>2020-03-02 12:38:38</sys_updated_on>
     </sysevent_script_action>
 </record_update>

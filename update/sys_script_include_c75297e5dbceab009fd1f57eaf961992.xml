@@ -170,7 +170,7 @@ Usuari.prototype = {
 	},
 	
 	setAllRoles: function (sgq) { //sgq : sys_id del sgq
-		new log("setAllRoles per "+this.usuari+ " al SGQ: "+sgq);
+		//new log("setAllRoles per "+this.usuari+ " al SGQ: "+sgq);
 		
 		if (this.isManagerUniversitat())
 			this.setRol ('x_udg_q.ManagerUniversitat');
@@ -200,7 +200,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>124</sys_mod_count>
+        <sys_mod_count>125</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -208,6 +208,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-02 14:39:08</sys_updated_on>
+        <sys_updated_on>2020-03-02 12:39:53</sys_updated_on>
     </sys_script_include>
 </record_update>
