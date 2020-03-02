@@ -7,7 +7,7 @@
         <affected_field_on_event/>
         <category display_value="Pla de Millora" name="Pla de Millora">8b8c776d1b170050c851a64fad4bcb56</category>
         <collection>x_udg_q_objectiumillora</collection>
-        <condition table="x_udg_q_objectiumillora">stateCHANGESTO2^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+        <condition table="x_udg_q_objectiumillora">stateCHANGESTO3^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -37,55 +37,61 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Nou objectiu incorporat al pla de millora:</p>
+        <message_html><![CDATA[<p>Objectiu tancat al pla de millora:</p>
 <p><strong>${URI_REF}</strong>&nbsp;(${sgq}) - ${short_description}</p>
-<p>Definit per: ${declarat_per}</p>
-<p>Responsable: ${responsable}</p>
-<p>Assignat a: ${assigned_to}</p>
+<p>Tancat per: ${closed_by}</p>
+<p>Tancament: ${tancament}</p>
+<p>Valorat per: ${valorat_per}</p>
+<p>Valorat el: ${valorat}</p>
+<p>Valoraci&oacute;: ${valoracio}</p>
 <p><span style="text-decoration: underline;"><strong>Detalls</strong></span></p>
 <p>Descripci&oacute;: ${description}</p>
 <p>Diagn&ograve;stic: ${diagnostic}</p>
 <p>Implica modificaci&oacute; mem&ograve;ria: ${modificacio_memoria}</p>
 <p>Prioritat: ${priority}</p>
+<p>Percentatge execuci&oacute;: ${assoliment}</p>
 <p>N&uacute;mero accions: ${accions}</p>
+<p>Responsable: ${responsable}</p>
+<p>Assignat a: ${assigned_to}</p>
 <p><span style="text-decoration: underline;"><strong>Vinculacions</strong></span></p>
 <p>Subest&agrave;ndard: ${subestandard}</p>
 <p>Proc&eacute;s vinculat: ${proces}</p>
 <p>Implica Titulacions: ${implica_titulacions}</p>
 <p>Recomanacions: ${recomanacions}</p>
+<p>&nbsp;</p>
 <p>${mail_script:disclaimer udg}</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Nou objectiu al pla de millora</name>
+        <name>Objectiu tancat</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>responsable.usuari,sgq.propietari.usuari,sgq.responsable.usuari,declarat_per,watch_list</recipient_fields>
+        <recipient_fields>responsable.usuari,sgq.propietari.usuari,sgq.responsable.usuari,closed_by,watch_list</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Nou objectiu al pla de millora: ${number} (${sgq}) - ${short_description}</subject>
+        <subject>Objectiu tancat al pla de millora: ${number} (${sgq}) - ${short_description}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-03-02 10:41:34</sys_created_on>
+        <sys_created_on>2020-03-02 11:37:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>399c776d1b170050c851a64fad4bcb5a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Nou objectiu al pla de millora</sys_name>
+        <sys_id>3a7a08bd1b570050c851a64fad4bcbb1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Objectiu tancat</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sysevent_email_action_399c776d1b170050c851a64fad4bcb5a</sys_update_name>
+        <sys_update_name>sysevent_email_action_3a7a08bd1b570050c851a64fad4bcbb1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-02 12:01:44</sys_updated_on>
+        <sys_updated_on>2020-03-02 12:00:39</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
