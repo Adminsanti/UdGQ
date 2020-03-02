@@ -7,7 +7,7 @@
         <affected_field_on_event/>
         <category display_value="Pla de Millora" name="Pla de Millora">8b8c776d1b170050c851a64fad4bcb56</category>
         <collection>x_udg_q_objectiumillora</collection>
-        <condition table="x_udg_q_objectiumillora">stateCHANGESTO3^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3"/>
+        <condition table="x_udg_q_objectiumillora">stateCHANGESTO3^EQ<item display_value="Tancat" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
