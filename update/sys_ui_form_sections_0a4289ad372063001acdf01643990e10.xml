@@ -38,7 +38,7 @@
             <sys_mod_count>5</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_proces" name="x_udg_q_proces" sys_domain="global" view="Default view">0a4289ad372063001acdf01643990e10</sys_ui_form>
-            <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_proces" sys_domain="global" view="Default view">adf523f3dbfcaf009fd1f57eaf9619f1</sys_ui_section>
+            <sys_ui_section caption="Historial" display_value="Historial" name="x_udg_q_proces" sys_domain="global" view="Default view">adf523f3dbfcaf009fd1f57eaf9619f1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-10-18 07:41:07</sys_updated_on>
         </sys_ui_form_section>

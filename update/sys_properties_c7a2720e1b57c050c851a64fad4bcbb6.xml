@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Titulació activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_udg_q_titulacio_activity.fields</name>
+        <read_roles/>
+        <suffix>x_udg_q</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-03 18:31:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c7a2720e1b57c050c851a64fad4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_udg_q_titulacio_activity.fields</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_properties_c7a2720e1b57c050c851a64fad4bcbb6</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-03 18:31:00</sys_updated_on>
+        <type>string</type>
+        <value>memo,nom,tipus,activa,responsable,sgq,sys_updated_on,codi_mecd,qid,qms</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=c7a2720e1b57c050c851a64fad4bcbb6"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey name="glide.ui.x_udg_q_titulacio_activity.fields" tablename="sys_properties">c7a2720e1b57c050c851a64fad4bcbb6</documentkey>
+        <fieldname>description</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-03 18:31:00</sys_created_on>
+        <sys_id>c7a2720e1b57c050c851a64fad4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-03 18:31:00</sys_updated_on>
+        <tablename>sys_properties</tablename>
+        <value>Titulació activity formatter fields</value>
+    </sys_translated_text>
+</record_update>
