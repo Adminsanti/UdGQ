@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="valoracio" label="Desenvolupament i valoració" language="en" table="x_udg_q_acciomillora">
+    <sys_documentation element="valoracio" label="Valoració" language="en" table="x_udg_q_acciomillora">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>valoracio</element>
             <help/>
             <hint/>
-            <label>Desenvolupament i valoració</label>
+            <label>Valoració</label>
             <language>en</language>
             <name>x_udg_q_acciomillora</name>
-            <plural>Desenvolupament i valoraciós</plural>
+            <plural>Valoraciós</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2019-01-10 13:05:32</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>4caf386b1b3e2700c851a64fad4bcbbb</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Desenvolupament i valoració</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Valoració</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_acciomillora_valoracio_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:09:38</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:06:00</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

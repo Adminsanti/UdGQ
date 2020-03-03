@@ -23,6 +23,25 @@
             <dependent_value/>
             <element>fet_fita</element>
             <hint/>
+            <inactive>true</inactive>
+            <label>Visita Comité</label>
+            <language>en</language>
+            <name>x_udg_q_acciomillora</name>
+            <sequence>0</sequence>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-02-26 09:35:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4425ae6db33eb409480298a48961925</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:06:00</sys_updated_on>
+            <value>Visita comité</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>fet_fita</element>
+            <hint/>
             <inactive>false</inactive>
             <label>DMA</label>
             <language>en</language>
@@ -62,19 +81,19 @@
             <element>fet_fita</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Visita Comité</label>
+            <label>Visita CAE</label>
             <language>en</language>
             <name>x_udg_q_acciomillora</name>
             <sequence>3</sequence>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2019-02-26 09:35:24</sys_created_on>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:06:00</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c4425ae6db33eb409480298a48961925</sys_id>
+            <sys_id>e91fb40a1b5b8050c851a64fad4bcbd4</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2019-02-26 09:35:24</sys_updated_on>
-            <value>Visita comité</value>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:06:00</sys_updated_on>
+            <value>Visita CAE</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>fet_fita</element>

@@ -4,13 +4,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>6f13581e1b4ac010c851a64fad4bcbc7</sys_id>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>d27f704a1b5b8050c851a64fad4bcb71</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Objectius Process Flow">5f80b78a37c927004ccbd0d543990e9a</sys_ui_formatter>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2b13581e1b4ac010c851a64fad4bcbc8</sys_id>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>5a7f704a1b5b8050c851a64fad4bcb71</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>ab13581e1b4ac010c851a64fad4bcbc8</sys_id>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>da7f704a1b5b8050c851a64fad4bcb71</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>state</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2f13581e1b4ac010c851a64fad4bcbc8</sys_id>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>5e7f704a1b5b8050c851a64fad4bcb71</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>priority</element>
             <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>af13581e1b4ac010c851a64fad4bcbc8</sys_id>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>de7f704a1b5b8050c851a64fad4bcb71</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>assoliment</element>
             <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2313581e1b4ac010c851a64fad4bcbc9</sys_id>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>527f704a1b5b8050c851a64fad4bcb72</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,195 +88,209 @@
             <element>accions</element>
             <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>a313581e1b4ac010c851a64fad4bcbc9</sys_id>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>d27f704a1b5b8050c851a64fad4bcb72</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>7</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2713581e1b4ac010c851a64fad4bcbc9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>sgq</element>
-            <position>8</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>a713581e1b4ac010c851a64fad4bcbc9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>compartit</element>
-            <position>9</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2b13581e1b4ac010c851a64fad4bcbc9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>responsable</element>
-            <position>10</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>ab13581e1b4ac010c851a64fad4bcbc9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assigned_to</element>
-            <position>11</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2f13581e1b4ac010c851a64fad4bcbc9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>fet_fita</element>
-            <position>12</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>af13581e1b4ac010c851a64fad4bcbc9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>due_date</element>
-            <position>13</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2313581e1b4ac010c851a64fad4bcbca</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>14</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>a313581e1b4ac010c851a64fad4bcbca</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>short_description</element>
-            <position>15</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2713581e1b4ac010c851a64fad4bcbca</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
-            <position>16</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>a713581e1b4ac010c851a64fad4bcbca</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>diagnostic</element>
-            <position>17</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2b13581e1b4ac010c851a64fad4bcbca</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>valoracio</element>
-            <position>18</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>ab13581e1b4ac010c851a64fad4bcbca</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>tancament</element>
-            <position>19</position>
+            <position>7</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-01 22:13:53</sys_created_on>
-            <sys_id>2f13581e1b4ac010c851a64fad4bcbca</sys_id>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>567f704a1b5b8050c851a64fad4bcb72</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-01 22:13:53</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>8</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>d67f704a1b5b8050c851a64fad4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sgq</element>
+            <position>9</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>5a7f704a1b5b8050c851a64fad4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compartit</element>
+            <position>10</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>da7f704a1b5b8050c851a64fad4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>responsable</element>
+            <position>11</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>5e7f704a1b5b8050c851a64fad4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>12</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>de7f704a1b5b8050c851a64fad4bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>watch_list</element>
+            <position>13</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>527f704a1b5b8050c851a64fad4bcb73</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fet_fita</element>
+            <position>14</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>d27f704a1b5b8050c851a64fad4bcb73</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>due_date</element>
+            <position>15</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>567f704a1b5b8050c851a64fad4bcb73</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>16</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>d67f704a1b5b8050c851a64fad4bcb73</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>17</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>5a7f704a1b5b8050c851a64fad4bcb73</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>18</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>da7f704a1b5b8050c851a64fad4bcb73</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>diagnostic</element>
+            <position>19</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>5e7f704a1b5b8050c851a64fad4bcb73</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>valoracio</element>
+            <position>20</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:41</sys_created_on>
+            <sys_id>967f704a1b5b8050c851a64fad4bcb80</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Objectiu" display_value="Objectiu" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">a85d8dc6db59af009fd1f57eaf961996</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:41</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

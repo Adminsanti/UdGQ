@@ -23,11 +23,10 @@
 //g_form.addInfoMessage ("Podeu desar com <B>Esborrany</B> però recordeu que caldrà que premeu <B>[Afegeix al PM i Roman]</B> per avançar l'estat de l'objectiu");
 	//g_form.setMandatory('responsable',false);
 	g_form.showFieldMsg('assoliment',"Percentatge d'execució 0 per esborranys");
-	g_form.showFieldMsg('assigned_to',"S'assiganarà al responsable quan s'afegeixi al pla de millora");
 	g_form.setVisible('tancament',false);
 }]]></script_true>
         <set_values/>
-        <short_description>Objectiu Esborrany</short_description>
+        <short_description>Objectiu Esborrany Assoliment</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-04 11:24:08</sys_created_on>
@@ -35,8 +34,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>270c7333db30ef009fd1f57eaf961993</sys_id>
-        <sys_mod_count>42</sys_mod_count>
-        <sys_name>Objectiu Esborrany</sys_name>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>Objectiu Esborrany Assoliment</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -44,7 +43,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_270c7333db30ef009fd1f57eaf961993</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-02 14:43:25</sys_updated_on>
+        <sys_updated_on>2020-03-03 08:03:35</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui_type>0</ui_type>
         <view/>

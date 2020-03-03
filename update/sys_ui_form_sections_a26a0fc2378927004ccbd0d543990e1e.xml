@@ -24,37 +24,51 @@
             <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_acciomillora" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a26a0fc2378927004ccbd0d543990e1e</sys_ui_form>
-            <sys_ui_section caption="Desenvolupament i Compliment" display_value="Desenvolupament i Compliment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
+            <sys_ui_section caption="Indicadors" display_value="Indicadors" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2018-11-30 12:56:16</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:06:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>611fb40a1b5b8050c851a64fad4bcbc9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_acciomillora" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a26a0fc2378927004ccbd0d543990e1e</sys_ui_form>
+            <sys_ui_section caption="Desenvolupament" display_value="Desenvolupament" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">651fb40a1b5b8050c851a64fad4bcb78</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:06:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2019-01-10 13:32:46</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>03d589af1b3e2700c851a64fad4bcbb0</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_acciomillora" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a26a0fc2378927004ccbd0d543990e1e</sys_ui_form>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">83d589af1b3e2700c851a64fad4bcbac</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:06:00</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-10-11 07:31:09</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>666a0fc2378927004ccbd0d543990e21</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_acciomillora" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">a26a0fc2378927004ccbd0d543990e1e</sys_ui_form>
-            <sys_ui_section caption="Seguiment" display_value="Seguiment" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">226a0fc2378927004ccbd0d543990e1d</sys_ui_section>
+            <sys_ui_section caption="Historial" display_value="Historial" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">226a0fc2378927004ccbd0d543990e1d</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-10 13:32:46</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:06:00</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_udg_q_acciomillora</name>

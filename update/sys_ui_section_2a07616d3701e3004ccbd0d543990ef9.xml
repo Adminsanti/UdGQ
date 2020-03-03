@@ -4,13 +4,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>e7b5b9f91b424010c851a64fad4bcb31</sys_id>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>736f304a1b5b8050c851a64fad4bcb31</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Accions Process Flow">ca903a64dba5a3009fd1f57eaf9619da</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>6fb5b9f91b424010c851a64fad4bcb31</sys_id>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>f76f304a1b5b8050c851a64fad4bcb31</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>efb5b9f91b424010c851a64fad4bcb31</sys_id>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>7b6f304a1b5b8050c851a64fad4bcb31</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>state</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>63b5b9f91b424010c851a64fad4bcb32</sys_id>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>fb6f304a1b5b8050c851a64fad4bcb31</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>priority</element>
             <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>e3b5b9f91b424010c851a64fad4bcb32</sys_id>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>7f6f304a1b5b8050c851a64fad4bcb31</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,181 +74,209 @@
             <element>percentatge</element>
             <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>67b5b9f91b424010c851a64fad4bcb32</sys_id>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>ff6f304a1b5b8050c851a64fad4bcb31</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>6</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>e7b5b9f91b424010c851a64fad4bcb32</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>sgq</element>
-            <position>7</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>6bb5b9f91b424010c851a64fad4bcb32</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>compartida</element>
-            <position>8</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>ebb5b9f91b424010c851a64fad4bcb32</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>compratidasync</element>
-            <position>9</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>6fb5b9f91b424010c851a64fad4bcb32</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>responsable</element>
-            <position>10</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>efb5b9f91b424010c851a64fad4bcb32</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assigned_to</element>
-            <position>11</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>63b5b9f91b424010c851a64fad4bcb33</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>fet_fita</element>
-            <position>12</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>e3b5b9f91b424010c851a64fad4bcb33</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>due_date</element>
-            <position>13</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>67b5b9f91b424010c851a64fad4bcb33</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>14</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>e7b5b9f91b424010c851a64fad4bcb33</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>short_description</element>
-            <position>15</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>6bb5b9f91b424010c851a64fad4bcb33</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
-            <position>16</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>ebb5b9f91b424010c851a64fad4bcb33</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>tancament</element>
-            <position>17</position>
+            <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2019-12-31 16:07:49</sys_created_on>
-            <sys_id>6fb5b9f91b424010c851a64fad4bcb33</sys_id>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>736f304a1b5b8050c851a64fad4bcb32</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:07:49</sys_updated_on>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>f36f304a1b5b8050c851a64fad4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sgq</element>
+            <position>8</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>776f304a1b5b8050c851a64fad4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compartida</element>
+            <position>9</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>f76f304a1b5b8050c851a64fad4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compratidasync</element>
+            <position>10</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>7b6f304a1b5b8050c851a64fad4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>responsable</element>
+            <position>11</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>fb6f304a1b5b8050c851a64fad4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>12</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>7f6f304a1b5b8050c851a64fad4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>watch_list</element>
+            <position>13</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>ff6f304a1b5b8050c851a64fad4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fet_fita</element>
+            <position>14</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>736f304a1b5b8050c851a64fad4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>due_date</element>
+            <position>15</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>f36f304a1b5b8050c851a64fad4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>16</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>776f304a1b5b8050c851a64fad4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>17</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>f76f304a1b5b8050c851a64fad4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>18</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>7b6f304a1b5b8050c851a64fad4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>valoracio</element>
+            <position>19</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-03 10:07:31</sys_created_on>
+            <sys_id>fb6f304a1b5b8050c851a64fad4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">2a07616d3701e3004ccbd0d543990ef9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-03 10:07:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

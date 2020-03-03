@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Indicadors" section_id="6054f596db4e2f009fd1f57eaf9619c8" sys_domain="global" table="x_udg_q_acciomillora" version="3" view="">
+    <sys_ui_section caption="Desenvolupament" section_id="651fb40a1b5b8050c851a64fad4bcb78" sys_domain="global" table="x_udg_q_acciomillora" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>indicador</element>
+            <element>comments</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2020-03-03 10:06:01</sys_created_on>
-            <sys_id>b51ff40a1b5b8050c851a64fad4bcb2d</sys_id>
+            <sys_id>f51ff40a1b5b8050c851a64fad4bcb32</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Indicadors" display_value="Indicadors" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
+            <sys_ui_section caption="Desenvolupament" display_value="Desenvolupament" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">651fb40a1b5b8050c851a64fad4bcb78</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-03 10:06:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>llindarindicador</element>
+            <element>comments_and_work_notes</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2020-03-03 10:06:01</sys_created_on>
-            <sys_id>391ff40a1b5b8050c851a64fad4bcb2d</sys_id>
+            <sys_id>791ff40a1b5b8050c851a64fad4bcb32</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Indicadors" display_value="Indicadors" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">6054f596db4e2f009fd1f57eaf9619c8</sys_ui_section>
+            <sys_ui_section caption="Desenvolupament" display_value="Desenvolupament" name="x_udg_q_acciomillora" sys_domain="global" view="Default view">651fb40a1b5b8050c851a64fad4bcb78</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-03 10:06:01</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Indicadors</caption>
+            <caption>Desenvolupament</caption>
             <header>false</header>
             <name>x_udg_q_acciomillora</name>
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-30 12:56:16</sys_created_on>
+            <sys_created_on>2020-03-03 10:06:00</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6054f596db4e2f009fd1f57eaf9619c8</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_name>Indicadors</sys_name>
+            <sys_id>651fb40a1b5b8050c851a64fad4bcb78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Desenvolupament</sys_name>
             <sys_overrides/>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_ui_section_6054f596db4e2f009fd1f57eaf9619c8</sys_update_name>
+            <sys_update_name>sys_ui_section_651fb40a1b5b8050c851a64fad4bcb78</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-03 10:06:00</sys_updated_on>
             <sys_user/>
