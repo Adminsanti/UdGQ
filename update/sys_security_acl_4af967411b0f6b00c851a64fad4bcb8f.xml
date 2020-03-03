@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
     <sys_security_acl action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
         <condition/>
-        <description>Impedeix que els usuaris (no admin)  editin el percentatge a les llistes, per que no es pot entrar justificació.</description>
+        <description>DESACTIVAT Impedeix que els usuaris (no admin)  editin el percentatge a les llistes, per que no es pot entrar justificació.</description>
         <name>x_udg_q_acciomillora.percentatge</name>
         <operation display_value="list_edit">54f535270a0a0b8c007c67009ab2bdc0</operation>
         <script/>
@@ -13,7 +13,7 @@
         <sys_created_on>2019-01-15 17:21:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4af967411b0f6b00c851a64fad4bcb8f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_udg_q_acciomillora.percentatge</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -21,7 +21,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_security_acl_4af967411b0f6b00c851a64fad4bcb8f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-15 17:21:58</sys_updated_on>
+        <sys_updated_on>2020-03-03 11:39:46</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
