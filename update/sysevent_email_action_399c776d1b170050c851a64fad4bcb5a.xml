@@ -7,7 +7,7 @@
         <affected_field_on_event/>
         <category display_value="Pla de Millora" name="Pla de Millora">8b8c776d1b170050c851a64fad4bcb56</category>
         <collection>x_udg_q_objectiumillora</collection>
-        <condition table="x_udg_q_objectiumillora">stateCHANGESTO2^EQ<item display_value="En curs" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+        <condition table="x_udg_q_objectiumillora">stateCHANGESTO2^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -56,7 +56,7 @@
 <p>${mail_script:disclaimer udg}</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Nou objectiu al pla de millora</name>
+        <name>Objectiu nou al pla de millora</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -76,8 +76,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>399c776d1b170050c851a64fad4bcb5a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Nou objectiu al pla de millora</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Objectiu nou al pla de millora</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -85,7 +85,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_399c776d1b170050c851a64fad4bcb5a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-02 12:01:44</sys_updated_on>
+        <sys_updated_on>2020-03-03 11:24:52</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
