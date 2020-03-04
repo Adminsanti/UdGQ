@@ -5,7 +5,7 @@
         <element active="false" label="Fitxer Document" max_length="40" name="fitxerdocument" read_only="true" type="file_attachment"/>
         <element active="false" label="Fluxograma" max_length="8000" name="flux" read_only="true" type="html"/>
         <element label="Llegat A" max_length="4000" name="llegata" reference="x_udg_q_sgq" reference_qual="actiu=true^EQ" reference_qual_condition="actiu=true^EQ" type="glide_list"/>
-        <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#10;&#9;&#10;&#9;//return 'P'+current.num+current.sgq.codi+'. '+current.titol;&#10;&#9;return new x_udg_q.ProcesSGQ().nouNom(current);&#9;&#10;})(current);" display="true" label="Nom" max_length="100" name="nom" read_only="true" type="string" virtual="true"/>
+        <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#10;&#9;&#10;&#9;//return 'P'+current.num+current.sgq.codi+'. '+current.titol;&#10;&#9;return new x_udg_q.ProcesSGQ().nouNom(current);&#9;&#10;})(current);" display="true" label="Nom" max_length="200" name="nom" read_only="true" type="string" virtual="true"/>
         <element label="Num" mandatory="true" max_length="10" name="num" type="string"/>
         <element label="Objectius" max_length="1500" name="objectius" type="string"/>
         <element label="Pare" max_length="32" name="pare" read_only="true" reference="x_udg_q_proces" type="reference"/>
@@ -20,11 +20,9 @@
         </element>
         <element choice="3" default="Propi" label="Tipus" mandatory="true" max_length="30" name="tipus" read_only="true" type="string">
             <choice>
-                <element inactive_on_update="false" label="Procediment" value="Procediment"/>
-                <element inactive_on_update="false" label="Procés" value="Procés"/>
-                <element inactive="true" inactive_on_update="true" label="Procediment" sequence="0" value="Procediment"/>
-                <element inactive="true" inactive_on_update="true" label="Procés" sequence="1" value="Procés"/>
-                <element inactive_on_update="false" label="Subprocés" sequence="2" value="Subprocés"/>
+                <element inactive_on_update="false" label="Propi" sequence="0" value="Propi"/>
+                <element inactive_on_update="false" label="Llegat" sequence="1" value="Llegat"/>
+                <element inactive_on_update="false" label="Adaptat" sequence="2" value="Adaptat"/>
             </choice>
         </element>
         <element label="Titol" mandatory="true" max_length="180" name="titol" type="string"/>

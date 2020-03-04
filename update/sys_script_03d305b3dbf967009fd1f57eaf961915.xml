@@ -15,7 +15,7 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_udg_q_objectiumillora">state!=-5^responsable.membresLIKEjavascript: current.assign_to;^EQ<item display_value="Esborrany" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
+        <filter_condition table="x_udg_q_objectiumillora">state!=-5^responsable.membresLIKEjavascript: current.assign_to;^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
             <item endquery="false" field="responsable.membres" goto="false" newquery="false" operator="LIKE" or="false" value="javascript: current.assign_to;"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>

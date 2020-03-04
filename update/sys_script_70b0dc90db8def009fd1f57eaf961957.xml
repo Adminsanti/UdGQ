@@ -2,7 +2,7 @@
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
         <access>package_private</access>
-        <action_delete>false</action_delete>
+        <action_delete>true</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
@@ -11,17 +11,14 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_proces</collection>
+        <collection>x_udg_q_versioproces</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_udg_q_proces">fitxerdocumentVALCHANGES^ORdocumentISEMPTY^EQ<item endquery="false" field="fitxerdocument" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
-            <item endquery="false" field="document" goto="false" newquery="false" operator="ISEMPTY" or="true" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Procés - Actualitzar document</name>
+        <name>VProcés - Canvia</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,12 +29,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    if (current.fitxerdocument == "") {
-        current.document = '<P><H2>No hi ha document</H2></P>';
-    } else {
-        current.document = x_udg_q.ProcesSGQ().getHTMLDocument(current.fitxerdocument);
-    }
-    //new x_udg_q.ProcesSGQ().ActualitzaFlux(current.table_sys_id, current.sys_id); //Antic quan insertavem flux com imatge
+	new x_udg_q.ProcesSGQ().actualitzaTot(current.proces.sys_id);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -47,8 +39,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>70b0dc90db8def009fd1f57eaf961957</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_name>Procés - Actualitzar document</sys_name>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>VProcés - Canvia</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -56,9 +48,22 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_70b0dc90db8def009fd1f57eaf961957</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-10 16:25:38</sys_updated_on>
+        <sys_updated_on>2020-03-04 10:57:29</sys_updated_on>
         <template/>
-        <when>async</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=70b0dc90db8def009fd1f57eaf961957"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>70b0dc90db8def009fd1f57eaf961957</documentkey>
+        <fieldname>message</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-04 09:59:42</sys_created_on>
+        <sys_id>7e37ca5e1bdf0450c851a64fad4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-04 09:59:42</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
 </record_update>

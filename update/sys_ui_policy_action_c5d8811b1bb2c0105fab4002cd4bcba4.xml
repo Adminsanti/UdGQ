@@ -19,7 +19,7 @@
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2020-02-11 11:29:56</sys_updated_on>
         <table>x_udg_q_proces</table>
-        <ui_policy display_value="RECYLE Procés - Propi">4d8659cedb59af009fd1f57eaf9619a4</ui_policy>
+        <ui_policy display_value="Procés - Propi">4d8659cedb59af009fd1f57eaf9619a4</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>
