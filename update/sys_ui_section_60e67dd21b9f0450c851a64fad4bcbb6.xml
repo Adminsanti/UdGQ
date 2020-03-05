@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Document del procés [x_udg_q_proces]" section_id="60e67dd21b9f0450c851a64fad4bcbb6" sys_domain="global" table="x_udg_q_proces" version="3" view="">
+    <sys_ui_section caption="" section_id="60e67dd21b9f0450c851a64fad4bcbb6" sys_domain="global" table="x_udg_q_proces" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>num</element>
             <position>0</position>
@@ -8,7 +8,7 @@
             <sys_id>91b14b221b13c450c851a64fad4bcb1d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -22,7 +22,7 @@
             <sys_id>95b14b221b13c450c851a64fad4bcb1d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -36,7 +36,7 @@
             <sys_id>99b14b221b13c450c851a64fad4bcb1d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -50,7 +50,7 @@
             <sys_id>9db14b221b13c450c851a64fad4bcb1d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -64,7 +64,7 @@
             <sys_id>91b14b221b13c450c851a64fad4bcb1e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -78,7 +78,7 @@
             <sys_id>95b14b221b13c450c851a64fad4bcb1e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -92,7 +92,7 @@
             <sys_id>99b14b221b13c450c851a64fad4bcb1e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -106,7 +106,7 @@
             <sys_id>9db14b221b13c450c851a64fad4bcb1e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -120,7 +120,7 @@
             <sys_id>91b14b221b13c450c851a64fad4bcb1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -134,7 +134,7 @@
             <sys_id>95b14b221b13c450c851a64fad4bcb1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -148,7 +148,7 @@
             <sys_id>99b14b221b13c450c851a64fad4bcb1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -162,7 +162,7 @@
             <sys_id>9db14b221b13c450c851a64fad4bcb1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
@@ -176,14 +176,14 @@
             <sys_id>91b14b221b13c450c851a64fad4bcb20</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Document del procés [x_udg_q_proces]" display_value="Document del procés [x_udg_q_proces]" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">60e67dd21b9f0450c851a64fad4bcbb6</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-05 08:53:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Document del procés [x_udg_q_proces]</caption>
+            <caption/>
             <header>false</header>
             <name>x_udg_q_proces</name>
             <roles/>
@@ -194,8 +194,8 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>60e67dd21b9f0450c851a64fad4bcbb6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Document del procés [x_udg_q_proces]</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>x_udg_q_proces</sys_name>
             <sys_overrides/>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
@@ -203,9 +203,9 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_section_60e67dd21b9f0450c851a64fad4bcbb6</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-04 08:48:16</sys_updated_on>
+            <sys_updated_on>2020-03-05 09:08:26</sys_updated_on>
             <sys_user/>
-            <title>false</title>
+            <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_section>
