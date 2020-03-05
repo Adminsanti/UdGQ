@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
     <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
-        <dashboard display_value="Resum Objectius">0aef4faedb2d23009fd1f57eaf961966</dashboard>
+        <dashboard display_value="Resum Pla de Millora">0aef4faedb2d23009fd1f57eaf961966</dashboard>
         <home>false</home>
         <homepage/>
         <order>2</order>

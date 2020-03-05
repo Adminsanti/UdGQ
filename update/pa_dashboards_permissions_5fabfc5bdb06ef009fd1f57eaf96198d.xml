@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
     <pa_dashboards_permissions action="INSERT_OR_UPDATE">
-        <dashboard display_value="Resum Objectius">0aef4faedb2d23009fd1f57eaf961966</dashboard>
+        <dashboard display_value="Resum Pla de Millora">0aef4faedb2d23009fd1f57eaf961966</dashboard>
         <delete>false</delete>
         <group/>
         <identity>x_udg_q.Observador</identity>

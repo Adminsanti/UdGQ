@@ -8,7 +8,7 @@
         <is_breakdown>false</is_breakdown>
         <managed_breakdown/>
         <managed_publisher/>
-        <name>Resum Objectius</name>
+        <name>Resum Pla de Millora</name>
         <no_tabs>false</no_tabs>
         <order/>
         <owner display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</owner>
@@ -23,8 +23,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0aef4faedb2d23009fd1f57eaf961966</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Resum Objectius</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Resum Pla de Millora</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -32,7 +32,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>pa_dashboards_0aef4faedb2d23009fd1f57eaf961966</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-12-03 11:54:41</sys_updated_on>
+        <sys_updated_on>2020-02-17 15:54:36</sys_updated_on>
         <users/>
         <visible_to>2</visible_to>
     </pa_dashboards>
