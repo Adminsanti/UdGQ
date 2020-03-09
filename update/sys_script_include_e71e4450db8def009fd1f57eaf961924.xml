@@ -110,18 +110,18 @@ ProcesSGQ.prototype = {
         var grVersio = new GlideRecord('x_udg_q_versioproces');
         grProc.get(proces_sys_id);
         grVersio.addQuery('proces', proces_sys_id);
-		grVersio.addQuery('state',"!=", 1); //No esborranys
-		grVersio.orderBy('versio');
+        grVersio.addQuery('state', "!=", 1); //No esborranys
+        grVersio.orderBy('versio');
         grVersio.query();
         while (grVersio.next()) {
             //Aquí dins cal determinar quina es la vigent
-		
-			//de moment ho MOCK, però agafem lúltim que deu ser el darrer
-			grProc.document=grVersio.document;
-			grProc.versio=grVersio.versio;
+
+            //de moment ho MOCK, però agafem lúltim que deu ser el darrer
+            grProc.document = grVersio.document;
+            grProc.versio = grVersio.versio;
 
         }
-		grProc.update();
+        grProc.update();
     },
 
     getHTMLDocument: function(sys_id) {
@@ -137,6 +137,28 @@ ProcesSGQ.prototype = {
         }
         /* //Aquest és el codi de quan era insertat com imatge
         grproc.flux = '<p><img style=\"align: baseline;\" title=\"\" src=\"sys_attachment.do?sys_id=' + attachment_sys_id + '\" alt=\"\" align=\"baseline\" border=\"\" hspace=\"\" vspace=\"\" \/></p>';  */
+    },
+
+    emplenaDocumentVersioProces: function(sys_id_versioproces, sys_id_attachment) {
+        var grVProc = new GlideRecord('x_udg_q_versioproces');
+        grVProc.get(sys_id_versioproces);
+        grVProc.document = this.getHTMLDocument(sys_id_attachment);
+        grVProc.update();
+        if (grVProc.state == 2 && grVProc.actiu) {
+            var grProc = new GlideRecord('x_udg_q_proces');
+            grProc.get(grVProc.proces);
+            grProc.document = this.getHTMLDocument(sys_id_attachment);
+            grProc.update();
+        }
+    },
+
+    regeneraVersioProces: function(grVersioProces) {
+        var grAttachment = new GlideRecord('sys_attachment');
+        grAttachment.addQuery('table_sys_id', grVersioProces.sys_id);
+        grAttachment.query();
+        if (grAttachment.next()) {
+            this.emplenaDocumentVersioProces(grVersioProces.sys_id, grAttachment.sys_id);
+        }
     },
 
     ActualitzaMapaProcessos: function(sgq_sys_id) {
@@ -173,7 +195,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>68</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -181,6 +203,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-04 11:34:36</sys_updated_on>
+        <sys_updated_on>2020-03-09 10:42:16</sys_updated_on>
     </sys_script_include>
 </record_update>

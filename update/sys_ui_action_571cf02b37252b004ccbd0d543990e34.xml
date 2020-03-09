@@ -29,30 +29,9 @@
         <onclick/>
         <order>80</order>
         <script><![CDATA[current.state=2;
-
-//Cal revisar que no hi hagi hagut 
-
-/*
-var gdt = new GlideDateTime();
-gdt.getDisplayValue();
-current.inicivigencia=gdt.getDisplayValue();
-current.finalvigencia='';
+new x_udg_q.ProcesSGQ().regeneraVersioProces(current);
 current.update();
-//Actualitzar el que anteriorment estava vigent 
-var grVersio = new GlideRecord('x_udg_q_versioproces');
-grVersio.addQuery('proces',current.proces);
-grVersio.addQuery('state',2); //Vigent
-grVersio.addQuery('sys_id','!=', current.sys_id);
-grVersio.query();
-while (grVersio.next()) {
-		grVersio.state=3;
-		grVersio.finalvigencia=current.inicivigencia;
-		grVersio.update();
-	}
-	
-*/
-
-//action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
+action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -64,7 +43,7 @@ while (grVersio.next()) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>571cf02b37252b004ccbd0d543990e34</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>Fes Vigent</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -73,7 +52,7 @@ while (grVersio.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_571cf02b37252b004ccbd0d543990e34</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-04 11:35:44</sys_updated_on>
+        <sys_updated_on>2020-03-09 11:00:21</sys_updated_on>
         <table>x_udg_q_versioproces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

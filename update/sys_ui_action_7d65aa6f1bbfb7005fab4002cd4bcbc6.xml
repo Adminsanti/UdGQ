@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Crearllegat</action_name>
-        <active>false</active>
+        <action_name>Regenera</action_name>
+        <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.sgq.codi=='UdG' &amp;&amp; gs.hasRole('x_udg_q.ManagerUniversitat')</condition>
+        <condition>gs.hasRole('x_udg_q.ManagerUniversitat')</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -25,42 +25,11 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>RECYCLE Crea procés llegat</name>
+        <name>Regenera Versió Procés</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
-if (current.sgq.codi=='UdG') { //cal comprovar la condition per si es crida desde llista
-	var grFill = new GlideRecord('x_udg_q_proces');
-	grFill.addQuery('pare',current.sys_id);
-	grFill.addQuery('sgq',SGQpref);
-	grFill.query();
-	if (grFill.next()) {
-		gs.addErrorMessage('Aquest procés ja té un fill en aquest SGQ');
-	} else { //NO existeix el fill
-		//new x_udg_q.ProcesSGQ().ActualitzaMapaProcessos(current.sgq);
-		grFill.initialize();
-		grFill.num=current.num;
-		grFill.sgq=SGQpref;
-		grFill.actiu=true;
-		grFill.titol=current.titol;
-		grFill.titpus=current.tipus;
-		grFill.pare=current.sys_id;
-		grFill.propietari=grFill.sgq.propietari;
-		grFill.responsable=grFill.sgq.responsable;
-		if (grFill.insert()) { 
-			gs.addInfoMessage('Procés '+grFill.num+ 'insertat amb èxit a '+SGQprof.codi);
-			current.llegata= new x_udg_q.ProcesSGQ().LlistaFillsCodiSGQ(current.sys_id).join(',');
-			current.update();
-			action.setRedirectURL(current);
-		} 
-		else {
-			gs.addErrorMessage('ERROR en l\'Insert');
-		}
-	}
-} else {
-	gs.addErrorMessage('No es pot llegar el procés P'+ current.num+SGQpref.codi +' perquè no és UdG');
-}
-]]></script>
+        <script><![CDATA[new x_udg_q.ProcesSGQ().regeneraVersioProces(current);
+action.setRedirectURL(current);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -72,8 +41,8 @@ if (current.sgq.codi=='UdG') { //cal comprovar la condition per si es crida desd
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d65aa6f1bbfb7005fab4002cd4bcbc6</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_name>RECYCLE Crea procés llegat</sys_name>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Regenera Versió Procés</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -81,8 +50,8 @@ if (current.sgq.codi=='UdG') { //cal comprovar la condition per si es crida desd
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_7d65aa6f1bbfb7005fab4002cd4bcbc6</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-11 13:28:14</sys_updated_on>
-        <table>x_udg_q_proces</table>
+        <sys_updated_on>2020-03-09 10:42:49</sys_updated_on>
+        <table>x_udg_q_versioproces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="959107221b13c450c851a64fad4bcb08" sys_domain="global" table="x_udg_q_proces" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nom</element>
+            <position>0</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-05 08:53:07</sys_created_on>
+            <sys_id>959107221b13c450c851a64fad4bcb21</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">959107221b13c450c851a64fad4bcb08</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-05 08:53:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>document</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-05 08:53:07</sys_created_on>
+            <sys_id>dd9107221b13c450c851a64fad4bcb21</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">959107221b13c450c851a64fad4bcb08</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-05 08:53:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_udg_q_proces</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-05 08:53:06</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>959107221b13c450c851a64fad4bcb08</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_udg_q_proces</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_ui_section_959107221b13c450c851a64fad4bcb08</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-05 08:53:06</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_ui_section_959107221b13c450c851a64fad4bcb08</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="959107221b13c450c851a64fad4bcb08" sys_domain="global" table="x_udg_q_proces" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>nom</element><position>0</position><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-05 08:53:07</sys_created_on><sys_id>959107221b13c450c851a64fad4bcb21</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">959107221b13c450c851a64fad4bcb08</sys_ui_section><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-03-05 08:53:07</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>document</element><position>1</position><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-05 08:53:07</sys_created_on><sys_id>dd9107221b13c450c851a64fad4bcb21</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_udg_q_proces" sys_domain="global" view="Default view">959107221b13c450c851a64fad4bcb08</sys_ui_section><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-03-05 08:53:07</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_udg_q_proces</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-05 08:53:06</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>959107221b13c450c851a64fad4bcb08</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_udg_q_proces</sys_name><sys_overrides/><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_ui_section_959107221b13c450c851a64fad4bcb08</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-03-05 08:53:06</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1076292084</payload_hash>
+        <record_name>Procés</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-05 08:53:07</sys_created_on>
+        <sys_id>599107221b13c450c851a64fad4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170a9e5fd6f0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-05 08:53:07</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>d19107228e13c450e38a0e2812ed5d23</update_guid>
+        <update_guid_history>d19107228e13c450e38a0e2812ed5d23:1076292084</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-05 08:53:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>8e05c83f9c3744efab2dd26ade35b641</sys_id>
+        <sys_metadata>959107221b13c450c851a64fad4bcb08</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_proces</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="Procés">14d5fafa3714eb401acdf01643990edf</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_ui_section_959107221b13c450c851a64fad4bcb08</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_959107221b13c450c851a64fad4bcb08">599107221b13c450c851a64fad4bcb23</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-05 08:53:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
