@@ -61,7 +61,7 @@ new x_udg_q.ProcesSGQ().regeneraVersioProces(current);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>571cf02b37252b004ccbd0d543990e34</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>53</sys_mod_count>
         <sys_name>Fes Versió Vigent</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -70,7 +70,7 @@ new x_udg_q.ProcesSGQ().regeneraVersioProces(current);
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_571cf02b37252b004ccbd0d543990e34</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:07:58</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:17:26</sys_updated_on>
         <table>x_udg_q_versioproces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
