@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>activa</action_name>
+        <action_name>Fes Versió Vigent</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
@@ -25,14 +25,32 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Fes Vigent</name>
+        <name>Fes Versió Vigent</name>
         <onclick/>
         <order>80</order>
-        <script><![CDATA[current.state=2;
-new x_udg_q.ProcesSGQ().regeneraVersioProces(current);
+        <script><![CDATA[var grVProc = new GlideRecord('x_udg_q_versioproces');
+grVProc.addQuery('state', 2);
+grVProc.query();
+while (grVProc.next()) {
+    if (grVProc.sys_id != current.sys_id) {
+        grVProc.state = 3;
+        if (grVProc.finalvigencia == "") {
+            grVProc.finalvigencia = new GlideDateTime().getDisplayValue();
+        }
+        if (grVProc.inicivigencia == "") {
+            grVProc.inicivigencia = new GlideDateTime().getDisplayValue();
+        }
+        grVProc.update();
+    }
+}
+if (current.inicivigencia == "") {
+    current.inicivigencia = new GlideDateTime().getDisplayValue();
+}
+current.state = 2;
 current.update();
-action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
-        <show_insert>false</show_insert>
+new x_udg_q.ProcesSGQ().regeneraVersioProces(current);
+//action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
+        <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
@@ -43,8 +61,8 @@ action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>571cf02b37252b004ccbd0d543990e34</sys_id>
-        <sys_mod_count>40</sys_mod_count>
-        <sys_name>Fes Vigent</sys_name>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>Fes Versió Vigent</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -52,7 +70,7 @@ action.setRedirectURL(current); //Es queda a la plana on s'ha cridat]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_571cf02b37252b004ccbd0d543990e34</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-09 11:00:21</sys_updated_on>
+        <sys_updated_on>2020-03-10 11:07:58</sys_updated_on>
         <table>x_udg_q_versioproces</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
