@@ -2,20 +2,20 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-02-07 09:07:11</sys_created_on>
+        <sys_created_on>2020-03-10 09:06:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>40e1c88e1bf60810c851a64fad4bcb76</sys_id>
+        <sys_id>6084bc941ba38010c851a64fad4bcb99</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_udg_q_versioproces.x_udg_q.versioproces_user</sys_name>
+        <sys_name>x_udg_q_versioproces.x_udg_q.ManagerUniversitat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_security_acl display_value="x_udg_q_versioproces">04e1c88e1bf60810c851a64fad4bcb63</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_40e1c88e1bf60810c851a64fad4bcb76</sys_update_name>
+        <sys_security_acl display_value="x_udg_q_versioproces">c8e1c88e1bf60810c851a64fad4bcb90</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6084bc941ba38010c851a64fad4bcb99</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-07 09:07:11</sys_updated_on>
-        <sys_user_role display_value="x_udg_q.versioproces_user" name="x_udg_q.versioproces_user">bbd1c08e1bf60810c851a64fad4bcb7f</sys_user_role>
+        <sys_updated_on>2020-03-10 09:06:35</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.ManagerUniversitat" name="x_udg_q.ManagerUniversitat">485294bddb596f009fd1f57eaf9619ef</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>
