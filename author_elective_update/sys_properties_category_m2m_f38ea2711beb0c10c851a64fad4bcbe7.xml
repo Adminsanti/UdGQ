@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="SGQ">0a0ea461372063001acdf01643990eba</category>
+        <order>100</order>
+        <property display_value="x_udg_q.ModificacionsManagers" name="x_udg_q.ModificacionsManagers">af7ee2f11beb0c10c851a64fad4bcbea</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-15 09:50:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f38ea2711beb0c10c851a64fad4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q.ModificacionsManagers.SGQ</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_f38ea2711beb0c10c851a64fad4bcbe7</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-15 09:50:14</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_properties_category_m2m_f38ea2711beb0c10c851a64fad4bcbe7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="SGQ">0a0ea461372063001acdf01643990eba</category><order>100</order><property display_value="x_udg_q.ModificacionsManagers" name="x_udg_q.ModificacionsManagers">af7ee2f11beb0c10c851a64fad4bcbea</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-15 09:50:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>f38ea2711beb0c10c851a64fad4bcbe7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_udg_q.ModificacionsManagers.SGQ</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_properties_category_m2m_f38ea2711beb0c10c851a64fad4bcbe7</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-03-15 09:50:14</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>-297533165</payload_hash>
+        <record_name>x_udg_q.ModificacionsManagers.SGQ</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-15 09:50:14</sys_created_on>
+        <sys_id>fb8ea6351beb0c10c851a64fad4bcbfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170dd99e1390000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-15 09:50:14</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>f38ea6350beb0c10c9128ceac8830afe</update_guid>
+        <update_guid_history>f38ea6350beb0c10c9128ceac8830afe:-297533165</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-15 09:56:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>0687f383b6074cc0802d652e96065e90</sys_id>
+        <sys_metadata>f38ea2711beb0c10c851a64fad4bcbe7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q.ModificacionsManagers.SGQ</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_f38ea2711beb0c10c851a64fad4bcbe7</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_f38ea2711beb0c10c851a64fad4bcbe7">fb8ea6351beb0c10c851a64fad4bcbfe</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-15 09:56:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

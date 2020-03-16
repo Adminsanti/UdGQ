@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA Resum Modificacions - New Tab">063894421ba74c10c851a64fad4bcb73</legacy_page>
+        <name>PA Resum Modificacions - New Tab</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-15 17:31:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e3894421ba74c10c851a64fad4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Resum Modificacions - New Tab</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_grid_canvas_8e3894421ba74c10c851a64fad4bcb74</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-15 17:31:52</sys_updated_on>
+    </sys_grid_canvas>
+</record_update>

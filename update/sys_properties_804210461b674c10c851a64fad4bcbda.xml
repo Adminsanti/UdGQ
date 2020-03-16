@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Modificació activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_udg_q_modificacio_activity.fields</name>
+        <read_roles/>
+        <suffix>x_udg_q</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-15 17:05:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>804210461b674c10c851a64fad4bcbda</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>glide.ui.x_udg_q_modificacio_activity.fields</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_properties_804210461b674c10c851a64fad4bcbda</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-15 17:46:43</sys_updated_on>
+        <type>string</type>
+        <value>state,work_notes,comments,*Attachments*,tramitat,tramitat_per,*Email*,short_description,tipus,opened_at,opened_by</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=804210461b674c10c851a64fad4bcbda"/>
+</record_update>

@@ -17,14 +17,14 @@
         <script_false><![CDATA[function onCondition() {
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	if (g_form.getValue('membres') !='' ||
-	g_form.getValue('membres_funcions') !='' ||
-	g_form.getValue('membres_titol_personal') !='') {
-		g_form.setValue('membres','');
-		g_form.setValue('membres_funcions','');
-		g_form.setValue('membres_titol_personal','');
-		g_form.addInfoMessage('Com que heu canviat el tipus de la funció a Unipersonal, quan deseu, els membres que existien s\'eliminaran');
-	}
+    if (g_form.getValue('membres') != '' ||
+        g_form.getValue('membres_funcions') != '' ||
+        g_form.getValue('membres_titol_personal') != '') {
+        g_form.setValue('membres', '');
+        g_form.setValue('membres_funcions', '');
+        g_form.setValue('membres_titol_personal', '');
+        g_form.addInfoMessage('Com que heu canviat el tipus de la funció a Unipersonal, quan deseu, els membres que existien s\'eliminaran');
+    }
 }]]></script_true>
         <set_values/>
         <short_description>Funcio is Unipersonal</short_description>
@@ -35,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d8730571dbfd23009fd1f57eaf961908</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Funcio is Unipersonal</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_d8730571dbfd23009fd1f57eaf961908</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-11-16 10:30:51</sys_updated_on>
+        <sys_updated_on>2020-03-15 19:09:23</sys_updated_on>
         <table>x_udg_q_funcio</table>
         <ui_type>10</ui_type>
         <view/>

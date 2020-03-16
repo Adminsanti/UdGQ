@@ -38,7 +38,7 @@
         <name>x_udg_q_docsgenerats</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -55,7 +55,7 @@
         <sys_created_on>2019-09-18 15:10:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>574b3da4db0cc410e43f8a3a4896197a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Fitxer</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_docsgenerats_fitxer</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-05 15:10:03</sys_updated_on>
+        <sys_updated_on>2020-03-13 17:30:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

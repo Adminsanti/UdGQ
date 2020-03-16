@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="aa6a56d51b674810c851a64fad4bcb3f" sys_domain="global" table="x_udg_q_tipusmodificacio" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>descripcio</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-15 09:22:50</sys_created_on>
+            <sys_id>e248ee391bab0c10c851a64fad4bcbb4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipusmodificacio" sys_domain="global" view="Default view">aa6a56d51b674810c851a64fad4bcb3f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-15 09:22:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-15 09:39:26</sys_created_on>
+            <sys_id>ed1c6efd1bab0c10c851a64fad4bcbd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipusmodificacio" sys_domain="global" view="Default view">aa6a56d51b674810c851a64fad4bcb3f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-15 09:39:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>explicacio</element>
+            <position>3</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-15 17:42:26</sys_created_on>
+            <sys_id>b0aad0861ba74c10c851a64fad4bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipusmodificacio" sys_domain="global" view="Default view">aa6a56d51b674810c851a64fad4bcb3f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-15 17:42:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>param1</element>
+            <position>4</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-15 17:54:50</sys_created_on>
+            <sys_id>a67d98ca1ba74c10c851a64fad4bcb15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipusmodificacio" sys_domain="global" view="Default view">aa6a56d51b674810c851a64fad4bcb3f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-15 17:54:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nomparam1</element>
+            <position>5</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-15 17:58:57</sys_created_on>
+            <sys_id>7e6e544e1ba74c10c851a64fad4bcb47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipusmodificacio" sys_domain="global" view="Default view">aa6a56d51b674810c851a64fad4bcb3f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-15 17:58:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>descripciomask</element>
+            <position>6</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-15 17:58:57</sys_created_on>
+            <sys_id>f66e544e1ba74c10c851a64fad4bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipusmodificacio" sys_domain="global" view="Default view">aa6a56d51b674810c851a64fad4bcb3f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-15 17:58:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_udg_q_tipusmodificacio</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-13 19:05:16</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aa6a56d51b674810c851a64fad4bcb3f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_udg_q_tipusmodificacio</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_ui_section_aa6a56d51b674810c851a64fad4bcb3f</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-13 19:05:16</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

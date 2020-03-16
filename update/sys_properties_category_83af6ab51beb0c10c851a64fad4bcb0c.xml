@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>Modificacions</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-15 09:55:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>83af6ab51beb0c10c851a64fad4bcb0c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Modificacions</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_properties_category_83af6ab51beb0c10c851a64fad4bcb0c</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:58:18</sys_updated_on>
+        <title/>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=83af6ab51beb0c10c851a64fad4bcb0c"/>
+</record_update>

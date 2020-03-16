@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-13 18:55:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ea189e911b674810c851a64fad4bcb02</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_udg_q_modificacio.x_udg_q.ManagerModificacio</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_security_acl display_value="x_udg_q_modificacio">ee185e911b674810c851a64fad4bcbfd</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ea189e911b674810c851a64fad4bcb02</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-13 19:01:30</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.ManagerModificacio" name="x_udg_q.ManagerModificacio">2ab81ed11b674810c851a64fad4bcb7b</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

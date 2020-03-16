@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_udg_q.modificacio_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>modificacio_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-13 18:55:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5a185a911b674810c851a64fad4bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q.modificacio_user</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_user_role_5a185a911b674810c851a64fad4bcb0d</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-13 18:55:09</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_user_role_5a185a911b674810c851a64fad4bcb0d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_udg_q.modificacio_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>modificacio_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-13 18:55:09</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5a185a911b674810c851a64fad4bcb0d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_udg_q.modificacio_user</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_user_role_5a185a911b674810c851a64fad4bcb0d</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-03-13 18:55:09</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>1591268506</payload_hash>
+        <record_name>x_udg_q.modificacio_user</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-13 18:55:09</sys_created_on>
+        <sys_id>52185e911b674810c851a64fad4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170d5400b9c0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-13 18:55:09</sys_updated_on>
+        <type>Role</type>
+        <update_guid>5a185e91e16748102aad4c569f6065a4</update_guid>
+        <update_guid_history>5a185e91e16748102aad4c569f6065a4:1591268506</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 13/03/2020 20:02:03">a3a99e551b674810c851a64fad4bcb01</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-13 19:02:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>1c014b4e1e464f8c8dac64ddab0a4324</sys_id>
+        <sys_metadata>5a185a911b674810c851a64fad4bcb0d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q.modificacio_user</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_user_role_5a185a911b674810c851a64fad4bcb0d</sys_update_name>
+        <sys_update_version display_value="sys_user_role_5a185a911b674810c851a64fad4bcb0d">52185e911b674810c851a64fad4bcba5</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-13 19:02:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
