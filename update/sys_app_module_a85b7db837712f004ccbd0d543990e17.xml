@@ -20,7 +20,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_udg_q.Admin,x_udg_q.Manager,x_udg_q.ManagerUniversitat,x_udg_q.Observador,x_udg_q.User</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -30,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a85b7db837712f004ccbd0d543990e17</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Funcions i Càrrecs</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_a85b7db837712f004ccbd0d543990e17</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-12 12:56:07</sys_updated_on>
+        <sys_updated_on>2020-03-17 09:40:17</sys_updated_on>
         <timeline_page/>
         <title>Funcions i Càrrecs</title>
         <uncancelable>false</uncancelable>

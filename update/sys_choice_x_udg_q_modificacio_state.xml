@@ -5,19 +5,57 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Draft</label>
+            <label>Aprovació Externa</label>
             <language>en</language>
             <name>x_udg_q_modificacio</name>
             <sequence>0</sequence>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-15 10:11:59</sys_created_on>
+            <sys_created_on>2020-03-16 17:54:19</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1a83367d1beb0c10c851a64fad4bcb71</sys_id>
+            <sys_id>20f6619a1b2fcc10c851a64fad4bcb9e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-16 17:59:31</sys_updated_on>
+            <value>-1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Aprovació Interna</label>
+            <language>en</language>
+            <name>x_udg_q_modificacio</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-16 17:54:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bde66d5a1b2fcc10c851a64fad4bcb20</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-16 17:59:44</sys_updated_on>
+            <value>-2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Validació</label>
+            <language>en</language>
+            <name>x_udg_q_modificacio</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-16 17:53:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1dd66d5a1b2fcc10c851a64fad4bcb14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-15 10:11:59</sys_updated_on>
-            <value>-5</value>
+            <sys_updated_on>2020-03-16 17:53:49</sys_updated_on>
+            <value>-4</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -25,7 +63,7 @@
             <hint/>
             <inactive>false</inactive>
             <label>Esborrany</label>
-            <language>ca</language>
+            <language>en</language>
             <name>x_udg_q_modificacio</name>
             <sequence>0</sequence>
             <sys_created_by>adminsanti</sys_created_by>
@@ -33,9 +71,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e593fe7d1beb0c10c851a64fad4bcbcb</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-15 10:12:12</sys_updated_on>
+            <sys_updated_on>2020-03-16 18:01:24</sys_updated_on>
             <value>-5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -43,18 +81,56 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Closed</label>
+            <label>Aprovavada</label>
             <language>en</language>
             <name>x_udg_q_modificacio</name>
-            <sequence>2</sequence>
+            <sequence>0</sequence>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-15 10:12:30</sys_created_on>
+            <sys_created_on>2020-03-16 17:54:38</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7da3767d1beb0c10c851a64fad4bcb2d</sys_id>
+            <sys_id>9507a19a1b2fcc10c851a64fad4bcba6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-15 10:12:30</sys_updated_on>
+            <sys_updated_on>2020-03-16 17:54:38</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Implementada</label>
+            <language>en</language>
+            <name>x_udg_q_modificacio</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-16 17:54:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e017e99a1b2fcc10c851a64fad4bcb86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-16 17:54:51</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>En memòria</label>
+            <language>en</language>
+            <name>x_udg_q_modificacio</name>
+            <sequence>0</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-16 17:55:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0737e99a1b2fcc10c851a64fad4bcb8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-16 17:55:35</sys_updated_on>
             <value>3</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -62,19 +138,19 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Tancat</label>
-            <language>ca</language>
+            <label>Desistida</label>
+            <language>en</language>
             <name>x_udg_q_modificacio</name>
-            <sequence>4</sequence>
+            <sequence>0</sequence>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-15 10:12:44</sys_created_on>
+            <sys_created_on>2020-03-16 17:55:46</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>99b3fa7d1beb0c10c851a64fad4bcb3e</sys_id>
+            <sys_id>bd476d5a1b2fcc10c851a64fad4bcb1c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-15 10:12:44</sys_updated_on>
-            <value>3</value>
+            <sys_updated_on>2020-03-16 17:55:46</sys_updated_on>
+            <value>5</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>state</element>

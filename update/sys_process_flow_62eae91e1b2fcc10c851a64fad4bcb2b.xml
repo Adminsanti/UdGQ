@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
     <sys_process_flow action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_udg_q_modificacio">state=-5^EQ<item display_value="Esborrany" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
+        <condition table="x_udg_q_modificacio">state=-2^EQ<item display_value="Aprovació Interna" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description/>
-        <label>Esborrany</label>
-        <name>Esborrany</name>
-        <order>1</order>
+        <label>Aprovació Interna</label>
+        <name>Aprovació Interna</name>
+        <order>3</order>
         <sys_class_name>sys_process_flow</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-23 08:36:58</sys_created_on>
+        <sys_created_on>2020-03-16 18:11:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>877cc5c6db59af009fd1f57eaf961923</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Esborrany</sys_name>
+        <sys_id>62eae91e1b2fcc10c851a64fad4bcb2b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Aprovació Interna</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_process_flow_877cc5c6db59af009fd1f57eaf961923</sys_update_name>
+        <sys_update_name>sys_process_flow_62eae91e1b2fcc10c851a64fad4bcb2b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-15 10:24:07</sys_updated_on>
+        <sys_updated_on>2020-03-16 18:14:38</sys_updated_on>
         <table>x_udg_q_modificacio</table>
     </sys_process_flow>
 </record_update>

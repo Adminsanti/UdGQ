@@ -16,22 +16,44 @@
     }
     */
 
-    var t = g_form.getReference('tipus', setParam1);
+    if (g_form.getValue('state') == -5) {
+        g_form.clearMessages();
+        g_form.addInfoMessage(
+            '<b>INSTRUCCIONS GENERALS</b><BR>' +
+            '- Quan seleccioneu el tipus de modificació es mostraran les instruccions específiques segons el tipus de modificació.<BR>' +
+            '- Cal que completeu, com a mínim, els camps obligatoris (amb asterisc).<br>' +
+            '- Cal que indiqueu al camp corresponent l\'objectiu en curs del pla de millora que hi dona sentit. Quan tramiteu aquesta petició de modificació es crearà i s\'hi vincularà una nova acció al pla de millora<br>' +
+            '- Podeu desar la proposta com esborrany si voleu, però quan estigui complerta caldrà que utilitzeu el botó <b>Tramita</b> per que pugui passar a Validació.<br>' +
+            '- Aquest esborrany es pot eliminar. Si el tramiteu, posteriorment podreu desistir-ne però es conservarà el registre i l\'acció del pla del millora.');
+
+        /*g_form.showFieldMsg('objectiu', 'Seleccioneu un objectiu en curs al que es vincularà una nova acció automàticament quan tramiteu aquesta modificació.');*/
+
+        var t = g_form.getReference('tipus', setParam1);
+    }
 }
 
 function setParam1(tipusmodificacio) {
     if (tipusmodificacio.nomparam1) {
         g_form.setLabelOf('param1', tipusmodificacio.nomparam1);
         g_form.setVisible('param1', true);
-		g_form.setMandatory('param1', true);
-		// fer regex tipusmodificacio.descripciomask
-
+        g_form.setMandatory('param1', true);
     } else {
-		g_form.setMandatory('param1',false);
+        g_form.setMandatory('param1', false);
         g_form.setVisible('param1', false);
     }
-	
-	if (tipusmodificacio.descripciomask) g_form.setValue('short_description',tipusmodificacio.descripciomask);
+
+    if (tipusmodificacio.descripciomask) {
+        // fer regex tipusmodificacio.descripciomask
+        g_form.setValue('short_description', tipusmodificacio.descripciomask);
+    } else g_form.setValue('short_description', '');
+
+    g_form.hideFieldMsg('tipus');
+
+    if (tipusmodificacio.explicacio && (g_form.getValue('state') == -5 || g_form.getValue('state') == -4)) {
+        g_form.addInfoMessage("<b>INSTRUCCIONS PER AQUEST TIPUS DE MODIFICACIONS</b><br>" + tipusmodificacio.explicacio);
+
+    }
+
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -40,7 +62,7 @@ function setParam1(tipusmodificacio) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b69402937ac23001acdf01643990e24</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>Mod posar nom a param1 o amagar</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -49,7 +71,7 @@ function setParam1(tipusmodificacio) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_4b69402937ac23001acdf01643990e24</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-15 19:41:53</sys_updated_on>
+        <sys_updated_on>2020-03-17 08:43:40</sys_updated_on>
         <table>x_udg_q_modificacio</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

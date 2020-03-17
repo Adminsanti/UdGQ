@@ -3,7 +3,7 @@
         <element default="true" label="Actiu" max_length="40" name="active" type="boolean"/>
         <element display="true" label="Descripció" max_length="140" name="descripcio" type="string"/>
         <element label="DescripcioMask" max_length="280" name="descripciomask" type="string"/>
-        <element label="Explicacio" max_length="3000" name="explicacio" type="html"/>
+        <element label="Explicació" max_length="3000" name="explicacio" type="string"/>
         <element label="NomParam1" max_length="130" name="nomparam1" type="string"/>
     </element>
 </database>
