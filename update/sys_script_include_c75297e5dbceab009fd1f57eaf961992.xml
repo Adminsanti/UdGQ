@@ -9,200 +9,215 @@
         <name>Usuari</name>
         <script><![CDATA[var Usuari = Class.create();
 Usuari.prototype = {
-	initialize: function(usuari) {
-		this.usuari = usuari; //sys_id d'un usuari
-	},
-	
-	
-	
-	addSGQ: function(sgq_id) {
-		var gr = new GlideRecord("sys_user");
-		if (gr.get(this.usuari)) {
-			var l = new ListUtil(gr.x_udg_q_sgq_visibles);
-			if (! l.isInList(sgq_id)) { //no esta inclós, encara
-				l.addToList(sgq_id);
-				if (gr.x_udg_q_sgq_actual == '' )
-					gr.x_udg_q_sgq_actual=sgq_id;
-				gr.x_udg_q_sgq_visibles=l.getList();
-				gr.update();
-			}
-		}
-	},
-	
-	setSGQ: function (sgq_id) {
-		var gr = new GlideRecord("sys_user");
-		if (gr.get(this.usuari)){
-			gr.x_udg_q_sgq_actual=sgq_id;
-			gr.update();
-		}
-	},
-	
-	getSgqActual: function () {
-		var gr = new GlideRecord("sys_user");
-		gr.get(this.usuari);
-		return gr.x_udg_q_sgq_actual;
-	},
-	
-	actualitzaPreferencia: function (preferencia,nouValor) { //Actualitza o la crea si no existeix
-		new log ("Actualizem preferencia "+preferencia+" de "+this.usuari+" a "+nouValor);
-		var grP = new GlideRecord('sys_user_preference');
-		var e = "name="+preferencia+"^user="+this.usuari;
-		grP.addEncodedQuery(e);
-		grP.query();
-		if (grP.next()) { //L'usuari té aquesta preferència
-			grP.value = nouValor;
-			grP.update();
-		} else {//l'usuari no té la preferència
-			grP.initialize();
-			grP.user=this.usuari;
-			grP.name=preferencia;
-			grP.value=nouValor;
-			grP.insert(); //Inserta
-		}
-	},
-	
-	_getSysIdRol: function (rol) {
-		var grUserRole = new GlideRecord('sys_user_role');
-		grUserRole.get('name',rol);
-		return grUserRole.sys_id.toString();
-	},
-	
-	_getRoleIdByName: function(role){
-		var gr = new GlideRecord("sys_user_role");
-		gr.addQuery("name", role);
-		gr.query();
-		if (gr.next())
-			return gr.sys_id;
-		else
-			return "";
-	},
-	
-	isManagerUniversitat: function(){
-		var gr = new GlideRecord("x_udg_q_gestorsuniversitat");
-		gr.addQuery('actiu',true);
-		gr.addQuery('usuari',this.usuari);
-		gr.setLimit(1);
-		gr.query();
-		var itIs = gr.next();
-		return itIs;
-	},
-	
-	isObservador: function (sgq) {
-		var gr = new GlideRecord("x_udg_q_observador");
-		if (sgq)
-			gr.addQuery('sgq',sgq);
-		gr.addQuery('actiu',true);
-		gr.addQuery('usuari',this.usuari);
-		gr.addEncodedQuery("caducitatISNOTEMPTY^caducitatRELATIVEGT@dayofweek@ahead@0");
-		gr.setLimit(1);
-		gr.query();
-		var itIs = gr.next();
-		return itIs;
-	},
-	
-	isManager: function (sgq) {
-		var gr = new GlideRecord("x_udg_q_sgq");
-		if (!sgq) return false;
-		gr.addQuery('sys_id',sgq);
-		gr.addQuery('actiu',true);
-		var qc = gr.addQuery('responsable.usuari', this.usuari);
-		qc.addOrCondition('responsable.suport','CONTAINS',this.usuari);
-		qc.addOrCondition('propietari.usuari', this.usuari);
-		qc.addOrCondition('propietari.suport','CONTAINS',this.usuari);
-		gr.setLimit(1);
-		gr.query();
-		var itIs = gr.next();
-		return itIs;
-	},
-	
-	isUser: function (sgq) {		
-		var grF = new GlideRecord('x_udg_q_funcio'); 
-		grF.addQuery('sgq',sgq);
-		grF.addQuery('activa',true);
-		grF.addQuery('acces',true);
-		var qc = grF.addQuery('usuari',this.usuari);
-		qc.addOrCondition('suport','CONTAINS',this.usuari);
-		grF.setLimit(1);
-		grF.query();
-		var itIs = grF.hasNext();
-		//new log("Resposta isUser per "+sgq+" de "+this.usuari+" -> "+itIs);
-		return itIs;
-	},
-	
-	sgqVisibles: function () {
-		var llistaSgq = [];
-		var grSgq = new GlideRecord('x_udg_q_sgq');
-		grSgq.addQuery('actiu',true);
-		grSgq.query();
-		while (grSgq.next()) {
-			if (this.isManagerUniversitat()||this.isManager(grSgq.sys_id)||this.isUser(grSgq.sys_id)||this.isObservador(grSgq.sys_id)) {
-				llistaSgq.push(grSgq.sys_id.toString());
-			}
-		}
-		return llistaSgq.toString();
-	},
-	
-	setRol: function (rol) {
-		var idRol= this._getSysIdRol(rol);
-		var gr1 = new GlideRecord('sys_user_has_role');
-		gr1.addQuery('user', this.usuari);
-		gr1.addQuery('role', idRol);
-		gr1.addQuery('inherited', false);
-		gr1.query();
-		if (!gr1.next()) {
-			gr1.initialize();
-			gr1.user=this.usuari;
-			gr1.role=idRol;
-			new log("Afegim Rol "+rol+" per "+gr1.user.name);
-			gr1.insert();
-		}
-	},
-	
-	delRol: function (rol) {
-		var idRol= this._getSysIdRol(rol);
-		var gr1 = new GlideRecord('sys_user_has_role');
-		gr1.addQuery('user', this.usuari);
-		gr1.addQuery('role', idRol);
-		gr1.addQuery('inherited', false);
-		gr1.query();
-		if (gr1.next()) {
-			new log("Esborrem Rol "+rol+" per "+gr1.user.name);
-			gr1.deleteRecord();
-		}
-	},
-	
-	setAllRoles: function (sgq) { //sgq : sys_id del sgq
-		//new log("setAllRoles per "+this.usuari+ " al SGQ: "+sgq);
-		
-		if (this.isManagerUniversitat())
-			this.setRol ('x_udg_q.ManagerUniversitat');
-		else
-			this.delRol ('x_udg_q.ManagerUniversitat');
-		
-		if (this.isManager(sgq))
-			this.setRol ('x_udg_q.Manager');
-		else
-			this.delRol ('x_udg_q.Manager');
-		
-		if (this.isUser(sgq))
-			this.setRol ('x_udg_q.User');
-		else
-			this.delRol ('x_udg_q.User');
-		
-		if (this.isObservador(sgq))
-			this.setRol ('x_udg_q.Observador');
-		else
-			this.delRol ('x_udg_q.Observador');
-	},
-	
-	type: 'Usuari'
+    initialize: function(usuari) {
+        this.usuari = usuari; //sys_id d'un usuari
+    },
+
+    addSGQ: function(sgq_id) {
+        var gr = new GlideRecord("sys_user");
+        if (gr.get(this.usuari)) {
+            var l = new ListUtil(gr.x_udg_q_sgq_visibles);
+            if (!l.isInList(sgq_id)) { //no esta inclós, encara
+                l.addToList(sgq_id);
+                if (gr.x_udg_q_sgq_actual == '')
+                    gr.x_udg_q_sgq_actual = sgq_id;
+                gr.x_udg_q_sgq_visibles = l.getList();
+                gr.update();
+            }
+        }
+    },
+
+    setSGQ: function(sgq_id) {
+        var gr = new GlideRecord("sys_user");
+        if (gr.get(this.usuari)) {
+            gr.x_udg_q_sgq_actual = sgq_id;
+            gr.update();
+        }
+    },
+
+    getSgqActual: function() {
+        var gr = new GlideRecord("sys_user");
+        gr.get(this.usuari);
+        return gr.x_udg_q_sgq_actual;
+    },
+
+    actualitzaPreferencia: function(preferencia, nouValor) { //Actualitza o la crea si no existeix
+        new log("Actualizem preferencia " + preferencia + " de " + this.usuari + " a " + nouValor);
+        var grP = new GlideRecord('sys_user_preference');
+        var e = "name=" + preferencia + "^user=" + this.usuari;
+        grP.addEncodedQuery(e);
+        grP.query();
+        if (grP.next()) { //L'usuari té aquesta preferència
+            grP.value = nouValor;
+            grP.update();
+        } else { //l'usuari no té la preferència
+            grP.initialize();
+            grP.user = this.usuari;
+            grP.name = preferencia;
+            grP.value = nouValor;
+            grP.insert(); //Inserta
+        }
+    },
+
+    _getSysIdRol: function(rol) {
+        var grUserRole = new GlideRecord('sys_user_role');
+        grUserRole.get('name', rol);
+        return grUserRole.sys_id.toString();
+    },
+
+    _getRoleIdByName: function(role) {
+        var gr = new GlideRecord("sys_user_role");
+        gr.addQuery("name", role);
+        gr.query();
+        if (gr.next())
+            return gr.sys_id;
+        else
+            return "";
+    },
+
+    hasRol: function(rol) {
+        var idRol = this._getSysIdRol(rol);
+        var gr1 = new GlideRecord('sys_user_has_role');
+        gr1.addQuery('user', this.usuari);
+        gr1.addQuery('role', idRol);
+        gr1.query();
+        return gr1.next();
+    },
+
+    setRol: function(rol) {
+        var idRol = this._getSysIdRol(rol);
+        var gr1 = new GlideRecord('sys_user_has_role');
+        gr1.addQuery('user', this.usuari);
+        gr1.addQuery('role', idRol);
+        gr1.addQuery('inherited', false);
+        gr1.query();
+        if (!gr1.next()) {
+            gr1.initialize();
+            gr1.user = this.usuari;
+            gr1.role = idRol;
+            new log("Afegim Rol " + rol + " per " + gr1.user.name);
+            gr1.insert();
+        }
+    },
+
+    delRol: function(rol) {
+        var idRol = this._getSysIdRol(rol);
+        var gr1 = new GlideRecord('sys_user_has_role');
+        gr1.addQuery('user', this.usuari);
+        gr1.addQuery('role', idRol);
+        gr1.addQuery('inherited', false);
+        gr1.query();
+        if (gr1.next()) {
+            new log("Esborrem Rol " + rol + " per " + gr1.user.name);
+            gr1.deleteRecord();
+        }
+    },
+
+    isManagerUniversitat: function() {
+        var gr = new GlideRecord("x_udg_q_gestorsuniversitat");
+        gr.addQuery('actiu', true);
+        gr.addQuery('usuari', this.usuari);
+        gr.setLimit(1);
+        gr.query();
+        var itIs = gr.next();
+        return itIs;
+    },
+
+    isManagerModificacio: function() {
+        return this.hasRol('x_udg_q.ManagerModificacio');
+    },
+
+    isObservador: function(sgq) {
+        var gr = new GlideRecord("x_udg_q_observador");
+        if (sgq)
+            gr.addQuery('sgq', sgq);
+        gr.addQuery('actiu', true);
+        gr.addQuery('usuari', this.usuari);
+        gr.addEncodedQuery("caducitatISNOTEMPTY^caducitatRELATIVEGT@dayofweek@ahead@0");
+        gr.setLimit(1);
+        gr.query();
+        var itIs = gr.next();
+        return itIs;
+    },
+
+    isManager: function(sgq) {
+        var gr = new GlideRecord("x_udg_q_sgq");
+        if (!sgq) return false;
+        gr.addQuery('sys_id', sgq);
+        gr.addQuery('actiu', true);
+        var qc = gr.addQuery('responsable.usuari', this.usuari);
+        qc.addOrCondition('responsable.suport', 'CONTAINS', this.usuari);
+        qc.addOrCondition('propietari.usuari', this.usuari);
+        qc.addOrCondition('propietari.suport', 'CONTAINS', this.usuari);
+        gr.setLimit(1);
+        gr.query();
+        var itIs = gr.next();
+        return itIs;
+    },
+
+    isUser: function(sgq) {
+        var grF = new GlideRecord('x_udg_q_funcio');
+        grF.addQuery('sgq', sgq);
+        grF.addQuery('activa', true);
+        grF.addQuery('acces', true);
+        var qc = grF.addQuery('usuari', this.usuari);
+        qc.addOrCondition('suport', 'CONTAINS', this.usuari);
+        grF.setLimit(1);
+        grF.query();
+        var itIs = grF.hasNext();
+        //new log("Resposta isUser per "+sgq+" de "+this.usuari+" -> "+itIs);
+        return itIs;
+    },
+
+    sgqVisibles: function() {
+        var llistaSgq = [];
+        var grSgq = new GlideRecord('x_udg_q_sgq');
+        grSgq.addQuery('actiu', true);
+        grSgq.query();
+        while (grSgq.next()) {
+            if (this.isManagerUniversitat() ||
+                this.isManagerModificacio() ||
+                this.isManager(grSgq.sys_id) ||
+                this.isUser(grSgq.sys_id) ||
+                this.isObservador(grSgq.sys_id)) {
+                llistaSgq.push(grSgq.sys_id.toString());
+            }
+        }
+        return llistaSgq.toString();
+    },
+
+    setAllRoles: function(sgq) { //sgq : sys_id del sgq
+        //new log("setAllRoles per "+this.usuari+ " al SGQ: "+sgq);
+
+        if (this.isManagerUniversitat())
+            this.setRol('x_udg_q.ManagerUniversitat');
+        else
+            this.delRol('x_udg_q.ManagerUniversitat');
+
+        if (this.isManager(sgq))
+            this.setRol('x_udg_q.Manager');
+        else
+            this.delRol('x_udg_q.Manager');
+
+        if (this.isUser(sgq))
+            this.setRol('x_udg_q.User');
+        else
+            this.delRol('x_udg_q.User');
+
+        if (this.isObservador(sgq))
+            this.setRol('x_udg_q.Observador');
+        else
+            this.delRol('x_udg_q.Observador');
+    },
+
+    type: 'Usuari'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>126</sys_mod_count>
+        <sys_mod_count>141</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -210,6 +225,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-13 17:53:41</sys_updated_on>
+        <sys_updated_on>2020-03-17 16:36:00</sys_updated_on>
     </sys_script_include>
 </record_update>

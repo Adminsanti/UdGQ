@@ -8,7 +8,7 @@
         <global>true</global>
         <isolate_script>false</isolate_script>
         <messages/>
-        <name>Mod posar nom a param1 o amagar</name>
+        <name>Mod canvia tipus</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     /*if (isLoading || newValue === '') {
@@ -26,13 +26,11 @@
             '- Podeu desar la proposta com esborrany si voleu, però quan estigui complerta caldrà que utilitzeu el botó <b>Tramita</b> per que pugui passar a Validació.<br>' +
             '- Aquest esborrany es pot eliminar. Si el tramiteu, posteriorment podreu desistir-ne però es conservarà el registre i l\'acció del pla del millora.');
 
-        /*g_form.showFieldMsg('objectiu', 'Seleccioneu un objectiu en curs al que es vincularà una nova acció automàticament quan tramiteu aquesta modificació.');*/
-
-        var t = g_form.getReference('tipus', setParam1);
+        var t = g_form.getReference('tipus', setAll);
     }
 }
 
-function setParam1(tipusmodificacio) {
+function setAll(tipusmodificacio) {
     if (tipusmodificacio.nomparam1) {
         g_form.setLabelOf('param1', tipusmodificacio.nomparam1);
         g_form.setVisible('param1', true);
@@ -42,18 +40,22 @@ function setParam1(tipusmodificacio) {
         g_form.setVisible('param1', false);
     }
 
-    if (tipusmodificacio.descripciomask) {
-        // fer regex tipusmodificacio.descripciomask
-        g_form.setValue('short_description', tipusmodificacio.descripciomask);
+    if (tipusmodificacio.descripciomask && g_form.getValue('state') == -5) {
+       var txt = tipusmodificacio.descripciomask;
+        var titulacio = '';
+        var param1 = '';
+        if (g_form.getDisplayBox('titulacio').value) titulacio = g_form.getDisplayBox('titulacio').value;
+        if (g_form.getValue('param1')) param1 = g_form.getValue('param1');
+        txt = txt.replace("$titulació", titulacio);
+        txt = txt.replace("$param1", param1);
+        g_form.setValue('short_description', txt);
     } else g_form.setValue('short_description', '');
 
     g_form.hideFieldMsg('tipus');
 
     if (tipusmodificacio.explicacio && (g_form.getValue('state') == -5 || g_form.getValue('state') == -4)) {
         g_form.addInfoMessage("<b>INSTRUCCIONS PER AQUEST TIPUS DE MODIFICACIONS</b><br>" + tipusmodificacio.explicacio);
-
     }
-
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -62,8 +64,8 @@ function setParam1(tipusmodificacio) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b69402937ac23001acdf01643990e24</sys_id>
-        <sys_mod_count>64</sys_mod_count>
-        <sys_name>Mod posar nom a param1 o amagar</sys_name>
+        <sys_mod_count>89</sys_mod_count>
+        <sys_name>Mod canvia tipus</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -71,7 +73,7 @@ function setParam1(tipusmodificacio) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_4b69402937ac23001acdf01643990e24</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-17 08:43:40</sys_updated_on>
+        <sys_updated_on>2020-03-17 11:34:01</sys_updated_on>
         <table>x_udg_q_modificacio</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>param1</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Mod canvia Param1</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    /*if (isLoading || newValue === '') {
+    	return;
+    }
+    */
+
+    if (g_form.getValue('state') == -5) {
+        var t = g_form.getReference('tipus', setNom);
+    }
+}
+
+function setNom(tipusmodificacio) {
+    if (tipusmodificacio.descripciomask && g_form.getValue('state') == -5) {
+        var titulacio = '';
+        var param1 = '';
+        if (g_form.getDisplayBox('titulacio').value) titulacio = g_form.getDisplayBox('titulacio').value;
+        if (g_form.getValue('param1')) param1 = g_form.getValue('param1');
+        g_form.setValue('short_description', 
+						tipusmodificacio.descripciomask.replace("$titulació", titulacio).replace("$param1", param1));
+    } else g_form.setValue('short_description', '');
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-17 11:34:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce8955221bab80505fab4002cd4bcb02</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Mod canvia Param1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_client_ce8955221bab80505fab4002cd4bcb02</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-17 11:40:56</sys_updated_on>
+        <table>x_udg_q_modificacio</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
