@@ -210,6 +210,38 @@ Usuari.prototype = {
             this.delRol('x_udg_q.Observador');
     },
 
+    actualitzaGR: function(gr) {
+
+        if (this.usuari != gr.sys_id) { //per seguretat, no hauria de passar
+            this.usuari = gr.sys_id;
+            new log("Error al cridar Usuari.actualitzaGR per " +
+                this.usuari + " i " + gr.sys_id, "error");
+        }
+
+        gr.x_udg_q_sgq_visibles = this.sgqVisibles();
+        var llista_visibles = gr.x_udg_q_sgq_visibles.split(',');
+        var actual = gr.x_udg_q_sgq_actual.toString();
+        if (llista_visibles.length > 0) { //Hi ha sgq a llista_visibles
+            if (llista_visibles.indexOf(actual) == -1) { //sgq_actual no esta entre els visibles o és buit
+                gr.x_udg_q_sgq_actual = llista_visibles[0].toString();
+            }
+            this.setAllRoles(gr.x_udg_q_sgq_actual);
+        } else { //No hi ha cap sgq a la llista_visibles
+            gr.x_udg_q_sgq_actual = "";
+            this.setAllRoles("cap");
+        }
+        gr.update();
+    },
+	
+	actualitzaPreferenciesSGQ: function (gr) {
+		var sgqActual="cap";
+		var sgqActualCodi="cap";
+		if (gr.x_udg_q_sgq_actual!="") sgqActual=gr.x_udg_q_sgq_actual.toString();
+		if (gr.x_udg_q_sgq_actual.codi!="") sgqActual=gr.x_udg_q_sgq_actual.codi.toString();
+		gs.getUser().savePreference('qualitat.sgqActual', sgqActual);
+        gs.getUser().savePreference('qualitat.sgqActualCodi', sgqActualCodi);
+	},
+
     type: 'Usuari'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -217,7 +249,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>141</sys_mod_count>
+        <sys_mod_count>145</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -225,6 +257,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-17 16:36:00</sys_updated_on>
+        <sys_updated_on>2020-03-18 10:08:07</sys_updated_on>
     </sys_script_include>
 </record_update>

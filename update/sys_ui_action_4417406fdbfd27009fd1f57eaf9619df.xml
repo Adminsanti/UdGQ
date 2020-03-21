@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Tramita</action_name>
+        <action_name>Tramita &amp; Roman</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
@@ -9,10 +9,10 @@
         <comments/>
         <condition>current.state == -5</condition>
         <form_action>true</form_action>
-        <form_button>false</form_button>
+        <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>true</form_link>
+        <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <hint/>
@@ -25,13 +25,19 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Tramita</name>
+        <name>Tramita &amp; Roman</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.state=-4;
-current.tramitat= new GlideDateTime().toString();
-current.tramitat_per=gs.getUserID();
-currenbt.update();
+        <script><![CDATA[// Comprovar que l'objectiu està encara en un estat vàlid. llavors crear l'acció relacionada i relacionar-la amb l'objectiu (bloquejant ambdues coses)
+
+if (confirm("Aquest tràmit és irrevocable (encara que podreu desistir posteiorment). Esteu segur que voleu tramitar aquesta modificació?")) {
+	
+    current.state = -4;
+    current.tramitat = new GlideDateTime().toString();
+    current.tramitat_per = gs.getUserID();
+    current.update();
+    //Missatge de confirmació
+}
 action.setRedirectURL(current);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -44,8 +50,8 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4417406fdbfd27009fd1f57eaf9619df</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_name>Tramita</sys_name>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Tramita &amp; Roman</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -53,7 +59,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_4417406fdbfd27009fd1f57eaf9619df</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-17 12:06:56</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:43:08</sys_updated_on>
         <table>x_udg_q_modificacio</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

@@ -8,7 +8,7 @@
         <global>true</global>
         <isolate_script>false</isolate_script>
         <messages/>
-        <name>Mod canvia tipus</name>
+        <name>Mod carrega o canvia tipus</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     /*if (isLoading || newValue === '') {
@@ -21,10 +21,9 @@
         g_form.addInfoMessage(
             '<b>INSTRUCCIONS GENERALS</b><BR>' +
             '- Quan seleccioneu el tipus de modificació es mostraran les instruccions específiques segons el tipus de modificació.<BR>' +
-            '- Cal que completeu, com a mínim, els camps obligatoris (amb asterisc).<br>' +
-            '- Cal que indiqueu al camp corresponent l\'objectiu en curs del pla de millora que hi dona sentit. Quan tramiteu aquesta petició de modificació es crearà i s\'hi vincularà una nova acció al pla de millora<br>' +
-            '- Podeu desar la proposta com esborrany si voleu, però quan estigui complerta caldrà que utilitzeu el botó <b>Tramita</b> per que pugui passar a Validació.<br>' +
-            '- Aquest esborrany es pot eliminar. Si el tramiteu, posteriorment podreu desistir-ne però es conservarà el registre i l\'acció del pla del millora.');
+            ' - Podeu desar temporalment la proposta com esborrany, però quan estigui complerta i correcta caldrà que utilitzeu el botó <b>Tramita</b> per que pugui passar a Validació.<br>' +
+			'- Per tramitar-la cal que completeu, a més els camps obligatoris (amb asterisc), l\'objectiu del pla de millora que hi dona sentit. Quan tramiteu aquesta petició de modificació es crearà i vincularà a l\'objectiu una nova acció al pla de millora.<br>' +
+            '- Aquest esborrany es pot eliminar. A partir de que el tramiteu, podreu desistir-ne però es conservarà el registre i l\'acció del pla del millora.');
 
         var t = g_form.getReference('tipus', setAll);
     }
@@ -64,8 +63,8 @@ function setAll(tipusmodificacio) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4b69402937ac23001acdf01643990e24</sys_id>
-        <sys_mod_count>89</sys_mod_count>
-        <sys_name>Mod canvia tipus</sys_name>
+        <sys_mod_count>93</sys_mod_count>
+        <sys_name>Mod carrega o canvia tipus</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -73,7 +72,7 @@ function setAll(tipusmodificacio) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_4b69402937ac23001acdf01643990e24</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-17 11:34:01</sys_updated_on>
+        <sys_updated_on>2020-03-20 09:38:10</sys_updated_on>
         <table>x_udg_q_modificacio</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

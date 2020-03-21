@@ -10,7 +10,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_m2m_accions_objectius" name="x_udg_q_m2m_accions_objectius" sys_domain="global" view="Default view">94e1ba8a1b57c050c851a64fad4bcb49</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_m2m_accions_objectius" sys_domain="global" view="Default view">bfaa8d22db2923009fd1f57eaf9619ef</sys_ui_section>
+            <sys_ui_section caption="Relació Objectius - Accions" display_value="Relació Objectius - Accions" name="x_udg_q_m2m_accions_objectius" sys_domain="global" view="Default view">bfaa8d22db2923009fd1f57eaf9619ef</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2020-03-03 18:27:32</sys_updated_on>
         </sys_ui_form_section>
