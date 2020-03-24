@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="DELETE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>u_imp_tmpl_x_udg_q_objectiumillora</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>u_imp_tmpl_x_udg_q_objectiumillora</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-23 10:48:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d798806c1bf38c50c851a64fad4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_imp_tmpl_x_udg_q_objectiumillora</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_transform_map_d798806c1bf38c50c851a64fad4bcbd7</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-23 10:48:30</sys_updated_on>
+        <target_table>x_udg_q_objectiumillora</target_table>
+    </sys_transform_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_transform_map_d798806c1bf38c50c851a64fad4bcbd7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_map"&gt;&lt;sys_transform_map action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;copy_empty_fields&gt;false&lt;/copy_empty_fields&gt;&lt;create_new_record_on_empty_coalesce_fields&gt;false&lt;/create_new_record_on_empty_coalesce_fields&gt;&lt;enforce_mandatory_fields&gt;No&lt;/enforce_mandatory_fields&gt;&lt;name&gt;u_imp_tmpl_x_udg_q_objectiumillora&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;run_business_rules&gt;true&lt;/run_business_rules&gt;&lt;run_script&gt;false&lt;/run_script&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]&gt;&lt;/script&gt;&lt;source_table&gt;u_imp_tmpl_x_udg_q_objectiumillora&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;adminsanti&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-23 10:48:30&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;d798806c1bf38c50c851a64fad4bcbd7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_imp_tmpl_x_udg_q_objectiumillora&lt;/sys_name&gt;&lt;sys_package display_value="UdG Qualitat" source="x_udg_q"&gt;29219b8737df5f001acdf01643990e33&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="UdG Qualitat"&gt;29219b8737df5f001acdf01643990e33&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_map_d798806c1bf38c50c851a64fad4bcbd7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;adminsanti&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-23 10:48:30&lt;/sys_updated_on&gt;&lt;target_table&gt;x_udg_q_objectiumillora&lt;/target_table&gt;&lt;/sys_transform_map&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>449443205</payload_hash>
+        <record_name>u_imp_tmpl_x_udg_q_objectiumillora</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-23 10:48:30</sys_created_on>
+        <sys_id>db9884ac1bf38c50c851a64fad4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171070218a50000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-23 10:48:30</sys_updated_on>
+        <type>Table Transform Map</type>
+        <update_guid>d39884ac1df38c50e6300aa4ec243b7a</update_guid>
+        <update_guid_history>d39884ac1df38c50e6300aa4ec243b7a:449443205</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-23 11:01:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_transform_map">sys_transform_map</sys_db_object>
+        <sys_id>08267f11fd7745809bf5f6ba1b3ea5a4</sys_id>
+        <sys_metadata>d798806c1bf38c50c851a64fad4bcbd7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_imp_tmpl_x_udg_q_objectiumillora</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_transform_map_d798806c1bf38c50c851a64fad4bcbd7</sys_update_name>
+        <sys_update_version display_value="sys_transform_map_d798806c1bf38c50c851a64fad4bcbd7">db9884ac1bf38c50c851a64fad4bcb7a</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-23 11:01:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

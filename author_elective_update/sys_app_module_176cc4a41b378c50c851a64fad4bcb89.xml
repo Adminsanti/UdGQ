@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>update_objectius</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_udg_q_update_objectius</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-23 11:05:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>176cc4a41b378c50c851a64fad4bcb89</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CarregaObjectius</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_app_module_176cc4a41b378c50c851a64fad4bcb89</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-23 11:15:31</sys_updated_on>
+        <timeline_page/>
+        <title>CarregaObjectius</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_app_module_176cc4a41b378c50c851a64fad4bcb89</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>update_objectius</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_udg_q_update_objectius</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-23 11:05:10</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>176cc4a41b378c50c851a64fad4bcb89</sys_id><sys_mod_count>1</sys_mod_count><sys_name>CarregaObjectius</sys_name><sys_overrides/><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_app_module_176cc4a41b378c50c851a64fad4bcb89</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-03-23 11:15:31</sys_updated_on><timeline_page/><title>CarregaObjectius</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-854672179</payload_hash>
+        <record_name>CarregaObjectius</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-23 11:15:31</sys_created_on>
+        <sys_id>0fce08a81b378c50c851a64fad4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171071ad5ea0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-23 11:15:31</sys_updated_on>
+        <type>Module</type>
+        <update_guid>c3ce08a878378c50eefb862b90192149</update_guid>
+        <update_guid_history>c3ce08a878378c50eefb862b90192149:-854672179,1f6cc4a410378c50f04c9e6fa92f9a8a:1860603720</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 24/03/2020 09:19:41">452034301b330090c851a64fad4bcbba</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-24 08:19:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>749859772baa48228633d2e54b036791</sys_id>
+        <sys_metadata>176cc4a41b378c50c851a64fad4bcb89</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CarregaObjectius</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_app_module_176cc4a41b378c50c851a64fad4bcb89</sys_update_name>
+        <sys_update_version display_value="sys_app_module_176cc4a41b378c50c851a64fad4bcb89">0fce08a81b378c50c851a64fad4bcb49</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-24 08:19:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

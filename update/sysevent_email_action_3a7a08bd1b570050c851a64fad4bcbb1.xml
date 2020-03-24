@@ -73,7 +73,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Objectiu tancat al pla de millora: ${number} (${sgq}) - ${short_description}</subject>
+        <subject>Tancat al pla de millora ${number} (${sgq}) - ${short_description}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -82,7 +82,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3a7a08bd1b570050c851a64fad4bcbb1</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Objectiu tancat</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -91,7 +91,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_3a7a08bd1b570050c851a64fad4bcbb1</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-04 08:03:03</sys_updated_on>
+        <sys_updated_on>2020-03-24 09:37:38</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
