@@ -76,7 +76,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>x_udg_q.Observador</roles>
+        <roles>x_udg_q.Observador,x_udg_q.User,x_udg_q.ManagerUniversitat,x_udg_q.Manager,x_udg_q.Admin</roles>
         <row>accions</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -105,7 +105,7 @@
         <sys_created_on>2019-01-16 17:17:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>20f278ed1b4fab00c851a64fad4bcb3f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Objectius en curs per SGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -113,7 +113,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_20f278ed1b4fab00c851a64fad4bcb3f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-11 18:42:11</sys_updated_on>
+        <sys_updated_on>2020-03-24 16:50:46</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectius en curs per SGQ</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

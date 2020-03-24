@@ -44,8 +44,9 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>accions</field>
         <field_list/>
-        <filter table="x_udg_q_objectiumillora">state=2^assoliment=100<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+        <filter table="x_udg_q_objectiumillora">state=2^assoliment=100^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="false" field="assoliment" goto="false" newquery="false" operator="=" or="false" value="100"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -76,7 +77,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>x_udg_q.Observador</roles>
+        <roles>x_udg_q.Observador,x_udg_q.User,x_udg_q.ManagerUniversitat,x_udg_q.Manager,x_udg_q.Admin</roles>
         <row>accions</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -105,7 +106,7 @@
         <sys_created_on>2018-11-21 16:59:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a6a5146bdb3167009fd1f57eaf961958</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Objectius 100% no tancat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -113,7 +114,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_a6a5146bdb3167009fd1f57eaf961958</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-08 13:10:41</sys_updated_on>
+        <sys_updated_on>2020-03-24 16:51:39</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectius 100% no tancat</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

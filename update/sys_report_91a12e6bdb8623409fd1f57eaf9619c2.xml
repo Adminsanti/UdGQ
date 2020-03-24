@@ -77,7 +77,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>x_udg_q.Observador</roles>
+        <roles>x_udg_q.Observador,x_udg_q.User,x_udg_q.ManagerUniversitat,x_udg_q.Manager,x_udg_q.Admin</roles>
         <row>accions</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -106,7 +106,7 @@
         <sys_created_on>2018-12-04 13:26:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>91a12e6bdb8623409fd1f57eaf9619c2</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Objectius sense començar</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -114,7 +114,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_91a12e6bdb8623409fd1f57eaf9619c2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-08 13:12:07</sys_updated_on>
+        <sys_updated_on>2020-03-24 16:51:07</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectius sense començar</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
