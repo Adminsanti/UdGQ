@@ -6,8 +6,8 @@
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Pla de Millora" name="Pla de Millora">8b8c776d1b170050c851a64fad4bcb56</category>
-        <collection>x_udg_q_objectiumillora</collection>
-        <condition table="x_udg_q_objectiumillora">state=2^due_dateVALCHANGES^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+        <collection>x_udg_q_acciomillora</collection>
+        <condition table="x_udg_q_acciomillora">state=2^due_dateVALCHANGES^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="false" field="due_date" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
@@ -44,7 +44,7 @@
 <p>${mail_script:disclaimer udg}</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Objectiu canvia de data</name>
+        <name>Acció canvia de data</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -59,21 +59,21 @@
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-03-24 09:25:05</sys_created_on>
+        <sys_created_on>2020-03-24 09:43:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>13eef0f81b730090c851a64fad4bcb4d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Objectiu canvia de data</sys_name>
+        <sys_id>cb43c9b01bb30090c851a64fad4bcbd0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Acció canvia de data</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sysevent_email_action_13eef0f81b730090c851a64fad4bcb4d</sys_update_name>
+        <sys_update_name>sysevent_email_action_cb43c9b01bb30090c851a64fad4bcbd0</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-24 09:46:23</sys_updated_on>
+        <sys_updated_on>2020-03-24 09:46:32</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
