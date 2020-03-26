@@ -35,9 +35,11 @@
 	var arrayUsuaris = usuarisNousiVells.getList().toString().split(",");
 	for (var i = 0; i < arrayUsuaris.length; i++){
 		var usuari = new x_udg_q.Usuari(arrayUsuaris[i]);
-		usuari.setAllRoles(current.sgq);
+		usuari.actualitzaGR(current);
+		usuari.actualitzaPreferenciesSGQ(current);
 		if (usuari.getSgqActual()=="" ) usuari.setSGQ(current.sgq);
 	}
+	
 
 /* CAL FER LA REASIGNACIÓ de tot el que quedi penjat ***************************
 
@@ -55,7 +57,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0b8b8a7437b12f004ccbd0d543990e50</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Funcio canvia after</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -64,7 +66,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0b8b8a7437b12f004ccbd0d543990e50</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-16 12:51:27</sys_updated_on>
+        <sys_updated_on>2020-03-26 17:13:29</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
