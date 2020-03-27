@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="ImportObjectiusCiències">72d6783d1bf78490c851a64fad4bcb96</map>
+        <reference_value_field>name</reference_value_field>
+        <source_field>u_closed_by</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>x_udg_q_importobjectius</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-27 11:23:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b817743d1bf78490c851a64fad4bcb30</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>u_closed_by</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_transform_entry_b817743d1bf78490c851a64fad4bcb30</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-27 11:34:41</sys_updated_on>
+        <target_field>closed_by</target_field>
+        <target_table>x_udg_q_objectiumillora</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+</record_update>
