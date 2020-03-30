@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>tipus</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Mod carrega o canvia tipus</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    /*if (isLoading || newValue === '') {
+    	return;
+    }
+    */
+
+    if (g_form.getValue('state') == -5) {
+        g_form.clearMessages();
+        g_form.addInfoMessage(
+            '<b>INSTRUCCIONS GENERALS</b><BR>' +
+            '- Quan seleccioneu el tipus de modificació es mostraran les instruccions específiques segons el tipus de modificació.<BR>' +
+            ' - Podeu desar temporalment la proposta com esborrany, però quan estigui complerta i correcta caldrà que utilitzeu el botó <b>Tramita</b> per que pugui passar a Validació.<br>' +
+			'- Per tramitar-la cal que completeu, a més els camps obligatoris (amb asterisc), l\'objectiu del pla de millora que hi dona sentit. Quan tramiteu aquesta petició de modificació es crearà i vincularà a l\'objectiu una nova acció al pla de millora.<br>' +
+            '- Aquest esborrany es pot eliminar. A partir de que el tramiteu, podreu desistir-ne però es conservarà el registre i l\'acció del pla del millora.');
+
+        var t = g_form.getReference('tipus', setAll);
+    }
+}
+
+function setAll(tipusmodificacio) {
+    if (tipusmodificacio.nomparam1) {
+        g_form.setLabelOf('param1', tipusmodificacio.nomparam1);
+        g_form.setVisible('param1', true);
+        g_form.setMandatory('param1', true);
+    } else {
+        g_form.setMandatory('param1', false);
+        g_form.setVisible('param1', false);
+    }
+
+    if (tipusmodificacio.descripciomask && g_form.getValue('state') == -5) {
+       var txt = tipusmodificacio.descripciomask;
+        var titulacio = '';
+        var param1 = '';
+        if (g_form.getDisplayBox('titulacio').value) titulacio = g_form.getDisplayBox('titulacio').value;
+        if (g_form.getValue('param1')) param1 = g_form.getValue('param1');
+        txt = txt.replace("$titulació", titulacio);
+        txt = txt.replace("$param1", param1);
+        g_form.setValue('short_description', txt);
+    } else g_form.setValue('short_description', '');
+
+    g_form.hideFieldMsg('tipus');
+
+    if (tipusmodificacio.explicacio && (g_form.getValue('state') == -5 || g_form.getValue('state') == -4)) {
+        g_form.addInfoMessage("<b>INSTRUCCIONS PER AQUEST TIPUS DE MODIFICACIONS</b><br>" + tipusmodificacio.explicacio);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-09-14 07:42:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4b69402937ac23001acdf01643990e24</sys_id>
+        <sys_mod_count>93</sys_mod_count>
+        <sys_name>Mod carrega o canvia tipus</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_client_4b69402937ac23001acdf01643990e24</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:38:10</sys_updated_on>
+        <table>x_udg_q_modificacio</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_script_client_4b69402937ac23001acdf01643990e24</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;tipus&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Mod carrega o canvia tipus&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    /*if (isLoading || newValue === '') {
+    	return;
+    }
+    */
+
+    if (g_form.getValue('state') == -5) {
+        g_form.clearMessages();
+        g_form.addInfoMessage(
+            '&lt;b&gt;INSTRUCCIONS GENERALS&lt;/b&gt;&lt;BR&gt;' +
+            '- Quan seleccioneu el tipus de modificació es mostraran les instruccions específiques segons el tipus de modificació.&lt;BR&gt;' +
+            ' - Podeu desar temporalment la proposta com esborrany, però quan estigui complerta i correcta caldrà que utilitzeu el botó &lt;b&gt;Tramita&lt;/b&gt; per que pugui passar a Validació.&lt;br&gt;' +
+			'- Per tramitar-la cal que completeu, a més els camps obligatoris (amb asterisc), l\'objectiu del pla de millora que hi dona sentit. Quan tramiteu aquesta petició de modificació es crearà i vincularà a l\'objectiu una nova acció al pla de millora.&lt;br&gt;' +
+            '- Aquest esborrany es pot eliminar. A partir de que el tramiteu, podreu desistir-ne però es conservarà el registre i l\'acció del pla del millora.');
+
+        var t = g_form.getReference('tipus', setAll);
+    }
+}
+
+function setAll(tipusmodificacio) {
+    if (tipusmodificacio.nomparam1) {
+        g_form.setLabelOf('param1', tipusmodificacio.nomparam1);
+        g_form.setVisible('param1', true);
+        g_form.setMandatory('param1', true);
+    } else {
+        g_form.setMandatory('param1', false);
+        g_form.setVisible('param1', false);
+    }
+
+    if (tipusmodificacio.descripciomask &amp;&amp; g_form.getValue('state') == -5) {
+       var txt = tipusmodificacio.descripciomask;
+        var titulacio = '';
+        var param1 = '';
+        if (g_form.getDisplayBox('titulacio').value) titulacio = g_form.getDisplayBox('titulacio').value;
+        if (g_form.getValue('param1')) param1 = g_form.getValue('param1');
+        txt = txt.replace("$titulació", titulacio);
+        txt = txt.replace("$param1", param1);
+        g_form.setValue('short_description', txt);
+    } else g_form.setValue('short_description', '');
+
+    g_form.hideFieldMsg('tipus');
+
+    if (tipusmodificacio.explicacio &amp;&amp; (g_form.getValue('state') == -5 || g_form.getValue('state') == -4)) {
+        g_form.addInfoMessage("&lt;b&gt;INSTRUCCIONS PER AQUEST TIPUS DE MODIFICACIONS&lt;/b&gt;&lt;br&gt;" + tipusmodificacio.explicacio);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;adminsanti&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-14 07:42:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4b69402937ac23001acdf01643990e24&lt;/sys_id&gt;&lt;sys_mod_count&gt;93&lt;/sys_mod_count&gt;&lt;sys_name&gt;Mod carrega o canvia tipus&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="UdG Qualitat" source="x_udg_q"&gt;29219b8737df5f001acdf01643990e33&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="UdG Qualitat"&gt;29219b8737df5f001acdf01643990e33&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_4b69402937ac23001acdf01643990e24&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;adminsanti&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-20 09:38:10&lt;/sys_updated_on&gt;&lt;table&gt;x_udg_q_modificacio&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1280372819</payload_hash>
+        <record_name>Mod carrega o canvia tipus</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-20 09:38:10</sys_created_on>
+        <sys_id>3bbbd0e71befc450c851a64fad4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170f74ea1020000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-20 09:38:10</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>ffbbd0e799efc450a9e6be1bac273ccb</update_guid>
+        <update_guid_history>ffbbd0e799efc450a9e6be1bac273ccb:1280372819,e08b18a726efc4504a6d59b3ff76f302:598155925,ca4bd4a772efc450373fd7db5e21b1a6:444367100,96fa1827ceefc450f1c36579066ea47a:1621200622,2b7911eef56b8050dd1ff2bd1ed91830:-613678951,b708dd6e416b80501eb17c25a5ea8339:-632336883,20089daeb16b8050e5e8ee7b49e8e440:1085358377,f785dd6a636b80506f8c1da143f87f84:1131676815,892155e2136b805094504f707a3363ee:1143769877,effc816eea2b80501ca0944bd4873839:-1534438399,2ecc056ae72b80501df159874143ca8f:-18728673,92ac452e082b8050144cacf958ac3806:802484364,f36cc1eae52b805054696739a687debd:-252279857,91cb8daafe2b8050815ee0bc9815ae57:-1797016089,127b812ace2b8050877e5f282b838135:485983809,728a056a2f2b805006e0a2213b7d690a:-162239150,3ff901e6172b8050b25a58888d35a5cb:-1094704959,1fc841a6b12b805021d7b2486f74f658:-168790645,c3a88126f72b80500d144d39f222d6c1:2092196257,b3788126d62b8050b3df6a94286c4920:-1094704959,c56881e2242b8050b48c9c79c1008a83:108200782,e048c5665d2b80500ceb8d4473813e0f:2048593710,26080526162b80500da55615856aeaba:44952319,ccc74d26a92b8050ff1748a00ece40e4:64426423,5a3709a28d2b805079786a445d4c9c21:-877922252,be8601a2e62b80502416409ec8c35c2f:1677796290,c026c5a2952b805058d36122ff951f74:716223433,270689aedde7805050edb268d972763a:-1738839091,3bf581a2032b8050063cb2048246e667:-1221435037,0882786e706780502e2809051857a08b:1516911663,9612fc6235a7805012fb79fbf6b36b78:526781031,43f1bc22c4a78050920abcfb88a36dd2:-122476331,b981bc2230a780501669360bf30e258e:1005635750,3ef0b02294a780505407334da087c137:277283630,cc2f6c2eea67805021ca25c2ab22d79c:-93560058,1e64f512adafcc10f54319ff8be65de7:-1495758257,b55475125cafcc10e19746527229f3b7:-486625730,2bff615aba6fcc102bf1eda77395355b:-1653747180,8dcf29d6c26fcc10796322e9dd63a6d9:968339283,a0bfa596ec6fcc1070352844127c9831:-578157499,340f6516da6fcc1039d0ddc4256b4095:-1996826767,075ea196776fcc100bcedcd777dc0202:561356527,721e2592c46fcc10cb3c22247b739fdd:-862603509,3f0f995e11ebcc109ef2ebacf68cb25e:375880177,4d0e91da2bebcc10e8419f3465c73e2a:-1373773510,74cd99dafeebcc104a7ae01d014bd65a:1754450057,5a8d59da1debcc10860a6efd00edc477:-733279711,c94d11da54ebcc100fe7fedce44b1c4d:-823049295,ce3d99d657ebcc10cd60d9df29ebcf87:796905338,202d5d9a6febcc1022e5e4643d79fe2c:1571956398,a8fc59d600ebcc10a0235d9b5ed27384:1449659640,594cdd9683ebcc101fd9e4143c6d2b05:-1657742780,1a3bdd9608ebcc10d3eeeff9f9022600:-1672811049,b7fa5d164debcc101875b8cf04bfc19e:388910895,144ad91633ebcc1006e3b62d3501a7ae:-2047564833,ec99591611ebcc10e464bc402915e472:-22332149,2169551636ebcc10d12a6729e27f8e71:-734532911,09634cda34a3cc10b78cbc25272ac780:1372998700,2ef57c0e5f2b4c10d3c13238c1ef8604:482129066,5dd574c21f6b4c104712a0bee4ff3d7d:494637396,7391f00e512b4c10750187aae0d81aaf:1429736253,d061300ef22b4c1035c9c4b2267e3acd:2084873007,9711f4c6322b4c10022b666e0e7af914:642020706,d711f4c6c42b4c10fc55ff10de5cb611:-778089978</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-30 09:04:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>7866480fcf4f4dcf8feaa733cace4dd1</sys_id>
+        <sys_metadata>4b69402937ac23001acdf01643990e24</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mod carrega o canvia tipus</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="Modificació memòria titulació">4ee75a911b674810c851a64fad4bcb06</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_script_client_4b69402937ac23001acdf01643990e24</sys_update_name>
+        <sys_update_version display_value="sys_script_client_4b69402937ac23001acdf01643990e24">3bbbd0e71befc450c851a64fad4bcbcc</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-30 09:04:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

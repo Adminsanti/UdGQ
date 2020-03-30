@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_udg_q_tipusmodificacio</description>
+        <name>x_udg_q_tipusmodificacio</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-13 18:56:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1b5816d11b674810c851a64fad4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_tipusmodificacio</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_security_acl_1b5816d11b674810c851a64fad4bcb44</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-13 18:56:18</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_security_acl_1b5816d11b674810c851a64fad4bcb44</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_udg_q_tipusmodificacio</description><name>x_udg_q_tipusmodificacio</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-13 18:56:18</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>1b5816d11b674810c851a64fad4bcb44</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_udg_q_tipusmodificacio</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_security_acl_1b5816d11b674810c851a64fad4bcb44</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-03-13 18:56:18</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-481494942</payload_hash>
+        <record_name>x_udg_q_tipusmodificacio</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-13 18:56:18</sys_created_on>
+        <sys_id>5f5816d11b674810c851a64fad4bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170d5411a960000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-13 18:56:18</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>575816d12d674810a91bd4f0e893c048</update_guid>
+        <update_guid_history>575816d12d674810a91bd4f0e893c048:-481494942</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-30 09:04:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>2b05b467077145a383c86411bcf24c39</sys_id>
+        <sys_metadata>1b5816d11b674810c851a64fad4bcb44</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_tipusmodificacio</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="">535816d11b674810c851a64fad4bcb78</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_security_acl_1b5816d11b674810c851a64fad4bcb44</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_1b5816d11b674810c851a64fad4bcb44">5f5816d11b674810c851a64fad4bcb48</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-30 09:04:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

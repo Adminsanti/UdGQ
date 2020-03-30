@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="CanviMemoria" max_length="40" name="x_udg_q_canvimemoria" type="collection">
+    <element extends="task" label="Canvi Memòria" max_length="40" name="x_udg_q_canvimemoria" type="collection">
+        <element label="Memòria" max_length="32" name="memoria" reference="x_udg_q_memoria" type="reference"/>
         <element label="Objectiu" max_length="32" name="objectiu" reference="x_udg_q_objectiumillora" type="reference"/>
         <element label="Titulacio" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference"/>
     </element>
