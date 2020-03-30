@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Memòria" max_length="40" name="x_udg_q_memoria" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Número" max_length="40" name="number" type="string"/>
+        <element label="Titulació" max_length="40" name="titulacio" reference="x_udg_q_titulacio" type="string"/>
+    </element>
+</database>
