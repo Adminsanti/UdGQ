@@ -5,7 +5,7 @@
         <coalesce_case_sensitive>false</coalesce_case_sensitive>
         <coalesce_empty_fields>false</coalesce_empty_fields>
         <date_format>yyyy-MM-dd HH:mm:ss</date_format>
-        <map display_value="ImportObjectiusCiències">72d6783d1bf78490c851a64fad4bcb96</map>
+        <map display_value="Trans Objectius Ciències">72d6783d1bf78490c851a64fad4bcb96</map>
         <reference_value_field>name</reference_value_field>
         <source_field>u_valorat_per</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source) {

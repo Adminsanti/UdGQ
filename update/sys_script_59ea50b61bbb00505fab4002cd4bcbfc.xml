@@ -4,21 +4,21 @@
         <access>package_private</access>
         <action_delete>false</action_delete>
         <action_insert>false</action_insert>
-        <action_query>true</action_query>
+        <action_query>false</action_query>
         <action_update>false</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_recomanacions</collection>
+        <collection>x_udg_q_titulacio</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>SGQ query per Recomanació</name>
+        <name>SGQ query per Titulacions</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,44 +27,33 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[//if (SGQpref != gs.gerUser().getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser().hasRole('admin')) {
-if (!gs.getUser().hasRole('admin')) { //permet, entre d'altres coses, fer backups	
-	var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
-	current.addQuery("sgq="+SGQpref+"^ORcompartidaLIKE"+SGQpref);
-}
-]]></script>
+        <script><![CDATA[if (!gs.getUser().hasRole('admin') && 
+	!gs.getUser().hasRole('x_udg_q.Admin') &&
+	!gs.getUser().hasRole('x_udg_q.ManagerUniversitat') &&
+	!gs.getUser().hasRole('x_udg_q.ManagerModificacio')) { 
+
+		var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
+		current.addQuery("sgq=" + SGQpref);
+}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-03-06 09:27:48</sys_created_on>
+        <sys_created_on>2020-03-30 11:54:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>363d9f451b403bc05fab4002cd4bcb40</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>SGQ query per Recomanació</sys_name>
+        <sys_id>59ea50b61bbb00505fab4002cd4bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SGQ query per Titulacions</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_script_363d9f451b403bc05fab4002cd4bcb40</sys_update_name>
+        <sys_update_name>sys_script_59ea50b61bbb00505fab4002cd4bcbfc</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-30 11:55:56</sys_updated_on>
+        <sys_updated_on>2020-03-30 11:54:42</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=363d9f451b403bc05fab4002cd4bcb40"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>363d9f451b403bc05fab4002cd4bcb40</documentkey>
-        <fieldname>message</fieldname>
-        <language>ca</language>
-        <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-03-20 12:56:02</sys_created_on>
-        <sys_id>fd23d4311b94b704c851a64fad4bcb8c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-20 12:56:02</sys_updated_on>
-        <tablename>sys_script</tablename>
-        <value/>
-    </sys_translated_text>
+    <sys_translated_text action="delete_multiple" query="documentkey=59ea50b61bbb00505fab4002cd4bcbfc"/>
 </record_update>
