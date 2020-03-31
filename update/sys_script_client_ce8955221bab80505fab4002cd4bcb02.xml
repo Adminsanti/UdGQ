@@ -4,7 +4,7 @@
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
-        <field>active</field>
+        <field>param1</field>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
@@ -38,7 +38,7 @@ function setNom(tipusmodificacio) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce8955221bab80505fab4002cd4bcb02</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>CAN canvia Param1</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -47,7 +47,7 @@ function setNom(tipusmodificacio) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_ce8955221bab80505fab4002cd4bcb02</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-30 16:24:07</sys_updated_on>
+        <sys_updated_on>2020-03-31 14:51:35</sys_updated_on>
         <table>x_udg_q_canvimemoria</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

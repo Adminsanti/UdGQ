@@ -46,7 +46,7 @@
         <reference_key/>
         <reference_qual>sgqSAMEASsgq^state=2^EQ</reference_qual>
         <reference_qual_condition table="x_udg_q_objectiumillora">sgqSAMEASsgq^state=2^EQ<item endquery="false" field="sgq" goto="false" newquery="false" operator="SAMEAS" or="false" value="sgq"/>
-            <item display_value="En curs" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <reference_type/>

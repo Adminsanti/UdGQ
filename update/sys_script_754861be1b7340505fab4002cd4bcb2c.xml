@@ -31,17 +31,12 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	gs.addInfoMessage("<b>INSTRUCCIONS GENERALS</b><br>" +
-					  "- Cal que creeu un registre per cada canvi que volgueu fer a la titulació<br>"+
-					  "- Podeu desar aquest esborrany temporalment o esborrar-lo, però per que sigui tingut en consideració cal que utilitzeu el botó <b>\"Tramita & Roman\"</b><br>"
-					  );
+	gs.addInfoMessage("<b>INSTRUCCIONS GENERALS</b><br>"+gs.getProperty('x_udg_q.ModificacioInstrGeneralsCanvi'));
 					
-	if (current.tipus.explicacio && current.tipus.explicacio !== "") {
-		gs.addInfoMessage("<b>INSTRUCCIONS ESPECÍFIQUES D'AQUEST TIPUS DE CANVI</b><br>"+
+	/*if (current.tipus.explicacio && current.tipus.explicacio !== "") {
+		gs.addInfoMessage("<b>INSTRUCCIONS ESPECÍFIQUES PER AQUEST TIPUS DE CANVI</b><br>"+
 		current.tipus.explicacio);
-	}
-					 
-
+	}*/
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -50,7 +45,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>754861be1b7340505fab4002cd4bcb2c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>CAN missatges esborrany</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -59,7 +54,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_754861be1b7340505fab4002cd4bcb2c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-30 17:49:42</sys_updated_on>
+        <sys_updated_on>2020-03-31 15:05:14</sys_updated_on>
         <template/>
         <when>before_display</when>
     </sys_script>
