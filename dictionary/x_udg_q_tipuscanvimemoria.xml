@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Tipus Canvi Memòria" max_length="40" name="x_udg_q_tipuscanvimemoria" type="collection">
-        <element label="Descripció" max_length="140" name="descripcio" read_only="true" type="string"/>
+        <element attributes="no_truncate=true" label="Descripció" max_length="240" name="descripcio" type="string"/>
         <element label="Explicació" max_length="4000" name="explicacio" type="html"/>
         <element label="Màscara" max_length="240" name="mascara" type="string"/>
         <element label="Nom Param1" max_length="140" name="nomparam1" type="string"/>

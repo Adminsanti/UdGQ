@@ -44,7 +44,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>responsable</field>
         <field_list/>
-        <filter table="x_udg_q_objectiumillora">state!=3^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="3"/>
+        <filter table="x_udg_q_objectiumillora">state!=3^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ<item display_value="Tancat" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="3"/>
             <item endquery="false" field="sgq" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getPreference('qualitat.sgqActual')"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>

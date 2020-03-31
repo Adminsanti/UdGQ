@@ -11,8 +11,8 @@
 ProcesSGQ.prototype = {
     initialize: function() {},
 
-    nouNom: function(proces) {
-        return 'P' + proces.num + proces.sgq.codi + '. ' + proces.titol;
+    nouNom: function(grProces) {
+        return 'P' + grProces.num + grProces.sgq.codi + '. ' + grProces.titol;
     },
 
     LlistaFills: function(idProcesPare) {
@@ -40,14 +40,19 @@ ProcesSGQ.prototype = {
     },
 
     creaFillsInexistents: function(grPare) {
-        var llegats = grPare.llegata.split(",");
-        for (i = 0; i < llegats.length; i++) { //Bucle llegats
+        var llegatsaSGQ = grPare.llegata.split(",");
+        for (i = 0; i < llegatsaSGQ.length; i++) { //Bucle SGQ llegats
             var grF = new GlideRecord('x_udg_q_proces');
             grF.setWorkflow(false); //Així no s'executa la query rule i podem veure'ls tots -- ATENCIÓ!!!
             grF.addQuery('pare', grPare.sys_id);
-            grF.addQuery('sgq', llegats[i]);
+            grF.addQuery('sgq', llegatsaSGQ[i]);
             grF.query();
-            if (!grF.next()) this.creaFill(grPare, llegats[i]); //si el fill no existeix el creem mitg buit
+            if (!grF.next()) {
+				gs.addInfoMessage(grPare.num+" cal crear fill a sgq "+llegatsaSGQ[i]);
+				this.creaFill(grPare, llegatsaSGQ[i]); //si el fill no existeix el creem mitg buit
+			} else {
+				gs.addInfoMessage(grPare.num+" ja té fill a sgq "+llegatsaSGQ[i]+ " amb nom "+grF.nom+" i sys_id "+grF.sys_id );
+			}
             if (grF.next()) { //mai hauria d'entrar en aquest segon next(), vol dir que té dos fills en el mateix SGQ
                 gs.addErrorMessage('Atenció ' + grPare.nom + 'te més d\'un fill al sgq ' + llegats[i]);
             }
@@ -71,16 +76,18 @@ ProcesSGQ.prototype = {
         grFill.actiu = true;
         grFill.tipus = 'Llegat';
         grFill.sgq = sgqFill;
-        var grSGQFill = new GlideRecord('x_udg_q_sgq');
-        grSGQFill.get(sgqFill);
-        grFill.propietari = grSGQFill.propietari;
-        grFill.responsable = grSGQFill.responsable;
-        this.sincronitzaFill(grPare, grFill); //és nou, el sinconitzem ara i ja estarà ben gravat
+		grFill.num=grPare.num;
+		grFill.titol=grPare.titol;
+		grFill.nom=this.nouNom(grFill);
+		grFill.propietari = grFill.sgq.propietari;
+        grFill.responsable = grFill.sgq.responsable;
+		grFill.update();
+        //this.sincronitzaFill(grPare, grFill); //En principi NO cal
     },
 
-    sincronitzaFill: function(grPare, grFill) {
-        var llegats = new x_udg_q.ListUtil(grPare.llegata);
-        if (llegats.isInList(grFill.sys_id)) { //És a la llista de llegats
+    sincronitzaFill: function(grPare, grFill) { //No estic segur que funcioni
+        var llegats = grPare.llegata.split(",");
+        if (llegats.indexOf(grFill.sys_id) !=0) { //És a la llista de llegats
             grFill.actiu = true;
         } else {
             grFill.actiu = false;
@@ -195,7 +202,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>72</sys_mod_count>
+        <sys_mod_count>83</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -203,6 +210,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-10 11:37:28</sys_updated_on>
+        <sys_updated_on>2020-03-31 08:53:12</sys_updated_on>
     </sys_script_include>
 </record_update>
