@@ -5,7 +5,9 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter/>
+        <filter table="x_udg_q_memoria">state!=^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint/>
         <homepage/>
         <image/>
@@ -13,7 +15,7 @@
         <map_page/>
         <mobile_title>Modificacios</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_udg_q_modificacio</name>
+        <name>x_udg_q_memoria</name>
         <order>170</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
@@ -28,8 +30,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a6185e911b674810c851a64fad4bcbae</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Modificacions</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Memòries</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -37,9 +39,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_a6185e911b674810c851a64fad4bcbae</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-30 09:23:47</sys_updated_on>
+        <sys_updated_on>2020-04-02 10:43:22</sys_updated_on>
         <timeline_page/>
-        <title>Modificacions</title>
+        <title>Memòries</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

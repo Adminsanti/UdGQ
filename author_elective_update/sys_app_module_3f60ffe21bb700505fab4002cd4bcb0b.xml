@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Titulacions">2e185e911b674810c851a64fad4bcbaa</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Memorias</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_udg_q_memoria</name>
+        <order>150</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_udg_q.ManagerModificacio,x_udg_q.ManagerUniversitat,x_udg_q.Admin,x_udg_q.Manager</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-30 08:49:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f60ffe21bb700505fab4002cd4bcb0b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Memòries</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_app_module_3f60ffe21bb700505fab4002cd4bcb0b</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-04-02 09:22:47</sys_updated_on>
+        <timeline_page/>
+        <title>Memòries</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_app_module_3f60ffe21bb700505fab4002cd4bcb0b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Titulacions">2e185e911b674810c851a64fad4bcbaa</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Memorias</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_udg_q_memoria</name><order>150</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_udg_q.ManagerModificacio,x_udg_q.ManagerUniversitat,x_udg_q.Admin,x_udg_q.Manager</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-30 08:49:11</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3f60ffe21bb700505fab4002cd4bcb0b</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Memòries</sys_name><sys_overrides/><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_app_module_3f60ffe21bb700505fab4002cd4bcb0b</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-04-02 09:22:47</sys_updated_on><timeline_page/><title>Memòries</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-196523502</payload_hash>
+        <record_name>Memòries</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-04-02 09:22:47</sys_created_on>
+        <sys_id>d5e4976b1bf784505fab4002cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1713a3338f40000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-04-02 09:22:47</sys_updated_on>
+        <type>Module</type>
+        <update_guid>dde4976bcef78450c409d66752e1f0c5</update_guid>
+        <update_guid_history>dde4976bcef78450c409d66752e1f0c5:-196523502,a9b177a6f6b70050c765cc814e6cea41:-679157596,90d0336692b70050ee469a68e2e73e04:258237922,e680f7265eb70050b4616d08476e01ac:-1621566110,3f60f326fbb70050ad64e79fbbd175aa:-1966851619</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 02/04/2020 12:39:02">8256ab671b7b84505fab4002cd4bcbd7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-04-02 10:39:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2d6e55f6fdea4ad2bab3012f07726311</sys_id>
+        <sys_metadata>3f60ffe21bb700505fab4002cd4bcb0b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Memòries</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_app_module_3f60ffe21bb700505fab4002cd4bcb0b</sys_update_name>
+        <sys_update_version display_value="sys_app_module_3f60ffe21bb700505fab4002cd4bcb0b">d5e4976b1bf784505fab4002cd4bcbc6</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-04-02 10:39:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

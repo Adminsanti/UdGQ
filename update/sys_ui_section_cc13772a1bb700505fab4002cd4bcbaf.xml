@@ -4,69 +4,83 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-30 09:00:41</sys_created_on>
-            <sys_id>c013736a1bb700505fab4002cd4bcb77</sys_id>
+            <sys_created_on>2020-04-02 08:46:37</sys_created_on>
+            <sys_id>d79c072b1bb784505fab4002cd4bcba6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipuscanvimemoria" sys_domain="global" view="Default view">cc13772a1bb700505fab4002cd4bcbaf</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-30 09:00:41</sys_updated_on>
+            <sys_updated_on>2020-04-02 08:46:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>actiu</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-04-02 08:46:37</sys_created_on>
+            <sys_id>5b9c072b1bb784505fab4002cd4bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipuscanvimemoria" sys_domain="global" view="Default view">cc13772a1bb700505fab4002cd4bcbaf</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-04-02 08:46:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>descripcio</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-30 09:00:41</sys_created_on>
-            <sys_id>4413736a1bb700505fab4002cd4bcb77</sys_id>
+            <sys_created_on>2020-04-02 08:46:37</sys_created_on>
+            <sys_id>db9c072b1bb784505fab4002cd4bcba6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipuscanvimemoria" sys_domain="global" view="Default view">cc13772a1bb700505fab4002cd4bcbaf</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-30 09:00:41</sys_updated_on>
+            <sys_updated_on>2020-04-02 08:46:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>explicacio</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-30 09:00:41</sys_created_on>
-            <sys_id>c413736a1bb700505fab4002cd4bcb77</sys_id>
+            <sys_created_on>2020-04-02 08:46:37</sys_created_on>
+            <sys_id>5f9c072b1bb784505fab4002cd4bcba6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipuscanvimemoria" sys_domain="global" view="Default view">cc13772a1bb700505fab4002cd4bcbaf</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-30 09:00:41</sys_updated_on>
+            <sys_updated_on>2020-04-02 08:46:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>mascara</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-30 09:00:41</sys_created_on>
-            <sys_id>4813736a1bb700505fab4002cd4bcb77</sys_id>
+            <sys_created_on>2020-04-02 08:46:37</sys_created_on>
+            <sys_id>df9c072b1bb784505fab4002cd4bcba6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipuscanvimemoria" sys_domain="global" view="Default view">cc13772a1bb700505fab4002cd4bcbaf</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-30 09:00:41</sys_updated_on>
+            <sys_updated_on>2020-04-02 08:46:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>nomparam1</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-30 09:00:41</sys_created_on>
-            <sys_id>c813736a1bb700505fab4002cd4bcb77</sys_id>
+            <sys_created_on>2020-04-02 08:46:37</sys_created_on>
+            <sys_id>539c072b1bb784505fab4002cd4bcba7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_tipuscanvimemoria" sys_domain="global" view="Default view">cc13772a1bb700505fab4002cd4bcbaf</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-30 09:00:41</sys_updated_on>
+            <sys_updated_on>2020-04-02 08:46:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
