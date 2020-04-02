@@ -2,7 +2,7 @@
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
         <category display_value="Modificacions">83af6ab51beb0c10c851a64fad4bcb0c</category>
         <order>300</order>
-        <property display_value="x_udg_q.ModificacioInstrGeneralsCanvi" name="x_udg_q.ModificacioInstrGeneralsCanvi">c71806cb1b3f80505fab4002cd4bcba6</property>
+        <property display_value="x_udg_q.CanviInstrGenerals" name="x_udg_q.CanviInstrGenerals">c71806cb1b3f80505fab4002cd4bcba6</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-03-31 14:32:46</sys_created_on>

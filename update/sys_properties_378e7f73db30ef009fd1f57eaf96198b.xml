@@ -26,17 +26,4 @@
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=378e7f73db30ef009fd1f57eaf96198b"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey name="glide.ui.x_udg_q_proces_activity.fields" tablename="sys_properties">378e7f73db30ef009fd1f57eaf96198b</documentkey>
-        <fieldname>description</fieldname>
-        <language>ca</language>
-        <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-03-31 08:45:17</sys_created_on>
-        <sys_id>102934831b7780505fab4002cd4bcb4f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-31 08:45:17</sys_updated_on>
-        <tablename>sys_properties</tablename>
-        <value>Procés activity formatter fields</value>
-    </sys_translated_text>
 </record_update>

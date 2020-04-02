@@ -13,10 +13,9 @@
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     /*if (isLoading || newValue === '') {
     	return;
-    }
-    */
+    }*/
 
-    if (g_form.getValue('state') == -5) {
+    if (g_form.getValue('state') == -5) { //només esborranys
         var t = g_form.getReference('tipus', setNom);
     }
 }
@@ -38,7 +37,7 @@ function setNom(tipusmodificacio) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>07181dae1b6b80505fab4002cd4bcbc6</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>CAN canvia titulació</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -47,7 +46,7 @@ function setNom(tipusmodificacio) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_client_07181dae1b6b80505fab4002cd4bcbc6</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-30 16:24:35</sys_updated_on>
+        <sys_updated_on>2020-04-02 08:22:55</sys_updated_on>
         <table>x_udg_q_canvimemoria</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
