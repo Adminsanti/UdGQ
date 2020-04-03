@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Importa Fites" max_length="40" name="x_udg_q_fites_importa" type="collection">
+    <element extends="sys_import_set_row" label="Import Fites" max_length="40" name="x_udg_q_fites_importa" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=u_data" label="Data" max_length="40" name="u_data" type="glide_date"/>
         <element attributes="import_attribute_name=Data previa" label="Data previa" max_length="40" name="u_data_previa" type="glide_date"/>
         <element attributes="import_attribute_name=Inici anticipat" label="Inici anticipat" max_length="40" name="u_inici_anticipat" type="integer"/>
