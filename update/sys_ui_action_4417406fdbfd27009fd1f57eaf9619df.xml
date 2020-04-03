@@ -29,34 +29,51 @@
         <onclick>Tramita()</onclick>
         <order>100</order>
         <script><![CDATA[//Funció que s'executa amb el 'onclick'
-function Tramita () {
-	if(confirm ("Aquest tràmit és irrevocable (encara que podreu desistir posteriorment). Esteu segur que voleu tramitar aquest canvi?") == false) {
-		return false; //avortar enviament
-	}
-	//Call the UI Action and skip the 'onclick' function
-   gsftSubmit(null, g_form.getFormElement(), 'Tramita & Roman'); //MUST call the 'Action name' set in this UI Action
+function Tramita() {
+    if (confirm("Aquest tràmit és irrevocable (encara que podreu desistir posteriorment). Esteu segur que voleu tramitar aquest canvi?") == false) {
+        return false; //avortar enviament
+    }
+    //Call the UI Action and skip the 'onclick' function
+    gsftSubmit(null, g_form.getFormElement(), 'Tramita & Roman'); //MUST call the 'Action name' set in this UI Action
 }
 
 //Code that runs without 'onclick'
 //Ensure call to server-side function with no browser errors
-if(typeof window == 'undefined') CodiServidor();
+if (typeof window == 'undefined') CodiServidor();
 
 //Server-side function
-function CodiServidor(){
-    // Cal comprovar que tot el contingut del formulari i complementar-lo si cal
-    // Comprovar que l'objectiu està encara en un estat vàlid. llavors crear l'acció relacionada i relacionar-la amb l'objectiu (bloquejant ambdues coses)
+function CodiServidor() {
+    var Mod = new x_udg_q.Mod();
+
+    if (current.titulacio == '') { //Sense titulació
+        gs.addErrorMessage('No es pot tramitar per manca de titulacio');
+        current.update(); //gravem els canvis al formulari però no tramitem
+        return;
+    } else {
+		if (Mod.estatMemoriaTitulacio(current.titulacio) == 2) { //MOCK!!!!!!!!!!!!!!!!!! 
+		gs.addErrorMessage('No es pot tramitar perque actualment hi ha una memòria en tramit avançat');
+        current.update(); //gravem els canvis al formulari però no tramitem
+        return;
+		}
+	}
+
+    if (current.objectiu.state != 2) { //Objectiu no en curs
+        gs.addErrorMessage('No es pot tramitar perquè l\'objectius seleccionat no està en curs');
+        current.update(); //gravem els canvis al formulari però no tramitem
+        return;
+    }
 
     current.tramitat = new GlideDateTime().toString();
     current.tramitat_per = gs.getUserID();
+	if (Mod.estatMemoriaTitulacio(current.titulacio) < 3) { //Hi ha memoria no tancada 
+		current.memoria = Mod.MemoriaTitulacio(current.titulacio); //fegim aquest canvi
+		}
+	current.accio=Mod.novaAccioCanvi();
     current.state = -4;
     current.update();
-    //Missatge de confirmació
-   gs.addInfoMessage(current.number + 'S\'ha tramitat');
-   action.setRedirectURL(current);
-}
-
-
-]]></script>
+    gs.addInfoMessage(current.number + 'S\'ha tramitat correctament');
+    action.setRedirectURL(current);
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -68,7 +85,7 @@ function CodiServidor(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4417406fdbfd27009fd1f57eaf9619df</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>Tramita &amp; Roman</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -77,7 +94,7 @@ function CodiServidor(){
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_4417406fdbfd27009fd1f57eaf9619df</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-02 10:20:28</sys_updated_on>
+        <sys_updated_on>2020-04-03 08:35:04</sys_updated_on>
         <table>x_udg_q_canvimemoria</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

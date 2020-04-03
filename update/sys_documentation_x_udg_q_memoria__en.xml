@@ -7,13 +7,13 @@
             <label>Memòria</label>
             <language>en</language>
             <name>x_udg_q_memoria</name>
-            <plural>Memòrias</plural>
+            <plural>Memòries</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2020-04-02 10:39:48</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>d98663a71b7b84505fab4002cd4bcb00</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_name>Memòria</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
@@ -21,7 +21,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_memoria__en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-04-02 10:40:26</sys_updated_on>
+            <sys_updated_on>2020-04-03 08:40:03</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
