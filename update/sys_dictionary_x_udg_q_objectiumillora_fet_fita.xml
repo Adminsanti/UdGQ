@@ -45,7 +45,9 @@
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual>end_date&gt;=javascript:gs.beginningOfToday()^EQ</reference_qual>
-        <reference_qual_condition/>
+        <reference_qual_condition table="x_udg_q_fita">end_date&gt;=javascript:gs.beginningOfToday()^EQ<item endquery="false" field="end_date" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -69,7 +71,7 @@
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

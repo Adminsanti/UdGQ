@@ -7,7 +7,7 @@
         <hint/>
         <name/>
         <order>1200</order>
-        <roles>x_udg_q.Observador</roles>
+        <roles>x_udg_q.Observador,x_udg_q.Admin,x_udg_q.Manager,x_udg_q.ManagerUniversitat,x_udg_q.User</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-11-30 13:06:11</sys_created_on>
@@ -15,7 +15,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d766791adb4e2f009fd1f57eaf961935</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Recomanacions VSMA</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -24,7 +24,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_application_d766791adb4e2f009fd1f57eaf961935</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-10-10 11:45:55</sys_updated_on>
+        <sys_updated_on>2020-04-14 10:39:10</sys_updated_on>
         <title>Recomanacions VSMA</title>
         <view_name/>
     </sys_app_application>

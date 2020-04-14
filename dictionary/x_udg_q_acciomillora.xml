@@ -4,7 +4,7 @@
         <element default="true" hint="Es comparteix automàticament amb tots els SGQs on es comparteiexen tots els objectius als que contribueix." label="Compartida Sincronitzada" max_length="40" name="compratidasync" type="boolean"/>
         <element label="Declarada" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Declarada per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
-        <element choice="1" choice_field="tipus" choice_table="x_udg_q_fita" label="Fita prevista" max_length="40" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference" use_reference_qualifier="advanced">
+        <element choice="1" choice_field="tipus" choice_table="x_udg_q_fita" label="Fita prevista" max_length="40" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" reference_qual_condition="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference">
             <choice>
                 <element inactive_on_update="false" label="Acreditació" sequence="0" value="Acreditació"/>
                 <element inactive="true" inactive_on_update="true" label="Visita Comité" sequence="0" value="Visita comité"/>
