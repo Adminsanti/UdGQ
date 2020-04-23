@@ -60,13 +60,13 @@
         <image_width>300</image_width>
         <size_bytes>36301</size_bytes>
         <size_compressed>36046</size_compressed>
-        <state/>
+        <state>available</state>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-06 09:48:10</sys_created_on>
         <sys_id>dc2a573a3794eb401acdf01643990ea8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2018-09-06 09:48:10</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2020-04-23 10:36:47</sys_updated_on>
         <table_name>ZZ_YYsp_portal</table_name>
         <table_sys_id>400bc7fa3754eb401acdf01643990ebc</table_sys_id>
     </sys_attachment>
