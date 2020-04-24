@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
     <sys_process_flow action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <condition table="x_udg_q_objectiumillora">state=1^EQ<item display_value="1" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        <active>true</active>
+        <condition table="x_udg_q_objectiumillora">state=-5^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description/>
-        <label>Definit</label>
-        <name>Definit</name>
-        <order>2</order>
+        <label>Esborrany</label>
+        <name>Esborrany</name>
+        <order>1</order>
         <sys_class_name>sys_process_flow</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-11 09:58:17</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>dcfbe3c637c927004ccbd0d543990e88</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Definit</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Esborrany</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_process_flow_dcfbe3c637c927004ccbd0d543990e88</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-08 17:28:56</sys_updated_on>
+        <sys_updated_on>2020-04-24 11:31:21</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
     </sys_process_flow>
 </record_update>
