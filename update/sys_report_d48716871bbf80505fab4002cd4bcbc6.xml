@@ -44,7 +44,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>titulacio</field>
         <field_list>number,state,short_description</field_list>
-        <filter table="x_udg_q_canvimemoria">state!=-5<item display_value="Esborrany" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
+        <filter table="x_udg_q_canvimemoria">state!=-5<item display_value="Pending" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>

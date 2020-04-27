@@ -70,7 +70,7 @@
         <update_guid_history>a629588240a74c107b551d66c50fc191:1675020670,0d223af907eb0c109037db689d882a31:-1046899690,121a1a9533674810158a72d6804034d7:1369564231,f8785ad11a67481089f66d95967a9d54:-1324839759,df5816d137674810b84872384c626737:-1928256600</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 30/03/2020 11:04:21">7de3bbaa1bb700505fab4002cd4bcbe4</sys_audit_delete>
+        <sys_audit_delete display_value="">7de3bbaa1bb700505fab4002cd4bcbe4</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-03-30 09:04:21</sys_created_on>

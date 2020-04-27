@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_udg_q_memoria</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-04-03 09:13:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>735c9848db4498901f06adc3ca961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_memoria</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>ua_table_licensing_config_735c9848db4498901f06adc3ca961920</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-04-03 09:13:34</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>b2e8620e6f9c560023b2a9cc5d3ee43a</instance_id>
+        <instance_name>universitatdegirona</instance_name>
+        <name>ua_table_licensing_config_735c9848db4498901f06adc3ca961920</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_udg_q_memoria</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-04-03 09:13:34</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>735c9848db4498901f06adc3ca961920</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_udg_q_memoria</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>ua_table_licensing_config_735c9848db4498901f06adc3ca961920</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-04-03 09:13:34</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>-557222918</payload_hash>
+        <record_name>x_udg_q_memoria</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-04-03 09:13:34</sys_created_on>
+        <sys_id>ff5c9848db4498901f06adc3ca961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1713f5123230000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-04-03 09:13:34</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>375c9848734498903cab6832565f5021</update_guid>
+        <update_guid_history>375c9848734498903cab6832565f5021:-557222918</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-04-03 09:47:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>0e2ce4ec8b964518a42b7a129f1d3d90</sys_id>
+        <sys_metadata>735c9848db4498901f06adc3ca961920</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_memoria</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_735c9848db4498901f06adc3ca961920</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_735c9848db4498901f06adc3ca961920">ff5c9848db4498901f06adc3ca961921</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-04-03 09:47:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

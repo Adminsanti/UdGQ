@@ -35,12 +35,12 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>7409c5cedb174050e43f8a3a48961950</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_udg_q_objectiumillora" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e4a</sys_ui_form>
             <sys_ui_section caption="Desenvolupament" display_value="Desenvolupament" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">454fec8e1bd78050c851a64fad4bcbfa</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-04-22 17:16:50</sys_updated_on>
+            <sys_updated_on>2020-04-27 09:29:31</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>3</position>
@@ -54,7 +54,7 @@
             <sys_ui_form display_value="x_udg_q_objectiumillora" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e4a</sys_ui_form>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e48</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-04-22 17:16:50</sys_updated_on>
+            <sys_updated_on>2020-04-27 09:29:31</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>4</position>
@@ -68,7 +68,7 @@
             <sys_ui_form display_value="x_udg_q_objectiumillora" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">d7f23c29378da3004ccbd0d543990e4a</sys_ui_form>
             <sys_ui_section caption="Historial" display_value="Historial" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">1bf23c29378da3004ccbd0d543990e49</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-20 09:24:17</sys_updated_on>
+            <sys_updated_on>2020-04-27 09:29:31</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_udg_q_objectiumillora</name>

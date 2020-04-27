@@ -54,7 +54,7 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-04-02 08:46:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>ab7ccfa71bb784505fab4002cd4bcbbc</sys_id>
+        <sys_id>d832b7efdb3f08901f06adc3ca961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Actiu</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_tipuscanvimemoria_actiu</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-02 08:46:21</sys_updated_on>
+        <sys_updated_on>2020-04-24 15:11:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

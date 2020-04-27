@@ -60,11 +60,11 @@
         <sys_audit_delete/>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-03-23 10:57:29</sys_created_on>
+        <sys_created_on>2020-03-23 10:42:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
-        <sys_id>e78e015af56f42fa9ee61703cd3dd764</sys_id>
-        <sys_metadata>499844ac1bf38c50c851a64fad4bcb25</sys_metadata>
+        <sys_id>02a350d31464407992db71041a3f3af9</sys_id>
+        <sys_metadata>718648a81bf38c50c851a64fad4bcba2</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>u_imp_tmpl_x_udg_q_objectiumillora</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -76,6 +76,6 @@
         <sys_update_name>sys_ui_list_u_imp_tmpl_x_udg_q_objectiumillora_null</sys_update_name>
         <sys_update_version display_value="sys_ui_list_u_imp_tmpl_x_udg_q_objectiumillora_null">9174cca41bf38c50c851a64fad4bcbb0</sys_update_version>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-23 10:57:29</sys_updated_on>
+        <sys_updated_on>2020-03-23 10:42:13</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

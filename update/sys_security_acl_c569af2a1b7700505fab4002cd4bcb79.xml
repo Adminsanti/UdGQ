@@ -3,7 +3,7 @@
         <active>true</active>
         <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
-        <condition table="x_udg_q_canvimemoria">state=-5^EQ<item display_value="Esborrany" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
+        <condition table="x_udg_q_canvimemoria">state=-5^EQ<item display_value="Pending" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description>Default access control on x_udg_q_canvimemoria</description>
