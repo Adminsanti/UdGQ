@@ -35,8 +35,10 @@
 	var arrayUsuaris = usuarisNousiVells.getList().toString().split(",");
 	for (var i = 0; i < arrayUsuaris.length; i++){
 		var usuari = new x_udg_q.Usuari(arrayUsuaris[i]);
-		usuari.actualitzaGR(current);
-		usuari.actualitzaPreferenciesSGQ(current);
+		var grUsuari = new GlideRecord('sys_user');
+		grUsuari.get(arrayUsuaris[i]);
+		usuari.actualitzaGR(grUsuari);
+		usuari.actualitzaPreferenciesSGQ(grUsuari);
 		if (usuari.getSgqActual()=="" ) usuari.setSGQ(current.sgq);
 	}
 	
@@ -57,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0b8b8a7437b12f004ccbd0d543990e50</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Funcio canvia after (INCOMPLETE)</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -66,7 +68,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0b8b8a7437b12f004ccbd0d543990e50</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-03 08:59:17</sys_updated_on>
+        <sys_updated_on>2020-04-28 10:16:43</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
