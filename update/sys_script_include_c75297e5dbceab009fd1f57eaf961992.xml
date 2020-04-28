@@ -239,13 +239,13 @@ Usuari.prototype = {
         if (gr.x_udg_q_sgq_actual != "") sgqActual = gr.x_udg_q_sgq_actual.toString();
         if (gr.x_udg_q_sgq_actual.codi != "") sgqActualCodi = gr.x_udg_q_sgq_actual.codi.toString();
         //En cas de que estiguem actualitzant el mateix usuari loginat, gravem les preferències
-        if (gr.sys_id == gs.getUserID()) {
+      //  if (gr.sys_id == gs.getUserID()) {
             gs.getUser().savePreference('qualitat.sgqActual', sgqActual);
             gs.getUser().savePreference('qualitat.sgqActualCodi', sgqActualCodi);
-        } else { //actualitza preferencies de this
+      //  } else { //actualitza preferencies de this
 			//this.actualitzaPreferencia('qualitat.sgqActual',sgqActual);
 			//this.actualitzaPreferencia('qualitat.sgqActualCodi',sgqActualCodi);
-		}
+	//	}
     },
 
     type: 'Usuari'
@@ -255,7 +255,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>149</sys_mod_count>
+        <sys_mod_count>150</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -263,6 +263,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-28 14:54:28</sys_updated_on>
+        <sys_updated_on>2020-04-28 15:28:36</sys_updated_on>
     </sys_script_include>
 </record_update>
