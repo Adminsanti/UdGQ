@@ -172,7 +172,8 @@ ProcesSGQ.prototype = {
         var grproc = new GlideRecord('x_udg_q_proces');
         var html = "<table border=1px><tr style=\"background-color: #b86767;\">Processos propis</tr>";
         grproc.addQuery('sgq', sgq_sys_id);
-        grproc.orderBy('num');
+		grproc.addQuery('actiu', 'true');
+        grproc.orderBy('nom');
         grproc.query();
 
         while (grproc.next()) {
@@ -202,7 +203,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>83</sys_mod_count>
+        <sys_mod_count>86</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -210,6 +211,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-31 08:53:12</sys_updated_on>
+        <sys_updated_on>2020-05-04 09:31:37</sys_updated_on>
     </sys_script_include>
 </record_update>

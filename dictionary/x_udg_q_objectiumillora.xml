@@ -7,7 +7,7 @@
         <element label="Definit" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Definit per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
         <element label="Diagnòstic" max_length="1500" name="diagnostic" type="string"/>
-        <element choice="1" label="Fita prevista" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="javascript: if (!current.sgq.datesven) &quot;end_date&gt;=&quot;+gs.beginningOfToday()+&quot;^EQ&quot;;" type="reference" use_reference_qualifier="advanced">
+        <element choice="1" label="Fita prevista" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="javascript:&#13;&#10;if (!current.sgq.datesven) {&#13;&#10; &quot;end_date&gt;=&quot;+gs.beginningOfToday()+&quot;^EQ&quot;;&#13;&#10;} else {&#13;&#10; gs.addInfoMessage(&quot;Dates vençudes autoritzades temporalment&quot;);&#13;&#10;&quot;&quot;;&#13;&#10;}" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
         <element label="Implica Titulacions" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" reference_qual_condition="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" type="glide_list"/>
