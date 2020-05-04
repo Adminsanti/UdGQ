@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
     <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
         <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
-        <height>8</height>
-        <portal_widget display_value="Created 06/11/2018 18:44:17">e5105faedb2d23009fd1f57eaf96196d</portal_widget>
-        <posx>6</posx>
-        <posy>10</posy>
+        <height>7</height>
+        <portal_widget display_value="Created 04/05/2020 12:07:32">700290ce1be89410c851a64fad4bcb49</portal_widget>
+        <posx>2</posx>
+        <posy>14</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-06 17:44:17</sys_created_on>
+        <sys_created_on>2020-05-04 10:07:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>69105faedb2d23009fd1f57eaf961970</sys_id>
-        <sys_mod_count>94</sys_mod_count>
+        <sys_id>bc0290ce1be89410c851a64fad4bcb4a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_grid_canvas_pane_69105faedb2d23009fd1f57eaf961970</sys_update_name>
+        <sys_update_name>sys_grid_canvas_pane_bc0290ce1be89410c851a64fad4bcb4a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-12 10:27:15</sys_updated_on>
-        <width>3</width>
+        <sys_updated_on>2020-05-04 10:42:56</sys_updated_on>
+        <width>6</width>
     </sys_grid_canvas_pane>
 </record_update>

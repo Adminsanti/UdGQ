@@ -16,7 +16,7 @@
         <chart_subtitle_color/>
         <chart_subtitle_size>14</chart_subtitle_size>
         <chart_subtitle_style>normal</chart_subtitle_style>
-        <chart_title>Obligatories per valorar</chart_title>
+        <chart_title>Reco obligatòries per valorar</chart_title>
         <chart_title_color display_value="Black">65b30218a9fe3dba0120df8611520d97</chart_title_color>
         <chart_title_size>16</chart_title_size>
         <chart_title_style>normal</chart_title_style>
@@ -84,7 +84,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>one_color</set_color>
+        <set_color>null</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>true</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -105,7 +105,7 @@
         <sys_created_on>2018-10-31 12:40:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6001dfacdbe5a3009fd1f57eaf9619e2</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Recomanacions obligatories per valorar</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -113,7 +113,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_6001dfacdbe5a3009fd1f57eaf9619e2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-31 11:39:24</sys_updated_on>
+        <sys_updated_on>2020-05-04 10:27:18</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <title>Recomanacions obligatories per valorar</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -125,7 +125,7 @@
         <use_color_heatmap>false</use_color_heatmap>
         <use_color_palette>false</use_color_palette>
         <use_null_in_trend>false</use_null_in_trend>
-        <user>dce0addc378d1600e7efd3e853990e20</user>
+        <user>GLOBAL</user>
         <x_axis_allow_decimals>true</x_axis_allow_decimals>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>
