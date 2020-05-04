@@ -45,9 +45,7 @@
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual>end_date&gt;=javascript:gs.beginningOfToday()^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_fita">end_date&gt;=javascript:gs.beginningOfToday()^EQ<item endquery="false" field="end_date" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.beginningOfToday()"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -65,13 +63,13 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_objectiumillora_fet_fita</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-24 15:11:05</sys_updated_on>
+        <sys_updated_on>2020-04-29 10:43:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

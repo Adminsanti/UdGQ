@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="275" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="277" text_index="true" type="collection">
         <element default="0" label="Accions" max_length="40" name="accions" read_only="true" type="integer"/>
         <element attributes="target_threshold_colors=0:#C71585;1:yellow;50:orange;99:lightgreen" default="0" label="Execució %" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
         <element label="Codi antic" max_length="40" name="codi_antic" type="string"/>
@@ -7,7 +7,7 @@
         <element label="Definit" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
         <element label="Definit per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
         <element label="Diagnòstic" max_length="1500" name="diagnostic" type="string"/>
-        <element choice="1" label="Fita prevista" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" reference_qual_condition="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference">
+        <element choice="1" label="Fita prevista" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="end_date&gt;=javascript:gs.beginningOfToday()^EQ" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
         <element label="Implica Titulacions" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" reference_qual_condition="sgq=javascript:gs.getPreference('qualitat.sgqActual','');" type="glide_list"/>
