@@ -29,7 +29,7 @@
             </choice>
         </element>
         <element label="Valoració" max_length="10000" name="valoracio" type="string"/>
-        <element label="Valorada" max_length="40" name="valorat" read_only="true" type="glide_date_time"/>
+        <element label="Valorada" max_length="40" name="valorat" type="glide_date_time"/>
         <element label="Valorada per" max_length="32" name="valoratper" read_only="true" reference="sys_user" type="reference"/>
     </element>
 </database>

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_udg_q_objectiumillora">responsable.tipus=Unipersonal^NQresponsable.tipus=Col·lectiva^responsable.membres_titol_personalISEMPTY^responsable.membres_funcionsISEMPTY^EQ<item display_value="Unipersonal" endquery="false" field="responsable.tipus" goto="false" newquery="false" operator="=" or="false" value="Unipersonal"/>
-            <item display_value="Col·lectiva" endquery="false" field="responsable.tipus" goto="false" newquery="true" operator="=" or="false" value="Col·lectiva"/>
-            <item endquery="false" field="responsable.membres_titol_personal" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
-            <item endquery="false" field="responsable.membres_funcions" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+        <conditions table="x_udg_q_acciomillora">sgq.datesven=true^EQ<item endquery="false" field="sgq.datesven" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
         <global>true</global>
         <inherit>false</inherit>
-        <isolate_script>false</isolate_script>
+        <isolate_script>true</isolate_script>
         <model_id/>
         <model_table/>
         <on_load>true</on_load>
@@ -18,31 +15,40 @@
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>true</run_scripts>
         <script_false><![CDATA[function onCondition() {
-	g_form.setReadOnly('assigned_to',false);
+    g_form.setReadOnly('declarat', true);
+    g_form.setReadOnly('valorada', true);
+    g_form.setReadOnly('closed_at', true);
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-	g_form.setReadOnly('assigned_to',true);
+    g_form.setRW('declarat');
+    g_form.setRW('valorada');
+    g_form.setRW('closed_at');
+}
+
+function setRW(camp) {
+    if (g_form.getValue(camp) != "") g_form.setReadOnly(camp, false);
+    else g_form.setReadOnly(camp, true);
 }]]></script_true>
         <set_values/>
-        <short_description>Objectiu funció colectiva</short_description>
+        <short_description>Acció Permet dates vençudes</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-21 15:34:48</sys_created_on>
+        <sys_created_on>2020-05-05 14:49:46</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3bf1006bdbfd27009fd1f57eaf961977</sys_id>
-        <sys_mod_count>39</sys_mod_count>
-        <sys_name>Objectiu funció colectiva</sys_name>
+        <sys_id>fc3cdad61ba05810c851a64fad4bcb84</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Acció Permet dates vençudes</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_policy_3bf1006bdbfd27009fd1f57eaf961977</sys_update_name>
+        <sys_update_name>sys_ui_policy_fc3cdad61ba05810c851a64fad4bcb84</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-05 14:50:18</sys_updated_on>
-        <table>x_udg_q_objectiumillora</table>
+        <sys_updated_on>2020-05-05 14:53:14</sys_updated_on>
+        <table>x_udg_q_acciomillora</table>
         <ui_type>10</ui_type>
         <view/>
     </sys_ui_policy>

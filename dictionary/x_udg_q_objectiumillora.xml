@@ -4,7 +4,7 @@
         <element attributes="target_threshold_colors=0:#C71585;1:yellow;50:orange;99:lightgreen" default="0" label="Execució %" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
         <element label="Codi antic" max_length="40" name="codi_antic" type="string"/>
         <element label="Compartit" max_length="4000" name="compartit" reference="x_udg_q_sgq" reference_qual="javascript:&quot;sys_id!=&quot;+current.sgq" type="glide_list" use_reference_qualifier="advanced"/>
-        <element label="Definit" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>
+        <element label="Definit" max_length="40" name="declarat" type="glide_date_time"/>
         <element label="Definit per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
         <element label="Diagnòstic" max_length="1500" name="diagnostic" type="string"/>
         <element choice="1" label="Fita prevista" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="javascript:&#13;&#10;if (!current.sgq.datesven) {&#13;&#10; &quot;end_date&gt;=&quot;+gs.beginningOfToday()+&quot;^EQ&quot;;&#13;&#10;} else {&#13;&#10; gs.addInfoMessage(&quot;Dates vençudes autoritzades temporalment&quot;);&#13;&#10;&quot;&quot;;&#13;&#10;}" type="reference" use_reference_qualifier="advanced">
@@ -36,7 +36,7 @@
             </choice>
         </element>
         <element label="Valoració" max_length="4000" name="valoracio" type="string"/>
-        <element label="Valorat" max_length="40" name="valorat" read_only="true" type="glide_date_time"/>
+        <element label="Valorat" max_length="40" name="valorat" type="glide_date_time"/>
         <element label="Valorat per" max_length="32" name="valorat_per" read_only="true" reference="sys_user" type="reference"/>
     </element>
 </database>
