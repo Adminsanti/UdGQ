@@ -3,7 +3,9 @@
         <action_name>Recalcular Estat i objectius</action_name>
         <active>true</active>
         <client>false</client>
-        <client_script_v2/>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
         <comments/>
         <condition>gs.hasRole('x_udg_q.ManagerUniversitat')</condition>
         <form_action>true</form_action>
@@ -26,8 +28,9 @@
         <name>Recalcula Estat i Objectius</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.estat=new Reco().getEstat(current);
-current.objectius=new Reco().getNObjectius(current);
+        <script><![CDATA[current.objectius=new Reco().getNObjectius(current);
+current.estat=new Reco().getEstat(current);
+if (current.estat!=5) current.tancament=""; //per si estava tancada però s'han obert objectius nous
 current.update();
 
 action.setRedirectURL(current);]]></script>
@@ -42,7 +45,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ba208324dbe5a3009fd1f57eaf961937</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Recalcula Estat i Objectius</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -51,7 +54,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_ba208324dbe5a3009fd1f57eaf961937</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-31 12:37:28</sys_updated_on>
+        <sys_updated_on>2020-05-05 09:57:59</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

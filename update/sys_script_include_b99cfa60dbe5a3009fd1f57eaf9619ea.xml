@@ -9,70 +9,68 @@
         <name>Reco</name>
         <script><![CDATA[var Reco = Class.create();
 Reco.prototype = {
-	initialize: function() {
-	},
+    initialize: function() {},
 
-	
-	getEstat: function(recomanacio) {
-		if (recomanacio.tancament!="")
-			return 5; //Tancada
-		else {
-			var grObjFills = new GlideRecord('x_udg_q_objectiumillora');
-			grObjFills.addEncodedQuery("state!=-5^recomanacionsLIKE"+recomanacio.sys_id);
-			grObjFills.query();
-			if (!grObjFills.hasNext()) { //No hi ha objectius ni en curs ni tancats
-				if (recomanacio.valoracio == "")
-					return 1;  //Nova
-				else
-					return 2; //Te valoració
-			}
-			else { //Hi ha objectius en curs o tancats
-				return 3; //objectius en curs
-			}
-		}
-	},
-	
-	getNObjectius: function(recomanacio) {
-		var grObjFills = new GlideRecord('x_udg_q_objectiumillora');
-		grObjFills.addEncodedQuery("state!=-5^recomanacionsLIKE"+recomanacio.sys_id);
-		grObjFills.query();
-		return grObjFills.getRowCount();
-	},
-	
-	actualitzaEstatLlista: function (recomanacions) {
-		new log ('Cridat actualitzaEstatLlista per '+recomanacions);
-		var grR = new GlideRecord('x_udg_q_recomanacions');
-		grR.addEncodedQuery("sys_idIN"+recomanacions);
-		grR.query();
-		while (grR.next()) {
-			grR.estat=this.getEstat(grR);
-			grR.objectius=this.getNObjectius(grR);
-			grR.update();
-			new log('actualitzaEstatLlista per '+grR.sys_id+ " - "+grR.number + " Nou estat "+grR.estat);
-		}
-	},
-	
-	algunaObligatoria: function (llista_recomanacions) {
-		var obligatoria=false;
-		var arr = llista_recomanacions.split(",");
-		for (var i = 0; i < arr.length; i++){
-			var gr = new GlideRecord('x_udg_q_recomanacions');
-			if(gr.get(arr[i])){
-				if (gr.obligatoria)
-					obligatoria=true;
-			}
-		}
-		return obligatoria;
-	},
-	
-	type: 'Reco'
+    getEstat: function(recomanacio) {
+        if (recomanacio.tancament != "" && recomanacio.tancament==0) return 5; //Tancada desistida
+        else {
+            var grObjFills = new GlideRecord('x_udg_q_objectiumillora');
+            grObjFills.addEncodedQuery("state!=-5^recomanacionsLIKE" + recomanacio.sys_id);
+            grObjFills.query();
+            if (!grObjFills.hasNext()) { //No hi ha objectius ni en curs ni tancats
+                if (recomanacio.valoracio == "") return 1; //Nova
+                else return 2; //Te valoració
+            } else { //Hi ha objectius en curs o tancats i no codi de tancament
+                var grObjFillsEnCurs = new GlideRecord('x_udg_q_objectiumillora');
+                grObjFillsEnCurs.addEncodedQuery("state=2^recomanacionsLIKE" + recomanacio.sys_id);
+                grObjFillsEnCurs.query();
+                if (grObjFillsEnCurs.hasNext()) return 3; //Hi ha objectius fills en curs
+                else return 5; //No hi ha obj en curs (tots tancats) cal posar la recomanacio.tancament=""
+            }
+        }
+    },
+
+    getNObjectius: function(recomanacio) {
+        var grObjFills = new GlideRecord('x_udg_q_objectiumillora');
+        grObjFills.addEncodedQuery("state!=-5^recomanacionsLIKE" + recomanacio.sys_id);
+        grObjFills.query();
+        return grObjFills.getRowCount();
+    },
+
+    actualitzaEstatLlista: function(recomanacions) {
+        new log('Cridat actualitzaEstatLlista per ' + recomanacions);
+        var grR = new GlideRecord('x_udg_q_recomanacions');
+        grR.addEncodedQuery("sys_idIN" + recomanacions);
+        grR.query();
+        while (grR.next()) {
+            grR.estat = this.getEstat(grR);
+            grR.objectius = this.getNObjectius(grR);
+            grR.update();
+            new log('actualitzaEstatLlista per ' + grR.sys_id + " - " + grR.number + " Nou estat " + grR.estat);
+        }
+    },
+
+    algunaObligatoria: function(llista_recomanacions) {
+        var obligatoria = false;
+        var arr = llista_recomanacions.split(",");
+        for (var i = 0; i < arr.length; i++) {
+            var gr = new GlideRecord('x_udg_q_recomanacions');
+            if (gr.get(arr[i])) {
+                if (gr.obligatoria)
+                    obligatoria = true;
+            }
+        }
+        return obligatoria;
+    },
+
+    type: 'Reco'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-31 11:25:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b99cfa60dbe5a3009fd1f57eaf9619ea</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Reco</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -80,6 +78,6 @@ Reco.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_b99cfa60dbe5a3009fd1f57eaf9619ea</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-12 12:20:23</sys_updated_on>
+        <sys_updated_on>2020-05-05 09:56:03</sys_updated_on>
     </sys_script_include>
 </record_update>
