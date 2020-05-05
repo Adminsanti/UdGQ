@@ -86,13 +86,13 @@
         <series_name_text/>
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
-        <show_chart_data_label>false</show_chart_data_label>
+        <show_chart_data_label>true</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>false</show_chart_total>
         <show_data_label_position_middle>false</show_data_label_position_middle>
         <show_empty>false</show_empty>
         <show_geographical_label>false</show_geographical_label>
-        <show_legend>true</show_legend>
+        <show_legend>false</show_legend>
         <show_legend_border>false</show_legend_border>
         <show_marker>true</show_marker>
         <show_zero>false</show_zero>
@@ -105,7 +105,7 @@
         <sys_created_on>2019-01-16 17:17:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>20f278ed1b4fab00c851a64fad4bcb3f</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Objectius en curs per SGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -113,7 +113,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_20f278ed1b4fab00c851a64fad4bcb3f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-04 10:46:19</sys_updated_on>
+        <sys_updated_on>2020-05-05 07:39:04</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectius en curs per SGQ</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

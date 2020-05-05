@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
     <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
-        <grid_canvas display_value="PA New Tab">c8823e68dba5a3009fd1f57eaf961991</grid_canvas>
-        <height>13</height>
-        <portal_widget display_value="Created 31/01/2019 13:04:00">53ea74161b936b405fab4002cd4bcb24</portal_widget>
+        <grid_canvas display_value="PA Resum Recomanacions - New Tab 2">5e5245d61b681810c851a64fad4bcb8b</grid_canvas>
+        <height>23</height>
+        <portal_widget display_value="Created 05/05/2020 10:18:47">2db2411a1b681810c851a64fad4bcb16</portal_widget>
         <posx>0</posx>
-        <posy>6</posy>
+        <posy>0</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2019-01-31 12:04:00</sys_created_on>
+        <sys_created_on>2020-05-05 08:18:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>9fea74161b936b405fab4002cd4bcb26</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>c8823e68dba5a3009fd1f57eaf961991</sys_name>
+        <sys_id>adb2411a1b681810c851a64fad4bcb18</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>5e5245d61b681810c851a64fad4bcb8b</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_grid_canvas_pane_9fea74161b936b405fab4002cd4bcb26</sys_update_name>
+        <sys_update_name>sys_grid_canvas_pane_adb2411a1b681810c851a64fad4bcb18</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-31 12:04:20</sys_updated_on>
-        <width>6</width>
+        <sys_updated_on>2020-05-05 08:18:53</sys_updated_on>
+        <width>12</width>
     </sys_grid_canvas_pane>
 </record_update>
