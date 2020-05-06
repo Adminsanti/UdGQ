@@ -25,39 +25,34 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Recalcula SGQ visibles &amp; Rols funció</name>
+        <name>Recalcula SGQ visibles &amp; Rols usuari</name>
         <onclick/>
         <order>500</order>
-        <script><![CDATA[var grUsuari = new GlideRecord('sys_user');
-grUsuari.addQuery('sys_id', 'IN', current.membres);
-grUsuari.query();
-while (grUsuari.next()) {
-    var u = new x_udg_q.Usuari(grUsuari.sys_id);
-    u.actualitzaGR(grUsuari);
-    u.actualitzaPreferenciesSGQ(grUsuari);
-}]]></script>
+        <script><![CDATA[var u = new x_udg_q.Usuari(current.sys_id);
+u.actualitzaGR(current);
+u.actualitzaPreferenciesSGQ(current);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-12-18 10:29:18</sys_created_on>
+        <sys_created_on>2020-05-06 08:22:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e1beb18c37a62b004ccbd0d543990ee2</sys_id>
-        <sys_mod_count>42</sys_mod_count>
-        <sys_name>Recalcula SGQ visibles &amp; Rols funció</sys_name>
+        <sys_id>f03d8e661ba89810c851a64fad4bcbd7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Recalcula SGQ visibles &amp; Rols usuari</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_action_e1beb18c37a62b004ccbd0d543990ee2</sys_update_name>
+        <sys_update_name>sys_ui_action_f03d8e661ba89810c851a64fad4bcbd7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-06 08:21:34</sys_updated_on>
-        <table>x_udg_q_funcio</table>
+        <sys_updated_on>2020-05-06 08:25:54</sys_updated_on>
+        <table>sys_user</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>
