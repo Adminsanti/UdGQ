@@ -142,26 +142,25 @@ Usuari.prototype = {
     },
 
     isObservador: function(sgq) {
-        var gr = new GlideRecord("x_udg_q_observador");
+        /*var gr = new GlideRecord("x_udg_q_observador");
         if (sgq) gr.addQuery('sgq', sgq);
         gr.addQuery('actiu', true);
         gr.addQuery('usuari', this.usuari);
-        //gr.addEncodedQuery("caducitatISNOTEMPTY^caducitatRELATIVEGT@dayofweek@ahead@0");
         gr.setLimit(1);
         gr.query();
         var itIs = gr.next();
-        if (!itIs) {
-            var grF = new GlideRecord('x_udg_q_funcio');
-            grF.addQuery('sgq', sgq);
-            grF.addQuery('activa', true);
-            grF.addQuery('acces', true);
-            grF.addQuery('readonly', true);
-            var qc = grF.addQuery('membres', 'CONTAINS', this.usuari);
-            qc.addOrCondition('suport', 'CONTAINS', this.usuari);
-            grF.setLimit(1);
-            grF.query();
-            itIs = grF.hasNext();
-        }
+        if (!itIs) { ...... }*/
+
+        var grF = new GlideRecord('x_udg_q_funcio');
+        grF.addQuery('sgq', sgq);
+        grF.addQuery('activa', true);
+        grF.addQuery('acces', true);
+        grF.addQuery('readonly', true);
+        grF.addQuery('membres', 'CONTAINS', this.usuari);
+		//gr.addEncodedQuery("caducitatISNOTEMPTY^caducitatRELATIVEGT@dayofweek@ahead@0");
+        grF.setLimit(1);
+        grF.query();
+        var itIs = grF.hasNext();
         return itIs;
     },
 
@@ -283,7 +282,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>160</sys_mod_count>
+        <sys_mod_count>161</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -291,6 +290,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-06 09:38:38</sys_updated_on>
+        <sys_updated_on>2020-05-07 14:10:48</sys_updated_on>
     </sys_script_include>
 </record_update>
