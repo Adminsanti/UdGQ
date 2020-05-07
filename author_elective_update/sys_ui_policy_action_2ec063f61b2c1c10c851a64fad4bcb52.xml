@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>compratidasync</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-05-07 09:06:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ec063f61b2c1c10c851a64fad4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>compratidasync</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_policy_action_2ec063f61b2c1c10c851a64fad4bcb52</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-05-07 09:06:32</sys_updated_on>
+        <table>x_udg_q_acciomillora</table>
+        <ui_policy display_value="Acció Compartida Sincronitzada">4dd5f10adbd9af009fd1f57eaf96196f</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_ui_policy_action_2ec063f61b2c1c10c851a64fad4bcb52</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>compratidasync</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-05-07 09:06:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>2ec063f61b2c1c10c851a64fad4bcb52</sys_id><sys_mod_count>0</sys_mod_count><sys_name>compratidasync</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_ui_policy_action_2ec063f61b2c1c10c851a64fad4bcb52</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-05-07 09:06:32</sys_updated_on><table>x_udg_q_acciomillora</table><ui_policy display_value="Acció Compartida Sincronitzada">4dd5f10adbd9af009fd1f57eaf96196f</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>300394995</payload_hash>
+        <record_name>compratidasync</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-05-07 09:06:33</sys_created_on>
+        <sys_id>e4d0a7f61b2c1c10c851a64fad4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171ee62eda90000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-05-07 09:06:33</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>ecd0a7f6fe2c1c1046a1edb035ca811c</update_guid>
+        <update_guid_history>ecd0a7f6fe2c1c1046a1edb035ca811c:300394995</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-05-07 14:35:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>2e847697c37f4b0e9704a84cc55cc4e4</sys_id>
+        <sys_metadata>2ec063f61b2c1c10c851a64fad4bcb52</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>compratidasync</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="Acció Compartida Sincronitzada">4dd5f10adbd9af009fd1f57eaf96196f</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_2ec063f61b2c1c10c851a64fad4bcb52</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_2ec063f61b2c1c10c851a64fad4bcb52">e4d0a7f61b2c1c10c851a64fad4bcb1d</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-05-07 14:35:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

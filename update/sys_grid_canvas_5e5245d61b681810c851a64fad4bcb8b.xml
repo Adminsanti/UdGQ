@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
     <sys_grid_canvas action="INSERT_OR_UPDATE">
-        <legacy_page display_value="PA Taula Resum">5e5245d61b681810c851a64fad4bcb89</legacy_page>
+        <legacy_page display_value="PA Resum Recomanacions">5e5245d61b681810c851a64fad4bcb89</legacy_page>
         <name>PA Resum Recomanacions - New Tab 2</name>
         <sys_class_name>sys_grid_canvas</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
