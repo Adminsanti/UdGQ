@@ -3,17 +3,17 @@
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>modificacio_memoria</element>
             <help/>
-            <hint/>
+            <hint>Enllaç al document d'AQU sobre modificacions de títols</hint>
             <label>Implica modificació memòria</label>
             <language>ca</language>
             <name>x_udg_q_objectiumillora</name>
-            <plural/>
+            <plural>Implica modificació memòries</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-10-23 09:29:39</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>d3985942db99af009fd1f57eaf961960</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_name>Implica modificació memòria</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
@@ -21,8 +21,8 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_objectiumillora_modificacio_memoria_ca</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-10-23 09:29:39</sys_updated_on>
-            <url/>
+            <sys_updated_on>2020-05-07 08:57:15</sys_updated_on>
+            <url>http://www.aqu.cat/doc/doc_14313418_1.pdf</url>
             <url_target/>
         </sys_documentation>
     </sys_documentation>

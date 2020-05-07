@@ -20,8 +20,8 @@
         <default_value/>
         <defaultsort/>
         <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
+        <dependent>sgq.comparteix</dependent>
+        <dependent_on_field>sgq.comparteix</dependent_on_field>
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
@@ -44,7 +44,7 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>javascript:"sys_id!="+current.sgq</reference_qual>
+        <reference_qual>javascript:"sys_idIN"+current.sgq.comparteix</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
@@ -55,7 +55,7 @@
         <sys_created_on>2018-11-29 11:30:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4d9875dedb4a6b00ccd95bd05b9619ec</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Compartit</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,11 +63,11 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_objectiumillora_compartit</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-29 10:43:02</sys_updated_on>
+        <sys_updated_on>2020-05-07 08:32:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
+        <use_dependent_field>true</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>

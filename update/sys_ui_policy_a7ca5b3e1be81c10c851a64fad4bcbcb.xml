@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_udg_q_acciomillora">compratidasync=true^EQ<item endquery="false" field="compratidasync" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <conditions table="x_udg_q_objectiumillora">sgq.comparteixISNOTEMPTY^EQ<item endquery="false" field="sgq.comparteix" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
         <global>true</global>
         <inherit>false</inherit>
-        <isolate_script>false</isolate_script>
+        <isolate_script>true</isolate_script>
         <model_id/>
         <model_table/>
         <on_load>true</on_load>
-        <order>200</order>
+        <order>100</order>
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>false</run_scripts>
         <script_false><![CDATA[function onCondition() {
-	
+
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
 
 }]]></script_true>
         <set_values/>
-        <short_description>Acció Compartida Sincronitzada</short_description>
+        <short_description>Objectiu pot compartir</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-23 11:40:00</sys_created_on>
+        <sys_created_on>2020-05-07 08:41:17</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>4dd5f10adbd9af009fd1f57eaf96196f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Acció Compartida Sincronitzada</sys_name>
+        <sys_id>a7ca5b3e1be81c10c851a64fad4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Objectiu pot compartir</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_policy_4dd5f10adbd9af009fd1f57eaf96196f</sys_update_name>
+        <sys_update_name>sys_ui_policy_a7ca5b3e1be81c10c851a64fad4bcbcb</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-07 09:08:11</sys_updated_on>
-        <table>x_udg_q_acciomillora</table>
-        <ui_type>10</ui_type>
+        <sys_updated_on>2020-05-07 08:41:17</sys_updated_on>
+        <table>x_udg_q_objectiumillora</table>
+        <ui_type>0</ui_type>
         <view/>
     </sys_ui_policy>
 </record_update>

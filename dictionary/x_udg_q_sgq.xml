@@ -2,6 +2,7 @@
     <element audit="true" label="SGQ" max_length="40" name="x_udg_q_sgq" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element display="true" label="Codi" mandatory="true" max_length="6" name="codi" type="string"/>
+        <element label="Comparteix amb" max_length="4000" name="comparteix" reference="x_udg_q_sgq" type="glide_list"/>
         <element hint="Permet utilitzar fites amb dates vençudes pels objectius i accions, mostrant un missatge d'advertència." label="Permet dates vençudes" max_length="40" name="datesven" type="boolean"/>
         <element label="Mapa" max_length="8000" name="mapa" read_only="true" type="html"/>
         <element label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
