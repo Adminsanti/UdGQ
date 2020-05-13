@@ -3,17 +3,47 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_udg_q_risc" element="NULL" name="x_udg_q_risc" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">6e624bb01bf01810c851a64fad4bcb51</list_id>
+            <list_id display_value="x_udg_q_risc" element="NULL" name="x_udg_q_risc" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">823113781b341810c851a64fad4bcbd5</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 12:01:33</sys_created_on>
-            <sys_id>e2624bb01bf01810c851a64fad4bcb53</sys_id>
+            <sys_created_on>2020-05-13 13:06:15</sys_created_on>
+            <sys_id>ca3113781b341810c851a64fad4bcbd5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 12:01:33</sys_updated_on>
+            <sys_updated_on>2020-05-13 13:06:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sgq</element>
+            <list_id display_value="x_udg_q_risc" element="NULL" name="x_udg_q_risc" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">823113781b341810c851a64fad4bcbd5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-05-13 13:06:15</sys_created_on>
+            <sys_id>4e3113781b341810c851a64fad4bcbd5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-05-13 13:06:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>nom</element>
+            <list_id display_value="x_udg_q_risc" element="NULL" name="x_udg_q_risc" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">823113781b341810c851a64fad4bcbd5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-05-13 13:06:15</sys_created_on>
+            <sys_id>ce3113781b341810c851a64fad4bcbd5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-05-13 13:06:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -27,11 +57,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 12:01:33</sys_created_on>
+            <sys_created_on>2020-05-13 13:06:15</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6e624bb01bf01810c851a64fad4bcb51</sys_id>
+            <sys_id>823113781b341810c851a64fad4bcbd5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_risc</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -40,7 +70,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_list_x_udg_q_risc_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 12:01:33</sys_updated_on>
+            <sys_updated_on>2020-05-13 13:06:15</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

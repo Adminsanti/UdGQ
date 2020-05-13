@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="M2m Controls Riscs" max_length="40" name="x_udg_q_m2m_controls_riscs" type="collection">
+        <element attributes="encode_utf8=false" label="Control" max_length="32" name="control" reference="x_udg_q_control" type="reference"/>
+        <element attributes="encode_utf8=false" label="Risc" max_length="32" name="risc" reference="x_udg_q_risc" type="reference"/>
+        <index name="index">
+            <element name="risc"/>
+        </index>
+        <index name="index2">
+            <element name="control"/>
+        </index>
+    </element>
+</database>

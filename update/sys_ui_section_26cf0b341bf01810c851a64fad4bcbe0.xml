@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="" section_id="b36247fc1bb01810c851a64fad4bcb15" sys_domain="global" table="x_udg_q_risc" version="3" view="">
+    <sys_ui_section caption="" section_id="26cf0b341bf01810c851a64fad4bcbe0" sys_domain="global" table="x_udg_q_control" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 13:32:19</sys_created_on>
-            <sys_id>04371b381b741810c851a64fad4bcb92</sys_id>
+            <sys_created_on>2020-05-13 13:20:00</sys_created_on>
+            <sys_id>3754d3f01b741810c851a64fad4bcb56</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_risc" sys_domain="global" view="Default view">b36247fc1bb01810c851a64fad4bcb15</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_control" sys_domain="global" view="Default view">26cf0b341bf01810c851a64fad4bcbe0</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 13:32:19</sys_updated_on>
+            <sys_updated_on>2020-05-13 13:20:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 13:32:19</sys_created_on>
-            <sys_id>84371b381b741810c851a64fad4bcb92</sys_id>
+            <sys_created_on>2020-05-13 13:20:00</sys_created_on>
+            <sys_id>bb54d3f01b741810c851a64fad4bcb56</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_risc" sys_domain="global" view="Default view">b36247fc1bb01810c851a64fad4bcb15</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_control" sys_domain="global" view="Default view">26cf0b341bf01810c851a64fad4bcbe0</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 13:32:19</sys_updated_on>
+            <sys_updated_on>2020-05-13 13:20:00</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>sgq</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 13:32:19</sys_created_on>
-            <sys_id>08371b381b741810c851a64fad4bcb92</sys_id>
+            <sys_created_on>2020-05-13 13:20:00</sys_created_on>
+            <sys_id>3f54d3f01b741810c851a64fad4bcb56</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_risc" sys_domain="global" view="Default view">b36247fc1bb01810c851a64fad4bcb15</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_control" sys_domain="global" view="Default view">26cf0b341bf01810c851a64fad4bcbe0</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 13:32:19</sys_updated_on>
+            <sys_updated_on>2020-05-13 13:20:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.end_split</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 13:32:19</sys_created_on>
-            <sys_id>88371b381b741810c851a64fad4bcb92</sys_id>
+            <sys_created_on>2020-05-13 13:20:00</sys_created_on>
+            <sys_id>bf54d3f01b741810c851a64fad4bcb56</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_risc" sys_domain="global" view="Default view">b36247fc1bb01810c851a64fad4bcb15</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_control" sys_domain="global" view="Default view">26cf0b341bf01810c851a64fad4bcbe0</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 13:32:19</sys_updated_on>
+            <sys_updated_on>2020-05-13 13:20:00</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -60,38 +60,38 @@
             <element>nom</element>
             <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 13:32:19</sys_created_on>
-            <sys_id>0c371b381b741810c851a64fad4bcb92</sys_id>
+            <sys_created_on>2020-05-13 13:20:00</sys_created_on>
+            <sys_id>3354d3f01b741810c851a64fad4bcb57</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_risc" sys_domain="global" view="Default view">b36247fc1bb01810c851a64fad4bcb15</sys_ui_section>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_control" sys_domain="global" view="Default view">26cf0b341bf01810c851a64fad4bcbe0</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 13:32:19</sys_updated_on>
+            <sys_updated_on>2020-05-13 13:20:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
-            <name>x_udg_q_risc</name>
+            <name>x_udg_q_control</name>
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 12:01:38</sys_created_on>
+            <sys_created_on>2020-05-13 13:00:00</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b36247fc1bb01810c851a64fad4bcb15</sys_id>
+            <sys_id>26cf0b341bf01810c851a64fad4bcbe0</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>x_udg_q_risc</sys_name>
+            <sys_name>x_udg_q_control</sys_name>
             <sys_overrides/>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_ui_section_b36247fc1bb01810c851a64fad4bcb15</sys_update_name>
+            <sys_update_name>sys_ui_section_26cf0b341bf01810c851a64fad4bcbe0</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 12:01:38</sys_updated_on>
+            <sys_updated_on>2020-05-13 13:00:00</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>
