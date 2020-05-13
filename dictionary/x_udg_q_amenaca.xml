@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Amenaça" max_length="40" name="x_udg_q_amenaca" type="collection">
+        <element label="Compartida" max_length="4000" name="compartir" reference="x_udg_q_sgq" type="glide_list"/>
+        <element attributes="no_truncate=true" label="Nom" max_length="140" name="nom" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="SGQ" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference"/>
+        <index name="index">
+            <element name="sgq"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="actiu" label="Actiu" language="en" table="x_udg_q_risc">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>actiu</element>
+            <help/>
+            <hint/>
+            <label>Actiu</label>
+            <language>en</language>
+            <name>x_udg_q_risc</name>
+            <plural>Actius</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-05-13 14:48:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>ea98a3f41bf41810c851a64fad4bcb28</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Actiu</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_q_risc_actiu_en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-05-13 14:48:24</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

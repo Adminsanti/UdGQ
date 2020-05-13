@@ -1,86 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Responsabilitats sobre el SGQ" section_id="1481c514db0123409fd1f57eaf96191f" sys_domain="global" table="x_udg_q_sgq" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>qid</element>
+            <element>propietari</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-08 08:17:01</sys_created_on>
-            <sys_id>78b611141bd68410c851a64fad4bcbfb</sys_id>
+            <sys_created_on>2020-05-13 14:33:40</sys_created_on>
+            <sys_id>fe35a3701bf41810c851a64fad4bcb49</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-08 08:17:01</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>propietari</element>
-            <position>1</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-08 08:17:01</sys_created_on>
-            <sys_id>fcb611141bd68410c851a64fad4bcbfb</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-08 08:17:01</sys_updated_on>
+            <sys_updated_on>2020-05-13 14:33:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>responsable</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-08 08:17:01</sys_created_on>
-            <sys_id>74b611141bd68410c851a64fad4bcbfc</sys_id>
+            <sys_created_on>2020-05-13 14:33:40</sys_created_on>
+            <sys_id>7235a3701bf41810c851a64fad4bcb4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-08 08:17:01</sys_updated_on>
+            <sys_updated_on>2020-05-13 14:33:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-08 08:17:01</sys_created_on>
-            <sys_id>f8b611141bd68410c851a64fad4bcbfc</sys_id>
+            <sys_created_on>2020-05-13 14:33:40</sys_created_on>
+            <sys_id>f235a3701bf41810c851a64fad4bcb4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-08 08:17:01</sys_updated_on>
+            <sys_updated_on>2020-05-13 14:33:40</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>propietari.usuari.name</element>
-            <position>4</position>
+            <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-08 08:17:01</sys_created_on>
-            <sys_id>70b611141bd68410c851a64fad4bcbfd</sys_id>
+            <sys_created_on>2020-05-13 14:33:40</sys_created_on>
+            <sys_id>7635a3701bf41810c851a64fad4bcb4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-08 08:17:01</sys_updated_on>
+            <sys_updated_on>2020-05-13 14:33:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>responsable.usuari.name</element>
-            <position>5</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-01-08 08:17:01</sys_created_on>
-            <sys_id>f4b611141bd68410c851a64fad4bcbfd</sys_id>
+            <sys_created_on>2020-05-13 14:33:40</sys_created_on>
+            <sys_id>f635a3701bf41810c851a64fad4bcb4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-01-08 08:17:01</sys_updated_on>
+            <sys_updated_on>2020-05-13 14:33:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

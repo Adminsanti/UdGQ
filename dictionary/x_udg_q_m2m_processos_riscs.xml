@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="M2m Processos Riscs" max_length="40" name="x_udg_q_m2m_processos_riscs" type="collection">
+        <element attributes="encode_utf8=false" label="Procés Impactat" max_length="32" name="proces" reference="x_udg_q_proces" type="reference"/>
+        <element attributes="encode_utf8=false" label="Risc" max_length="32" name="risc" reference="x_udg_q_risc" type="reference"/>
+        <index name="index">
+            <element name="risc"/>
+        </index>
+        <index name="index2">
+            <element name="proces"/>
+        </index>
+    </element>
+</database>
