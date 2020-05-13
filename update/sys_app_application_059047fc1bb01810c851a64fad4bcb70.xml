@@ -6,7 +6,7 @@
         <device_type>browser</device_type>
         <hint/>
         <name>Risc</name>
-        <order>100</order>
+        <order>500</order>
         <roles>x_udg_q.RiscManager</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -15,7 +15,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>059047fc1bb01810c851a64fad4bcb70</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Risc</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -24,7 +24,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_application_059047fc1bb01810c851a64fad4bcb70</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-13 11:53:32</sys_updated_on>
+        <sys_updated_on>2020-05-13 13:38:07</sys_updated_on>
         <title>Risc</title>
         <view_name/>
     </sys_app_application>

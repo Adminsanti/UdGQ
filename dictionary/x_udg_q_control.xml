@@ -2,8 +2,12 @@
     <element label="Control" max_length="40" name="x_udg_q_control" type="collection">
         <element attributes="no_truncate=true" display="true" label="Nom" max_length="140" name="nom" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^activa=true^assignable=true^EQ&quot;;" type="reference" use_reference_qualifier="advanced"/>
         <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
         <index name="index">
+            <element name="responsable"/>
+        </index>
+        <index name="index2">
             <element name="sgq"/>
         </index>
     </element>
