@@ -54,8 +54,8 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-05-06 08:56:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>3db45e261be89810c851a64fad4bcbd2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_id>d966e6aedbe45c10ccd95bd05b9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Només Lectura</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_funcio_readonly</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-06 08:57:42</sys_updated_on>
+        <sys_updated_on>2020-05-07 15:00:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

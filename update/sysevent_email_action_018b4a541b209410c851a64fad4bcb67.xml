@@ -37,7 +37,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Nou informe rebut: <strong>${URI_REF}</strong></p>
+        <message_html><![CDATA[<p>Nou informe registrat: <strong>${URI_REF}</strong></p>
 <p>Podeu consultar l'informe&nbsp;seguint l'enlla&ccedil;. El GPA registrar&agrave; les recomanacions incloses per tal que en pogueu fer-ne seguiment.</p>
 <p>${mail_script:disclaimer udg}</p>
 <p>${mail_script:copiar ManagersUniversitat}</p>]]></message_html>
@@ -54,7 +54,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Nou infome rebut: ${nom}</subject>
+        <subject>Nou infome registrat: ${nom}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -63,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>018b4a541b209410c851a64fad4bcb67</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Informe rebut nou amb document</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -72,7 +72,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_018b4a541b209410c851a64fad4bcb67</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-07 14:05:29</sys_updated_on>
+        <sys_updated_on>2020-05-07 14:03:55</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

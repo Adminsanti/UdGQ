@@ -10,7 +10,7 @@
         <chart_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</chart_border_color>
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
-        <chart_height>450</chart_height>
+        <chart_height/>
         <chart_size>large</chart_size>
         <chart_subtitle/>
         <chart_subtitle_color/>
@@ -22,7 +22,7 @@
         <chart_title_style>normal</chart_title_style>
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
-        <chart_width>600</chart_width>
+        <chart_width/>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
@@ -54,7 +54,7 @@
         <group/>
         <import_table/>
         <interval>year</interval>
-        <is_published>true</is_published>
+        <is_published>false</is_published>
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
         <legend_align_columns>true</legend_align_columns>
@@ -77,7 +77,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>x_udg_q.Admin,x_udg_q.Manager,x_udg_q.ManagerUniversitat,x_udg_q.Observador,x_udg_q.User,public</roles>
+        <roles>x_udg_q.Observador,x_udg_q.User,x_udg_q.ManagerUniversitat,x_udg_q.Manager,x_udg_q.Admin</roles>
         <row>accions</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -106,7 +106,7 @@
         <sys_created_on>2018-11-06 17:29:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fdbc8f2edb2d23009fd1f57eaf961928</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Objectius per responsable apilat estat</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -114,16 +114,16 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_fdbc8f2edb2d23009fd1f57eaf961928</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-05 08:15:43</sys_updated_on>
+        <sys_updated_on>2020-03-24 18:01:00</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <title>Objectius per responsable apilat estat</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
         <trend_field>state</trend_field>
-        <type>horizontal_bar</type>
+        <type>bar</type>
         <upper_limit/>
-        <use_color_heatmap>false</use_color_heatmap>
+        <use_color_heatmap>true</use_color_heatmap>
         <use_color_palette>false</use_color_palette>
         <use_null_in_trend>false</use_null_in_trend>
         <user>GLOBAL</user>
@@ -133,7 +133,7 @@
         <x_axis_grid_dotted>false</x_axis_grid_dotted>
         <x_axis_grid_width>1</x_axis_grid_width>
         <x_axis_label_bold>false</x_axis_label_bold>
-        <x_axis_label_color/>
+        <x_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_label_color>
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_label_tilt>0</x_axis_label_tilt>
         <x_axis_opposite>false</x_axis_opposite>
@@ -148,7 +148,7 @@
         <y_axis_grid_dotted>false</y_axis_grid_dotted>
         <y_axis_grid_width>1</y_axis_grid_width>
         <y_axis_label_bold>false</y_axis_label_bold>
-        <y_axis_label_color/>
+        <y_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_label_color>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_label_tilt>0</y_axis_label_tilt>
         <y_axis_opposite>false</y_axis_opposite>

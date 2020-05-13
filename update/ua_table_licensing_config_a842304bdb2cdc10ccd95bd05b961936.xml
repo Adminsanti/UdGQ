@@ -11,17 +11,17 @@
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-04-29 10:44:42</sys_created_on>
+        <sys_created_on>2020-05-07 15:02:22</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>149a2e9cdbac1010ccd95bd05b96197d</sys_id>
+        <sys_id>a842304bdb2cdc10ccd95bd05b961936</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_udg_q_memoria</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>ua_table_licensing_config_149a2e9cdbac1010ccd95bd05b96197d</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_a842304bdb2cdc10ccd95bd05b961936</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-29 10:44:42</sys_updated_on>
+        <sys_updated_on>2020-05-07 15:02:22</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

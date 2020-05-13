@@ -61,7 +61,7 @@ if (!current.sgq.datesven) {&#13;
         <sys_created_on>2019-02-19 11:41:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b452fe58db37e3409480298a48961975</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Fita prevista</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -69,7 +69,7 @@ if (!current.sgq.datesven) {&#13;
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_acciomillora_fet_fita</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-04 09:19:16</sys_updated_on>
+        <sys_updated_on>2020-05-07 15:00:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
