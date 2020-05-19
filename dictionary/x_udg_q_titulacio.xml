@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" label="Titulació" max_length="40" name="x_udg_q_titulacio" type="collection">
         <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
-        <element label="Codi MECD" max_length="10" name="codi_mecd" read_only="true" type="string"/>
-        <element display="true" label="Memo" max_length="40" name="memo" type="string"/>
+        <element label="Codi MECD" max_length="10" name="codi_mecd" read_only="true" type="string" unique="true"/>
+        <element display="true" label="Memo" max_length="40" name="memo" type="string" unique="true"/>
         <element attributes="no_truncate=true" label="Nom" max_length="140" name="nom" read_only="true" type="string"/>
-        <element label="QID" max_length="40" name="qid" read_only="true" type="string"/>
+        <element label="QID" max_length="40" name="qid" read_only="true" type="string" unique="true"/>
         <element label="QMS" max_length="32" name="qms" reference="x_udg_q_titulacio" type="reference"/>
         <element label="Responsable" max_length="32" name="responsable" read_only="true" reference="sys_user" type="reference"/>
         <element choice="1" label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference">
@@ -21,13 +21,19 @@
             <element name="responsable"/>
         </index>
         <index name="index2">
-            <element name="qms"/>
+            <element name="codi_mecd"/>
         </index>
         <index name="index3">
-            <element name="memo"/>
+            <element name="qms"/>
         </index>
         <index name="index4">
             <element name="sgq"/>
+        </index>
+        <index name="index5">
+            <element name="qid"/>
+        </index>
+        <index name="index6">
+            <element name="memo"/>
         </index>
     </element>
 </database>
