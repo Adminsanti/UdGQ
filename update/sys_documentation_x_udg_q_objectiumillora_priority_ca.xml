@@ -3,7 +3,7 @@
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>priority</element>
             <help/>
-            <hint/>
+            <hint>Prioritat relativa als altres objectius</hint>
             <label>Prioritat</label>
             <language>ca</language>
             <name>x_udg_q_objectiumillora</name>
@@ -13,7 +13,7 @@
             <sys_created_on>2019-01-08 17:41:53</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>469b23b61b3ae3005fab4002cd4bcb11</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_name>Prioritat</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
@@ -21,7 +21,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_objectiumillora_priority_ca</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-01-08 17:41:53</sys_updated_on>
+            <sys_updated_on>2020-05-21 17:24:10</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
