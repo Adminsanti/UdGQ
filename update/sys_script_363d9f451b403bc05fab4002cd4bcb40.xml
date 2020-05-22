@@ -28,7 +28,7 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[//if (SGQpref != gs.gerUser().getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser().hasRole('admin')) {
-if (!gs.getUser().hasRole('admin')) { //permet, entre d'altres coses, fer backups	
+if (!gs.getUser().hasRole('admin') && !gs.getUser().hasRole('x_udg_q.ManagerUniversitat') &&!gs.getUser().hasRole('x_udg_q.Admin')) { //permet al'admin fer backups i als manager veure-les totes de cop
 	var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
 	current.addQuery("sgq="+SGQpref+"^ORcompartidaLIKE"+SGQpref);
 }
@@ -40,7 +40,7 @@ if (!gs.getUser().hasRole('admin')) { //permet, entre d'altres coses, fer backup
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>363d9f451b403bc05fab4002cd4bcb40</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>SGQ query per Recomanació</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -49,7 +49,7 @@ if (!gs.getUser().hasRole('admin')) { //permet, entre d'altres coses, fer backup
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_363d9f451b403bc05fab4002cd4bcb40</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-30 11:55:56</sys_updated_on>
+        <sys_updated_on>2020-05-22 15:02:34</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
