@@ -44,7 +44,8 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>estat</field>
         <field_list/>
-        <filter table="x_udg_q_recomanacions">estat!=5^ORDERBYestat<item display_value="Tancada" endquery="false" field="estat" goto="false" newquery="false" operator="!=" or="false" value="5"/>
+        <filter table="x_udg_q_recomanacions">estat!=5^sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^ORDERBYestat<item display_value="Tancada" endquery="false" field="estat" goto="false" newquery="false" operator="!=" or="false" value="5"/>
+            <item endquery="false" field="sgq" goto="false" newquery="false" operator="DYNAMIC" or="false" value="5fff67561bce0410c851a64fad4bcb0a"/>
             <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="estat"/>
         </filter>
         <from/>
@@ -53,7 +54,7 @@
         <group/>
         <import_table/>
         <interval>year</interval>
-        <is_published>true</is_published>
+        <is_published>false</is_published>
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
         <legend_align_columns>true</legend_align_columns>
@@ -76,7 +77,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>public</roles>
+        <roles>x_udg_q.Manager,x_udg_q.ManagerUniversitat,x_udg_q.Observador,x_udg_q.User</roles>
         <row>estat</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -105,7 +106,7 @@
         <sys_created_on>2018-10-31 13:02:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>eff553a0db29a3009fd1f57eaf9619a5</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Recomanacions no tancades</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -113,7 +114,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_eff553a0db29a3009fd1f57eaf9619a5</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-05 07:40:44</sys_updated_on>
+        <sys_updated_on>2020-05-22 15:13:09</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <title>Recomanacions no tancades</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -125,7 +126,7 @@
         <use_color_heatmap>false</use_color_heatmap>
         <use_color_palette>false</use_color_palette>
         <use_null_in_trend>false</use_null_in_trend>
-        <user>dce0addc378d1600e7efd3e853990e20</user>
+        <user>GLOBAL</user>
         <x_axis_allow_decimals>true</x_axis_allow_decimals>
         <x_axis_display_grid>false</x_axis_display_grid>
         <x_axis_grid_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</x_axis_grid_color>
