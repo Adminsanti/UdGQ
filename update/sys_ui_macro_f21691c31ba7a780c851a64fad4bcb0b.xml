@@ -11,7 +11,7 @@
         <sys_created_on>2019-02-15 08:13:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f21691c31ba7a780c851a64fad4bcb0b</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name>resumRecomanacions</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -19,7 +19,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_macro_f21691c31ba7a780c851a64fad4bcb0b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-06 10:06:48</sys_updated_on>
+        <sys_updated_on>2020-05-26 08:33:18</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	
@@ -27,6 +27,8 @@
     var grIn = new GlideRecord("x_udg_q_informevsma");
 	grIn.orderBy('data');
 	grIn.addQuery('actiu',true);
+	var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
+	grIn.addQuery('sgq',SGQpref);
     grIn.query();
     grIn;
 </g:evaluate>
