@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="compratidasync" label="Compartida Sincronitzada" language="en" table="x_udg_q_acciomillora">
+    <sys_documentation element="compratidasync" label="Sinc compartida" language="en" table="x_udg_q_acciomillora">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>compratidasync</element>
             <help/>
-            <hint>Es comparteix automàticament amb tots els SGQs on es comparteiexen tots els objectius als que contribueix.</hint>
-            <label>Compartida Sincronitzada</label>
+            <hint>Fa que el camp "compartida" es mantingui automàticament  sincronitzat, incloent-hi els SGQ de tots els objectius als quals contribueix aquesta acció</hint>
+            <label>Sinc compartida</label>
             <language>en</language>
             <name>x_udg_q_acciomillora</name>
-            <plural>Compartida Sincronitzadas</plural>
+            <plural>Sinc compartides</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2019-12-31 16:02:19</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>6ab70888db9600d0ccd95bd05b9619cc</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_name>Compartida Sincronitzada</sys_name>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>Sinc compartida</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_acciomillora_compratidasync_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2019-12-31 16:39:55</sys_updated_on>
+            <sys_updated_on>2020-05-26 07:55:01</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
