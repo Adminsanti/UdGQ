@@ -9,7 +9,7 @@
           // Add your code here
 	
 	template.print (
-	"<span style=\"font-family: 'times new roman', times; color: gray; font-size: 10pt; \"><strong><i>Aquesta informació i els seus arxius annexos són confidencials. S'adrecen exclusivament a la persona destinatària. En queda prohibida la utilització, còpia o reproducció per part de qualsevol altra persona. Si rebeu aquest missatge per error, us demanem que ens ho feu saber per correu electrònic i que l'elimineu.</i></strong><BR><span style=\"font-family: 'times new roman', times; font-size: 10pt;\">Esta información y los archivos adjuntos son confidenciales. Se dirigen exclusivamente a la persona destinataria. Queda prohibida su utilización, copia o reproducción por parte de cualquier otra persona. Si recibe este mensaje por error, le rogamos que nos lo comunique de inmediato por correo electrónico y que proceda a su destrucción.<BR><span style=\"font-family: 'times new roman', times; font-size: 10pt;\"><i>This information and the attached files are confidential and intended exclusively for the addressee. Their use, copy or reproduction by any other person is prohibited. If this message has been received in error, please notify us immediately by  e-mail and delete it.</i></span>");
+	"<span style=\"font-family: 'times new roman', times; color: gray; font-size: 9pt; \"><strong><i>Aquesta informació i els seus arxius annexos són confidencials. S'adrecen exclusivament a la persona destinatària. En queda prohibida la utilització, còpia o reproducció per part de qualsevol altra persona. Si rebeu aquest missatge per error, us demanem que ens ho feu saber per correu electrònic i que l'elimineu.</i></strong><BR><span style=\"font-family: 'times new roman', times; font-size: 9pt;\">Esta información y los archivos adjuntos son confidenciales. Se dirigen exclusivamente a la persona destinataria. Queda prohibida su utilización, copia o reproducción por parte de cualquier otra persona. Si recibe este mensaje por error, le rogamos que nos lo comunique de inmediato por correo electrónico y que proceda a su destrucción.<BR><span style=\"font-family: 'times new roman', times; font-size: 9pt;\"><i>This information and the attached files are confidential and intended exclusively for the addressee. Their use, copy or reproduction by any other person is prohibited. If this message has been received in error, please notify us immediately by  e-mail and delete it.</i></span>");
 
 })(current, template, email, email_action, event);]]></script>
         <sys_class_name>sys_script_email</sys_class_name>
@@ -17,7 +17,7 @@
         <sys_created_on>2020-03-02 11:09:03</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cbe2c0f51b570050c851a64fad4bcb9a</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>disclaimer udg</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -25,6 +25,6 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_email_cbe2c0f51b570050c851a64fad4bcb9a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-26 19:01:15</sys_updated_on>
+        <sys_updated_on>2020-05-29 08:40:36</sys_updated_on>
     </sys_script_email>
 </record_update>
