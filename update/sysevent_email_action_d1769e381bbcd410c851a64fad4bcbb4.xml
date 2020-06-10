@@ -35,7 +35,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p><br />Acci&oacute; vinculada a objectiu existent al pla de millora:</p>
+        <message_html><![CDATA[<p>Acci&oacute; vinculada a un objectiu existent al pla de millora:</p>
 <p>Acci&oacute; vinculada:<strong> ${accio_millora.URI_REF}</strong> (${accio_millora.sgq}) - ${accio_millora.short_description}</p>
 <p>Objectiu al que s'ha vinculat: <strong>${objectiu_millora.URI_REF}</strong> (${objectiu_millora.sgq}) - ${objectiu_millora.short_description}</p>
 <p>${mail_script:disclaimer udg}</p>]]></message_html>
@@ -61,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d1769e381bbcd410c851a64fad4bcbb4</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Acció vinculada a objectius</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -70,7 +70,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_d1769e381bbcd410c851a64fad4bcbb4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-13 09:04:40</sys_updated_on>
+        <sys_updated_on>2020-06-10 10:36:07</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
