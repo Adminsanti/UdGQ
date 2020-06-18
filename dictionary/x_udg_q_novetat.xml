@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Novetat" max_length="40" name="x_udg_q_novetat" type="collection">
+        <element default="javascript:new GlideDateTime()" label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Description" max_length="40000" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Short description" max_length="160" name="short_description" type="string"/>
+    </element>
+</database>
