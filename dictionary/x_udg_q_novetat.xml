@@ -3,7 +3,7 @@
         <element default="javascript:new GlideDateTime()" label="Date" max_length="40" name="date" type="glide_date"/>
         <element label="Description" max_length="40000" name="description" type="string"/>
         <element label="Notificat a" max_length="4000" name="notificat_a" read_only="true" reference="sys_user" type="glide_list"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="no_truncate=true" label="Short description" mandatory="true" max_length="160" name="short_description" type="string"/>
     </element>
 </database>

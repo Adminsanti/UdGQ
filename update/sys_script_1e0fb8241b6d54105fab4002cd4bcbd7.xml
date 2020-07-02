@@ -28,21 +28,20 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-    
-	var notifica_a = [];
+
+    var notifica_a = [];
     var grSgq = new GlideRecord('x_udg_q_sgq');
-	grSgq.addQuery('actiu', true);
+    grSgq.addQuery('actiu', true);
     grSgq.query();
     while (grSgq.next()) {
-        if (notifica_a.indexOf(grSgq.responsable.usuari)==-1) notifica_a.push(grSgq.responsable.usuari);
+        if (notifica_a.indexOf(grSgq.responsable.usuari) == -1) notifica_a.push(grSgq.responsable.usuari);
     }
     var grGestors = new GlideRecord('x_udg_q_gestorsuniversitat');
-	grGestors.addQuery('actiu', true);
+    grGestors.addQuery('actiu', true);
     grGestors.query();
-	while (grGestors.next()) {
-        if (notifica_a.indexOf(grGestors.usuari)==-1) notifica_a.push(grGestors.usuari);
+    while (grGestors.next()) {
+        if (notifica_a.indexOf(grGestors.usuari) == -1) notifica_a.push(grGestors.usuari);
     }
-
     current.notificat_a = notifica_a.join(',');
 
 })(current, previous);]]></script>
@@ -53,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e0fb8241b6d54105fab4002cd4bcbd7</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Novetats notifica a</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -62,7 +61,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_1e0fb8241b6d54105fab4002cd4bcbd7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-01 13:46:29</sys_updated_on>
+        <sys_updated_on>2020-07-02 10:53:31</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
