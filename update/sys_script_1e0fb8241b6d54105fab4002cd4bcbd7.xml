@@ -34,15 +34,14 @@
     grSgq.addQuery('actiu', true);
     grSgq.query();
     while (grSgq.next()) {
-        if (notifica_a.indexOf(grSgq.responsable.usuari) == -1) notifica_a.push(grSgq.responsable.usuari);
+        if (notifica_a.indexOf(grSgq.responsable.usuari.toString()) == -1) notifica_a.push(grSgq.responsable.usuari.toString());
     }
     var grGestors = new GlideRecord('x_udg_q_gestorsuniversitat');
     grGestors.addQuery('actiu', true);
     grGestors.query();
     while (grGestors.next()) {
-		var usuari= grGestors.usuari;
-        if (notifica_a.indexOf(usuari) == -1) {
-			notifica_a.push(usuari);}
+        if (notifica_a.indexOf(grGestors.usuari.toString()) == -1) {
+			notifica_a.push(grGestors.usuari.toString());}
 		
     }
     current.notificat_a = notifica_a.join(',');
@@ -55,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e0fb8241b6d54105fab4002cd4bcbd7</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Novetats notifica a</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -64,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_1e0fb8241b6d54105fab4002cd4bcbd7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 11:10:39</sys_updated_on>
+        <sys_updated_on>2020-07-02 11:21:05</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
