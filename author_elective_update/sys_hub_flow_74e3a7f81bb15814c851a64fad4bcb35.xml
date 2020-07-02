@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Revisa l'estat de totes les recomanacions</description>
+        <internal_name>revisa_estat_recomanacions</internal_name>
+        <label_cache>[{"name":"7955a3d6-2547-49b8-ac0f-e0e026247a00.Records","label":"1➛Recomanació Records","reference":"x_udg_q_recomanacions","reference_display":"Recomanació","type":"records","base_type":"records"},{"name":"7955a3d6-2547-49b8-ac0f-e0e026247a00.Table","label":"1➛Recomanació Taula","reference":"x_udg_q_recomanacions","reference_display":"Recomanació","type":"table_name","base_type":"table_name"},{"name":"7955a3d6-2547-49b8-ac0f-e0e026247a00.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer"},{"name":"023b58d1-08f7-4296-a02f-794d42368b20.item","label":"2➛Recomanació Record","reference":"x_udg_q_recomanacions","reference_display":"Recomanació","type":"reference","base_type":"reference"},{"name":"c10df908-9ee6-4d4e-8c75-de6be6dae1c2.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"c10df908-9ee6-4d4e-8c75-de6be6dae1c2.table_name","label":"2.1➛Taula","reference_display":"Taula","type":"table_name","base_type":"table_name"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Revisa estat recomanacions</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 07:30:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>74e3a7f81bb15814c851a64fad4bcb35</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Revisa estat recomanacions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_hub_flow_74e3a7f81bb15814c851a64fad4bcb35</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="DELETE" query="document_key=74e3a7f81bb15814c851a64fad4bcb35"/>
+    <sys_hub_flow_component action="DELETE" query="flow=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT INa0d4bf781b355814c851a64fad4bcbff,a4d43f741b355814c851a64fad4bcb28,e0d4bf781b355814c851a64fad4bcbfb"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">64d4bf781b355814c851a64fad4bcbfe</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a0d4bf781b355814c851a64fad4bcbff</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <ui_id>023b58d1-08f7-4296-a02f-794d42368b20</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=a0d4bf781b355814c851a64fad4bcbff"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a0d4bf781b355814c851a64fad4bcbff</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>a4d4ff781b355814c851a64fad4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>{{7955a3d6-2547-49b8-ac0f-e0e026247a00.Records}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a4d43f741b355814c851a64fad4bcb28</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <ui_id>7955a3d6-2547-49b8-ac0f-e0e026247a00</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=a4d43f741b355814c851a64fad4bcb28"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4d43f741b355814c851a64fad4bcb28</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>2cd4bf781b355814c851a64fad4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>100000</value>
+        <variable display_value="">cd07ee090b30030085c083eb37673a39</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4d43f741b355814c851a64fad4bcb28</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>ecd4bf781b355814c851a64fad4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>x_udg_q_recomanacions</value>
+        <variable display_value="">3807ee090b30030085c083eb37673a08</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4d43f741b355814c851a64fad4bcb28</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:50:03</sys_created_on>
+        <sys_id>f016f7f81b355814c851a64fad4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <value>number=REC0001005</value>
+        <variable display_value="">0507ee090b30030085c083eb37673a2e</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow>
+        <order>2.1</order>
+        <parent_ui_id>023b58d1-08f7-4296-a02f-794d42368b20</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e0d4bf781b355814c851a64fad4bcbfb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <ui_id>c10df908-9ee6-4d4e-8c75-de6be6dae1c2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=e0d4bf781b355814c851a64fad4bcbfb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0d4bf781b355814c851a64fad4bcbfb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>2cd4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>estat=fd-scripted</value>
+        <variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0d4bf781b355814c851a64fad4bcbfb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>ecd4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>x_udg_q_recomanacions</value>
+        <variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=e0d4bf781b355814c851a64fad4bcbfb"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>e0d4bf781b355814c851a64fad4bcbfb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>e4d4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{023b58d1-08f7-4296-a02f-794d42368b20.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>e0d4bf781b355814c851a64fad4bcbfb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>24d4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>e0d4bf781b355814c851a64fad4bcbfb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>a8d4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="DELETE" query="flow=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT IN64d43f741b355814c851a64fad4bcb23"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>64d43f741b355814c851a64fad4bcb23</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=64d43f741b355814c851a64fad4bcb23"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>64d43f741b355814c851a64fad4bcb23</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:34</sys_created_on>
+        <sys_id>28d43f741b355814c851a64fad4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:34</sys_updated_on>
+        <value>1970-01-01 03:00:00</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="DELETE" query="id=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT IN3ce3e77c1bb15814c851a64fad4bcb1f"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>74e3a7f81bb15814c851a64fad4bcb35</id>
+        <name>Revisa estat recomanacions</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 07:30:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3ce3e77c1bb15814c851a64fad4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 07:30:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="DELETE" query="flow=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT INa4d43f741b355814c851a64fad4bcb28,e0d4bf781b355814c851a64fad4bcbfb"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a4d43f741b355814c851a64fad4bcb28</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <ui_id>7955a3d6-2547-49b8-ac0f-e0e026247a00</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=a4d43f741b355814c851a64fad4bcb28"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4d43f741b355814c851a64fad4bcb28</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>2cd4bf781b355814c851a64fad4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>100000</value>
+        <variable display_value="">cd07ee090b30030085c083eb37673a39</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4d43f741b355814c851a64fad4bcb28</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>ecd4bf781b355814c851a64fad4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>x_udg_q_recomanacions</value>
+        <variable display_value="">3807ee090b30030085c083eb37673a08</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a4d43f741b355814c851a64fad4bcb28</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:50:03</sys_created_on>
+        <sys_id>f016f7f81b355814c851a64fad4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <value>number=REC0001005</value>
+        <variable display_value="">0507ee090b30030085c083eb37673a2e</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow>
+        <order>2.1</order>
+        <parent_ui_id>023b58d1-08f7-4296-a02f-794d42368b20</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e0d4bf781b355814c851a64fad4bcbfb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <ui_id>c10df908-9ee6-4d4e-8c75-de6be6dae1c2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=e0d4bf781b355814c851a64fad4bcbfb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0d4bf781b355814c851a64fad4bcbfb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>2cd4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>estat=fd-scripted</value>
+        <variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0d4bf781b355814c851a64fad4bcbfb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>ecd4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>x_udg_q_recomanacions</value>
+        <variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=e0d4bf781b355814c851a64fad4bcbfb"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>e0d4bf781b355814c851a64fad4bcbfb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>e4d4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{023b58d1-08f7-4296-a02f-794d42368b20.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>e0d4bf781b355814c851a64fad4bcbfb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>24d4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>e0d4bf781b355814c851a64fad4bcbfb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>a8d4bf781b355814c851a64fad4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=e0d4bf781b355814c851a64fad4bcbfb^sys_idNOT IN24d4bf781b355814c851a64fad4bcbfc"/>
+    <sys_hub_input_scripts action="DELETE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>e0d4bf781b355814c851a64fad4bcbfb</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"estat":{"scriptActive":true,"script":"var estatvell\u003d fd_data._2__for_each.item.estat;\nvar estatnou \u003d new Reco().getEstat(fd_data._2__for_each.item);\nif (estatvell !\u003d estatnou) new log(fd_data._2__for_each.item.number);\nreturn estatnou;\n\n/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/","savedValue":""}}</script>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>24d4bf781b355814c851a64fad4bcbfc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:49:25</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="DELETE" query="flow=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT INa0d4bf781b355814c851a64fad4bcbff"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">64d4bf781b355814c851a64fad4bcbfe</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a0d4bf781b355814c851a64fad4bcbff</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <ui_id>023b58d1-08f7-4296-a02f-794d42368b20</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=a0d4bf781b355814c851a64fad4bcbff"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a0d4bf781b355814c851a64fad4bcbff</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:44:35</sys_created_on>
+        <sys_id>a4d4ff781b355814c851a64fad4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:44:35</sys_updated_on>
+        <value>{{7955a3d6-2547-49b8-ac0f-e0e026247a00.Records}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_hub_flow_74e3a7f81bb15814c851a64fad4bcb35</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description>Revisa l'estat de totes les recomanacions</description><internal_name>revisa_estat_recomanacions</internal_name><label_cache>[{"name":"7955a3d6-2547-49b8-ac0f-e0e026247a00.Records","label":"1➛Recomanació Records","reference":"x_udg_q_recomanacions","reference_display":"Recomanació","type":"records","base_type":"records"},{"name":"7955a3d6-2547-49b8-ac0f-e0e026247a00.Table","label":"1➛Recomanació Taula","reference":"x_udg_q_recomanacions","reference_display":"Recomanació","type":"table_name","base_type":"table_name"},{"name":"7955a3d6-2547-49b8-ac0f-e0e026247a00.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer"},{"name":"023b58d1-08f7-4296-a02f-794d42368b20.item","label":"2➛Recomanació Record","reference":"x_udg_q_recomanacions","reference_display":"Recomanació","type":"reference","base_type":"reference"},{"name":"c10df908-9ee6-4d4e-8c75-de6be6dae1c2.record","label":"2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"c10df908-9ee6-4d4e-8c75-de6be6dae1c2.table_name","label":"2.1➛Taula","reference_display":"Taula","type":"table_name","base_type":"table_name"}]</label_cache><latest_snapshot/><master_snapshot/><name>Revisa estat recomanacions</name><outputs/><remote_trigger_id/><run_as>system</run_as><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 07:30:35</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>74e3a7f81bb15814c851a64fad4bcb35</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Revisa estat recomanacions</sys_name><sys_overrides/><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_hub_flow_74e3a7f81bb15814c851a64fad4bcb35</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><type>flow</type></sys_hub_flow><sys_variable_value action="delete_multiple" query="document_key=74e3a7f81bb15814c851a64fad4bcb35"/><sys_hub_flow_component action="delete_multiple" query="flow=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT INa0d4bf781b355814c851a64fad4bcbff,a4d43f741b355814c851a64fad4bcb28,e0d4bf781b355814c851a64fad4bcbfb"/><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">64d4bf781b355814c851a64fad4bcbfe</block><comment/><connected_to/><decision_table/><decision_table_inputs/><display_text/><flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>2</order><outputs_assigned/><outputs_to_assign/><parent_ui_id/><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a0d4bf781b355814c851a64fad4bcbff</sys_id><sys_mod_count>3</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><ui_id>023b58d1-08f7-4296-a02f-794d42368b20</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=a0d4bf781b355814c851a64fad4bcbff"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_flow_logic</document><document_key>a0d4bf781b355814c851a64fad4bcbff</document_key><order>20</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>a4d4ff781b355814c851a64fad4bcb01</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>{{7955a3d6-2547-49b8-ac0f-e0e026247a00.Records}}</value><variable display_value="">19df9109c32632002841b63b12d3aed6</variable></sys_variable_value><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a4d43f741b355814c851a64fad4bcb28</sys_id><sys_mod_count>6</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><ui_id>7955a3d6-2547-49b8-ac0f-e0e026247a00</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=a4d43f741b355814c851a64fad4bcb28"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>a4d43f741b355814c851a64fad4bcb28</document_key><order>4</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>2cd4bf781b355814c851a64fad4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>100000</value><variable display_value="">cd07ee090b30030085c083eb37673a39</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>a4d43f741b355814c851a64fad4bcb28</document_key><order>0</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>ecd4bf781b355814c851a64fad4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>x_udg_q_recomanacions</value><variable display_value="">3807ee090b30030085c083eb37673a08</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>a4d43f741b355814c851a64fad4bcb28</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:50:03</sys_created_on><sys_id>f016f7f81b355814c851a64fad4bcbc7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><value>number=REC0001005</value><variable display_value="">0507ee090b30030085c083eb37673a2e</variable></sys_variable_value><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow><order>2.1</order><parent_ui_id>023b58d1-08f7-4296-a02f-794d42368b20</parent_ui_id><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e0d4bf781b355814c851a64fad4bcbfb</sys_id><sys_mod_count>6</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><ui_id>c10df908-9ee6-4d4e-8c75-de6be6dae1c2</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=e0d4bf781b355814c851a64fad4bcbfb"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>e0d4bf781b355814c851a64fad4bcbfb</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>2cd4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>estat=fd-scripted</value><variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>e0d4bf781b355814c851a64fad4bcbfb</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>ecd4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>x_udg_q_recomanacions</value><variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=e0d4bf781b355814c851a64fad4bcbfb"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>record</field><id>e0d4bf781b355814c851a64fad4bcbfb</id><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>e4d4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table><value>{{023b58d1-08f7-4296-a02f-794d42368b20.item}}</value></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>table_name</field><id>e0d4bf781b355814c851a64fad4bcbfb</id><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>24d4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>values</field><id>e0d4bf781b355814c851a64fad4bcbfb</id><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>a8d4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table><value/></sys_element_mapping><sys_hub_trigger_instance action="delete_multiple" query="flow=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT IN64d43f741b355814c851a64fad4bcb23"/><sys_hub_trigger_instance action="INSERT_OR_UPDATE"><comment/><display_text/><flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow><name>Daily</name><remote_sys_id/><sys_class_name>sys_hub_trigger_instance</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:34</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>64d43f741b355814c851a64fad4bcb23</sys_id><sys_mod_count>3</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition><trigger_inputs/><trigger_outputs/><trigger_type>daily</trigger_type></sys_hub_trigger_instance><sys_variable_value action="delete_multiple" query="document_key=64d43f741b355814c851a64fad4bcb23"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_trigger_instance</document><document_key>64d43f741b355814c851a64fad4bcb23</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:34</sys_created_on><sys_id>28d43f741b355814c851a64fad4bcb24</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:34</sys_updated_on><value>1970-01-01 03:00:00</value><variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable></sys_variable_value><sys_flow_cat_variable_model action="delete_multiple" query="id=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT IN3ce3e77c1bb15814c851a64fad4bcb1f"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>74e3a7f81bb15814c851a64fad4bcb35</id><name>Revisa estat recomanacions</name><sys_class_name>sys_flow_cat_variable_model</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 07:30:35</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3ce3e77c1bb15814c851a64fad4bcb1f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 07:30:35</sys_updated_on></sys_flow_cat_variable_model><sys_hub_action_instance action="delete_multiple" query="flow=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT INa4d43f741b355814c851a64fad4bcb28,e0d4bf781b355814c851a64fad4bcbfb"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a4d43f741b355814c851a64fad4bcb28</sys_id><sys_mod_count>6</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><ui_id>7955a3d6-2547-49b8-ac0f-e0e026247a00</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=a4d43f741b355814c851a64fad4bcb28"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>a4d43f741b355814c851a64fad4bcb28</document_key><order>4</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>2cd4bf781b355814c851a64fad4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>100000</value><variable display_value="">cd07ee090b30030085c083eb37673a39</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>a4d43f741b355814c851a64fad4bcb28</document_key><order>0</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>ecd4bf781b355814c851a64fad4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>x_udg_q_recomanacions</value><variable display_value="">3807ee090b30030085c083eb37673a08</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>a4d43f741b355814c851a64fad4bcb28</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:50:03</sys_created_on><sys_id>f016f7f81b355814c851a64fad4bcbc7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><value>number=REC0001005</value><variable display_value="">0507ee090b30030085c083eb37673a2e</variable></sys_variable_value><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow><order>2.1</order><parent_ui_id>023b58d1-08f7-4296-a02f-794d42368b20</parent_ui_id><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e0d4bf781b355814c851a64fad4bcbfb</sys_id><sys_mod_count>6</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><ui_id>c10df908-9ee6-4d4e-8c75-de6be6dae1c2</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=e0d4bf781b355814c851a64fad4bcbfb"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>e0d4bf781b355814c851a64fad4bcbfb</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>2cd4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>estat=fd-scripted</value><variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_action_instance</document><document_key>e0d4bf781b355814c851a64fad4bcbfb</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>ecd4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>x_udg_q_recomanacions</value><variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=e0d4bf781b355814c851a64fad4bcbfb"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>record</field><id>e0d4bf781b355814c851a64fad4bcbfb</id><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>e4d4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table><value>{{023b58d1-08f7-4296-a02f-794d42368b20.item}}</value></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>table_name</field><id>e0d4bf781b355814c851a64fad4bcbfb</id><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>24d4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>values</field><id>e0d4bf781b355814c851a64fad4bcbfb</id><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>a8d4bf781b355814c851a64fad4bcbfd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table><value/></sys_element_mapping><sys_hub_input_scripts action="delete_multiple" query="instance=e0d4bf781b355814c851a64fad4bcbfb^sys_idNOT IN24d4bf781b355814c851a64fad4bcbfc"/><sys_hub_input_scripts action="INSERT_OR_UPDATE"><active>true</active><input_name>values</input_name><instance>e0d4bf781b355814c851a64fad4bcbfb</instance><referenced_table>sys_hub_action_instance</referenced_table><script>{"estat":{"scriptActive":true,"script":"var estatvell\u003d fd_data._2__for_each.item.estat;\nvar estatnou \u003d new Reco().getEstat(fd_data._2__for_each.item);\nif (estatvell !\u003d estatnou) new log(fd_data._2__for_each.item.number);\nreturn estatnou;\n\n/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/","savedValue":""}}</script><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>24d4bf781b355814c851a64fad4bcbfc</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:49:25</sys_updated_on></sys_hub_input_scripts><sys_hub_flow_logic action="delete_multiple" query="flow=74e3a7f81bb15814c851a64fad4bcb35^sys_idNOT INa0d4bf781b355814c851a64fad4bcbff"/><sys_hub_flow_logic action="INSERT_OR_UPDATE"><block display_value="">64d4bf781b355814c851a64fad4bcbfe</block><comment/><connected_to/><decision_table/><decision_table_inputs/><display_text/><flow display_value="Revisa estat recomanacions">74e3a7f81bb15814c851a64fad4bcb35</flow><inputs/><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>2</order><outputs_assigned/><outputs_to_assign/><parent_ui_id/><sys_class_name>sys_hub_flow_logic</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a0d4bf781b355814c851a64fad4bcbff</sys_id><sys_mod_count>3</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:50:03</sys_updated_on><ui_id>023b58d1-08f7-4296-a02f-794d42368b20</ui_id><workflow_inputs/><workflow_reference/></sys_hub_flow_logic><sys_variable_value action="delete_multiple" query="document_key=a0d4bf781b355814c851a64fad4bcbff"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_flow_logic</document><document_key>a0d4bf781b355814c851a64fad4bcbff</document_key><order>20</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-02 08:44:35</sys_created_on><sys_id>a4d4ff781b355814c851a64fad4bcb01</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-02 08:44:35</sys_updated_on><value>{{7955a3d6-2547-49b8-ac0f-e0e026247a00.Records}}</value><variable display_value="">19df9109c32632002841b63b12d3aed6</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-1553781435</payload_hash>
+        <record_name>Revisa estat recomanacions</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:50:03</sys_created_on>
+        <sys_id>bc16333c1b355814c851a64fad4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1730eb7f5f50000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:50:03</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>7416333cd7355814abb2e9a01778fbd5</update_guid>
+        <update_guid_history>7416333cd7355814abb2e9a01778fbd5:-1553781435,a7e5fbf85035581450a3747ce4d7a877:1152955167,b8d4ff78743558147aecc167b8aa981d:1338177077,f4e3e77c43b15814fbf0fe20d9ec5f22:-256925605,bce3e77c86b15814b3f359f875a0341e:1684755349</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:52:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>95c3557c74a644d09f0bee1e9f590840</sys_id>
+        <sys_metadata>74e3a7f81bb15814c851a64fad4bcb35</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Revisa estat recomanacions</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_74e3a7f81bb15814c851a64fad4bcb35</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_74e3a7f81bb15814c851a64fad4bcb35">bc16333c1b355814c851a64fad4bcbd5</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:52:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

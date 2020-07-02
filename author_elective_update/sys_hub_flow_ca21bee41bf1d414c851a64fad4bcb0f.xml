@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Quan hi ha una novetat nova cal notificar</description>
+        <internal_name>novetat__nova</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Novetat - Nova</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-01 09:10:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>ca21bee41bf1d414c851a64fad4bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Novetat - Nova</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_hub_flow_ca21bee41bf1d414c851a64fad4bcb0f</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-01 09:10:28</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="DELETE" query="document_key=ca21bee41bf1d414c851a64fad4bcb0f"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=ca21bee41bf1d414c851a64fad4bcb0f^sys_idNOT IN9621bee41bf1d414c851a64fad4bcb16"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>ca21bee41bf1d414c851a64fad4bcb0f</id>
+        <name>Novetat - Nova</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-01 09:10:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9621bee41bf1d414c851a64fad4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-01 09:10:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_hub_flow_ca21bee41bf1d414c851a64fad4bcb0f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description>Quan hi ha una novetat nova cal notificar</description><internal_name>novetat__nova</internal_name><label_cache>null</label_cache><latest_snapshot/><master_snapshot/><name>Novetat - Nova</name><outputs/><remote_trigger_id/><run_as>system</run_as><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-01 09:10:28</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>ca21bee41bf1d414c851a64fad4bcb0f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Novetat - Nova</sys_name><sys_overrides/><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_hub_flow_ca21bee41bf1d414c851a64fad4bcb0f</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-01 09:10:28</sys_updated_on><type>flow</type></sys_hub_flow><sys_variable_value action="delete_multiple" query="document_key=ca21bee41bf1d414c851a64fad4bcb0f"/><sys_flow_cat_variable_model action="delete_multiple" query="id=ca21bee41bf1d414c851a64fad4bcb0f^sys_idNOT IN9621bee41bf1d414c851a64fad4bcb16"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>ca21bee41bf1d414c851a64fad4bcb0f</id><name>Novetat - Nova</name><sys_class_name>sys_flow_cat_variable_model</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-07-01 09:10:29</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>9621bee41bf1d414c851a64fad4bcb16</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name/><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-01 09:10:29</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>-595789848</payload_hash>
+        <record_name>Novetat - Nova</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-01 09:10:29</sys_created_on>
+        <sys_id>9221f2681bf1d414c851a64fad4bcb93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17309a44c7c0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-01 09:10:29</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>5a21f26890f1d414130530629a441b92</update_guid>
+        <update_guid_history>5a21f26890f1d414130530629a441b92:-595789848,1a21bee47af1d4144e9a423b733ad515:-758769682</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 08:52:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>7f15d272544f464b85210da074ecc791</sys_id>
+        <sys_metadata>ca21bee41bf1d414c851a64fad4bcb0f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Novetat - Nova</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_ca21bee41bf1d414c851a64fad4bcb0f</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_ca21bee41bf1d414c851a64fad4bcb0f">9221f2681bf1d414c851a64fad4bcb93</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-02 08:52:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
