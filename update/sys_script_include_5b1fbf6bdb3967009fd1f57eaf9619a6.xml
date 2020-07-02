@@ -28,7 +28,7 @@ log.prototype = {
 	},
 
 	postU: function (text, level) {
-		this.post( gs.getUser().user_name + ' (' +gs.getUser().name+') '+text,level );
+		this.post( gs.getUser().name+ ' (' +gs.getUser().displayName+') '+text,level );
 	},
     type: 'log'
 };]]></script>
@@ -37,7 +37,7 @@ log.prototype = {
         <sys_created_on>2018-11-22 10:01:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5b1fbf6bdb3967009fd1f57eaf9619a6</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>log</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -45,6 +45,6 @@ log.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_5b1fbf6bdb3967009fd1f57eaf9619a6</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 08:27:55</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:14:27</sys_updated_on>
     </sys_script_include>
 </record_update>
