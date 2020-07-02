@@ -47,15 +47,17 @@ Usuari.prototype = {
         grP.addEncodedQuery("name=" + preferencia + "^user=" + this.usuari);
         grP.query();
         if (grP.next()) { //L'usuari té aquesta preferència
-            grP.value = nouValor;
-            new log("Actualizem preferencia " + preferencia + " de " + grP.user.name + " a " + nouValor);
-            grP.update();
+			if (grP.value != nouValor) {
+				grP.value = nouValor;
+				new log("Actualizem preferència " + preferencia + " de " + grP.user.name + " a " + nouValor);
+				grP.update();
+			}
         } else { //l'usuari no té la preferència
             grP.initialize();
             grP.user = this.usuari;
             grP.name = preferencia;
             grP.value = nouValor;
-            new log("Insertem preferencia " + preferencia + " de " + grP.user.name + " a " + nouValor);
+            new log("Insertem preferència " + preferencia + " de " + grP.user.name + " a " + nouValor);
             grP.insert(); //Inserta
         }
     },
@@ -122,7 +124,7 @@ Usuari.prototype = {
         gr1.addQuery('inherited', false);
         gr1.query();
         if (gr1.next()) {
-            new log("Esborrem Rol " + rol + " per " + gr1.user.name);
+            new log("Rol esborrat" + rol + " per " + gr1.user.name);
             gr1.deleteRecord();
         }
     },
@@ -282,7 +284,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>161</sys_mod_count>
+        <sys_mod_count>162</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -290,6 +292,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-07 14:10:48</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:49:29</sys_updated_on>
     </sys_script_include>
 </record_update>

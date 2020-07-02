@@ -13,7 +13,7 @@
         <ih_action>false</ih_action>
         <internal_name>actualitzar_totes_les_romanacions</internal_name>
         <label_cache>[]</label_cache>
-        <latest_snapshot>caeb3f381b755814c851a64fad4bcb69</latest_snapshot>
+        <latest_snapshot>1d9244451bb55814c851a64fad4bcb4e</latest_snapshot>
         <master_snapshot>c6eb3f381b755814c851a64fad4bcb8c</master_snapshot>
         <name>Actualitzar totes les romanacions</name>
         <outputs/>
@@ -24,7 +24,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>9698b3301b755814c851a64fad4bcb86</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Actualitzar totes les romanacions</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_9698b3301b755814c851a64fad4bcb86</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:15:32</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:42</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -56,7 +56,7 @@
         <sys_created_on>2020-07-02 09:06:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1bd9b7341b755814c851a64fad4bcbca</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -64,7 +64,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:12:03</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:39</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1bd9b7341b755814c851a64fad4bcbca"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -89,11 +89,11 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:06:37</sys_created_on>
         <sys_id>dbd9b7741b755814c851a64fad4bcb6b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:12:03</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:39</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-  
+	new log('Inici del procés automàtic d\'actualització de totes les recomanacions');  
 	var grR = new GlideRecord('x_udg_q_recomanacions');
 	grR.query();
   	while (grR.next()) {
@@ -104,9 +104,10 @@
             	grR.estat=nouestat;
 				if (grR.estat!=5) grR.tancament=""; //per si estava tancada però s'han obert objectius nous
 				grR.update();
-          		new log('Autualitzada pel procés nocturn ' + grR.number );
+          		new log(grR.number + ' autualitzada pel procés automàtic');
           }
   	}
+  	new log('Fi del procés automàtic d\'actualització de totes les recomanacions'); 
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -129,7 +130,7 @@
         <sys_created_on>2020-07-02 09:06:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1bd9b7341b755814c851a64fad4bcbca</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -137,7 +138,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:12:03</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:39</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1bd9b7341b755814c851a64fad4bcbca"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -162,11 +163,11 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:06:37</sys_created_on>
         <sys_id>dbd9b7741b755814c851a64fad4bcb6b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:12:03</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:39</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-  
+	new log('Inici del procés automàtic d\'actualització de totes les recomanacions');  
 	var grR = new GlideRecord('x_udg_q_recomanacions');
 	grR.query();
   	while (grR.next()) {
@@ -177,9 +178,10 @@
             	grR.estat=nouestat;
 				if (grR.estat!=5) grR.tancament=""; //per si estava tancada però s'han obert objectius nous
 				grR.update();
-          		new log('Autualitzada pel procés nocturn ' + grR.number );
+          		new log(grR.number + ' autualitzada pel procés automàtic');
           }
   	}
+  	new log('Fi del procés automàtic d\'actualització de totes les recomanacions'); 
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -188,16 +190,16 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Actualitzar totes les romanacions">9698b3301b755814c851a64fad4bcb86</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"42eb3f381b755814c851a64fad4bcbb3","name":"plan"}}</plan>
-        <snapshot>caeb3f381b755814c851a64fad4bcb69</snapshot>
+        <snapshot>1d9244451bb55814c851a64fad4bcb4e</snapshot>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:15:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>42eb3f381b755814c851a64fad4bcbb3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:15:32</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:43</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -253,7 +255,7 @@
         <sys_created_on>2020-07-02 09:15:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8eeb3f381b755814c851a64fad4bcb8d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -261,7 +263,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:15:32</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:42</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8eeb3f381b755814c851a64fad4bcb8d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -272,11 +274,11 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:15:32</sys_created_on>
         <sys_id>0aeb3f381b755814c851a64fad4bcb93</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:15:32</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:42</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-  
+	new log('Inici del procés automàtic d\'actualització de totes les recomanacions');  
 	var grR = new GlideRecord('x_udg_q_recomanacions');
 	grR.query();
   	while (grR.next()) {
@@ -287,9 +289,10 @@
             	grR.estat=nouestat;
 				if (grR.estat!=5) grR.tancament=""; //per si estava tancada però s'han obert objectius nous
 				grR.update();
-          		new log('Autualitzada pel procés nocturn ' + grR.number );
+          		new log(grR.number + ' autualitzada pel procés automàtic');
           }
   	}
+  	new log('Fi del procés automàtic d\'actualització de totes les recomanacions'); 
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -326,7 +329,7 @@
         <sys_created_on>2020-07-02 09:15:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8eeb3f381b755814c851a64fad4bcb8d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -334,7 +337,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:15:32</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:42</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8eeb3f381b755814c851a64fad4bcb8d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -345,11 +348,11 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:15:32</sys_created_on>
         <sys_id>0aeb3f381b755814c851a64fad4bcb93</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:15:32</sys_updated_on>
+        <sys_updated_on>2020-07-02 09:44:42</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-  
+	new log('Inici del procés automàtic d\'actualització de totes les recomanacions');  
 	var grR = new GlideRecord('x_udg_q_recomanacions');
 	grR.query();
   	while (grR.next()) {
@@ -360,9 +363,10 @@
             	grR.estat=nouestat;
 				if (grR.estat!=5) grR.tancament=""; //per si estava tancada però s'han obert objectius nous
 				grR.update();
-          		new log('Autualitzada pel procés nocturn ' + grR.number );
+          		new log(grR.number + ' autualitzada pel procés automàtic');
           }
   	}
+  	new log('Fi del procés automàtic d\'actualització de totes les recomanacions'); 
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
