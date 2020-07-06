@@ -2,6 +2,7 @@
     <sp_portal action="INSERT_OR_UPDATE">
         <css_variables/>
         <default>false</default>
+        <hide_portal_name>false</hide_portal_name>
         <homepage display_value="udgq_home">8eadcfbe3754eb401acdf01643990e39</homepage>
         <icon/>
         <kb_knowledge_base/>
