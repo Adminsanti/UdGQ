@@ -2,8 +2,8 @@
     <sys_documentation element="assignable" label="Assignable" language="en" table="x_udg_q_funcio">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>assignable</element>
-            <help/>
-            <hint>S'hi poden assignar Objectius i Accions del pla de millora</hint>
+            <help>Una funció assignable fa que se li poden assignar objectius i accions del pla de millora.</help>
+            <hint>Una funció assignable fa que se li poden assignar objectius i accions del pla de millora.</hint>
             <label>Assignable</label>
             <language>en</language>
             <name>x_udg_q_funcio</name>
@@ -13,7 +13,7 @@
             <sys_created_on>2020-05-06 09:04:32</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>9566e6aedbe45c10ccd95bd05b9619f5</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_name>Assignable</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
@@ -21,7 +21,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_funcio_assignable_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-06 09:18:12</sys_updated_on>
+            <sys_updated_on>2020-07-08 09:46:07</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

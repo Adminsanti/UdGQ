@@ -3,92 +3,92 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>memo</element>
-            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2a003e461b57c050c851a64fad4bcbc8</list_id>
+            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bd6a3e761bf91c10c851a64fad4bcb19</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 18:19:31</sys_created_on>
-            <sys_id>fe003e461b57c050c851a64fad4bcbc9</sys_id>
+            <sys_created_on>2020-07-08 09:37:11</sys_created_on>
+            <sys_id>f56a3e761bf91c10c851a64fad4bcb1a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 18:19:31</sys_updated_on>
+            <sys_updated_on>2020-07-08 09:37:11</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>nom</element>
-            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2a003e461b57c050c851a64fad4bcbc8</list_id>
+            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bd6a3e761bf91c10c851a64fad4bcb19</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 18:19:31</sys_created_on>
-            <sys_id>b6003e461b57c050c851a64fad4bcbca</sys_id>
+            <sys_created_on>2020-07-08 09:37:11</sys_created_on>
+            <sys_id>796a3e761bf91c10c851a64fad4bcb1a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 18:19:31</sys_updated_on>
+            <sys_updated_on>2020-07-08 09:37:11</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>tipus</element>
-            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2a003e461b57c050c851a64fad4bcbc8</list_id>
+            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bd6a3e761bf91c10c851a64fad4bcb19</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 18:19:31</sys_created_on>
-            <sys_id>3a003e461b57c050c851a64fad4bcbca</sys_id>
+            <sys_created_on>2020-07-08 09:37:11</sys_created_on>
+            <sys_id>f96a3e761bf91c10c851a64fad4bcb1a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 18:19:31</sys_updated_on>
+            <sys_updated_on>2020-07-08 09:37:11</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>activa</element>
-            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2a003e461b57c050c851a64fad4bcbc8</list_id>
+            <element>responsable</element>
+            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bd6a3e761bf91c10c851a64fad4bcb19</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 18:19:31</sys_created_on>
-            <sys_id>ba003e461b57c050c851a64fad4bcbca</sys_id>
+            <sys_created_on>2020-07-08 09:37:11</sys_created_on>
+            <sys_id>7d6a3e761bf91c10c851a64fad4bcb1a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 18:19:31</sys_updated_on>
+            <sys_updated_on>2020-07-08 09:37:11</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>responsable</element>
-            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2a003e461b57c050c851a64fad4bcbc8</list_id>
+            <element>sgq</element>
+            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bd6a3e761bf91c10c851a64fad4bcb19</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 18:19:31</sys_created_on>
-            <sys_id>3e003e461b57c050c851a64fad4bcbca</sys_id>
+            <sys_created_on>2020-07-08 09:37:11</sys_created_on>
+            <sys_id>fd6a3e761bf91c10c851a64fad4bcb1a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 18:19:31</sys_updated_on>
+            <sys_updated_on>2020-07-08 09:37:11</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sgq</element>
-            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2a003e461b57c050c851a64fad4bcbc8</list_id>
+            <element>sgq.tipus</element>
+            <list_id display_value="x_udg_q_titulacio" element="NULL" name="x_udg_q_titulacio" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">bd6a3e761bf91c10c851a64fad4bcb19</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 18:19:31</sys_created_on>
-            <sys_id>be003e461b57c050c851a64fad4bcbca</sys_id>
+            <sys_created_on>2020-07-08 09:37:11</sys_created_on>
+            <sys_id>716a3e761bf91c10c851a64fad4bcb1b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 18:19:31</sys_updated_on>
+            <sys_updated_on>2020-07-08 09:37:11</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -102,11 +102,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 18:19:31</sys_created_on>
+            <sys_created_on>2020-07-08 09:37:11</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2a003e461b57c050c851a64fad4bcbc8</sys_id>
+            <sys_id>bd6a3e761bf91c10c851a64fad4bcb19</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_titulacio</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -115,7 +115,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_list_x_udg_q_titulacio_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 18:19:31</sys_updated_on>
+            <sys_updated_on>2020-07-08 09:37:11</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
