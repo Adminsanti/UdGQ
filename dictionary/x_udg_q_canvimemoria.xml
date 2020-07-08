@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Canvi Memòria" max_length="40" name="x_udg_q_canvimemoria" type="collection">
+    <element audit="true" extends="task" label="Canvi Titulació" max_length="40" name="x_udg_q_canvimemoria" type="collection">
         <element label="Acció" max_length="32" name="accio" read_only="true" reference="x_udg_q_acciomillora" type="reference"/>
         <element label="Memòria" max_length="32" name="memoria" reference="x_udg_q_memoria" type="reference"/>
         <element label="Objectiu" mandatory="true" max_length="32" name="objectiu" reference="x_udg_q_objectiumillora" reference_qual="state=2^EQ" reference_qual_condition="state=2^EQ" type="reference"/>
