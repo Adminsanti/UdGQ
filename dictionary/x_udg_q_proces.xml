@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="no_attachment=false,use_document_viewer=true" audit="true" label="Procés" max_length="40" name="x_udg_q_proces" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" read_only="true" type="boolean"/>
+        <element choice="1" label="Dimensió SGIQ AQU" max_length="32" name="dimensiosgiqaqu" reference="x_udg_q_dimesiosgiqaqu" type="reference">
+            <choice/>
+        </element>
         <element label="Document" max_length="8000" name="document" read_only="true" type="html"/>
         <element active="false" label="Fitxer Document" max_length="40" name="fitxerdocument" read_only="true" type="file_attachment"/>
         <element active="false" label="Fluxograma" max_length="8000" name="flux" read_only="true" type="html"/>
@@ -33,15 +36,18 @@
             <element name="pare"/>
         </index>
         <index name="index2">
-            <element name="responsable"/>
+            <element name="dimensiosgiqaqu"/>
         </index>
         <index name="index3">
-            <element name="propietari"/>
+            <element name="responsable"/>
         </index>
         <index name="index4">
-            <element name="sincronitzat_amb"/>
+            <element name="propietari"/>
         </index>
         <index name="index5">
+            <element name="sincronitzat_amb"/>
+        </index>
+        <index name="index6">
             <element name="sgq"/>
         </index>
     </element>
