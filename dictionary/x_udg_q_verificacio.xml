@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Verificació" max_length="40" name="x_udg_q_verificacio" type="collection"/>
+    <element audit="true" extends="task" label="Verificació" max_length="40" name="x_udg_q_verificacio" type="collection">
+        <element default="javascript: new GlideDateTime().getYearLocalTime();" label="Any Implantació" mandatory="true" max_length="40" name="anyimplantacio" type="integer"/>
+        <element choice="1" label="Titulació" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference">
+            <choice/>
+        </element>
+    </element>
 </database>
