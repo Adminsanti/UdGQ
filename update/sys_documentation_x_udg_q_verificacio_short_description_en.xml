@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="short_description" label="Nom titulació" language="en" table="x_udg_q_verificacio">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <help/>
+            <hint/>
+            <label>Nom titulació</label>
+            <language>en</language>
+            <name>x_udg_q_verificacio</name>
+            <plural>Noms titulacions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-10 09:02:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>808545a31b3d10505fab4002cd4bcb2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Nom titulació</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_q_verificacio_short_description_en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-10 09:02:24</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

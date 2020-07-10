@@ -2,59 +2,59 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_titulacio" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Titulació - Default view" name="x_udg_q_titulacio" related_list="NULL" sys_domain="global" view="Default view">fbf5d89b1b7d9c10c851a64fad4bcb4e</list_id>
+            <list_id display_value="Titulació - Default view" name="x_udg_q_titulacio" related_list="NULL" sys_domain="global" view="Default view">0d53e4931bfd9c10c851a64fad4bcbf0</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>x_udg_q_fita.titulacio</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-09 10:55:50</sys_created_on>
-            <sys_id>fff5d89b1b7d9c10c851a64fad4bcb4f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-09 10:55:50</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Titulació - Default view" name="x_udg_q_titulacio" related_list="NULL" sys_domain="global" view="Default view">fbf5d89b1b7d9c10c851a64fad4bcb4e</list_id>
-            <order_by/>
-            <position>1</position>
-            <related_list>x_udg_q_objectiumillora.implica_titulacions</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-09 10:55:50</sys_created_on>
-            <sys_id>f7f5d89b1b7d9c10c851a64fad4bcb50</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-09 10:55:50</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Titulació - Default view" name="x_udg_q_titulacio" related_list="NULL" sys_domain="global" view="Default view">fbf5d89b1b7d9c10c851a64fad4bcb4e</list_id>
-            <order_by/>
-            <position>2</position>
-            <related_list>x_udg_q_memoria.titulacio</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-09 10:55:50</sys_created_on>
-            <sys_id>fbf5d89b1b7d9c10c851a64fad4bcb50</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-09 10:55:50</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Titulació - Default view" name="x_udg_q_titulacio" related_list="NULL" sys_domain="global" view="Default view">fbf5d89b1b7d9c10c851a64fad4bcb4e</list_id>
-            <order_by/>
-            <position>3</position>
             <related_list>x_udg_q_verificacio.titulacio</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-09 10:55:50</sys_created_on>
-            <sys_id>fff5d89b1b7d9c10c851a64fad4bcb50</sys_id>
+            <sys_created_on>2020-07-09 11:54:06</sys_created_on>
+            <sys_id>1553e4931bfd9c10c851a64fad4bcbf2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-09 10:55:50</sys_updated_on>
+            <sys_updated_on>2020-07-09 11:54:06</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Titulació - Default view" name="x_udg_q_titulacio" related_list="NULL" sys_domain="global" view="Default view">0d53e4931bfd9c10c851a64fad4bcbf0</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_udg_q_memoria.titulacio</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-09 11:54:06</sys_created_on>
+            <sys_id>5d53e4931bfd9c10c851a64fad4bcbf2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-09 11:54:06</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Titulació - Default view" name="x_udg_q_titulacio" related_list="NULL" sys_domain="global" view="Default view">0d53e4931bfd9c10c851a64fad4bcbf0</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_udg_q_objectiumillora.implica_titulacions</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-09 11:54:06</sys_created_on>
+            <sys_id>5153e4931bfd9c10c851a64fad4bcbf3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-09 11:54:06</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Titulació - Default view" name="x_udg_q_titulacio" related_list="NULL" sys_domain="global" view="Default view">0d53e4931bfd9c10c851a64fad4bcbf0</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>x_udg_q_fita.titulacio</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-09 11:54:06</sys_created_on>
+            <sys_id>5553e4931bfd9c10c851a64fad4bcbf3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-09 11:54:06</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Titulació - Default view</calculated_name>
@@ -65,11 +65,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-09 10:55:50</sys_created_on>
+            <sys_created_on>2020-07-09 11:54:06</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>fbf5d89b1b7d9c10c851a64fad4bcb4e</sys_id>
+            <sys_id>0d53e4931bfd9c10c851a64fad4bcbf0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Titulació - Default view</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -78,7 +78,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_related_x_udg_q_titulacio_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-09 10:55:50</sys_updated_on>
+            <sys_updated_on>2020-07-09 11:54:06</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

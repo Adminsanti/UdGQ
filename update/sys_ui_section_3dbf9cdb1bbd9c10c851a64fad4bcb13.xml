@@ -1,30 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Dates" section_id="3dbf9cdb1bbd9c10c851a64fad4bcb13" sys_domain="global" table="x_udg_q_verificacio" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
+            <element>cg</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-09 11:39:42</sys_created_on>
-            <sys_id>c600a41f1bbd9c10c851a64fad4bcbb0</sys_id>
+            <sys_created_on>2020-07-10 07:08:03</sys_created_on>
+            <sys_id>fc7b60e71b7910505fab4002cd4bcbcc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-09 11:39:42</sys_updated_on>
+            <sys_updated_on>2020-07-10 07:08:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cs</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-10 07:08:03</sys_created_on>
+            <sys_id>707b60e71b7910505fab4002cd4bcbcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-10 07:08:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-10 07:08:03</sys_created_on>
+            <sys_id>f07b60e71b7910505fab4002cd4bcbcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-10 07:08:03</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>anyimplantacio</element>
-            <position>1</position>
+            <element>sessiocg</element>
+            <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-09 11:39:42</sys_created_on>
-            <sys_id>4a00a41f1bbd9c10c851a64fad4bcbb0</sys_id>
+            <sys_created_on>2020-07-10 07:08:03</sys_created_on>
+            <sys_id>747b60e71b7910505fab4002cd4bcbcd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-09 11:39:42</sys_updated_on>
+            <sys_updated_on>2020-07-10 07:08:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sessiocs</element>
+            <position>4</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-10 07:08:03</sys_created_on>
+            <sys_id>f47b60e71b7910505fab4002cd4bcbcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-10 07:08:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

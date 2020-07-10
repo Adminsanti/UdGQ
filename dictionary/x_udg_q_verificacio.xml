@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Verificació" max_length="40" name="x_udg_q_verificacio" type="collection">
-        <element default="javascript: new GlideDateTime().getYearLocalTime();" label="Any Implantació" mandatory="true" max_length="40" name="anyimplantacio" type="integer"/>
+    <element audit="true" extends="task" label="Verificació" max_length="40" name="x_udg_q_verificacio" sizeclass="1" type="collection">
+        <element default="javascript: new GlideDateTime().getYearLocalTime();" label="Any Implantació" mandatory="true" max_length="4" name="anyimplantacio" type="integer"/>
+        <element label="Aprovació CG" max_length="40" name="cg" type="glide_date"/>
+        <element label="Aprovació CS" max_length="40" name="cs" type="glide_date"/>
+        <element label="Sessió CG" max_length="2" name="sessiocg" type="string"/>
+        <element label="Sessió CS" max_length="2" name="sessiocs" type="string"/>
         <element choice="1" label="Titulació" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference">
             <choice/>
         </element>
