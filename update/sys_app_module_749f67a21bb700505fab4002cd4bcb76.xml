@@ -28,8 +28,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>749f67a21bb700505fab4002cd4bcb76</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Tipus canvis titulacions</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Tipus Canvis Titulacions Vells</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -37,9 +37,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_749f67a21bb700505fab4002cd4bcb76</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-08 10:24:59</sys_updated_on>
+        <sys_updated_on>2020-07-10 10:52:16</sys_updated_on>
         <timeline_page/>
-        <title>Tipus canvis titulacions</title>
+        <title>Tipus Canvis Titulacions Vells</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

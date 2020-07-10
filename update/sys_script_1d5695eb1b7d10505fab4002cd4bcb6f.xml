@@ -15,9 +15,10 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_udg_q_subestandard">titolVALCHANGES^ORnumVALCHANGES^ORestandardVALCHANGES^EQ<item endquery="false" field="titol" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        <filter_condition table="x_udg_q_subestandard">titolVALCHANGES^ORnumVALCHANGES^ORestandardVALCHANGES^ORnomISEMPTY^EQ<item endquery="false" field="titol" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="false" field="num" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="false" field="estandard" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="nom" goto="false" newquery="false" operator="ISEMPTY" or="true" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -43,7 +44,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1d5695eb1b7d10505fab4002cd4bcb6f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Subestandardvsma set nom</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -52,7 +53,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_1d5695eb1b7d10505fab4002cd4bcb6f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-10 10:19:03</sys_updated_on>
+        <sys_updated_on>2020-07-10 11:06:38</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

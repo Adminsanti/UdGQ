@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Tipus Canvis Titulacions" max_length="40" name="x_udg_q_tipuscanvimemoria" type="collection">
+    <element label="Tipus Canvis Titulacions Vell" max_length="40" name="x_udg_q_tipuscanvimemoria" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element attributes="no_truncate=true" label="Descripció" max_length="240" name="descripcio" type="string"/>
         <element label="Explicació" max_length="4000" name="explicacio" type="html"/>

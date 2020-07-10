@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Tipus canvi titulacions" max_length="40" name="x_udg_q_tipuscanvitit" type="collection">
+        <element label="Actiu" max_length="40" name="actiu" type="boolean"/>
+        <element display="true" label="Descirpció" max_length="240" name="descirpcio" type="string"/>
+        <element label="Explicació" max_length="4000" name="explicacio" type="html"/>
+        <element label="Màscara" max_length="240" name="mascara" type="string"/>
+        <element label="Nom Param 1" max_length="140" name="nomparam1" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Número" max_length="40" name="number" type="string"/>
+    </element>
+</database>

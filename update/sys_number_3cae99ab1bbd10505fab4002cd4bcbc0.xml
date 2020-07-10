@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_udg_q_tipuscanvitit">x_udg_q_tipuscanvitit</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>TCA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-10 10:51:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3cae99ab1bbd10505fab4002cd4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TCA</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_number_3cae99ab1bbd10505fab4002cd4bcbc0</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-10 10:51:42</sys_updated_on>
+    </sys_number>
+</record_update>
