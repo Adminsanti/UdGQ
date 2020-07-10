@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Dimesió SGIQ AQU" max_length="40" name="x_udg_q_dimesiosgiqaqu" type="collection">
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return current.num+'. '+current.titol;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" display="true" label="Nom" max_length="240" name="nom" read_only="true" type="string" unique="true" virtual="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" display="true" label="Nom" max_length="240" name="nom" read_only="true" type="string" unique="true"/>
         <element label="Num" mandatory="true" max_length="2" name="num" type="string" unique="true"/>
         <element label="Títol" mandatory="true" max_length="230" name="titol" type="string" unique="true"/>
         <index name="index">
