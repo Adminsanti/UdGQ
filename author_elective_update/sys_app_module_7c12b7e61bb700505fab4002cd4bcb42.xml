@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Titulacions">2e185e911b674810c851a64fad4bcbaa</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_udg_q_canvimemoria">stateNOT IN2^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Canvis Memòries</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_udg_q_canvimemoria</name>
+        <order>180</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_udg_q.ManagerModificacio,x_udg_q.ManagerUniversitat,x_udg_q.Admin,x_udg_q.Manager</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-30 08:56:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7c12b7e61bb700505fab4002cd4bcb42</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Canvis titulacions Vells</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_app_module_7c12b7e61bb700505fab4002cd4bcb42</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-13 10:32:21</sys_updated_on>
+        <timeline_page/>
+        <title>Canvis titulacions Vells</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_app_module_7c12b7e61bb700505fab4002cd4bcb42</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Titulacions">2e185e911b674810c851a64fad4bcbaa</application><assessment/><content_page/><device_type/><filter table="x_udg_q_canvimemoria">stateNOT IN2^EQ<item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="2"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Canvis Memòries</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_udg_q_canvimemoria</name><order>180</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_udg_q.ManagerModificacio,x_udg_q.ManagerUniversitat,x_udg_q.Admin,x_udg_q.Manager</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-30 08:56:55</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7c12b7e61bb700505fab4002cd4bcb42</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Canvis titulacions Vells</sys_name><sys_overrides/><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_app_module_7c12b7e61bb700505fab4002cd4bcb42</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-07-13 10:32:21</sys_updated_on><timeline_page/><title>Canvis titulacions Vells</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1986929753</payload_hash>
+        <record_name>Canvis titulacions Vells</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-13 10:32:21</sys_created_on>
+        <sys_id>7af6b4641b82d4505fab4002cd4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17347bb91dc0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-13 10:32:21</sys_updated_on>
+        <type>Module</type>
+        <update_guid>72f6b4644a82d45079b5360334a722d3</update_guid>
+        <update_guid_history>72f6b4644a82d45079b5360334a722d3:1986929753,53218bb26e3d1c1077f44c76716a6755:-124166439,d7218bb2263d1c100520e3a3d5bcb353:63667943</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 13/07/2020 17:53:57">e190c2e01b4ad4505fab4002cd4bcb78</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-13 15:53:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>10fe83bb9f2c43f1928a01beb3ac2c81</sys_id>
+        <sys_metadata>7c12b7e61bb700505fab4002cd4bcb42</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Canvis titulacions Vells</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_app_module_7c12b7e61bb700505fab4002cd4bcb42</sys_update_name>
+        <sys_update_version display_value="sys_app_module_7c12b7e61bb700505fab4002cd4bcb42">7af6b4641b82d4505fab4002cd4bcbd3</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-13 15:53:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
