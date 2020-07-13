@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Verificació" max_length="40" name="x_udg_q_verificacio" sizeclass="1" type="collection">
+    <element audit="true" extends="task" label="Verificació" max_length="40" name="x_udg_q_verificacio" sizeclass="2" type="collection">
         <element default="javascript: new GlideDateTime().getYearLocalTime();" label="Any Implantació" mandatory="true" max_length="4" name="anyimplantacio" type="integer"/>
         <element label="Aprovació CG" max_length="40" name="cg" type="glide_date"/>
         <element label="Aprovació CS" max_length="40" name="cs" type="glide_date"/>

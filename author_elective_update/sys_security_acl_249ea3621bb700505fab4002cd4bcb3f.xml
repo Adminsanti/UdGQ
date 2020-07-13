@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_udg_q_tipuscanvimemoria</description>
+        <name>x_udg_q_tipuscanvimemoria</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-30 08:41:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>249ea3621bb700505fab4002cd4bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_tipuscanvimemoria</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_security_acl_249ea3621bb700505fab4002cd4bcb3f</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-03-30 08:41:03</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_security_acl_249ea3621bb700505fab4002cd4bcb3f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_udg_q_tipuscanvimemoria</description><name>x_udg_q_tipuscanvimemoria</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-03-30 08:41:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>249ea3621bb700505fab4002cd4bcb3f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_udg_q_tipuscanvimemoria</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_security_acl_249ea3621bb700505fab4002cd4bcb3f</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-03-30 08:41:03</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-186404542</payload_hash>
+        <record_name>x_udg_q_tipuscanvimemoria</record_name>
+        <reverted_from/>
+        <source>3282e4011b3110105fab4002cd4bcb6b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2020-07-02 12:04:20</sys_created_on>
+        <sys_id>b9b1f06c1b42d4505fab4002cd4bcbb9</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1730f69d1a00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Access Control</type>
+        <update_guid>79b1f06cba42d4501250d947eb9254b9</update_guid>
+        <update_guid_history>79b1f06cba42d4501250d947eb9254b9:-186404542</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-13 10:09:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>13024dbc375b42f8952514b99df34b24</sys_id>
+        <sys_metadata>249ea3621bb700505fab4002cd4bcb3f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_tipuscanvimemoria</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="">72ac70cbdbb304901f06adc3ca961979</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_security_acl_249ea3621bb700505fab4002cd4bcb3f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_249ea3621bb700505fab4002cd4bcb3f">b9b1f06c1b42d4505fab4002cd4bcbb9</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-13 10:09:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

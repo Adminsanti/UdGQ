@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>tipus</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CAN canvia tipus</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    /*if (isLoading || newValue === '') {
+    	return;
+    }    */
+
+    if (g_form.getValue('state') == -5) {
+        g_form.setVisible('assigned_to', false);
+        g_form.setVisible('memoria', false);
+        g_form.setVisible('accio', false);
+        g_form.setReadOnly('objectiu.short_description', true);
+    }
+
+    if (g_form.getValue('tipus') != "") {
+        var t = g_form.getReference('tipus', setNom);
+    } 
+    else {
+        g_form.setDisplay('param1', false);
+    }
+}
+
+function setNom(tipuscanvi) {
+
+    if (tipuscanvi.mascara && g_form.getValue('state') == -5) { //Només esborranys
+        var titulacio = '';
+        var param1 = '';
+        if (g_form.getDisplayBox('titulacio').value) titulacio = g_form.getDisplayBox('titulacio').value;
+        if (g_form.getValue('param1')) param1 = g_form.getValue('param1');
+        g_form.setValue('short_description',
+            tipuscanvi.mascara.replace("$titulació", titulacio).replace("$param1", param1));
+        if (tipuscanvi.explicacio && tipuscanvi.explicacio !== "") {
+            g_form.addInfoMessage("<b>INSTRUCCIONS ESPECÍFIQUES PER \"" + tipuscanvi.descripcio + "\"</b><br>" + tipuscanvi.explicacio);
+        }
+    }
+
+    if (tipuscanvi.nomparam1 == '') {
+        g_form.setDisplay('param1', false);
+        g_form.setValue('param1', '');
+    } 
+    else {
+        g_form.setLabelOf('param1', tipuscanvi.nomparam1);
+        g_form.setDisplay('param1', true);
+        g_form.setMandatory('param1', true);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-03-30 16:25:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82f8dd761b3340505fab4002cd4bcbf2</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>CAN canvia tipus</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_client_82f8dd761b3340505fab4002cd4bcbf2</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-04-23 16:55:16</sys_updated_on>
+        <table>x_udg_q_canvimemoria</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_script_client_82f8dd761b3340505fab4002cd4bcbf2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;tipus&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;CAN canvia tipus&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    /*if (isLoading || newValue === '') {
+    	return;
+    }    */
+
+    if (g_form.getValue('state') == -5) {
+        g_form.setVisible('assigned_to', false);
+        g_form.setVisible('memoria', false);
+        g_form.setVisible('accio', false);
+        g_form.setReadOnly('objectiu.short_description', true);
+    }
+
+    if (g_form.getValue('tipus') != "") {
+        var t = g_form.getReference('tipus', setNom);
+    } 
+    else {
+        g_form.setDisplay('param1', false);
+    }
+}
+
+function setNom(tipuscanvi) {
+
+    if (tipuscanvi.mascara &amp;&amp; g_form.getValue('state') == -5) { //Només esborranys
+        var titulacio = '';
+        var param1 = '';
+        if (g_form.getDisplayBox('titulacio').value) titulacio = g_form.getDisplayBox('titulacio').value;
+        if (g_form.getValue('param1')) param1 = g_form.getValue('param1');
+        g_form.setValue('short_description',
+            tipuscanvi.mascara.replace("$titulació", titulacio).replace("$param1", param1));
+        if (tipuscanvi.explicacio &amp;&amp; tipuscanvi.explicacio !== "") {
+            g_form.addInfoMessage("&lt;b&gt;INSTRUCCIONS ESPECÍFIQUES PER \"" + tipuscanvi.descripcio + "\"&lt;/b&gt;&lt;br&gt;" + tipuscanvi.explicacio);
+        }
+    }
+
+    if (tipuscanvi.nomparam1 == '') {
+        g_form.setDisplay('param1', false);
+        g_form.setValue('param1', '');
+    } 
+    else {
+        g_form.setLabelOf('param1', tipuscanvi.nomparam1);
+        g_form.setDisplay('param1', true);
+        g_form.setMandatory('param1', true);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;adminsanti&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-30 16:25:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;82f8dd761b3340505fab4002cd4bcbf2&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;CAN canvia tipus&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="UdG Qualitat" source="x_udg_q"&gt;29219b8737df5f001acdf01643990e33&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="UdG Qualitat"&gt;29219b8737df5f001acdf01643990e33&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_82f8dd761b3340505fab4002cd4bcbf2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;adminsanti&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-04-23 16:55:16&lt;/sys_updated_on&gt;&lt;table&gt;x_udg_q_canvimemoria&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>665944188</payload_hash>
+        <record_name>CAN canvia tipus</record_name>
+        <reverted_from/>
+        <source>3282e4011b3110105fab4002cd4bcb6b</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2020-07-02 12:04:20</sys_created_on>
+        <sys_id>18c1f46c1b42d4505fab4002cd4bcba9</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1730f69d1a00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Client Script</type>
+        <update_guid>d4c1f46c6742d45045433b9431ff96a9</update_guid>
+        <update_guid_history>d4c1f46c6742d45045433b9431ff96a9:665944188</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-13 10:09:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>6fc53c700cc548baa075dbcd70584424</sys_id>
+        <sys_metadata>82f8dd761b3340505fab4002cd4bcbf2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAN canvia tipus</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="Canvi Titulació Vell">12ac70cbdbb304901f06adc3ca961929</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_script_client_82f8dd761b3340505fab4002cd4bcbf2</sys_update_name>
+        <sys_update_version display_value="sys_script_client_82f8dd761b3340505fab4002cd4bcbf2">18c1f46c1b42d4505fab4002cd4bcba9</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-13 10:09:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

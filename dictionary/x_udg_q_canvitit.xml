@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Canvi Titulació" max_length="40" name="x_udg_q_canvitit" type="collection">
+        <element label="Acció" max_length="32" name="accio" reference="x_udg_renovi_accio" type="reference"/>
+        <element label="Objectiu" max_length="32" name="objectiu" reference="x_udg_q_objectiumillora" type="reference"/>
+        <element label="Param1" max_length="200" name="param1" type="string"/>
+        <element label="Titulació" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference"/>
+        <element label="Tramitat" max_length="40" name="tramitat" type="glide_date_time"/>
+        <element label="TramitatPer" max_length="32" name="tramitatper" reference="sys_user" type="reference"/>
+    </element>
+</database>
