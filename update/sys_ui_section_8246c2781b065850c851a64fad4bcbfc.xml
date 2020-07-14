@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Detalls" section_id="8246c2781b065850c851a64fad4bcbfc" sys_domain="global" table="x_udg_q_verificacio" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nivell</element>
+            <position>0</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:01:34</sys_created_on>
+            <sys_id>68470af81b065850c851a64fad4bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Detalls" display_value="Detalls" name="x_udg_q_verificacio" sys_domain="global" view="Default view">8246c2781b065850c851a64fad4bcbfc</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:01:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>credits</element>
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:01:34</sys_created_on>
+            <sys_id>e8470af81b065850c851a64fad4bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Detalls" display_value="Detalls" name="x_udg_q_verificacio" sys_domain="global" view="Default view">8246c2781b065850c851a64fad4bcbfc</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:01:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>aprovaciocd</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:01:34</sys_created_on>
+            <sys_id>6c470af81b065850c851a64fad4bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Detalls" display_value="Detalls" name="x_udg_q_verificacio" sys_domain="global" view="Default view">8246c2781b065850c851a64fad4bcbfc</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:01:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>viaaprovaciocd</element>
+            <position>3</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:01:34</sys_created_on>
+            <sys_id>ec470af81b065850c851a64fad4bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Detalls" display_value="Detalls" name="x_udg_q_verificacio" sys_domain="global" view="Default view">8246c2781b065850c851a64fad4bcbfc</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:01:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:01:34</sys_created_on>
+            <sys_id>60470af81b065850c851a64fad4bcbc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Detalls" display_value="Detalls" name="x_udg_q_verificacio" sys_domain="global" view="Default view">8246c2781b065850c851a64fad4bcbfc</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:01:34</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fitxa</element>
+            <position>5</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:01:34</sys_created_on>
+            <sys_id>e0470af81b065850c851a64fad4bcbc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Detalls" display_value="Detalls" name="x_udg_q_verificacio" sys_domain="global" view="Default view">8246c2781b065850c851a64fad4bcbfc</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:01:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pimpeufase1</element>
+            <position>6</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:01:34</sys_created_on>
+            <sys_id>64470af81b065850c851a64fad4bcbc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Detalls" display_value="Detalls" name="x_udg_q_verificacio" sys_domain="global" view="Default view">8246c2781b065850c851a64fad4bcbfc</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:01:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pimpeufase2</element>
+            <position>7</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:01:34</sys_created_on>
+            <sys_id>e4470af81b065850c851a64fad4bcbc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Detalls" display_value="Detalls" name="x_udg_q_verificacio" sys_domain="global" view="Default view">8246c2781b065850c851a64fad4bcbfc</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:01:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Detalls</caption>
+            <header>false</header>
+            <name>x_udg_q_verificacio</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 10:57:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8246c2781b065850c851a64fad4bcbfc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Detalls</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_ui_section_8246c2781b065850c851a64fad4bcbfc</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 10:57:18</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
