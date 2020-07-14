@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="aprovaciocd" label="Aprovació CDir" language="en" table="x_udg_q_verificacio">
+    <sys_documentation element="elevacioep" label="Elevació a EP" language="en" table="x_udg_q_verificacio">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>aprovaciocd</element>
+            <element>elevacioep</element>
             <help/>
             <hint/>
-            <label>Aprovació CDir</label>
+            <label>Elevació a EP</label>
             <language>en</language>
             <name>x_udg_q_verificacio</name>
-            <plural>Aprovació CDirs</plural>
+            <plural>Elevació a EPs</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 10:51:01</sys_created_on>
+            <sys_created_on>2020-07-14 11:38:42</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>b1d44ab41b065850c851a64fad4bcb54</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_name>Aprovació CDir</sys_name>
+            <sys_id>18cf823c1b465850c851a64fad4bcb5a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Elevació a EP</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_documentation_x_udg_q_verificacio_aprovaciocd_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_udg_q_verificacio_elevacioep_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:37:10</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:39:04</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

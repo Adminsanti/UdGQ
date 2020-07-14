@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Aprovació Interna" section_id="3dbf9cdb1bbd9c10c851a64fad4bcb13" sys_domain="global" table="x_udg_q_verificacio" version="3" view="">
-        <sys_ui_annotation action="INSERT_OR_UPDATE">
-            <is_plain_text>false</is_plain_text>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>b548c27c1b065850c851a64fad4bcb03</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
-            <text/>
-            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
-        </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>informaciocpe</element>
+            <element>aprovaciocentre</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>f548c27c1b065850c851a64fad4bcb08</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>3cb2da701b865850c851a64fad4bcb4d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -29,13 +18,13 @@
             <element>iniciep</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>7948c27c1b065850c851a64fad4bcb08</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>bcb2da701b865850c851a64fad4bcb4d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -43,13 +32,13 @@
             <element>aprovaciocpe</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>f948c27c1b065850c851a64fad4bcb08</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>30b2da701b865850c851a64fad4bcb4e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -57,13 +46,13 @@
             <element>cg</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>7d48c27c1b065850c851a64fad4bcb08</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>b0b2da701b865850c851a64fad4bcb4e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -71,97 +60,125 @@
             <element>cs</element>
             <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>fd48c27c1b065850c851a64fad4bcb08</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>34b2da701b865850c851a64fad4bcb4e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>memaprovadacs</element>
+            <position>5</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>b4b2da701b865850c851a64fad4bcb4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>7148c27c1b065850c851a64fad4bcb09</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>38b2da701b865850c851a64fad4bcb4e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>aprovaciocentre</element>
-            <position>6</position>
+            <element>elevacioep</element>
+            <position>7</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>f148c27c1b065850c851a64fad4bcb09</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>b8b2da701b865850c851a64fad4bcb4e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>fiep</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>7548c27c1b065850c851a64fad4bcb09</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>3cb2da701b865850c851a64fad4bcb4e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>b548c27c1b065850c851a64fad4bcb03</element>
-            <position>8</position>
+            <element>pimpeufase2</element>
+            <position>9</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>f548c27c1b065850c851a64fad4bcb09</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>bcb2da701b865850c851a64fad4bcb4e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
-            <type>annotation</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sessiocg</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>7948c27c1b065850c851a64fad4bcb09</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>30b2da701b865850c851a64fad4bcb4f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sessiocs</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-07-14 11:06:01</sys_created_on>
-            <sys_id>f948c27c1b065850c851a64fad4bcb09</sys_id>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>b0b2da701b865850c851a64fad4bcb4f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-14 11:06:01</sys_updated_on>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>conveni</element>
+            <position>12</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-14 11:51:33</sys_created_on>
+            <sys_id>34b2da701b865850c851a64fad4bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Aprovació Interna" display_value="Aprovació Interna" name="x_udg_q_verificacio" sys_domain="global" view="Default view">3dbf9cdb1bbd9c10c851a64fad4bcb13</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-14 11:51:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
