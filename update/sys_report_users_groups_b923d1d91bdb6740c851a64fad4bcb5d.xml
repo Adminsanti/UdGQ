@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
     <sys_report_users_groups action="INSERT_OR_UPDATE">
         <group_id/>
-        <report_id display_value="Recomanacions obligatories per valorar">6001dfacdbe5a3009fd1f57eaf9619e2</report_id>
+        <report_id display_value="Observacions obligatories per valorar">6001dfacdbe5a3009fd1f57eaf9619e2</report_id>
         <sys_class_name>sys_report_users_groups</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-01-28 11:15:54</sys_created_on>

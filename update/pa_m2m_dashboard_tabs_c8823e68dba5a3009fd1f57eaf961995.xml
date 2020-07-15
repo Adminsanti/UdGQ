@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
     <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
-        <dashboard display_value="Resum Recomanacions">79723e68dba5a3009fd1f57eaf96194e</dashboard>
+        <dashboard display_value="Resum Observacions VSMA">79723e68dba5a3009fd1f57eaf96194e</dashboard>
         <home>false</home>
         <homepage/>
         <order>1</order>
