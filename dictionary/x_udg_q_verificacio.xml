@@ -4,17 +4,19 @@
         <element label="Aprovació CDir" max_length="40" name="aprovaciocd" type="glide_date"/>
         <element label="Aprovació Centre" max_length="40" name="aprovaciocentre" type="glide_date"/>
         <element label="Aprovació CPE" max_length="40" name="aprovaciocpe" type="glide_date"/>
-        <element label="Centre" max_length="32" name="centre" reference="x_udg_q_sgq" type="reference"/>
+        <element choice="1" label="Centre" max_length="32" name="centre" reference="x_udg_q_sgq" type="reference">
+            <choice/>
+        </element>
         <element label="Aprovació CG" max_length="40" name="cg" type="glide_date"/>
         <element label="Conveni" max_length="40" name="conveni" type="file_attachment"/>
         <element label="Credits" max_length="40" name="credits" type="integer"/>
         <element label="Aprovació CS" max_length="40" name="cs" type="glide_date"/>
         <element label="Elevació a EP" max_length="40" name="elevacioep" type="glide_date"/>
-        <element label="FiEP" max_length="40" name="fiep" type="glide_date"/>
+        <element label="Fi EP" max_length="40" name="fiep" type="glide_date"/>
         <element label="Fitxa" max_length="40" name="fitxa" type="file_attachment"/>
         <element label="Informació CPE" max_length="40" name="informaciocpe" type="glide_date"/>
-        <element label="IniciEP" max_length="40" name="iniciep" type="glide_date"/>
-        <element label="Interuniversitari" max_length="40" name="interuniversitari" type="boolean"/>
+        <element label="Inici EP" max_length="40" name="iniciep" type="glide_date"/>
+        <element label="Interuniversitària" max_length="40" name="interuniversitari" type="boolean"/>
         <element label="Mem aprovada CS" max_length="40" name="memaprovadacs" type="file_attachment"/>
         <element label="Nivell" max_length="32" name="nivell" type="string"/>
         <element label="PIMPEU Fase1" max_length="40" name="pimpeufase1" type="glide_date"/>

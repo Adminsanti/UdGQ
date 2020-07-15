@@ -7,7 +7,7 @@
         <element audit="true" label="Membres funcions" max_length="4000" name="membres_funcions" reference="x_udg_q_funcio" type="glide_list"/>
         <element audit="true" label="Membres títol personal" max_length="4000" name="membres_titol_personal" reference="sys_user" type="glide_list"/>
         <element default="true" label="Gestió Millores" max_length="40" name="millora" type="boolean"/>
-        <element attributes="no_truncate=true" audit="true" display="true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
+        <element attributes="no_truncate=true" audit="true" display="true" label="Funció" mandatory="true" max_length="140" name="nom" type="string"/>
         <element label="Observador" max_length="40" name="observador" type="boolean"/>
         <element label="Gestió Plans de Millora" max_length="40" name="pla" type="boolean"/>
         <element label="Només Lectura" max_length="40" name="readonly" type="boolean"/>
