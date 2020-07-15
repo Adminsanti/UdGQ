@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Recomanacions VSMA">d766791adb4e2f009fd1f57eaf961935</application>
+        <application display_value="Observacions VSMA">d766791adb4e2f009fd1f57eaf961935</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -30,8 +30,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>54d015951bdb6740c851a64fad4bcbcb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Recomanacions No tancades</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Observacions No tancades</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -39,9 +39,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_module_54d015951bdb6740c851a64fad4bcbcb</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-28 11:06:27</sys_updated_on>
+        <sys_updated_on>2020-07-15 09:54:59</sys_updated_on>
         <timeline_page/>
-        <title>Recomanacions No tancades</title>
+        <title>Observacions No tancades</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
