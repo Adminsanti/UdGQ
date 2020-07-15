@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="recomanacions" label="Observacions" language="en" table="x_udg_q_objectiumillora">
+    <sys_documentation element="titulacions" label="Titulacions" language="en" table="x_udg_q_informevsma">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>recomanacions</element>
+            <element>titulacions</element>
             <help/>
             <hint/>
-            <label>Observacions</label>
+            <label>Titulacions</label>
             <language>en</language>
-            <name>x_udg_q_objectiumillora</name>
-            <plural>Observacions</plural>
+            <name>x_udg_q_informevsma</name>
+            <plural>Titulacions</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-10-09 10:15:17</sys_created_on>
+            <sys_created_on>2020-07-15 08:47:23</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>53cc51653701e3004ccbd0d543990ee0</sys_id>
-            <sys_mod_count>6</sys_mod_count>
-            <sys_name>Observacions</sys_name>
+            <sys_id>6022f6491b46d8505fab4002cd4bcb14</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Titulacions</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_documentation_x_udg_q_objectiumillora_recomanacions_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_udg_q_informevsma_titulacions_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-15 09:45:52</sys_updated_on>
+            <sys_updated_on>2020-07-15 08:47:23</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

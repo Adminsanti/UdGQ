@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Recomanació" max_length="40" name="x_udg_q_recomanacions" text_index="true" type="collection">
-        <element label="Compartida" max_length="4000" name="compartida" reference="x_udg_q_sgq" type="glide_list"/>
+    <element audit="true" label="Observació" max_length="40" name="x_udg_q_recomanacions" text_index="true" type="collection">
+        <element dependent="sgq.comparteix" dependent_on_field="sgq.comparteix" label="Compartida" max_length="4000" name="compartida" reference="x_udg_q_sgq" reference_qual="javascript:&quot;sys_idIN&quot;+current.sgq.comparteix" type="glide_list" use_dependent_field="true" use_reference_qualifier="advanced"/>
         <element label="Descripció" max_length="5000" name="descripcio" type="string"/>
         <element choice="3" default="1" label="Estat" max_length="40" name="estat" read_only="true" type="integer">
             <choice>
