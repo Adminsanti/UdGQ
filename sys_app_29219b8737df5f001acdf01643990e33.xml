@@ -25,14 +25,14 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-19 15:42:45</sys_created_on>
         <sys_id>29219b8737df5f001acdf01643990e33</sys_id>
-        <sys_mod_count>740</sys_mod_count>
+        <sys_mod_count>741</sys_mod_count>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-15 10:46:54</sys_updated_on>
+        <sys_updated_on>2020-07-20 11:37:44</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.4.12</version>
+        <version>1.4.13</version>
     </sys_app>
 </record_update>
