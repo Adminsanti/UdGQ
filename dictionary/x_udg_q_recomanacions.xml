@@ -16,12 +16,14 @@
         <element default="0" label="Objectius" max_length="40" name="objectius" read_only="true" type="integer"/>
         <element label="Compulsory" max_length="40" name="obligatoria" type="boolean"/>
         <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
+        <element default="true" label="Sinc Titulacions" max_length="40" name="sinctitulacions" type="boolean"/>
         <element choice="1" label="Tancament" max_length="40" name="tancament" type="string">
             <choice>
                 <element inactive_on_update="false" label="Desistiment" value="0"/>
                 <element inactive_on_update="false" label="Recollida al pla de millora" value="3"/>
             </choice>
         </element>
+        <element label="Titulacions" max_length="4000" name="titulacions" reference="x_udg_q_titulacio" type="glide_list"/>
         <element label="Valoració" max_length="4000" name="valoracio" type="string"/>
         <index name="index">
             <element name="informe"/>
