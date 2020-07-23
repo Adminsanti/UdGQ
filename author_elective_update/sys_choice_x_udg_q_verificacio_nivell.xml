@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="nivell" table="x_udg_q_verificacio" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>nivell</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Grau</label>
+            <language>en</language>
+            <name>x_udg_q_verificacio</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-23 09:20:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef56ccff1b0a1c90c851a64fad4bcb36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-23 09:20:31</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>nivell</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Màster universitari</label>
+            <language>en</language>
+            <name>x_udg_q_verificacio</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-23 09:20:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1768cff1b0a1c90c851a64fad4bcbe2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-23 09:20:57</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>nivell</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Programa de doctorat</label>
+            <language>en</language>
+            <name>x_udg_q_verificacio</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-23 09:21:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f49684331b4a1c90c851a64fad4bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-23 09:21:23</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>nivell</element>
+            <name>x_udg_q_verificacio</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-07-23 09:20:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0876ccff1b0a1c90c851a64fad4bcb3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>nivell</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_choice_x_udg_q_verificacio_nivell</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-07-23 09:20:31</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

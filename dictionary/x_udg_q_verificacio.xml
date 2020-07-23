@@ -18,7 +18,13 @@
         <element label="Inici EP" max_length="40" name="iniciep" type="glide_date"/>
         <element label="Interuniversitària" max_length="40" name="interuniversitari" type="boolean"/>
         <element label="Mem aprovada CS" max_length="40" name="memaprovadacs" type="file_attachment"/>
-        <element label="Nivell" max_length="32" name="nivell" type="string"/>
+        <element choice="3" default="2" label="Nivell" max_length="32" name="nivell" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Grau" value="2"/>
+                <element inactive_on_update="false" label="Màster universitari" value="3"/>
+                <element inactive_on_update="false" label="Programa de doctorat" value="4"/>
+            </choice>
+        </element>
         <element label="PIMPEU Fase1" max_length="40" name="pimpeufase1" type="glide_date"/>
         <element label="PIMPEU Fase2" max_length="40" name="pimpeufase2" type="glide_date"/>
         <element label="Sessió CG" max_length="2" name="sessiocg" type="string"/>
