@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Tramits" max_length="40" name="x_udg_q_tramits" type="collection">
+        <element label="Entitat" max_length="20" name="entitat" type="string"/>
+        <element label="Estat" max_length="20" name="estat" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Parent" max_length="32" name="parent" reference="task" type="reference"/>
+        <element label="Tipus" max_length="20" name="tipus" type="string"/>
+        <index name="index">
+            <element name="parent"/>
+        </index>
+    </element>
+</database>

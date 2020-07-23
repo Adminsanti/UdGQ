@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="" label="Accions Objectius" language="ca" table="x_udg_q_m2m_accions_objectius">
+    <sys_documentation element="estat" label="Estat" language="en" table="x_udg_q_tramits">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element/>
+            <element>estat</element>
             <help/>
             <hint/>
-            <label>Accions Objectius</label>
-            <language>ca</language>
-            <name>x_udg_q_m2m_accions_objectius</name>
-            <plural>Accions Objectius</plural>
+            <label>Estat</label>
+            <language>en</language>
+            <name>x_udg_q_tramits</name>
+            <plural>Estats</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 18:27:33</sys_created_on>
+            <sys_created_on>2020-07-23 09:02:13</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>90e1ba8a1b57c050c851a64fad4bcbc9</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_name>Accions Objectius</sys_name>
+            <sys_id>73328cf71b0a1c90c851a64fad4bcb3f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Estat</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_documentation_x_udg_q_m2m_accions_objectius__ca</sys_update_name>
+            <sys_update_name>sys_documentation_x_udg_q_tramits_estat_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-07-22 11:17:54</sys_updated_on>
+            <sys_updated_on>2020-07-23 09:02:13</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
