@@ -54,8 +54,8 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-10 10:51:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>78ae99ab1bbd10505fab4002cd4bcbc7</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_id>636c2167db35d410ccd95bd05b961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Número</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_tipuscanvitit_number</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-10 10:52:53</sys_updated_on>
+        <sys_updated_on>2020-07-23 11:55:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

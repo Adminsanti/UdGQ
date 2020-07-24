@@ -61,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d48df0a01b6d54105fab4002cd4bcbed</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Novetat nova</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -70,7 +70,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_d48df0a01b6d54105fab4002cd4bcbed</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-01 10:08:48</sys_updated_on>
+        <sys_updated_on>2020-07-01 13:55:44</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

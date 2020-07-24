@@ -40,7 +40,7 @@
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual>state!=3^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_objectiumillora">state!=3^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="3"/>
+        <reference_qual_condition table="x_udg_q_objectiumillora">state!=3^EQ<item display_value="Tancat" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="3"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <reference_type/>

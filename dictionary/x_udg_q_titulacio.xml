@@ -24,15 +24,24 @@
             <element name="codi_mecd"/>
         </index>
         <index name="index3">
-            <element name="qms"/>
-        </index>
-        <index name="index4">
-            <element name="sgq"/>
-        </index>
-        <index name="index5">
             <element name="qid"/>
         </index>
+        <index name="index4">
+            <element name="qms"/>
+        </index>
+        <index name="index5">
+            <element name="codi_mecd"/>
+        </index>
         <index name="index6">
+            <element name="memo"/>
+        </index>
+        <index name="index7">
+            <element name="sgq"/>
+        </index>
+        <index name="index8">
+            <element name="qid"/>
+        </index>
+        <index name="index9">
             <element name="memo"/>
         </index>
     </element>

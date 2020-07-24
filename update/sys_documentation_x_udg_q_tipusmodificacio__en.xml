@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Tipus modificació" language="en" table="x_udg_q_tipusmodificacio">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Tipus modificació</label>
+            <language>en</language>
+            <name>x_udg_q_tipusmodificacio</name>
+            <plural>Tipus modificacions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-03-13 18:56:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>041f8ff7dbaf4c10ccd95bd05b9619b0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Tipus modificació</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_q_tipusmodificacio__en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-03-15 17:09:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

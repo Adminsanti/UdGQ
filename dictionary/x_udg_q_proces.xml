@@ -36,10 +36,10 @@
         <element label="Titol" mandatory="true" max_length="180" name="titol" type="string"/>
         <element label="Versió" max_length="2" name="versio" read_only="true" type="string"/>
         <index name="index">
-            <element name="pare"/>
+            <element name="dimensiosgiqaqu"/>
         </index>
         <index name="index2">
-            <element name="dimensiosgiqaqu"/>
+            <element name="pare"/>
         </index>
         <index name="index3">
             <element name="responsable"/>

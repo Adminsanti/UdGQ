@@ -54,8 +54,8 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-01 09:04:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>8c8f26a01bf1d414c851a64fad4bcb7e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>129f4fa8dbf5d4101f06adc3ca961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Notificat a</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_novetat_notificat_a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 11:00:28</sys_updated_on>
+        <sys_updated_on>2020-07-23 11:54:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

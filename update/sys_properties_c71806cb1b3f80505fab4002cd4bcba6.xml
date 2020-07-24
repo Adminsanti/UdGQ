@@ -12,7 +12,7 @@
         <sys_created_on>2020-03-31 14:30:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c71806cb1b3f80505fab4002cd4bcba6</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>x_udg_q.CanviInstrGenerals</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -20,10 +20,23 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_properties_c71806cb1b3f80505fab4002cd4bcba6</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-02 08:41:36</sys_updated_on>
+        <sys_updated_on>2020-07-14 11:12:09</sys_updated_on>
         <type>string</type>
-        <value>&lt;UL style="list-style-position: inside;"&gt;&lt;LI&gt;Cal que creeu un registre per cada canvi que volgueu fer a la titulació.&lt;/LI&gt;&lt;LI&gt; Podeu desar aquest esborrany temporalment o esborrar-lo, però per que sigui tingut en consideració cal que utilitzeu el botó &lt;b&gt;"Tramita &amp; Roman"&lt;/b&gt;&lt;/LI&gt;&lt;LI&gt;Cal indicar per cada canvi l'objectiu en curs al pla de millora al que respón. Un cop tramitat el canvi es crearà i gestionarà automàticament una acció vinculada al pla de millora.&lt;/li&gt;&lt;/UL&gt;</value>
+        <value>&lt;UL style="list-style-position: inside;"&gt; &lt;LI&gt;Cal que creeu un registre per cada canvi que volgueu fer a la titulació.&lt;/LI&gt;&lt;LI&gt; Podeu desar aquest esborrany temporalment o esborrar-lo, però per que sigui tingut en consideració cal que utilitzeu el botó &lt;b&gt;"Tramita &amp; Roman"&lt;/b&gt;&lt;/LI&gt;&lt;LI&gt;Cal indicar per cada canvi l'objectiu en curs al pla de millora al que respón. Un cop tramitat el canvi es crearà i gestionarà automàticament una acció vinculada al pla de millora.&lt;/li&gt;&lt;/UL&gt;</value>
         <write_roles>x_udg_q.Admin,admin</write_roles>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=c71806cb1b3f80505fab4002cd4bcba6"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey name="x_udg_q.CanviInstrGenerals" tablename="sys_properties">c71806cb1b3f80505fab4002cd4bcba6</documentkey>
+        <fieldname>description</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-14 11:12:09</sys_created_on>
+        <sys_id>d3a9863cdb4adc101f06adc3ca961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-07-14 11:12:09</sys_updated_on>
+        <tablename>sys_properties</tablename>
+        <value>Text que surt sota INSTRUCCIONS GENERALS al crear un nou esborrany de canvi</value>
+    </sys_translated_text>
 </record_update>

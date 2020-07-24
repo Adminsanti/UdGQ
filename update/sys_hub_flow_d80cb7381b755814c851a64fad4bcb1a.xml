@@ -11,7 +11,7 @@
         <description/>
         <internal_name>revisar_recomanacions</internal_name>
         <label_cache>[]</label_cache>
-        <latest_snapshot>2024578d1b315010c851a64fad4bcbb0</latest_snapshot>
+        <latest_snapshot>9ea634c41b1210105fab4002cd4bcb17</latest_snapshot>
         <master_snapshot>312cf3781b755814c851a64fad4bcb8f</master_snapshot>
         <name>Revisar Recomanacions</name>
         <outputs/>
@@ -113,7 +113,7 @@
         <sys_created_on>2020-07-02 09:16:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e51c33381b755814c851a64fad4bcbc8</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -121,7 +121,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2020-07-03 01:00:14</sys_updated_on>
+        <sys_updated_on>2020-07-24 07:29:42</sys_updated_on>
         <ui_id>e1f0d0f3-db1e-4c48-a5ca-97afd9fa2fd9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e51c33381b755814c851a64fad4bcbc8"/>
@@ -201,7 +201,7 @@
         <sys_created_on>2020-07-02 09:16:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e51c33381b755814c851a64fad4bcbc8</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -209,7 +209,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2020-07-03 01:00:14</sys_updated_on>
+        <sys_updated_on>2020-07-24 07:29:42</sys_updated_on>
         <ui_id>e1f0d0f3-db1e-4c48-a5ca-97afd9fa2fd9</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e51c33381b755814c851a64fad4bcbc8"/>
@@ -218,7 +218,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"462cf3781b755814c851a64fad4bcb9c","name":"plan"}}</plan>
         <plan_id>d80cb7381b755814c851a64fad4bcb1a</plan_id>
-        <snapshot>2024578d1b315010c851a64fad4bcbb0</snapshot>
+        <snapshot>9ea634c41b1210105fab4002cd4bcb17</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:16:37</sys_created_on>
