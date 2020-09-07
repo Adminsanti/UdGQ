@@ -16,6 +16,7 @@
         <latest_snapshot>caa6f0c41b1210105fab4002cd4bcbec</latest_snapshot>
         <master_snapshot>c6eb3f381b755814c851a64fad4bcb8c</master_snapshot>
         <name>Actualitzar totes les romanacions</name>
+        <natlang/>
         <outputs/>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
@@ -215,6 +216,7 @@
         <label_cache>[]</label_cache>
         <master>true</master>
         <name>Actualitzar totes les romanacions</name>
+        <natlang/>
         <outputs/>
         <parent_action display_value="Actualitzar totes les romanacions">9698b3301b755814c851a64fad4bcb86</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>

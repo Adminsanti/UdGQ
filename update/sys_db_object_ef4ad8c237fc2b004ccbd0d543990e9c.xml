@@ -17,6 +17,7 @@
         <number_ref display_value="OBJ">293b940637fc2b004ccbd0d543990e9a</number_ref>
         <provider_class/>
         <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
         <super_class display_value="Task" name="task">28cc135137c022001acdf01643990efe</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>

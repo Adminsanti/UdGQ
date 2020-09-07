@@ -17,6 +17,7 @@
         <number_ref display_value="AME">d17d2bfc1bf41810c851a64fad4bcba9</number_ref>
         <provider_class/>
         <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
         <super_class/>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>

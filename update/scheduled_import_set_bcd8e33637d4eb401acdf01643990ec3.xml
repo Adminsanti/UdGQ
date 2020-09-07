@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_import_set">
     <scheduled_import_set action="INSERT_OR_UPDATE">
         <active>true</active>
+        <business_calendar/>
         <concurrent_import>false</concurrent_import>
         <condition/>
         <conditional>false</conditional>
         <data_source display_value="Titulacions">bf632ffe3794eb401acdf01643990eed</data_source>
+        <entered_time/>
         <map/>
         <name>Titulacions Diari</name>
         <order/>
@@ -21,6 +23,7 @@
 	 return import_set_row.sys_import_row;
 
 })(import_set_row);]]></partition_script>
+        <partition_size/>
         <post_script/>
         <post_script_bool>false</post_script_bool>
         <pre_script/>
@@ -48,6 +51,7 @@
         <sys_update_name>scheduled_import_set_bcd8e33637d4eb401acdf01643990ec3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2020-03-26 18:50:42</sys_updated_on>
+        <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </scheduled_import_set>
 </record_update>

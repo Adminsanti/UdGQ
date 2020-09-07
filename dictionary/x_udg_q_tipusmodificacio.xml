@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Tipus modificació" max_length="40" name="x_udg_q_tipusmodificacio" type="collection">
+    <element label="Tipus modificació" max_length="40" name="x_udg_q_tipusmodificacio" sizeclass="0" type="collection">
         <element default="true" label="Actiu" max_length="40" name="active" type="boolean"/>
         <element attributes="no_truncate=true" display="true" label="Descripció" max_length="140" name="descripcio" type="string"/>
         <element label="DescripcioMask" max_length="280" name="descripciomask" type="string"/>

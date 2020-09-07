@@ -17,6 +17,7 @@
         <number_ref display_value="CAN">8f75fca01b82d4505fab4002cd4bcbfc</number_ref>
         <provider_class/>
         <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
         <super_class display_value="Task" name="task">28cc135137c022001acdf01643990efe</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
