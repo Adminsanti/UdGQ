@@ -9,38 +9,49 @@
         <name>Funcio</name>
         <script><![CDATA[var Funcio = Class.create();
 Funcio.prototype = {
-	initialize: function (grFuncio) { //funcio Gliderecord
-		this._funcio = grFuncio;
-	},
-	
-	actualitzar_tots_assignats: function () {
-		var gr1 = new GlideRecord("x_udg_q_objectiumillora");
-		gr1.addQuery ('responsable',this._funcio.sys_id);
-		//new log( "Buscant "+this._funcio.sys_id);
-		gr1.query();
-		while (gr1.next()) {
-			gr1.assigned_to = this._funcio.usuari;
-			gr1.update();
-		}
-		var gr2 = new GlideRecord("x_udg_q_acciomillora");
-		gr2.addQuery ('responsable',this._funcio.sys_id);
-		//new log( "Buscant "+this._funcio.sys_id);
-		gr2.query();
-		while (gr2.next()) {
-			gr2.assigned_to = this._funcio.usuari;
-			gr2.update();
-		}
-	},
-	
-	
-	type: 'Funcio'
+    initialize: function(grFuncio) { //funcio Gliderecord
+        this._funcio = grFuncio;
+    },
+
+
+    //actualitza tots els assignats malament de totes les funcions
+    actualitzar_tots_assignats: function() {
+        var gr1 = new GlideRecord("x_udg_q_objectiumillora");
+        //Cal filtrar nomes els que no quadrin per optimitzar, però així també funciona, per ara
+		//gr1.addQuery (responsable.membres,'DOES NOT CONTAIN', assigned_to);
+        gr1.addQuery('state','2');
+        gr1.query();
+        while (gr1.next()) {
+            if (gr1.responsable.membres.toString().indexOf(gr1.assigned_to.toString()) == -1) {
+                new log("Reassingnant " + gr1.number + " de " + gr1.assigned_to.name + " a " + gr1.responsable.usuari.name + "- Funcio.actualitzar_tots_assignats()");
+                gr1.assigned_to = gr1.responsable.usuari;
+                gr1.update();
+            }
+        }
+        
+        var gr2 = new GlideRecord("x_udg_q_acciomillora");
+        //Cal filtrar nomes els que no quadrin per optimitzar, però així també funciona, per ara
+		//gr2.addQuery (responsable.membres,'DOES NOT CONTAIN', assigned_to);
+        gr2.addQuery('state','2');
+        gr2.query();
+        while (gr2.next()) {
+            if (gr2.responsable.membres.toString().indexOf(gr2.assigned_to.toString()) == -1) {
+                new log("Reassingnant " + gr2.number + " de " + gr2.assigned_to.name + " a " + gr2.responsable.usuari.name + "- Funcio.actualitzar_tots_assignats()");
+                gr2.assigned_to = gr2.responsable.usuari;
+                gr2.update();
+            }
+        }   
+    },
+
+
+    type: 'Funcio'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-11-13 12:28:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fb44e7037b12f004ccbd0d543990e6c</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Funcio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -48,6 +59,6 @@ Funcio.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6fb44e7037b12f004ccbd0d543990e6c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-03 08:55:47</sys_updated_on>
+        <sys_updated_on>2020-09-09 09:57:18</sys_updated_on>
     </sys_script_include>
 </record_update>

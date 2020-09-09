@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>package_private</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>revisar_i_corregir_assignament_task</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Revisar i corregir assignament Task</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:05:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>fee37a431b479c10c851a64fad4bcb28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Revisar i corregir assignament Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_fee37a431b479c10c851a64fad4bcb28</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:05:49</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="DELETE" query="document_key=fee37a431b479c10c851a64fad4bcb28"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_hub_action_type_definition_fee37a431b479c10c851a64fad4bcb28</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>package_private</access><acls/><action_template/><active>true</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><ih_action>false</ih_action><internal_name>revisar_i_corregir_assignament_task</internal_name><label_cache/><latest_snapshot/><master_snapshot/><name>Revisar i corregir assignament Task</name><natlang/><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2020-09-09 07:05:49</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>fee37a431b479c10c851a64fad4bcb28</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Revisar i corregir assignament Task</sys_name><sys_overrides/><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_hub_action_type_definition_fee37a431b479c10c851a64fad4bcb28</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2020-09-09 07:05:49</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_variable_value action="delete_multiple" query="document_key=fee37a431b479c10c851a64fad4bcb28"/></record_update>]]></payload>
+        <payload_hash>452312843</payload_hash>
+        <record_name>Revisar i corregir assignament Task</record_name>
+        <reverted_from/>
+        <source>f47430141bc31010c851a64fad4bcbe1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:05:49</sys_created_on>
+        <sys_id>b6e37a431b479c10c851a64fad4bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17471af52480000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:05:49</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>bee37a432c479c10da822cf092f40a2b</update_guid>
+        <update_guid_history>bee37a432c479c10da822cf092f40a2b:452312843</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:24:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>41fcc16999e84758930bdf77c005cc40</sys_id>
+        <sys_metadata>fee37a431b479c10c851a64fad4bcb28</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Revisar i corregir assignament Task</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_fee37a431b479c10c851a64fad4bcb28</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_fee37a431b479c10c851a64fad4bcb28">b6e37a431b479c10c851a64fad4bcb2c</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:24:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

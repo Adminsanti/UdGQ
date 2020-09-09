@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-orlando-12-11-2019__patch6-07-22-2020</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>corregir_composici_funci</internal_name>
+        <label_cache>[{"name":"fa5a8858-4d1d-4508-b2e9-bb48564abc9e.item","label":"2➛Objectiu Millora Record","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.grfuncio","label":"Input➛grFuncio","reference":"x_udg_q_funcio","reference_display":"Funció","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"774f0d3e-3b1e-4370-90e7-14b63be234de"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Records","label":"1➛Objectiu Millora Records","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c239eb4-e8c7-4069-a8db-b1f66dd8a911.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c239eb4-e8c7-4069-a8db-b1f66dd8a911.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot>e7dcba8f1b479c10c851a64fad4bcb7c</latest_snapshot>
+        <master_snapshot>e8bc768f1b479c10c851a64fad4bcb95</master_snapshot>
+        <name>Corregir composició funció</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:34:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d76ab6cb1b479c10c851a64fad4bcb52</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Corregir composició funció</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_hub_flow_d76ab6cb1b479c10c851a64fad4bcb52</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:13</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=d76ab6cb1b479c10c851a64fad4bcb52"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=d76ab6cb1b479c10c851a64fad4bcb52^sys_idNOT IN152c7a4f1b479c10c851a64fad4bcb30,9d2c7a4f1b479c10c851a64fad4bcb2d,dd2c7a4f1b479c10c851a64fad4bcb31"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.1</order>
+        <parent_ui_id>fa5a8858-4d1d-4508-b2e9-bb48564abc9e</parent_ui_id>
+        <subflow display_value="Revisar i corregir assignament Objectiu">e629be4b1b479c10c851a64fad4bcb69</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>152c7a4f1b479c10c851a64fad4bcb30</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:12</sys_updated_on>
+        <ui_id>9aa6f6ee-285c-45e3-8197-0d7023d971e9</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=152c7a4f1b479c10c851a64fad4bcb30"/>
+    <sys_element_mapping action="delete_multiple" query="id=152c7a4f1b479c10c851a64fad4bcb30"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>grobjectiu</field>
+        <id>152c7a4f1b479c10c851a64fad4bcb30</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>512c7a4f1b479c10c851a64fad4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_e629be4b1b479c10c851a64fad4bcb69</table>
+        <value>{{fa5a8858-4d1d-4508-b2e9-bb48564abc9e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9d2c7a4f1b479c10c851a64fad4bcb2d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:56</sys_updated_on>
+        <ui_id>9e6e5f16-3476-4905-a1f4-7204a1d159ff</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9d2c7a4f1b479c10c851a64fad4bcb2d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9d2c7a4f1b479c10c851a64fad4bcb2d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>dd2c7a4f1b479c10c851a64fad4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <value>x_udg_q_objectiumillora</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9d2c7a4f1b479c10c851a64fad4bcb2d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>9d2c7a4f1b479c10c851a64fad4bcb2d</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>992c7a4f1b479c10c851a64fad4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>responsable={{subflow.grfuncio}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>9d2c7a4f1b479c10c851a64fad4bcb2d</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>5d2c7a4f1b479c10c851a64fad4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">152c7a4f1b479c10c851a64fad4bcb31</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dd2c7a4f1b479c10c851a64fad4bcb31</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:12</sys_updated_on>
+        <ui_id>fa5a8858-4d1d-4508-b2e9-bb48564abc9e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=dd2c7a4f1b479c10c851a64fad4bcb31"/>
+    <sys_element_mapping action="delete_multiple" query="id=dd2c7a4f1b479c10c851a64fad4bcb31"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>dd2c7a4f1b479c10c851a64fad4bcb31</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>d52c7a4f1b479c10c851a64fad4bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9e6e5f16-3476-4905-a1f4-7204a1d159ff.Records}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d76ab6cb1b479c10c851a64fad4bcb52^sys_idNOT IN976ab6cb1b479c10c851a64fad4bcb53"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d76ab6cb1b479c10c851a64fad4bcb52</id>
+        <name>Corregir composició funció</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:34:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>976ab6cb1b479c10c851a64fad4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:34:15</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=d76ab6cb1b479c10c851a64fad4bcb52^sys_idNOT IN4d2cf64f1b479c10c851a64fad4bcb47"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=774f0d3e-3b1e-4370-90e7-14b63be234de</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_udg_q_funcio</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>grfuncio</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>grFuncio</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</model>
+        <model_id>d76ab6cb1b479c10c851a64fad4bcb52</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d76ab6cb1b479c10c851a64fad4bcb52</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_udg_q_funcio">x_udg_q_funcio</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d2cf64f1b479c10c851a64fad4bcb47</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d76ab6cb1b479c10c851a64fad4bcb52^sys_idNOT IN9d2c7a4f1b479c10c851a64fad4bcb2d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9d2c7a4f1b479c10c851a64fad4bcb2d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:56</sys_updated_on>
+        <ui_id>9e6e5f16-3476-4905-a1f4-7204a1d159ff</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9d2c7a4f1b479c10c851a64fad4bcb2d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9d2c7a4f1b479c10c851a64fad4bcb2d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>dd2c7a4f1b479c10c851a64fad4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <value>x_udg_q_objectiumillora</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9d2c7a4f1b479c10c851a64fad4bcb2d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>9d2c7a4f1b479c10c851a64fad4bcb2d</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>992c7a4f1b479c10c851a64fad4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>responsable={{subflow.grfuncio}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>9d2c7a4f1b479c10c851a64fad4bcb2d</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>5d2c7a4f1b479c10c851a64fad4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d76ab6cb1b479c10c851a64fad4bcb52^sys_idNOT IN152c7a4f1b479c10c851a64fad4bcb30"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.1</order>
+        <parent_ui_id>fa5a8858-4d1d-4508-b2e9-bb48564abc9e</parent_ui_id>
+        <subflow display_value="Revisar i corregir assignament Objectiu">e629be4b1b479c10c851a64fad4bcb69</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>152c7a4f1b479c10c851a64fad4bcb30</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:12</sys_updated_on>
+        <ui_id>9aa6f6ee-285c-45e3-8197-0d7023d971e9</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=152c7a4f1b479c10c851a64fad4bcb30"/>
+    <sys_element_mapping action="delete_multiple" query="id=152c7a4f1b479c10c851a64fad4bcb30"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>grobjectiu</field>
+        <id>152c7a4f1b479c10c851a64fad4bcb30</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>512c7a4f1b479c10c851a64fad4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_e629be4b1b479c10c851a64fad4bcb69</table>
+        <value>{{fa5a8858-4d1d-4508-b2e9-bb48564abc9e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d76ab6cb1b479c10c851a64fad4bcb52^sys_idNOT INdd2c7a4f1b479c10c851a64fad4bcb31"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">152c7a4f1b479c10c851a64fad4bcb31</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dd2c7a4f1b479c10c851a64fad4bcb31</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:12</sys_updated_on>
+        <ui_id>fa5a8858-4d1d-4508-b2e9-bb48564abc9e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=dd2c7a4f1b479c10c851a64fad4bcb31"/>
+    <sys_element_mapping action="delete_multiple" query="id=dd2c7a4f1b479c10c851a64fad4bcb31"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>dd2c7a4f1b479c10c851a64fad4bcb31</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_id>d52c7a4f1b479c10c851a64fad4bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9e6e5f16-3476-4905-a1f4-7204a1d159ff.Records}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d76ab6cb1b479c10c851a64fad4bcb52^sys_idNOT INd52c7a4f1b479c10c851a64fad4bcb27"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>grfuncio</element>
+        <help/>
+        <hint/>
+        <label>grFuncio</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d76ab6cb1b479c10c851a64fad4bcb52</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:41:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d52c7a4f1b479c10c851a64fad4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:41:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d76ab6cb1b479c10c851a64fad4bcb52^sys_idNOT IN89bcb68f1b479c10c851a64fad4bcb30"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"89bcb68f1b479c10c851a64fad4bcb30","name":"plan"}}</plan>
+        <plan_id display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</plan_id>
+        <snapshot>e7dcba8f1b479c10c851a64fad4bcb7c</snapshot>
+        <sys_class_name>sys_flow_subflow_plan</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>89bcb68f1b479c10c851a64fad4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:12</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>corregir_composici_funci</internal_name>
+        <label_cache>[{"name":"fa5a8858-4d1d-4508-b2e9-bb48564abc9e.item","label":"2➛Objectiu Millora Record","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.grfuncio","label":"Input➛grFuncio","reference":"x_udg_q_funcio","reference_display":"Funció","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"774f0d3e-3b1e-4370-90e7-14b63be234de"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Records","label":"1➛Objectiu Millora Records","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c239eb4-e8c7-4069-a8db-b1f66dd8a911.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c239eb4-e8c7-4069-a8db-b1f66dd8a911.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Corregir composició funció</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Corregir composició funció">d76ab6cb1b479c10c851a64fad4bcb52</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>e8bc768f1b479c10c851a64fad4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=e8bc768f1b479c10c851a64fad4bcb95"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=e8bc768f1b479c10c851a64fad4bcb95^sys_idNOT IN20bc768f1b479c10c851a64fad4bcbb5,60bc768f1b479c10c851a64fad4bcbbb,acbc768f1b479c10c851a64fad4bcbbc"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">152c7a4f1b479c10c851a64fad4bcb31</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Corregir composició funció">e8bc768f1b479c10c851a64fad4bcb95</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>20bc768f1b479c10c851a64fad4bcbb5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <ui_id>fa5a8858-4d1d-4508-b2e9-bb48564abc9e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=20bc768f1b479c10c851a64fad4bcbb5"/>
+    <sys_element_mapping action="delete_multiple" query="id=20bc768f1b479c10c851a64fad4bcbb5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>20bc768f1b479c10c851a64fad4bcbb5</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>68bc768f1b479c10c851a64fad4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9e6e5f16-3476-4905-a1f4-7204a1d159ff.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Corregir composició funció">e8bc768f1b479c10c851a64fad4bcb95</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>60bc768f1b479c10c851a64fad4bcbbb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <ui_id>9e6e5f16-3476-4905-a1f4-7204a1d159ff</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60bc768f1b479c10c851a64fad4bcbbb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60bc768f1b479c10c851a64fad4bcbbb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>e8bc768f1b479c10c851a64fad4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <value>x_udg_q_objectiumillora</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60bc768f1b479c10c851a64fad4bcbbb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>60bc768f1b479c10c851a64fad4bcbbb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>a4bc768f1b479c10c851a64fad4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>responsable={{subflow.grfuncio}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>60bc768f1b479c10c851a64fad4bcbbb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>68bc768f1b479c10c851a64fad4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Corregir composició funció">e8bc768f1b479c10c851a64fad4bcb95</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.1</order>
+        <parent_ui_id>fa5a8858-4d1d-4508-b2e9-bb48564abc9e</parent_ui_id>
+        <subflow display_value="Revisar i corregir assignament Objectiu">e629be4b1b479c10c851a64fad4bcb69</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>acbc768f1b479c10c851a64fad4bcbbc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <ui_id>9aa6f6ee-285c-45e3-8197-0d7023d971e9</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=acbc768f1b479c10c851a64fad4bcbbc"/>
+    <sys_element_mapping action="delete_multiple" query="id=acbc768f1b479c10c851a64fad4bcbbc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>grobjectiu</field>
+        <id>acbc768f1b479c10c851a64fad4bcbbc</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>ecbc768f1b479c10c851a64fad4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_e629be4b1b479c10c851a64fad4bcb69</table>
+        <value>{{fa5a8858-4d1d-4508-b2e9-bb48564abc9e.item}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e8bc768f1b479c10c851a64fad4bcb95^sys_idNOT INe0bc768f1b479c10c851a64fad4bcb96"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e8bc768f1b479c10c851a64fad4bcb95</id>
+        <name>Corregir composició funció</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e0bc768f1b479c10c851a64fad4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=e8bc768f1b479c10c851a64fad4bcb95^sys_idNOT IN24bc768f1b479c10c851a64fad4bcb97"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=774f0d3e-3b1e-4370-90e7-14b63be234de</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_udg_q_funcio</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>grfuncio</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>grFuncio</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Corregir composició funció">e8bc768f1b479c10c851a64fad4bcb95</model>
+        <model_id>e8bc768f1b479c10c851a64fad4bcb95</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e8bc768f1b479c10c851a64fad4bcb95</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_udg_q_funcio">x_udg_q_funcio</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>24bc768f1b479c10c851a64fad4bcb97</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e8bc768f1b479c10c851a64fad4bcb95^sys_idNOT IN60bc768f1b479c10c851a64fad4bcbbb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Corregir composició funció">e8bc768f1b479c10c851a64fad4bcb95</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>60bc768f1b479c10c851a64fad4bcbbb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <ui_id>9e6e5f16-3476-4905-a1f4-7204a1d159ff</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60bc768f1b479c10c851a64fad4bcbbb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>60bc768f1b479c10c851a64fad4bcbbb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>e8bc768f1b479c10c851a64fad4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <value>x_udg_q_objectiumillora</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=60bc768f1b479c10c851a64fad4bcbbb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>60bc768f1b479c10c851a64fad4bcbbb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>a4bc768f1b479c10c851a64fad4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>responsable={{subflow.grfuncio}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>60bc768f1b479c10c851a64fad4bcbbb</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>68bc768f1b479c10c851a64fad4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e8bc768f1b479c10c851a64fad4bcb95^sys_idNOT INacbc768f1b479c10c851a64fad4bcbbc"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Corregir composició funció">e8bc768f1b479c10c851a64fad4bcb95</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.1</order>
+        <parent_ui_id>fa5a8858-4d1d-4508-b2e9-bb48564abc9e</parent_ui_id>
+        <subflow display_value="Revisar i corregir assignament Objectiu">e629be4b1b479c10c851a64fad4bcb69</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>acbc768f1b479c10c851a64fad4bcbbc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <ui_id>9aa6f6ee-285c-45e3-8197-0d7023d971e9</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=acbc768f1b479c10c851a64fad4bcbbc"/>
+    <sys_element_mapping action="delete_multiple" query="id=acbc768f1b479c10c851a64fad4bcbbc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>grobjectiu</field>
+        <id>acbc768f1b479c10c851a64fad4bcbbc</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>ecbc768f1b479c10c851a64fad4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_e629be4b1b479c10c851a64fad4bcb69</table>
+        <value>{{fa5a8858-4d1d-4508-b2e9-bb48564abc9e.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e8bc768f1b479c10c851a64fad4bcb95^sys_idNOT IN20bc768f1b479c10c851a64fad4bcbb5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">152c7a4f1b479c10c851a64fad4bcb31</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Corregir composició funció">e8bc768f1b479c10c851a64fad4bcb95</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>20bc768f1b479c10c851a64fad4bcbb5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <ui_id>fa5a8858-4d1d-4508-b2e9-bb48564abc9e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=20bc768f1b479c10c851a64fad4bcbb5"/>
+    <sys_element_mapping action="delete_multiple" query="id=20bc768f1b479c10c851a64fad4bcbb5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>20bc768f1b479c10c851a64fad4bcbb5</id>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_id>68bc768f1b479c10c851a64fad4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9e6e5f16-3476-4905-a1f4-7204a1d159ff.Records}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e8bc768f1b479c10c851a64fad4bcb95^sys_idNOT IN28bc768f1b479c10c851a64fad4bcb9e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>grfuncio</element>
+        <help/>
+        <hint/>
+        <label>grFuncio</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e8bc768f1b479c10c851a64fad4bcb95</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 07:44:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>28bc768f1b479c10c851a64fad4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 07:44:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
