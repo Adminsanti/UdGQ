@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>Arreglar ACC orfes</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>false</run_once>
+        <script><![CDATA[var gr2 = new GlideRecord("x_udg_q_acciomillora");
+gr2.addQuery('assigned_to', '');
+gr2.query();
+while (gr2.next()) {
+    new log("Reassingnant " + gr2.number + " de " + gr2.assigned_to.name + " a " + gr2.responsable.usuari.name + "- Fix Script - Arreglar accions orfes");
+    gr2.assigned_to = gr2.responsable.usuari;
+    gr2.update();
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-09 10:41:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>91e4a3031b4b9c10c851a64fad4bcbc7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Arreglar ACC orfes</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_fix_91e4a3031b4b9c10c851a64fad4bcbc7</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-09 10:44:13</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>
