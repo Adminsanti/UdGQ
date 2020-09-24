@@ -6,13 +6,13 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-orlando-12-11-2019__patch6-07-22-2020</compiler_build>
+        <compiler_build>glide-orlando-12-11-2019__patch7-08-19-2020</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>revisar_recomanacions</internal_name>
         <label_cache>[]</label_cache>
-        <latest_snapshot>19839c2c1b0b10105fab4002cd4bcb90</latest_snapshot>
+        <latest_snapshot>4fc9a2931b0f10105fab4002cd4bcb99</latest_snapshot>
         <master_snapshot>312cf3781b755814c851a64fad4bcb8f</master_snapshot>
         <name>Revisar Recomanacions</name>
         <natlang/>
@@ -108,7 +108,7 @@
         <action_type display_value="Actualitzar totes les romanacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>c6eb3f381b755814c851a64fad4bcb8c</compiled_snapshot>
         <display_text/>
         <flow display_value="Revisar Recomanacions">d80cb7381b755814c851a64fad4bcb1a</flow>
         <order>1</order>
@@ -118,15 +118,15 @@
         <sys_created_on>2020-09-09 07:02:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2332c31b479c10c851a64fad4bcb8e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-09 07:02:25</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-09-10 01:00:06</sys_updated_on>
         <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cd2332c31b479c10c851a64fad4bcb8e"/>
@@ -196,7 +196,7 @@
         <action_type display_value="Actualitzar totes les romanacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>c6eb3f381b755814c851a64fad4bcb8c</compiled_snapshot>
         <display_text/>
         <flow display_value="Revisar Recomanacions">d80cb7381b755814c851a64fad4bcb1a</flow>
         <order>1</order>
@@ -206,15 +206,15 @@
         <sys_created_on>2020-09-09 07:02:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2332c31b479c10c851a64fad4bcb8e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-09 07:02:25</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-09-10 01:00:06</sys_updated_on>
         <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cd2332c31b479c10c851a64fad4bcb8e"/>
@@ -223,7 +223,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"462cf3781b755814c851a64fad4bcb9c","name":"plan"}}</plan>
         <plan_id>d80cb7381b755814c851a64fad4bcb1a</plan_id>
-        <snapshot>19839c2c1b0b10105fab4002cd4bcb90</snapshot>
+        <snapshot>4fc9a2931b0f10105fab4002cd4bcb99</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:16:37</sys_created_on>
