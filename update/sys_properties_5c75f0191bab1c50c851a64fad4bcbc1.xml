@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Els mesos endarrera que cal considerar per  canviar el rol a la baixa</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_udg_q.mesos_endarrera_canvi_rol</name>
+        <read_roles/>
+        <suffix>mesos_endarrera_canvi_rol</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-28 07:57:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5c75f0191bab1c50c851a64fad4bcbc1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_udg_q.mesos_endarrera_canvi_rol</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_properties_5c75f0191bab1c50c851a64fad4bcbc1</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-28 09:32:20</sys_updated_on>
+        <type>integer</type>
+        <value>6</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=5c75f0191bab1c50c851a64fad4bcbc1"/>
+</record_update>
