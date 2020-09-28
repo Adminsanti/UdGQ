@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>Revisa acces usuaris</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Fa el matexi que la UI action - Recalcula SGQ visibles i Rol funció,- però està destinat als managers</comments>
+        <condition>gs.hasRole('x_udg_q.ManagerUniversitat') || gs.hasRole('x_udg_q.Admin') || gs.hasRole('Admin') || gs.hasRole('x_udg_q.Manager')</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Revisa accés usuaris</name>
+        <onclick/>
+        <order>500</order>
+        <script><![CDATA[var grUsuari = new GlideRecord('sys_user');
+grUsuari.addQuery('sys_id', 'IN', current.membres);
+grUsuari.query();
+while (grUsuari.next()) {
+    var u = new x_udg_q.Usuari(grUsuari.sys_id);
+    u.actualitzaGR(grUsuari);
+    u.actualitzaPreferenciesSGQ(grUsuari);
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-28 09:58:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>259199991b2f1c50c851a64fad4bcbb6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Revisa accés usuaris</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_action_259199991b2f1c50c851a64fad4bcbb6</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-28 10:03:51</sys_updated_on>
+        <table>x_udg_q_funcio</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>
