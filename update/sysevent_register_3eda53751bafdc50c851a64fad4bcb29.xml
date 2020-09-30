@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description/>
+        <event_name>x_udg_q.send.notification.incorporaOBJ</event_name>
+        <fired_by/>
+        <queue/>
+        <suffix>send.notification.incorporaOBJ</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-09-30 09:17:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3eda53751bafdc50c851a64fad4bcb29</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_udg_q.send.notification.incorporaOBJ</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sysevent_register_3eda53751bafdc50c851a64fad4bcb29</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-09-30 09:17:12</sys_updated_on>
+        <table>x_udg_q_objectiumillora</table>
+    </sysevent_register>
+</record_update>
