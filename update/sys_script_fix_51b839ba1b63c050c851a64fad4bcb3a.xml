@@ -6,7 +6,7 @@
         <flush_cache>false</flush_cache>
         <name>Recalcurar SGQs de tots els usuaris</name>
         <record_for_rollback>false</record_for_rollback>
-        <run_once>false</run_once>
+        <run_once>true</run_once>
         <script><![CDATA[var gr = new GlideRecord('sys_user');
 gr.query();
 while (gr.next) {
@@ -19,7 +19,7 @@ while (gr.next) {
         <sys_created_on>2020-03-18 08:31:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51b839ba1b63c050c851a64fad4bcb3a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Recalcurar SGQs de tots els usuaris</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -27,7 +27,7 @@ while (gr.next) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_51b839ba1b63c050c851a64fad4bcb3a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-07 09:49:38</sys_updated_on>
+        <sys_updated_on>2020-10-08 11:11:45</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

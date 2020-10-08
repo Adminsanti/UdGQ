@@ -6,7 +6,7 @@
         <flush_cache>false</flush_cache>
         <name>Recalcurar SGQs per sgqs</name>
         <record_for_rollback>false</record_for_rollback>
-        <run_once>false</run_once>
+        <run_once>true</run_once>
         <script><![CDATA[var grF = new GlideRecord('x_udg_q_funcio');
 grF.query();
 while (grF.next()) {
@@ -20,7 +20,7 @@ while (grF.next()) {
         <sys_created_on>2020-03-18 10:29:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8a4452721b67c050c851a64fad4bcb09</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Recalcurar SGQs per sgqs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -28,7 +28,7 @@ while (grF.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_8a4452721b67c050c851a64fad4bcb09</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-18 10:31:36</sys_updated_on>
+        <sys_updated_on>2020-10-08 11:28:06</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
