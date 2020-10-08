@@ -25,7 +25,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Afegeix al Pla de Millora &amp; Roman</name>
+        <name>Afegeix al PM &amp; Roman</name>
         <onclick/>
         <order>40</order>
         <script><![CDATA[definirObjectiu();
@@ -59,8 +59,8 @@ function definirObjectiu() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3dfa181a1b8ac010c851a64fad4bcbd7</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>Afegeix al Pla de Millora &amp; Roman</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Afegeix al PM &amp; Roman</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -68,7 +68,7 @@ function definirObjectiu() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_3dfa181a1b8ac010c851a64fad4bcbd7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-24 14:54:53</sys_updated_on>
+        <sys_updated_on>2020-10-08 10:22:53</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

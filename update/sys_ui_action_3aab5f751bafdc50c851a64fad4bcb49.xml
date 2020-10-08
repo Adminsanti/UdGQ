@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>demanaPM</action_name>
-        <active>false</active>
+        <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == -5 &amp;&amp; (gs.hasRole("x_udg_q.User") || gs.hasRole("x_udg_q.Manager") || gs.hasRole("x_udg_q.ManagerUniversitat")) &amp;&amp; current.sgq ==gs.getUser().getPreference('qualitat.sgqActual');</condition>
+        <condition>current.state == -5 &amp;&amp; (gs.hasRole("x_udg_q.User") || gs.hasRole("x_udg_q.Manager") ) &amp;&amp; current.sgq ==gs.getUser().getPreference('qualitat.sgqActual');</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -32,7 +32,8 @@
 	
 function demanaPM() {
 	current.update();
-	gs.addInfoMessage(current.number+ " S'ha demanat al propietari i responsable del SGQ la incorporació al PM - Teniu còpia del correu");
+	gs.addInfoMessage(current.number+ " S'ha demanat afegir al PM al propietari i responsable del SGQ - Rebreu còpia del correu");
+	gs.eventQueue("x_udg_q.send.notification.incorporaOBJ", current, gs.getUserID(), gs.getUserDisplayName());
 }]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -45,7 +46,7 @@ function demanaPM() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3aab5f751bafdc50c851a64fad4bcb49</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Demana afegir al PM</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -54,7 +55,7 @@ function demanaPM() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_3aab5f751bafdc50c851a64fad4bcb49</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-30 14:27:50</sys_updated_on>
+        <sys_updated_on>2020-10-08 10:21:34</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
