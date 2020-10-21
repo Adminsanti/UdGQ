@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <before>false</before>
         <description/>
         <flush_cache>false</flush_cache>
@@ -24,9 +24,9 @@ gr2.query();
 while (gr2.next()) {
 	if (gr2.declarat=="") gr2.declarat=gr2.opened_at;
 	if (gr2.declarat_per=="") gr2.declarat_per=gr2.opened_by;
-	if (gr2.valorat=="" && gr2.valoracio!="") gr2.valorat=gr2.opened_at;
-	if (gr2.valorat_per=="" && gr2.valoracio!="") gr2.valorat_per=gr2.opened_by;
-	gr2.assigned_to=gr2.responsable.usuari;
+	//if (gr2.valorat=="" && gr2.valoracio!="") gr2.valorat=gr2.opened_at;
+	//if (gr2.valorat_per=="" && gr2.valoracio!="") gr2.valorat_per=gr2.opened_by;
+	//gr2.assigned_to=gr2.responsable.usuari;
 	gr2.closed_by="";
 	gr2.closed_at="";
 	gr2.update();
@@ -36,7 +36,7 @@ while (gr2.next()) {
         <sys_created_on>2019-01-10 11:11:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8385e8631bfa2700c851a64fad4bcbda</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>ACC Regularitzar</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -44,7 +44,7 @@ while (gr2.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_8385e8631bfa2700c851a64fad4bcbda</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-01-15 11:31:31</sys_updated_on>
+        <sys_updated_on>2020-10-21 11:22:36</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

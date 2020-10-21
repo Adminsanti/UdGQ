@@ -35,7 +35,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>L'usuari ${event.parm2} demana incorporat al pla de millora el seg&uuml;ent esborrany:</p>
+        <message_html><![CDATA[<p>L'usuari ${event.parm2} proposa incorporar al pla de millora el seg&uuml;ent esborrany:</p>
 <p><strong>${URI_REF}</strong>&nbsp;(${sgq}) - ${short_description}</p>
 <p>Si voleu veure els detalls i, si escau, incorporar-ho al pla de millora utilitzant el bot&oacute; corresponent, podeu fer-ho seguint l'enlla&ccedil; al n&uacute;mero d'objectiu.</p>
 <p>${mail_script:disclaimer udg}</p>]]></message_html>
@@ -52,7 +52,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Demanda afegir al PM: ${number} (${sgq}) - ${short_description}</subject>
+        <subject>Proposta per afegir al PM: ${number} (${sgq}) - ${short_description}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -61,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>726ba0241bf71c90c851a64fad4bcb22</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Objectiu demana incorporar PM</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -70,7 +70,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_726ba0241bf71c90c851a64fad4bcb22</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-10-08 10:22:32</sys_updated_on>
+        <sys_updated_on>2020-10-16 07:13:22</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

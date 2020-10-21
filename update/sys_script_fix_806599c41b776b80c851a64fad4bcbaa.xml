@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <before>false</before>
         <description/>
         <flush_cache>false</flush_cache>
@@ -19,7 +19,7 @@ while(gr.next()) {
         <sys_created_on>2019-02-18 11:17:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>806599c41b776b80c851a64fad4bcbaa</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>OBJ Actualitzar dates fites</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -27,7 +27,7 @@ while(gr.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_806599c41b776b80c851a64fad4bcbaa</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-02-19 11:36:07</sys_updated_on>
+        <sys_updated_on>2020-10-21 11:25:40</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
