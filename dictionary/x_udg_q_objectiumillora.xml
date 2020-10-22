@@ -12,16 +12,16 @@
         </element>
         <element label="Implica Titulacions" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" reference_qual_condition="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" type="glide_list"/>
         <element attributes="ref_contributions=x_udg_q_add_titulacions_actives" hint="Enllaç al document d'AQU sobre modificacions de títols" label="Implica modificació memòria" max_length="40" name="modificacio_memoria" type="boolean"/>
-        <element choice="1" label="Processos vinculats" max_length="1024" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" reference_qual_condition="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="glide_list">
+        <element choice="1" label="Processos vinculats" max_length="1024" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="glide_list" use_reference_qualifier="advanced">
             <choice/>
         </element>
-        <element label="Observacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');^estat!=5^EQ" reference_qual_condition="sgq=javascript:gs.getPreference('qualitat.sgqActual','');^estat!=5^EQ" type="glide_list"/>
+        <element label="Observacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');^estat!=5^EQ" type="glide_list" use_reference_qualifier="advanced"/>
         <element label="Observació obligatoria" max_length="40" name="recomanacioobligatoria" read_only="true" type="boolean"/>
         <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" mandatory="true" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^activa=true^assignable=true^EQ&quot;;" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
         <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" hint="Sistema de Gestió de la Qualitat" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
-        <element choice="1" label="Subestàndard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" reference_qual="sgqsLIKEjavascript:current.sgq;^ORsgqsISEMPTY^EQ" reference_qual_condition="sgqsLIKEjavascript:current.sgq;^ORsgqsISEMPTY^EQ" type="reference">
+        <element choice="1" label="Subestàndard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" reference_qual="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" reference_qual_condition="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" type="reference">
             <choice/>
         </element>
         <element choice="1" label="Tancament" max_length="40" name="tancament" type="integer">
