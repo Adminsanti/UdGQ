@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-11-02 13:13:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1cfcce201b986454c851a64fad4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_udg_q.ManagerUniversitat</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_ui_action display_value="Revisa assignacions OBJ i ACC">08fc42641bd86454c851a64fad4bcbee</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_1cfcce201b986454c851a64fad4bcbd6</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-02 13:13:34</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.ManagerUniversitat" name="x_udg_q.ManagerUniversitat">485294bddb596f009fd1f57eaf9619ef</sys_user_role>
+    </sys_ui_action_role>
+</record_update>
