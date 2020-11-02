@@ -28,29 +28,28 @@
         <name>Afegeix al PM</name>
         <onclick/>
         <order>1000</order>
-        <script><![CDATA[doDefineixAccio ();
+        <script><![CDATA[doDefineixAccio();
 
-function doDefineixAccio () {
-	if (current.responsable == '') {
-		current.update(); //gravem igualment
-		gs.addErrorMessage(current.number+" s'ha desat com esborrany però NO es pot incorporar al Pla de Millora per <B>manca de responsable</B>");
-	}
-	else {
-		current.state = 2;
-		current.declarat= new GlideDateTime().toString();
-		current.declarat_per=gs.getUserID();
-		if (current.valoracio != "") { 
-			current.valorat_per=gs.getUserID();
-			current.valorat=new GlideDateTime().toString();	
-		}
-		if (current.responsable.membres.toString().indexOf(current.assigned_to)==-1) 
-			current.assigned_to=current.responsable.usuari;
-		current.update();
-		gs.addInfoMessage(current.number+ " Incorporada al Pla de Millora");
-		new x_udg_q.AccioUtils().actualitzaExecucioTotsObjectius(current);
-	}
-}
-]]></script>
+function doDefineixAccio() {
+    if (current.responsable == '') {
+        current.update(); //gravem igualment
+        gs.addErrorMessage(current.number + " s'ha desat com esborrany però NO es pot incorporar al Pla de Millora per <B>manca de responsable</B>");
+    } else {
+        current.state = 2;
+        current.declarat = new GlideDateTime().toString();
+        current.declarat_per = gs.getUserID();
+        if (current.valoracio != "") {
+            current.valorat_per = gs.getUserID();
+            current.valorat = new GlideDateTime().toString();
+        }
+        if (current.responsable.membres.toString().indexOf(current.assigned_to) == -1)
+            current.assigned_to = current.responsable.usuari;
+        current.insert();
+		
+        gs.addInfoMessage(current.number+ " Incorporada al Pla de Millora");
+        new x_udg_q.AccioUtils().actualitzaExecucioTotsObjectius(current);
+    }
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -62,7 +61,7 @@ function doDefineixAccio () {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>583155dedbca2f009fd1f57eaf961954</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Afegeix al PM</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -71,7 +70,7 @@ function doDefineixAccio () {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_583155dedbca2f009fd1f57eaf961954</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-10-08 10:22:29</sys_updated_on>
+        <sys_updated_on>2020-10-30 09:14:10</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
