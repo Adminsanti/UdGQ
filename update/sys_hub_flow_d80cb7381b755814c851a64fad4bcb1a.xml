@@ -12,9 +12,9 @@
         <description/>
         <internal_name>revisar_recomanacions</internal_name>
         <label_cache>[]</label_cache>
-        <latest_snapshot>4fc9a2931b0f10105fab4002cd4bcb99</latest_snapshot>
+        <latest_snapshot>312cf3781b755814c851a64fad4bcb8f</latest_snapshot>
         <master_snapshot>312cf3781b755814c851a64fad4bcb8f</master_snapshot>
-        <name>Revisar Recomanacions</name>
+        <name>Revisar Observacions</name>
         <natlang/>
         <outputs/>
         <remote_trigger_id>422cf3781b755814c851a64fad4bcb9a</remote_trigger_id>
@@ -22,15 +22,15 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:15:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>d80cb7381b755814c851a64fad4bcb1a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Revisar Recomanacions</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Revisar Observacions</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -38,7 +38,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_hub_flow_d80cb7381b755814c851a64fad4bcb1a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-09 07:02:26</sys_updated_on>
+        <sys_updated_on>2020-11-02 09:04:46</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=d80cb7381b755814c851a64fad4bcb1a"/>
@@ -105,12 +105,12 @@
     <sys_hub_flow_component action="delete_multiple" query="flow=d80cb7381b755814c851a64fad4bcb1a^sys_idNOT INcd2332c31b479c10c851a64fad4bcb8e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Actualitzar totes les romanacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
+        <action_type display_value="Actualitzar totes les observacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot>c6eb3f381b755814c851a64fad4bcb8c</compiled_snapshot>
         <display_text/>
-        <flow display_value="Revisar Recomanacions">d80cb7381b755814c851a64fad4bcb1a</flow>
+        <flow display_value="Revisar Observacions">d80cb7381b755814c851a64fad4bcb1a</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -118,31 +118,7 @@
         <sys_created_on>2020-09-09 07:02:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2332c31b479c10c851a64fad4bcb8e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2020-09-10 01:00:06</sys_updated_on>
-        <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=cd2332c31b479c10c851a64fad4bcb8e"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=d80cb7381b755814c851a64fad4bcb1a^sys_idNOT IN6d1c33381b755814c851a64fad4bcbc5"/>
-    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
-        <comment/>
-        <display_text/>
-        <flow display_value="Revisar Recomanacions">d80cb7381b755814c851a64fad4bcb1a</flow>
-        <name>Daily</name>
-        <remote_sys_id/>
-        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
-        <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-07-02 09:16:19</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>6d1c33381b755814c851a64fad4bcbc5</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -150,7 +126,31 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-09 07:02:25</sys_updated_on>
+        <sys_updated_on>2020-11-02 09:04:46</sys_updated_on>
+        <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cd2332c31b479c10c851a64fad4bcb8e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d80cb7381b755814c851a64fad4bcb1a^sys_idNOT IN6d1c33381b755814c851a64fad4bcbc5"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Revisar Observacions">d80cb7381b755814c851a64fad4bcb1a</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-07-02 09:16:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6d1c33381b755814c851a64fad4bcbc5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-02 09:04:46</sys_updated_on>
         <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -193,12 +193,12 @@
     <sys_hub_action_instance action="delete_multiple" query="flow=d80cb7381b755814c851a64fad4bcb1a^sys_idNOT INcd2332c31b479c10c851a64fad4bcb8e"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Actualitzar totes les romanacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
+        <action_type display_value="Actualitzar totes les observacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot>c6eb3f381b755814c851a64fad4bcb8c</compiled_snapshot>
         <display_text/>
-        <flow display_value="Revisar Recomanacions">d80cb7381b755814c851a64fad4bcb1a</flow>
+        <flow display_value="Revisar Observacions">d80cb7381b755814c851a64fad4bcb1a</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -206,15 +206,15 @@
         <sys_created_on>2020-09-09 07:02:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2332c31b479c10c851a64fad4bcb8e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2020-09-10 01:00:06</sys_updated_on>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-02 09:04:46</sys_updated_on>
         <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cd2332c31b479c10c851a64fad4bcb8e"/>
@@ -223,14 +223,14 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"462cf3781b755814c851a64fad4bcb9c","name":"plan"}}</plan>
         <plan_id>d80cb7381b755814c851a64fad4bcb1a</plan_id>
-        <snapshot>4fc9a2931b0f10105fab4002cd4bcb99</snapshot>
+        <snapshot>312cf3781b755814c851a64fad4bcb8f</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:16:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>462cf3781b755814c851a64fad4bcb9c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -239,7 +239,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:16:37</sys_updated_on>
+        <sys_updated_on>2020-11-02 09:04:46</sys_updated_on>
         <trigger display_value="">422cf3781b755814c851a64fad4bcb9a</trigger>
     </sys_flow_trigger_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -255,10 +255,10 @@
         <internal_name>revisar_recomanacions</internal_name>
         <label_cache>[]</label_cache>
         <master>true</master>
-        <name>Revisar Recomanacions</name>
+        <name>Revisar Observacions</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Revisar Recomanacions">d80cb7381b755814c851a64fad4bcb1a</parent_flow>
+        <parent_flow display_value="Revisar Observacions">d80cb7381b755814c851a64fad4bcb1a</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <sc_callable>false</sc_callable>
@@ -269,7 +269,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>312cf3781b755814c851a64fad4bcb8f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -278,27 +278,27 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:16:37</sys_updated_on>
+        <sys_updated_on>2020-11-02 09:04:45</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=312cf3781b755814c851a64fad4bcb8f"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=312cf3781b755814c851a64fad4bcb8f^sys_idNOT INb92cf3781b755814c851a64fad4bcb92"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=312cf3781b755814c851a64fad4bcb8f^sys_idNOT INebf411e01bd46454c851a64fad4bcb3a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Actualitzar totes les romanacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
-        <action_type_parent display_value="Actualitzar totes les recomanacions">9698b3301b755814c851a64fad4bcb86</action_type_parent>
+        <action_type display_value="Actualitzar totes les observacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
+        <action_type_parent display_value="Actualitzar totes les observacions">9698b3301b755814c851a64fad4bcb86</action_type_parent>
         <comment/>
         <compiled_snapshot>c6eb3f381b755814c851a64fad4bcb8c</compiled_snapshot>
         <display_text/>
-        <flow display_value="Revisar Recomanacions">312cf3781b755814c851a64fad4bcb8f</flow>
+        <flow display_value="Revisar Observacions">312cf3781b755814c851a64fad4bcb8f</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-07-02 09:16:37</sys_created_on>
+        <sys_created_on>2020-11-02 09:04:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>b92cf3781b755814c851a64fad4bcb92</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>ebf411e01bd46454c851a64fad4bcb3a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -306,15 +306,15 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:16:37</sys_updated_on>
-        <ui_id>e1f0d0f3-db1e-4c48-a5ca-97afd9fa2fd9</ui_id>
+        <sys_updated_on>2020-11-02 09:04:45</sys_updated_on>
+        <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=b92cf3781b755814c851a64fad4bcb92"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ebf411e01bd46454c851a64fad4bcb3a"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=312cf3781b755814c851a64fad4bcb8f^sys_idNOT INb12cf3781b755814c851a64fad4bcb93"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Revisar Recomanacions">312cf3781b755814c851a64fad4bcb8f</flow>
+        <flow display_value="Revisar Observacions">312cf3781b755814c851a64fad4bcb8f</flow>
         <name>Daily</name>
         <remote_sys_id/>
         <sys_class_name>sys_hub_trigger_instance</sys_class_name>
@@ -322,7 +322,7 @@
         <sys_created_on>2020-07-02 09:16:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b12cf3781b755814c851a64fad4bcb93</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -330,7 +330,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:16:37</sys_updated_on>
+        <sys_updated_on>2020-11-02 09:04:46</sys_updated_on>
         <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -370,23 +370,23 @@
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2020-07-02 09:16:37</sys_updated_on>
     </sys_flow_cat_variable_model>
-    <sys_hub_action_instance action="delete_multiple" query="flow=312cf3781b755814c851a64fad4bcb8f^sys_idNOT INb92cf3781b755814c851a64fad4bcb92"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=312cf3781b755814c851a64fad4bcb8f^sys_idNOT INebf411e01bd46454c851a64fad4bcb3a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Actualitzar totes les romanacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
-        <action_type_parent display_value="Actualitzar totes les recomanacions">9698b3301b755814c851a64fad4bcb86</action_type_parent>
+        <action_type display_value="Actualitzar totes les observacions">c6eb3f381b755814c851a64fad4bcb8c</action_type>
+        <action_type_parent display_value="Actualitzar totes les observacions">9698b3301b755814c851a64fad4bcb86</action_type_parent>
         <comment/>
         <compiled_snapshot>c6eb3f381b755814c851a64fad4bcb8c</compiled_snapshot>
         <display_text/>
-        <flow display_value="Revisar Recomanacions">312cf3781b755814c851a64fad4bcb8f</flow>
+        <flow display_value="Revisar Observacions">312cf3781b755814c851a64fad4bcb8f</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-07-02 09:16:37</sys_created_on>
+        <sys_created_on>2020-11-02 09:04:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>b92cf3781b755814c851a64fad4bcb92</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>ebf411e01bd46454c851a64fad4bcb3a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -394,8 +394,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-02 09:16:37</sys_updated_on>
-        <ui_id>e1f0d0f3-db1e-4c48-a5ca-97afd9fa2fd9</ui_id>
+        <sys_updated_on>2020-11-02 09:04:45</sys_updated_on>
+        <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=b92cf3781b755814c851a64fad4bcb92"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ebf411e01bd46454c851a64fad4bcb3a"/>
 </record_update>
