@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="302" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="408" text_index="true" type="collection">
         <element default="0" label="Accions" max_length="40" name="accions" read_only="true" type="integer"/>
         <element attributes="target_threshold_colors=0:#C71585;1:yellow;50:orange;99:lightgreen" default="0" label="Execució %" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
         <element label="Codi antic" max_length="40" name="codi_antic" type="string"/>
@@ -15,7 +15,7 @@
         <element choice="1" label="Processos vinculats" max_length="1024" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="glide_list" use_reference_qualifier="advanced">
             <choice/>
         </element>
-        <element label="Observacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');^estat!=5^EQ" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Observacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_floats="true" reference_qual="sgq=javascript:gs.getPreference('qualitat.sgqActual','');^estat!=5^EQ" type="glide_list" use_reference_qualifier="advanced"/>
         <element label="Observació obligatoria" max_length="40" name="recomanacioobligatoria" read_only="true" type="boolean"/>
         <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" mandatory="true" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^activa=true^assignable=true^EQ&quot;;" type="reference" use_reference_qualifier="advanced">
             <choice/>

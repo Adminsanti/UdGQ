@@ -54,7 +54,7 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-10-21 11:24:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>0f8104301b4c6014c851a64fad4bcbd7</sys_id>
+        <sys_id>9eb47870dbcc2490ccd95bd05b9619e3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>SGQs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_estandard_sgqs</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-10-21 11:24:06</sys_updated_on>
+        <sys_updated_on>2020-11-02 14:34:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

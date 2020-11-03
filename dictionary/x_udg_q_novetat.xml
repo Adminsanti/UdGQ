@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Novetat" max_length="40" name="x_udg_q_novetat" sizeclass="6" type="collection">
+    <element label="Novetat" max_length="40" name="x_udg_q_novetat" sizeclass="10" type="collection">
         <element default="javascript:new GlideDateTime()" label="Date" max_length="40" name="date" type="glide_date"/>
         <element label="Description" max_length="40000" name="description" type="string"/>
         <element label="Notificat a" max_length="10000" name="notificat_a" read_only="true" reference="sys_user" type="glide_list"/>

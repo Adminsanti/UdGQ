@@ -472,7 +472,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d52c7a4f1b479c10c851a64fad4bcb27</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>grFuncio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -975,7 +975,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>28bc768f1b479c10c851a64fad4bcb9e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>grFuncio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
