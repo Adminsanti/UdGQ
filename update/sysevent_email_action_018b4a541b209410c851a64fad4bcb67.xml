@@ -7,10 +7,7 @@
         <affected_field_on_event/>
         <category display_value="Seguiment i Acreditació" name="Seguiment i Acreditació">5ee65a181b609410c851a64fad4bcbf2</category>
         <collection>x_udg_q_informevsma</collection>
-        <condition table="x_udg_q_informevsma">documentANYTHING^nomISNOTEMPTY^documentCHANGESFROM^ORnomCHANGESFROM^EQ<item endquery="false" field="document" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
-            <item endquery="false" field="nom" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
-            <item endquery="false" field="document" goto="false" newquery="false" operator="CHANGESFROM" or="false" value=""/>
-            <item endquery="false" field="nom" goto="false" newquery="false" operator="CHANGESFROM" or="true" value=""/>
+        <condition table="x_udg_q_informevsma">documentCHANGESFROM^EQ<item endquery="false" field="document" goto="false" newquery="false" operator="CHANGESFROM" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -41,7 +38,7 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p>Nou informe registrat: <strong>${URI_REF}</strong></p>
-<p>Podeu consultar l'informe seguint l'enlla&ccedil;. El GPA registrar&agrave; les recomanacions incloses per tal que pogueu fer-ne seguiment.</p>
+<p>Podeu consultar l'informe&nbsp;seguint l'enlla&ccedil;. El GPA registrar&agrave; les recomanacions incloses per tal que en pogueu fer-ne seguiment.</p>
 <p>${mail_script:disclaimer udg}</p>
 <p>${mail_script:copiar ManagersUniversitat}</p>]]></message_html>
         <message_list/>
@@ -66,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>018b4a541b209410c851a64fad4bcb67</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Informe rebut nou amb document</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -75,7 +72,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_018b4a541b209410c851a64fad4bcb67</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:02:37</sys_updated_on>
+        <sys_updated_on>2020-05-07 14:03:55</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
