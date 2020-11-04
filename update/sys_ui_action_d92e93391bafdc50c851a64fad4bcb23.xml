@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>sysverb_insert</action_name>
+        <action_name>sysverb_insertxxx</action_name>
         <active>false</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.state == -5 &amp;&amp; (gs.hasRole("x_udg_q.User") || gs.hasRole("x_udg_q.Manager") || gs.hasRole("x_udg_q.ManagerUniversitat")) &amp;&amp; current.sgq ==gs.getUser().getPreference('qualitat.sgqActual');</condition>
+        <condition>current.canCreate() &amp;&amp; current.state == -5 &amp;&amp; (gs.hasRole("x_udg_q.User") || gs.hasRole("x_udg_q.Manager") || gs.hasRole("x_udg_q.ManagerUniversitat")) &amp;&amp; current.sgq ==gs.getUser().getPreference('qualitat.sgqActual');</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -43,7 +43,7 @@ au.postInsert(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d92e93391bafdc50c851a64fad4bcb23</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>PROVA INSERT</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -52,7 +52,7 @@ au.postInsert(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_d92e93391bafdc50c851a64fad4bcb23</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-02 08:35:49</sys_updated_on>
+        <sys_updated_on>2020-11-04 10:50:27</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
