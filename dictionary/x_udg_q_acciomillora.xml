@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="768" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Acció Millora" max_length="40" name="x_udg_q_acciomillora" sizeclass="774" text_index="true" type="collection">
         <element label="Compartida" max_length="4000" name="compartida" reference="x_udg_q_sgq" reference_qual="javascript:&quot;sys_idIN&quot;+current.sgq.comparteix" type="glide_list" use_reference_qualifier="advanced"/>
         <element default="true" hint="Fa que el camp &quot;compartida&quot; es mantingui automàticament  sincronitzat, incloent-hi els SGQ de tots els objectius als quals contribueix aquesta acció" label="Sinc compartida" max_length="40" name="compratidasync" type="boolean"/>
         <element label="Declarada" max_length="40" name="declarat" read_only="true" type="glide_date_time"/>

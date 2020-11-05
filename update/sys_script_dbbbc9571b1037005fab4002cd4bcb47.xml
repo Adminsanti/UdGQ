@@ -6,7 +6,7 @@
         <action_insert>false</action_insert>
         <action_query>true</action_query>
         <action_update>false</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Query Subestàndard</name>
+        <name>RECYCLE Query Subestàndard</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,7 +32,7 @@ var ED= "70e18231db89e7c01f06adc3ca961971";
 
 if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
 	if (SGQpref == ED) {
-		current.addQuery("estudis=Doctorat");
+current.addQuery("estudis=Doctorat");
 	}
 	else {
 	
@@ -46,8 +46,8 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dbbbc9571b1037005fab4002cd4bcb47</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Query Subestàndard</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>RECYCLE Query Subestàndard</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -55,7 +55,7 @@ if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_dbbbc9571b1037005fab4002cd4bcb47</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-30 11:59:25</sys_updated_on>
+        <sys_updated_on>2020-11-04 12:42:28</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
