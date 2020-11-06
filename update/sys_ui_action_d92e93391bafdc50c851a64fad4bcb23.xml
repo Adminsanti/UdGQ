@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>sysverb_insertxxx</action_name>
-        <active>false</active>
+        <action_name>sysverb_insertPM</action_name>
+        <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
-        <comments/>
-        <condition>current.canCreate() &amp;&amp; current.state == -5 &amp;&amp; (gs.hasRole("x_udg_q.User") || gs.hasRole("x_udg_q.Manager") || gs.hasRole("x_udg_q.ManagerUniversitat")) &amp;&amp; current.sgq ==gs.getUser().getPreference('qualitat.sgqActual');</condition>
+        <comments>Afegeix al PM - insert Accio</comments>
+        <condition>current.canCreate()</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -25,13 +25,23 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>PROVA INSERT</name>
+        <name>Afegeix al PM</name>
         <onclick/>
-        <order>100</order>
-        <script><![CDATA[answer = current.insert();
-gs.include('global.ActionUtils');
-var au = new global.ActionUtils();
-au.postInsert(current);]]></script>
+        <order>500</order>
+        <script><![CDATA[current.state = 2;
+current.active = true;
+current.declarat = new GlideDateTime().toString();
+current.declarat_per = gs.getUserID();
+if (current.responsable.membres.toString().indexOf(current.assigned_to) == -1)
+    current.assigned_to = current.responsable.usuari;
+if (current.valoracio != "") {
+    current.valorat_per = gs.getUserID();
+    current.valorat = new GlideDateTime().toString();
+}
+current.insert();
+gs.addInfoMessage("<B> <A HREF=" + gs.getProperty('glide.servlet.uri') + "x_udg_q_acciomillora.do?sys_id=" + current.sys_id + ">" + current.number + "</A></B> Incorporada al Pla de Millora");
+var gsu = new GlideSantiUtil();
+gsu.postInsert(current); //inserta la relacio M2M si ve de llista]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -43,8 +53,8 @@ au.postInsert(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d92e93391bafdc50c851a64fad4bcb23</sys_id>
-        <sys_mod_count>29</sys_mod_count>
-        <sys_name>PROVA INSERT</sys_name>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_name>Afegeix al PM</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -52,7 +62,7 @@ au.postInsert(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_d92e93391bafdc50c851a64fad4bcb23</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-04 10:50:27</sys_updated_on>
+        <sys_updated_on>2020-11-06 11:07:43</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
