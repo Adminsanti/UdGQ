@@ -4,13 +4,13 @@
             <element>comments</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 08:56:54</sys_created_on>
-            <sys_id>114f20ce1bd78050c851a64fad4bcb3e</sys_id>
+            <sys_created_on>2020-11-06 14:03:33</sys_created_on>
+            <sys_id>97bfb2fd1b506410c851a64fad4bcb06</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Desenvolupament" display_value="Desenvolupament" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">454fec8e1bd78050c851a64fad4bcbfa</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 08:56:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 14:03:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>comments_and_work_notes</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-03-03 08:56:54</sys_created_on>
-            <sys_id>914f20ce1bd78050c851a64fad4bcb3e</sys_id>
+            <sys_created_on>2020-11-06 14:03:33</sys_created_on>
+            <sys_id>5fbfb2fd1b506410c851a64fad4bcb06</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Desenvolupament" display_value="Desenvolupament" name="x_udg_q_objectiumillora" sys_domain="global" view="Default view">454fec8e1bd78050c851a64fad4bcbfa</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-03-03 08:56:54</sys_updated_on>
+            <sys_updated_on>2020-11-06 14:03:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
