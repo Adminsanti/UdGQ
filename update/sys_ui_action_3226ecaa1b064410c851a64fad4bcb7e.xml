@@ -25,9 +25,9 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Nou Esborrany Copiant</name>
+        <name>Copia a Nou Esborrany</name>
         <onclick/>
-        <order>300</order>
+        <order>1200</order>
         <script><![CDATA[doCopy();
 function doCopy() {
     var saveMe = current;
@@ -67,8 +67,8 @@ function doCopy() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3226ecaa1b064410c851a64fad4bcb7e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Nou Esborrany Copiant</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Copia a Nou Esborrany</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -76,7 +76,7 @@ function doCopy() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_3226ecaa1b064410c851a64fad4bcb7e</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-08 08:15:59</sys_updated_on>
+        <sys_updated_on>2020-11-08 16:37:43</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
