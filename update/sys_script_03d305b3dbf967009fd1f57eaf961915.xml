@@ -32,12 +32,12 @@
 	if (current.state == -5) current.assigned_to=gs.getUserID(); //esborranys s'assignen a qui desa
 
     if (current.state == 2) { //Només per objectius en curs
-        if (current.assigned_to == '' || current.responsable.members.toString().indexOf(current.assigned_to) == -1) //L'assignat està en blanc o ja no pertany a la funció
+        if (current.assigned_to == '' || current.responsable.membres.toString().indexOf(current.assigned_to) == -1) //L'assignat està en blanc o ja no pertany a la funció
             if (current.responsable != '' && current.responsable.usuari != '') {
                 current.assigned_to = current.responsable.usuari;
                 gs.addInfoMessage(current.number + " s'ha assignat a " + current.assigned_to.name);
-                new log("Assignat al resposable per la BR Objectiu " + current.number + " assignat a " + current.assigned_to.name);
-            } else new log(current.number + " Error d'assignació a la BR Objectiu assignar al responsable", 'error');
+                new log.preU("Assignat al resposable per la BR Objectiu " + current.number + " assignat a " + current.assigned_to.name);
+            } else new log.preU(current.number + " Error d'assignació a la BR Objectiu assignar al responsable", 'error');
     }
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -47,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>03d305b3dbf967009fd1f57eaf961915</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>Objectiu assignar al responsable</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -56,7 +56,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_03d305b3dbf967009fd1f57eaf961915</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-06 14:44:50</sys_updated_on>
+        <sys_updated_on>2020-11-09 10:36:37</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
