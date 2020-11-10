@@ -6,7 +6,7 @@
         <color_id display_value="Red">65b30395a9fe3dba003277a7b660b5db</color_id>
         <operator>&gt;</operator>
         <order>-1</order>
-        <report_id display_value="Recomanacions no obligatories per valorar">9605f89e1b536b405fab4002cd4bcbb5</report_id>
+        <report_id display_value="Observacions no obligatories per valorar">9605f89e1b536b405fab4002cd4bcbb5</report_id>
         <sys_class_name>sys_report_mpivot_rule</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-01-31 11:38:16</sys_created_on>
