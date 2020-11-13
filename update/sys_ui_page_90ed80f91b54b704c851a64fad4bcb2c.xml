@@ -4,30 +4,30 @@
         <client_script/>
         <description/>
         <direct>false</direct>
-        <endpoint>x_udg_q_resumRecomanacions.do</endpoint>
+        <endpoint>x_udg_q_resumObservacions.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 
 <style>
 	<g2:macro_invoke macro="x_udg_q_blueTable" />	
 </style>	
-	<g2:macro_invoke macro="x_udg_q_resumRecomanacions" />
+	<g2:macro_invoke macro="x_udg_q_resumObservacions" />
 </j:jelly>]]></html>
-        <name>resumRecomanacions</name>
+        <name>resumObservacions</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-03-20 12:33:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>90ed80f91b54b704c851a64fad4bcb2c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>resumRecomanacions</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>resumObservacions</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_page_90ed80f91b54b704c851a64fad4bcb2c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-20 12:58:21</sys_updated_on>
+        <sys_updated_on>2020-11-13 11:59:01</sys_updated_on>
     </sys_ui_page>
 </record_update>
