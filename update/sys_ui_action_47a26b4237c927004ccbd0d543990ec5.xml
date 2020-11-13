@@ -25,6 +25,7 @@
         <list_link>true</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
+        <messages/>
         <name>Mostra resum de seguiment del PM</name>
         <onclick>mostraResumSeguiment()</onclick>
         <order>1000</order>

@@ -6,6 +6,7 @@
         <dynamic_title_structure/>
         <id>udgq_home</id>
         <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
         <public>true</public>
         <roles/>
         <seo_script/>

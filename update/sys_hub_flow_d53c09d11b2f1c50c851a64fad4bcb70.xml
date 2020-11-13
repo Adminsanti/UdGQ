@@ -19,6 +19,7 @@
         <outputs/>
         <remote_trigger_id/>
         <run_as>system</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
@@ -41,7 +42,6 @@
         <sys_updated_on>2020-09-28 09:34:43</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
-    <sys_variable_value action="delete_multiple" query="document_key=d53c09d11b2f1c50c851a64fad4bcb70"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=d53c09d11b2f1c50c851a64fad4bcb70^sys_idNOT INdd3c09d11b2f1c50c851a64fad4bcb73"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>d53c09d11b2f1c50c851a64fad4bcb70</id>

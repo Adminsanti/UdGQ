@@ -19,6 +19,7 @@
         <outputs/>
         <remote_trigger_id>422cf3781b755814c851a64fad4bcb9a</remote_trigger_id>
         <run_as>system</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
@@ -41,7 +42,6 @@
         <sys_updated_on>2020-11-02 09:04:46</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
-    <sys_variable_value action="delete_multiple" query="document_key=d80cb7381b755814c851a64fad4bcb1a"/>
     <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
         <day_of_month>1</day_of_month>
@@ -75,6 +75,8 @@
         <conditional>false</conditional>
         <entered_time/>
         <name>Trigger:422cf3781b755814c851a64fad4bcb9a</name>
+        <offset/>
+        <offset_type>0</offset_type>
         <run_as display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
@@ -261,6 +263,7 @@
         <parent_flow display_value="Revisar Observacions">d80cb7381b755814c851a64fad4bcb1a</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
@@ -281,7 +284,6 @@
         <sys_updated_on>2020-11-02 09:04:45</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
-    <sys_variable_value action="delete_multiple" query="document_key=312cf3781b755814c851a64fad4bcb8f"/>
     <sys_hub_flow_component action="delete_multiple" query="flow=312cf3781b755814c851a64fad4bcb8f^sys_idNOT INebf411e01bd46454c851a64fad4bcb3a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>

@@ -9,6 +9,8 @@
         <entered_time/>
         <map/>
         <name>Titulacions Diari</name>
+        <offset/>
+        <offset_type>0</offset_type>
         <order/>
         <parent/>
         <partition_method>roundRobin</partition_method>

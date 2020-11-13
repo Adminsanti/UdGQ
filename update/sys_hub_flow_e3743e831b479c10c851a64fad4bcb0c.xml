@@ -19,6 +19,7 @@
         <outputs/>
         <remote_trigger_id/>
         <run_as>user</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
@@ -41,7 +42,6 @@
         <sys_updated_on>2020-09-09 08:25:49</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
-    <sys_variable_value action="delete_multiple" query="document_key=e3743e831b479c10c851a64fad4bcb0c"/>
     <sys_hub_flow_component action="delete_multiple" query="flow=e3743e831b479c10c851a64fad4bcb0c^sys_idNOT IN46187a0b1b479c10c851a64fad4bcb21,4d553a471b479c10c851a64fad4bcbbd,5496fe871b479c10c851a64fad4bcb51"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -551,6 +551,7 @@
         <parent_flow display_value="Revisar i corregir assignament Objectiu">e3743e831b479c10c851a64fad4bcb0c</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
+        <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
@@ -571,7 +572,6 @@
         <sys_updated_on>2020-09-09 07:28:44</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
-    <sys_variable_value action="delete_multiple" query="document_key=e629be4b1b479c10c851a64fad4bcb69"/>
     <sys_hub_flow_component action="delete_multiple" query="flow=e629be4b1b479c10c851a64fad4bcb69^sys_idNOT IN3229fe4b1b479c10c851a64fad4bcbbf,3e29fe4b1b479c10c851a64fad4bcbc3,b629fe4b1b479c10c851a64fad4bcbc7"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">01553a471b479c10c851a64fad4bcbbd</block>

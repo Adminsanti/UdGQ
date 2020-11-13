@@ -151,6 +151,7 @@ data.typeahead = $sp.getWidgetFromInstance('typeahead-search');
 // inici necessari language picker
 data.languageSelector = $sp.getWidget("language-picker", {});]]></script>
         <servicenow>false</servicenow>
+        <static>false</static>
         <sys_class_name>sp_header_footer</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-05 09:37:40</sys_created_on>
