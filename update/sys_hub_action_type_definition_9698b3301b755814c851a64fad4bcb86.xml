@@ -38,6 +38,7 @@
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=9698b3301b755814c851a64fad4bcb86"/>
     <sys_hub_step_instance action="delete_multiple" query="action=9698b3301b755814c851a64fad4bcb86^sys_idNOT IN1bd9b7341b755814c851a64fad4bcbca"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Actualitzar totes les observacions">9698b3301b755814c851a64fad4bcb86</action>
@@ -237,6 +238,7 @@
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=c6eb3f381b755814c851a64fad4bcb8c"/>
     <sys_hub_step_instance action="delete_multiple" query="action=c6eb3f381b755814c851a64fad4bcb8c^sys_idNOT IN8eeb3f381b755814c851a64fad4bcb8d"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Actualitzar totes les observacions">c6eb3f381b755814c851a64fad4bcb8c</action>

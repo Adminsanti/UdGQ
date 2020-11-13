@@ -2,7 +2,9 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
+        <aggregation_source/>
         <allow_data_label_overlap>false</allow_data_label_overlap>
+        <apply_alias>true</apply_alias>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -76,7 +78,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>x_udg_q.Observador,x_udg_q.User</roles>
+        <roles>x_udg_q.User,x_udg_q.Observador</roles>
         <row>estat</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -84,7 +86,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>null</set_color>
+        <set_color>one_color</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>true</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -105,17 +107,17 @@
         <sys_created_on>2019-01-31 11:38:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9605f89e1b536b405fab4002cd4bcbb5</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Observacions no obligatories per valorar</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Recomanacions no obligatories per valorar</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_9605f89e1b536b405fab4002cd4bcbb5</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-10 11:48:28</sys_updated_on>
+        <sys_updated_on>2019-01-31 12:35:00</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
-        <title>Observacions no obligatories per valorar</title>
+        <title>Recomanacions no obligatories per valorar</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
@@ -132,7 +134,7 @@
         <x_axis_grid_dotted>false</x_axis_grid_dotted>
         <x_axis_grid_width>1</x_axis_grid_width>
         <x_axis_label_bold>false</x_axis_label_bold>
-        <x_axis_label_color/>
+        <x_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_label_color>
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_label_tilt>0</x_axis_label_tilt>
         <x_axis_opposite>false</x_axis_opposite>
@@ -147,7 +149,7 @@
         <y_axis_grid_dotted>false</y_axis_grid_dotted>
         <y_axis_grid_width>1</y_axis_grid_width>
         <y_axis_label_bold>false</y_axis_label_bold>
-        <y_axis_label_color/>
+        <y_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_label_color>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_label_tilt>0</y_axis_label_tilt>
         <y_axis_opposite>false</y_axis_opposite>

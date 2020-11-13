@@ -42,6 +42,7 @@
         <sys_updated_on>2020-09-09 08:48:40</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=0e98fec71b479c10c851a64fad4bcb4e"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
         <condition table="x_udg_q_funcio">membresVALCHANGES<item endquery="false" field="membres" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
@@ -617,6 +618,7 @@
         <sys_updated_on>2020-09-09 07:44:52</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=bedc7a8f1b479c10c851a64fad4bcbc9"/>
     <sys_hub_flow_component action="delete_multiple" query="flow=bedc7a8f1b479c10c851a64fad4bcbc9^sys_idNOT IN43dc7a8f1b479c10c851a64fad4bcbf4"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
