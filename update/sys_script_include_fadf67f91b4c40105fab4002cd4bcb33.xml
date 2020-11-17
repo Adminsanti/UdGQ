@@ -44,7 +44,7 @@ rtf.prototype = {
         var reg = new RegExp('##' + tag + '#.+##', 'g');
         this._cadena = this._cadena.replace(reg, '');
     },
-	
+
 
     escape: function() {
         this._cadena = this._cadena.replace(/À/g, "\\'c0");
@@ -63,7 +63,7 @@ rtf.prototype = {
         this._cadena = this._cadena.replace(/è/g, "\\'e8");
         this._cadena = this._cadena.replace(/é/g, "\\'e9");
         this._cadena = this._cadena.replace(/í/g, "\\'ed");
-		this._cadena = this._cadena.replace(/ï/g, "\\'ef");
+        this._cadena = this._cadena.replace(/ï/g, "\\'ef");
         this._cadena = this._cadena.replace(/ò/g, "\\'f2");
         this._cadena = this._cadena.replace(/ó/g, "\\'f3");
         this._cadena = this._cadena.replace(/ú/g, "\\'fa");
@@ -80,7 +80,7 @@ rtf.prototype = {
     llista: function(llista) {
         var cadena_rtf = "";
         if (llista[0]) {
-            cadena_rtf =llista[0];
+            cadena_rtf = llista[0];
             for (var index = 1; index < llista.length; ++index)
                 cadena_rtf += this.li(llista[index]);
         }
@@ -112,6 +112,14 @@ rtf.prototype = {
         return this._rowend;
     },
 
+    tablecolor: function(colors) {
+        if (!colors) {
+            colors = '\\red188\\green230\\blue138;\\red108\\green030\\blue038;';
+        } //llavors \clcbpat1 o \clcbpat2
+        var cadena_rtf = '{\\colortbl;' + colors + '}';
+        return cadena_rtf;
+    },
+
     type: 'rtf'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -119,7 +127,7 @@ rtf.prototype = {
         <sys_created_on>2019-09-23 14:55:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fadf67f91b4c40105fab4002cd4bcb33</sys_id>
-        <sys_mod_count>114</sys_mod_count>
+        <sys_mod_count>115</sys_mod_count>
         <sys_name>rtf</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -127,6 +135,6 @@ rtf.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_fadf67f91b4c40105fab4002cd4bcb33</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-18 11:45:36</sys_updated_on>
+        <sys_updated_on>2020-11-16 11:57:52</sys_updated_on>
     </sys_script_include>
 </record_update>
