@@ -127,7 +127,7 @@ ObjectiuUtils.prototype = {
         //new x_udg_q.log("Generant detall informe per " + sgq + " per l'estandard " + sysidSubestandard);
         var col = [7600, 9100, 9700];
         var grObj = new GlideRecord('x_udg_q_objectiumillora');
-        var rtfstring = new rtf("");
+        var r = new rtf("");
         var filtreplus = filtre + "^subestandard=" + sysidSubestandard + "^state=" + status;
         grObj.addEncodedQuery(filtreplus);
         grObj.orderBy('number');
@@ -136,8 +136,8 @@ ObjectiuUtils.prototype = {
         if (grObj.hasNext() && status == 3) text = "Objectius tancats en el període:\\par\\par";
         if (grObj.hasNext() && status == 2) text = "Objectius vigents al pla de millora:\\par\\par";
         while (grObj.next()) {
-            text += rtfstring.tablestart();
-            text += rtfstring.rowstart(col, 36);
+            text += r.tablestart();
+            text += r.rowstart(col, 36);
             text += " \\b " + grObj.number + " \\b0";
             text += sgqSiNoActual(grObj);
             text += " - " + grObj.short_description + "\\intbl\\ql\\cell\n";
@@ -148,8 +148,8 @@ ObjectiuUtils.prototype = {
             }
             text += "\\intbl\\ql\\cell\n";
             text += parseInt(grObj.assoliment) + "%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
-            text += rtfstring.rowend();
-            text += rtfstring.rowstart([col[2]]); //comença filera de valoració
+            text += r.rowend();
+            text += r.rowstart([col[2]]); //comença filera de valoració
 
             var venciment = new GlideDateTime();
             venciment.setYearLocalTime(venciment.getYearLocalTime() - 1); // venciment fa un any
@@ -162,7 +162,7 @@ ObjectiuUtils.prototype = {
                 //text += grObj.valoracio;               
             } else text += "{\\cf6 Manca Valoració";
             text += "}\\intbl\\ql\\cell\n";
-            text += rtfstring.rowend();
+            text += r.rowend();
 
             var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
             grM2m.addQuery('objectiu_millora', grObj.sys_id);
@@ -170,23 +170,23 @@ ObjectiuUtils.prototype = {
             grM2m.query();
             while (grM2m.next()) {
                 if (grM2m.accio_millora.state != -5 && grM2m.accio_millora.number != '') { //cal assegurar que l'acció és accesible
-                    text += rtfstring.rowstart(col);
+                    text += r.rowstart(col);
                     text += " \\b " + grM2m.accio_millora.number + " \\b0";
                     text += sgqSiNoActual(grM2m.accio_millora);
                     text += " - " + grM2m.accio_millora.short_description + "\\intbl\\ql\\cell\n";
                     text += textestatA(grM2m.accio_millora.state) + "\\intbl\\ql\\cell\n";
                     text += parseInt(grM2m.accio_millora.percentatge) + "%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
-                    text += rtfstring.rowend();
+                    text += r.rowend();
                 }
             }
             if (grObj.modificacio_memoria) {
-                text += rtfstring.rowstart([col[2]]);
+                text += r.rowstart([col[2]]);
                 text += "{";
                 text += "Aquest objectiu implica modificació de la memòria";
                 text += "}\\intbl\\ql\\cell\n";
-                text += rtfstring.rowend();
+                text += r.rowend();
             }
-            text += rtfstring.tableend();
+            text += r.tableend();
             text += "\\par\n";
         }
         return text;
@@ -196,18 +196,17 @@ ObjectiuUtils.prototype = {
 
         function sgqSiNoActual(x) {
             var text = "";
-            if (x.sgq != gs.getUser().getPreference('qualitat.sgqActual')) text = "(" + x.sgq.getDisplayValue() + ")";
+            if (x.sgq != gs.getUser().getPreference('qualitat.sgqActual')) text = " (" + x.sgq.getDisplayValue() + ")";
             return text;
         }
         //new x_udg_q.log("Generant resum de l'informe per " + sgq);
-        var rtfstring = new rtf("");
-        var text = "";
+        var r = new rtf("");
         var hiHaCanvisMemoria = false;
         var grObj = new GlideRecord('x_udg_q_objectiumillora');
         grObj.addEncodedQuery(filtre);
         grObj.orderBy('number');
         grObj.query();
-        text += rtfstring.tablestart();
+        r.tablestart();
         while (grObj.next()) {
             var col = [0];
             var darreracol = 9800;
@@ -215,29 +214,24 @@ ObjectiuUtils.prototype = {
             if (grObj.state == 2) col = [9450];
             col.push(darreracol);
 
-            text += rtfstring.rowstart(col, 36);
-            text += "\\b " + grObj.number;
+            r.rowstart(col, 36);
+            r.add("\\b " + grObj.number);
             if (grObj.modificacio_memoria) {
-                text += "*";
+                r.add("*");
                 hiHaCanvisMemoria = true;
             }
-            text += " \\b0 ";
-            text += sgqSiNoActual(grObj);
-            text += " - " + grObj.short_description + "\\ql\\cell\n";
-            if (grObj.state == 3) {
-                text += grObj.tancament.getDisplayValue();
-                text += "\\ql\\cell\n";
-            }
-            text += parseInt(grObj.assoliment) + "%\\qr\\cell\n";
-            text += rtfstring.rowend();
+            r.add(" \\b0 " + sgqSiNoActual(grObj) + " - " + grObj.short_description + "\\ql\\cell\n");
+            if (grObj.state == 3) r.add(grObj.tancament.getDisplayValue()+"\\ql\\cell\n");
+            r.add(parseInt(grObj.assoliment) + "%\\qr\\cell\n");
+            r.rowend();
         }
         if (hiHaCanvisMemoria) {
-            text += rtfstring.rowstart([darreracol]);
-            text += "{* Objectius que impliquen canvis a les memòries}\\intbl\\ql\\cell\n";
-            text += rtfstring.rowend();
+            r.rowstart([darreracol]);
+            r.add("{* Objectius que impliquen canvis a les memòries}\\intbl\\ql\\cell\n");
+            r.rowend();
         }
-        text += rtfstring.tableend();
-        return text;
+        r.tableend();
+        return r.getContent();
     },
 
 
@@ -260,15 +254,14 @@ ObjectiuUtils.prototype = {
 
         var r = new rtf("");
         r.tablestart();
-        var col = [9800];
         while (grObj.next()) {
-            r.rowstart(col, 27); //el segon número és un número del tema de la plantilla
+            r.rowstart([9800], 27); //el segon número és un número del tema de la plantilla
             r.add("\\b " + grObj.number + " \\b0");
             r.add(this.sgqSiNoActual(grObj));
             r.add(" - " + grObj.short_description + "\\ql");
             r.cellend().rowend();
 
-            r.rowstart(col);
+            r.rowstart([9800]);
             if (grObj.state == 2) {
                 r.add("Responsable: " + grObj.getDisplayValue('responsable') + this.sgqSiNoActual(grObj)).nl();
                 r.add("Prioritat: " + grObj.getDisplayValue('priority'));
@@ -285,11 +278,12 @@ ObjectiuUtils.prototype = {
             var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
             grM2m.addQuery('objectiu_millora', grObj.sys_id);
             grM2m.orderBy('order');
+            grM2m.orderBy('accio_millora.number');
             grM2m.query();
 
             while (grM2m.next()) {
                 if (grM2m.accio_millora.state != -5 && grM2m.accio_millora.number != '') { //cal assegurar que l'acció és accesible
-                    r.rowstart(col);
+                    r.rowstart([9800]);
                     r.add("\\tab \\b " + grM2m.accio_millora.number + " \\b0");
                     r.add(" - " + grM2m.accio_millora.short_description + "\\intbl\\ql");
                     r.cellend().rowend();
@@ -299,80 +293,6 @@ ObjectiuUtils.prototype = {
         r.tableend();
         return r.getContent();
     },
-
-
-    getRtfMilloraTancat: function (filtre, sgq) {
-        //inner function
-        function textestatA(estat) {
-            if (estat == -5) return "Esborrany";
-            if (estat == 2) return "En curs";
-            if (estat == 3) return "Tancada";
-            return "ERROR!!!!";
-        }
-
-        function sgqSiNoActual(x) {
-            var text = "";
-            if (x.sgq != gs.getUser().getPreference('qualitat.sgqActual')) text = "(" + x.sgq.getDisplayValue() + ")";
-            return text;
-        }
-        //new x_udg_q.log("Generant resum de l'informe per " + sgq);
-        var rtfstring = new rtf("");
-        var text = "";
-        var hiHaCanvisMemoria = false;
-        var grObj = new GlideRecord('x_udg_q_objectiumillora');
-        grObj.addEncodedQuery(filtre);
-        grObj.orderBy('number');
-        grObj.query();
-        text += rtfstring.tablestart();
-        while (grObj.next()) {
-            var col = [0];
-            var darreracol = 9800;
-            if (grObj.state == 3) col = [8100, 9200];
-            if (grObj.state == 2) col = [9200];
-            col.push(darreracol);
-
-            text += rtfstring.rowstart(col, 36); //aquest 36 en teoria f el color, però depén del tema
-            text += "\\b " + grObj.number;
-            if (grObj.modificacio_memoria) {
-                text += "*";
-                hiHaCanvisMemoria = true;
-            }
-            text += " \\b0 ";
-            text += sgqSiNoActual(grObj);
-            text += " - " + grObj.short_description + "\\ql\\cell\n";
-            if (grObj.state == 3) {
-                text += grObj.tancament.getDisplayValue();
-                text += "\\ql\\cell\n";
-            }
-            text += parseInt(grObj.assoliment) + "%\\qr\\cell\n";
-            text += rtfstring.rowend();
-
-            var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
-            grM2m.addQuery('objectiu_millora', grObj.sys_id);
-            grM2m.orderBy('order');
-            grM2m.query();
-
-            while (grM2m.next()) {
-                if (grM2m.accio_millora.state != -5 && grM2m.accio_millora.number != '') { //cal assegurar que l'acció és accesible
-                    text += rtfstring.rowstart(col);
-                    text += "\\tab \\b " + grM2m.accio_millora.number + " \\b0";
-                    text += sgqSiNoActual(grM2m.accio_millora);
-                    text += " - " + grM2m.accio_millora.short_description + "\\intbl\\ql\\cell\n";
-                    //text += textestatA(grM2m.accio_millora.state) + "\\intbl\\ql\\cell\n";
-                    text += parseInt(grM2m.accio_millora.percentatge) + "%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
-                    text += rtfstring.rowend();
-                }
-            }
-        }
-        if (hiHaCanvisMemoria) {
-            text += rtfstring.rowstart([darreracol]);
-            text += "{* Objectius que impliquen canvis a les memòries}\\intbl\\ql\\cell\n";
-            text += rtfstring.rowend();
-        }
-        text += rtfstring.tableend();
-        return text;
-    },
-
     type: 'ObjectiuUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -380,7 +300,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>453</sys_mod_count>
+        <sys_mod_count>459</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -388,6 +308,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>Adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-18 12:34:57</sys_updated_on>
+        <sys_updated_on>2020-11-18 14:49:00</sys_updated_on>
     </sys_script_include>
 </record_update>
