@@ -9,187 +9,182 @@
         <name>ObjectiuUtils</name>
         <script><![CDATA[var ObjectiuUtils = Class.create();
 ObjectiuUtils.prototype = {
-    initialize: function (objectiu) {
-        //sys_id de l'objectiu
-        if (objectiu) this._objectiu = objectiu;
-    },
+        initialize: function (objectiu) {
+            //sys_id de l'objectiu
+            if (objectiu) this._objectiu = objectiu;
+        },
 
-    actualitzaExecucio: function () {
+        actualitzaExecucio: function () {
 
-        new x_udg_q.log("ObjectiuUtils.actualitzaExecucio per sys_id: " + this._objectiu);
-        var grObjectiu = new GlideRecord('x_udg_q_objectiumillora');
-        grObjectiu.get(this._objectiu);
-        grObjectiu.accions = this.getAccions(this._objectiu);
-        grObjectiu.assoliment = this.getExecucio(this._objectiu);
-        grObjectiu.update();
-    },
+            new x_udg_q.log("ObjectiuUtils.actualitzaExecucio per sys_id: " + this._objectiu);
+            var grObjectiu = new GlideRecord('x_udg_q_objectiumillora');
+            grObjectiu.get(this._objectiu);
+            grObjectiu.accions = this.getAccions(this._objectiu);
+            grObjectiu.assoliment = this.getExecucio(this._objectiu);
+            grObjectiu.update();
+        },
 
-    actualitzaPercentatgeAccions: function () {
+        actualitzaPercentatgeAccions: function () {
 
-        var ponderacions = 0;
-        var ga = new GlideRecord('x_udg_q_m2m_accions_objectius');
-        ga.addQuery('objectiu_millora', this._objectiu);
-        ga.addEncodedQuery('accio_millora.state!=-5'); //Les accions en Draft no compten
-        ga.query();
-        while (ga.next()) {
-            ponderacions += ga.contribucio;
-        }
-
-        var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
-        grM2m.addQuery('objectiu_millora', this._objectiu);
-        grM2m.addEncodedQuery('accio_millora.state!=-5'); //Les accions en Draft no compten
-        grM2m.query();
-        while (grM2m.next()) {
-            if (ponderacions > 0) {
-                grM2m.percentatge = grM2m.contribucio / ponderacions * 100;
-                grM2m.update();
+            var ponderacions = 0;
+            var ga = new GlideRecord('x_udg_q_m2m_accions_objectius');
+            ga.addQuery('objectiu_millora', this._objectiu);
+            ga.addEncodedQuery('accio_millora.state!=-5'); //Les accions en Draft no compten
+            ga.query();
+            while (ga.next()) {
+                ponderacions += ga.contribucio;
             }
-        }
-    },
 
-    getAccions: function (objectiu_id) { //Retorna el nombre d'accions que depenen de l'objectiu (sense esborranys)
-
-        var accions = 0;
-        var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
-        grM2m.addQuery('objectiu_millora', objectiu_id);
-        grM2m.addQuery("accio_millora.state!=-5"); //Les accions en Draft no compten
-        grM2m.query();
-        if (grM2m.next()) {
-            accions = grM2m.getRowCount();
-        }
-        new x_udg_q.log("ObjectiuUtils.getAccions " + objectiu_id + " accions= " + accions);
-        return accions;
-    },
-
-    getExecucio: function (objectiu_id) {
-
-        //Retorna l'assoliment d'un objectiu a partir de totes les accions que hi contribueixen
-        var grObjectiu = new GlideRecord('x_udg_q_objectiumillora');
-        grObjectiu.get(objectiu_id);
-
-        if (grObjectiu.state == -5) return 0;
-        //if (grObjectiu.state == 3) return grObjectiu.assoliment; Això impedia actualitzar els objectius tancats
-        var assoliment = 0;
-        var acumulat = 0;
-        var ponderacions = 0;
-        var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
-        grM2m.addQuery('objectiu_millora', grObjectiu.sys_id);
-        grM2m.addEncodedQuery("accio_millora.state!=-5"); //Les accions en Draft no compten
-        grM2m.query();
-        while (grM2m.next()) { //Per cada action
-            if (grM2m.contribucio > 0 && grM2m.accio_millora.state != -5) { //L'accio ha de contribució>0 i no ser esborrany
-                ponderacions += grM2m.contribucio;
-                acumulat += (grM2m.accio_millora.percentatge * grM2m.contribucio);
+            var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
+            grM2m.addQuery('objectiu_millora', this._objectiu);
+            grM2m.addEncodedQuery('accio_millora.state!=-5'); //Les accions en Draft no compten
+            grM2m.query();
+            while (grM2m.next()) {
+                if (ponderacions > 0) {
+                    grM2m.percentatge = grM2m.contribucio / ponderacions * 100;
+                    grM2m.update();
+                }
             }
-        }
-        if (ponderacions > 0) assoliment = acumulat / ponderacions;
-        //new x_udg_q.log("FINAL ObjectiuUtils.getExecucio "+objectiu_id.number+" assoliment = "+assoliment);
-        return assoliment;
-    },
+        },
 
-    responsableObjectiuDefecte: function () {
+        getAccions: function (objectiu_id) { //Retorna el nombre d'accions que depenen de l'objectiu (sense esborranys)
 
-        var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
-        var gr = new GlideRecord('x_udg_q_sgq');
-        gr.get("sys_id=" + SGQpref);
-        return gr.responsable;
-    },
-
-    setAllResponsables: function (funcio) {
-        var gr = new GlideRecord('x_udg_q_objectiumillora');
-        gr.addQuery('funcio', funcio);
-        gr.addQuery('state=-5'); //No s'actualitzen Esborranys
-        grObj.query();
-        new x_udg_q.log(funcio.sgq.codi + " ObjectiuUtils.setAllResponsables busca objectius amb responsable: " + funcio.nom);
-        while (gr.next()) {
-            new x_udg_q.log(gr.number + " ObjectiuUtils.setAllResponsables actualitza (" + funcio.nom + ") " + gr.assigned_to.name + " -> " + funcio.usuari.name);
-            grObj.assigned_to = funcio.usuari;
-            grObj.update();
-        }
-    },
-
-    getRtfperSubestandard: function (sysidSubestandard, filtre, status, sgq) {
-
-        //inner function
-        function textestatA(estat) {
-            if (estat == -5) return "Esborrany";
-            if (estat == 2) return "En curs";
-            if (estat == 3) return "Tancada";
-            return "ERROR!!!!";
-        }
-
-        function sgqSiNoActual(x) {
-            var text = "";
-            if (x.sgq != gs.getUser().getPreference('qualitat.sgqActual')) text = " (" + x.sgq.getDisplayValue() + ")";
-            return text;
-        }
-
-        //new x_udg_q.log("Generant detall informe per " + sgq + " per l'estandard " + sysidSubestandard);
-        var col = [7600, 9100, 9700];
-        var grObj = new GlideRecord('x_udg_q_objectiumillora');
-        var r = new rtf("");
-        var filtreplus = filtre + "^subestandard=" + sysidSubestandard + "^state=" + status;
-        grObj.addEncodedQuery(filtreplus);
-        grObj.orderBy('number');
-        grObj.query();
-        var text = "";
-        if (grObj.hasNext() && status == 3) text = "Objectius tancats en el període:\\par\\par";
-        if (grObj.hasNext() && status == 2) text = "Objectius vigents al pla de millora:\\par\\par";
-        while (grObj.next()) {
-            text += r.tablestart();
-            text += r.rowstart(col, 36);
-            text += " \\b " + grObj.number + " \\b0";
-            text += sgqSiNoActual(grObj);
-            text += " - " + grObj.short_description + "\\intbl\\ql\\cell\n";
-            if (grObj.state == 2) { //en curs
-                text += "En curs";
-            } else { //state==3 tancat (perqué esborrany no ha de poder ser)
-                text += grObj.tancament.getDisplayValue();
+            var accions = 0;
+            var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
+            grM2m.addQuery('objectiu_millora', objectiu_id);
+            grM2m.addQuery("accio_millora.state!=-5"); //Les accions en Draft no compten
+            grM2m.query();
+            if (grM2m.next()) {
+                accions = grM2m.getRowCount();
             }
-            text += "\\intbl\\ql\\cell\n";
-            text += parseInt(grObj.assoliment) + "%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
-            text += r.rowend();
-            text += r.rowstart([col[2]]); //comença filera de valoració
+            new x_udg_q.log("ObjectiuUtils.getAccions " + objectiu_id + " accions= " + accions);
+            return accions;
+        },
 
-            var venciment = new GlideDateTime();
-            venciment.setYearLocalTime(venciment.getYearLocalTime() - 1); // venciment fa un any
-            var valorat = new GlideDateTime(grObj.valorat);
+        getExecucio: function (objectiu_id) {
 
-            if (grObj.valoracio != "") {
-                if (valorat > venciment || grObj.state == 3) text += "{Valoració: ";
-                else text += "{\\cf6 Valoració vençuda: ";
-                text += grObj.valoracio.replace("\n", " \\ql\\par "); //Per incloure els retorns de linia
-                //text += grObj.valoracio;               
-            } else text += "{\\cf6 Manca Valoració";
-            text += "}\\intbl\\ql\\cell\n";
-            text += r.rowend();
+            //Retorna l'assoliment d'un objectiu a partir de totes les accions que hi contribueixen
+            var grObjectiu = new GlideRecord('x_udg_q_objectiumillora');
+            grObjectiu.get(objectiu_id);
+
+            if (grObjectiu.state == -5) return 0;
+            //if (grObjectiu.state == 3) return grObjectiu.assoliment; Això impedia actualitzar els objectius tancats
+            var assoliment = 0;
+            var acumulat = 0;
+            var ponderacions = 0;
+            var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
+            grM2m.addQuery('objectiu_millora', grObjectiu.sys_id);
+            grM2m.addEncodedQuery("accio_millora.state!=-5"); //Les accions en Draft no compten
+            grM2m.query();
+            while (grM2m.next()) { //Per cada action
+                if (grM2m.contribucio > 0 && grM2m.accio_millora.state != -5) { //L'accio ha de contribució>0 i no ser esborrany
+                    ponderacions += grM2m.contribucio;
+                    acumulat += (grM2m.accio_millora.percentatge * grM2m.contribucio);
+                }
+            }
+            if (ponderacions > 0) assoliment = acumulat / ponderacions;
+            //new x_udg_q.log("FINAL ObjectiuUtils.getExecucio "+objectiu_id.number+" assoliment = "+assoliment);
+            return assoliment;
+        },
+
+        responsableObjectiuDefecte: function () {
+
+            var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
+            var gr = new GlideRecord('x_udg_q_sgq');
+            gr.get("sys_id=" + SGQpref);
+            return gr.responsable;
+        },
+
+        setAllResponsables: function (funcio) {
+            var gr = new GlideRecord('x_udg_q_objectiumillora');
+            gr.addQuery('funcio', funcio);
+            gr.addQuery('state=-5'); //No s'actualitzen Esborranys
+            grObj.query();
+            new x_udg_q.log(funcio.sgq.codi + " ObjectiuUtils.setAllResponsables busca objectius amb responsable: " + funcio.nom);
+            while (gr.next()) {
+                new x_udg_q.log(gr.number + " ObjectiuUtils.setAllResponsables actualitza (" + funcio.nom + ") " + gr.assigned_to.name + " -> " + funcio.usuari.name);
+                grObj.assigned_to = funcio.usuari;
+                grObj.update();
+            }
+        },
+
+        getRtfperSubestandard: function (sysidSubestandard, filtre, status, sgq) {
+
+            //inner function
+            function textestatA(estat) {
+                if (estat == -5) return "Esborrany";
+                if (estat == 2) return "En curs";
+                if (estat == 3) return "Tancada";
+                return "ERROR!!!!";
+            }
+
+            function sgqSiNoActual(x) {
+                var text = "";
+                if (x.sgq != gs.getUser().getPreference('qualitat.sgqActual')) text = " (" + x.sgq.getDisplayValue() + ")";
+                return text;
+            }
+
+            //new x_udg_q.log("Generant detall informe per " + sgq + " per l'estandard " + sysidSubestandard);
+            var col = [7600, 9100, 9700];
+            var grObj = new GlideRecord('x_udg_q_objectiumillora');
+            var r = new rtf("");
+            var filtreplus = filtre + "^subestandard=" + sysidSubestandard + "^state=" + status;
+            grObj.addEncodedQuery(filtreplus);
+            grObj.orderBy('number');
+            grObj.query();
+            if (grObj.hasNext() && status == 3) r.add("Objectius tancats en el període:\\par\\par");
+            if (grObj.hasNext() && status == 2) r.add("Objectius vigents al pla de millora:\\par\\par");
+            while (grObj.next()) {
+                r.tablestart();
+                r.rowstart(col, 36);
+                r.add(" \\b " + grObj.number + " \\b0");
+                r.add(sgqSiNoActual(grObj));
+                r.add(" - " + grObj.short_description + "\\intbl\\ql").cellend();
+                if (grObj.state == 2) r.add("En curs");
+                else r.add(grObj.tancament.getDisplayValue());
+
+                r.add("\\intbl\\ql").cellend();
+                r.add(parseInt(grObj.assoliment) + "%\\intbl\\qr"); //  \qr alinea a dreta
+                r.cellend().rowend();
+                r.rowstart([col[2]]); //comença filera de valoració
+
+                var venciment = new GlideDateTime();
+                venciment.setYearLocalTime(venciment.getYearLocalTime() - 1); // venciment fa un any
+                var valorat = new GlideDateTime(grObj.valorat);
+
+                if (grObj.valoracio != "") {
+                    if (valorat > venciment || grObj.state == 3) r.add("{Valoració: ");
+                    else r.add("{\\cf6 Valoració vençuda: ");
+                    r.add(grObj.valoracio.replace("\n", " \\ql\\par ")); //Per incloure els retorns de linia
+                } else r.add("{\\cf6 Manca Valoració");
+            r.add("}\\intbl\\ql");
+            r.cellend().rowend();
 
             var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
             grM2m.addQuery('objectiu_millora', grObj.sys_id);
             grM2m.orderBy('order');
+            grM2m.orderBy('accio_millora.number');
             grM2m.query();
             while (grM2m.next()) {
                 if (grM2m.accio_millora.state != -5 && grM2m.accio_millora.number != '') { //cal assegurar que l'acció és accesible
-                    text += r.rowstart(col);
-                    text += " \\b " + grM2m.accio_millora.number + " \\b0";
-                    text += sgqSiNoActual(grM2m.accio_millora);
-                    text += " - " + grM2m.accio_millora.short_description + "\\intbl\\ql\\cell\n";
-                    text += textestatA(grM2m.accio_millora.state) + "\\intbl\\ql\\cell\n";
-                    text += parseInt(grM2m.accio_millora.percentatge) + "%\\intbl\\qr\\cell\n"; //  \qr alinea a dreta
-                    text += r.rowend();
+                    r.rowstart(col);
+                    r.add(" \\b " + grM2m.accio_millora.number + " \\b0");
+                    r.add(sgqSiNoActual(grM2m.accio_millora));
+                    r.add(" - " + grM2m.accio_millora.short_description + "\\intbl\\ql").cellend();
+                    r.add(textestatA(grM2m.accio_millora.state) + "\\intbl\\ql").cellend();
+                    r.add(parseInt(grM2m.accio_millora.percentatge) + "%\\intbl\\qr"); //  \qr alinea a dreta
+                    r.cellend().rowend();
                 }
             }
             if (grObj.modificacio_memoria) {
-                text += r.rowstart([col[2]]);
-                text += "{";
-                text += "Aquest objectiu implica modificació de la memòria";
-                text += "}\\intbl\\ql\\cell\n";
-                text += r.rowend();
+                r.rowstart([col[2]]);
+                r.add("{Aquest objectiu implica modificació de la memòria}\\intbl\\ql");
+                r.cellend().rowend();
             }
-            text += r.tableend();
-            text += "\\par\n";
+            r.tableend();
+            r.add("\\par\n");
         }
-        return text;
+        return r.getContent();
     },
 
     getRtfResumMillora: function (filtre, sgq) {
@@ -221,7 +216,7 @@ ObjectiuUtils.prototype = {
                 hiHaCanvisMemoria = true;
             }
             r.add(" \\b0 " + sgqSiNoActual(grObj) + " - " + grObj.short_description + "\\ql\\cell\n");
-            if (grObj.state == 3) r.add(grObj.tancament.getDisplayValue()+"\\ql\\cell\n");
+            if (grObj.state == 3) r.add(grObj.tancament.getDisplayValue() + "\\ql\\cell\n");
             r.add(parseInt(grObj.assoliment) + "%\\qr\\cell\n");
             r.rowend();
         }
@@ -234,13 +229,11 @@ ObjectiuUtils.prototype = {
         return r.getContent();
     },
 
-
     sgqSiNoActual: function (x) {
         var text = "";
         if (x.sgq != gs.getUser().getPreference('qualitat.sgqActual')) text = " (" + x.sgq.getDisplayValue() + ")";
         return text;
     },
-
 
     getRtfMilloraComprimit: function (filtre, sgq) {
         /* The medical school must present an improvement plan based on the findings of the self-assessment report to address weaknesses. 
@@ -256,7 +249,7 @@ ObjectiuUtils.prototype = {
         r.tablestart();
         while (grObj.next()) {
             r.rowstart([9800], 27); //el segon número és un número del tema de la plantilla
-            r.add("\\b " + grObj.number + " \\b0");
+            r.add("\\b " + grObj.number + "\\b0");
             r.add(this.sgqSiNoActual(grObj));
             r.add(" - " + grObj.short_description + "\\ql");
             r.cellend().rowend();
@@ -284,14 +277,13 @@ ObjectiuUtils.prototype = {
             while (grM2m.next()) {
                 if (grM2m.accio_millora.state != -5 && grM2m.accio_millora.number != '') { //cal assegurar que l'acció és accesible
                     r.rowstart([9800]);
-                    r.add("\\tab \\b " + grM2m.accio_millora.number + " \\b0");
-                    r.add(" - " + grM2m.accio_millora.short_description + "\\intbl\\ql");
+                    r.add("\\tab \\b " + grM2m.accio_millora.number + "\\b0");
+                    r.add(" - " + grM2m.accio_millora.short_description + "\\ql");
                     r.cellend().rowend();
                 }
             }
         }
-        r.tableend();
-        return r.getContent();
+        return r.tableend().getContent();
     },
     type: 'ObjectiuUtils'
 };]]></script>
@@ -300,7 +292,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>459</sys_mod_count>
+        <sys_mod_count>462</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -308,6 +300,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>Adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-18 14:49:00</sys_updated_on>
+        <sys_updated_on>2020-11-18 15:39:00</sys_updated_on>
     </sys_script_include>
 </record_update>

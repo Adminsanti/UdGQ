@@ -88,7 +88,7 @@ grDG.plantilla = current.sys_id;
 grDG.filtre = current.condicions;
 grDG.update();
 gs.addInfoMessage("Generat <B> <A HREF=" + gs.getProperty('glide.servlet.uri') + "sys_attachment.do?sys_id=" + newDocAttachment_sys_id + ">" + grDG.number + "</A></B> - " + grDG.nom);
-new log("Generat " + grDG.number + " - " + grDG.nom);
+new log().preU("Generat " + grDG.number + " - " + grDG.nom);
 action.setRedirectURL(current); //Roman a la plantilla
 //action.setRedirectURL(grDG);]]></script>
         <show_insert>false</show_insert>
@@ -102,7 +102,7 @@ action.setRedirectURL(current); //Roman a la plantilla
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c855029c1b0448105fab4002cd4bcb83</sys_id>
-        <sys_mod_count>235</sys_mod_count>
+        <sys_mod_count>237</sys_mod_count>
         <sys_name>Genera Doc</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -111,7 +111,7 @@ action.setRedirectURL(current); //Roman a la plantilla
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_c855029c1b0448105fab4002cd4bcb83</sys_update_name>
         <sys_updated_by>Adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-18 12:34:57</sys_updated_on>
+        <sys_updated_on>2020-11-18 15:48:04</sys_updated_on>
         <table>x_udg_q_plantillavsma</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
