@@ -10,24 +10,30 @@
         <script><![CDATA[var rtf = Class.create();
 rtf.prototype = {
 
-    initialize: function(cadena) {
+    initialize: function (cadena) {
         this._cadena = cadena;
         this._table = "{"; //{\\rtf1\\ansi\\deff0\n";
         this._tableend = "}\n";
         this._row = "\\trowd\n";
         this._rowend = "\\row\n";
+        this._cellend = "\\cell\n";
         this.escape();
     },
 
-    replace: function(cadena1, cadena2) { //cadena1 Pot ser una cadena o una regex
+    replace: function (cadena1, cadena2) { //cadena1 Pot ser una cadena o una regex
         this._cadena = this._cadena.replace(cadena1, cadena2);
     },
 
-    getContent: function() {
+    add: function (cadena) {
+        this._cadena += cadena;
+        return this;
+    },
+
+    getContent: function () {
         return this._cadena;
     },
 
-    getTagParameter: function(tag) {
+    getTagParameter: function (tag) {
         /*
         var exp="##"+tag+"#(.+)##";
         var myRe = new RegExp (exp,'g');
@@ -40,13 +46,12 @@ rtf.prototype = {
         return resposta;
     },
 
-    clearTag: function(tag) {
+    clearTag: function (tag) {
         var reg = new RegExp('##' + tag + '#.+##', 'g');
         this._cadena = this._cadena.replace(reg, '');
     },
 
-
-    escape: function() {
+    escape: function () {
         this._cadena = this._cadena.replace(/À/g, "\\'c0");
         this._cadena = this._cadena.replace(/Á/g, "\\'c1");
         this._cadena = this._cadena.replace(/Ç/g, "\\'c7");
@@ -72,52 +77,57 @@ rtf.prototype = {
         return this;
     },
 
-    li: function(li) {
+    li: function (li) {
         var cadena = "\\par {\\listtext\\pard\\plain\\ltrpar \\s15 \\rtlch\\fcs1 \\af31507\\ltrch\\fcs0\\f3\\lang1027\\langfe1033\\langnp1027\\insrsid15291472 \\loch\\af3\\dbch\\af31506\\hich\\f3 \\'b7\\tab}\n";
+        this.add(cadena + li);
         return cadena + li;
     },
 
-    llista: function(llista) {
+    llista: function (llista) {
         var cadena_rtf = "";
         if (llista[0]) {
             cadena_rtf = llista[0];
             for (var index = 1; index < llista.length; ++index)
                 cadena_rtf += this.li(llista[index]);
         }
+        this.add(cadena_rtf);
         return cadena_rtf;
-
     },
 
-    tablestart: function() {
-
+    tablestart: function () {
+        this.add(this._table);
         return this._table;
     },
 
-    rowstart: function(llistacols, color) {
+    rowstart: function (llistacols, color) {
         var cadena_rtf = this._row;
-
         for (var i = 0; i < llistacols.length; i++) {
             cadena_rtf += "\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs"; //bora
             if (color) cadena_rtf += "\\clcbpat" + color;
             cadena_rtf += "\\cellx" + llistacols[i] + "\n";
         }
+        this.add(cadena_rtf);
         return cadena_rtf;
     },
 
-    tableend: function() {
+    tableend: function () {
+        this.add(this._tableend);
         return this._tableend;
     },
 
-    rowend: function() {
+    rowend: function () {
+        this.add(this._rowend);
         return this._rowend;
     },
 
-    tablecolor: function(colors) {
-        if (!colors) {
-            colors = '\\red188\\green230\\blue138;\\red108\\green030\\blue038;';
-        } //llavors \clcbpat1 o \clcbpat2
-        var cadena_rtf = '{\\colortbl;' + colors + '}';
-        return cadena_rtf;
+    cellend: function () {
+        this.add(this._cellend);
+        return this;
+    },
+
+    nl: function() {
+        this.add('\\line ');
+        return this;
     },
 
     type: 'rtf'
@@ -127,14 +137,14 @@ rtf.prototype = {
         <sys_created_on>2019-09-23 14:55:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fadf67f91b4c40105fab4002cd4bcb33</sys_id>
-        <sys_mod_count>115</sys_mod_count>
+        <sys_mod_count>131</sys_mod_count>
         <sys_name>rtf</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_fadf67f91b4c40105fab4002cd4bcb33</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-16 11:57:52</sys_updated_on>
+        <sys_updated_by>Adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-18 11:43:03</sys_updated_on>
     </sys_script_include>
 </record_update>

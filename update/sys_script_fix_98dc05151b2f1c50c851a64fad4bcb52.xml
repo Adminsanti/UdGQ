@@ -6,21 +6,18 @@
         <flush_cache>false</flush_cache>
         <name>Reduir rols usuaris inactius</name>
         <record_for_rollback>false</record_for_rollback>
-        <run_once>false</run_once>
-        <script><![CDATA[function logx(text) {
-    gs.info(text);
-    new x_udg_q.log(text);
-}
-
-new logx("Inici execució script reducció rols");
-var baixa_rol = true;
+        <run_once>true</run_once>
+        <script><![CDATA[new log("Inici execució script reducció rols");
+var baixa_rols = true; //Si està false l'escript corre, però no baixa els rols realment
 var gcdt = new GlideDateTime();
-//gcdt.addMonths(-(gs.getProperty('x_udg_q.mesos_endarrera_canvi_rol')));
-gcdt.addMonthsLocalTime(-(gs.getProperty('x_udg_q.mesos_endarrera_canvi_rol')));
+var mesos_darrera = gs.getProperty('x_udg_q.mesos_endarrera_canvi_rol');
+if (!mesos_darrera || mesos_darrera < 1) mesos_darrera = 12;
+gcdt.addMonthsLocalTime(-mesos_darrera);
 var datalimit = gcdt.getDate().toString();
-new logx("Data límit reducció rols: " + datalimit);
+new log("Data límit reducció rols: " + datalimit);
 var grF = new GlideRecord('x_udg_q_funcio');
 grF.setWorkflow(false); // per no executar la BR after
+grF.addQuery('readonly', false); //només funcions que no siguin de lectura
 grF.query();
 var funcionstotal = 0;
 var funcionsnolectura = 0;
@@ -29,44 +26,42 @@ while (grF.next()) {
     funcionstotal++;
     var arr = grF.membres.split(",");
     var usuarisrecents = 0;
-    if (!grF.readonly) { //només funcions que no siguin de lectura
-        funcionsnolectura++;
-        for (var i = 0; i < arr.length; i++) {
-            var grU = new GlideRecord('sys_user');
-            grU.get(arr[i]);
-            var U = new x_udg_q.Usuari(grU.sys_id);
-            var datlogin = grU.last_login_time.toString().split(' ');
-            if (datlogin[0] < datalimit && !U.hasRol('x_udg_q.Manager') && U.hasRol('x_udg_q.User')) { //Anterior a la data limit i te els rols
-                personesafectades++;
-                logx("Reduint rol a " + grF.nom + " - " + grF.sgq.codi + " - " + grU.name + " - " + datlogin[0]);
-                if (baixa_rol) {
-                    U.setRol('x_udg_q.Observador');
-                    U.delRol('x_udg_q.User');
-                }
-            } else {
-                //logx("Skipping rol a " + grF.nom + " - " + grF.sgq.codi + " - " + grU.name + " - " + datlogin[0]);
+    funcionsnolectura++;
+    for (var i = 0; i < arr.length; i++) {
+        var grU = new GlideRecord('sys_user');
+        grU.get(arr[i]);
+        var U = new x_udg_q.Usuari(grU.sys_id);
+        var datlogin = grU.last_login_time.toString().split(' ');
+        if (datlogin[0] < datalimit && !U.hasRol('x_udg_q.Manager') && U.hasRol('x_udg_q.User')) { //Last login anterior a la data límit i te els rols
+            personesafectades++;
+            new log("Reduint rol a " + grF.nom + " - " + grF.sgq.codi + " - " + grU.name + " - " + datlogin[0]);
+            if (baixa_rols) {
+                U.setRol('x_udg_q.Observador');
+                U.delRol('x_udg_q.User');
             }
+        } else {
+            //new log("Skipping rol a " + grF.nom + " - " + grF.sgq.codi + " - " + grU.name + " - " + datlogin[0]);
         }
     }
 }
-logx("Total funcions revisades: " + funcionstotal);
-logx("Funcions no lectura: " + funcionsnolectura);
-logx("Total persones afectardes: " + personesafectades);
-logx("Inici execució script reducció rols");]]></script>
+new log("Total funcions revisades: " + funcionstotal);
+new log("Funcions no lectura: " + funcionsnolectura);
+new log("Total persones afectardes: " + personesafectades);
+new log("Inici execució script reducció rols");]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-09-28 09:38:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>98dc05151b2f1c50c851a64fad4bcb52</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Reduir rols usuaris inactius</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_98dc05151b2f1c50c851a64fad4bcb52</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-28 11:12:11</sys_updated_on>
+        <sys_updated_by>Adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-18 09:19:06</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
