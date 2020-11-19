@@ -2,9 +2,9 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
-        <aggregation_source/>
+        <aggregation_source>no_override</aggregation_source>
         <allow_data_label_overlap>false</allow_data_label_overlap>
-        <apply_alias>true</apply_alias>
+        <apply_alias>false</apply_alias>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -45,7 +45,7 @@
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field>estat</field>
-        <field_list/>
+        <field_list>number,nom,estat,obligatoria,objectius,informe,informe.data</field_list>
         <filter table="x_udg_q_recomanacions">estat!=5^sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^ORDERBYestat<item display_value="Tancada" endquery="false" field="estat" goto="false" newquery="false" operator="!=" or="false" value="5"/>
             <item endquery="false" field="sgq" goto="false" newquery="false" operator="DYNAMIC" or="false" value="5fff67561bce0410c851a64fad4bcb0a"/>
             <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="estat"/>
@@ -108,17 +108,17 @@
         <sys_created_on>2018-10-31 13:02:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>eff553a0db29a3009fd1f57eaf9619a5</sys_id>
-        <sys_mod_count>27</sys_mod_count>
-        <sys_name>Recomanacions no tancades</sys_name>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Observacions no tancades</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_eff553a0db29a3009fd1f57eaf9619a5</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-22 15:13:09</sys_updated_on>
+        <sys_updated_on>2020-11-19 12:53:49</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
-        <title>Recomanacions no tancades</title>
+        <title>Observacions no tancades</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
