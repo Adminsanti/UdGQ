@@ -6,14 +6,15 @@
         <flush_cache>false</flush_cache>
         <name>Reduir rols usuaris inactius</name>
         <record_for_rollback>false</record_for_rollback>
-        <run_once>false</run_once>
+        <run_once>true</run_once>
         <script><![CDATA[function logx(text) {
     gs.info(text);
     new x_udg_q.log(text);
 }
 
-new logx("Inici execució script reducció rols");
-var baixa_rol = true;
+var baixa_rols = false;
+if (baixa_rols) new logx("Inici execució script Reduir rols usuaris inactius");
+else new logx("Inici execució script Reduir rols usuaris inactius-- SENSE EFECTE --");
 var gcdt = new GlideDateTime();
 //gcdt.addMonths(-(gs.getProperty('x_udg_q.mesos_endarrera_canvi_rol')));
 gcdt.addMonthsLocalTime(-(gs.getProperty('x_udg_q.mesos_endarrera_canvi_rol')));
@@ -39,7 +40,7 @@ while (grF.next()) {
             if (datlogin[0] < datalimit && !U.hasRol('x_udg_q.Manager') && U.hasRol('x_udg_q.User')) { //Anterior a la data limit i te els rols
                 personesafectades++;
                 logx("Reduint rol a " + grF.nom + " - " + grF.sgq.codi + " - " + grU.name + " - " + datlogin[0]);
-                if (baixa_rol) {
+                if (baixa_rols) {
                     U.setRol('x_udg_q.Observador');
                     U.delRol('x_udg_q.User');
                 }
@@ -58,7 +59,7 @@ logx("Inici execució script reducció rols");]]></script>
         <sys_created_on>2020-09-28 09:38:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>98dc05151b2f1c50c851a64fad4bcb52</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Reduir rols usuaris inactius</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -66,7 +67,7 @@ logx("Inici execució script reducció rols");]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_98dc05151b2f1c50c851a64fad4bcb52</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-28 11:12:11</sys_updated_on>
+        <sys_updated_on>2020-11-20 17:08:52</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
