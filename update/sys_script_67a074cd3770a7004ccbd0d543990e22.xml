@@ -33,7 +33,11 @@
 	
 	var interactiveUserId = gs.getUser().getID();
 	var changingUserId = current.sys_id;
-	new log("Canvi d\'SGQ - usuari: "+ gs.getUser().getDisplayName() + " canvia de: "+previous.x_udg_q_sgq_actual.codi.toString()+" a: "+current.x_udg_q_sgq_actual.codi.toString());
+	new log("Canvi d\'SGQ - usuari "
+			+ gs.getUserName() +"("
+			+gs.getUser().getDisplayName() + ") canvia de "
+			+previous.x_udg_q_sgq_actual.codi.toString()+" -> "
+			+current.x_udg_q_sgq_actual.codi.toString());
 	
 	var us = new Usuari(changingUserId);
 	
@@ -59,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>67a074cd3770a7004ccbd0d543990e22</sys_id>
-        <sys_mod_count>126</sys_mod_count>
+        <sys_mod_count>127</sys_mod_count>
         <sys_name>Usuari canvia de SGQ</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -68,7 +72,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_67a074cd3770a7004ccbd0d543990e22</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-10 17:30:23</sys_updated_on>
+        <sys_updated_on>2020-11-20 17:22:42</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
