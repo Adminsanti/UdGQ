@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_informevsma" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Informe VSMA - Default view" name="x_udg_q_informevsma" related_list="NULL" sys_domain="global" view="Default view">0fc2c3451bc6d8505fab4002cd4bcbb9</list_id>
+            <list_id display_value="Informe rebut VSMA - Default view" name="x_udg_q_informevsma" related_list="NULL" sys_domain="global" view="Default view">0fc2c3451bc6d8505fab4002cd4bcbb9</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_udg_q_recomanacions.informe</related_list>
@@ -15,7 +15,7 @@
             <sys_updated_on>2020-07-15 10:00:11</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Informe VSMA - Default view</calculated_name>
+            <calculated_name>Informe rebut VSMA - Default view</calculated_name>
             <filter/>
             <name>x_udg_q_informevsma</name>
             <order_by/>

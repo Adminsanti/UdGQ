@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Acreditació" max_length="40" name="x_udg_q_acreditacio" type="collection">
+        <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
+        <element label="Sincronitzada" max_length="32" name="sincronitzada" reference="x_udg_q_acreditacio" reference_qual="sgqSAMEASsgq^sys_idNSAMEASsys_id^EQ" reference_qual_condition="sgqSAMEASsgq^sys_idNSAMEASsys_id^EQ" type="reference"/>
+        <element dependent="sgq" dependent_on_field="sgq" label="Titulació" mandatory="true" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference" use_dependent_field="true"/>
+    </element>
+</database>
