@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="resultat" table="x_udg_q_acreditacio" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>resultat</element>
+            <name>x_udg_q_acreditacio</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-23 11:39:59</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>0ae18a1b1b20e4105fab4002cd4bcb82</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>resultat</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_choice_x_udg_q_acreditacio_resultat</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-23 11:39:59</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resultat</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No acreditat</label>
+            <language>en</language>
+            <name>x_udg_q_acreditacio</name>
+            <sequence>1</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-23 11:39:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05d1ca1b1b20e4105fab4002cd4bcbcb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-23 11:42:21</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resultat</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Acreditat amb condicions</label>
+            <language>en</language>
+            <name>x_udg_q_acreditacio</name>
+            <sequence>2</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-23 11:40:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ccf10e1b1b20e4105fab4002cd4bcb33</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-23 11:42:24</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resultat</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Acreditat</label>
+            <language>en</language>
+            <name>x_udg_q_acreditacio</name>
+            <sequence>3</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-23 11:40:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c12c61b1b20e4105fab4002cd4bcb1c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-23 11:42:26</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>resultat</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Acreditat amb excel·lència</label>
+            <language>en</language>
+            <name>x_udg_q_acreditacio</name>
+            <sequence>4</sequence>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-23 11:41:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35228a1b1b20e4105fab4002cd4bcb6b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-23 11:42:28</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
