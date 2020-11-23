@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="INSERT_OR_UPDATE">
+        <name>Acreditacions</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-11-23 10:14:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ef3ee1171beca4105fab4002cd4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Acreditacions</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_properties_category_ef3ee1171beca4105fab4002cd4bcbb9</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-23 10:14:14</sys_updated_on>
+        <title/>
+    </sys_properties_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=ef3ee1171beca4105fab4002cd4bcbb9"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ef3ee1171beca4105fab4002cd4bcbb9</documentkey>
+        <fieldname>name</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-11-23 10:14:14</sys_created_on>
+        <sys_id>064ee1171beca4105fab4002cd4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-23 10:14:14</sys_updated_on>
+        <tablename>sys_properties_category</tablename>
+        <value>Acreditacions</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ef3ee1171beca4105fab4002cd4bcbb9</documentkey>
+        <fieldname>title</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2020-11-23 10:14:14</sys_created_on>
+        <sys_id>8a4ee1171beca4105fab4002cd4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-23 10:14:14</sys_updated_on>
+        <tablename>sys_properties_category</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>
