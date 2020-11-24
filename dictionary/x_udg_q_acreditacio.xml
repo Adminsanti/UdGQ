@@ -15,7 +15,7 @@
                 <element inactive_on_update="false" label="Acreditat amb excel·lència" sequence="4" value="4"/>
             </choice>
         </element>
-        <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
+        <element label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
         <element label="Sincronitzada" max_length="32" name="sincronitzada" reference="x_udg_q_acreditacio" reference_qual="sgqSAMEASsgq^titulacioNSAMEAStitulacio^EQ" reference_qual_condition="sgqSAMEASsgq^titulacioNSAMEAStitulacio^EQ" type="reference"/>
         <element dependent="sgq" dependent_on_field="sgq" label="Titulació" mandatory="true" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference" use_dependent_field="true"/>
         <element label="Visita CAE" max_length="40" name="visita_cae" type="glide_date"/>
