@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>gs.hasRole("x_udg_q.ManagerUniveristat") &amp;&amp; current.sincronitzada !=""</condition>
+        <condition>current.sincronitzada !=""</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -15,12 +15,12 @@
         <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
-        <hint/>
+        <hint>Actualitza totes les dates a les de l'acreditació sincronitzada, encar que estiguin plens </hint>
         <isolate_script>true</isolate_script>
         <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
-        <list_button>true</list_button>
-        <list_choice>false</list_choice>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
@@ -41,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3dfa181a1b8ac010c851a64fad4bcbd7</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Força sincronització</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -50,7 +50,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_3dfa181a1b8ac010c851a64fad4bcbd7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-24 11:29:01</sys_updated_on>
+        <sys_updated_on>2020-11-24 12:29:38</sys_updated_on>
         <table>x_udg_q_acreditacio</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

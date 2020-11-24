@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>GeneraDMA</action_name>
-        <active>false</active>
+        <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
@@ -9,18 +9,18 @@
         <comments/>
         <condition>gs.hasRole("x_udg_q.Manager") &amp;&amp; current.dma != ""</condition>
         <form_action>true</form_action>
-        <form_button>true</form_button>
+        <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>false</form_link>
+        <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
-        <hint>Afegeix l'Acció al Pla de Millora</hint>
+        <hint>Sobreescriu totes les dates en funció de la DMA</hint>
         <isolate_script>false</isolate_script>
         <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
-        <list_button>true</list_button>
-        <list_choice>false</list_choice>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
@@ -29,28 +29,7 @@
         <name>Genera en base a DMA</name>
         <onclick/>
         <order>1000</order>
-        <script><![CDATA[doDefineixAccioR();
-
-function doDefineixAccioR() {
-    if (current.responsable == '') {
-        current.update(); //gravem igualment
-        gs.addErrorMessage(current.number + " s'ha desat com esborrany però NO es pot incorporar al Pla de Millora per <B>manca de responsable</B>");
-    } else {
-        current.state = 2;
-        current.declarat = new GlideDateTime().toString();
-        current.declarat_per = gs.getUserID();
-        if (current.valoracio != "") {
-            current.valorat_per = gs.getUserID();
-            current.valorat = new GlideDateTime().toString();
-        }
-		if (current.responsable.membres.toString().indexOf(current.assigned_to)==-1) 
-			current.assigned_to=current.responsable.usuari;
-        current.update();
-        gs.addInfoMessage(current.number + " Incorporada al Pla de Millora");
-        new AccioUtils().actualitzaExecucioTotsObjectius(current);
-    }
-    action.setRedirectURL(current); //Roman
-}]]></script>
+        <script/>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -62,7 +41,7 @@ function doDefineixAccioR() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>961cf0ee1b864410c851a64fad4bcb1a</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Genera en base a DMA</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -71,7 +50,7 @@ function doDefineixAccioR() {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_961cf0ee1b864410c851a64fad4bcb1a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-24 11:30:48</sys_updated_on>
+        <sys_updated_on>2020-11-24 12:30:47</sys_updated_on>
         <table>x_udg_q_acreditacio</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
