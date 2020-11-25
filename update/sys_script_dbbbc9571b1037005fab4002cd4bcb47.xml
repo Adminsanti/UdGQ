@@ -3,22 +3,22 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
-        <action_query>true</action_query>
-        <action_update>false</action_update>
-        <active>false</active>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_subestandard</collection>
+        <collection>x_udg_q_acreditacio</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>RECYCLE Query Subestàndard</name>
+        <name>Acreditació actualitza sincronitzats</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,18 +27,35 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
-var ED= "70e18231db89e7c01f06adc3ca961971";
-
-if (SGQpref != gs.getProperty('x_udg_q.uidSGQvisivilitatTotal')) {
-	if (SGQpref == ED) {
-current.addQuery("estudis=Doctorat");
-	}
-	else {
-	
-		current.addQuery("estudis=NULL");
-	}
-}]]></script>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var camps = [
+        'dma',
+        'inici_proces',
+        'inici_proces_definitiu',
+        'aprovacio_autoinforme_cai',
+        'aprovacio_autoinforme_cai_definitiu',
+        'aprovacio_autoinforme_cq_centre',
+        'aprovacio_autoinforme_cq_centre_definitiu',
+        'aprovacio_autoinforme_junta_centre',
+        'aprovacio_autoinforme_junta_centre_definitiu',
+        'aprovacio_cq_udg',
+        'aprovacio_cq_udg_definitiu',
+        'visita_cae',
+        'visita_cae_definitiu',
+        'visita_cae_max'
+    ];
+    var sincro = [];
+    var acr = new Acreditacio(current.getValue('sys_id'));
+    for (var i = 0; i < camps.length; i++) {
+        if (current.getValue(camps[i]) != previous.getValue(camps[i])) {
+            var fills = [];
+            fills = acr.setFills(camps[i], current.getValue(camps[i]));
+            for (var j = 0; j < fills.length; j++)
+                if (sincro.indexOf(fills[j]) == -1) sincro.push(fills[j]);
+        }
+    }
+    if (sincro != "") gs.addInfoMessage(sincro + " actualitzades per sincronització");
+})(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-03-25 08:54:10</sys_created_on>
@@ -46,18 +63,18 @@ current.addQuery("estudis=Doctorat");
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dbbbc9571b1037005fab4002cd4bcb47</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>RECYCLE Query Subestàndard</sys_name>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>Acreditació actualitza sincronitzats</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_dbbbc9571b1037005fab4002cd4bcb47</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-04 12:42:28</sys_updated_on>
+        <sys_updated_by>Adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-25 17:26:13</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=dbbbc9571b1037005fab4002cd4bcb47"/>
     <sys_translated_text action="INSERT_OR_UPDATE">

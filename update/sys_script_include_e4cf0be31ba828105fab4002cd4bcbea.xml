@@ -9,7 +9,21 @@
         <name>Acreditacio</name>
         <script><![CDATA[var Acreditacio = Class.create();
 Acreditacio.prototype = {
-    initialize: function() {
+    initialize: function (sys_id) {
+        this.sys_id = sys_id;
+    },
+
+    setFills: function (field, value) { //actualitza el field amb value a totes les acreditacions sincromnitzades 
+        var grA = new GlideRecord('x_udg_q_acreditacio');
+        var llista = [];
+        grA.addQuery('sincronitzada', this.sys_id);
+        grA.query();
+        while (grA.next()) {
+            grA.setValue(field, value);
+            grA.update();
+            llista.push(grA.getValue('number'));
+        }
+        return llista; //retorna la llista amb tots el númros dels fills actualitzats
     },
 
     type: 'Acreditacio'
@@ -19,14 +33,14 @@ Acreditacio.prototype = {
         <sys_created_on>2020-11-24 11:59:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e4cf0be31ba828105fab4002cd4bcbea</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Acreditacio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e4cf0be31ba828105fab4002cd4bcbea</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-24 11:59:01</sys_updated_on>
+        <sys_updated_by>Adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-25 16:42:07</sys_updated_on>
     </sys_script_include>
 </record_update>
