@@ -33,8 +33,8 @@
     var SGQpref = gs.getUser().getPreference('qualitat.sgqActualCodi');
     current.addEncodedQuery("sgqsISEMPTY^ORsgqsLIKE" + SGQpref); //els que no tenen SGQs són per tots, els que tenen, només per aquests (Medicina)
 
-    if (SGQpref == 'ED') current.addQuery(estudis, 'Doctorat'); //l'escola de doctorat té només els que diu doctorat
-    else current.addQuery(estudis, "");
+    if (SGQpref == 'ED') current.addQuery('estudis', 'Doctorat'); //l'escola de doctorat té només els que diu doctorat
+    else current.addQuery('estudis', "");
 
 }]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -44,7 +44,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c7e8ce591bcc2414c851a64fad4bcb36</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>SGQ query per Subestàndards</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -52,8 +52,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_c7e8ce591bcc2414c851a64fad4bcb36</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-10 10:02:53</sys_updated_on>
+        <sys_updated_by>Adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-25 10:28:42</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
