@@ -13,6 +13,25 @@ Acreditacio.prototype = {
         this.sys_id = sys_id;
     },
 
+    getCampsSincro: function () { //Retorna els camps que hem de sincronitzar
+        return [
+            'dma',
+            'inici_proces',
+            'inici_proces_definitiu',
+            'aprovacio_autoinforme_cai',
+            'aprovacio_autoinforme_cai_definitiu',
+            'aprovacio_autoinforme_cq_centre',
+            'aprovacio_autoinforme_cq_centre_definitiu',
+            'aprovacio_autoinforme_junta_centre',
+            'aprovacio_autoinforme_junta_centre_definitiu',
+            'aprovacio_cq_udg',
+            'aprovacio_cq_udg_definitiu',
+            'visita_cae',
+            'visita_cae_definitiu',
+            'visita_cae_max'
+        ];
+    },
+
     setFills: function (field, value) { //actualitza el field amb value a totes les acreditacions sincromnitzades 
         var grA = new GlideRecord('x_udg_q_acreditacio');
         var llista = [];
@@ -33,7 +52,7 @@ Acreditacio.prototype = {
         <sys_created_on>2020-11-24 11:59:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e4cf0be31ba828105fab4002cd4bcbea</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Acreditacio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -41,6 +60,6 @@ Acreditacio.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e4cf0be31ba828105fab4002cd4bcbea</sys_update_name>
         <sys_updated_by>Adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-25 16:42:07</sys_updated_on>
+        <sys_updated_on>2020-11-26 08:40:29</sys_updated_on>
     </sys_script_include>
 </record_update>

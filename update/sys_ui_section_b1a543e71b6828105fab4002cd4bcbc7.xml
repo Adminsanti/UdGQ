@@ -4,13 +4,13 @@
             <element>inici_proces</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>f724e9441bb0a8105fab4002cd4bcb8b</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>2edbd1d41b70e8105fab4002cd4bcbed</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>aprovacio_autoinforme_cai</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>7b24e9441bb0a8105fab4002cd4bcb8b</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>aedbd1d41b70e8105fab4002cd4bcbed</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>aprovacio_autoinforme_cq_centre</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>fb24e9441bb0a8105fab4002cd4bcb8b</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>22dbd1d41b70e8105fab4002cd4bcbee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,153 +46,223 @@
             <element>aprovacio_autoinforme_junta_centre</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>7f24e9441bb0a8105fab4002cd4bcb8b</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>a2dbd1d41b70e8105fab4002cd4bcbee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>inici_exposicio_publica</element>
+            <position>4</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>26dbd1d41b70e8105fab4002cd4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>final_exposicio_publica</element>
+            <position>5</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>a6dbd1d41b70e8105fab4002cd4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>aprovacio_cq_udg</element>
-            <position>4</position>
+            <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>ff24e9441bb0a8105fab4002cd4bcb8b</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>2adbd1d41b70e8105fab4002cd4bcbee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>enviament_informe_aqu</element>
+            <position>7</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>aadbd1d41b70e8105fab4002cd4bcbee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>visita_cae</element>
-            <position>5</position>
+            <position>8</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>7324e9441bb0a8105fab4002cd4bcb8c</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>2edbd1d41b70e8105fab4002cd4bcbee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>visita_cae_max</element>
-            <position>6</position>
+            <position>9</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>f324e9441bb0a8105fab4002cd4bcb8c</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>aedbd1d41b70e8105fab4002cd4bcbee</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
+            <position>10</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>7724e9441bb0a8105fab4002cd4bcb8c</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>22dbd1d41b70e8105fab4002cd4bcbef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>inici_proces_definitiu</element>
-            <position>8</position>
+            <position>11</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>f724e9441bb0a8105fab4002cd4bcb8c</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>a2dbd1d41b70e8105fab4002cd4bcbef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>aprovacio_autoinforme_cai_definitiu</element>
-            <position>9</position>
+            <position>12</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>7b24e9441bb0a8105fab4002cd4bcb8c</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>26dbd1d41b70e8105fab4002cd4bcbef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>aprovacio_autoinforme_cq_centre_definitiu</element>
-            <position>10</position>
+            <position>13</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>fb24e9441bb0a8105fab4002cd4bcb8c</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>a6dbd1d41b70e8105fab4002cd4bcbef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>aprovacio_autoinforme_junta_centre_definitiu</element>
-            <position>11</position>
+            <position>14</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>7f24e9441bb0a8105fab4002cd4bcb8c</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>2adbd1d41b70e8105fab4002cd4bcbef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>exposicio_publica_definitiu</element>
+            <position>15</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>aadbd1d41b70e8105fab4002cd4bcbef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>aprovacio_cq_udg_definitiu</element>
-            <position>12</position>
+            <position>16</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>ff24e9441bb0a8105fab4002cd4bcb8c</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>2edbd1d41b70e8105fab4002cd4bcbef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>enviament_informe_aqu_definitiu</element>
+            <position>17</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>aedbd1d41b70e8105fab4002cd4bcbef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>visita_cae_definitiu</element>
-            <position>13</position>
+            <position>18</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-11-25 17:25:33</sys_created_on>
-            <sys_id>7324e9441bb0a8105fab4002cd4bcb8d</sys_id>
+            <sys_created_on>2020-11-26 11:27:38</sys_created_on>
+            <sys_id>22dbd1d41b70e8105fab4002cd4bcbf0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">b1a543e71b6828105fab4002cd4bcbc7</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-11-25 17:25:33</sys_updated_on>
+            <sys_updated_on>2020-11-26 11:27:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

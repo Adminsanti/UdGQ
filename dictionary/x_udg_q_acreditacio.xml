@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Acreditació" max_length="40" name="x_udg_q_acreditacio" sizeclass="3" type="collection">
+    <element audit="true" extends="task" label="Acreditació" max_length="40" name="x_udg_q_acreditacio" sizeclass="4" type="collection">
         <element label="Aprovació autoinforme CAI" max_length="40" name="aprovacio_autoinforme_cai" type="glide_date"/>
-        <element label="Aprovacií autoinforme CAI definitiu" max_length="40" name="aprovacio_autoinforme_cai_definitiu" type="boolean"/>
+        <element label="Aprovació autoinforme CAI definitiu" max_length="40" name="aprovacio_autoinforme_cai_definitiu" type="boolean"/>
         <element label="Aprovació autoinforme CQ Centre" max_length="40" name="aprovacio_autoinforme_cq_centre" type="glide_date"/>
         <element label="Aprovació autoinforme CQ Centre definitiu" max_length="40" name="aprovacio_autoinforme_cq_centre_definitiu" type="boolean"/>
         <element label="Aprovació autoinforme Junta Centre" max_length="40" name="aprovacio_autoinforme_junta_centre" type="glide_date"/>
@@ -9,7 +9,12 @@
         <element label="Aprovació CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
         <element label="Aprovació CQ UdG definitiu" max_length="40" name="aprovacio_cq_udg_definitiu" type="boolean"/>
         <element label="DMA" max_length="40" name="dma" type="glide_date"/>
+        <element label="Enviament informe AQU" max_length="40" name="enviament_informe_aqu" type="glide_date"/>
+        <element label="Enviament informe AQU definitiu" max_length="40" name="enviament_informe_aqu_definitiu" type="boolean"/>
+        <element label="Exposició pública definitiu" max_length="40" name="exposicio_publica_definitiu" type="boolean"/>
+        <element label="Final exposició pública" max_length="40" name="final_exposicio_publica" type="glide_date"/>
         <element label="Grup de treball" max_length="1024" name="grup_de_treball" type="url"/>
+        <element label="Inici exposició pública" max_length="40" name="inici_exposicio_publica" type="glide_date"/>
         <element label="Inici procés" max_length="40" name="inici_proces" type="glide_date"/>
         <element label="Inici procés definitiu" max_length="40" name="inici_proces_definitiu" type="boolean"/>
         <element choice="1" label="Resultat" max_length="40" name="resultat" type="integer">

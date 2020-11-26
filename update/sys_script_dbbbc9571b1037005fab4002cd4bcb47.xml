@@ -28,24 +28,9 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-    var camps = [
-        'dma',
-        'inici_proces',
-        'inici_proces_definitiu',
-        'aprovacio_autoinforme_cai',
-        'aprovacio_autoinforme_cai_definitiu',
-        'aprovacio_autoinforme_cq_centre',
-        'aprovacio_autoinforme_cq_centre_definitiu',
-        'aprovacio_autoinforme_junta_centre',
-        'aprovacio_autoinforme_junta_centre_definitiu',
-        'aprovacio_cq_udg',
-        'aprovacio_cq_udg_definitiu',
-        'visita_cae',
-        'visita_cae_definitiu',
-        'visita_cae_max'
-    ];
     var sincro = [];
     var acr = new Acreditacio(current.getValue('sys_id'));
+	var camps = acr.getCampsSincro(); //retirna la llista de camps a sincronitzar
     for (var i = 0; i < camps.length; i++) {
         if (current.getValue(camps[i]) != previous.getValue(camps[i])) {
             var fills = [];
@@ -63,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dbbbc9571b1037005fab4002cd4bcb47</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>Acreditació actualitza sincronitzats</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -71,8 +56,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_dbbbc9571b1037005fab4002cd4bcb47</sys_update_name>
-        <sys_updated_by>Adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-25 17:26:13</sys_updated_on>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-26 08:42:08</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
