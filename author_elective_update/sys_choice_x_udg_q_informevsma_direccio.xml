@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="direccio" table="x_udg_q_informevsma" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>direccio</element>
+            <name>x_udg_q_informevsma</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-27 12:45:45</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>2057fa601bb42c105fab4002cd4bcb69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>direccio</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_choice_x_udg_q_informevsma_direccio</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-27 12:45:45</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>direccio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rebut</label>
+            <language>en</language>
+            <name>x_udg_q_informevsma</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-27 12:45:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e647f2241bb42c105fab4002cd4bcbb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-27 12:45:45</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>direccio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Emès</label>
+            <language>en</language>
+            <name>x_udg_q_informevsma</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-27 12:46:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>196776241bb42c105fab4002cd4bcbde</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-27 12:46:52</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>direccio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intern</label>
+            <language>en</language>
+            <name>x_udg_q_informevsma</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2020-11-27 12:47:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>15a736241bb42c105fab4002cd4bcbc5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2020-11-27 12:47:22</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
