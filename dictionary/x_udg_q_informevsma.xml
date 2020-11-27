@@ -2,7 +2,7 @@
     <element label="Informe VSMA" max_length="40" name="x_udg_q_informevsma" sizeclass="42" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Data" max_length="40" name="data" type="glide_date"/>
-        <element choice="3" default="1" label="Direcció" max_length="40" name="direccio" type="integer">
+        <element choice="3" default="1" label="Direcció" mandatory="true" max_length="40" name="direccio" type="integer">
             <choice>
                 <element inactive_on_update="false" label="Emès" value="2"/>
                 <element inactive_on_update="false" label="Intern" value="3"/>

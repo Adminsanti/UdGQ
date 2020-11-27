@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Informes i Observacions VSMA">d766791adb4e2f009fd1f57eaf961935</application>
+        <application display_value="Acreditacions">0a76d6561b6ca0105fab4002cd4bcbed</application>
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_udg_q_informevsma">direccio=1^EQ<item display_value="Rebut" endquery="false" field="direccio" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        <filter table="x_udg_q_acreditacio">inici_proces&lt;=javascript:gs.endOfToday()^resultat=^EQ<item endquery="false" field="inici_proces" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.endOfToday()"/>
+            <item display_value="-- None --" endquery="false" field="resultat" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -13,10 +14,10 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Informes Tots</mobile_title>
+        <mobile_title>Acreditacions en curs</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_udg_q_informevsma</name>
-        <order>1000</order>
+        <name>x_udg_q_acreditacio</name>
+        <order>300</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,23 +26,23 @@
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-11-30 13:09:53</sys_created_on>
+        <sys_created_on>2020-11-27 15:45:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>fd577d1adb4e2f009fd1f57eaf9619e1</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Informes VSMA Rebuts Tots</sys_name>
+        <sys_id>8e302b6c1b382c105fab4002cd4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Acreditacions en curs</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_app_module_fd577d1adb4e2f009fd1f57eaf9619e1</sys_update_name>
+        <sys_update_name>sys_app_module_8e302b6c1b382c105fab4002cd4bcb65</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-27 15:22:10</sys_updated_on>
+        <sys_updated_on>2020-11-27 15:45:23</sys_updated_on>
         <timeline_page/>
-        <title>Informes VSMA Rebuts Tots</title>
+        <title>Acreditacions en curs</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
