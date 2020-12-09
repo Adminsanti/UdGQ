@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Titulació" max_length="40" name="x_udg_q_titulacio" sizeclass="216" type="collection">
+    <element audit="true" label="Titulació" max_length="40" name="x_udg_q_titulacio" sizeclass="219" type="collection">
         <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" read_only="true" type="string" unique="true"/>
         <element display="true" label="Memo" max_length="40" name="memo" type="string" unique="true"/>

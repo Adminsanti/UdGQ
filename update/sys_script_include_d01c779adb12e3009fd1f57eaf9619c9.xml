@@ -5,13 +5,14 @@
         <api_name>x_udg_q.Banner</api_name>
         <caller_access/>
         <client_callable>true</client_callable>
-        <description>Envia tot el que cal dibuixar al Banner d' UdG Qualitat - SC Desembre 2018</description>
+        <description>Envia tot el que cal dibuixar al Banner d' UdG Qualitat - SC Desembre 2018&#13;
+Afegit id="BannerSGQ" - SC Desembre 2020</description>
         <name>Banner</name>
         <script><![CDATA[var Banner = Class.create();
 Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	getAll: function () {
 		var SGQ = gs.getUser().getPreference("qualitat.sgqActualCodi");
-		var linkDivOpen = '<div class="navpage-header-content" style="border: 2px solid; border-radius: 5px;"">';
+		var linkDivOpen = '<div class="navpage-header-content" id="BannerSGQ" style="border: 2px solid; border-radius: 5px;"">';
 		var linkDivClose = "</div>";
 
 		var sneLink = "<a href='/nav_to.do?uri=%2Fsys_user.do%3Fsys_id%3D"
@@ -33,7 +34,7 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2018-12-13 09:06:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d01c779adb12e3009fd1f57eaf9619c9</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Banner</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -41,6 +42,6 @@ Banner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_d01c779adb12e3009fd1f57eaf9619c9</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-12-13 10:17:59</sys_updated_on>
+        <sys_updated_on>2020-12-09 14:14:36</sys_updated_on>
     </sys_script_include>
 </record_update>
