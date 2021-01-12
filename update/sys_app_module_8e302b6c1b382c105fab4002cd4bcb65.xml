@@ -6,7 +6,7 @@
         <content_page/>
         <device_type/>
         <filter table="x_udg_q_acreditacio">inici_proces&lt;=javascript:gs.endOfToday()^resultat=^EQ<item endquery="false" field="inici_proces" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.endOfToday()"/>
-            <item display_value="-- Cap --" endquery="false" field="resultat" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="resultat" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>

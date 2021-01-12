@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Q M2m Informe Vsma Acreditacion" max_length="40" name="x_udg_q_m2m_informe_vsma_acreditacion" sizeclass="0" type="collection">
+    <element label="M2m Informe Vsma Acreditacion" max_length="40" name="x_udg_q_m2m_informe_vsma_acreditacion" sizeclass="0" type="collection">
         <element attributes="encode_utf8=false" label="Acreditació" max_length="32" name="acreditacio" reference="x_udg_q_acreditacio" type="reference"/>
         <element attributes="encode_utf8=false" label="Informe VSMA" max_length="32" name="informe_vsma" reference="x_udg_q_informevsma" type="reference"/>
         <index name="index">

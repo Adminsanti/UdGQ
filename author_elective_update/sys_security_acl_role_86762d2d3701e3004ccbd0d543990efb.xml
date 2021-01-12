@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2018-10-09 10:57:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>86762d2d3701e3004ccbd0d543990efb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_acciomillora.x_udg_q.User</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_security_acl display_value="x_udg_q_acciomillora">02762d2d3701e3004ccbd0d543990ef7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_86762d2d3701e3004ccbd0d543990efb</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2018-10-09 10:57:32</sys_updated_on>
+        <sys_user_role display_value="x_udg_q.User" name="x_udg_q.User">14a2c9d637586b401acdf01643990e30</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_security_acl_role_86762d2d3701e3004ccbd0d543990efb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2018-10-09 10:57:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>86762d2d3701e3004ccbd0d543990efb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_udg_q_acciomillora.x_udg_q.User</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_security_acl display_value="x_udg_q_acciomillora">02762d2d3701e3004ccbd0d543990ef7</sys_security_acl><sys_update_name>sys_security_acl_role_86762d2d3701e3004ccbd0d543990efb</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2018-10-09 10:57:32</sys_updated_on><sys_user_role display_value="x_udg_q.User" name="x_udg_q.User">14a2c9d637586b401acdf01643990e30</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1583465864</payload_hash>
+        <record_name>x_udg_q_acciomillora.x_udg_q.User</record_name>
+        <reverted_from/>
+        <source>56e166221b212010c851a64fad4bcba7</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2021-01-09 23:07:09</sys_created_on>
+        <sys_id>fc4b76571b2524105fab4002cd4bcbf5</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>176e96749480000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Access Roles</type>
+        <update_guid>bc4b765776252410feb950b2da6fc9f5</update_guid>
+        <update_guid_history>bc4b765776252410feb950b2da6fc9f5:1583465864</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12/01/2021 09:53:21">384b76571b2524105fab4002cd4bcbf8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-01-12 08:53:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1c210e29094846c18b0c91b618582cd9</sys_id>
+        <sys_metadata>86762d2d3701e3004ccbd0d543990efb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_udg_q_acciomillora.x_udg_q.User</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="x_udg_q_acciomillora">02762d2d3701e3004ccbd0d543990ef7</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_86762d2d3701e3004ccbd0d543990efb</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_86762d2d3701e3004ccbd0d543990efb">fc4b76571b2524105fab4002cd4bcbf5</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-12 08:53:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
