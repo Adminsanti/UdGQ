@@ -3,7 +3,7 @@
         <element choice="1" label="Estandard" max_length="32" name="estandard" reference="x_udg_q_estandard" type="reference">
             <choice/>
         </element>
-        <element choice="1" label="Estudis" max_length="40" name="estudis" type="string">
+        <element active="false" choice="1" label="Estudis" max_length="40" name="estudis" type="string">
             <choice>
                 <element inactive_on_update="false" label="Doctorat" value="Doctorat"/>
             </choice>
