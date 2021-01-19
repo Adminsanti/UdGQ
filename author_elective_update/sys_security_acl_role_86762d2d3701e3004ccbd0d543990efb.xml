@@ -35,16 +35,16 @@
         <sys_created_by/>
         <sys_created_on>2021-01-09 23:07:09</sys_created_on>
         <sys_id>fc4b76571b2524105fab4002cd4bcbf5</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>176e96749480000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-12 10:38:33</sys_updated_on>
         <type>Access Roles</type>
         <update_guid>bc4b765776252410feb950b2da6fc9f5</update_guid>
         <update_guid_history>bc4b765776252410feb950b2da6fc9f5:1583465864</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 12/01/2021 09:53:21">384b76571b2524105fab4002cd4bcbf8</sys_audit_delete>
+        <sys_audit_delete display_value="">384b76571b2524105fab4002cd4bcbf8</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-01-12 08:53:21</sys_created_on>

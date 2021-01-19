@@ -27,14 +27,14 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[if (!gs.getUser().hasRole('admin')) { //permet, entre d'altres coses, fer backups
+        <script><![CDATA[var SGQprefcodi = gs.getUser().getPreference('qualitat.sgqActualCodi');
 
-    var SGQprefcodi = gs.getUser().getPreference('qualitat.sgqActualCodi');
+if (!gs.getUser().hasRole('admin') && SGQprefcodi == 'UdG') { //permet fer backups i UdG veu tots els subestàndards
+
 	var SGQprefsys_id = gs.getUser().getPreference('qualitat.sgqActual');
     current.addEncodedQuery("sgqsISEMPTY^sgqs_negatISEMPTY^ORsgqs_negatNOT LIKE" + SGQprefsys_id+"^NQsgqsLIKE"+ SGQprefsys_id); 
-	//els que no tenen SGQs i no estan negats i els que tenen, només per aquests (execmple Medicina)
-    if (SGQprefcodi == 'ED') current.addQuery('estudis', 'Doctorat'); //l'escola de doctorat té només els que diu doctorat
-    else current.addQuery('estudis', "");
+	//els que no tenen SGQs i no estan negats i els que tenen, només per aquests (exeemple Medicina)
+
 }]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -43,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c7e8ce591bcc2414c851a64fad4bcb36</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>SGQ query per Subestàndards</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -52,9 +52,22 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_c7e8ce591bcc2414c851a64fad4bcb36</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-12 10:26:58</sys_updated_on>
+        <sys_updated_on>2021-01-19 10:48:28</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=c7e8ce591bcc2414c851a64fad4bcb36"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>c7e8ce591bcc2414c851a64fad4bcb36</documentkey>
+        <fieldname>message</fieldname>
+        <language>ca</language>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-01-19 10:48:28</sys_created_on>
+        <sys_id>57b853ed1b3960105fab4002cd4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-19 10:48:28</sys_updated_on>
+        <tablename>sys_script</tablename>
+        <value/>
+    </sys_translated_text>
 </record_update>

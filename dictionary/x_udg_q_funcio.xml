@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Funció" max_length="40" name="x_udg_q_funcio" sizeclass="172" type="collection">
+    <element audit="true" label="Funció" max_length="40" name="x_udg_q_funcio" sizeclass="178" type="collection">
         <element audit="true" default="true" hint="L'usuari té accés interactiu a l'eina degut a aquesta funció. Atenció: encara que no en tingui per aquesta, podria tenir-la per una altra." label="Accés" max_length="40" name="acces" type="boolean"/>
         <element audit="true" default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
         <element default="true" hint="Una funció assignable fa que se li poden assignar objectius i accions del pla de millora." label="Assignable" max_length="40" name="assignable" type="boolean"/>
