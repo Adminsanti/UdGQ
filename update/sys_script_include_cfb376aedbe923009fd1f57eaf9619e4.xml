@@ -83,8 +83,8 @@ ObjectiuUtils.prototype = {
                 }
             }
             if (ponderacions > 0) assoliment = acumulat / ponderacions;
-            //new x_udg_q.log("FINAL ObjectiuUtils.getExecucio "+objectiu_id.number+" assoliment = "+assoliment);
-            return assoliment;
+            //return assoliment;
+			return Math.floor(assoliment); //El nombre enter sense decimals
         },
 
         responsableObjectiuDefecte: function () {
@@ -292,7 +292,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>464</sys_mod_count>
+        <sys_mod_count>466</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -300,6 +300,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-20 17:14:06</sys_updated_on>
+        <sys_updated_on>2021-01-20 14:37:53</sys_updated_on>
     </sys_script_include>
 </record_update>
