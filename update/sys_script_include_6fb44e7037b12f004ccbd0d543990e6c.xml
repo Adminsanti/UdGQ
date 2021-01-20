@@ -13,28 +13,34 @@ Funcio.prototype = {
         this._funcio = grFuncio;
     },
 
-    //actualitza tots els assignats malament de totes les funcions
+    //actualitza tots els OBJ i ACC assignats malament de totes les funcions en curs del SGQ
     actualitzar_tots_assignats: function() {
         var gr1 = new GlideRecord("x_udg_q_objectiumillora");
-        gr1.addQuery('state','2');
+        gr1.addQuery('state', '2');
+        gr1.addQuery('sgq', this._funcio.sgq); //Només els del sgq de la funcio modificada
         gr1.query();
         while (gr1.next()) {
-            if (gr1.responsable.membres.toString().indexOf(gr1.assigned_to.toString()) == -1 || gr1.assigned_to=="") {
-                new log("Reassingnant " + gr1.number + " de " + gr1.assigned_to.name + " a " + gr1.responsable.usuari.name + " - Funcio.actualitzar_tots_assignats()");
+            if (gr1.responsable.membres.toString().indexOf(gr1.assigned_to.toString()) == -1 ||
+                gr1.assigned_to == "") {
+                new log("Reassingnant " + gr1.number + " de " + gr1.assigned_to.name + " a " +
+                    gr1.responsable.usuari.name + " - Funcio.actualitzar_tots_assignats()");
                 gr1.assigned_to = gr1.responsable.usuari;
                 gr1.update();
             }
         }
         var gr2 = new GlideRecord("x_udg_q_acciomillora");
-        gr2.addQuery('state','2');
+        gr2.addQuery('state', '2');
+        gr1.addQuery('sgq', this._funcio.sgq); //Només els del sgq de la funcio modificada
         gr2.query();
         while (gr2.next()) {
-            if (gr2.responsable.membres.toString().indexOf(gr2.assigned_to.toString()) == -1 || gr2.assigned_to=="") {
-                new log("Reassingnant " + gr2.number + " de " + gr2.assigned_to.name + " a " + gr2.responsable.usuari.name + " - Funcio.actualitzar_tots_assignats()");
+            if (gr2.responsable.membres.toString().indexOf(gr2.assigned_to.toString()) == -1 ||
+                gr2.assigned_to == "") {
+                new log("Reassingnant " + gr2.number + " de " + gr2.assigned_to.name + " a " +
+                    gr2.responsable.usuari.name + " - Funcio.actualitzar_tots_assignats()");
                 gr2.assigned_to = gr2.responsable.usuari;
                 gr2.update();
             }
-        }   
+        }
     },
 
     type: 'Funcio'
@@ -44,7 +50,7 @@ Funcio.prototype = {
         <sys_created_on>2018-11-13 12:28:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fb44e7037b12f004ccbd0d543990e6c</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>Funcio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -52,6 +58,6 @@ Funcio.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6fb44e7037b12f004ccbd0d543990e6c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-10-08 12:04:57</sys_updated_on>
+        <sys_updated_on>2021-01-20 10:36:51</sys_updated_on>
     </sys_script_include>
 </record_update>

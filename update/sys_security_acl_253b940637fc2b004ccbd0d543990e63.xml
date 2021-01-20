@@ -3,7 +3,7 @@
         <active>true</active>
         <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
-        <condition table="x_udg_q_objectiumillora">state=-5^EQ<item display_value="Esborrany" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
+        <condition table="x_udg_q_objectiumillora">state=-5^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description>Els x_udg_q.User pot esborrar objectius en esborrany </description>
