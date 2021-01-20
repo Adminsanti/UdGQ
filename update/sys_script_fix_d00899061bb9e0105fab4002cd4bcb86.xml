@@ -9,7 +9,8 @@
         <run_once>true</run_once>
         <script><![CDATA[var gr = new GlideRecord('x_udg_q_objectiumillora');
 gr.setWorkflow(false); // per no executar les BR
-gr.addQuery('state', '!=', 2);
+//gr.addQuery('state', '!=', 2);
+gr.addQuery('state', 3); //Només en curs, per si es torna executar
 gr.query();
 while (gr.next()) {
     var arrodonit = new x_udg_q.ObjectiuUtils(gr.getUniqueValue()).getExecucio(gr.getUniqueValue());
@@ -25,7 +26,7 @@ while (gr.next()) {
         <sys_created_on>2021-01-20 14:50:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d00899061bb9e0105fab4002cd4bcb86</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>OBJ % recalcular i arrodonir</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -33,7 +34,7 @@ while (gr.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_d00899061bb9e0105fab4002cd4bcb86</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-20 15:01:41</sys_updated_on>
+        <sys_updated_on>2021-01-20 15:32:17</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
