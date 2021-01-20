@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ac8bb58e1b7de0105fab4002cd4bcb34</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-01-20 17:18:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>748b3d4e1b7de0105fab4002cd4bcb34</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sp_instance_748b3d4e1b7de0105fab4002cd4bcb34</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-20 17:31:50</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<p>Aparentment, el vostre usuari no us&nbsp;permet connectar al&nbsp;Servicenow per gestió de la qualitat&nbsp;de la UdG. Podeu tornar-ho a provar aquí:&nbsp;<a title=\"Servicenow\" href=\"https://universitatdegirona.service-now.com/\" data-mce-href=\"https://universitatdegirona.service-now.com/\">Servicenow</a>&nbsp;o, potser, us cal&nbsp;obtenir&nbsp;autorització previament.</p><p>Aparentemente, su usuario no le permite conectar al Servicenow para gestión de la calidad de la UdG. Puede volverlo a probar aquí:&nbsp;<a title=\"Servicenow\" href=\"https://universitatdegirona.service-now.com/\" data-mce-href=\"https://universitatdegirona.service-now.com/\">Servicenow</a>&nbsp;o, tal vez, necesite obtener autiorización previamente.</p><p>Apparently, your user doen't allow you to connect to the Servicenow for quality management of the UdG. You can try in again here:&nbsp;<a title=\"Servicenow\" href=\"https://universitatdegirona.service-now.com/\" data-mce-href=\"https://universitatdegirona.service-now.com/\">Servicenow</a>&nbsp;or, maybe, you should ask for permision previously.</p><p>&nbsp;</p><p>&nbsp;</p>",
+		"displayValue": "<p>Aparentment, el vostre usuari no us&nbsp;permet connectar al&nbsp;Servicenow per gesti&oacute; de la qualitat&nbsp;de la UdG. Podeu tornar-ho a provar aqu&iacute;:&nbsp;<a title=\"Servicenow\" href=\"https://universitatdegirona.service-now.com/\">Servicenow</a>&nbsp;o, potser, us cal&nbsp;obtenir&nbsp;autoritzaci&oacute; previament.</p>\n<p>Aparentemente, su usuario no le permite conectar al Servicenow para gesti&oacute;n de la calidad de la UdG. Puede volverlo a probar aqu&iacute;:&nbsp;<a title=\"Servicenow\" href=\"https://universitatdegirona.service-now.com/\">Servicenow</a>&nbsp;o, tal vez, necesite obtener autiorizaci&oacute;n previamente.</p>\n<p>Apparently, your user doen't allow you to connect to the Servicenow for quality management of the UdG. You can try in again here:&nbsp;<a title=\"Servicenow\" href=\"https://universitatdegirona.service-now.com/\">Servicenow</a>&nbsp;or, maybe, you should ask for permision previously.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=748b3d4e1b7de0105fab4002cd4bcb34"/>
+</record_update>
