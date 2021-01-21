@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="x_udg_q_plantillacomu" label="Plantilla VSMA" max_length="40" name="x_udg_q_plantillavsma" sizeclass="9" type="collection">
         <element attributes="show_condition_count=true" choice_field="state" dependent="taula" dependent_on_field="taula" label="Condicions" max_length="4000" name="condicions" reference="x_udg_q_objectiumillora" type="conditions" use_dependent_field="true"/>
+        <element label="Desde" max_length="40" name="desde" type="glide_date"/>
+        <element label="Incloure esborranys" max_length="40" name="incloure_esborranys" type="boolean"/>
+        <element label="Incloure esborrats" max_length="40" name="incloure_esborrats" type="boolean"/>
         <element default="x_udg_q_objectiumillora" label="Taula" mandatory="true" max_length="80" name="taula" read_only="true" type="table_name"/>
         <element choice="3" default="1" label="Tipus" max_length="140" name="tipus" type="string">
             <choice>
@@ -8,5 +11,6 @@
                 <element inactive_on_update="false" label="Seguiment" value="1"/>
             </choice>
         </element>
+        <element label="Titulacions" max_length="4000" name="titulacions" reference="x_udg_q_titulacio" type="glide_list"/>
     </element>
 </database>

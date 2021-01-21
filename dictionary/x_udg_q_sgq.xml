@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="SGQ" max_length="40" name="x_udg_q_sgq" sizeclass="17" type="collection">
+    <element audit="true" label="SGQ" max_length="40" name="x_udg_q_sgq" sizeclass="18" type="collection">
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element display="true" label="Codi" mandatory="true" max_length="6" name="codi" type="string"/>
         <element label="Comparteix amb" max_length="4000" name="comparteix" reference="x_udg_q_sgq" type="glide_list"/>
