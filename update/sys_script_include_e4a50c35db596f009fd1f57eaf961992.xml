@@ -9,60 +9,94 @@
         <name>Sgq</name>
         <script><![CDATA[var Sgq = Class.create();
 Sgq.prototype = {
-	initialize: function() {
-	},
-	
-	getPropietari: function(sgq) {
-		grSgq = new GlideRecord('x_udg_q_sgq');
-		grSgq.get('nom',sgq);
-		return grSgq.propietari;
-	},
-	
-	getResponsable: function(sgq) {
-		grSgq = new GlideRecord('x_udg_q_sgq');
-		grSgq.get('nom',sgq);
-		return grSgq.responsable;
-	},
+    initialize: function() {},
 
-	getPropietariSgqActual: function() {
-		grSgq = new GlideRecord('x_udg_q_sgq');
-		grSgq.get('sys_id',gs.getUser().getPreference('qualitat.sgqActual'));
-		return grSgq.propietari;
-	},
-	
-	getResponsableSgqActual: function() {
-		grSgq = new GlideRecord('x_udg_q_sgq');		
-		grSgq.get('sys_id',gs.getUser().getPreference('qualitat.sgqActual'));
-		return grSgq.responsable;
-	},
-	
-	getLlistaNomsTitulacionsSgqActual: function () {
-		var grTit = new GlideRecord('x_udg_q_titulacio');
-		grTit.addQuery('sgq',gs.getUser().getPreference('qualitat.sgqActual'));
-		grTit.addQuery('activa',true);
-		grTit.query();
-		var text="";
-		while (grTit.next()) {
-			if (text!='') text+=',';
-			text+=grTit.nom;
-		}
-		return text.split(',');
-	},
-	
-	getSgqActual: function () {
-		var gr = new GlideRecord("sys_user");
-		gr.get(gs.getUserID());
-		return gr.x_udg_q_sgq_actual;
-	},
-	
-	type: 'Sgq'
+    getPropietari: function(sgq) {
+        grSgq = new GlideRecord('x_udg_q_sgq');
+        grSgq.get('nom', sgq);
+        return grSgq.propietari;
+    },
+
+    getResponsable: function(sgq) {
+        grSgq = new GlideRecord('x_udg_q_sgq');
+        grSgq.get('nom', sgq);
+        return grSgq.responsable;
+    },
+
+    getPropietariSgqActual: function() {
+        grSgq = new GlideRecord('x_udg_q_sgq');
+        grSgq.get('sys_id', gs.getUser().getPreference('qualitat.sgqActual'));
+        return grSgq.propietari;
+    },
+
+    getResponsableSgqActual: function() {
+        grSgq = new GlideRecord('x_udg_q_sgq');
+        grSgq.get('sys_id', gs.getUser().getPreference('qualitat.sgqActual'));
+        return grSgq.responsable;
+    },
+
+    getLlistaNomsTitulacionsSgqActual: function() {
+        var grTit = new GlideRecord('x_udg_q_titulacio');
+        grTit.addQuery('sgq', gs.getUser().getPreference('qualitat.sgqActual'));
+        grTit.addQuery('activa', true);
+        grTit.query();
+        var text = "";
+        while (grTit.next()) {
+            if (text != '') text += ',';
+            text += grTit.nom;
+        }
+        return text.split(',');
+    },
+
+    getLlistaTitulacionsSgqActual: function() {
+        var grTit = new GlideRecord('x_udg_q_titulacio');
+        grTit.addQuery('sgq', gs.getUser().getPreference('qualitat.sgqActual'));
+        grTit.addQuery('activa', true);
+        grTit.query();
+        var llista = [];
+        while (grTit.next()) {
+            llista.push(grTit.getValue("sys_id"));
+        }
+        return llista.join(',');
+    },
+
+    getLlistaNomsTitulacions: function(llista_sys_ids) {
+        var grTit = new GlideRecord('x_udg_q_titulacio');
+        grTit.addQuery('sys_id', 'IN', llista_sys_ids);
+        grTit.query();
+        var llista = [];
+        while (grTit.next()) {
+            llista.push(grTit.getValue("nom"));
+        }
+        return llista.join(',');
+    },
+
+    getLlistaTitulacionsNomesSgqActual: function(llista_sys_ids) {
+        var grTit = new GlideRecord('x_udg_q_titulacio');
+        grTit.addQuery('sys_id', 'IN', llista_sys_ids);
+        grTit.addQuery('activa', true);
+        grTit.addQuery('sgq', gs.getUser().getPreference('qualitat.sgqActual'));
+        var llista = [];
+        while (grTit.next()) {
+            llista.push(grTit.getValue('sys_id'));
+        }
+        return llista.join(',');
+    },
+
+    getSgqActual: function() {
+        var gr = new GlideRecord("sys_user");
+        gr.get(gs.getUserID());
+        return gr.x_udg_q_sgq_actual;
+    },
+
+    type: 'Sgq'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-10-22 08:56:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e4a50c35db596f009fd1f57eaf961992</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Sgq</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -70,6 +104,6 @@ Sgq.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e4a50c35db596f009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-05 10:59:48</sys_updated_on>
+        <sys_updated_on>2021-01-25 15:30:31</sys_updated_on>
     </sys_script_include>
 </record_update>

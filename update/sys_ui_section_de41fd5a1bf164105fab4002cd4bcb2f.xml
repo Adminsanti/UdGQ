@@ -4,13 +4,13 @@
             <element>titulacions</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 11:11:55</sys_created_on>
-            <sys_id>1a41fd5a1bf164105fab4002cd4bcb81</sys_id>
+            <sys_created_on>2021-01-25 15:50:07</sys_created_on>
+            <sys_id>5c5797271bf92c105fab4002cd4bcbf7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Filtre" display_value="Filtre" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">de41fd5a1bf164105fab4002cd4bcb2f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 11:11:55</sys_updated_on>
+            <sys_updated_on>2021-01-25 15:50:07</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>incloure_esborranys</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 11:11:55</sys_created_on>
-            <sys_id>9e41fd5a1bf164105fab4002cd4bcb81</sys_id>
+            <sys_created_on>2021-01-25 15:50:07</sys_created_on>
+            <sys_id>e45797271bf92c105fab4002cd4bcbf8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Filtre" display_value="Filtre" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">de41fd5a1bf164105fab4002cd4bcb2f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 11:11:55</sys_updated_on>
+            <sys_updated_on>2021-01-25 15:50:07</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>incloure_esborrats</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 11:11:55</sys_created_on>
-            <sys_id>1641fd5a1bf164105fab4002cd4bcb82</sys_id>
+            <sys_created_on>2021-01-25 15:50:07</sys_created_on>
+            <sys_id>6c5797271bf92c105fab4002cd4bcbf8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Filtre" display_value="Filtre" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">de41fd5a1bf164105fab4002cd4bcb2f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 11:11:55</sys_updated_on>
+            <sys_updated_on>2021-01-25 15:50:07</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,27 +46,13 @@
             <element>desde</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 11:11:55</sys_created_on>
-            <sys_id>9a41fd5a1bf164105fab4002cd4bcb82</sys_id>
+            <sys_created_on>2021-01-25 15:50:07</sys_created_on>
+            <sys_id>e05797271bf92c105fab4002cd4bcbf9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Filtre" display_value="Filtre" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">de41fd5a1bf164105fab4002cd4bcb2f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 11:11:55</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>condicions</element>
-            <position>4</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 11:11:55</sys_created_on>
-            <sys_id>1241fd5a1bf164105fab4002cd4bcb83</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Filtre" display_value="Filtre" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">de41fd5a1bf164105fab4002cd4bcb2f</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 11:11:55</sys_updated_on>
+            <sys_updated_on>2021-01-25 15:50:07</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -9,41 +9,62 @@
         <name>GeneraDocs</name>
         <script><![CDATA[var GeneraDocs = Class.create();
 GeneraDocs.prototype = {
-    initialize: function () {},
+    initialize: function() {},
 
-    generaVSMA: function (current, userID) {
-       
-        var U = x_udg_q.Usuari(userID);
-        var SGQpref=U.Class.getSgqActual();
-        //var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
-        //var SGQprefCodi = gs.getUser().getPreference('qualitat.sgqActualCodi');
+    generaVSMA: function(grPlantilla, userId) {
+        var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
+        var SGQprefCodi = gs.getUser().getPreference('qualitat.sgqActualCodi');
         var grSGQ = new GlideRecord('x_udg_q_sgq');
         grSGQ.get(SGQpref);
-
         var ObjUtils = new ObjectiuUtils();
+
         var grDG = new GlideRecord('x_udg_q_docgeneratvsma');
         grDG.initialize();
         grDG.insert();
 
-        var grPlantilla = new GlideRecord('sys_attachment');
-        grPlantilla.get(current.file); //GlideRecord del fitxer del camp file
+        var grFitxerPlantilla = new GlideRecord('sys_attachment');
+        grFitxerPlantilla.get(grPlantilla.file); //GlideRecord del fitxer del camp file
         var gsaPlantilla = new GlideSysAttachment();
-        var contingut = gsaPlantilla.getContent(grPlantilla);
+        var contingut = gsaPlantilla.getContent(grFitxerPlantilla);
 
         var rtf1 = new rtf(contingut);
         rtf1.replace(/##NomSGQ##/g, grSGQ.nom);
-        rtf1.replace(/##LlistaTitulacions##/g, rtf1.llista(new Sgq().getLlistaNomsTitulacionsSgqActual()));
+		
+		var llistaTitulacions=grPlantilla.getValue('titulacions');
+		if (llistaTitulacions == "") llistaTitulacions= new Sgq().getLlistaTitulacionsSgqActual();
+		else llistaTitulacions = new Sgq().getLlistaTitulacionsNomesSgqActual(llistaTitulacions);
+		
+        rtf1.replace(/##LlistaTitulacions##/g, rtf1.llista(new Sgq().getLlistaNomsTitulacions(llistaTitulacions)));
 
         rtf1.clearTag('FiltreMillora'); // Netejar filtre si és que encara hi és
+		
+		var condicions=grPlantilla.getValue('condicions');
+		
+		if (!grPlantilla.incloure_esborranys) condicions+="^state!=-5";
+		if (!grPlantilla.incloure_esborrats) condicions+="^state!=-5^ORstateISEMPTY";
+	
+		
+		/*
+		condicions+="^implica_titulacionsLIKE------";
+		
+		condicions+="^ORimplica_titulacionsLIKE---------";
+		condicions+="^ORimplica_titulacionsISEMPTY";
+		
+		
+		DATA DESDE
+		
+		*/
+		
+
 
         rtf1.replace('##ResumMillora##', "Objectius Tancats en el període: \\par\\par" +
-            ObjUtils.getRtfResumMillora(current.condicions + "^state=3", SGQpref) +
+            ObjUtils.getRtfResumMillora(condicions + "^state=3", SGQpref) +
             "\\par\\par Objectius en Curs - Pla de Millora Actiu \\par\\par" +
-            ObjUtils.getRtfResumMillora(current.condicions + "^state=2", SGQpref)
+            ObjUtils.getRtfResumMillora(condicions + "^state=2", SGQpref)
         );
 
-        rtf1.replace('##MilloraCurs##', ObjUtils.getRtfMilloraComprimit(current.condicions + '^state=2', SGQpref));
-        rtf1.replace('##MilloraTancat##', ObjUtils.getRtfMilloraComprimit(current.condicions + "^state=3^tancament!=-5", SGQpref));
+        rtf1.replace('##MilloraCurs##', ObjUtils.getRtfMilloraComprimit(condicions + '^state=2', SGQpref));
+        rtf1.replace('##MilloraTancat##', ObjUtils.getRtfMilloraComprimit(condicions + "^state=3^tancament!=-5", SGQpref));
 
         if (rtf1.getContent().match(/##TSubestandard#.\..##/g)) {
             var subestandards = rtf1.getContent().match(/##TSubestandard#.\..##/g).toString().match(/.\../g);
@@ -59,8 +80,8 @@ GeneraDocs.prototype = {
             for (index = 0; index < Dsubestandards.length; ++index) {
                 var sysidS2 = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
                 var textstring = "";
-                textstring += ObjUtils.getRtfperSubestandard(sysidS2, current.condicions, 2, SGQpref);
-                textstring += ObjUtils.getRtfperSubestandard(sysidS2, current.condicions, 3, SGQpref);
+                textstring += ObjUtils.getRtfperSubestandard(sysidS2, condicions, 2, SGQpref);
+                textstring += ObjUtils.getRtfperSubestandard(sysidS2, condicions, 3, SGQpref);
                 rtf1.replace("##DSubestandard#" + Dsubestandards[index] + "##", textstring);
             }
         }
@@ -68,19 +89,14 @@ GeneraDocs.prototype = {
         var newDocAttachment_sys_id = newDocAttachment.write(grDG, grDG.number + ".rtf", "text/rtf", rtf1.escape().getContent());
         grDG.fitxer = newDocAttachment_sys_id;
         grDG.sgq = SGQpref;
-        grDG.nom = current.short_description + " " + SGQprefCodi + " " + grDG.sys_created_on.getDisplayValue();
+        grDG.nom = grPlantilla.short_description + " " + SGQprefCodi + " " + grDG.sys_created_on.getDisplayValue();
         grDG.tipus = grPlantilla.tipus;
-        grDG.plantilla = current.sys_id;
-        grDG.filtre = current.condicions;
+        grDG.plantilla = grPlantilla.sys_id;
+        grDG.filtre = condicions;
         grDG.update();
         gs.addInfoMessage("Generat <B> <A HREF=" + gs.getProperty('glide.servlet.uri') + "sys_attachment.do?sys_id=" + newDocAttachment_sys_id + ">" + grDG.number + "</A></B> - " + grDG.nom);
         new log().preU("Generat " + grDG.number + " - " + grDG.nom);
-        action.setRedirectURL(current); //Roman a la plantilla
     },
-
-
-
-
 
     type: 'GeneraDocs'
 };]]></script>
@@ -89,7 +105,7 @@ GeneraDocs.prototype = {
         <sys_created_on>2020-11-20 09:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9f5602961b2ca0105fab4002cd4bcb1c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>GeneraDocs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -97,6 +113,6 @@ GeneraDocs.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_9f5602961b2ca0105fab4002cd4bcb1c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-21 08:54:02</sys_updated_on>
+        <sys_updated_on>2021-01-25 15:45:29</sys_updated_on>
     </sys_script_include>
 </record_update>

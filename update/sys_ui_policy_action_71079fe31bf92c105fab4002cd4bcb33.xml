@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
     <sys_ui_policy_action action="INSERT_OR_UPDATE">
         <cleared>false</cleared>
-        <disabled>true</disabled>
-        <field>document</field>
+        <disabled>ignore</disabled>
+        <field>taula</field>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-09-30 08:58:38</sys_created_on>
+        <sys_created_on>2021-01-25 15:49:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>0d17dbfd1b6fdc50c851a64fad4bcba0</sys_id>
+        <sys_id>71079fe31bf92c105fab4002cd4bcb33</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>document</sys_name>
+        <sys_name>taula</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_policy_action_0d17dbfd1b6fdc50c851a64fad4bcba0</sys_update_name>
+        <sys_update_name>sys_ui_policy_action_71079fe31bf92c105fab4002cd4bcb33</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-30 08:58:38</sys_updated_on>
-        <table>x_udg_q_informevsma</table>
-        <ui_policy display_value="reciclar Informe rebut VSMA no te nom">eed657311bafdc50c851a64fad4bcb2c</ui_policy>
-        <visible>ignore</visible>
+        <sys_updated_on>2021-01-25 15:49:01</sys_updated_on>
+        <table>x_udg_q_plantillavsma</table>
+        <ui_policy display_value="Plantilla VSMA No taula">eed657311bafdc50c851a64fad4bcb2c</ui_policy>
+        <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="572" text_index="true" type="collection">
-        <element default="0" label="Accions" max_length="40" name="accions" read_only="true" type="integer"/>
-        <element attributes="target_threshold_colors=0:#C71585;1:yellow;50:orange;99:lightgreen" default="0" label="Execució %" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
+        <element default="0" label="Actions" max_length="40" name="accions" read_only="true" type="integer"/>
+        <element attributes="target_threshold_colors=0:#C71585;1:yellow;50:orange;99:lightgreen" default="0" label="Execution %" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
         <element label="Codi antic" max_length="40" name="codi_antic" type="string"/>
         <element dependent="sgq.comparteix" dependent_on_field="sgq.comparteix" label="Compartit" max_length="4000" name="compartit" reference="x_udg_q_sgq" reference_qual="javascript:&quot;sys_idIN&quot;+current.sgq.comparteix;" type="glide_list" use_dependent_field="true" use_reference_qualifier="advanced"/>
         <element label="Definit" max_length="40" name="declarat" type="glide_date_time"/>
@@ -24,7 +24,7 @@
         <element choice="1" label="Subestàndard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" reference_qual="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" reference_qual_condition="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" type="reference">
             <choice/>
         </element>
-        <element choice="1" label="Tancament" max_length="40" name="tancament" type="integer">
+        <element choice="1" label="Close code" max_length="40" name="tancament" type="integer">
             <choice>
                 <element inactive_on_update="false" label="Assoliment molt satisfactori" sequence="0" value="5"/>
                 <element inactive_on_update="false" label="Assoliment satisfactori" sequence="1" value="4"/>

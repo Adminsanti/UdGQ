@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
-        <active>false</active>
-        <conditions table="x_udg_q_informevsma">nomISEMPTY^EQ<item endquery="false" field="nom" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </conditions>
+        <active>true</active>
+        <conditions/>
         <description/>
         <global>true</global>
         <inherit>false</inherit>
@@ -21,7 +19,7 @@
 
 }]]></script_true>
         <set_values/>
-        <short_description>reciclar Informe rebut VSMA no te nom</short_description>
+        <short_description>Plantilla VSMA No taula</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-09-30 08:58:18</sys_created_on>
@@ -29,8 +27,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>eed657311bafdc50c851a64fad4bcb2c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>reciclar Informe rebut VSMA no te nom</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Plantilla VSMA No taula</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -38,8 +36,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_eed657311bafdc50c851a64fad4bcb2c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-09-30 09:03:13</sys_updated_on>
-        <table>x_udg_q_informevsma</table>
+        <sys_updated_on>2021-01-25 15:47:26</sys_updated_on>
+        <table>x_udg_q_plantillavsma</table>
         <ui_type>0</ui_type>
         <view/>
     </sys_ui_policy>
