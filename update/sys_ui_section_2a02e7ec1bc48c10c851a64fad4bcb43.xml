@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>09871f271bf92c105fab4002cd4bcba9</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>f7a1f32f1b7d2c105fab4002cd4bcbf4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>active</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>8d871f271bf92c105fab4002cd4bcba9</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>73a1f32f1b7d2c105fab4002cd4bcbf5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>tipus</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>05871f271bf92c105fab4002cd4bcbaa</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>f7a1f32f1b7d2c105fab4002cd4bcbf5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>short_description</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>89871f271bf92c105fab4002cd4bcbaa</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>7fa1f32f1b7d2c105fab4002cd4bcbf5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>01871f271bf92c105fab4002cd4bcbab</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>f3a1f32f1b7d2c105fab4002cd4bcbf6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>sgq</element>
             <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>85871f271bf92c105fab4002cd4bcbab</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>7ba1f32f1b7d2c105fab4002cd4bcbf6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,55 +88,41 @@
             <element>compartit</element>
             <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>0d871f271bf92c105fab4002cd4bcbab</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>ffa1f32f1b7d2c105fab4002cd4bcbf6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>order</element>
-            <position>7</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>81871f271bf92c105fab4002cd4bcbac</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>taula</element>
-            <position>8</position>
+            <position>7</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>09871f271bf92c105fab4002cd4bcbac</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>77a1f32f1b7d2c105fab4002cd4bcbf7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>file</element>
-            <position>9</position>
+            <position>8</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-25 15:50:58</sys_created_on>
-            <sys_id>8d871f271bf92c105fab4002cd4bcbac</sys_id>
+            <sys_created_on>2021-01-25 17:45:18</sys_created_on>
+            <sys_id>fba1f32f1b7d2c105fab4002cd4bcbf7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_plantillavsma" sys_domain="global" view="Default view">2a02e7ec1bc48c10c851a64fad4bcb43</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-25 15:50:58</sys_updated_on>
+            <sys_updated_on>2021-01-25 17:45:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
