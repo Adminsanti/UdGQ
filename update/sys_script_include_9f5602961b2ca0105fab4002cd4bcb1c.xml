@@ -23,38 +23,38 @@ GeneraDocs.prototype = {
         grDG.insert();
 
         var grFitxerPlantilla = new GlideRecord('sys_attachment');
-        grFitxerPlantilla.get(grPlantilla.file); //GlideRecord del fitxer del camp file
+        grFitxerPlantilla.get(grPlantilla.file); //gr del fitxer del camp file
         var gsaPlantilla = new GlideSysAttachment();
         var contingut = gsaPlantilla.getContent(grFitxerPlantilla);
 
-        var rtf1 = new rtf(contingut);
-        rtf1.replace(/##NomSGQ##/g, grSGQ.nom);
-		
-		var llistaTitulacions=grPlantilla.getValue('titulacions');
-		if (llistaTitulacions == "") llistaTitulacions= new Sgq().getLlistaTitulacionsSgqActual();
-		else llistaTitulacions = new Sgq().getLlistaTitulacionsNomesSgqActual(llistaTitulacions);
-		
-        rtf1.replace(/##LlistaTitulacions##/g, rtf1.llista(new Sgq().getLlistaNomsTitulacions(llistaTitulacions)));
+        var llistaTitulacions = grPlantilla.getValue('titulacions');
+        if (!llistaTitulacions)
+            llistaTitulacions = new Sgq().getLlistaTitulacionsSgqActual();
+        else llistaTitulacions = new Sgq().filtraTitulacionsNomesSgqActual(llistaTitulacions);
 
+        var rtf1 = new rtf(contingut);
         rtf1.clearTag('FiltreMillora'); // Netejar filtre si és que encara hi és
-		
-		var condicions=grPlantilla.getValue('condicions');
-		
-		if (!grPlantilla.incloure_esborranys) condicions+="^state!=-5";
-		if (!grPlantilla.incloure_esborrats) condicions+="^state!=-5^ORstateISEMPTY";
-	
-		
-		/*
-		condicions+="^implica_titulacionsLIKE------";
-		
-		condicions+="^ORimplica_titulacionsLIKE---------";
-		condicions+="^ORimplica_titulacionsISEMPTY";
+        rtf1.replace(/##NomSGQ##/g, grSGQ.nom);
+        rtf1.replace(/##LlistaTitulacions##/g, rtf1.llista(new Sgq().getLlistaNomsTitulacions(llistaTitulacions)).toString());
+
+       var condicions = grPlantilla.getValue('condicions');
+        gs.addInfoMessage("Condicions 1: " + condicions);
+        if (!grPlantilla.incloure_esborranys) condicions += "^state!=-5";
+        if (!grPlantilla.incloure_esborrats) condicions += "^state!=-5^ORstateISEMPTY";
+
+
+        /*
 		
 		
-		DATA DESDE
+        condicions+="^implica_titulacionsLIKE------";
 		
-		*/
+        condicions+="^ORimplica_titulacionsLIKE---------";
+        condicions+="^ORimplica_titulacionsISEMPTY";
 		
+		
+        DATA DESDE
+		
+        */
 
 
         rtf1.replace('##ResumMillora##', "Objectius Tancats en el període: \\par\\par" +
@@ -105,7 +105,7 @@ GeneraDocs.prototype = {
         <sys_created_on>2020-11-20 09:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9f5602961b2ca0105fab4002cd4bcb1c</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>GeneraDocs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -113,6 +113,6 @@ GeneraDocs.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_9f5602961b2ca0105fab4002cd4bcb1c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-25 15:45:29</sys_updated_on>
+        <sys_updated_on>2021-01-25 17:35:52</sys_updated_on>
     </sys_script_include>
 </record_update>

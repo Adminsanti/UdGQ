@@ -10,7 +10,7 @@
         <script><![CDATA[var rtf = Class.create();
 rtf.prototype = {
 
-    initialize: function (cadena) {
+    initialize: function(cadena) {
         this._cadena = cadena;
         this._table = "{"; //{\\rtf1\\ansi\\deff0\n";
         this._tableend = "}\n";
@@ -20,15 +20,15 @@ rtf.prototype = {
         this.escape();
     },
 
-    replace: function (cadena1, cadena2) { //cadena1 Pot ser una cadena o una regex
+    replace: function(cadena1, cadena2) { //cadena1 Pot ser una cadena o una regex
         this._cadena = this._cadena.replace(cadena1, cadena2);
     },
 
-    getContent: function () {
+    getContent: function() {
         return this._cadena;
     },
 
-    getTagParameter: function (tag) {
+    getTagParameter: function(tag) {
         /*
         var exp="##"+tag+"#(.+)##";
         var myRe = new RegExp (exp,'g');
@@ -41,18 +41,12 @@ rtf.prototype = {
         return resposta;
     },
 
-    clearTag: function (tag) {
+    clearTag: function(tag) {
         var reg = new RegExp('##' + tag + '#.+##', 'g');
         this._cadena = this._cadena.replace(reg, '');
     },
 
-
-
-
-
-
-
-    escape: function () {
+    escape: function() {
         this._cadena = this._cadena.replace(/À/g, "\\'c0");
         this._cadena = this._cadena.replace(/Á/g, "\\'c1");
         this._cadena = this._cadena.replace(/Ç/g, "\\'c7");
@@ -78,13 +72,13 @@ rtf.prototype = {
         return this;
     },
 
-    li: function (li) {
+    li: function(li) {
         var cadena = "\\par {\\listtext\\pard\\plain\\ltrpar \\s15 \\rtlch\\fcs1 \\af31507\\ltrch\\fcs0\\f3\\lang1027\\langfe1033\\langnp1027\\insrsid15291472 \\loch\\af3\\dbch\\af31506\\hich\\f3 \\'b7\\tab}\n";
         this.add(cadena + li);
         return cadena + li;
     },
 
-    llista: function (llista) {
+    llista: function(llista) {
         var cadena_rtf = "";
         if (llista[0]) {
             cadena_rtf = llista[0];
@@ -95,17 +89,17 @@ rtf.prototype = {
         return cadena_rtf;
     },
 
-    add: function (cadena) {
+    add: function(cadena) {
         this._cadena += cadena;
         return this;
     },
-    
-    tablestart: function () {
+
+    tablestart: function() {
         this.add(this._table);
         return this;
     },
 
-    rowstart: function (llistacols, color) {
+    rowstart: function(llistacols, color) {
         var cadena_rtf = this._row;
         for (var i = 0; i < llistacols.length; i++) {
             cadena_rtf += "\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs"; //bora
@@ -116,22 +110,22 @@ rtf.prototype = {
         return this;
     },
 
-    tableend: function () {
+    tableend: function() {
         this.add(this._tableend);
         return this;
     },
 
-    rowend: function () {
+    rowend: function() {
         this.add(this._rowend);
         return this;
     },
 
-    cellend: function () {
+    cellend: function() {
         this.add(this._cellend);
         return this;
     },
 
-    nl: function () {
+    nl: function() {
         this.add('\\line ');
         return this;
     },
@@ -143,14 +137,14 @@ rtf.prototype = {
         <sys_created_on>2019-09-23 14:55:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fadf67f91b4c40105fab4002cd4bcb33</sys_id>
-        <sys_mod_count>133</sys_mod_count>
+        <sys_mod_count>134</sys_mod_count>
         <sys_name>rtf</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_fadf67f91b4c40105fab4002cd4bcb33</sys_update_name>
-        <sys_updated_by>Adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-20 09:26:25</sys_updated_on>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-25 16:53:43</sys_updated_on>
     </sys_script_include>
 </record_update>

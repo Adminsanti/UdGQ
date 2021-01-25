@@ -24,6 +24,25 @@
             <hint/>
             <inactive>false</inactive>
             <label>Seguiment</label>
+            <language>ca</language>
+            <name>x_udg_q_docsgenerats</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-01-25 17:34:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>712f6ba71b7d2c105fab4002cd4bcb41</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-01-25 17:34:14</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Seguiment</label>
             <language>en</language>
             <name>x_udg_q_docsgenerats</name>
             <sequence/>
@@ -54,6 +73,25 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2021-01-21 09:35:59</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tipus</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Acreditació</label>
+            <language>ca</language>
+            <name>x_udg_q_docsgenerats</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-01-25 17:34:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd3fafe71b7d2c105fab4002cd4bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-01-25 17:34:29</sys_updated_on>
             <value>2</value>
         </sys_choice>
     </sys_choice>
