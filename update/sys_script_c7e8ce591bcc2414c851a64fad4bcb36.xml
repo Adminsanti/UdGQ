@@ -27,17 +27,24 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[var Sys_id_UdG = '4baaafcddba8eb401f06adc3ca9619d8';
-var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-if (!gs.getUser().hasRole('admin') && SGQpref != Sys_id_UdG) { //permet fer backups i UdG veu tots els subestàndards
-	
-    current.addEncodedQuery("sgqsLIKE"+ SGQpref + 
-							"^NQsgqsISEMPTY^sgqs_negatISEMPTY" +
-							"^NQsgqsISEMPTY^sgqs_negatNOT LIKE"+ SGQpref
-							); 
-	//SGQ està buit i que el tenen a SGQ_negat i els que tenen a SGQ
-}]]></script>
+    var Sys_id_UdG = '4baaafcddba8eb401f06adc3ca9619d8';
+    var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
+
+    if (!gs.getUser().hasRole('admin') && SGQpref != Sys_id_UdG) { //permet fer backups i UdG veu tots els subestàndards
+
+        current.addEncodedQuery("sgqsISEMPTY^ORsgqsLIKE" + SGQpref + "^sgqs_negatISEMPTY^ORsgqs_negatNOT LIKE" + SGQpref);
+        //SGQ està buit i que el tenen a SGQ_negat i els que tenen a SGQ
+        /*
+		current.addEncodedQuery("sgqsLIKE" + SGQpref +
+            "^NQsgqsISEMPTY^sgqs_negatISEMPTY" +
+            "^NQsgqsISEMPTY^sgqs_negatNOT LIKE" + SGQpref
+        );
+		*/
+
+    }
+})(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-10-23 10:31:23</sys_created_on>
@@ -45,7 +52,7 @@ if (!gs.getUser().hasRole('admin') && SGQpref != Sys_id_UdG) { //permet fer back
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c7e8ce591bcc2414c851a64fad4bcb36</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>SGQ query per Subestàndards</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -54,7 +61,7 @@ if (!gs.getUser().hasRole('admin') && SGQpref != Sys_id_UdG) { //permet fer back
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_c7e8ce591bcc2414c851a64fad4bcb36</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-22 08:43:13</sys_updated_on>
+        <sys_updated_on>2021-01-26 19:37:52</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

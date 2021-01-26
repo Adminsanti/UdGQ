@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Docs Generats" max_length="40" name="x_udg_q_docsgenerats" sizeclass="64" type="collection">
+    <element label="Docs Generats" max_length="40" name="x_udg_q_docsgenerats" sizeclass="93" type="collection">
         <element label="Fitxer" max_length="40" name="fitxer" read_only="true" type="file_attachment"/>
         <element attributes="no_truncate=true" display="true" label="Nom" max_length="140" name="nom" read_only="true" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Número" max_length="40" name="number" read_only="true" type="string"/>
