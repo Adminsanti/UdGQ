@@ -3,77 +3,122 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">11ceb91e1b3564105fab4002cd4bcb76</list_id>
+            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f05eb2b71bfd6c105fab4002cd4bcb80</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 12:10:49</sys_created_on>
-            <sys_id>55ceb91e1b3564105fab4002cd4bcb78</sys_id>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
+            <sys_id>f05e7ab71bfd6c105fab4002cd4bcb05</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 12:10:49</sys_updated_on>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">11ceb91e1b3564105fab4002cd4bcb76</list_id>
+            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f05eb2b71bfd6c105fab4002cd4bcb80</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 12:10:49</sys_created_on>
-            <sys_id>d9ceb91e1b3564105fab4002cd4bcb78</sys_id>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
+            <sys_id>785e7ab71bfd6c105fab4002cd4bcb05</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 12:10:49</sys_updated_on>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>compartit</element>
-            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">11ceb91e1b3564105fab4002cd4bcb76</list_id>
+            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f05eb2b71bfd6c105fab4002cd4bcb80</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 12:10:49</sys_created_on>
-            <sys_id>5dceb91e1b3564105fab4002cd4bcb78</sys_id>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
+            <sys_id>f85e7ab71bfd6c105fab4002cd4bcb05</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 12:10:49</sys_updated_on>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>order</element>
-            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">11ceb91e1b3564105fab4002cd4bcb76</list_id>
+            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f05eb2b71bfd6c105fab4002cd4bcb80</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 12:10:49</sys_created_on>
-            <sys_id>ddceb91e1b3564105fab4002cd4bcb78</sys_id>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
+            <sys_id>7c5e7ab71bfd6c105fab4002cd4bcb05</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 12:10:49</sys_updated_on>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sgq</element>
-            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">11ceb91e1b3564105fab4002cd4bcb76</list_id>
+            <element>tipus</element>
+            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f05eb2b71bfd6c105fab4002cd4bcb80</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 12:10:49</sys_created_on>
-            <sys_id>51ceb91e1b3564105fab4002cd4bcb79</sys_id>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
+            <sys_id>fc5e7ab71bfd6c105fab4002cd4bcb05</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 12:10:49</sys_updated_on>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>titulacions</element>
+            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f05eb2b71bfd6c105fab4002cd4bcb80</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
+            <sys_id>705e7ab71bfd6c105fab4002cd4bcb06</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>desde</element>
+            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f05eb2b71bfd6c105fab4002cd4bcb80</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
+            <sys_id>f05e7ab71bfd6c105fab4002cd4bcb06</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sgq</element>
+            <list_id display_value="x_udg_q_plantillavsma" element="NULL" name="x_udg_q_plantillavsma" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f05eb2b71bfd6c105fab4002cd4bcb80</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
+            <sys_id>745e7ab71bfd6c105fab4002cd4bcb06</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -87,11 +132,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-01-21 12:10:49</sys_created_on>
+            <sys_created_on>2021-01-26 08:39:24</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>11ceb91e1b3564105fab4002cd4bcb76</sys_id>
+            <sys_id>f05eb2b71bfd6c105fab4002cd4bcb80</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_udg_q_plantillavsma</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -100,7 +145,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_list_x_udg_q_plantillavsma_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-01-21 12:10:49</sys_updated_on>
+            <sys_updated_on>2021-01-26 08:39:24</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
