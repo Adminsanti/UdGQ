@@ -24,7 +24,7 @@ Funcio.prototype = {
                 gr1.assigned_to == "") {
                 new log("Reassingnant " + gr1.number + " de " + gr1.assigned_to.name + " a " +
                     gr1.responsable.usuari.name + " - Funcio.actualitzar_tots_assignats()");
-                gr1.assigned_to = gr1.getValue('responsable.usuari');
+                gr1.assigned_to = gr1.responsable.usuari;
                 gr1.update();
             }
         }
@@ -37,7 +37,7 @@ Funcio.prototype = {
                 gr2.assigned_to == "") {
                 new log("Reassingnant " + gr2.number + " de " + gr2.assigned_to.name + " a " +
                     gr2.responsable.usuari.name + " - Funcio.actualitzar_tots_assignats()");
-                gr2.assigned_to = gr2.getValue('responsable.usuari');
+                gr2.assigned_to = gr2.responsable.usuari;
                 gr2.update();
             }
         }
@@ -50,7 +50,7 @@ Funcio.prototype = {
         <sys_created_on>2018-11-13 12:28:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fb44e7037b12f004ccbd0d543990e6c</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>Funcio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -58,6 +58,6 @@ Funcio.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6fb44e7037b12f004ccbd0d543990e6c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-28 08:11:48</sys_updated_on>
+        <sys_updated_on>2021-01-28 09:31:18</sys_updated_on>
     </sys_script_include>
 </record_update>
