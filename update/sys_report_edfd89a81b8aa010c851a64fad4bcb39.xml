@@ -46,8 +46,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>number,short_description,state,percentatge,priority,responsable,assigned_to,sgq</field_list>
-        <filter table="x_udg_q_acciomillora">state!=-5^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <filter table="x_udg_q_acciomillora">state!=-5^RLQUERYx_udg_q_m2m_accions_objectius.accio_millora,=00,m2m^objectiu_millora.state!=-5^ENDRLQUERY<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -107,7 +106,7 @@
         <sys_created_on>2021-01-28 08:23:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>edfd89a81b8aa010c851a64fad4bcb39</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>ACC sense OBJ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -115,7 +114,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_edfd89a81b8aa010c851a64fad4bcb39</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-28 08:47:25</sys_updated_on>
+        <sys_updated_on>2021-01-28 09:02:21</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <title>ACC sense OBJ</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
