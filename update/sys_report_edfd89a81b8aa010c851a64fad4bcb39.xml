@@ -46,7 +46,8 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>number,short_description,state,percentatge,priority,responsable,assigned_to,sgq</field_list>
-        <filter table="x_udg_q_acciomillora">state!=-5^RLQUERYx_udg_q_m2m_accions_objectius.accio_millora,=00,m2m^ENDRLQUERY<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
+        <filter table="x_udg_q_acciomillora">state!=-5^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -54,7 +55,7 @@
         <group/>
         <import_table/>
         <interval>year</interval>
-        <is_published>false</is_published>
+        <is_published>true</is_published>
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
         <legend_align_columns>true</legend_align_columns>
@@ -77,7 +78,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles/>
+        <roles>public</roles>
         <row/>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -85,7 +86,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>one_color</set_color>
+        <set_color>null</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -106,17 +107,17 @@
         <sys_created_on>2021-01-28 08:23:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>edfd89a81b8aa010c851a64fad4bcb39</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Accions sense objectiu</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ACC sense OBJ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_edfd89a81b8aa010c851a64fad4bcb39</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-28 08:23:56</sys_updated_on>
+        <sys_updated_on>2021-01-28 08:47:25</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
-        <title>Accions sense objectiu</title>
+        <title>ACC sense OBJ</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>

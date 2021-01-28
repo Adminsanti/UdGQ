@@ -6,7 +6,7 @@
         <color_id display_value="Red">65b30395a9fe3dba003277a7b660b5db</color_id>
         <operator>&gt;</operator>
         <order/>
-        <report_id display_value="Accions obertes d'objectius tancats">bea0156c1b8aa010c851a64fad4bcbff</report_id>
+        <report_id display_value="ACC obertes d'OBJ tancats">bea0156c1b8aa010c851a64fad4bcbff</report_id>
         <sys_class_name>sys_report_mpivot_rule</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-01-28 08:36:06</sys_created_on>

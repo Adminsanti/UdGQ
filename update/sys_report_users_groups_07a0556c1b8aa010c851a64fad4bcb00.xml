@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
     <sys_report_users_groups action="INSERT_OR_UPDATE">
         <group_id/>
-        <report_id display_value="Accions obertes d'objectius tancats">bea0156c1b8aa010c851a64fad4bcbff</report_id>
+        <report_id display_value="ACC obertes d'OBJ tancats">bea0156c1b8aa010c851a64fad4bcbff</report_id>
         <sys_class_name>sys_report_users_groups</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-01-28 08:35:46</sys_created_on>
