@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Plantilla Comú" max_length="40" name="x_udg_q_plantillacomu" sizeclass="9" type="collection">
+    <element label="Plantilla Comú" max_length="40" name="x_udg_q_plantillacomu" sizeclass="10" type="collection">
         <element default="true" label="Activa" max_length="40" name="active" type="boolean"/>
         <element label="Compartida" max_length="4000" name="compartit" reference="x_udg_q_sgq" type="glide_list"/>
         <element label="Fitxer" max_length="40" name="file" type="file_attachment"/>

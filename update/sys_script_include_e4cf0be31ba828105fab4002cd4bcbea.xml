@@ -24,19 +24,15 @@ Acreditacio.prototype = {
             'aprovacio_autoinforme_cq_centre_definitiu',
             'aprovacio_autoinforme_junta_centre',
             'aprovacio_autoinforme_junta_centre_definitiu',
-			'inici_exposicio_publica',
-			'exposicio_publica_definitiu',
-			'final_exposicio_publica',
             'aprovacio_cq_udg',
             'aprovacio_cq_udg_definitiu',
             'visita_cae',
             'visita_cae_definitiu',
-            'visita_cae_max',
-			'enviament_informe_aqu'
+            'visita_cae_max'
         ];
     },
 
-    setFills: function (field, value) { //actualitza el field amb value a totes les acreditacions sincronitzades 
+    setFills: function (field, value) { //actualitza el field amb value a totes les acreditacions sincromnitzades 
         var grA = new GlideRecord('x_udg_q_acreditacio');
         var llista = [];
         grA.addQuery('sincronitzada', this.sys_id);
@@ -56,14 +52,14 @@ Acreditacio.prototype = {
         <sys_created_on>2020-11-24 11:59:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e4cf0be31ba828105fab4002cd4bcbea</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Acreditacio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e4cf0be31ba828105fab4002cd4bcbea</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-27 08:46:41</sys_updated_on>
+        <sys_updated_by>Adminsanti</sys_updated_by>
+        <sys_updated_on>2020-11-26 08:40:29</sys_updated_on>
     </sys_script_include>
 </record_update>
