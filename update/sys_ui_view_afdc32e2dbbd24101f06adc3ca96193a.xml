@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>subscription_overview</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-01-22 11:20:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>afdc32e2dbbd24101f06adc3ca96193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Subscription_overview</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_view_afdc32e2dbbd24101f06adc3ca96193a</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-22 11:20:38</sys_updated_on>
+        <title>Subscription_overview</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
