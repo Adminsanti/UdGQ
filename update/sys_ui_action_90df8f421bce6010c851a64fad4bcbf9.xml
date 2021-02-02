@@ -42,7 +42,7 @@ function fer(current) {
 	/*var Obj = new ObjectiuUtils(current.sys_id);
     Obj.actualitzaPercentatgeAccions();
     Obj.actualitzaExecucio(); */
-	gs.addInfoMessage("<A HREF=" + gs.getProperty('glide.servlet.uri') + "x_udg_q_accioimillora.do?sys_id=" + current.sys_id + ">" + current.number + "</A> Reoberta");
+	gs.addInfoMessage("<A HREF=" + gs.getProperty('glide.servlet.uri') + "x_udg_q_acciomillora.do?sys_id=" + current.sys_id + ">" + current.number + "</A> Reoberta");
 	new log().preU(current.number+ ' reoberta manualment');
 }]]></script>
         <show_insert>false</show_insert>
@@ -56,7 +56,7 @@ function fer(current) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>90df8f421bce6010c851a64fad4bcbf9</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Reobre accio (excepcional)</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -65,7 +65,7 @@ function fer(current) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_90df8f421bce6010c851a64fad4bcbf9</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-02 09:45:12</sys_updated_on>
+        <sys_updated_on>2021-02-02 10:02:48</sys_updated_on>
         <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
