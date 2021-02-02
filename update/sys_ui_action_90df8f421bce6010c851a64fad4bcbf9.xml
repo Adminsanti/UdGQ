@@ -8,12 +8,12 @@
 }]]></client_script_v2>
         <comments>Permet reobrir una recomanació tancada per permetre vincular-la a un nou objectiu. Hi ha un proces periodic per tornar-le a tancar&#13;
 </comments>
-        <condition>current.estat==5 </condition>
-        <form_action>false</form_action>
+        <condition>current.state==3</condition>
+        <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>false</form_link>
+        <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <hint/>
@@ -21,21 +21,28 @@
         <list_action>true</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
-        <list_choice>false</list_choice>
+        <list_choice>true</list_choice>
         <list_context_menu>true</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Reobre Observació</name>
+        <name>Reobre accio (excepcional)</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[fer(current);
 
 function fer(current) {
-    current.estat = 2;
+    current.state = 2;
+	current.active=true;
 	current.tancament = "";
+	current.closed_at="";
+	current.closed_by="";
 	current.update();
+	/*var Obj = new ObjectiuUtils(current.sys_id);
+    Obj.actualitzaPercentatgeAccions();
+    Obj.actualitzaExecucio(); */
+	gs.addInfoMessage("<A HREF=" + gs.getProperty('glide.servlet.uri') + "x_udg_q_accioimillora.do?sys_id=" + current.sys_id + ">" + current.number + "</A> Reoberta");
 	new log().preU(current.number+ ' reoberta manualment');
 }]]></script>
         <show_insert>false</show_insert>
@@ -44,22 +51,22 @@ function fer(current) {
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-07-02 07:09:52</sys_created_on>
+        <sys_created_on>2021-02-02 09:42:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>329d17b01bb15814c851a64fad4bcb57</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Reobre Observació</sys_name>
+        <sys_id>90df8f421bce6010c851a64fad4bcbf9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Reobre accio (excepcional)</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ui_action_329d17b01bb15814c851a64fad4bcb57</sys_update_name>
+        <sys_update_name>sys_ui_action_90df8f421bce6010c851a64fad4bcbf9</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-02 09:41:38</sys_updated_on>
-        <table>x_udg_q_recomanacions</table>
+        <sys_updated_on>2021-02-02 09:45:12</sys_updated_on>
+        <table>x_udg_q_acciomillora</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>
