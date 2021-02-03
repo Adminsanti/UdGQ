@@ -9,10 +9,10 @@
         <comments>Permet reobrir una recomanació tancada per permetre vincular-la a un nou objectiu. Hi ha un proces periodic per tornar-le a tancar&#13;
 </comments>
         <condition>current.estat==5 </condition>
-        <form_action>false</form_action>
+        <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
-        <form_context_menu>false</form_context_menu>
+        <form_context_menu>true</form_context_menu>
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
@@ -36,6 +36,7 @@ function fer(current) {
     current.estat = 2;
 	current.tancament = "";
 	current.update();
+	gs.addInfoMessage("<A HREF=" + gs.getProperty('glide.servlet.uri') + "x_udg_q_recomanacio.do?sys_id=" + current.sys_id + ">" + current.number + "</A> Reoberta manualment. L'efecte és temporal ja que cada nit s'actualitza l'estat i si cal es tornarà a tancar");
 	new log().preU(current.number+ ' reoberta manualment');
 }]]></script>
         <show_insert>false</show_insert>
@@ -49,7 +50,7 @@ function fer(current) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>329d17b01bb15814c851a64fad4bcb57</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Reobre Observació</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -58,7 +59,7 @@ function fer(current) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_329d17b01bb15814c851a64fad4bcb57</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-02 09:41:38</sys_updated_on>
+        <sys_updated_on>2021-02-03 09:39:40</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
