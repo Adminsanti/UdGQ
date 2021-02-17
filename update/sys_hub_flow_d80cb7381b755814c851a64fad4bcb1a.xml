@@ -6,13 +6,13 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-paris-06-24-2020__patch5-hotfix2-01-20-2021</compiler_build>
+        <compiler_build>glide-paris-06-24-2020__patch6-01-19-2021</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>revisar_recomanacions</internal_name>
         <label_cache>[]</label_cache>
-        <latest_snapshot>29afea561b866010c851a64fad4bcb07</latest_snapshot>
+        <latest_snapshot>0cd272601bde20105fab4002cd4bcb9d</latest_snapshot>
         <master_snapshot>312cf3781b755814c851a64fad4bcb8f</master_snapshot>
         <name>Revisar Observacions</name>
         <natlang/>
@@ -121,7 +121,7 @@
         <sys_created_on>2020-09-09 07:02:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2332c31b479c10c851a64fad4bcb8e</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -129,7 +129,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-02-03 02:00:06</sys_updated_on>
+        <sys_updated_on>2021-02-10 02:00:16</sys_updated_on>
         <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cd2332c31b479c10c851a64fad4bcb8e"/>
@@ -209,7 +209,7 @@
         <sys_created_on>2020-09-09 07:02:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2332c31b479c10c851a64fad4bcb8e</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -217,7 +217,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-02-03 02:00:06</sys_updated_on>
+        <sys_updated_on>2021-02-10 02:00:16</sys_updated_on>
         <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cd2332c31b479c10c851a64fad4bcb8e"/>
@@ -226,7 +226,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"462cf3781b755814c851a64fad4bcb9c","name":"plan"}}</plan>
         <plan_id>d80cb7381b755814c851a64fad4bcb1a</plan_id>
-        <snapshot>29afea561b866010c851a64fad4bcb07</snapshot>
+        <snapshot>0cd272601bde20105fab4002cd4bcb9d</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2020-07-02 09:16:37</sys_created_on>
