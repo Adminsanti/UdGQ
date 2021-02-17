@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Esborra</action_name>
+        <action_name>Esborra Plantilla</action_name>
         <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
@@ -14,7 +14,7 @@
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
-        <form_style/>
+        <form_style>destructive</form_style>
         <hint/>
         <isolate_script>false</isolate_script>
         <list_action>true</list_action>
@@ -26,7 +26,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Esborra</name>
+        <name>Esborra Plantilla</name>
         <onclick>Segur()</onclick>
         <order>30</order>
         <script><![CDATA[function Segur() {
@@ -64,8 +64,8 @@ current.deleteRecord();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0e1c71bb1b7a6700c851a64fad4bcb5e</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>Esborra</sys_name>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Esborra Plantilla</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -73,7 +73,7 @@ current.deleteRecord();]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_0e1c71bb1b7a6700c851a64fad4bcb5e</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-02 10:21:24</sys_updated_on>
+        <sys_updated_on>2021-02-17 12:04:56</sys_updated_on>
         <table>x_udg_q_canvimemoria</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
