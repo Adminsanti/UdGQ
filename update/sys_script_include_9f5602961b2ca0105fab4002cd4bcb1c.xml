@@ -39,8 +39,9 @@ GeneraDocs.prototype = {
 
         var condicions = grPlantilla.getValue('condicions');
         gs.addInfoMessage("Condicions 1: " + condicions);
+		if (condicions=='') condicions += 'stateISNOTEMPTY'; //Axií evitem que condicions estigui buit
         if (!grPlantilla.incloure_esborranys) condicions += "^state!=-5";
-        if (!grPlantilla.incloure_esborrats) condicions += "^state!=-5^ORstateISEMPTY";
+        if (!grPlantilla.incloure_esborrats) condicions += "^tancament=^ORtancament!=0";
         if (grPlantilla.titulacions) {
             for (i = 0; i < grPlantilla.titulacions; ++i) {
                 if (i == 0) condicions += '^';
@@ -49,10 +50,10 @@ GeneraDocs.prototype = {
             }
             condicions += "^ORimplica_titulacionsISEMPTY";
         }
-
-        /*  DATA DESDE
-         */
-
+        if (grPlantilla.desde) condicions += '^closed_at>='+ grPlantilla.desde+ '^ORclosed_atISEMPTY';
+        
+		gs.addInfoMessage("Condicions 2: " + condicions);
+		
         rtf1.replace('##ResumMillora##', "Objectius en Curs - Pla de Millora Actiu\\par\\par" +
             ObjUtils.getRtfResumMillora(current.condicions + "^state=2", SGQpref) +
             "\\par\\par Objectius Tancats en el període\\par\\par" +
@@ -100,7 +101,7 @@ GeneraDocs.prototype = {
         <sys_created_on>2020-11-20 09:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9f5602961b2ca0105fab4002cd4bcb1c</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>GeneraDocs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -108,6 +109,6 @@ GeneraDocs.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_9f5602961b2ca0105fab4002cd4bcb1c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-17 12:00:16</sys_updated_on>
+        <sys_updated_on>2021-02-17 13:44:36</sys_updated_on>
     </sys_script_include>
 </record_update>
