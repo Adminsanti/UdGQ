@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>ForcaSinc</action_name>
+        <action_name>ForcaSync</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.sincronitzada !=""</condition>
+        <condition>current.sincronitzada !=''</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -43,7 +43,7 @@ for (var i = 0; i < camps.length; i++) {
 if (canvis) {
     current.update();
     gs.addInfoMessage(current.number + " s'ha actualitzat per sincronització amb " + grA.getValue('number'));
-} else gs.addInfoMessage(current.number + " no s'ha actualitzat perquè ja estava sincronitzat");
+} else gs.addInfoMessage(current.number + " no s'ha actualitzat perquè ja estava sincronitzada");
 
 action.setRedirectURL(current);
 
@@ -66,7 +66,7 @@ if (typeof rowSysId == 'undefined') {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3dfa181a1b8ac010c851a64fad4bcbd7</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Força sincronització</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -74,8 +74,8 @@ if (typeof rowSysId == 'undefined') {
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_3dfa181a1b8ac010c851a64fad4bcbd7</sys_update_name>
-        <sys_updated_by>Adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-26 11:19:44</sys_updated_on>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-18 10:53:43</sys_updated_on>
         <table>x_udg_q_acreditacio</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
