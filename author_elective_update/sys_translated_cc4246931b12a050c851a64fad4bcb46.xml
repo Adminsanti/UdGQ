@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="DELETE">
+        <element>title</element>
+        <id/>
+        <label>Resum</label>
+        <language>ca</language>
+        <name>sys_app_module</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-18 11:31:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cc4246931b12a050c851a64fad4bcb46</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Resum</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_translated_cc4246931b12a050c851a64fad4bcb46</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-18 11:39:36</sys_updated_on>
+        <value>Resum</value>
+    </sys_translated>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_translated_cc4246931b12a050c851a64fad4bcb46</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated"><sys_translated action="INSERT_OR_UPDATE"><element>title</element><id/><label>Resum</label><language>ca</language><name>sys_app_module</name><sys_class_name>sys_translated</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2021-02-18 11:31:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>cc4246931b12a050c851a64fad4bcb46</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Resum</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_translated_cc4246931b12a050c851a64fad4bcb46</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2021-02-18 11:39:36</sys_updated_on><value>Resum</value></sys_translated></record_update>]]></payload>
+        <payload_hash>748682542</payload_hash>
+        <record_name>Resum</record_name>
+        <reverted_from/>
+        <source>37c272601bde20105fab4002cd4bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-18 11:39:36</sys_created_on>
+        <sys_id>f824ce571b12a050c851a64fad4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177b4f0348e0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-18 11:39:36</sys_updated_on>
+        <type>Translated Name / Field</type>
+        <update_guid>fc24ce576712a050f63e5ecab2c1191c</update_guid>
+        <update_guid_history>fc24ce576712a050f63e5ecab2c1191c:748682542,c84246935812a05097a0a5498f763048:-1504244304</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-18 11:41:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_translated">sys_translated</sys_db_object>
+        <sys_id>0ad2747c3d2b4c008108d1b34e905390</sys_id>
+        <sys_metadata>cc4246931b12a050c851a64fad4bcb46</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resum</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_translated_cc4246931b12a050c851a64fad4bcb46</sys_update_name>
+        <sys_update_version display_value="sys_translated_cc4246931b12a050c851a64fad4bcb46">f824ce571b12a050c851a64fad4bcb1d</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-18 11:41:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
