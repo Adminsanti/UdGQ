@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="no_attachment" extends="x_udg_q_docsgenerats" label="Doc Generat VSMA" max_length="40" name="x_udg_q_docgeneratvsma" sizeclass="93" type="collection">
+    <element attributes="no_attachment" extends="x_udg_q_docsgenerats" label="Doc Generat VSMA" max_length="40" name="x_udg_q_docgeneratvsma" sizeclass="115" type="collection">
         <element label="Filtre" max_length="1000" name="filtre" read_only="true" type="string"/>
     </element>
 </database>
