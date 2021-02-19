@@ -11,7 +11,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_ui_action display_value="Genera Doc">c855029c1b0448105fab4002cd4bcb83</sys_ui_action>
+        <sys_ui_action display_value="Genera Doc Vell">c855029c1b0448105fab4002cd4bcb83</sys_ui_action>
         <sys_update_name>sys_ui_action_role_64fe8f931ba524105fab4002cd4bcb06</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2021-01-12 10:19:44</sys_updated_on>

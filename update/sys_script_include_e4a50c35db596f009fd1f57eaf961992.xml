@@ -48,6 +48,7 @@ Sgq.prototype = {
         return text.split(',');
     },
 
+
     getLlistaTitulacionsSgqActual: function() {
         var grTit = new GlideRecord('x_udg_q_titulacio');
         grTit.addQuery('sgq', gs.getUser().getPreference('qualitat.sgqActual'));
@@ -71,11 +72,16 @@ Sgq.prototype = {
         return llista;
     },
 
-    filtraTitulacionsNomesSgqActual: function(llista_sys_ids) {
+    //Es pot esborrar
+    filtraTitulacionsNomesActual: function(llista_sys_ids) {
+        return filtraTitulacionsNomesSgq(llista_sys_ids, gs.getUser().getPreference('qualitat.sgqActual'));
+    },
+
+    filtraTitulacionsNomesSgq: function(llista_sys_ids, sgq) {
         var grTit = new GlideRecord('x_udg_q_titulacio');
         grTit.addQuery('sys_id', 'IN', llista_sys_ids);
-        grTit.addQuery('activa', true);
-        grTit.addQuery('sgq', gs.getUser().getPreference('qualitat.sgqActual'));
+        grTit.addQuery('sgq', sgq);
+        grTit.query();
         var llista = [];
         while (grTit.next()) {
             llista.push(grTit.getValue('sys_id'));
@@ -96,7 +102,7 @@ Sgq.prototype = {
         <sys_created_on>2018-10-22 08:56:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e4a50c35db596f009fd1f57eaf961992</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>Sgq</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -104,6 +110,6 @@ Sgq.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e4a50c35db596f009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-25 17:19:34</sys_updated_on>
+        <sys_updated_on>2021-02-19 09:16:14</sys_updated_on>
     </sys_script_include>
 </record_update>

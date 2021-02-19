@@ -237,9 +237,6 @@ ObjectiuUtils.prototype = {
     },
 
     getRtfMilloraComprimit: function(filtre, sgq) {
-        /* The medical school must present an improvement plan based on the findings of the self-assessment report to address weaknesses. 
-        The improvement plan must identify the problem, the action or actions to solve it, the person or unit responsible, the priority, 
-        the deadline, the expected result and establish objective indicators to assess the degree of correction of the problem.  */
 
         var grObj = new GlideRecord('x_udg_q_objectiumillora');
         grObj.addEncodedQuery(filtre);
@@ -293,7 +290,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>480</sys_mod_count>
+        <sys_mod_count>481</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -301,6 +298,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-01-26 19:57:52</sys_updated_on>
+        <sys_updated_on>2021-02-19 09:19:01</sys_updated_on>
     </sys_script_include>
 </record_update>
