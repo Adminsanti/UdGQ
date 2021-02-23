@@ -5,8 +5,8 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Pla de Millora" name="Pla de Millora">8b8c776d1b170050c851a64fad4bcb56</category>
-        <collection>x_udg_q_objectiumillora</collection>
+        <category display_value="General" name="General">9d2eccf81b62e010c851a64fad4bcb54</category>
+        <collection>sys_user</collection>
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
@@ -22,8 +22,8 @@
         <digest_template/>
         <digest_text/>
         <digestable>false</digestable>
-        <event_name>x_udg_q.send.notification.incorporaOBJ</event_name>
-        <event_parm_1>true</event_parm_1>
+        <event_name>x_udg_q.send.notification.recuperaRolUsu</event_name>
+        <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
@@ -35,44 +35,41 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>L'usuari ${event.parm2} proposa incorporar al pla de millora el seg&uuml;ent esborrany:</p>
-<p><strong>${URI_REF}</strong>&nbsp;(${sgq}) - ${short_description}</p>
-<p>Si voleu veure els detalls i, si escau, incorporar-ho al pla de millora utilitzant el bot&oacute; corresponent, podeu fer-ho seguint l'enlla&ccedil; al n&uacute;mero d'objectiu.</p>
-<p>${mail_script:disclaimer udg}</p>]]></message_html>
+        <message_html/>
         <message_list/>
         <message_text/>
-        <name>Objectiu es demana incorporar al PM</name>
+        <name>Usuari recupera rol</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>sgq.propietari.usuari,sgq.responsable.usuari</recipient_fields>
+        <recipient_fields/>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Proposta per afegir al PM: ${number} (${sgq}) - ${short_description}</subject>
+        <subject/>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-10-08 09:52:01</sys_created_on>
+        <sys_created_on>2021-02-22 18:56:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>726ba0241bf71c90c851a64fad4bcb22</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Objectiu es demana incorporar al PM</sys_name>
+        <sys_id>059d0cb81b62e010c851a64fad4bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Usuari recupera rol</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sysevent_email_action_726ba0241bf71c90c851a64fad4bcb22</sys_update_name>
+        <sys_update_name>sysevent_email_action_059d0cb81b62e010c851a64fad4bcb7d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-22 19:18:24</sys_updated_on>
+        <sys_updated_on>2021-02-22 18:56:38</sys_updated_on>
         <sys_version>2</sys_version>
-        <template/>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>

@@ -11,11 +11,14 @@ var currentUser = gs.getUser();
 var gr = new GlideRecord('sys_user');
 if (gr.get('user_name', username)) {
     var u = new x_udg_q.Usuari(gr.sys_id);
+	//comprovar rols
     u.actualitzaGR(gr);
     u.actualitzaPreferenciesSGQ(gr);
     if (gr.x_udg_q_sgq_actual.codi.toString() != '') new log("Login: " + username +
         " (" + gr.name + ") inicia sessió a l'sgq " +
         gr.x_udg_q_sgq_actual.codi.toString());
+	
+	//comprovar si ha recuperar rol usuari i enviar mail.
 }]]></script>
         <synchronous>false</synchronous>
         <sys_class_name>sysevent_script_action</sys_class_name>
@@ -25,7 +28,7 @@ if (gr.get('user_name', username)) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9d20d1b37142f401acdf01643990ec2</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>UdGQualitat Login</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -34,6 +37,6 @@ if (gr.get('user_name', username)) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_script_action_b9d20d1b37142f401acdf01643990ec2</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-04-23 15:57:02</sys_updated_on>
+        <sys_updated_on>2021-02-22 18:46:33</sys_updated_on>
     </sysevent_script_action>
 </record_update>

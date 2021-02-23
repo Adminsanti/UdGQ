@@ -5,7 +5,7 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Pla de Millora" name="Pla de Millora">8b8c776d1b170050c851a64fad4bcb56</category>
+        <category display_value="General" name="General">9d2eccf81b62e010c851a64fad4bcb54</category>
         <collection>x_udg_q_novetat</collection>
         <condition/>
         <content_type>text/html</content_type>
@@ -14,9 +14,9 @@
         <digest_from/>
         <digest_html/>
         <digest_reply_to/>
-        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+        <digest_separator_html><![CDATA[<p><br /></p>
 <hr />
-<p>&nbsp;</p>]]></digest_separator_html>
+<p><br /></p>]]></digest_separator_html>
         <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
         <digest_subject/>
         <digest_template/>
@@ -61,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d48df0a01b6d54105fab4002cd4bcbed</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Novetat nova</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -70,7 +70,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_d48df0a01b6d54105fab4002cd4bcbed</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-01 13:55:44</sys_updated_on>
+        <sys_updated_on>2021-02-22 19:15:20</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
