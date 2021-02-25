@@ -14,6 +14,34 @@
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2021-02-24 12:27:46</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-02-25 12:26:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2af1de651baaa410c851a64fad4bcbdd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_cai" name="x_udg_q_cai" sys_domain="global" view="Default view">85b80d191b666410c851a64fad4bcb80</sys_ui_form>
+            <sys_ui_section caption="Fites" display_value="Fites" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-02-25 12:26:24</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-02-25 12:26:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>66f1de651baaa410c851a64fad4bcbe1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_cai" name="x_udg_q_cai" sys_domain="global" view="Default view">85b80d191b666410c851a64fad4bcb80</sys_ui_form>
+            <sys_ui_section caption="Historial" display_value="Historial" name="x_udg_q_cai" sys_domain="global" view="Default view">6ef1de651baaa410c851a64fad4bcbdb</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-02-25 12:26:24</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_udg_q_cai</name>
             <roles/>

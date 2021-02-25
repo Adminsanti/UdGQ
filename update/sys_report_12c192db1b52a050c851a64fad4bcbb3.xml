@@ -2,9 +2,9 @@
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
-        <aggregation_source/>
+        <aggregation_source>no_override</aggregation_source>
         <allow_data_label_overlap>false</allow_data_label_overlap>
-        <apply_alias>true</apply_alias>
+        <apply_alias>false</apply_alias>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
@@ -12,7 +12,7 @@
         <chart_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</chart_border_color>
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
-        <chart_height/>
+        <chart_height>450</chart_height>
         <chart_size>large</chart_size>
         <chart_subtitle/>
         <chart_subtitle_color/>
@@ -24,7 +24,7 @@
         <chart_title_style>normal</chart_title_style>
         <chart_title_x_position>0</chart_title_x_position>
         <chart_title_y_position>0</chart_title_y_position>
-        <chart_width/>
+        <chart_width>600</chart_width>
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
@@ -45,7 +45,7 @@
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
-        <field_list>number,sgq,titulacio,dma,inici_proces</field_list>
+        <field_list>number,titulacio,dma,inici_proces,sgq</field_list>
         <filter table="x_udg_q_acreditacio">inici_proces&gt;javascript:gs.endOfToday()^inici_proces&lt;javascript:gs.beginningOfNextYear()<item endquery="false" field="inici_proces" goto="false" newquery="false" operator="&gt;" or="false" value="javascript:gs.endOfToday()"/>
             <item endquery="false" field="inici_proces" goto="false" newquery="false" operator="&lt;" or="false" value="javascript:gs.beginningOfNextYear()"/>
         </filter>
@@ -78,7 +78,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles>x_udg_q.User,x_udg_q.Observador</roles>
+        <roles>x_udg_q.Observador,x_udg_q.User</roles>
         <row>active</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -86,7 +86,7 @@
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color/>
+        <set_color>one_color</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -107,7 +107,7 @@
         <sys_created_on>2021-02-18 12:39:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>12c192db1b52a050c851a64fad4bcbb3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Acreditacions a un any vista</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -115,7 +115,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_12c192db1b52a050c851a64fad4bcbb3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-18 12:42:33</sys_updated_on>
+        <sys_updated_on>2021-02-25 12:30:56</sys_updated_on>
         <table>x_udg_q_acreditacio</table>
         <title>Acreditacions a un any vista</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
@@ -134,7 +134,7 @@
         <x_axis_grid_dotted>false</x_axis_grid_dotted>
         <x_axis_grid_width>1</x_axis_grid_width>
         <x_axis_label_bold>false</x_axis_label_bold>
-        <x_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_label_color>
+        <x_axis_label_color/>
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_label_tilt>0</x_axis_label_tilt>
         <x_axis_opposite>false</x_axis_opposite>
@@ -149,7 +149,7 @@
         <y_axis_grid_dotted>false</y_axis_grid_dotted>
         <y_axis_grid_width>1</y_axis_grid_width>
         <y_axis_label_bold>false</y_axis_label_bold>
-        <y_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_label_color>
+        <y_axis_label_color/>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_label_tilt>0</y_axis_label_tilt>
         <y_axis_opposite>false</y_axis_opposite>
