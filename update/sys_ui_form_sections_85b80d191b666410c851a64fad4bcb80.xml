@@ -42,6 +42,20 @@
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2021-02-25 12:26:24</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-02-25 12:48:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a17da6d1baaa410c851a64fad4bcb48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_cai" name="x_udg_q_cai" sys_domain="global" view="Default view">85b80d191b666410c851a64fad4bcb80</sys_ui_form>
+            <sys_ui_section caption="Acreditacions" display_value="Acreditacions" name="x_udg_q_cai" sys_domain="global" view="Default view">2617da6d1baaa410c851a64fad4bcb44</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-02-25 12:48:48</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_udg_q_cai</name>
             <roles/>
