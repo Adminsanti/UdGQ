@@ -3,22 +3,24 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
-        <action_query>true</action_query>
-        <action_update>false</action_update>
-        <active>false</active>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_recomanacions</collection>
+        <collection>x_udg_q_cai</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_udg_q_cai">acreditacionsVALCHANGES^EQ<item endquery="false" field="acreditacions" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>RECYCLE SGQ query per Recomanació</name>
+        <name>CAI canvi acreditacions</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,12 +29,21 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[//if (SGQpref != gs.gerUser().getProperty('x_udg_q.uidSGQvisivilitatTotal') && !gs.getUser().hasRole('admin')) {
-if (!gs.getUser().hasRole('admin') && !gs.getUser().hasRole('x_udg_q.ManagerUniversitat') &&!gs.getUser().hasRole('x_udg_q.Admin')) { //permet al'admin fer backups i als manager veure-les totes de cop
-	var SGQpref=gs.getUser().getPreference('qualitat.sgqActual');
-	current.addQuery("sgq="+SGQpref+"^ORcompartidaLIKE"+SGQpref);
-}
-]]></script>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var cai = new CAI();
+    current.titulacions = cai.llistaSysidsTitulacionsAcreditacions("" + current.acreditacions);
+
+    var grAcreditacio = new GlideRecord('x_udg_q_acreditacio');
+    grAcreditacio.addQuery('sys_id', 'IN', current.acreditacions);
+    grAcreditacio.query();
+    while (grAcreditacio.next()) {
+        grAcreditacio.cai = current.sys_id;
+        grAcreditacio.update();
+    }
+    // els eliminats es fan en una regla after
+
+})(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2019-03-06 09:27:48</sys_created_on>
@@ -40,8 +51,8 @@ if (!gs.getUser().hasRole('admin') && !gs.getUser().hasRole('x_udg_q.ManagerUniv
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>363d9f451b403bc05fab4002cd4bcb40</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>RECYCLE SGQ query per Recomanació</sys_name>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>CAI canvi acreditacions</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -49,7 +60,7 @@ if (!gs.getUser().hasRole('admin') && !gs.getUser().hasRole('x_udg_q.ManagerUniv
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_363d9f451b403bc05fab4002cd4bcb40</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-04 08:23:41</sys_updated_on>
+        <sys_updated_on>2021-02-25 11:15:31</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

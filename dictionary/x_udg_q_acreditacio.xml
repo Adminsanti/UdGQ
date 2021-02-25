@@ -9,6 +9,7 @@
         <element label="Aprovació CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
         <element label="Aprovació CQ UdG definitiu" max_length="40" name="aprovacio_cq_udg_definitiu" type="boolean"/>
         <element label="Aprovació informe CAI definitiu" max_length="40" name="aprovacio_informe_cai_definitiu" type="boolean"/>
+        <element label="CAI" max_length="32" name="cai" reference="x_udg_q_cai" type="reference"/>
         <element label="DMA" max_length="40" name="dma" type="glide_date"/>
         <element label="Enviament informe AQU" max_length="40" name="enviament_informe_aqu" type="glide_date"/>
         <element label="Enviament informe AQU definitiu" max_length="40" name="enviament_informe_aqu_definitiu" type="boolean"/>

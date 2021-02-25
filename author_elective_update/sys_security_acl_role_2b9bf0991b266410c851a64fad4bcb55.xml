@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-24 11:30:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2b9bf0991b266410c851a64fad4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>null.sincronitzada.snc_internal</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_security_acl display_value="null.sincronitzada">639bf0991b266410c851a64fad4bcb53</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2b9bf0991b266410c851a64fad4bcb55</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-24 11:30:36</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">fa4a0127db442200a55072e9bf961930</sys_user_role>
+        <transaction_id>eb9b741d1ba26410c851a64fad4bcb4e</transaction_id>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_security_acl_role_2b9bf0991b266410c851a64fad4bcb55</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2021-02-24 11:30:36</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>2b9bf0991b266410c851a64fad4bcb55</sys_id><sys_mod_count>0</sys_mod_count><sys_name>null.sincronitzada.snc_internal</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_security_acl display_value="null.sincronitzada">639bf0991b266410c851a64fad4bcb53</sys_security_acl><sys_update_name>sys_security_acl_role_2b9bf0991b266410c851a64fad4bcb55</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2021-02-24 11:30:36</sys_updated_on><sys_user_role display_value="snc_internal" name="snc_internal">fa4a0127db442200a55072e9bf961930</sys_user_role><transaction_id>eb9b741d1ba26410c851a64fad4bcb4e</transaction_id></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-31260644</payload_hash>
+        <record_name>null.sincronitzada.snc_internal</record_name>
+        <reverted_from/>
+        <source>3520d120db122010ccd95bd05b9619e0</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2021-02-09 18:49:12</sys_created_on>
+        <sys_id>e79b30d91b266410c851a64fad4bcb9f</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>177882044400000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Access Roles</type>
+        <update_guid>a79b30d94426641054233c566407c09f</update_guid>
+        <update_guid_history>a79b30d94426641054233c566407c09f:-31260644</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 24/02/2021 12:30:36">279b30d91b266410c851a64fad4bcba3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-24 11:30:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>16055b13ffea4936b4bb1e29dafd1b29</sys_id>
+        <sys_metadata>2b9bf0991b266410c851a64fad4bcb55</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>null.sincronitzada.snc_internal</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="x_udg_q_acreditacio.sincronitzada">639bf0991b266410c851a64fad4bcb53</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_2b9bf0991b266410c851a64fad4bcb55</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_2b9bf0991b266410c851a64fad4bcb55">e79b30d91b266410c851a64fad4bcb9f</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-24 11:30:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
