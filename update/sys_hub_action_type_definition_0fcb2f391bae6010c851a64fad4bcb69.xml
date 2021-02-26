@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>actualitzar_estat_acreditacions</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot>d41e23fd1bae6010c851a64fad4bcbfe</latest_snapshot>
+        <master_snapshot>5c1e63fd1bae6010c851a64fad4bcb09</master_snapshot>
+        <name>Actualitzar estat acreditacions</name>
+        <natlang/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:37:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>0fcb2f391bae6010c851a64fad4bcb69</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Actualitzar estat acreditacions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_0fcb2f391bae6010c851a64fad4bcb69</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=0fcb2f391bae6010c851a64fad4bcb69"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=0fcb2f391bae6010c851a64fad4bcb69^sys_idNOT IN6eacab3d1bae6010c851a64fad4bcb82"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Actualitzar estat acreditacions">0fcb2f391bae6010c851a64fad4bcb69</action>
+        <cid>ce14efb3-54a5-4bd2-a5d3-5513cc2e62a2</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:41:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6eacab3d1bae6010c851a64fad4bcb82</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:11</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6eacab3d1bae6010c851a64fad4bcb82"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6eacab3d1bae6010c851a64fad4bcb82</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:43:05</sys_created_on>
+        <sys_id>271de77d1bae6010c851a64fad4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:43:05</sys_updated_on>
+        <value/>
+        <variable display_value="">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6eacab3d1bae6010c851a64fad4bcb82</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:43:05</sys_created_on>
+        <sys_id>631de77d1bae6010c851a64fad4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:43:05</sys_updated_on>
+        <value/>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6eacab3d1bae6010c851a64fad4bcb82</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:41:06</sys_created_on>
+        <sys_id>66acab3d1bae6010c851a64fad4bcb8c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:11</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	new log('Inici del procés automàtic d\'actualització de l\'estat de acreditacions (flow)');  
+	var grCAI = new GlideRecord('x_udg_q_cai');
+	grCAI.query();
+	while (grCAI.next()) {
+  		var nouestat= new CAI().getEstat(grCAI);
+  		if (grCAI.state!= nouestat) {
+   			grCAI.state= nouestat;
+    		grCAI.update();
+    		new log(grCAI.number+" actualitzat estat a "+grCAI.getDisplayValue('state'));
+  		}
+	}
+	new log('Fi del procés automàtic d\'actualització de l\'estat de acreditacions (flow)'); 
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6eacab3d1bae6010c851a64fad4bcb82</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:43:05</sys_created_on>
+        <sys_id>e71de77d1bae6010c851a64fad4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:43:05</sys_updated_on>
+        <value/>
+        <variable display_value="">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_hub_step_instance action="delete_multiple" query="action=0fcb2f391bae6010c851a64fad4bcb69^sys_idNOT IN6eacab3d1bae6010c851a64fad4bcb82"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Actualitzar estat acreditacions">0fcb2f391bae6010c851a64fad4bcb69</action>
+        <cid>ce14efb3-54a5-4bd2-a5d3-5513cc2e62a2</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:41:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6eacab3d1bae6010c851a64fad4bcb82</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:11</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6eacab3d1bae6010c851a64fad4bcb82"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6eacab3d1bae6010c851a64fad4bcb82</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:43:05</sys_created_on>
+        <sys_id>271de77d1bae6010c851a64fad4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:43:05</sys_updated_on>
+        <value/>
+        <variable display_value="">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6eacab3d1bae6010c851a64fad4bcb82</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:43:05</sys_created_on>
+        <sys_id>631de77d1bae6010c851a64fad4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:43:05</sys_updated_on>
+        <value/>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6eacab3d1bae6010c851a64fad4bcb82</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:41:06</sys_created_on>
+        <sys_id>66acab3d1bae6010c851a64fad4bcb8c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:11</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	new log('Inici del procés automàtic d\'actualització de l\'estat de acreditacions (flow)');  
+	var grCAI = new GlideRecord('x_udg_q_cai');
+	grCAI.query();
+	while (grCAI.next()) {
+  		var nouestat= new CAI().getEstat(grCAI);
+  		if (grCAI.state!= nouestat) {
+   			grCAI.state= nouestat;
+    		grCAI.update();
+    		new log(grCAI.number+" actualitzat estat a "+grCAI.getDisplayValue('state'));
+  		}
+	}
+	new log('Fi del procés automàtic d\'actualització de l\'estat de acreditacions (flow)'); 
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6eacab3d1bae6010c851a64fad4bcb82</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:43:05</sys_created_on>
+        <sys_id>e71de77d1bae6010c851a64fad4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:43:05</sys_updated_on>
+        <value/>
+        <variable display_value="">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=0fcb2f391bae6010c851a64fad4bcb69^sys_idNOT INdc1e63fd1bae6010c851a64fad4bcb78"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Actualitzar estat acreditacions">0fcb2f391bae6010c851a64fad4bcb69</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"dc1e63fd1bae6010c851a64fad4bcb78","name":"plan"}}</plan>
+        <snapshot>d41e23fd1bae6010c851a64fad4bcbfe</snapshot>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>dc1e63fd1bae6010c851a64fad4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:14</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>actualitzar_estat_acreditacions</internal_name>
+        <label_cache>[]</label_cache>
+        <master>true</master>
+        <name>Actualitzar estat acreditacions</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Actualitzar estat acreditacions">0fcb2f391bae6010c851a64fad4bcb69</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>5c1e63fd1bae6010c851a64fad4bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=5c1e63fd1bae6010c851a64fad4bcb09"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=5c1e63fd1bae6010c851a64fad4bcb09^sys_idNOT INd41e63fd1bae6010c851a64fad4bcb0b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Actualitzar estat acreditacions">5c1e63fd1bae6010c851a64fad4bcb09</action>
+        <cid>ce14efb3-54a5-4bd2-a5d3-5513cc2e62a2</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d41e63fd1bae6010c851a64fad4bcb0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d41e63fd1bae6010c851a64fad4bcb0b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d41e63fd1bae6010c851a64fad4bcb0b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_id>101e63fd1bae6010c851a64fad4bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <value/>
+        <variable display_value="">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d41e63fd1bae6010c851a64fad4bcb0b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_id>5c1e63fd1bae6010c851a64fad4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <value/>
+        <variable display_value="">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d41e63fd1bae6010c851a64fad4bcb0b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_id>981e63fd1bae6010c851a64fad4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <value/>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d41e63fd1bae6010c851a64fad4bcb0b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_id>d01e63fd1bae6010c851a64fad4bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	new log('Inici del procés automàtic d\'actualització de l\'estat de acreditacions (flow)');  
+	var grCAI = new GlideRecord('x_udg_q_cai');
+	grCAI.query();
+	while (grCAI.next()) {
+  		var nouestat= new CAI().getEstat(grCAI);
+  		if (grCAI.state!= nouestat) {
+   			grCAI.state= nouestat;
+    		grCAI.update();
+    		new log(grCAI.number+" actualitzat estat a "+grCAI.getDisplayValue('state'));
+  		}
+	}
+	new log('Fi del procés automàtic d\'actualització de l\'estat de acreditacions (flow)'); 
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_hub_step_instance action="delete_multiple" query="action=5c1e63fd1bae6010c851a64fad4bcb09^sys_idNOT INd41e63fd1bae6010c851a64fad4bcb0b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Actualitzar estat acreditacions">5c1e63fd1bae6010c851a64fad4bcb09</action>
+        <cid>ce14efb3-54a5-4bd2-a5d3-5513cc2e62a2</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d41e63fd1bae6010c851a64fad4bcb0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d41e63fd1bae6010c851a64fad4bcb0b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d41e63fd1bae6010c851a64fad4bcb0b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_id>101e63fd1bae6010c851a64fad4bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <value/>
+        <variable display_value="">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d41e63fd1bae6010c851a64fad4bcb0b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_id>5c1e63fd1bae6010c851a64fad4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <value/>
+        <variable display_value="">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d41e63fd1bae6010c851a64fad4bcb0b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_id>981e63fd1bae6010c851a64fad4bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <value/>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d41e63fd1bae6010c851a64fad4bcb0b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 13:47:13</sys_created_on>
+        <sys_id>d01e63fd1bae6010c851a64fad4bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 13:47:13</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	new log('Inici del procés automàtic d\'actualització de l\'estat de acreditacions (flow)');  
+	var grCAI = new GlideRecord('x_udg_q_cai');
+	grCAI.query();
+	while (grCAI.next()) {
+  		var nouestat= new CAI().getEstat(grCAI);
+  		if (grCAI.state!= nouestat) {
+   			grCAI.state= nouestat;
+    		grCAI.update();
+    		new log(grCAI.number+" actualitzat estat a "+grCAI.getDisplayValue('state'));
+  		}
+	}
+	new log('Fi del procés automàtic d\'actualització de l\'estat de acreditacions (flow)'); 
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+</record_update>

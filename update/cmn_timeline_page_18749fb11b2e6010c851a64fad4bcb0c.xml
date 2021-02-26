@@ -7,7 +7,7 @@
         <condition/>
         <css_span_color/>
         <end_date_field>dma</end_date_field>
-        <labels>titulacio</labels>
+        <labels>titulacio,sgq,cai</labels>
         <name>x_udg_q.Timeline Acreditacions</name>
         <perform_custom_sort>true</perform_custom_sort>
         <range_calculator/>
@@ -16,7 +16,7 @@
         <show_span_text>true</show_span_text>
         <show_summary_pane>true</show_summary_pane>
         <show_tooltips>true</show_tooltips>
-        <sort_by>active</sort_by>
+        <sort_by>dma</sort_by>
         <sort_by_order>ASC</sort_by_order>
         <start_date_field>dma</start_date_field>
         <suffix>Timeline Acreditacions</suffix>
@@ -25,7 +25,7 @@
         <sys_created_on>2021-02-26 11:55:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>18749fb11b2e6010c851a64fad4bcb0c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>x_udg_q.Timeline Acreditacions</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -33,7 +33,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>cmn_timeline_page_18749fb11b2e6010c851a64fad4bcb0c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-26 12:42:45</sys_updated_on>
+        <sys_updated_on>2021-02-26 14:03:28</sys_updated_on>
         <table>x_udg_q_acreditacio</table>
         <tooltip_label>titulacio</tooltip_label>
     </cmn_timeline_page>
