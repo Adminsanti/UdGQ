@@ -6,9 +6,9 @@
         <auto_refresh>0</auto_refresh>
         <condition/>
         <css_span_color/>
-        <end_date_field>dma</end_date_field>
-        <labels>titulacio</labels>
-        <name>x_udg_q.Timeline Acreditacions</name>
+        <end_date_field>enviament_informe_aqu</end_date_field>
+        <labels>titulacions</labels>
+        <name>x_udg_q.Timeline CAIs</name>
         <perform_custom_sort>true</perform_custom_sort>
         <range_calculator/>
         <show_grid_lines>true</show_grid_lines>
@@ -18,23 +18,23 @@
         <show_tooltips>true</show_tooltips>
         <sort_by>active</sort_by>
         <sort_by_order>ASC</sort_by_order>
-        <start_date_field>dma</start_date_field>
-        <suffix>Timeline Acreditacions</suffix>
+        <start_date_field>inici_proces</start_date_field>
+        <suffix>Timeline CAIs</suffix>
         <sys_class_name>cmn_timeline_page</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2021-02-26 11:55:16</sys_created_on>
+        <sys_created_on>2021-02-26 12:40:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>18749fb11b2e6010c851a64fad4bcb0c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>x_udg_q.Timeline Acreditacions</sys_name>
+        <sys_id>02ee9b351b6e6010c851a64fad4bcb11</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_udg_q.Timeline CAIs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>cmn_timeline_page_18749fb11b2e6010c851a64fad4bcb0c</sys_update_name>
+        <sys_update_name>cmn_timeline_page_02ee9b351b6e6010c851a64fad4bcb11</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-26 12:42:45</sys_updated_on>
-        <table>x_udg_q_acreditacio</table>
-        <tooltip_label>titulacio</tooltip_label>
+        <sys_updated_on>2021-02-26 12:43:31</sys_updated_on>
+        <table>x_udg_q_cai</table>
+        <tooltip_label>number,titulacions,inici_proces,enviament_informe_aqu</tooltip_label>
     </cmn_timeline_page>
 </record_update>
