@@ -29,7 +29,7 @@
         </element>
         <element label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
         <element active="false" label="Sincronitzada" max_length="32" name="sincronitzada" reference="x_udg_q_acreditacio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^sincronitzadaISEMPTY&quot;" type="reference" use_reference_qualifier="advanced"/>
-        <element dependent="sgq" dependent_on_field="sgq" label="Titulació" mandatory="true" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference" use_dependent_field="true"/>
+        <element dependent="sgq" dependent_on_field="sgq" label="Titulació" mandatory="true" max_length="32" name="titulacio" reference="x_udg_q_titulacio" reference_qual="activa=true^EQ" reference_qual_condition="activa=true^EQ" type="reference" use_dependent_field="true"/>
         <element label="Visita CAE" max_length="40" name="visita_cae" type="glide_date"/>
         <element label="Visita CAE definitiu" max_length="40" name="visita_cae_definitiu" type="boolean"/>
         <element label="Visita CAE (Max)" max_length="40" name="visita_cae_max" type="glide_date"/>

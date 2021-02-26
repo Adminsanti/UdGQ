@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" extends="task" label="CAI" max_length="40" name="x_udg_q_cai" sizeclass="8" type="collection">
         <element label="Acreditacions" max_length="4000" name="acreditacions" reference="x_udg_q_acreditacio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^caiISEMPTY^active=true^EQ&quot;&#13;&#10;" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Aprovació autoinforme CAI" max_length="40" name="aprovacio_autoinforme_cai" type="glide_date"/>
+        <element label="Aprovació autoinforme CAI exacta" max_length="40" name="aprovacio_autoinforme_cai_exacta" type="boolean"/>
+        <element label="Aprovació autoinforme CQ Centre" max_length="40" name="aprovacio_autoinforme_cq_centre" type="glide_date"/>
+        <element label="Aprovació autoinforme CQ Centre exacta" max_length="40" name="aprovacio_autoinforme_cq_centre_exacta" type="boolean"/>
+        <element label="Aprovació autoinforme Junta Centre" max_length="40" name="aprovacio_autoinforme_junta_centre" type="glide_date"/>
+        <element label="Aprovació autoinforme Junta Centre exacta" max_length="40" name="aprovacio_autoinforme_junta_centre_exacta" type="boolean"/>
+        <element label="Aprovació CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
+        <element label="Aprovació CQ UdG exacta" max_length="40" name="aprovacio_cq_udg_exacta" type="boolean"/>
+        <element label="Enviament informe AQU" max_length="40" name="enviament_informe_aqu" type="glide_date"/>
+        <element label="Enviament informe AQU exacta" max_length="40" name="enviament_informe_aqu_exacta" type="boolean"/>
+        <element label="Exposició pública exacta" max_length="40" name="exposicio_publica_exacta" type="boolean"/>
+        <element label="Final exposició pública" max_length="40" name="final_exposicio_publica" type="glide_date"/>
         <element label="Grup de treball" max_length="1024" name="grup_de_treball" type="url"/>
+        <element label="Inici exposició publica" max_length="40" name="inici_exposicio_publica" type="glide_date"/>
         <element label="Inici procés" mandatory="true" max_length="40" name="inici_proces" type="glide_date"/>
         <element label="Inici procés definitiu" max_length="40" name="inici_proces_definitiu" type="boolean"/>
         <element label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
         <element label="Titulacions" max_length="4000" name="titulacions" read_only="true" reference="x_udg_q_titulacio" reference_qual="javascript:&quot;activa=true^sgq=&quot; + current.sgq" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Visita CAE" max_length="40" name="visita_cae" type="glide_date"/>
+        <element label="Visita CAE exacte" max_length="40" name="visita_cae_exacte" type="boolean"/>
+        <element label="Visita CAE (Max)" max_length="40" name="visita_cae_max" type="glide_date"/>
     </element>
 </database>
