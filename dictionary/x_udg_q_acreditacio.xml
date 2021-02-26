@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="Acreditació" max_length="40" name="x_udg_q_acreditacio" sizeclass="25" type="collection">
-        <element label="Aprovació autoinforme CAI" max_length="40" name="aprovacio_autoinforme_cai" type="glide_date"/>
-        <element label="Aprovació autoinforme CAI definitiu" max_length="40" name="aprovacio_autoinforme_cai_definitiu" type="boolean"/>
-        <element label="Aprovació autoinforme CQ Centre" max_length="40" name="aprovacio_autoinforme_cq_centre" type="glide_date"/>
-        <element label="Aprovació autoinforme CQ Centre definitiu" max_length="40" name="aprovacio_autoinforme_cq_centre_definitiu" type="boolean"/>
-        <element label="Aprovació autoinforme Junta Centre" max_length="40" name="aprovacio_autoinforme_junta_centre" type="glide_date"/>
-        <element label="Aprovació autoinforme Junta Centre definitiu" max_length="40" name="aprovacio_autoinforme_junta_centre_definitiu" type="boolean"/>
-        <element label="Aprovació CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
-        <element label="Aprovació CQ UdG definitiu" max_length="40" name="aprovacio_cq_udg_definitiu" type="boolean"/>
-        <element label="Aprovació informe CAI definitiu" max_length="40" name="aprovacio_informe_cai_definitiu" type="boolean"/>
         <element label="CAI" max_length="32" name="cai" reference="x_udg_q_cai" type="reference"/>
         <element label="DMA" max_length="40" name="dma" type="glide_date"/>
-        <element label="Enviament informe AQU" max_length="40" name="enviament_informe_aqu" type="glide_date"/>
-        <element label="Enviament informe AQU definitiu" max_length="40" name="enviament_informe_aqu_definitiu" type="boolean"/>
-        <element label="Exposició pública definitiu" max_length="40" name="exposicio_publica_definitiu" type="boolean"/>
-        <element label="Final exposició pública" max_length="40" name="final_exposicio_publica" type="glide_date"/>
-        <element label="Grup de treball" max_length="1024" name="grup_de_treball" type="url"/>
-        <element label="Inici exposició pública" max_length="40" name="inici_exposicio_publica" type="glide_date"/>
-        <element label="Inici procés" max_length="40" name="inici_proces" type="glide_date"/>
-        <element label="Inici procés definitiu" max_length="40" name="inici_proces_definitiu" type="boolean"/>
         <element choice="1" label="Resultat" max_length="40" name="resultat" type="integer">
             <choice>
                 <element inactive_on_update="false" label="No acreditat" sequence="1" value="1"/>
@@ -28,7 +11,6 @@
             </choice>
         </element>
         <element label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference"/>
-        <element active="false" label="Sincronitzada" max_length="32" name="sincronitzada" reference="x_udg_q_acreditacio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^sincronitzadaISEMPTY&quot;" type="reference" use_reference_qualifier="advanced"/>
         <element dependent="sgq" dependent_on_field="sgq" label="Titulació" mandatory="true" max_length="32" name="titulacio" reference="x_udg_q_titulacio" reference_qual="activa=true^EQ" reference_qual_condition="activa=true^EQ" type="reference" use_dependent_field="true"/>
         <element label="Visita CAE" max_length="40" name="visita_cae" type="glide_date"/>
         <element label="Visita CAE definitiu" max_length="40" name="visita_cae_definitiu" type="boolean"/>

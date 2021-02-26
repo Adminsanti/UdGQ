@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_timeline_page">
+    <cmn_timeline_page action="INSERT_OR_UPDATE">
+        <allow_drag_left>false</allow_drag_left>
+        <allow_drag_right>false</allow_drag_right>
+        <allow_dragging>false</allow_dragging>
+        <auto_refresh>0</auto_refresh>
+        <condition/>
+        <css_span_color/>
+        <end_date_field>enviament_informe_aqu</end_date_field>
+        <labels>sgq,titulacions,number</labels>
+        <name>x_udg_q.Timeline CAIs</name>
+        <perform_custom_sort>true</perform_custom_sort>
+        <range_calculator/>
+        <show_grid_lines>true</show_grid_lines>
+        <show_left_pane>false</show_left_pane>
+        <show_span_text>true</show_span_text>
+        <show_summary_pane>true</show_summary_pane>
+        <show_tooltips>true</show_tooltips>
+        <sort_by>acreditacions</sort_by>
+        <sort_by_order>ASC</sort_by_order>
+        <start_date_field>inici_proces</start_date_field>
+        <suffix>Timeline CAIs</suffix>
+        <sys_class_name>cmn_timeline_page</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-26 11:55:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>18749fb11b2e6010c851a64fad4bcb0c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_udg_q.Timeline CAIs</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>cmn_timeline_page_18749fb11b2e6010c851a64fad4bcb0c</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-26 11:56:05</sys_updated_on>
+        <table>x_udg_q_cai</table>
+        <tooltip_label>titulacions</tooltip_label>
+    </cmn_timeline_page>
+</record_update>
