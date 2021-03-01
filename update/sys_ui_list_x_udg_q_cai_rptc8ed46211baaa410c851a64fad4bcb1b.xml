@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="40edc6211baaa410c851a64fad4bcb01">893892ad1baaa410c851a64fad4bcbfa</list_id>
+            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="a6b15e61db6a2450ccd95bd05b961945">893892ad1baaa410c851a64fad4bcbfa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>titulacions</element>
-            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="40edc6211baaa410c851a64fad4bcb01">893892ad1baaa410c851a64fad4bcbfa</list_id>
+            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="a6b15e61db6a2450ccd95bd05b961945">893892ad1baaa410c851a64fad4bcbfa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>state</element>
-            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="40edc6211baaa410c851a64fad4bcb01">893892ad1baaa410c851a64fad4bcbfa</list_id>
+            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="a6b15e61db6a2450ccd95bd05b961945">893892ad1baaa410c851a64fad4bcbfa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -48,7 +48,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>inici_proces</element>
-            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="40edc6211baaa410c851a64fad4bcb01">893892ad1baaa410c851a64fad4bcbfa</list_id>
+            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="a6b15e61db6a2450ccd95bd05b961945">893892ad1baaa410c851a64fad4bcbfa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -63,7 +63,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sgq</element>
-            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="40edc6211baaa410c851a64fad4bcb01">893892ad1baaa410c851a64fad4bcbfa</list_id>
+            <list_id display_value="x_udg_q_cai" element="NULL" name="x_udg_q_cai" parent="NULL" relationship="NULL" sys_domain="global" view="a6b15e61db6a2450ccd95bd05b961945">893892ad1baaa410c851a64fad4bcbfa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -102,7 +102,7 @@
             <sys_updated_by>adminsanti</sys_updated_by>
             <sys_updated_on>2021-02-25 12:53:36</sys_updated_on>
             <sys_user/>
-            <view display_value="Rptc8ed46211baaa410c851a64fad4bcb1b" name="RPTc8ed46211baaa410c851a64fad4bcb1b">40edc6211baaa410c851a64fad4bcb01</view>
+            <view display_value="Rptc8ed46211baaa410c851a64fad4bcb1b" name="RPTc8ed46211baaa410c851a64fad4bcb1b">a6b15e61db6a2450ccd95bd05b961945</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

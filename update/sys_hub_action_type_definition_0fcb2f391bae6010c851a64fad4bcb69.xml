@@ -13,7 +13,7 @@
         <ih_action>false</ih_action>
         <internal_name>actualitzar_estat_acreditacions</internal_name>
         <label_cache>[]</label_cache>
-        <latest_snapshot>d41e23fd1bae6010c851a64fad4bcbfe</latest_snapshot>
+        <latest_snapshot>f5d59202dbe6a0101f06adc3ca9619cf</latest_snapshot>
         <master_snapshot>5c1e63fd1bae6010c851a64fad4bcb09</master_snapshot>
         <name>Actualitzar estat acreditacions</name>
         <natlang/>

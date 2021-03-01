@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
     <sys_process_flow action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_udg_q_cai">state=4^EQ<item display_value="Redactant" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+        <condition table="x_udg_q_cai">state=4^EQ<item display_value="Preparació informe" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description/>
-        <label>Redactant</label>
-        <name>Redactant</name>
+        <label>Preparació autoinforme</label>
+        <name>Preparació autoinforme</name>
         <order>2</order>
         <sys_class_name>sys_process_flow</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-02-26 10:21:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0d0f3e7d1b6a6010c851a64fad4bcb7a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Redactant</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Preparació autoinforme</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_process_flow_0d0f3e7d1b6a6010c851a64fad4bcb7a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-26 10:21:39</sys_updated_on>
+        <sys_updated_on>2021-03-01 10:27:33</sys_updated_on>
         <table>x_udg_q_cai</table>
     </sys_process_flow>
 </record_update>

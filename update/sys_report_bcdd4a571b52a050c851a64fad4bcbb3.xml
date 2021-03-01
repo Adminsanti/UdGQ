@@ -47,6 +47,7 @@
         <field/>
         <field_list>number,sgq,titulacio,dma,inici_proces,aprovacio_autoinforme_cai,visita_cae</field_list>
         <filter table="x_udg_q_acreditacio">resultat=^inici_proces&lt;=javascript:gs.endOfToday()<item display_value="-- None --" endquery="false" field="resultat" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item endquery="false" field="inici_proces" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.endOfToday()"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>

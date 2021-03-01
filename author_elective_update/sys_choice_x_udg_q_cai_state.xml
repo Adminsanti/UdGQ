@@ -42,7 +42,7 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Avaluació externa</label>
+            <label>Aprovació externa</label>
             <language>en</language>
             <name>x_udg_q_cai</name>
             <sequence/>
@@ -51,9 +51,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a43ef27d1b6a6010c851a64fad4bcb21</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-26 10:18:51</sys_updated_on>
+            <sys_updated_on>2021-03-01 10:29:46</sys_updated_on>
             <value>12</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -99,7 +99,7 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Redactant</label>
+            <label>Preparació informe</label>
             <language>en</language>
             <name>x_udg_q_cai</name>
             <sequence/>
@@ -108,9 +108,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>9cfdfa3d1b6a6010c851a64fad4bcb68</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-26 10:17:44</sys_updated_on>
+            <sys_updated_on>2021-03-01 10:29:35</sys_updated_on>
             <value>4</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -118,7 +118,7 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Aprovacions</label>
+            <label>Aprovació interna</label>
             <language>en</language>
             <name>x_udg_q_cai</name>
             <sequence/>
@@ -127,9 +127,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e82efa3d1b6a6010c851a64fad4bcb8e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-26 10:18:01</sys_updated_on>
+            <sys_updated_on>2021-03-01 10:29:56</sys_updated_on>
             <value>8</value>
         </sys_choice>
     </sys_choice>
