@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Acreditació" max_length="40" name="x_udg_q_acreditacio" sizeclass="25" type="collection">
+    <element extends="task" label="Acreditació" max_length="40" name="x_udg_q_acreditacio" sizeclass="114" type="collection">
         <element active="false" label="Aprovació autoinforme CAI" max_length="40" name="aprovacio_autoinforme_cai" type="glide_date"/>
         <element active="false" label="Aprovació autoinforme CAI definitiu" max_length="40" name="aprovacio_autoinforme_cai_definitiu" type="boolean"/>
         <element active="false" label="Aprovació autoinforme CQ Centre" max_length="40" name="aprovacio_autoinforme_cq_centre" type="glide_date"/>
