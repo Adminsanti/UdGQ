@@ -8,8 +8,8 @@
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
-        <chart_background_color/>
-        <chart_border_color/>
+        <chart_background_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</chart_background_color>
+        <chart_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</chart_border_color>
         <chart_border_radius>0</chart_border_radius>
         <chart_border_width>1</chart_border_width>
         <chart_height>450</chart_height>
@@ -28,7 +28,7 @@
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
-        <column/>
+        <column>active</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
         <created_by_user display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</created_by_user>
@@ -46,7 +46,10 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>number,titulacions,state,inici_proces,sgq</field_list>
-        <filter table="x_udg_q_cai">active=true<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter table="x_udg_q_cai">active=true^EQ^ORDERBYinici_proces^ORDERBYsgq<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="inici_proces"/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="sgq"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -58,8 +61,8 @@
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
         <legend_align_columns>true</legend_align_columns>
-        <legend_background_color/>
-        <legend_border_color/>
+        <legend_background_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</legend_background_color>
+        <legend_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</legend_border_color>
         <legend_border_radius>0</legend_border_radius>
         <legend_border_width>1</legend_border_width>
         <legend_horizontal_alignment>center</legend_horizontal_alignment>
@@ -73,12 +76,12 @@
         <orderby_list/>
         <other_threshold>-2</other_threshold>
         <others>true</others>
-        <page_hdrftr/>
+        <page_hdrftr display_value="Default">0ecdb03fc3613000cef73b251eba8f5e</page_hdrftr>
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
         <roles>x_udg_q.Observador,x_udg_q.User</roles>
-        <row/>
+        <row>active</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
         <sc_stackby_item_id/>
@@ -100,13 +103,13 @@
         <source_type>table</source_type>
         <start_time/>
         <style_config/>
-        <sumfield/>
+        <sumfield>business_duration</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-02-25 12:08:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c8ed46211baaa410c851a64fad4bcb1b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>CAIs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -114,13 +117,13 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_report_c8ed46211baaa410c851a64fad4bcb1b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-25 12:53:36</sys_updated_on>
+        <sys_updated_on>2021-03-01 11:18:02</sys_updated_on>
         <table>x_udg_q_cai</table>
         <title>CAIs</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field/>
+        <trend_field>activity_due</trend_field>
         <type>list</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
@@ -133,7 +136,7 @@
         <x_axis_grid_dotted>false</x_axis_grid_dotted>
         <x_axis_grid_width>1</x_axis_grid_width>
         <x_axis_label_bold>false</x_axis_label_bold>
-        <x_axis_label_color/>
+        <x_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</x_axis_label_color>
         <x_axis_label_size>11</x_axis_label_size>
         <x_axis_label_tilt>0</x_axis_label_tilt>
         <x_axis_opposite>false</x_axis_opposite>
@@ -148,7 +151,7 @@
         <y_axis_grid_dotted>false</y_axis_grid_dotted>
         <y_axis_grid_width>1</y_axis_grid_width>
         <y_axis_label_bold>false</y_axis_label_bold>
-        <y_axis_label_color/>
+        <y_axis_label_color display_value="Black">65b30218a9fe3dba0120df8611520d97</y_axis_label_color>
         <y_axis_label_size>11</y_axis_label_size>
         <y_axis_label_tilt>0</y_axis_label_tilt>
         <y_axis_opposite>false</y_axis_opposite>

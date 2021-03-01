@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="Acreditacions actuals i futures">12c192db1b52a050c851a64fad4bcbb3</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-02-25 12:30:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8103d2e51baaa410c851a64fad4bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>12c192db1b52a050c851a64fad4bcbb3</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_report_users_groups_8103d2e51baaa410c851a64fad4bcba2</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-02-25 12:30:56</sys_updated_on>
+        <user_id display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_report_users_groups_8103d2e51baaa410c851a64fad4bcba2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="Acreditacions actuals i futures">12c192db1b52a050c851a64fad4bcbb3</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2021-02-25 12:30:56</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>8103d2e51baaa410c851a64fad4bcba2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>12c192db1b52a050c851a64fad4bcbb3</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_report_users_groups_8103d2e51baaa410c851a64fad4bcba2</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2021-02-25 12:30:56</sys_updated_on><user_id display_value="Admin Santi Cots">dce0addc378d1600e7efd3e853990e20</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>-1436830710</payload_hash>
+        <record_name>12c192db1b52a050c851a64fad4bcbb3</record_name>
+        <reverted_from/>
+        <source>08f1f221db2220101f06adc3ca9619b9</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2021-02-25 14:46:02</sys_created_on>
+        <sys_id>ded726f61b6e2010c851a64fad4bcb16</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>177d9a764100000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Report Users and Groups</type>
+        <update_guid>9ed726f6c66e2010ecb21be4f47f9216</update_guid>
+        <update_guid_history>9ed726f6c66e2010ecb21be4f47f9216:-1436830710</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-03-01 11:14:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>6cda985b05464838a8d9758fbb656ba4</sys_id>
+        <sys_metadata>8103d2e51baaa410c851a64fad4bcba2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>12c192db1b52a050c851a64fad4bcbb3</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="Acreditacions actuals i futures">12c192db1b52a050c851a64fad4bcbb3</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_8103d2e51baaa410c851a64fad4bcba2</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_8103d2e51baaa410c851a64fad4bcba2">ded726f61b6e2010c851a64fad4bcb16</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-03-01 11:14:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
