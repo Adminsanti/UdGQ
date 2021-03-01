@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>c4fbd1e91ba6a410c851a64fad4bcb24</sys_id>
+            <sys_created_on>2021-03-01 15:59:51</sys_created_on>
+            <sys_id>9839a73e1b626010c851a64fad4bcb06</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
+            <sys_updated_on>2021-03-01 15:59:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>dma</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>48fbd1e91ba6a410c851a64fad4bcb24</sys_id>
+            <sys_created_on>2021-03-01 15:59:51</sys_created_on>
+            <sys_id>1c39a73e1b626010c851a64fad4bcb06</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
+            <sys_updated_on>2021-03-01 15:59:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,97 +32,83 @@
             <element>resultat</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>c8fbd1e91ba6a410c851a64fad4bcb24</sys_id>
+            <sys_created_on>2021-03-01 15:59:51</sys_created_on>
+            <sys_id>9c39a73e1b626010c851a64fad4bcb06</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
+            <sys_updated_on>2021-03-01 15:59:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>acreditacio</element>
+            <position>3</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-03-01 15:59:51</sys_created_on>
+            <sys_id>1039a73e1b626010c851a64fad4bcb07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-03-01 15:59:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>4cfbd1e91ba6a410c851a64fad4bcb24</sys_id>
+            <sys_created_on>2021-03-01 15:59:51</sys_created_on>
+            <sys_id>9039a73e1b626010c851a64fad4bcb07</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
+            <sys_updated_on>2021-03-01 15:59:51</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sgq</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>ccfbd1e91ba6a410c851a64fad4bcb24</sys_id>
+            <sys_created_on>2021-03-01 15:59:51</sys_created_on>
+            <sys_id>1439a73e1b626010c851a64fad4bcb07</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
+            <sys_updated_on>2021-03-01 15:59:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>titulacio</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>40fbd1e91ba6a410c851a64fad4bcb25</sys_id>
+            <sys_created_on>2021-03-01 15:59:51</sys_created_on>
+            <sys_id>9439a73e1b626010c851a64fad4bcb07</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
+            <sys_updated_on>2021-03-01 15:59:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cai</element>
-            <position>6</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>c0fbd1e91ba6a410c851a64fad4bcb25</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>sincronitzada</element>
             <position>7</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>44fbd1e91ba6a410c851a64fad4bcb25</sys_id>
+            <sys_created_on>2021-03-01 15:59:51</sys_created_on>
+            <sys_id>1839a73e1b626010c851a64fad4bcb07</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>grup_de_treball</element>
-            <position>8</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-02-25 08:30:18</sys_created_on>
-            <sys_id>c4fbd1e91ba6a410c851a64fad4bcb25</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_acreditacio" sys_domain="global" view="Default view">47079e561b6ca0105fab4002cd4bcbd1</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-02-25 08:30:18</sys_updated_on>
+            <sys_updated_on>2021-03-01 15:59:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
