@@ -17,9 +17,9 @@
         <digest_from/>
         <digest_html/>
         <digest_reply_to/>
-        <digest_separator_html><![CDATA[<p><br /></p>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
 <hr />
-<p><br /></p>]]></digest_separator_html>
+<p>&nbsp;</p>]]></digest_separator_html>
         <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
         <digest_subject/>
         <digest_template/>
@@ -44,7 +44,7 @@
 <p>${mail_script:disclaimer udg}</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Objectiu canvia de responsable</name>
+        <name>Objectiu canvi responsable</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -64,8 +64,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8f7a2b2b1b7b84505fab4002cd4bcbd3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Objectiu canvia de responsable</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Objectiu canvi responsable</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -73,7 +73,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_8f7a2b2b1b7b84505fab4002cd4bcbd3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-22 19:17:50</sys_updated_on>
+        <sys_updated_on>2020-05-07 14:03:02</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
