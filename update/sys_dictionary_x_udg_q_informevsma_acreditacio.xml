@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="cai" table="x_udg_q_acreditacio">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="acreditacio" table="x_udg_q_informevsma">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -11,10 +11,10 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>1</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>CAI</column_label>
+        <column_label>Acreditació</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,7 +27,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>cai</element>
+        <element>acreditacio</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -35,37 +35,35 @@
         <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <name>x_udg_q_acreditacio</name>
+        <name>x_udg_q_informevsma</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_udg_q_cai">x_udg_q_cai</reference>
+        <reference display_value="" name="x_udg_q_acreditacio">x_udg_q_acreditacio</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>active=true^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_cai">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual/>
+        <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2021-02-25 08:28:55</sys_created_on>
+        <sys_created_on>2021-03-02 09:55:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>fd7506addbe62450ccd95bd05b961944</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>CAI</sys_name>
+        <sys_id>5e2f5bc71b62a010c851a64fad4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Acreditació</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_dictionary_x_udg_q_acreditacio_cai</sys_update_name>
+        <sys_update_name>sys_dictionary_x_udg_q_informevsma_acreditacio</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-03-02 10:40:33</sys_updated_on>
+        <sys_updated_on>2021-03-02 09:55:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

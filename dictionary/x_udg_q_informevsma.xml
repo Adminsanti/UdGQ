@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Informe VSMA" max_length="40" name="x_udg_q_informevsma" sizeclass="49" type="collection">
+        <element label="Acreditació" max_length="32" name="acreditacio" reference="x_udg_q_acreditacio" type="reference"/>
         <element default="true" label="Actiu" max_length="40" name="actiu" type="boolean"/>
         <element label="Data" max_length="40" name="data" type="glide_date"/>
         <element choice="3" default="1" label="Direcció" mandatory="true" max_length="40" name="direccio" type="integer">
@@ -21,6 +22,9 @@
         <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
         <element label="Tipus" max_length="60" name="tipus" type="string"/>
         <element label="Titulacions" mandatory="true" max_length="4000" name="titulacions" reference="x_udg_q_titulacio" reference_qual="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" reference_qual_condition="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" type="glide_list"/>
+        <index name="index">
+            <element name="acreditacio"/>
+        </index>
         <index name="index2">
             <element name="sgq"/>
         </index>

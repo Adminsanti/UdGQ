@@ -10,7 +10,7 @@
         <element active="false" label="Aprovació CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
         <element active="false" label="Aprovació CQ UdG definitiu" max_length="40" name="aprovacio_cq_udg_definitiu" type="boolean"/>
         <element active="false" label="Aprovació informe CAI definitiu" max_length="40" name="aprovacio_informe_cai_definitiu" type="boolean"/>
-        <element label="CAI" max_length="32" name="cai" reference="x_udg_q_cai" type="reference">
+        <element choice="1" label="CAI" max_length="32" name="cai" reference="x_udg_q_cai" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference">
             <choice/>
         </element>
         <element label="DMA" max_length="40" name="dma" type="glide_date"/>
@@ -34,7 +34,7 @@
             <choice/>
         </element>
         <element active="false" label="Sincronitzada" max_length="32" name="sincronitzada" reference="x_udg_q_acreditacio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^sincronitzadaISEMPTY&quot;" type="reference" use_reference_qualifier="advanced"/>
-        <element dependent="sgq" dependent_on_field="sgq" label="Titulació" mandatory="true" max_length="32" name="titulacio" reference="x_udg_q_titulacio" reference_qual="activa=true^EQ" reference_qual_condition="activa=true^EQ" type="reference" use_dependent_field="true">
+        <element choice="1" dependent="sgq" dependent_on_field="sgq" label="Titulació" mandatory="true" max_length="32" name="titulacio" reference="x_udg_q_titulacio" reference_qual="activa=true^EQ" reference_qual_condition="activa=true^EQ" type="reference" use_dependent_field="true">
             <choice/>
         </element>
         <element label="Visita CAE" max_length="40" name="visita_cae" type="glide_date"/>

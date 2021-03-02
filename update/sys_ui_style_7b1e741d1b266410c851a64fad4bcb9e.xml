@@ -2,22 +2,22 @@
     <sys_ui_style action="INSERT_OR_UPDATE">
         <alt/>
         <element>aprovacio_autoinforme_junta_centre</element>
-        <name>x_udg_q_acreditacio</name>
+        <name>x_udg_q_cai</name>
         <style>color:orange;</style>
         <sys_class_name>sys_ui_style</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-02-24 11:41:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7b1e741d1b266410c851a64fad4bcb9e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_udg_q_acreditacio</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_udg_q_cai</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_style_7b1e741d1b266410c851a64fad4bcb9e</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-24 11:41:32</sys_updated_on>
-        <value>javascript: current.aprovacio_autoinforme_junta_centre_definitiu == false;</value>
+        <sys_updated_on>2021-03-02 11:01:20</sys_updated_on>
+        <value>javascript: current.aprovacio_autoinforme_junta_centre_exacta == false;</value>
     </sys_ui_style>
 </record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>GeneraDMA</action_name>
-        <active>true</active>
+        <active>false</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
@@ -26,7 +26,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>(Previst) Genera en base a DMA</name>
+        <name>RECYCLE Genera en base a DMA</name>
         <onclick/>
         <order>1000</order>
         <script/>
@@ -41,8 +41,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>961cf0ee1b864410c851a64fad4bcb1a</sys_id>
-        <sys_mod_count>16</sys_mod_count>
-        <sys_name>(Previst) Genera en base a DMA</sys_name>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>RECYCLE Genera en base a DMA</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -50,7 +50,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_961cf0ee1b864410c851a64fad4bcb1a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-26 08:14:31</sys_updated_on>
+        <sys_updated_on>2021-03-02 09:58:07</sys_updated_on>
         <table>x_udg_q_acreditacio</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
