@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_title">
+    <sys_ui_title action="INSERT_OR_UPDATE">
+        <field_list>titulacions</field_list>
+        <script/>
+        <search_fields/>
+        <style_field/>
+        <sys_class_name>sys_ui_title</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-03-02 12:32:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a8130cd31b26a010c851a64fad4bcb3d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_udg_q_cai</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_title_a8130cd31b26a010c851a64fad4bcb3d</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-03-02 12:35:14</sys_updated_on>
+        <table>x_udg_q_cai</table>
+    </sys_ui_title>
+</record_update>
