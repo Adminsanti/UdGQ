@@ -12,12 +12,22 @@ GeneraDocs.prototype = {
     initialize: function() {},
 
     generaVSMA: function(grPlantilla, userId) {
-        var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
+
+        /*
+		var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
         var SGQprefCodi = gs.getUser().getPreference('qualitat.sgqActualCodi');
+		*/
+
+        var grU = new GlideRecord('sys_user');
+        grU.get(userId);
+
+        var SGQpref = grU.x_udg_q_sgq_actual;
+        var SGQprefCodi = grU.x_udg_q_sgq_actual.codi;
+
         var grSGQ = new GlideRecord('x_udg_q_sgq');
         grSGQ.get(SGQpref);
         var ObjUtils = new ObjectiuUtils();
-
+ 
         var grDG = new GlideRecord('x_udg_q_docgeneratvsma');
         grDG.initialize();
         grDG.insert();
@@ -25,40 +35,44 @@ GeneraDocs.prototype = {
         var grFitxerPlantilla = new GlideRecord('sys_attachment');
         grFitxerPlantilla.get(grPlantilla.file); //gr del fitxer del camp file
         var gsaPlantilla = new GlideSysAttachment();
-        var contingut = gsaPlantilla.getContent(grFitxerPlantilla);
 
         var utilSgq = new Sgq();
+        var and = { //pemet incloure els ^ excepte el primer
+            simbol: '',
+            add: function(string) {
+                var r = this.simbol;
+                if (string) {
+                    this.simbol = '^';
+                    return r + string;
+                } else return '';
+            }
+        };
+
         var llistaTitulacions = grPlantilla.getValue('titulacions');
         if (!llistaTitulacions || llistaTitulacions == '') llistaTitulacions = utilSgq.getLlistaTitulacionsSgqActual();
-        llistaTitulacions = utilSgq.filtraTitulacionsNomesSgq(llistaTitulacions, gs.getUser().getPreference('qualitat.sgqActual'));
+        llistaTitulacions = utilSgq.filtraTitulacionsNomesSgq(llistaTitulacions, SGQpref);
         var llistaTitulacionsNom = utilSgq.getLlistaNomsTitulacions(llistaTitulacions);
 
-        var rtf1 = new rtf(contingut);
+        var rtf1 = new rtf(gsaPlantilla.getContent(grFitxerPlantilla));
         rtf1.clearTag('FiltreMillora'); // Netejar filtre si és que encara hi és
         rtf1.replace(/##NomSGQ##/g, grSGQ.nom);
         rtf1.replace(/##LlistaTitulacions##/g, rtf1.llista(llistaTitulacionsNom));
-        var condicions = grPlantilla.getValue('condicions');
-        if (condicions == '' || !condicions) condicions = 'stateISNOTEMPTY'; //Així evitem que condicions estigui buit
-        if (!grPlantilla.incloure_esborranys) condicions += "^state!=-5";
-        if (!grPlantilla.incloure_esborrats) condicions += "^tancament=^ORtancament!=0";
-		
-		
-		
-        if (llistaTitulacions && llistaTitulacions != '') { //En realitat s'ha de complir sempre
+        var condicions = '';
+        condicions += and.add(grPlantilla.getValue('condicions'));
+        if (condicions.slice(condicions.length - 3, condicions.length) == '^EQ') condicions = condicions.slice(0, condicions.length - 3); //Eliminar "^EQ" del final, si existeix
+        if (!grPlantilla.incloure_esborranys) condicions += and.add("state!=-5");
+        if (!grPlantilla.incloure_esborrats) condicions += and.add("tancament!=-5^ORtancamentISEMPTY");
+
+        if (llistaTitulacions && llistaTitulacions != '') {
             var tit = llistaTitulacions.toString().split(",");
             for (i = 0; i < tit.length; ++i) {
-                if (i == 0) condicions += '^';
-                else condicions += '^OR';
-                condicions += 'implica_titulacionsLIKE' + tit[i];
+                if (i == 0) condicions += and.add("implica_titulacionsLIKE" + tit[i]);
+                else condicions += "^ORimplica_titulacionsLIKE" + tit[i];
+                //closed_at>=javascript:gs.dateGenerate('2021-01-31','00:00:00')
             }
-            condicions += "^ORimplica_titulacionsISEMPTY";
         }
 
-	
-		//closed_at>=javascript:gs.dateGenerate('2021-01-31','00:00:00')
-		
-        if (grPlantilla.desde) condicions += '^closed_at>=' + grPlantilla.desde +' 00:00:00' + '^ORclosed_atISEMPTY';
-
+        if (grPlantilla.desde) condicions += and.add('closed_at>=' + grPlantilla.desde + ' 00:00:00' + '^ORclosed_atISEMPTY');
 
         rtf1.replace('##ResumMillora##', "Objectius en Curs - Pla de Millora Actiu\\par\\par" +
             ObjUtils.getRtfResumMillora(condicions + "^state=2", SGQpref) +
@@ -71,7 +85,7 @@ GeneraDocs.prototype = {
         if (rtf1.getContent().match(/##TSubestandard#.\..##/g)) {
             var subestandards = rtf1.getContent().match(/##TSubestandard#.\..##/g).toString().match(/.\../g);
             for (index = 0; index < subestandards.length; ++index) {
-                var sysidS = new EstandardVSMA().getSysidSubestandardNum(subestandards[index]);
+                var sysidS = new EstandardVSMA().getSysidSubestandardNum(subestandards[index], SGQpref);
                 var nom = new EstandardVSMA().getNomSubestandard(sysidS);
                 rtf1.replace("##TSubestandard#" + subestandards[index] + "##", nom);
             }
@@ -80,7 +94,7 @@ GeneraDocs.prototype = {
         if (rtf1.getContent().match(/##DSubestandard#.\..##/g)) {
             var Dsubestandards = rtf1.getContent().match(/##DSubestandard#.\..##/g).toString().match(/.\../g);
             for (index = 0; index < Dsubestandards.length; ++index) {
-                var sysidS2 = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
+                var sysidS2 = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index], SGQpref);
                 var textstring = "";
                 textstring += ObjUtils.getRtfperSubestandard(sysidS2, condicions, 2, SGQpref);
                 textstring += ObjUtils.getRtfperSubestandard(sysidS2, condicions, 3, SGQpref);
@@ -107,7 +121,7 @@ GeneraDocs.prototype = {
         <sys_created_on>2020-11-20 09:26:06</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9f5602961b2ca0105fab4002cd4bcb1c</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>101</sys_mod_count>
         <sys_name>GeneraDocs</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -115,6 +129,6 @@ GeneraDocs.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_9f5602961b2ca0105fab4002cd4bcb1c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-22 18:18:36</sys_updated_on>
+        <sys_updated_on>2021-03-03 13:47:54</sys_updated_on>
     </sys_script_include>
 </record_update>
