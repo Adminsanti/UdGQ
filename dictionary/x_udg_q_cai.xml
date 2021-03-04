@@ -14,6 +14,7 @@
         <element label="Exposició pública exacta" max_length="40" name="exposicio_publica_exacta" type="boolean"/>
         <element label="Final exposició pública" max_length="40" name="final_exposicio_publica" type="glide_date"/>
         <element label="Grup de treball" max_length="1024" name="grup_de_treball" type="url"/>
+        <element label="Informe Emès" max_length="40" name="informe_emes" type="file_attachment"/>
         <element label="Inici exposició publica" max_length="40" name="inici_exposicio_publica" type="glide_date"/>
         <element label="Inici procés" mandatory="true" max_length="40" name="inici_proces" type="glide_date"/>
         <element label="Inici procés definitiu" max_length="40" name="inici_proces_definitiu" type="boolean"/>
