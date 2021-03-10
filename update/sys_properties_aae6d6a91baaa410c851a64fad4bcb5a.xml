@@ -20,9 +20,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_properties_aae6d6a91baaa410c851a64fad4bcb5a</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-03-04 12:21:51</sys_updated_on>
+        <sys_updated_on>2021-03-02 12:17:11</sys_updated_on>
         <type>string</type>
-        <value>*Attachments*,sys_created_on,sys_created_by,titulacions,acreditacions,sgq,aprovacio_cq_udg,aprovacio_cq_udg_exacta,aprovacio_autoinforme_cai,aprovacio_autoinforme_cai_exacta,aprovacio_autoinforme_cq_centre,aprovacio_autoinforme_cq_centre_exacta,aprovacio_autoinforme_junta_centre,aprovacio_autoinforme_junta_centre_exacta,inici_exposicio_publica,inici_proces,inici_proces_definitiu,informe_emes,opened_at,opened_by,watch_list,visita_cae,visita_cae_max,visita_cae_exacte,*Email*,exposicio_publica_exacta,final_exposicio_publica</value>
+        <value>*Attachments*,sys_created_on,sys_created_by,titulacions,acreditacions,sgq,aprovacio_cq_udg,aprovacio_cq_udg_exacta,aprovacio_autoinforme_cai,aprovacio_autoinforme_cai_exacta,aprovacio_autoinforme_cq_centre,aprovacio_autoinforme_cq_centre_exacta,aprovacio_autoinforme_junta_centre,aprovacio_autoinforme_junta_centre_exacta,active,enviament_informe_aqu,enviament_informe_aqu_exacta,exposicio_publica_exacta,final_exposicio_publica,inici_exposicio_publica,inici_proces,inici_proces_definitiu,visita_cae,visita_cae_max,visita_cae_exacte,watch_list,*Email*</value>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=aae6d6a91baaa410c851a64fad4bcb5a"/>
