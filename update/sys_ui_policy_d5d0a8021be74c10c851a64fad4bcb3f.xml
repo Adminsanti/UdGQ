@@ -20,14 +20,13 @@
     g_form.setReadOnly('closed_at', true);
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
-    g_form.setRW('declarat');
-    g_form.setRW('valorat');
-    g_form.setRW('closed_at');
-}
-
-function setRW(camp) {
-    if (g_form.getValue(camp) != "") g_form.setReadOnly(camp, false);
-    else g_form.setReadOnly(camp, true);
+    function setRW(camp) {
+        if (g_form.getValue(camp) != "") g_form.setReadOnly(camp, false);
+        else g_form.setReadOnly(camp, true);
+    }
+    setRW('declarat');
+    setRW('valorat');
+    //setRW('closed_at'); El tancat no espot ser RW per ACL de tasca.
 }]]></script_true>
         <set_values/>
         <short_description>Objectiu Permet dates vençudes</short_description>
@@ -38,7 +37,7 @@ function setRW(camp) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d5d0a8021be74c10c851a64fad4bcb3f</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Objectiu Permet dates vençudes</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -47,7 +46,7 @@ function setRW(camp) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_policy_d5d0a8021be74c10c851a64fad4bcb3f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-05-05 14:52:46</sys_updated_on>
+        <sys_updated_on>2021-03-10 10:28:19</sys_updated_on>
         <table>x_udg_q_objectiumillora</table>
         <ui_type>10</ui_type>
         <view/>
