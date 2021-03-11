@@ -19,7 +19,7 @@
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2020-07-15 09:15:12</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
-        <ui_policy display_value="Recomanacions pot compartir">1b587a411b86d8505fab4002cd4bcb34</ui_policy>
+        <ui_policy display_value="RECYCLE Recomanacions pot compartir">1b587a411b86d8505fab4002cd4bcb34</ui_policy>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

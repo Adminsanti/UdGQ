@@ -19,7 +19,7 @@
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2019-01-28 12:04:28</sys_updated_on>
         <table>x_udg_q_recomanacions</table>
-        <ui_policy display_value="Recomanació desistida vol valoració">131dbb1137ac23001acdf01643990e25</ui_policy>
+        <ui_policy display_value="Observació desistida vol valoració">131dbb1137ac23001acdf01643990e25</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>
