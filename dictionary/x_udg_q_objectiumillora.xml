@@ -12,7 +12,7 @@
         </element>
         <element label="Related degrees" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" reference_qual_condition="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" type="glide_list"/>
         <element attributes="ref_contributions=x_udg_q_add_titulacions_actives" hint="Enllaç al document d'AQU sobre modificacions de títols" label="Involves memory modification" max_length="40" name="modificacio_memoria" type="boolean"/>
-        <element choice="1" label="Related processes" max_length="1024" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="glide_list" use_reference_qualifier="advanced">
+        <element choice="1" label="Related processes" max_length="1024" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" reference_qual_condition="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="glide_list">
             <choice/>
         </element>
         <element label="Observations" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_floats="true" reference_qual="estat!=5^EQ" reference_qual_condition="estat!=5^EQ" type="glide_list"/>
