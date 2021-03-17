@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="recomanacioobligatoria" label="Observació obligatoria" language="en" table="x_udg_q_objectiumillora">
+    <sys_documentation element="recomanacioobligatoria" label="Compulsory observation" language="en" table="x_udg_q_objectiumillora">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>recomanacioobligatoria</element>
             <help/>
             <hint/>
-            <label>Observació obligatoria</label>
+            <label>Compulsory observation</label>
             <language>en</language>
             <name>x_udg_q_objectiumillora</name>
-            <plural>Observacions obligatorias</plural>
+            <plural>Compulsory observations</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2019-01-31 09:37:59</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>e88910561b136b405fab4002cd4bcbad</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_name>Observació obligatoria</sys_name>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>Compulsory observation</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_objectiumillora_recomanacioobligatoria_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-09-30 09:08:44</sys_updated_on>
+            <sys_updated_on>2021-03-16 11:41:35</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

@@ -1,41 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="694" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Objectiu Millora" max_length="40" name="x_udg_q_objectiumillora" sizeclass="702" text_index="true" type="collection">
         <element default="0" label="Actions" max_length="40" name="accions" read_only="true" type="integer"/>
         <element attributes="target_threshold_colors=0:#C71585;1:yellow;50:orange;99:lightgreen" default="0" label="Execution %" max_length="40" name="assoliment" read_only="true" type="percent_complete"/>
-        <element label="Codi antic" max_length="40" name="codi_antic" type="string"/>
+        <element label="Former code" max_length="40" name="codi_antic" type="string"/>
         <element dependent="sgq.comparteix" dependent_on_field="sgq.comparteix" label="Compartit" max_length="4000" name="compartit" reference="x_udg_q_sgq" reference_qual="javascript:&quot;sys_idIN&quot;+current.sgq.comparteix;" type="glide_list" use_dependent_field="true" use_reference_qualifier="advanced"/>
         <element label="Definit" max_length="40" name="declarat" type="glide_date_time"/>
         <element label="Definit per" max_length="32" name="declarat_per" read_only="true" reference="sys_user" type="reference"/>
-        <element label="Diagnòstic" max_length="1500" name="diagnostic" type="string"/>
-        <element choice="1" label="Fita prevista" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="javascript:&#13;&#10;if (!current.sgq.datesven) {&#13;&#10; &quot;end_date&gt;=&quot;+gs.beginningOfToday()+&quot;^EQ&quot;;&#13;&#10;} else {&#13;&#10; gs.addInfoMessage(&quot;Dates vençudes autoritzades temporalment&quot;);&#13;&#10;&quot;&quot;;&#13;&#10;}" type="reference" use_reference_qualifier="advanced">
+        <element label="Diagnosis" max_length="1500" name="diagnostic" type="string"/>
+        <element choice="1" label="Milestone" max_length="32" name="fet_fita" reference="x_udg_q_fita" reference_qual="javascript:&#13;&#10;if (!current.sgq.datesven) {&#13;&#10; &quot;end_date&gt;=&quot;+gs.beginningOfToday()+&quot;^EQ&quot;;&#13;&#10;} else {&#13;&#10; gs.addInfoMessage(&quot;Dates vençudes autoritzades temporalment&quot;);&#13;&#10;&quot;&quot;;&#13;&#10;}" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
-        <element label="Implica Titulacions" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" reference_qual_condition="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" type="glide_list"/>
-        <element attributes="ref_contributions=x_udg_q_add_titulacions_actives" hint="Enllaç al document d'AQU sobre modificacions de títols" label="Implica modificació memòria" max_length="40" name="modificacio_memoria" type="boolean"/>
-        <element choice="1" label="Processos vinculats" max_length="1024" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" reference_qual_condition="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="glide_list">
+        <element label="Related degrees" max_length="4000" name="implica_titulacions" reference="x_udg_q_titulacio" reference_qual="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" reference_qual_condition="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^activa=true^EQ" type="glide_list"/>
+        <element attributes="ref_contributions=x_udg_q_add_titulacions_actives" hint="Enllaç al document d'AQU sobre modificacions de títols" label="Involves memory modification" max_length="40" name="modificacio_memoria" type="boolean"/>
+        <element choice="1" label="Related processes" max_length="1024" name="proces" reference="x_udg_q_proces" reference_qual="actiu=true^sgq=javascript:gs.getPreference('qualitat.sgqActual')^EQ" type="glide_list" use_reference_qualifier="advanced">
             <choice/>
         </element>
-        <element label="Observacions" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_floats="true" reference_qual="estat!=5^EQ" reference_qual_condition="estat!=5^EQ" type="glide_list"/>
-        <element label="Observació obligatoria" max_length="40" name="recomanacioobligatoria" read_only="true" type="boolean"/>
-        <element choice="3" default="javascript: current.sgq.responsable" label="Responsable" mandatory="true" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^activa=true^assignable=true^EQ&quot;;" type="reference" use_reference_qualifier="advanced">
+        <element label="Observations" max_length="4000" name="recomanacions" reference="x_udg_q_recomanacions" reference_floats="true" reference_qual="estat!=5^EQ" reference_qual_condition="estat!=5^EQ" type="glide_list"/>
+        <element label="Compulsory observation" max_length="40" name="recomanacioobligatoria" read_only="true" type="boolean"/>
+        <element choice="3" default="javascript: current.sgq.responsable" label="Responsible" mandatory="true" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^activa=true^assignable=true^EQ&quot;;" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
-        <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" hint="Sistema de Gestió de la Qualitat" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
-        <element choice="1" label="Subestàndard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" reference_qual="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" reference_qual_condition="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" type="reference">
+        <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" hint="Sistema de Gestió de la Qualitat" label="QMS" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
+        <element choice="1" label="Substandard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" reference_qual="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" reference_qual_condition="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" type="reference">
             <choice/>
         </element>
         <element choice="1" label="Close code" max_length="40" name="tancament" type="integer">
             <choice>
-                <element inactive_on_update="false" label="Assoliment molt satisfactori" sequence="0" value="5"/>
-                <element inactive_on_update="false" label="Assoliment satisfactori" sequence="1" value="4"/>
-                <element inactive_on_update="false" label="Assoliment mitjà" sequence="2" value="3"/>
-                <element inactive_on_update="false" label="Assoliment baix" sequence="3" value="2"/>
-                <element inactive_on_update="false" label="No assoliment" sequence="4" value="1"/>
-                <element inactive_on_update="false" label="Desistiment" sequence="5" value="0"/>
-                <element inactive_on_update="false" label="Error - Esborrat" sequence="6" value="-5"/>
+                <element inactive_on_update="false" label="Assoliment molt satisfactori" language="ca" sequence="0" value="5"/>
+                <element inactive_on_update="false" label="Very satisfactory achievement" sequence="0" value="5"/>
+                <element inactive_on_update="false" label="Assoliment satisfactori" language="ca" sequence="1" value="4"/>
+                <element inactive_on_update="false" label="Satisfactory archievement" sequence="1" value="4"/>
+                <element inactive_on_update="false" label="Assoliment mitjà" language="ca" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Moderate archievement" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Assoliment baix" language="ca" sequence="3" value="2"/>
+                <element inactive_on_update="false" label="Low archievement" sequence="3" value="2"/>
+                <element inactive_on_update="false" label="Lack of archievement" sequence="4" value="1"/>
+                <element inactive_on_update="false" label="No assoliment" language="ca" sequence="4" value="1"/>
+                <element inactive_on_update="false" label="Desistiment" language="ca" sequence="5" value="0"/>
+                <element inactive_on_update="false" label="Withdrawal" sequence="5" value="0"/>
+                <element inactive_on_update="false" label="Error - Deleted" sequence="6" value="-5"/>
+                <element inactive_on_update="false" label="Error - Esborrat" language="ca" sequence="6" value="-5"/>
             </choice>
         </element>
-        <element label="Valoració" max_length="4000" name="valoracio" type="string"/>
+        <element label="Assessment" max_length="4000" name="valoracio" type="string"/>
         <element label="Valorat" max_length="40" name="valorat" type="glide_date_time"/>
         <element label="Valorat per" max_length="32" name="valorat_per" read_only="true" reference="sys_user" type="reference"/>
     </element>
