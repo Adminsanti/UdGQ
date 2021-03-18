@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Execució %</column_label>
+        <column_label>Execution %</column_label>
         <comments/>
         <create_roles/>
         <default_value>0</default_value>
@@ -55,15 +55,15 @@
         <sys_created_on>2018-11-06 13:05:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>87a2d726db2d6b401f06adc3ca9619f5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Execució %</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Execution %</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_acciomillora_percentatge</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-10 12:06:02</sys_updated_on>
+        <sys_updated_on>2021-03-18 10:51:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
