@@ -116,23 +116,24 @@ ProcesSGQ.prototype = {
     },
 
     actualitzaTot: function(proces_sys_id) {
-        //Actualitza el procés
+        //Actualitza el procés en vase a les versions
         var grProc = new GlideRecord('x_udg_q_proces');
         var grVersio = new GlideRecord('x_udg_q_versioproces');
         grProc.get(proces_sys_id);
         grVersio.addQuery('proces', proces_sys_id);
-        grVersio.addQuery('state', "!=", 1); //No esborranys
-        grVersio.orderBy('versio');
+        grVersio.addQuery('state', "=", 2); //Versió vigent
         grVersio.query();
-        while (grVersio.next()) {
-            //Aquí dins cal determinar quina es la vigent
-
-            //de moment ho MOCK, però agafem lúltim que deu ser el darrer
+        if (grVersio.next()) {
             grProc.document = grVersio.document;
-            if (grVersio.state==2) grProc.versio = grVersio.versio;
-
-        }
-        grProc.update();
+			grProc.fitxerdocument= grVersio.fitxer;
+            grProc.versio = grVersio.versio;
+			grProc.update();
+        }  else { //No hi ha versió vigent
+			grProc.document = "";
+			grProc.fitxerdocument= "";
+            grProc.versio = "";
+			grProc.update();
+		}
     },
 
     getHTMLDocument: function(sys_id) {
@@ -154,10 +155,12 @@ ProcesSGQ.prototype = {
         var grVProc = new GlideRecord('x_udg_q_versioproces');
         grVProc.get(sys_id_versioproces);
         grVProc.document = this.getHTMLDocument(sys_id_attachment);
+		grVProc.fitxer=sys_id_attachment;
         grVProc.update();
         if (grVProc.state == 2 && grVProc.actiu) {
             var grProc = new GlideRecord('x_udg_q_proces');
             grProc.get(grVProc.proces);
+			grProc.fitxerdocument=sys_id_attachment;
             grProc.document = this.getHTMLDocument(sys_id_attachment);
             grProc.update();
         }
@@ -207,7 +210,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>87</sys_mod_count>
+        <sys_mod_count>90</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -215,6 +218,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-21 08:44:01</sys_updated_on>
+        <sys_updated_on>2021-03-24 10:02:43</sys_updated_on>
     </sys_script_include>
 </record_update>

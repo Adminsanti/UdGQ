@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_dictionary action="INSERT_OR_UPDATE" element="fitxerdocument" table="x_udg_q_proces">
-        <active>false</active>
+        <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
@@ -55,7 +55,7 @@
         <sys_created_on>2020-02-10 15:11:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>61de1aa7dbbe00101f06adc3ca9619d1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Fitxer Document</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_proces_fitxerdocument</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-10 12:06:22</sys_updated_on>
+        <sys_updated_on>2021-03-24 09:54:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -26,7 +26,7 @@
         <sys_created_on>2020-02-07 09:07:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1dde1aa7dbbe00101f06adc3ca96198d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Versió Procés</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -34,9 +34,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_db_object_1dde1aa7dbbe00101f06adc3ca96198d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-07 09:08:48</sys_updated_on>
+        <sys_updated_on>2021-03-24 09:42:30</sys_updated_on>
         <update_access>false</update_access>
-        <user_role/>
+        <user_role display_value="x_udg_q.Manager" name="x_udg_q.Manager">1d414d9637586b401acdf01643990e73</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>
