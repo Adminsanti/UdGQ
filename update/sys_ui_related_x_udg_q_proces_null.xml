@@ -2,59 +2,45 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_proces" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">2658abb41bf41810c851a64fad4bcb28</list_id>
+            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">03daf5ee1b0b20505fab4002cd4bcbdf</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>x_udg_q_versioproces.proces</related_list>
+            <related_list>REL:f940a56a1b8720505fab4002cd4bcbfb</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 14:47:19</sys_created_on>
-            <sys_id>ae58abb41bf41810c851a64fad4bcb28</sys_id>
+            <sys_created_on>2021-03-25 09:50:43</sys_created_on>
+            <sys_id>0fdaf5ee1b0b20505fab4002cd4bcbdf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 14:47:19</sys_updated_on>
+            <sys_updated_on>2021-03-25 09:50:43</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">2658abb41bf41810c851a64fad4bcb28</list_id>
+            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">03daf5ee1b0b20505fab4002cd4bcbdf</list_id>
             <order_by/>
             <position>1</position>
             <related_list>x_udg_q_proces.pare</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 14:47:19</sys_created_on>
-            <sys_id>a258abb41bf41810c851a64fad4bcb29</sys_id>
+            <sys_created_on>2021-03-25 09:50:43</sys_created_on>
+            <sys_id>03daf5ee1b0b20505fab4002cd4bcbe0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 14:47:19</sys_updated_on>
+            <sys_updated_on>2021-03-25 09:50:43</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">2658abb41bf41810c851a64fad4bcb28</list_id>
+            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">03daf5ee1b0b20505fab4002cd4bcbdf</list_id>
             <order_by/>
             <position>2</position>
             <related_list>x_udg_q_objectiumillora.proces</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 14:47:19</sys_created_on>
-            <sys_id>a658abb41bf41810c851a64fad4bcb29</sys_id>
+            <sys_created_on>2021-03-25 09:50:43</sys_created_on>
+            <sys_id>07daf5ee1b0b20505fab4002cd4bcbe0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 14:47:19</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Procés - Default view" name="x_udg_q_proces" related_list="NULL" sys_domain="global" view="Default view">2658abb41bf41810c851a64fad4bcb28</list_id>
-            <order_by/>
-            <position>3</position>
-            <related_list>x_udg_q_m2m_processos_riscs.proces</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 14:47:19</sys_created_on>
-            <sys_id>aa58abb41bf41810c851a64fad4bcb29</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 14:47:19</sys_updated_on>
+            <sys_updated_on>2021-03-25 09:50:43</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Procés - Default view</calculated_name>
@@ -65,11 +51,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2020-05-13 14:47:19</sys_created_on>
+            <sys_created_on>2021-03-25 09:50:43</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2658abb41bf41810c851a64fad4bcb28</sys_id>
+            <sys_id>03daf5ee1b0b20505fab4002cd4bcbdf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Procés - Default view</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -78,7 +64,7 @@
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_ui_related_x_udg_q_proces_null</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2020-05-13 14:47:19</sys_updated_on>
+            <sys_updated_on>2021-03-25 09:50:43</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
