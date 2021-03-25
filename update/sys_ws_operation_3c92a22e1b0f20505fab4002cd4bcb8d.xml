@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>ProcessosCentre</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var body = '<?xml version="1.0" encoding="UTF-8"?>';
+
+    var queryParams = request.queryParams;
+    
+    if (!queryParams.centre) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre'));
+	
+	var grSgq = new GlideRecord('x_udg_q_sgq');
+	grSgq.addQuery('qid', queryParams.centre);
+	grSgq.addActiveQuery();
+	body+='<centre>';
+	body+='<propietari>'+grSgq.propietari.nom+'</propietari>';
+	
+	var grProces = new GlideRecord('x_udg_q_proces');
+    grProces.addQuery('sgq.qid', queryParams.centre);
+    grProces.addActiveQuery();
+    grProces.orderBy('nom');
+    grProces.query();
+    while (grProces.next()) {
+        body += '<proces>';
+        body += '<nom>' + grProces.nom + '</nom>';
+		body += '<propietari>' + grProces.propietari.nom + '</propietari>';
+        body += '</proces>';
+    }
+	body += '</centre>';
+    response.setContentType('application/xml');
+    var writer = response.getStreamWriter();
+    writer.writeString(GlideXMLUtil.removeInvalidChars(body));
+	
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_udg_q/sgq/processoscentre</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/processoscentre</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-03-25 12:44:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c92a22e1b0f20505fab4002cd4bcb8d</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>ProcessosCentre</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ws_operation_3c92a22e1b0f20505fab4002cd4bcb8d</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-03-25 19:06:55</sys_updated_on>
+        <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
