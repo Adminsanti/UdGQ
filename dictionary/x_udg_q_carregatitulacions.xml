@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="CarregaTitulacions" max_length="40" name="x_udg_q_carregatitulacions" sizeclass="1352" type="collection">
+    <element extends="sys_import_set_row" label="CarregaTitulacions" max_length="40" name="x_udg_q_carregatitulacions" sizeclass="1574" type="collection">
         <element attributes="import_attribute_name=Actiu" label="Actiu" max_length="40" name="u_actiu" type="integer"/>
         <element attributes="import_attribute_name=CentreCodiAtributs,edge_encryption_enabled=true" label="CentreCodiAtributs" max_length="40" name="u_centrecodiatributs" type="string"/>
         <element attributes="import_attribute_name=Codi,edge_encryption_enabled=true" label="Codi" max_length="40" name="u_codi" type="string"/>
