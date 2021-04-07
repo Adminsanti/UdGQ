@@ -48,19 +48,35 @@ ProcesSGQ.prototype = {
             grF.addQuery('sgq', llegatsaSGQ[i]);
             grF.query();
             if (!grF.next()) {
-				gs.addInfoMessage(grPare.num+" cal crear fill a sgq "+llegatsaSGQ[i]);
-				this.creaFill(grPare, llegatsaSGQ[i]); //si el fill no existeix el creem mitg buit
-			} else {
-				gs.addInfoMessage(llegatsaSGQ[i]+ " s'ha hagut de sincronitzar amb el pare");
-				if (grF.sincronitzat_amb != grPare.sys_id) {
-					grF.sincronitzat_amb = grPare.sys_id;
-					grF.update();
-				}
-			}
+                gs.addInfoMessage(grPare.num + " cal crear fill a sgq " + llegatsaSGQ[i]);
+                this.creaFill(grPare, llegatsaSGQ[i]); //si el fill no existeix el creem mitg buit
+            } else {
+                gs.addInfoMessage(llegatsaSGQ[i] + " s'ha hagut de sincronitzar amb el pare");
+                if (grF.sincronitzat_amb != grPare.sys_id) {
+                    grF.sincronitzat_amb = grPare.sys_id;
+                    grF.update();
+                }
+            }
             if (grF.next()) { //mai hauria d'entrar en aquest segon next(), vol dir que té dos fills en el mateix SGQ
                 gs.addErrorMessage('Atenció ' + grPare.nom + 'te més d\'un fill al sgq ' + llegats[i]);
             }
         }
+    },
+
+    creaFill: function(grPare, sgqFill) {
+        var grFill = new GlideRecord('x_udg_q_proces');
+        grFill.initialize();
+        grFill.pare = grPare.sys_id;
+        grFill.actiu = true;
+        grFill.tipus = 'Llegat';
+        grFill.sgq = sgqFill;
+        grFill.num = grPare.num;
+        grFill.titol = grPare.titol;
+        grFill.nom = this.nouNom(grFill);
+        grFill.propietari = grFill.sgq.propietari;
+        grFill.responsable = grFill.sgq.responsable;
+        grFill.update();
+        //this.sincronitzaFill(grPare, grFill); //En principi NO cal
     },
 
     sincroTotsFills: function(grPare) { //sincronitza tots els fills
@@ -73,25 +89,9 @@ ProcesSGQ.prototype = {
         }
     },
 
-    creaFill: function(grPare, sgqFill) {
-        var grFill = new GlideRecord('x_udg_q_proces');
-        grFill.initialize();
-        grFill.pare = grPare.sys_id;
-        grFill.actiu = true;
-        grFill.tipus = 'Llegat';
-        grFill.sgq = sgqFill;
-		grFill.num=grPare.num;
-		grFill.titol=grPare.titol;
-		grFill.nom=this.nouNom(grFill);
-		grFill.propietari = grFill.sgq.propietari;
-        grFill.responsable = grFill.sgq.responsable;
-		grFill.update();
-        //this.sincronitzaFill(grPare, grFill); //En principi NO cal
-    },
-
     sincronitzaFill: function(grPare, grFill) { //No estic segur que funcioni
         var llegats = grPare.llegata.split(",");
-        if (llegats.indexOf(grFill.sys_id) !=0) { //És a la llista de llegats
+        if (llegats.indexOf(grFill.sys_id) != 0) { //És a la llista de llegats
             grFill.actiu = true;
         } else {
             grFill.actiu = false;
@@ -104,15 +104,15 @@ ProcesSGQ.prototype = {
                 grFill.document = grPare.document;
                 grFill.versio = grPare.versio;
                 grFill.sincronitzat = true;
-				grFill.dimensiosgiqaqu=grPare.dimensiosgiqaqu;
-				grFill.criteriaudit=grPare.criteriaudit;
+                grFill.dimensiosgiqaqu = grPare.dimensiosgiqaqu;
+                grFill.criteriaudit = grPare.criteriaudit;
             }
             if (grFill.tipus == 'Adaptat') {
                 grFill.nom = grPare.nom;
                 grFill.num = grPare.num;
                 grFill.titol = grPare.titol;
-				grFill.dimensiosgiqaqu=grPare.dimensiosgiqaqu;
-				grFill.criteriaudit=grPare.criteriaudit;
+                grFill.dimensiosgiqaqu = grPare.dimensiosgiqaqu;
+                grFill.criteriaudit = grPare.criteriaudit;
                 //com dessincronitzem? ****************************************
             }
         }
@@ -125,19 +125,18 @@ ProcesSGQ.prototype = {
         var grVersio = new GlideRecord('x_udg_q_versioproces');
         grProc.get(proces_sys_id);
         grVersio.addQuery('proces', proces_sys_id);
-        grVersio.addQuery('state', "=", 2); //Versió vigent
+        grVersio.addQuery('state', 2); //Versió vigent
         grVersio.query();
         if (grVersio.next()) {
             grProc.document = grVersio.document;
-			grProc.fitxerdocument= grVersio.fitxer;
+            grProc.fitxerdocument = grVersio.fitxer;
             grProc.versio = grVersio.versio;
-			grProc.update();
-        }  else { //No hi ha versió vigent
-			grProc.document = "";
-			grProc.fitxerdocument= "";
+        } else { //No hi ha versió vigent
+            grProc.document = "";
+            grProc.fitxerdocument = "";
             grProc.versio = "";
-			grProc.update();
-		}
+        }
+        grProc.update();
     },
 
     getHTMLDocument: function(sys_id) {
@@ -159,12 +158,12 @@ ProcesSGQ.prototype = {
         var grVProc = new GlideRecord('x_udg_q_versioproces');
         grVProc.get(sys_id_versioproces);
         grVProc.document = this.getHTMLDocument(sys_id_attachment);
-		grVProc.fitxer=sys_id_attachment;
+        grVProc.fitxer = sys_id_attachment;
         grVProc.update();
         if (grVProc.state == 2 && grVProc.actiu) {
             var grProc = new GlideRecord('x_udg_q_proces');
             grProc.get(grVProc.proces);
-			grProc.fitxerdocument=sys_id_attachment;
+            grProc.fitxerdocument = sys_id_attachment;
             grProc.document = this.getHTMLDocument(sys_id_attachment);
             grProc.update();
         }
@@ -183,7 +182,7 @@ ProcesSGQ.prototype = {
         var grproc = new GlideRecord('x_udg_q_proces');
         var html = "<table border=1px><tr style=\"background-color: #b86767;\">Processos propis</tr>";
         grproc.addQuery('sgq', sgq_sys_id);
-		grproc.addQuery('actiu', 'true');
+        grproc.addQuery('actiu', 'true');
         grproc.orderBy('nom');
         grproc.query();
 
@@ -214,7 +213,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>93</sys_mod_count>
+        <sys_mod_count>95</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -222,6 +221,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-03-25 10:20:58</sys_updated_on>
+        <sys_updated_on>2021-04-07 10:22:14</sys_updated_on>
     </sys_script_include>
 </record_update>

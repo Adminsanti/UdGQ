@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description>Busca tots els attachments de versions de proces i les conecta a la versió.&#13;
+La versió vigent es sincronitza amb el seu pare automaticament.</description>
+        <flush_cache>false</flush_cache>
+        <name>VProces sincronitza attachments</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[new log ('Execució Fix Script VProces sincronitza attachments');
+var count=1;
+var grVP = new GlideRecord('x_udg_q_versioproces');
+var grAtt = new GlideRecord('sys_attachment');
+grAtt.addQuery('table_name','x_udg_q_versioproces');
+grAtt.query();
+new log('Attachments a versioproces: '+ grAtt.getRowCount());
+while (grAtt.next()) {
+  grVP.get(grAtt.table_sys_id);
+  //new log ('Vproces: '+grVP.sys_id + ' estat '+grVP.state + ' Document: '+ grVP.document + ' fitxer '+ grVP.fitxer + ' ---- attachment: ' + grAtt.sys_id);
+  if (grVP.fitxer=='') {
+    //new log('Cal escriure fitxer');
+    //Aquí hi haurà un problema quan hi hagi més d'un attachment. Quedarà registat el  el darrer.
+    new x_udg_q.ProcesSGQ().emplenaDocumentVersioProces(grVP.sys_id, grAtt.sys_id);
+  }
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-04-07 11:09:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5d390db6db9ba010a96b09b1ba96198f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>VProces sincronitza attachments</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_fix_5d390db6db9ba010a96b09b1ba96198f</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-04-07 11:32:44</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

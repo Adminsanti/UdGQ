@@ -8,40 +8,42 @@
         <http_method>GET</http_method>
         <name>ProcessosCentre</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-
-    var body = '<?xml version="1.0" encoding="UTF-8"?>';
-
+	
+    var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
     var queryParams = request.queryParams;
-    
+
     if (!queryParams.centre) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre'));
-	
-	var grSgq = new GlideRecord('x_udg_q_sgq');
-	grSgq.addQuery('qid', queryParams.centre);
-	grSgq.addActiveQuery();
-	grSgq.query();
-	grSgq.next();
-	body+='<centre>';
-	body+='<nom>'+grSgq.nom+'</nom>';
-	body+='<codi>'+grSgq.codi+'</codi>';
-	body+='<propietari>'+grSgq.propietari.nom+'</propietari>';
-	body+='<responsable>'+grSgq.responsable.nom+'</responsable>';
-	
-	var grProces = new GlideRecord('x_udg_q_proces');
+	new log ('/api/x_udg_q/sgq/processoscentre '+ queryParams.centre );
+    var grSgq = new GlideRecord('x_udg_q_sgq');
+    grSgq.addQuery('qid', queryParams.centre);
+    grSgq.addActiveQuery();
+    grSgq.query();
+    grSgq.next();
+    xml.addTag('centre')
+        .addTag('nom', grSgq.nom)
+        .addTag('codi', grSgq.codi)
+        .addTag('propietari', grSgq.propietari.nom)
+        .addTag('responsable', grSgq.responsable.nom);
+
+    var grProces = new GlideRecord('x_udg_q_proces');
     grProces.addQuery('sgq.qid', queryParams.centre);
     grProces.addActiveQuery();
-    grProces.orderBy('nom');
+    grProces.orderBy('num');
     grProces.query();
     while (grProces.next()) {
-        body += '<proces>';
-        body += '<nom>' + grProces.nom + '</nom>';
-		body += '<propietari>' + grProces.propietari.nom + '</propietari>';
-        body += '</proces>';
+        xml.addTag('proces')
+            .addTag('nom', grProces.nom)
+            .addTag('titol', grProces.titol)
+			//.addTag('num', grProces.num) //No sé perqué no funciona - es penja el CURL
+            .addTag('propietari', grProces.propietari.nom)
+            .addTag('responsable', grProces.responsable.nom)
+            .addTag('fitxerdocument', grProces.fitxerdocument)
+            .addTag('/proces');
     }
-	body += '</centre>';
+    xml.addTag('/centre');
     response.setContentType('application/xml');
     var writer = response.getStreamWriter();
-    writer.writeString(GlideXMLUtil.removeInvalidChars(body));
-	
+    writer.writeString(GlideXMLUtil.removeInvalidChars(xml.toString()));
 
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_udg_q/sgq/processoscentre</operation_uri>
@@ -51,14 +53,14 @@
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
-        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-03-25 12:44:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3c92a22e1b0f20505fab4002cd4bcb8d</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>ProcessosCentre</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -66,7 +68,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_3c92a22e1b0f20505fab4002cd4bcb8d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-03-25 19:20:51</sys_updated_on>
+        <sys_updated_on>2021-04-07 11:25:31</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

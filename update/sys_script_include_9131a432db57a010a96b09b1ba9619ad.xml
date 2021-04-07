@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_udg_q.Xml</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Xml</name>
+        <script><![CDATA[var Xml = Class.create();
+Xml.prototype = {
+    initialize: function(contingut) {
+        this.cadena = "";
+        if (contingut) this.add(contingut);
+    },
+
+    add: function(contingut) {
+        this.cadena += contingut;
+        return this; //aixó permet seguir concatenant
+    },
+
+    addTag: function(tag, contingut) {
+        if (typeof contingut !== 'undefined') // si hi és el segon parametre 'contingut'
+            this.cadena += '<' + tag + '>' + contingut + '</' + tag + '>';
+        else this.cadena += '<' + tag + '>';
+        return this; //aixó permet seguir concatenant
+    },
+
+    toString: function() {
+        return this.cadena.toString();
+    },
+
+    type: 'Xml'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-04-07 08:16:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9131a432db57a010a96b09b1ba9619ad</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Xml</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_include_9131a432db57a010a96b09b1ba9619ad</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-04-07 08:57:12</sys_updated_on>
+    </sys_script_include>
+</record_update>
