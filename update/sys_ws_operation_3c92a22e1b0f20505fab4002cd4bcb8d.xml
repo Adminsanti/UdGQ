@@ -8,12 +8,12 @@
         <http_method>GET</http_method>
         <name>ProcessosCentre</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-	
+
     var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
     var queryParams = request.queryParams;
 
     if (!queryParams.centre) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre'));
-	new log ('/api/x_udg_q/sgq/processoscentre '+ queryParams.centre );
+    new log('/api/x_udg_q/sgq/processoscentre ' + queryParams.centre);
     var grSgq = new GlideRecord('x_udg_q_sgq');
     grSgq.addQuery('qid', queryParams.centre);
     grSgq.addActiveQuery();
@@ -34,21 +34,25 @@
         xml.addTag('proces')
             .addTag('nom', grProces.nom)
             .addTag('titol', grProces.titol)
-			//.addTag('num', grProces.num) //No sé perqué no funciona - es penja el CURL
+            .addTag('num', grProces.num)
             .addTag('propietari', grProces.propietari.nom)
             .addTag('responsable', grProces.responsable.nom)
             .addTag('fitxerdocument', grProces.fitxerdocument)
+            .addTag('URLfitxer', 'https://udgdev.service-now.com/sys_attachment.do?sys_id=' + grProces.fitxerdocument)
             .addTag('/proces');
     }
     xml.addTag('/centre');
+
+    var str = GlideXMLUtil.removeInvalidChars(xml.toString()); //és necessari passar per una variable string abans d'escriure el resultat
     response.setContentType('application/xml');
+    response.setStatus(200);
     var writer = response.getStreamWriter();
-    writer.writeString(GlideXMLUtil.removeInvalidChars(xml.toString()));
+    writer.writeString(str);
 
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_udg_q/sgq/processoscentre</operation_uri>
-        <produces>application/json,application/xml,text/xml</produces>
-        <produces_customized>false</produces_customized>
+        <produces>application/xml,text/xml</produces>
+        <produces_customized>true</produces_customized>
         <relative_path>/processoscentre</relative_path>
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
@@ -60,7 +64,7 @@
         <sys_created_on>2021-03-25 12:44:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3c92a22e1b0f20505fab4002cd4bcb8d</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>95</sys_mod_count>
         <sys_name>ProcessosCentre</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -68,7 +72,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_3c92a22e1b0f20505fab4002cd4bcb8d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-07 11:25:31</sys_updated_on>
+        <sys_updated_on>2021-04-07 13:05:07</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
