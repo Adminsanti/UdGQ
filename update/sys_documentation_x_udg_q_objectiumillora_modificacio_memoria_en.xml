@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="modificacio_memoria" label="Requieres of degree memory modification" language="en" table="x_udg_q_objectiumillora">
+    <sys_documentation element="modificacio_memoria" label="Involves memory modification" language="en" table="x_udg_q_objectiumillora">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>modificacio_memoria</element>
             <help/>
             <hint>Enllaç al document d'AQU sobre modificacions de títols</hint>
-            <label>Requieres of degree memory modification</label>
+            <label>Involves memory modification</label>
             <language>en</language>
             <name>x_udg_q_objectiumillora</name>
-            <plural>Requieres of degree memory modification</plural>
+            <plural>involves memory modifications</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-10-09 10:10:41</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>00cb55253701e3004ccbd0d543990ecf</sys_id>
-            <sys_mod_count>8</sys_mod_count>
-            <sys_name>Requieres of degree memory modification</sys_name>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_name>Involves memory modification</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_objectiumillora_modificacio_memoria_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-03-18 11:01:54</sys_updated_on>
+            <sys_updated_on>2021-03-16 11:44:40</sys_updated_on>
             <url>http://www.aqu.cat/doc/doc_14313418_1.pdf</url>
             <url_target/>
         </sys_documentation>
