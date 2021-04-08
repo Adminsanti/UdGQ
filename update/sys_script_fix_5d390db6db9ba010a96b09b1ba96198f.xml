@@ -17,11 +17,11 @@ grAtt.query();
 new log('Attachments a versioproces: '+ grAtt.getRowCount());
 while (grAtt.next()) {
   grVP.get(grAtt.table_sys_id);
-  //new log ('Vproces: '+grVP.sys_id + ' estat '+grVP.state + ' Document: '+ grVP.document + ' fitxer '+ grVP.fitxer + ' ---- attachment: ' + grAtt.sys_id);
+  new log ('Vproces: '+grVP.sys_id + ' estat '+grVP.state + ' Document: '+ grVP.document + ' fitxer '+ grVP.fitxer + ' ---- attachment: ' + grAtt.sys_id);
   if (grVP.fitxer=='') {
-    //new log('Cal escriure fitxer');
+    new log('Cal escriure fitxer');
     //Aquí hi haurà un problema quan hi hagi més d'un attachment. Quedarà registat el  el darrer.
-    new x_udg_q.ProcesSGQ().emplenaDocumentVersioProces(grVP.sys_id, grAtt.sys_id);
+    new x_udg_q.ProcesSGQ().registra_i_propagaAttachmentVProces(grVP.sys_id, grAtt.sys_id);
   }
 }]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
@@ -29,7 +29,7 @@ while (grAtt.next()) {
         <sys_created_on>2021-04-07 11:09:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5d390db6db9ba010a96b09b1ba96198f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>VProces sincronitza attachments</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -37,7 +37,7 @@ while (grAtt.next()) {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_fix_5d390db6db9ba010a96b09b1ba96198f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-07 11:32:44</sys_updated_on>
+        <sys_updated_on>2021-04-08 09:11:17</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

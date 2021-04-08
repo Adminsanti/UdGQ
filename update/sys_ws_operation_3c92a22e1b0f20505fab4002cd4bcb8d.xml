@@ -31,14 +31,18 @@
     grProces.orderBy('num');
     grProces.query();
     while (grProces.next()) {
-        xml.addTag('proces')
+		var url ="";
+		if (grProces.fitxerdocument !='') 
+			url='https://udgdev.service-now.com/sys_attachment.do?sys_id=' + grProces.fitxerdocument;
+        
+		xml.addTag('proces')
             .addTag('nom', grProces.nom)
             .addTag('titol', grProces.titol)
             .addTag('num', grProces.num)
             .addTag('propietari', grProces.propietari.nom)
             .addTag('responsable', grProces.responsable.nom)
             .addTag('fitxerdocument', grProces.fitxerdocument)
-            .addTag('URLfitxer', 'https://udgdev.service-now.com/sys_attachment.do?sys_id=' + grProces.fitxerdocument)
+            .addTag('URLfitxer', url)
             .addTag('/proces');
     }
     xml.addTag('/centre');
@@ -64,7 +68,7 @@
         <sys_created_on>2021-03-25 12:44:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3c92a22e1b0f20505fab4002cd4bcb8d</sys_id>
-        <sys_mod_count>95</sys_mod_count>
+        <sys_mod_count>96</sys_mod_count>
         <sys_name>ProcessosCentre</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -72,7 +76,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_3c92a22e1b0f20505fab4002cd4bcb8d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-07 13:05:07</sys_updated_on>
+        <sys_updated_on>2021-04-08 09:16:06</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

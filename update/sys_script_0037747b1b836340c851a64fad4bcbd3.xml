@@ -34,12 +34,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	var grP = new GlideRecord('x_udg_q_proces');
-	grP.get(current.proces);
-	grP.versio=current.versio;
-	grP.document=current.document;
-	grP.fitxer=current.fitxer;
-	grP.update();
+	new x_udg_q.ProcesSGQ().registra_i_propagaAttachmentVProces(current.sys_id, current.fitxer);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -49,7 +44,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0037747b1b836340c851a64fad4bcbd3</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>VProcés canvia vigent</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -58,7 +53,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0037747b1b836340c851a64fad4bcbd3</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-07 11:14:32</sys_updated_on>
+        <sys_updated_on>2021-04-08 08:52:39</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
