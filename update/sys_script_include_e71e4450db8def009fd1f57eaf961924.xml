@@ -143,7 +143,7 @@ ProcesSGQ.prototype = {
         if (sys_id && sys_id != "") {
             var html = '<p>';
             html += '<iframe src=$viewer.do?sysparm_stack=no&amp;sysparm_sys_id=';
-            html += sys_id + '" width="100%" height="700px">';
+            html += sys_id + ' width="100%" height="700px">';
             html += '</p>';
             html += '<p>&nbsp;</p>';
             return html;
@@ -233,7 +233,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>132</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -241,6 +241,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-08 11:16:02</sys_updated_on>
+        <sys_updated_on>2021-04-08 11:56:11</sys_updated_on>
     </sys_script_include>
 </record_update>
