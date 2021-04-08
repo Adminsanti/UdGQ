@@ -142,8 +142,8 @@ ProcesSGQ.prototype = {
     getHTMLDocument: function(sys_id) {
         if (sys_id && sys_id != "") {
             var html = '<p>';
-            html += '<iframe src=\"$viewer.do?sysparm_stack=no&amp;sysparm_sys_id=';
-            html += sys_id + '\" width=\"100%\" height=\"700px\">';
+            html += '<iframe src=$viewer.do?sysparm_stack=no&amp;sysparm_sys_id=';
+            html += sys_id + '" width="100%" height="700px">';
             html += '</p>';
             html += '<p>&nbsp;</p>';
             return html;
@@ -157,8 +157,8 @@ ProcesSGQ.prototype = {
     registra_i_propagaAttachmentProces: function(sys_id_proces, sys_id_attachment, versio) {
         var grProc = new GlideRecord('x_udg_q_proces');
         grProc.get(sys_id_proces);
-        new log("registra_i_propagaAttachmentProces "+ grProc.nom);
-		grProc.fitxerdocument = sys_id_attachment;
+        new log("registra_i_propagaAttachmentProces " + grProc.nom);
+        grProc.fitxerdocument = sys_id_attachment;
         grProc.document = this.getHTMLDocument(sys_id_attachment);
         grProc.versio = versio;
         grProc.update();
@@ -186,34 +186,37 @@ ProcesSGQ.prototype = {
 
     regeneraVersioProces: function(sys_id_VersioProces) {
         var grAttachment = new GlideRecord('sys_attachment');
-		new log("UI action - Regenera versió del procés "+ sys_id_VersioProces);
+        new log("UI action - Regenera versió del procés " + sys_id_VersioProces);
         grAttachment.addQuery('table_sys_id', sys_id_VersioProces);
         grAttachment.query();
         if (grAttachment.next()) {
-			new log("UI action - Regenera versió del procés "+ sys_id_VersioProces+ " trobat attachment");
+            new log("UI action - Regenera versió del procés " + sys_id_VersioProces + " trobat attachment");
             this.registra_i_propagaAttachmentVProces(sys_id_VersioProces, grAttachment.getUniqueValue());
         }
     },
 
+
     ActualitzaMapaProcessos: function(sgq_sys_id) {
+        function tr() {
+            html += '<tr style=background-color: #f2c2c2;>';
+            html += '<td>' + grproc.nom + "</td>";
+            html += '<td>' + grproc.tipus + '</td>';
+            html += '<td>' + grproc.propietari.getDisplayValue() + '</td>';
+            html += '<td>' + grproc.responsable.getDisplayValue() + '</td>';
+            html += '<td>';
+            if (grproc.fitxerdocument != '')
+                html += '<a href="' + gs.getProperty("glide.servlet.uri") + 'sys_attachment.do?sys_id=' + grproc.fitxerdocument + '"> Fitxer </a>';
+            html += '</td>';
+            html += "</tr>";
+        }
+
         var grproc = new GlideRecord('x_udg_q_proces');
-        var html = "<table border=1px><tr style=\"background-color: #b86767;\">Processos propis</tr>";
         grproc.addQuery('sgq', sgq_sys_id);
         grproc.addQuery('actiu', 'true');
         grproc.orderBy('nom');
         grproc.query();
-
-        while (grproc.next()) {
-            html += "<tr ";
-            html += "style=\"background-color: #f2c2c2;";
-            html += "\"><td>" + grproc.nom + "</td>";
-            if (grproc.pare) {
-                html += "<td>Transversal</td>";
-            } else {
-                html += "<td>Propi</td>";
-            }
-            html += "</tr>";
-        }
+        var html = '<table border=1px>';
+        while (grproc.next()) tr();
         html += "</table>";
 
         var grsgq = new GlideRecord('x_udg_q_sgq');
@@ -230,7 +233,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>132</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -238,6 +241,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-08 09:45:21</sys_updated_on>
+        <sys_updated_on>2021-04-08 11:16:02</sys_updated_on>
     </sys_script_include>
 </record_update>

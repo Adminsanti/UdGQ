@@ -3,9 +3,11 @@
         <action_name/>
         <active>true</active>
         <client>false</client>
-        <client_script_v2/>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
         <comments/>
-        <condition>gs.hasRole('x_udg_q.ManagerUniversitat')</condition>
+        <condition/>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -27,7 +29,7 @@
         <name>Regenera Mapa Processos</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[new x_udg_q.ProcesSGQ().ActualitzaMapaProcessos(current);]]></script>
+        <script><![CDATA[new x_udg_q.ProcesSGQ().ActualitzaMapaProcessos(current.getUniqueValue());]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -39,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b76d44041b20b7005fab4002cd4bcb6f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Regenera Mapa Processos</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -48,7 +50,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_b76d44041b20b7005fab4002cd4bcb6f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2019-03-27 12:19:02</sys_updated_on>
+        <sys_updated_on>2021-04-08 10:44:56</sys_updated_on>
         <table>x_udg_q_sgq</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
