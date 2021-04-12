@@ -40,10 +40,7 @@
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual>state!=3^ORclosed_at&gt;javascript:gs.beginningOfLast12Months()^EQ</reference_qual>
-        <reference_qual_condition table="x_udg_q_acciomillora">state!=3^ORclosed_at&gt;javascript:gs.beginningOfLast12Months()^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="3"/>
-            <item endquery="false" field="closed_at" goto="false" newquery="false" operator="&gt;" or="true" value="javascript:gs.beginningOfLast12Months()"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
@@ -67,7 +64,7 @@
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

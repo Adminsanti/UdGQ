@@ -6,58 +6,78 @@
         <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>GET</http_method>
-        <name>PMVigent</name>
+        <name>Pm</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
     var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
     var queryParams = request.queryParams;
+    new log('/api/x_udg_q/sgq/pm ' + queryParams.sgq + " - " + queryParams.centre);
+    //Els paràmetres obligatoris són centre (amb el codi dels atributs) o sgq (amb el nom del sgq), un o els dos si lliguen.
+    if (!queryParams.centre && !queryParams.sgq) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre o sgq'));
 
-    if (!queryParams.centre) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre'));
-    new log('/api/x_udg_q/sgq/pmvigent ' + queryParams.centre);
     var grSgq = new GlideRecord('x_udg_q_sgq');
-    grSgq.get('qid', queryParams.centre);
-	/*
-    xml.addTag('pm')
-        .addTag('nom', grSgq.nom)
-        .addTag('codi', grSgq.codi)
-        .addTag('propietari', grSgq.propietari.nom)
-        .addTag('responsable', grSgq.responsable.nom);
+    if (queryParams.centre && queryParams.centre != '') grSgq.addQuery('qid', queryParams.centre);
+    if (queryParams.sgq && queryParams.sgq != '') grSgq.addQuery('codi', queryParams.sgq);
+    grSgq.addActiveQuery();
+    grSgq.query();
+    if (grSgq.next()) {
+        var grO = new GlideRecord('x_udg_q_objectiumillora');
+        grO.addQuery('sgq', grSgq.getUniqueValue())
+            .addOrCondition('compartit', 'CONTAINS', grSgq.getUniqueValue());
+        grO.addQuery('state', '!=', -5);
+        grO.addQuery("tancament!=-5^ORtancamentISEMPTY"); //Elimina els esborrats
+        grO.addQuery('state', 2); //Només en curs, mentre no tinguem un parametre per indicar una altra cosa
+        grO.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
+        grO.query();
+        xml.addTag('pm');
+        xml.addTag('sgq', grSgq.codi);
+        xml.addTag('nom', grSgq.nom);
+        while (grO.next()) {
+            xml.addTag('objectiu');
+            xml.addTag('numero', grO.number)
+                .addTag('sgq', grO.sgq.codi)
+                .addTag('estat', grO.state.getDisplayValue())
+                .addTag('descripciocurta', grO.short_description)
+                .addTag('responsable', grO.responsable)
+                .addTag('prioritat', grO.priority)
+                .addTag('dataprevista', grO.due_date.substring(0, 10));
 
-    var grProces = new GlideRecord('x_udg_q_proces');
-    grProces.addQuery('sgq.qid', queryParams.centre);
-    grProces.addActiveQuery();
-    grProces.orderBy('num');
-    grProces.query();
-    while (grProces.next()) {
-        var url = "";
-        if (grProces.fitxerdocument != '')
-            url = 'https://udgdev.service-now.com/sys_attachment.do?sys_id=' + grProces.fitxerdocument;
-
-        xml.addTag('proces')
-            .addTag('nom', grProces.nom)
-            .addTag('titol', grProces.titol)
-            .addTag('num', grProces.num)
-            .addTag('propietari', grProces.propietari.nom)
-            .addTag('responsable', grProces.responsable.nom)
-            .addTag('fitxerdocument', grProces.fitxerdocument)
-            .addTag('URLfitxer', url)
-            .addTag('/proces');
+            var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
+            grM2m.addQuery('objectiu_millora', grO.getUniqueValue());
+            grM2m.orderBy('order');
+            grM2m.orderBy('accio_millora.number');
+            grM2m.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
+            grM2m.query();
+            while (grM2m.next()) {
+                xml.addTag('accio');
+                var grA = new GlideRecord('x_udg_q_acciomillora');
+                grA.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
+                grA.get(grM2m.accio_millora);
+                xml.addTag('numero', grA.number)
+                    .addTag('descripciocurta', grA.short_description)
+					.addTag('estat', grA.state.getDisplayValue())
+				.addTag('execucio', grA.percentatge+'%')
+				;
+                xml.addTag('/accio');
+            }
+            xml.addTag('/objectiu');
+        }
+        xml.addTag('/pm');
+    } else {
+        xml.add('Aquest SGQ no existeix');
     }
-    xml.addTag('/pm');
-	
-	*/
 
-    var str = GlideXMLUtil.removeInvalidChars(xml.toString()); //és necessari passar per una variable string abans d'escriure el resultat
+    var str = GlideXMLUtil.removeInvalidChars(xml.toString()); //cal passar el resultat abans per una variable string
     response.setContentType('application/xml');
     response.setStatus(200);
     var writer = response.getStreamWriter();
     writer.writeString(str);
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_udg_q/sgq/pmvigent</operation_uri>
-        <produces>application/json,application/xml,text/xml</produces>
-        <produces_customized>false</produces_customized>
-        <relative_path>/pmvigent</relative_path>
+        <operation_uri>/api/x_udg_q/sgq/pm</operation_uri>
+        <produces>application/xml,text/xml</produces>
+        <produces_customized>true</produces_customized>
+        <relative_path>/pm</relative_path>
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
@@ -68,15 +88,15 @@
         <sys_created_on>2021-04-08 10:32:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7d5a8e8fdb136410a96b09b1ba961948</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>PMVigent</sys_name>
+        <sys_mod_count>74</sys_mod_count>
+        <sys_name>Pm</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_7d5a8e8fdb136410a96b09b1ba961948</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-08 10:40:49</sys_updated_on>
+        <sys_updated_on>2021-04-12 10:23:34</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
