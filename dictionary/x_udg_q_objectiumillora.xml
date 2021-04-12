@@ -21,7 +21,7 @@
             <choice/>
         </element>
         <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" hint="Sistema de Gestió de la Qualitat" label="QMS" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
-        <element choice="1" label="Substandard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" reference_qual="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" reference_qual_condition="javascript&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" type="reference">
+        <element choice="1" label="Substandard" max_length="32" name="subestandard" reference="x_udg_q_subestandard" reference_qual="javascript:&quot;sgqsLIKE&quot;+current.sgq+&quot;^ORsgqsISEMPTY&quot;" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
         <element choice="1" label="Close code" max_length="40" name="tancament" type="integer">
