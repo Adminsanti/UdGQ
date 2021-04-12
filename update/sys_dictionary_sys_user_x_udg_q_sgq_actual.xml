@@ -17,11 +17,11 @@
         <column_label>SGQ Actual</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript: current.x_udg_q.sgq_visibles.toString().split(",")[0];</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
-        <dependent>x_udg_q_sgq_visibles</dependent>
-        <dependent_on_field>x_udg_q_sgq_visibles</dependent_on_field>
+        <dependent/>
+        <dependent_on_field/>
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
@@ -44,7 +44,7 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>javascript:"sys_idIN"+current.x_udg_q_sgq_visibles+"^actiu=true"</reference_qual>
+        <reference_qual>javascript:"actiu=true^sys_idIN"+current.x_udg_q_sgq_visibles</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
@@ -55,7 +55,7 @@
         <sys_created_on>2018-09-07 11:16:22</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4ef727cfdbe82b80ccd95bd05b9619c9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>SGQ Actual</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_sys_user_x_udg_q_sgq_actual</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-10 12:06:00</sys_updated_on>
+        <sys_updated_on>2021-04-12 14:59:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
