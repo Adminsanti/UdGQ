@@ -6,7 +6,7 @@
         <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>GET</http_method>
-        <name>ProcessosSgq</name>
+        <name>vsma</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
     var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
@@ -20,32 +20,24 @@
     if (queryParams.sgq && queryParams.sgq != '') grSgq.addQuery('codi', queryParams.sgq);
     grSgq.addActiveQuery();
     grSgq.query();
+	var ordre=1;
     xml.addTag('sgq');
     if (grSgq.next()) {
         xml.addTag('nom', grSgq.nom)
-            .addTag('codi', grSgq.codi)
-            .addTag('propietari', grSgq.propietari.nom)
-            .addTag('responsable', grSgq.responsable.nom);
+            .addTag('codi', grSgq.codi);
 
-        var grProces = new GlideRecord('x_udg_q_proces');
-        grProces.addQuery('sgq.qid', queryParams.centre);
-        grProces.addActiveQuery();
-        grProces.orderBy('num');
-        grProces.query();
-        while (grProces.next()) {
-            var url = "";
-            if (grProces.fitxerdocument != '')
-                url = gs.getProperty("glide.servlet.uri") + '/sys_attachment.do?sys_id=' + grProces.fitxerdocument;
-
+        var grCai = new GlideRecord('x_udg_q_cai');
+        grCai.addQuery('sgq', grSgq.getUniqueValue());
+        grCai.addActiveQuery();
+        grCai.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
+        //grCai.orderBy('num');
+        grCai.query();
+        while (grCai.next()) {
             xml.addTag('proces')
-                .addTag('nom', grProces.nom)
-                .addTag('titol', grProces.titol)
-                //.addTag('num', grProces.num)
-				.addTag('codi', "P"+grProces.num+grProces.sgq.codi)
-                .addTag('propietari', grProces.propietari.nom)
-                .addTag('responsable', grProces.responsable.nom)
-                //.addTag('fitxerdocument', grProces.fitxerdocument)
-                .addTag('URLfitxer', url)
+                .addTag('tipus', 'Acreditació')
+                .addTag('estat', grCai.state.getDisplayValue())
+                .addTag('titulacions', grCai.titulacions.getDisplayValue())
+				.addTag('ordre',ordre++)
                 .addTag('/proces');
         }
     } else {
@@ -60,10 +52,10 @@
     writer.writeString(str);
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_udg_q/sgq/processosSgq</operation_uri>
+        <operation_uri>/api/x_udg_q/sgq/vsma</operation_uri>
         <produces>application/xml,text/xml</produces>
         <produces_customized>true</produces_customized>
-        <relative_path>/processosSgq</relative_path>
+        <relative_path>/vsma</relative_path>
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
@@ -71,18 +63,18 @@
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2021-03-25 12:44:29</sys_created_on>
+        <sys_created_on>2021-04-15 08:45:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>3c92a22e1b0f20505fab4002cd4bcb8d</sys_id>
-        <sys_mod_count>109</sys_mod_count>
-        <sys_name>ProcessosSgq</sys_name>
+        <sys_id>42657dd1dbebe450a96b09b1ba9619f7</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>vsma</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ws_operation_3c92a22e1b0f20505fab4002cd4bcb8d</sys_update_name>
+        <sys_update_name>sys_ws_operation_42657dd1dbebe450a96b09b1ba9619f7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-15 07:38:18</sys_updated_on>
+        <sys_updated_on>2021-04-16 10:18:48</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

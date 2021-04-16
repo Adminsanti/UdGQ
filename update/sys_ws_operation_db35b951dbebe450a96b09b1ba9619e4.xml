@@ -6,7 +6,7 @@
         <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>GET</http_method>
-        <name>ProcessosSgq</name>
+        <name>Sgq</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
     var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
@@ -21,33 +21,26 @@
     grSgq.addActiveQuery();
     grSgq.query();
     xml.addTag('sgq');
+    var ordre = 2;
     if (grSgq.next()) {
         xml.addTag('nom', grSgq.nom)
-            .addTag('codi', grSgq.codi)
-            .addTag('propietari', grSgq.propietari.nom)
-            .addTag('responsable', grSgq.responsable.nom);
+            .addTag('codi', grSgq.codi);
 
-        var grProces = new GlideRecord('x_udg_q_proces');
-        grProces.addQuery('sgq.qid', queryParams.centre);
-        grProces.addActiveQuery();
-        grProces.orderBy('num');
-        grProces.query();
-        while (grProces.next()) {
-            var url = "";
-            if (grProces.fitxerdocument != '')
-                url = gs.getProperty("glide.servlet.uri") + '/sys_attachment.do?sys_id=' + grProces.fitxerdocument;
+        xml.addTag('politica')
+            .addTag('nom', "Política de qualitat de la " + grSgq.nom)
+            .addTag('ordre', ordre--)
+            .addTag('html', grSgq.politica)
+            .addTag('/politica');
 
-            xml.addTag('proces')
-                .addTag('nom', grProces.nom)
-                .addTag('titol', grProces.titol)
-                //.addTag('num', grProces.num)
-				.addTag('codi', "P"+grProces.num+grProces.sgq.codi)
-                .addTag('propietari', grProces.propietari.nom)
-                .addTag('responsable', grProces.responsable.nom)
-                //.addTag('fitxerdocument', grProces.fitxerdocument)
-                .addTag('URLfitxer', url)
-                .addTag('/proces');
-        }
+
+        grSgq = new GlideRecord('x_udg_q_sgq');
+        grSgq.get('4baaafcddba8eb401f06adc3ca9619d8');
+        xml.addTag('politica')
+            .addTag('nom', "Política de qualitat de la " + grSgq.nom)
+            .addTag('ordre', ordre++)
+            .addTag('html', grSgq.politica)
+            .addTag('/politica');
+
     } else {
         xml.add('Aquest SGQ no existeix');
     }
@@ -60,10 +53,10 @@
     writer.writeString(str);
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_udg_q/sgq/processosSgq</operation_uri>
+        <operation_uri>/api/x_udg_q/sgq/sgq</operation_uri>
         <produces>application/xml,text/xml</produces>
         <produces_customized>true</produces_customized>
-        <relative_path>/processosSgq</relative_path>
+        <relative_path>/sgq</relative_path>
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
@@ -71,18 +64,18 @@
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2021-03-25 12:44:29</sys_created_on>
+        <sys_created_on>2021-04-15 08:45:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>3c92a22e1b0f20505fab4002cd4bcb8d</sys_id>
-        <sys_mod_count>109</sys_mod_count>
-        <sys_name>ProcessosSgq</sys_name>
+        <sys_id>db35b951dbebe450a96b09b1ba9619e4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Sgq</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ws_operation_3c92a22e1b0f20505fab4002cd4bcb8d</sys_update_name>
+        <sys_update_name>sys_ws_operation_db35b951dbebe450a96b09b1ba9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-15 07:38:18</sys_updated_on>
+        <sys_updated_on>2021-04-16 10:37:08</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
