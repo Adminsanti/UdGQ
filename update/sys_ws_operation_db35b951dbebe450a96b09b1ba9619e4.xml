@@ -7,52 +7,54 @@
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>GET</http_method>
         <name>Sgq</name>
-        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-
-    var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
-    var queryParams = request.queryParams;
-
-    //Els paràmetres poden ser centre (amb el codi dels atributs) o sgq (amb el nom del sgq), un dels dos.
-    if (!queryParams.centre && !queryParams.sgq) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre o sgq'));
-    new log('/api/x_udg_q/sgq/processosSGQ ' + queryParams.centre + queryParams.sgq);
-    var grSgq = new GlideRecord('x_udg_q_sgq');
-    if (queryParams.centre && queryParams.centre != '') grSgq.addQuery('qid', queryParams.centre);
-    if (queryParams.sgq && queryParams.sgq != '') grSgq.addQuery('codi', queryParams.sgq);
-    grSgq.addActiveQuery();
-    grSgq.query();
-    xml.addTag('sgq');
-    var ordre = 2;
-    if (grSgq.next()) {
-        xml.addTag('nom', grSgq.nom)
-            .addTag('codi', grSgq.codi);
-
-        xml.addTag('politica')
-            .addTag('nom', "Política de qualitat de la " + grSgq.nom)
-            .addTag('ordre', ordre--)
-            .addTag('html', grSgq.politica)
-            .addTag('/politica');
-
-
-        grSgq = new GlideRecord('x_udg_q_sgq');
-        grSgq.get('4baaafcddba8eb401f06adc3ca9619d8');
-        xml.addTag('politica')
-            .addTag('nom', "Política de qualitat de la " + grSgq.nom)
-            .addTag('ordre', ordre++)
-            .addTag('html', grSgq.politica)
-            .addTag('/politica');
-
-    } else {
-        xml.add('Aquest SGQ no existeix');
-    }
-    xml.addTag('/sgq');
-
-    var str = GlideXMLUtil.removeInvalidChars(xml.toString()); //cal passar el resultat abans per una variable string
-    response.setContentType('application/xml');
-    response.setStatus(200);
-    var writer = response.getStreamWriter();
-    writer.writeString(str);
-
-})(request, response);]]></operation_script>
+        <operation_script>(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {&#13;
+&#13;
+    var xml = new x_udg_q.Xml('&lt;?xml version="1.0" encoding="UTF-8"?&gt;');&#13;
+    var queryParams = request.queryParams;&#13;
+&#13;
+    //Els paràmetres poden ser centre (amb el codi dels atributs) o sgq (amb el nom del sgq), un dels dos.&#13;
+    if (!queryParams.centre &amp;&amp; !queryParams.sgq) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre o sgq'));&#13;
+    new log('/api/x_udg_q/sgq/processosSGQ ' + queryParams.centre + queryParams.sgq);&#13;
+    var grSgq = new GlideRecord('x_udg_q_sgq');&#13;
+    if (queryParams.centre &amp;&amp; queryParams.centre != '') grSgq.addQuery('qid', queryParams.centre);&#13;
+    if (queryParams.sgq &amp;&amp; queryParams.sgq != '') grSgq.addQuery('codi', queryParams.sgq);&#13;
+    grSgq.addActiveQuery();&#13;
+    grSgq.query();&#13;
+    xml.addTag('sgq');&#13;
+    var ordre = 2;&#13;
+    if (grSgq.next()) {&#13;
+        xml.addTag('nom', grSgq.nom)&#13;
+            .addTag('codi', grSgq.codi);&#13;
+&#13;
+        xml.addTag('politica')&#13;
+            .addTag('nom', "Política de qualitat de la " + grSgq.nom)&#13;
+            .addTag('ordre', ordre--)&#13;
+            .addTag('html', "&lt;![CDATA[" + grSgq.politica + "]]&gt;")&#13;
+            .addTag('/politica');&#13;
+&#13;
+&#13;
+        if (grSgq.getUniqueValue() != '4baaafcddba8eb401f06adc3ca9619d8') {&#13;
+            grSgq = new GlideRecord('x_udg_q_sgq');&#13;
+            grSgq.get('4baaafcddba8eb401f06adc3ca9619d8');&#13;
+            xml.addTag('politica')&#13;
+                .addTag('nom', "Política de qualitat de la " + grSgq.nom)&#13;
+                .addTag('ordre', ordre++)&#13;
+                .addTag('html', "&lt;![CDATA[" + grSgq.politica + "]]&gt;")&#13;
+                .addTag('/politica');&#13;
+        }&#13;
+&#13;
+    } else {&#13;
+        xml.add('Aquest SGQ no existeix');&#13;
+    }&#13;
+    xml.addTag('/sgq');&#13;
+&#13;
+    var str = GlideXMLUtil.removeInvalidChars(xml.toString()); //cal passar el resultat abans per una variable string&#13;
+    response.setContentType('application/xml');&#13;
+    response.setStatus(200);&#13;
+    var writer = response.getStreamWriter();&#13;
+    writer.writeString(str);&#13;
+&#13;
+})(request, response);</operation_script>
         <operation_uri>/api/x_udg_q/sgq/sgq</operation_uri>
         <produces>application/xml,text/xml</produces>
         <produces_customized>true</produces_customized>
@@ -67,7 +69,7 @@
         <sys_created_on>2021-04-15 08:45:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>db35b951dbebe450a96b09b1ba9619e4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Sgq</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -75,7 +77,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_db35b951dbebe450a96b09b1ba9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-16 10:37:08</sys_updated_on>
+        <sys_updated_on>2021-04-21 07:30:37</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

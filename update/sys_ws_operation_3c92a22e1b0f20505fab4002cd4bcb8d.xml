@@ -28,7 +28,8 @@
             .addTag('responsable', grSgq.responsable.nom);
 
         var grProces = new GlideRecord('x_udg_q_proces');
-        grProces.addQuery('sgq.qid', queryParams.centre);
+        if (queryParams.centre && queryParams.centre != '') grProces.addQuery('sgq.qid', queryParams.centre);
+		if (queryParams.sgq && queryParams.sgq != '') grProces.addQuery('sgq.codi', queryParams.sgq);
         grProces.addActiveQuery();
         grProces.orderBy('num');
         grProces.query();
@@ -74,7 +75,7 @@
         <sys_created_on>2021-03-25 12:44:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3c92a22e1b0f20505fab4002cd4bcb8d</sys_id>
-        <sys_mod_count>109</sys_mod_count>
+        <sys_mod_count>111</sys_mod_count>
         <sys_name>ProcessosSgq</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -82,7 +83,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_3c92a22e1b0f20505fab4002cd4bcb8d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-15 07:38:18</sys_updated_on>
+        <sys_updated_on>2021-04-21 07:59:04</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
