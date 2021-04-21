@@ -46,7 +46,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>number,short_description,state,percentatge,priority,responsable,assigned_to,sgq</field_list>
-        <filter table="x_udg_q_acciomillora">state!=-5^RLQUERYx_udg_q_m2m_accions_objectius.accio_millora,=00,m2m^objectiu_millora.state!=-5^ENDRLQUERY<item display_value="Esborrany" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
+        <filter table="x_udg_q_acciomillora">state!=-5^RLQUERYx_udg_q_m2m_accions_objectius.accio_millora,=00,m2m^objectiu_millora.state!=-5^ENDRLQUERY<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="-5"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>

@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="x_udg_q_objectiumillora" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Objectiu Millora - Default view" name="x_udg_q_objectiumillora" related_list="NULL" sys_domain="global" view="Default view">6a3c0c23db3167009fd1f57eaf9619aa</list_id>
+            <list_id display_value="Improvement Objective - Default view" name="x_udg_q_objectiumillora" related_list="NULL" sys_domain="global" view="Default view">6a3c0c23db3167009fd1f57eaf9619aa</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_udg_q_m2m_accions_objectius.objectiu_millora</related_list>
@@ -15,7 +15,7 @@
             <sys_updated_on>2018-11-21 16:18:11</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Objectiu Millora - Default view</calculated_name>
+            <calculated_name>Improvement Objective - Default view</calculated_name>
             <filter/>
             <name>x_udg_q_objectiumillora</name>
             <order_by/>

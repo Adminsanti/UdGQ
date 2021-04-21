@@ -47,7 +47,7 @@
         <field/>
         <field_list>number,caller_id,short_description,business_service,u_in_progress_by,priority,state,assignment_group,assigned_to,sys_updated_on,sys_updated_by</field_list>
         <filter table="x_udg_q_acciomillora">due_dateRELATIVELT@minute@ago@0^state=2<item endquery="false" field="due_date" goto="false" newquery="false" operator="RELATIVE" or="false" value="LT@minute@ago@0"/>
-            <item display_value="En curs" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
