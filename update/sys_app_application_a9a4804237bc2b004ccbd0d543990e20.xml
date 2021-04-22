@@ -7,7 +7,7 @@
         <hint/>
         <name>VSMA</name>
         <order>1100</order>
-        <roles>x_udg_q.Manager,x_udg_q.Observador,x_udg_q.User,x_udg_q.ManagerUniversitat,x_udg_q.Admin</roles>
+        <roles>x_udg_q.ManagerUniversitat,x_udg_q.Admin</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-28 06:51:24</sys_created_on>
@@ -15,8 +15,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a9a4804237bc2b004ccbd0d543990e20</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Processos SGQ</sys_name>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Estàndards, criteris i dimensions</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -24,8 +24,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_app_application_a9a4804237bc2b004ccbd0d543990e20</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-07-20 11:51:19</sys_updated_on>
-        <title>Processos SGQ</title>
+        <sys_updated_on>2021-04-22 10:02:26</sys_updated_on>
+        <title>Estàndards, criteris i dimensions</title>
         <view_name/>
     </sys_app_application>
 </record_update>
