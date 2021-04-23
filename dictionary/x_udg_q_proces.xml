@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="no_attachment=false,use_document_viewer=true" audit="true" label="Procés" max_length="40" name="x_udg_q_proces" sizeclass="510" type="collection">
-        <element default="true" label="Active" max_length="40" name="actiu" read_only="true" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="actiu" type="boolean"/>
         <element choice="1" label="Criteri AUDIT" max_length="32" name="criteriaudit" reference="x_udg_q_criteriaudit" type="reference">
             <choice/>
         </element>
