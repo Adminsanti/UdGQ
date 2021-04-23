@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="" label="Titulació" language="en" table="x_udg_q_titulacio">
+    <sys_documentation element="" label="Degree" language="en" table="x_udg_q_titulacio">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element/>
             <help/>
             <hint/>
-            <label>Titulació</label>
+            <label>Degree</label>
             <language>en</language>
             <name>x_udg_q_titulacio</name>
-            <plural>Titulacions</plural>
+            <plural>Degrees</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
             <sys_created_on>2018-09-06 07:19:23</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>c918f6fe3714eb401acdf01643990e9a</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Titulació</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Degree</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
             <sys_update_name>sys_documentation_x_udg_q_titulacio__en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2018-09-06 07:21:42</sys_updated_on>
+            <sys_updated_on>2021-04-23 10:57:01</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

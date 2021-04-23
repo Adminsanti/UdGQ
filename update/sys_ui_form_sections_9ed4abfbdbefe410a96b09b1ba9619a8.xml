@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="9ed4abfbdbefe410a96b09b1ba9619a8" sys_domain="global" table="x_udg_q_politica" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-04-23 11:17:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d2d4abfbdbefe410a96b09b1ba9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_politica" name="x_udg_q_politica" sys_domain="global" view="Default view">9ed4abfbdbefe410a96b09b1ba9619a8</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_politica" sys_domain="global" view="Default view">d26edfb3dbefe410a96b09b1ba9619ff</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-04-23 11:17:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-04-23 11:17:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9ed4ebfbdbefe410a96b09b1ba9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_politica" name="x_udg_q_politica" sys_domain="global" view="Default view">9ed4abfbdbefe410a96b09b1ba9619a8</sys_ui_form>
+            <sys_ui_section caption="Contingut" display_value="Contingut" name="x_udg_q_politica" sys_domain="global" view="Default view">5ed4abfbdbefe410a96b09b1ba9619a6</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-04-23 11:17:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-04-23 11:17:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>96d4ebfbdbefe410a96b09b1ba9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_udg_q_politica" name="x_udg_q_politica" sys_domain="global" view="Default view">9ed4abfbdbefe410a96b09b1ba9619a8</sys_ui_form>
+            <sys_ui_section caption="Historial" display_value="Historial" name="x_udg_q_politica" sys_domain="global" view="Default view">5ed4abfbdbefe410a96b09b1ba9619a7</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-04-23 11:17:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_udg_q_politica</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-04-23 11:17:35</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9ed4abfbdbefe410a96b09b1ba9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_udg_q_politica</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_ui_form_sections_9ed4abfbdbefe410a96b09b1ba9619a8</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-04-23 11:17:35</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
