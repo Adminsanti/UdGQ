@@ -29,8 +29,8 @@
 
         var grProces = new GlideRecord('x_udg_q_proces');
         if (queryParams.centre && queryParams.centre != '') grProces.addQuery('sgq.qid', queryParams.centre);
-		if (queryParams.sgq && queryParams.sgq != '') grProces.addQuery('sgq.codi', queryParams.sgq);
-		grProces.addQuery('actiu', true);
+        if (queryParams.sgq && queryParams.sgq != '') grProces.addQuery('sgq.codi', queryParams.sgq);
+        grProces.addQuery('actiu', true);
         grProces.orderBy('num');
         grProces.query();
         while (grProces.next()) {
@@ -41,13 +41,20 @@
             xml.addTag('proces')
                 .addTag('nom', grProces.nom)
                 .addTag('titol', grProces.titol)
-                //.addTag('num', grProces.num)
-				.addTag('codi', "P"+grProces.num+grProces.sgq.codi)
+                .addTag('codi', "P" + grProces.num + grProces.sgq.codi)
                 .addTag('propietari', grProces.propietari.nom)
-                .addTag('responsable', grProces.responsable.nom)
-                //.addTag('fitxerdocument', grProces.fitxerdocument)
-                .addTag('URLfitxer', url)
-                .addTag('/proces');
+                .addTag('responsable', grProces.responsable.nom);
+
+
+            if (grProces.fitxerdocument && grProces.fitxerdocument != "") {
+                xml.addTag('URLfitxer', url)
+                    .addTag('fitxer')
+                    .addTag('Nom', grProces.nom)
+                    .addTag('ID', grProces.fitxerdocument)
+                    .addTag('/fitxer');
+            }
+
+            xml.addTag('/proces');
         }
     } else {
         xml.add('Aquest SGQ no existeix');
@@ -75,7 +82,7 @@
         <sys_created_on>2021-03-25 12:44:29</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3c92a22e1b0f20505fab4002cd4bcb8d</sys_id>
-        <sys_mod_count>115</sys_mod_count>
+        <sys_mod_count>118</sys_mod_count>
         <sys_name>ProcessosSgq</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -83,7 +90,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_3c92a22e1b0f20505fab4002cd4bcb8d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-26 09:00:39</sys_updated_on>
+        <sys_updated_on>2021-04-26 11:42:49</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

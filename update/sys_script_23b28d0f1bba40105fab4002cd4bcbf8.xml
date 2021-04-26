@@ -2,10 +2,10 @@
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
         <access>package_private</access>
-        <action_delete>true</action_delete>
+        <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>true</action_update>
+        <action_update>false</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -30,11 +30,11 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-
-	//Aquest és lúltim document que s'ha pujat i el que serà el document del procés.
-	var sys_id_versioproces = current.table_sys_id;
-	var sys_id_attachment = current.sys_id;
-    new x_udg_q.ProcesSGQ().emplenaDocumentVersioProces(sys_id_versioproces, sys_id_attachment);
+	
+	var nounom = new x_udg_q.ProcesSGQ().getNomFitxer_perIdVProces(current.table_sys_id);
+	new log("Pujant fitxer versió procés - "+current.filename+" - renombrant a  - "+nounom);
+	current.setValue('file_name',nounom);
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -43,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>23b28d0f1bba40105fab4002cd4bcbf8</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>VProcés - Entra un nou attachment </sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -52,9 +52,9 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_23b28d0f1bba40105fab4002cd4bcbf8</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-09 10:04:41</sys_updated_on>
+        <sys_updated_on>2021-04-26 16:34:50</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=23b28d0f1bba40105fab4002cd4bcbf8"/>
     <sys_translated_text action="INSERT_OR_UPDATE">
