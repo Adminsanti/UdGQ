@@ -4,8 +4,8 @@
         <element label="Compartida" max_length="4000" name="compartida" reference="x_udg_q_sgq" type="glide_list"/>
         <element label="Fitxer" max_length="40" name="fitxer" type="file_attachment"/>
         <element label="Html" max_length="8000" name="html" type="html"/>
-        <element label="Nom" mandatory="true" max_length="40" name="nom" type="string"/>
-        <element label="Ordre" max_length="40" name="order" type="integer"/>
+        <element display="true" label="Nom" mandatory="true" max_length="40" name="nom" type="string"/>
+        <element label="Ordre" mandatory="true" max_length="40" name="order" type="integer"/>
         <element default="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();" dynamic_default_value="5fff67561bce0410c851a64fad4bcb0a" label="SGQ" mandatory="true" max_length="32" name="sgq" read_only="true" reference="x_udg_q_sgq" type="reference" use_dynamic_default="true"/>
         <index name="index">
             <element name="sgq"/>
