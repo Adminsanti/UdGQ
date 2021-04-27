@@ -28,11 +28,12 @@
         var grPol = new GlideRecord('x_udg_q_politica');&#13;
         grPol.addQuery('active', true);&#13;
         grPol.addEncodedQuery("sgq=" + grSgq.getUniqueValue() + "^ORcompartidaLIKE" + grSgq.getUniqueValue());&#13;
+		grPol.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!&#13;
         grPol.query();&#13;
         while (grPol.next()) {&#13;
             xml.addTag('politica')&#13;
                 .addTag('nom', grPol.nom)&#13;
-                .addTag('ordre', grPol.ordre)&#13;
+                .addTag('ordre', grPol.order)&#13;
                 .addTag('html', "&lt;![CDATA[" + grPol.html + "]]&gt;")&#13;
                 .addTag('/politica');&#13;
         }&#13;
@@ -62,7 +63,7 @@
         <sys_created_on>2021-04-15 08:45:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>db35b951dbebe450a96b09b1ba9619e4</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Sgq</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -70,7 +71,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_db35b951dbebe450a96b09b1ba9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-27 08:46:58</sys_updated_on>
+        <sys_updated_on>2021-04-27 09:05:10</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
