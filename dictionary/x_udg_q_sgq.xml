@@ -7,7 +7,7 @@
         <element label="Mapa" max_length="8000" name="mapa" read_only="true" type="html"/>
         <element attributes="no_truncate=true" label="Nom" mandatory="true" max_length="140" name="nom" type="string"/>
         <element label="Notifica novetats" max_length="4000" name="notifica_novetats" reference="x_udg_q_funcio" reference_qual="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^EQ" reference_qual_condition="sgqDYNAMIC5fff67561bce0410c851a64fad4bcb0a^EQ" type="glide_list"/>
-        <element label="Política" max_length="20000" name="politica" type="html"/>
+        <element active="false" label="Política" max_length="20000" name="politica" type="html"/>
         <element label="Propietari" max_length="32" name="propietari" reference="x_udg_q_funcio" reference_qual="activa=true^sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" reference_qual_condition="activa=true^sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" type="reference" use_dependent_field="true"/>
         <element label="QID" max_length="40" name="qid" type="string"/>
         <element label="Responsable" max_length="32" name="responsable" reference="x_udg_q_funcio" reference_qual="activa=true^sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" reference_qual_condition="activa=true^sgq=javascript: gs.getPreference('qualitat.sgqActual','');^EQ" type="reference"/>
