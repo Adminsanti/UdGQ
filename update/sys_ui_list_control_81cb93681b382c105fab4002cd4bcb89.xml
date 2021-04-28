@@ -9,7 +9,7 @@
         <filter_condition/>
         <filter_roles/>
         <hierarchical_lists>false</hierarchical_lists>
-        <label>Acreditacions sincronitzades</label>
+        <label>Acreditacions del SGQ</label>
         <link_condition/>
         <link_roles/>
         <list_edit_insert_row>false</list_edit_insert_row>
@@ -38,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81cb93681b382c105fab4002cd4bcb89</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_udg_q_acreditacio</sys_name>
         <sys_overrides display_value="">global</sys_overrides>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -47,6 +47,6 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_list_control_81cb93681b382c105fab4002cd4bcb89</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-11-27 15:25:12</sys_updated_on>
+        <sys_updated_on>2021-04-28 10:35:27</sys_updated_on>
     </sys_ui_list_control>
 </record_update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="DELETE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_udg_q_cai</basic_apply_to>
+        <basic_query_from>x_udg_q_acreditacio</basic_query_from>
+        <insert_callback/>
+        <name>Acreditacions Incloses del SGQ</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	current.addQuery('sgq', parent.sgq);
+	current.addQuery('cai', parent.sys_id);
+
+})(current, parent);]]></query_with>
+        <reference_field>assigned_to</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-04-28 12:54:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>30caa5e9dbfb2410a96b09b1ba961934</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Acreditacions Incloses del SGQ</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_relationship_30caa5e9dbfb2410a96b09b1ba961934</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-04-28 12:58:35</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="DELETE" query="documentkey=30caa5e9dbfb2410a96b09b1ba961934"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_relationship_30caa5e9dbfb2410a96b09b1ba961934</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;x_udg_q_cai&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;x_udg_q_acreditacio&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;Acreditacions Incloses del SGQ&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+
+	current.addQuery('sgq', parent.sgq);
+	current.addQuery('cai', parent.sys_id);
+
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;assigned_to&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;adminsanti&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-04-28 12:54:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;30caa5e9dbfb2410a96b09b1ba961934&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Acreditacions Incloses del SGQ&lt;/sys_name&gt;&lt;sys_package display_value="UdG Qualitat" source="x_udg_q"&gt;29219b8737df5f001acdf01643990e33&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="UdG Qualitat"&gt;29219b8737df5f001acdf01643990e33&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_30caa5e9dbfb2410a96b09b1ba961934&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;adminsanti&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-04-28 12:58:35&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=30caa5e9dbfb2410a96b09b1ba961934"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>46034458</payload_hash>
+        <record_name>Acreditacions Incloses del SGQ</record_name>
+        <reverted_from/>
+        <source>9df80627db63a410a96b09b1ba9619a1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-04-28 12:58:35</sys_created_on>
+        <sys_id>aaeb69addbfb2410a96b09b1ba9619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179188f4efd0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-04-28 12:58:35</sys_updated_on>
+        <type>Relationship</type>
+        <update_guid>22eb69ad69fb241025e487129a5ce7f4</update_guid>
+        <update_guid_history>22eb69ad69fb241025e487129a5ce7f4:46034458,8daba1ad7cfb241070dd56a15c180379:-762328927,a69ba1ad1ffb24105b659044582c466b:1444348209,991be1e98dfb2410027018e807636d05:1255618673</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-04-28 13:01:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_relationship">sys_relationship</sys_db_object>
+        <sys_id>09ceb3754fdb4b908db1ab3435009a40</sys_id>
+        <sys_metadata>30caa5e9dbfb2410a96b09b1ba961934</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Acreditacions Incloses del SGQ</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="CAI">f97506addbe62450ccd95bd05b961916</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_relationship_30caa5e9dbfb2410a96b09b1ba961934</sys_update_name>
+        <sys_update_version display_value="sys_relationship_30caa5e9dbfb2410a96b09b1ba961934">aaeb69addbfb2410a96b09b1ba9619f4</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-04-28 13:01:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

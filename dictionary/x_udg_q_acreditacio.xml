@@ -33,7 +33,7 @@
         <element choice="1" label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference">
             <choice/>
         </element>
-        <element active="false" label="Sincronitzada" max_length="32" name="sincronitzada" reference="x_udg_q_acreditacio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^sincronitzadaISEMPTY&quot;" type="reference" use_reference_qualifier="advanced"/>
+        <element active="false" label="Sincronitzada" max_length="32" name="sincronitzada" reference="x_udg_q_acreditacio" reference_floats="true" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^sincronitzadaISEMPTY&quot;" type="reference" use_reference_qualifier="advanced"/>
         <element choice="1" dependent="sgq" dependent_on_field="sgq" label="Titulació" mandatory="true" max_length="32" name="titulacio" reference="x_udg_q_titulacio" reference_qual="activa=true^EQ" reference_qual_condition="activa=true^EQ" type="reference" use_dependent_field="true">
             <choice/>
         </element>

@@ -42,7 +42,7 @@
         <read_roles/>
         <reference display_value="" name="x_udg_q_acreditacio">x_udg_q_acreditacio</reference>
         <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
+        <reference_floats>true</reference_floats>
         <reference_key/>
         <reference_qual>javascript:"sgq="+current.sgq+"^sincronitzadaISEMPTY"</reference_qual>
         <reference_qual_condition/>
@@ -55,7 +55,7 @@
         <sys_created_on>2020-11-23 11:00:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7004feafdb20e810ccd95bd05b96195d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Sincronitzada</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_acreditacio_sincronitzada</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-26 10:42:51</sys_updated_on>
+        <sys_updated_on>2021-04-28 10:35:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
