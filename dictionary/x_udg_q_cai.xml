@@ -9,7 +9,7 @@
         <element label="Aprovació autoinforme Junta Centre exacta" max_length="40" name="aprovacio_autoinforme_junta_centre_exacta" type="boolean"/>
         <element label="Aprovació CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
         <element label="Aprovació CQ UdG exacta" max_length="40" name="aprovacio_cq_udg_exacta" type="boolean"/>
-        <element label="Enviament informe AQU" max_length="40" name="enviament_informe_aqu" type="glide_date"/>
+        <element label="Enviament informe AQU" mandatory="true" max_length="40" name="enviament_informe_aqu" type="glide_date"/>
         <element label="Enviament informe AQU exacta" max_length="40" name="enviament_informe_aqu_exacta" type="boolean"/>
         <element label="Exposició pública exacta" max_length="40" name="exposicio_publica_exacta" type="boolean"/>
         <element label="Final exposició pública" max_length="40" name="final_exposicio_publica" type="glide_date"/>
