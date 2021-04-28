@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="CAI" max_length="40" name="x_udg_q_cai" sizeclass="8" type="collection">
-        <element label="Acreditacions" max_length="4000" name="acreditacions" reference="x_udg_q_acreditacio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^caiISEMPTY^active=true^EQ&quot;" type="glide_list" use_reference_qualifier="advanced"/>
+        <element active="false" label="Acreditacions" max_length="4000" name="acreditacions" reference="x_udg_q_acreditacio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^caiISEMPTY^active=true^EQ&quot;" type="glide_list" use_reference_qualifier="advanced"/>
         <element label="Aprovació autoinforme CAI" max_length="40" name="aprovacio_autoinforme_cai" type="glide_date"/>
         <element label="Aprovació autoinforme CAI exacta" max_length="40" name="aprovacio_autoinforme_cai_exacta" type="boolean"/>
         <element label="Aprovació autoinforme CQ Centre" max_length="40" name="aprovacio_autoinforme_cq_centre" type="glide_date"/>

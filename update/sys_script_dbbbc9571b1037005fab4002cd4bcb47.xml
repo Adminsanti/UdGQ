@@ -6,7 +6,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -15,10 +15,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_udg_q_acreditacio">caiVALCHANGES^EQ<item endquery="false" field="cai" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>REFER Acr actualitza sincronitzats</name>
+        <name>Acreditació CAI changes</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -28,18 +30,32 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
-    var sincro = [];
-    var acr = new Acreditacio(current.getValue('sys_id'));
-	var camps = acr.getCampsSincro(); //retirna la llista de camps a sincronitzar
-    for (var i = 0; i < camps.length; i++) {
-        if (current.getValue(camps[i]) != previous.getValue(camps[i])) {
-            var fills = [];
-            fills = acr.setFills(camps[i], current.getValue(camps[i]));
-            for (var j = 0; j < fills.length; j++)
-                if (sincro.indexOf(fills[j]) == -1) sincro.push(fills[j]);
+
+    var grCAI = new GlideRecord('x_udg_q_cai');
+
+    if (current.cai == '') { //No hi ha cai
+        current.visita_cae = '';
+        current.visita_cae_max = '';
+        current.visita_cae_definitiu = false;
+
+        if (previous.cai != '') { //però n'hi havia
+            if (grCAI.get(previous.cai)) {
+                grCAI.titulacions = new x_udg_q.CAI(grCAI.getUniqueValue()).llistaSysidsTitulacions();
+                grCAI.update();
+            }
+        }
+
+    } else { //Hi ha cai
+        if (current.cai.visita_cae != '') { //Te data de visita pel cae -> copiar-la
+            current.visita_cae = current.cai.visita_cae;
+            current.visita_cae_max = current.cai.visita_cae_max;
+            current.visita_cae_definitiu = current.cai.visita_cae_definitiu;
+        }
+        if (grCAI.get(current.cai)) {
+            grCAI.titulacions = new x_udg_q.CAI(grCAI.getUniqueValue()).llistaSysidsTitulacions();
+            grCAI.update();
         }
     }
-    if (sincro != "") gs.addInfoMessage(sincro + " actualitzades per sincronització");
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -48,8 +64,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dbbbc9571b1037005fab4002cd4bcb47</sys_id>
-        <sys_mod_count>39</sys_mod_count>
-        <sys_name>REFER Acr actualitza sincronitzats</sys_name>
+        <sys_mod_count>49</sys_mod_count>
+        <sys_name>Acreditació CAI changes</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -57,7 +73,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_dbbbc9571b1037005fab4002cd4bcb47</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-25 11:57:49</sys_updated_on>
+        <sys_updated_on>2021-04-28 09:38:43</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

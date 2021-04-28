@@ -10,7 +10,7 @@
         <element active="false" label="Aprovació CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
         <element active="false" label="Aprovació CQ UdG definitiu" max_length="40" name="aprovacio_cq_udg_definitiu" type="boolean"/>
         <element active="false" label="Aprovació informe CAI definitiu" max_length="40" name="aprovacio_informe_cai_definitiu" type="boolean"/>
-        <element choice="1" label="CAI" max_length="32" name="cai" read_only="true" reference="x_udg_q_cai" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference">
+        <element choice="1" label="CAI" max_length="32" name="cai" read_only="true" reference="x_udg_q_cai" reference_floats="true" reference_qual="javascript:&quot;sgq=&quot;+current.sgq" type="reference" use_reference_qualifier="advanced">
             <choice/>
         </element>
         <element label="DMA" max_length="40" name="dma" type="glide_date"/>
