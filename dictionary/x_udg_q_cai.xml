@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="CAI" max_length="40" name="x_udg_q_cai" sizeclass="9" type="collection">
         <element active="false" label="Acreditacions" max_length="4000" name="acreditacions" reference="x_udg_q_acreditacio" reference_qual="javascript:&quot;sgq=&quot;+current.sgq+&quot;^caiISEMPTY^active=true^EQ&quot;" type="glide_list" use_reference_qualifier="advanced"/>
-        <element label="Aprovació autoinforme CAI" max_length="40" name="aprovacio_autoinforme_cai" type="glide_date"/>
-        <element label="Aprovació autoinforme CAI exacta" max_length="40" name="aprovacio_autoinforme_cai_exacta" type="boolean"/>
-        <element label="Aprovació autoinforme CQ Centre" max_length="40" name="aprovacio_autoinforme_cq_centre" type="glide_date"/>
-        <element label="Aprovació autoinforme CQ Centre exacta" max_length="40" name="aprovacio_autoinforme_cq_centre_exacta" type="boolean"/>
-        <element label="Aprovació autoinforme Junta Centre" max_length="40" name="aprovacio_autoinforme_junta_centre" type="glide_date"/>
-        <element label="Aprovació autoinforme Junta Centre exacta" max_length="40" name="aprovacio_autoinforme_junta_centre_exacta" type="boolean"/>
-        <element label="Aprovació CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
-        <element label="Aprovació CQ UdG exacta" max_length="40" name="aprovacio_cq_udg_exacta" type="boolean"/>
-        <element label="Enviament informe AQU" mandatory="true" max_length="40" name="enviament_informe_aqu" type="glide_date"/>
-        <element label="Enviament informe AQU exacta" max_length="40" name="enviament_informe_aqu_exacta" type="boolean"/>
-        <element label="Exposició pública exacta" max_length="40" name="exposicio_publica_exacta" type="boolean"/>
-        <element label="Final exposició pública" max_length="40" name="final_exposicio_publica" type="glide_date"/>
+        <element label="Apr autoinf CAI" max_length="40" name="aprovacio_autoinforme_cai" type="glide_date"/>
+        <element label="Apr autoinf CAI exacta" max_length="40" name="aprovacio_autoinforme_cai_exacta" type="boolean"/>
+        <element label="Apr autoinf CQC" max_length="40" name="aprovacio_autoinforme_cq_centre" type="glide_date"/>
+        <element label="Apr autoinf CQC exacta" max_length="40" name="aprovacio_autoinforme_cq_centre_exacta" type="boolean"/>
+        <element label="Apr Junta C" max_length="40" name="aprovacio_autoinforme_junta_centre" type="glide_date"/>
+        <element label="Apr Junta C exacta" max_length="40" name="aprovacio_autoinforme_junta_centre_exacta" type="boolean"/>
+        <element label="Apr CQ UdG" max_length="40" name="aprovacio_cq_udg" type="glide_date"/>
+        <element label="Apr CQ UdG exacta" max_length="40" name="aprovacio_cq_udg_exacta" type="boolean"/>
+        <element label="Enviament AQU" mandatory="true" max_length="40" name="enviament_informe_aqu" type="glide_date"/>
+        <element label="Enviament AQU exacta" max_length="40" name="enviament_informe_aqu_exacta" type="boolean"/>
+        <element label="Exposició exacta" max_length="40" name="exposicio_publica_exacta" type="boolean"/>
+        <element label="Final exposició p" max_length="40" name="final_exposicio_publica" type="glide_date"/>
         <element label="Grup de treball" max_length="1024" name="grup_de_treball" type="url"/>
-        <element label="Informe Emès" max_length="40" name="informe_emes" type="file_attachment"/>
-        <element label="Inici exposició publica" max_length="40" name="inici_exposicio_publica" type="glide_date"/>
+        <element label="Autoinforme" max_length="40" name="informe_emes" type="file_attachment"/>
+        <element label="Inici exposició p" max_length="40" name="inici_exposicio_publica" type="glide_date"/>
         <element label="Inici procés" mandatory="true" max_length="40" name="inici_proces" type="glide_date"/>
         <element label="Inici procés definitiu" max_length="40" name="inici_proces_definitiu" type="boolean"/>
         <element choice="1" label="SGQ" mandatory="true" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference">

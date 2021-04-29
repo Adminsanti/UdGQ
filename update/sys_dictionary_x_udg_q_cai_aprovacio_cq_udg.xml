@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Aprovació CQ UdG</column_label>
+        <column_label>Apr CQ UdG</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -54,16 +54,16 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-02-26 09:27:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>35f1bab51b2a6010c851a64fad4bcb2b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Aprovació CQ UdG</sys_name>
+        <sys_id>76a383f5dbee2010ccd95bd05b9619a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Apr CQ UdG</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_cai_aprovacio_cq_udg</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-26 09:27:24</sys_updated_on>
+        <sys_updated_on>2021-04-29 12:07:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

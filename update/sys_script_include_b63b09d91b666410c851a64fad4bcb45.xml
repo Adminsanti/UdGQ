@@ -30,27 +30,29 @@ CAI.prototype = {
     },
 
     getEstat: function(grCAI) {
-        /* Previst = 1
-        redactatnt=4
+        /* 
+		Previst = 1
+        Redactant=4
         Aprovacions=8
-        Avaluació externa= 12
-        Al·legaions = 16
+        CAE= 12
+		Avaluació AQU = 14
+        Al·legacions = 16
         tancat = 18
         */
 
         var ara = new GlideDateTime();
         var estat = 1;
         if (grCAI.inici_proces != '' &&
-            grCAI.inici_proces_definitiu &&
             ara.compareTo(new GlideDateTime(grCAI.inici_proces)) > -1) estat = 4; //El mateix dia inici procé
 
         if (grCAI.aprovacio_autoinforme_cai != '' &&
-            grCAI.aprovacio_autoinforme_cai_exacta &&
             ara.compareTo(new GlideDateTime(grCAI.aprovacio_autoinforme_cai)) == 1) estat = 8; //L'endemà de l'aprovació del CAI
 
         if (grCAI.enviament_informe_aqu != '' &&
-            grCAI.enviament_informe_aqu_exacta &&
             ara.compareTo(new GlideDateTime(grCAI.enviament_informe_aqu)) == 1) estat = 12; //L'endemà de l'enviament de l'informe
+		
+		if (grCAI.visita_cae != '' &&
+            ara.compareTo(new GlideDateTime(grCAI.visita_cae)) == 1) estat = 14; //L'endemà de l'enviament de l'informe
 
         if (!grCAI.active) estat = 18;
 
@@ -64,7 +66,7 @@ CAI.prototype = {
         <sys_created_on>2021-02-24 12:43:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b63b09d91b666410c851a64fad4bcb45</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>CAI</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -72,6 +74,6 @@ CAI.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_b63b09d91b666410c851a64fad4bcb45</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-28 09:16:54</sys_updated_on>
+        <sys_updated_on>2021-04-29 12:11:54</sys_updated_on>
     </sys_script_include>
 </record_update>

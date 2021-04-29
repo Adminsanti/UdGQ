@@ -42,7 +42,7 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Aprovació externa</label>
+            <label>CAE</label>
             <language>en</language>
             <name>x_udg_q_cai</name>
             <sequence/>
@@ -51,10 +51,29 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a43ef27d1b6a6010c851a64fad4bcb21</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-03-01 10:29:46</sys_updated_on>
+            <sys_updated_on>2021-04-29 11:59:29</sys_updated_on>
             <value>12</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Avaluació AQU</label>
+            <language>en</language>
+            <name>x_udg_q_cai</name>
+            <sequence/>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-04-29 11:39:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac33aa7ddb73e410a96b09b1ba9619ee</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-04-29 11:59:42</sys_updated_on>
+            <value>14</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
