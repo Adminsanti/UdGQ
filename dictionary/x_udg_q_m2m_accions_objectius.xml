@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Actions Objectives" max_length="40" name="x_udg_q_m2m_accions_objectius" sizeclass="1381" type="collection">
+    <element audit="true" label="Actions Objectives" max_length="40" name="x_udg_q_m2m_accions_objectius" sizeclass="1409" type="collection">
         <element label="Acció Millora" max_length="32" name="accio_millora" reference="x_udg_q_acciomillora" reference_qual="state!=3^ORclosed_at&gt;javascript:gs.beginningOfLast12Months()^EQ" reference_qual_condition="state!=3^ORclosed_at&gt;javascript:gs.beginningOfLast12Months()^EQ" type="reference"/>
         <element default="100" label="Contribution" max_length="40" name="contribucio" type="integer"/>
         <element label="Objectiu Millora" max_length="32" name="objectiu_millora" reference="x_udg_q_objectiumillora" reference_qual="state!=3^ORclosed_at&gt;javascript:gs.beginningOfLast12Months()^EQ" reference_qual_condition="state!=3^ORclosed_at&gt;javascript:gs.beginningOfLast12Months()^EQ" type="reference"/>

@@ -32,19 +32,19 @@
         <source>dbf70730db33201029507a76f3961983</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-04-26 11:45:26</sys_created_on>
         <sys_id>3b25f4acdb0c7050a96b09b1ba9619c1</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>1790dff9bf00000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-05-07 16:59:17</sys_updated_on>
         <type>Access Roles</type>
         <update_guid>f725f4acbb0c7050c82a2312ec9c3bc1</update_guid>
         <update_guid_history>f725f4acbb0c7050c82a2312ec9c3bc1:1046798526</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 07/05/2021 18:41:15">bb25f4acdb0c7050a96b09b1ba9619c3</sys_audit_delete>
+        <sys_audit_delete display_value="">bb25f4acdb0c7050a96b09b1ba9619c3</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2021-05-07 16:41:15</sys_created_on>
