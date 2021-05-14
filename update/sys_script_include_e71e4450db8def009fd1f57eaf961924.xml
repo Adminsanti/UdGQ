@@ -15,15 +15,12 @@ ProcesSGQ.prototype = {
         return 'P' + grProces.num + grProces.sgq.codi + '. ' + grProces.titol;
     },
 	
-	getNomFitxer_perIdVProces: function (idVProces) {
+	getNomFitxer_VProces: function (idVProces) {
 		var grVersio = new GlideRecord('x_udg_q_versioproces');
-		grVersio.get(idVProces);
-		var nom = this.getNomFitxer_perGrVProces(grVersio);
+		var nom= "ERROR";
+		if (grVersio.get(idVProces)) nom = "P"+grVersio.proces.num+" "+grVersio.proces.titol+" v"+grVersio.versio+".pdf";
+		else new log('Error ProcesSGQ.getNomFitxer_VProces per '+ idVProces + ' retorna ERROR com a nom de fitxer');
 		return nom;
-	},
-	
-	getNomFitxer_perGrVProces: function (grVProces) {
-		return "P"+grVProces.proces.getValue('num')+" "+grVProces.proces.getValue('titol')+" v"+grVProces.getValue('versio')+".pdf";
 	},
 
     LlistaFills: function(idProcesPare) {
@@ -103,7 +100,7 @@ ProcesSGQ.prototype = {
     sincronitzaFill: function(grPare, grFill) { //No estic segur que funcioni
         var llegats = grPare.llegata.split(",");
         if (llegats.indexOf(grFill.sys_id) != 0) { //És a la llista de llegats
-            grFill.actiu = true;
+            grFill.actiu = grPare.actiu;
         } else {
             grFill.actiu = false;
         }
@@ -131,7 +128,7 @@ ProcesSGQ.prototype = {
     },
 
     actualitzaTot: function(proces_sys_id) {
-        //Actualitza el procés en vase a les versions
+        //Actualitza el procés en base a les versions
         var grProc = new GlideRecord('x_udg_q_proces');
         var grVersio = new GlideRecord('x_udg_q_versioproces');
         grProc.get(proces_sys_id);
@@ -197,10 +194,10 @@ ProcesSGQ.prototype = {
 
     regeneraVersioProces: function(sys_id_VersioProces) {
         var grAttachment = new GlideRecord('sys_attachment');
-        new log("UI action - Regenera versió del procés " + sys_id_VersioProces);
+        //new log("UI action - Regenera versió del procés " + sys_id_VersioProces);
         if (grAttachment.get('table_sys_id', sys_id_VersioProces)) {
             new log("UI action - Regenera versió del procés " + sys_id_VersioProces + " trobat attachment");
-			var nom_fitxer =this.getNomFitxer_perIdVProces(sys_id_VersioProces);
+			var nom_fitxer =this.getNomFitxer_VProces(sys_id_VersioProces);
 			grAttachment.setValue('file_name',nom_fitxer);
 			grAttachment.update();
             this.registra_i_propagaAttachmentVProces(sys_id_VersioProces, grAttachment.getUniqueValue());
@@ -245,7 +242,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>146</sys_mod_count>
+        <sys_mod_count>150</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -253,6 +250,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 08:20:49</sys_updated_on>
+        <sys_updated_on>2021-05-14 09:03:47</sys_updated_on>
     </sys_script_include>
 </record_update>

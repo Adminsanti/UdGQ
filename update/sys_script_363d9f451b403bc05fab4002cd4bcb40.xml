@@ -6,21 +6,19 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_udg_q_cai</collection>
+        <collection>x_udg_q_proces</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_udg_q_cai">acreditacionsVALCHANGES^EQ<item endquery="false" field="acreditacions" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter_condition>
+        <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>RECYCLE canvi acreditacions</name>
+        <name>Procés canvia</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,17 +29,9 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    var cai = new CAI();
-    current.titulacions = cai.llistaSysidsTitulacionsAcreditacions("" + current.acreditacions);
-
-    var grAcreditacio = new GlideRecord('x_udg_q_acreditacio');
-    grAcreditacio.addQuery('sys_id', 'IN', current.acreditacions);
-    grAcreditacio.query();
-    while (grAcreditacio.next()) {
-        grAcreditacio.cai = current.sys_id;
-        grAcreditacio.update();
-    }
-    // els eliminats es fan en una regla after
+var p = new x_udg_q.ProcesSGQ();
+p.creaFillsInexistents(current);
+p.sincroTotsFills(current);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -51,8 +41,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>363d9f451b403bc05fab4002cd4bcb40</sys_id>
-        <sys_mod_count>23</sys_mod_count>
-        <sys_name>RECYCLE canvi acreditacions</sys_name>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Procés canvia</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -60,7 +50,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_363d9f451b403bc05fab4002cd4bcb40</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-28 08:46:52</sys_updated_on>
+        <sys_updated_on>2021-05-14 09:07:39</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
