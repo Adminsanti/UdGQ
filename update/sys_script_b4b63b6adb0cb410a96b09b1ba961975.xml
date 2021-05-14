@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>VProcés - Canvia after</name>
+        <name>VProcés - Canvia before</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,45 +29,29 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    if (current.state == 2) //Només si aquest és la versió vigent
-        this.registra_i_propagaAttachmentProces(current.getUniquevalue(),
-            current.getValue('fitxer'),
-            current.getValue('versio')
-        );
-	
+    var html = this.getHTMLDocument(current.getValue('fitxer'));
+    current.setValue('document', html);
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2018-10-05 07:35:01</sys_created_on>
+        <sys_created_on>2021-05-14 11:54:34</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>70b0dc90db8def009fd1f57eaf961957</sys_id>
-        <sys_mod_count>40</sys_mod_count>
-        <sys_name>VProcés - Canvia after</sys_name>
+        <sys_id>b4b63b6adb0cb410a96b09b1ba961975</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>VProcés - Canvia before</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_script_70b0dc90db8def009fd1f57eaf961957</sys_update_name>
+        <sys_update_name>sys_script_b4b63b6adb0cb410a96b09b1ba961975</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 11:55:46</sys_updated_on>
+        <sys_updated_on>2021-05-14 11:55:58</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=70b0dc90db8def009fd1f57eaf961957"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>70b0dc90db8def009fd1f57eaf961957</documentkey>
-        <fieldname>message</fieldname>
-        <language>ca</language>
-        <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-03-04 09:59:42</sys_created_on>
-        <sys_id>7e37ca5e1bdf0450c851a64fad4bcbb9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-04 09:59:42</sys_updated_on>
-        <tablename>sys_script</tablename>
-        <value/>
-    </sys_translated_text>
+    <sys_translated_text action="delete_multiple" query="documentkey=b4b63b6adb0cb410a96b09b1ba961975"/>
 </record_update>
