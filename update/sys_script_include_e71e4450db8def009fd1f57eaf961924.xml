@@ -191,7 +191,8 @@ ProcesSGQ.prototype = {
             grAttachment.update();
             var grVProc = new GlideRecord('x_udg_q_versioproces');
             grVProc.get(sys_id_VersioProces);
-            grVProc.document = this.getHTMLDocument(grAttachment.getUniqueValue());
+			var html= this.getHTMLDocument(grAttachment.getUniqueValue());
+            grVProc.setValue('document' , html );
             grVProc.fitxer = grAttachment.getUniqueValue();
             grVProc.update();
             if (grVProc.state == 2) //Només si aquest és la versió vigent
@@ -236,7 +237,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>154</sys_mod_count>
+        <sys_mod_count>155</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -244,6 +245,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 09:49:39</sys_updated_on>
+        <sys_updated_on>2021-05-14 10:24:41</sys_updated_on>
     </sys_script_include>
 </record_update>
