@@ -23,7 +23,7 @@ ProcesSGQ.prototype = {
 	},
 	
 	getNomFitxer_perGrVProces: function (grVProces) {
-		return "P"+grVProces.proces.num+" "+grVProces.proces.titol+" v"+grVProces.versio+".pdf";
+		return "P"+grVProces.proces.getValue('num')+" "+grVProces.proces.getValue('titol')+" v"+grVProces.getValue('versio')+".pdf";
 	},
 
     LlistaFills: function(idProcesPare) {
@@ -200,7 +200,8 @@ ProcesSGQ.prototype = {
         new log("UI action - Regenera versió del procés " + sys_id_VersioProces);
         if (grAttachment.get('table_sys_id', sys_id_VersioProces)) {
             new log("UI action - Regenera versió del procés " + sys_id_VersioProces + " trobat attachment");
-			grAttachment.setValue('file_name',this.getNomFitxer_perIdVProces(sys_id_VersioProces));
+			var nom_fitxer =this.getNomFitxer_perIdVProces(sys_id_VersioProces);
+			grAttachment.setValue('file_name',nom_fitxer);
 			grAttachment.update();
             this.registra_i_propagaAttachmentVProces(sys_id_VersioProces, grAttachment.getUniqueValue());
         }
@@ -244,7 +245,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>144</sys_mod_count>
+        <sys_mod_count>146</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -252,6 +253,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-27 07:33:29</sys_updated_on>
+        <sys_updated_on>2021-05-14 08:20:49</sys_updated_on>
     </sys_script_include>
 </record_update>

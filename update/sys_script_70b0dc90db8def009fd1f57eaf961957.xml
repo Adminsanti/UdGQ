@@ -30,6 +30,7 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 	
 	new x_udg_q.ProcesSGQ().regeneraVersioProces(current.getUniqueValue());
+	new x_udg_q.ProcesSGQ().registra_i_propagaAttachmentVProces(current.sys_id, current.fitxer);
 	new x_udg_q.ProcesSGQ().actualitzaTot(current.proces.sys_id);
 	
 })(current, previous);]]></script>
@@ -40,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>70b0dc90db8def009fd1f57eaf961957</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>VProcés - Canvia</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -49,7 +50,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_70b0dc90db8def009fd1f57eaf961957</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-04-26 17:43:10</sys_updated_on>
+        <sys_updated_on>2021-05-13 10:33:57</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
