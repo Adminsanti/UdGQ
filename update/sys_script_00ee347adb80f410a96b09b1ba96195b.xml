@@ -20,7 +20,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>VProces Attachment Before- Entra nou</name>
+        <name>VProces Attachment After - Entra nou</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,43 +30,37 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    //al fer un canvi, la br l'actualitzarà
+    var grVProces = new GlideRecord('x_udg_q_versioproces');
+    grVProces.get(current.getValue('table_sys_id'));
 
-    var nounom = new x_udg_q.ProcesSGQ().getNomFitxer_VProces(current.getValue('table_sys_id'));
-    current.setValue('file_name', nounom);
+    if (current.getValue('state') == 'pending') //pending vol dir que s'està pujant
+        grVProces.setValue('fitxer', current.getUniqueValue());
+    else grVProces.setValue('fitxer', '');
+    var html = new x_udg_q.ProcesSGQ().getHTMLDocument(grVProces.getValue('fitxer'));
+    grVProces.setValue('document', html);
+    grVProces.update();
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-02-10 16:24:30</sys_created_on>
+        <sys_created_on>2021-05-14 17:09:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>23b28d0f1bba40105fab4002cd4bcbf8</sys_id>
-        <sys_mod_count>75</sys_mod_count>
-        <sys_name>VProces Attachment Before- Entra nou</sys_name>
+        <sys_id>00ee347adb80f410a96b09b1ba96195b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>VProces Attachment After - Entra nou</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_script_23b28d0f1bba40105fab4002cd4bcbf8</sys_update_name>
+        <sys_update_name>sys_script_00ee347adb80f410a96b09b1ba96195b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 17:28:20</sys_updated_on>
+        <sys_updated_on>2021-05-14 17:28:13</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=23b28d0f1bba40105fab4002cd4bcbf8"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>23b28d0f1bba40105fab4002cd4bcbf8</documentkey>
-        <fieldname>message</fieldname>
-        <language>ca</language>
-        <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-03-04 10:03:39</sys_created_on>
-        <sys_id>7828c2de1bdf0450c851a64fad4bcbd9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-03-04 10:03:39</sys_updated_on>
-        <tablename>sys_script</tablename>
-        <value/>
-    </sys_translated_text>
+    <sys_translated_text action="delete_multiple" query="documentkey=00ee347adb80f410a96b09b1ba96195b"/>
 </record_update>

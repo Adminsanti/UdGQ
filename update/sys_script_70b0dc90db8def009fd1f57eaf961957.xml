@@ -12,13 +12,13 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_udg_q_versioproces</collection>
-        <condition/>
+        <condition>current.state == 2 </condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>VProcés - Canvia after</name>
+        <name>VProcés - és vigent after</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,8 +29,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    if (current.state == 2) //Només si aquest és la versió vigent
-        this.registra_i_propagaAttachmentProces(current.getUniquevalue(),
+        new x_udg_q.ProcesSGQ().registra_i_propagaAttachmentProces(current.getValue('proces'),
             current.getValue('fitxer'),
             current.getValue('versio')
         );
@@ -43,8 +42,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>70b0dc90db8def009fd1f57eaf961957</sys_id>
-        <sys_mod_count>40</sys_mod_count>
-        <sys_name>VProcés - Canvia after</sys_name>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>VProcés - és vigent after</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -52,7 +51,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_70b0dc90db8def009fd1f57eaf961957</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 11:55:46</sys_updated_on>
+        <sys_updated_on>2021-05-14 17:30:34</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

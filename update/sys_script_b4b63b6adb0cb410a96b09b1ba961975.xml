@@ -2,11 +2,11 @@
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
         <access>package_private</access>
-        <action_delete>true</action_delete>
+        <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>VProcés - Canvia before</name>
+        <name>RECYCLE VProcés - Canvia before</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,7 +29,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-    var html = this.getHTMLDocument(current.getValue('fitxer'));
+    var html = new x_udg_q.ProcesSGQ().getHTMLDocument(current.getValue('fitxer'));
     current.setValue('document', html);
 
 })(current, previous);]]></script>
@@ -40,8 +40,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b4b63b6adb0cb410a96b09b1ba961975</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>VProcés - Canvia before</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>RECYCLE VProcés - Canvia before</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -49,7 +49,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_b4b63b6adb0cb410a96b09b1ba961975</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 11:55:58</sys_updated_on>
+        <sys_updated_on>2021-05-14 17:29:35</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
