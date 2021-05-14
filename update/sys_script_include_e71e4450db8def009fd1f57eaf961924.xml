@@ -127,7 +127,7 @@ ProcesSGQ.prototype = {
         grFill.update();
     },
 
-    actualitzaTot: function(proces_sys_id) {
+    actualitzaTot: function(proces_sys_id) { //Probablement aquesta funci no s'utilitza
         //Actualitza el procés en base a les versions
         var grProc = new GlideRecord('x_udg_q_proces');
         var grVersio = new GlideRecord('x_udg_q_versioproces');
@@ -237,7 +237,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>155</sys_mod_count>
+        <sys_mod_count>156</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -245,6 +245,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 10:24:41</sys_updated_on>
+        <sys_updated_on>2021-05-14 10:53:07</sys_updated_on>
     </sys_script_include>
 </record_update>
