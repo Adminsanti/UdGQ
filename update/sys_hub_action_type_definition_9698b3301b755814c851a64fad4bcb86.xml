@@ -13,7 +13,6 @@
         <ih_action>false</ih_action>
         <internal_name>actualitzar_totes_les_romanacions</internal_name>
         <label_cache>[]</label_cache>
-        <latest_snapshot>956d78bcdb9820d0ccd95bd05b961932</latest_snapshot>
         <master_snapshot>c6eb3f381b755814c851a64fad4bcb8c</master_snapshot>
         <name>Actualitzar totes les observacions</name>
         <natlang/>
@@ -387,4 +386,8 @@
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>9698b3301b755814c851a64fad4bcb86</sys_id>
+        <latest_snapshot>c6eb3f381b755814c851a64fad4bcb8c</latest_snapshot>
+    </sys_hub_action_type_definition>
 </record_update>

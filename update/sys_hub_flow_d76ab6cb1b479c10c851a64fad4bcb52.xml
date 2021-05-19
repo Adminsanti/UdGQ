@@ -12,7 +12,6 @@
         <description/>
         <internal_name>corregir_composici_funci</internal_name>
         <label_cache>[{"name":"fa5a8858-4d1d-4508-b2e9-bb48564abc9e.item","label":"2➛Objectiu Millora Record","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.grfuncio","label":"Input➛grFuncio","reference":"x_udg_q_funcio","reference_display":"Funció","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"774f0d3e-3b1e-4370-90e7-14b63be234de"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e6e5f16-3476-4905-a1f4-7204a1d159ff.Records","label":"1➛Objectiu Millora Records","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c239eb4-e8c7-4069-a8db-b1f66dd8a911.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0c239eb4-e8c7-4069-a8db-b1f66dd8a911.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
-        <latest_snapshot>e7dcba8f1b479c10c851a64fad4bcb7c</latest_snapshot>
         <master_snapshot>e8bc768f1b479c10c851a64fad4bcb95</master_snapshot>
         <name>Corregir composició funció</name>
         <natlang/>
@@ -988,4 +987,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>d76ab6cb1b479c10c851a64fad4bcb52</sys_id>
+        <latest_snapshot>e8bc768f1b479c10c851a64fad4bcb95</latest_snapshot>
+    </sys_hub_flow>
 </record_update>

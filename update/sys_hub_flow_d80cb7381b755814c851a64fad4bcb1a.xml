@@ -12,7 +12,6 @@
         <description/>
         <internal_name>revisar_recomanacions</internal_name>
         <label_cache>[]</label_cache>
-        <latest_snapshot>5467e2ecdb4c7c10b2bbf03a6896193f</latest_snapshot>
         <master_snapshot>312cf3781b755814c851a64fad4bcb8f</master_snapshot>
         <name>Revisar Observacions i estat Acreditacions</name>
         <natlang/>
@@ -510,4 +509,8 @@
         <ui_id>b75d4a01-df2e-4d46-b63f-ba948af82795</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ebf411e01bd46454c851a64fad4bcb3a"/>
+    <sys_hub_flow action="update">
+        <sys_id>d80cb7381b755814c851a64fad4bcb1a</sys_id>
+        <latest_snapshot>312cf3781b755814c851a64fad4bcb8f</latest_snapshot>
+    </sys_hub_flow>
 </record_update>

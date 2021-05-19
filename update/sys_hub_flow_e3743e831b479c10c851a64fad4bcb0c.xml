@@ -12,7 +12,6 @@
         <description/>
         <internal_name>revisar_i_corregir_assignament_task</internal_name>
         <label_cache>[{"name":"6e35653b-c276-45f7-b7cd-d7b1fcb715aa.table_name","label":"1.2➛Objectiu Millora Table","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e35653b-c276-45f7-b7cd-d7b1fcb715aa.record","label":"1.2➛Objectiu Millora Record","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.grobjectiu.assigned_to","label":"Input➛grObjectiu➛Assignat a","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_udg_q_objectiumillora","column_name":"assigned_to"},{"name":"subflow.grobjectiu.responsable.membres","label":"Input➛grObjectiu➛Responsable➛Membres","reference":"sys_user","reference_display":"User","type":"glide_list","base_type":"glide_list","parent_table_name":"x_udg_q_funcio","column_name":"membres"},{"name":"subflow.grtask.assigned_to","label":"Input➛variable➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"task","column_name":"assigned_to"},{"name":"subflow.grobjectiu.responsable.usuari","label":"Input➛grObjectiu➛Responsable➛Usuari","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_udg_q_funcio","column_name":"usuari"},{"name":"6e35653b-c276-45f7-b7cd-d7b1fcb715aa.record.number","label":"1.2➛Objectiu Millora Record➛Número","reference":"","reference_display":"Número","type":"string","base_type":"string","parent_table_name":"x_udg_q_objectiumillora","column_name":"number"},{"name":"subflow.grobjectiu.number","label":"Input➛grObjectiu➛Número","reference":"","reference_display":"Número","type":"string","base_type":"string","parent_table_name":"x_udg_q_objectiumillora","column_name":"number"},{"name":"subflow.grobjectiu","label":"Input➛grObjectiu","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"30ffacff-0c8d-40f1-b102-9eaf5c29ca2c","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
-        <latest_snapshot>78bc768f1b479c10c851a64fad4bcbdc</latest_snapshot>
         <master_snapshot>e629be4b1b479c10c851a64fad4bcb69</master_snapshot>
         <name>Revisar i corregir assignament Objectiu</name>
         <natlang/>
@@ -1042,4 +1041,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>e3743e831b479c10c851a64fad4bcb0c</sys_id>
+        <latest_snapshot>e629be4b1b479c10c851a64fad4bcb69</latest_snapshot>
+    </sys_hub_flow>
 </record_update>

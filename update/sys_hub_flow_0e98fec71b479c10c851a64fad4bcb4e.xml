@@ -12,7 +12,6 @@
         <description/>
         <internal_name>canvis_en_la_composici_de_funci</internal_name>
         <label_cache>[{"name":"0b5cb96c-06e6-4d44-b72e-761ae6745e72.item","label":"2➛Objectiu Millora Record","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"57f700e9-7d16-41a8-910f-32866f8012be.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57f700e9-7d16-41a8-910f-32866f8012be.Table","label":"1➛Objectiu Millora Table","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57f700e9-7d16-41a8-910f-32866f8012be.Records","label":"1➛Objectiu Millora Records","reference":"x_udg_q_objectiumillora","reference_display":"Objectiu Millora","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger➛Funció Record","reference":"x_udg_q_funcio","reference_display":"Funció","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
-        <latest_snapshot>9c5007431b8b1c105fab4002cd4bcbac</latest_snapshot>
         <master_snapshot>bedc7a8f1b479c10c851a64fad4bcbc9</master_snapshot>
         <name>Canvis en la composició de una funció</name>
         <natlang/>
@@ -1124,4 +1123,8 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>0e98fec71b479c10c851a64fad4bcb4e</sys_id>
+        <latest_snapshot>bedc7a8f1b479c10c851a64fad4bcbc9</latest_snapshot>
+    </sys_hub_flow>
 </record_update>
