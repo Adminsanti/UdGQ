@@ -4,8 +4,8 @@
         <element audit="true" default="true" label="Activa" max_length="40" name="activa" type="boolean"/>
         <element default="true" hint="Una funció assignable fa que se li poden assignar objectius i accions del pla de millora." label="Assignable" max_length="40" name="assignable" type="boolean"/>
         <element audit="true" label="Membres" max_length="4000" name="membres" read_only="true" reference="sys_user" type="glide_list"/>
-        <element audit="true" label="Membres funcions" max_length="4000" name="membres_funcions" reference="x_udg_q_funcio" type="glide_list"/>
-        <element audit="true" label="Membres títol personal" max_length="4000" name="membres_titol_personal" reference="sys_user" type="glide_list"/>
+        <element active="false" audit="true" label="Membres funcions" max_length="4000" name="membres_funcions" reference="x_udg_q_funcio" type="glide_list"/>
+        <element active="false" audit="true" label="Membres títol personal" max_length="4000" name="membres_titol_personal" reference="sys_user" type="glide_list"/>
         <element default="true" label="Gestió Millores" max_length="40" name="millora" type="boolean"/>
         <element attributes="no_truncate=true" audit="true" display="true" label="Funció" mandatory="true" max_length="140" name="nom" type="string"/>
         <element label="Observador" max_length="40" name="observador" type="boolean"/>
