@@ -15,7 +15,7 @@
         <sys_update_name>sys_ui_policy_rl_action_63882694db983010a96b09b1ba9619c0</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2021-05-19 16:42:48</sys_updated_on>
-        <ui_policy display_value="Funcio is Unipersonal">d8730571dbfd23009fd1f57eaf961908</ui_policy>
+        <ui_policy display_value="RECYCLE Funcio is Unipersonal">d8730571dbfd23009fd1f57eaf961908</ui_policy>
         <visible>false</visible>
     </sys_ui_policy_rl_action>
 </record_update>

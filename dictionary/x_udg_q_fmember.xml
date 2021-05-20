@@ -4,8 +4,8 @@
         <element label="Nom" max_length="140" name="nom" type="string"/>
         <element label="Ordre" max_length="40" name="order" type="integer"/>
         <element label="Posició o Motiu" max_length="280" name="posicio" type="string"/>
-        <element label="Sense usuari" max_length="40" name="sense_usuari" type="boolean"/>
-        <element label="Usuari" max_length="32" name="usuari" reference="sys_user" type="reference"/>
+        <element active="false" label="Sense usuari" max_length="40" name="sense_usuari" type="boolean"/>
+        <element label="Usuari" max_length="32" name="usuari" reference="sys_user" reference_qual="active=true^u_load_from_bd=true^EQ" reference_qual_condition="active=true^u_load_from_bd=true^EQ" type="reference"/>
         <index name="index">
             <element name="usuari"/>
         </index>

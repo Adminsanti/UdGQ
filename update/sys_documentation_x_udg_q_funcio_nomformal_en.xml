@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="nom" label="Nom curt" language="en" table="x_udg_q_funcio">
+    <sys_documentation element="nomformal" label="Nom Formal" language="en" table="x_udg_q_funcio">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>nom</element>
+            <element>nomformal</element>
             <help/>
             <hint/>
-            <label>Nom curt</label>
+            <label>Nom Formal</label>
             <language>en</language>
             <name>x_udg_q_funcio</name>
-            <plural>Noms curts</plural>
+            <plural>Nom Formals</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2018-11-13 11:20:17</sys_created_on>
+            <sys_created_on>2021-05-20 15:59:29</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>385b7db837712f004ccbd0d543990e6d</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_name>Nom curt</sys_name>
+            <sys_id>f6486b28db1cb010a96b09b1ba96191c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Nom Formal</sys_name>
             <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-            <sys_update_name>sys_documentation_x_udg_q_funcio_nom_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_udg_q_funcio_nomformal_en</sys_update_name>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:05:23</sys_updated_on>
+            <sys_updated_on>2021-05-20 15:59:48</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

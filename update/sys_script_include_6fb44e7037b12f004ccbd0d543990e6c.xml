@@ -47,6 +47,7 @@ Funcio.prototype = {
         var membres = [];
         var grMem = new GlideRecord('x_udg_q_fmember');
         grMem.addQuery('funcio', sys_id_Funcio);
+		grMem.addEncodedQuery('usuariANYTHING');
         grMem.query();
         while (grMem.next()) {
             membres.push(grMem.getValue('usuari'));
@@ -64,7 +65,7 @@ Funcio.prototype = {
         <sys_created_on>2018-11-13 12:28:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fb44e7037b12f004ccbd0d543990e6c</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>Funcio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -72,6 +73,6 @@ Funcio.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6fb44e7037b12f004ccbd0d543990e6c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-20 13:08:54</sys_updated_on>
+        <sys_updated_on>2021-05-20 15:50:48</sys_updated_on>
     </sys_script_include>
 </record_update>
