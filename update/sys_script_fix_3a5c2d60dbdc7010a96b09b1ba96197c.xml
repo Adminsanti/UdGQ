@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>membres funcio a taula aux</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[var grFunc = new GlideRecord('x_udg_q_funcio');
+grFunc.query();
+while (grFunc.next()) {
+    var membres = grFunc.getValue('membres').split(",");
+    for (var i = 0; i < membres.length; i++) {
+        var grMem = new GlideRecord('x_udg_q_fmember');
+        grMem.addQuery('funcio', grFunc.getUniqueValue());
+        grMem.addQuery('usuari', membres[i]);
+		grMem.query();
+		if (!grMem.next()) {	
+			grMem.initialize();
+			grMem.setValue('funcio',grFunc.getUniqueValue());
+			grMem.setValue('usuari', membres[i]);
+			grMem.setValue('nom', grMem.usuari.name);
+			new log ('Insert '+ grFunc.getDisplayValue()+'  li cal insertar '+grMem.usuari.name );// insertar
+			grMem.insert();
+		}
+    }
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-05-20 07:10:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3a5c2d60dbdc7010a96b09b1ba96197c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>membres funcio a taula aux</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_script_fix_3a5c2d60dbdc7010a96b09b1ba96197c</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-05-20 07:35:37</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

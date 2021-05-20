@@ -3,7 +3,7 @@
         <element label="Funció" mandatory="true" max_length="32" name="funcio" read_only="true" reference="x_udg_q_funcio" type="reference"/>
         <element label="Nom" max_length="140" name="nom" type="string"/>
         <element label="Ordre" max_length="40" name="order" type="integer"/>
-        <element label="Posició" max_length="280" name="posicio" type="string"/>
+        <element label="Posició o Motiu" max_length="280" name="posicio" type="string"/>
         <element label="Sense usuari" max_length="40" name="sense_usuari" type="boolean"/>
         <element label="Usuari" max_length="32" name="usuari" reference="sys_user" type="reference"/>
         <index name="index">
