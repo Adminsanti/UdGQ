@@ -19,7 +19,7 @@
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2018-11-16 10:08:13</sys_updated_on>
         <table>x_udg_q_funcio</table>
-        <ui_policy display_value="RECYCLE Funcio is Unipersonal">d8730571dbfd23009fd1f57eaf961908</ui_policy>
+        <ui_policy display_value="Funcio is Unipersonal">d8730571dbfd23009fd1f57eaf961908</ui_policy>
         <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>

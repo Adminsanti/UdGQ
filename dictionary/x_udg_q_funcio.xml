@@ -21,7 +21,7 @@
                 <element inactive_on_update="false" label="Col·lectiva" sequence="1" value="Col·lectiva"/>
             </choice>
         </element>
-        <element audit="true" label="User" mandatory="true" max_length="32" name="usuari" reference="sys_user" type="reference"/>
+        <element audit="true" label="User" mandatory="true" max_length="32" name="usuari" reference="sys_user" reference_qual="active=true^u_load_from_bd=true^EQ" reference_qual_condition="active=true^u_load_from_bd=true^EQ" type="reference"/>
         <index name="index">
             <element name="usuari"/>
         </index>
