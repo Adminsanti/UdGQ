@@ -28,15 +28,15 @@
         <sys_created_by>adminsanti</sys_created_by>
         <sys_created_on>2018-09-19 15:42:45</sys_created_on>
         <sys_id>29219b8737df5f001acdf01643990e33</sys_id>
-        <sys_mod_count>1176</sys_mod_count>
+        <sys_mod_count>1177</sys_mod_count>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-20 16:48:24</sys_updated_on>
+        <sys_updated_on>2021-05-21 09:23:40</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.9.18</version>
+        <version>1.9.19</version>
     </sys_app>
 </record_update>
