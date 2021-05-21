@@ -3,36 +3,36 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>34c8eb68db1cb010a96b09b1ba9619a8</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>a2028f74dbd03410a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
-            <text>Només lectura impedeix modificar registres de millora. Malgrat això, l'usuari pot tenir aquesta capacitat si participa d'una altra funció que l'habiliti</text>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
+            <text>Assignable fa que se li puguin assignar objectius i accions del pla de millora.</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>f4c8eb68db1cb010a96b09b1ba9619a8</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>66028f74dbd03410a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
-            <text>Assignable fa que se li puguin assignar objectius i accions del pla de millora.</text>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
+            <text>Només lectura impedeix modificar registres de millora. Malgrat això, l'usuari pot tenir aquesta capacitat si participa d'una altra funció que l'habiliti</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>tipus</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>34c8eb68db1cb010a96b09b1ba9619d4</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>6e028f74dbd03410a96b09b1ba961908</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -40,183 +40,211 @@
             <element>activa</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>b4c8eb68db1cb010a96b09b1ba9619d4</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>ee028f74dbd03410a96b09b1ba961908</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>34c8eb68db1cb010a96b09b1ba9619a8</element>
-            <position>2</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>38c8eb68db1cb010a96b09b1ba9619d4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
-            <sys_user/>
-            <type>annotation</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>readonly</element>
-            <position>3</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>b8c8eb68db1cb010a96b09b1ba9619d4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>3cc8eb68db1cb010a96b09b1ba9619d4</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>62028f74dbd03410a96b09b1ba961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sgq</element>
-            <position>5</position>
+            <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>bcc8eb68db1cb010a96b09b1ba9619d4</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>e2028f74dbd03410a96b09b1ba961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>gestionada_per</element>
-            <position>6</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>30c8eb68db1cb010a96b09b1ba9619d5</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>66028f74dbd03410a96b09b1ba961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>f4c8eb68db1cb010a96b09b1ba9619a8</element>
-            <position>7</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>b0c8eb68db1cb010a96b09b1ba9619d5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
-            <sys_user/>
-            <type>annotation</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assignable</element>
-            <position>8</position>
-            <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>34c8eb68db1cb010a96b09b1ba9619d5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>9</position>
+            <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>b4c8eb68db1cb010a96b09b1ba9619d5</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>e6028f74dbd03410a96b09b1ba961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>nom</element>
-            <position>10</position>
+            <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>38c8eb68db1cb010a96b09b1ba9619d5</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>6a028f74dbd03410a96b09b1ba961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>nomformal</element>
-            <position>11</position>
+            <position>7</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>b8c8eb68db1cb010a96b09b1ba9619d5</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>ea028f74dbd03410a96b09b1ba961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>usuari</element>
-            <position>12</position>
+            <position>8</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>3cc8eb68db1cb010a96b09b1ba9619d5</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>6e028f74dbd03410a96b09b1ba961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>membres</element>
-            <position>13</position>
+            <position>9</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 16:01:32</sys_created_on>
-            <sys_id>bcc8eb68db1cb010a96b09b1ba9619d5</sys_id>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>ee028f74dbd03410a96b09b1ba961909</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 16:01:32</sys_updated_on>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
             <sys_user/>
             <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>10</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>62028f74dbd03410a96b09b1ba96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>readonly</element>
+            <position>11</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>e2028f74dbd03410a96b09b1ba96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignable</element>
+            <position>12</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>66028f74dbd03410a96b09b1ba96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>13</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>e6028f74dbd03410a96b09b1ba96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>a2028f74dbd03410a96b09b1ba961902</element>
+            <position>14</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>6a028f74dbd03410a96b09b1ba96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>66028f74dbd03410a96b09b1ba961902</element>
+            <position>15</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-05-21 07:50:50</sys_created_on>
+            <sys_id>ea028f74dbd03410a96b09b1ba96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_udg_q_funcio" sys_domain="global" view="Default view">1f530a3037b12f004ccbd0d543990ea9</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-05-21 07:50:50</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
