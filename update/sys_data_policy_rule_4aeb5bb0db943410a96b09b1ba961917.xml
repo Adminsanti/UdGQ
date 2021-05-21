@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
     <sys_data_policy_rule action="INSERT_OR_UPDATE">
-        <disabled>false</disabled>
-        <field>assigned_to</field>
+        <disabled>true</disabled>
+        <field>cae</field>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_data_policy_rule</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2020-01-09 12:26:54</sys_created_on>
+        <sys_created_on>2021-05-21 09:43:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_data_policy display_value="RECYCLE Objectius es pot reassignar">10e499afdb8223409fd1f57eaf96196d</sys_data_policy>
-        <sys_id>32b8dba41b56c4105fab4002cd4bcb4d</sys_id>
+        <sys_data_policy display_value="CAI amb CAE">0cbb9fb0db943410a96b09b1ba9619f0</sys_data_policy>
+        <sys_id>4aeb5bb0db943410a96b09b1ba961917</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>assigned_to</sys_name>
+        <sys_name>cae</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_data_policy_rule_32b8dba41b56c4105fab4002cd4bcb4d</sys_update_name>
+        <sys_update_name>sys_data_policy_rule_4aeb5bb0db943410a96b09b1ba961917</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-01-09 12:26:54</sys_updated_on>
-        <table>x_udg_q_objectiumillora</table>
+        <sys_updated_on>2021-05-21 09:43:59</sys_updated_on>
+        <table>x_udg_q_cai</table>
     </sys_data_policy_rule>
 </record_update>

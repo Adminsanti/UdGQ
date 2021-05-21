@@ -47,7 +47,7 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass>13</sizeclass>
+        <sizeclass>14</sizeclass>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
@@ -63,7 +63,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_dictionary_x_udg_q_cai_null</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-04-30 10:58:11</sys_updated_on>
+        <sys_updated_on>2021-05-21 10:58:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
