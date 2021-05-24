@@ -12,7 +12,8 @@
         var tall = d.split('-');
         return tall[2] + "-" + tall[1] + "-" + tall[0];
     }
-
+    var countObjEnCurs = 0;
+    var countObjTancats = 0;
     var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
     var queryParams = request.queryParams;
     new log('/api/x_udg_q/sgq/pmsestandard ' + queryParams.sgq + " - " + queryParams.centre);
@@ -30,8 +31,8 @@
         xml.addTag('sgq', grSgq.codi);
         xml.addTag('nom', grSgq.nom);
         var grEstandard = new GlideRecord('x_udg_q_estandard');
-        grEstandard.addEncodedQuery('sgqsISEMPTY^ORsgqsLIKE6' + grSgq.getUniqueValue());
-		grEstandard.orderBy('num');
+        grEstandard.addEncodedQuery('sgqsISEMPTY^ORsgqsLIKE' + grSgq.getUniqueValue());
+        grEstandard.orderBy('num');
         grEstandard.query();
         while (grEstandard.next()) {
             var grO = new GlideRecord('x_udg_q_objectiumillora');
@@ -40,53 +41,82 @@
                 .addOrCondition('compartit', 'CONTAINS', grSgq.getUniqueValue());
             grO.addQuery('state', '!=', -5);
             grO.addQuery("tancament!=-5^ORtancamentISEMPTY"); //Elimina els esborrats
-            grO.addQuery('state', 2); //Només en curs, mentre no tinguem un parametre per indicar una altra cosa 
+            //grO.addQuery('state', 2); //Només en curs, mentre no tinguem un parametre per indicar una altra cosa 
+            grO.addEncodedQuery("state=2^ORclosed_at>=javascript:gs.beginningOfOneYearAgo()");
+			grM2m.orderBy('number');
             grO.setWorkflow(false); //No executar la query rule del filtre
             grO.query();
+
             if (grO.getRowCount() > 0) { // Si hi ha objectius d'aquest estàndard
-                xml.addTag('estandard id="'+grEstandard.getValue('num')+'"')
-					.addTag('nom', grEstandard.getValue('nom'));
+                xml.addTag('estandard id="' + grEstandard.getValue('num') + '"')
+                    .addTag('nom', grEstandard.getValue('nom'));
             }
             while (grO.next()) {
+                if (grO.state == 2) countObjEnCurs++;
+                if (grO.state == 3) countObjTancats++;
+
+
                 xml.addTag('objectiu');
                 xml.addTag('numero', grO.number)
                     .addTag('sgq', grO.sgq.codi)
                     .addTag('estat', grO.getDisplayValue('state'))
                     .addTag('descripciocurta', grO.getValue('short_description'))
                     .addTag('responsable', grO.getDisplayValue('responsable'))
-                    .addTag('prioritat', grO.priority.getDisplayValue())
-                    .addTag('dataprevista', girardata(grO.due_date.substring(0, 10)));
-				
-				if (grO.getValue('implica_titulacions')) xml.addTag('titulacions', grO.implica_titulacions.getDisplayValue());
+
+                    .addTag('prioritat', grO.priority.getDisplayValue());
+
+                if (grO.state == 2) {
+                    xml.addTag('dataprevista', girardata(grO.due_date.substring(0, 10)))
+                        .addTag('assoliment', grO.getDisplayValue('assoliment') + "%");
+                }
+                if (grO.state == 3) xml.addTag('datatancament', girardata(grO.closed_at.substring(0, 10)));
+
+                if (grO.getValue('implica_titulacions')) xml.addTag('titulacions', grO.implica_titulacions.getDisplayValue());
                 if (grO.getValue('description')) xml.addTag('descripcio', grO.getValue('description'));
                 if (grO.getValue('diagnostic')) xml.addTag('diagnostic', grO.getValue('diagnostic'));
                 if (grO.getValue('valoracio')) xml.addTag('valoracio', grO.getValue('valoracio'));
                 var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
                 grM2m.addQuery('objectiu_millora', grO.getUniqueValue());
-				grO.addQuery("accio_millora.tancament!=-5^ORaccio_millora.tancamentISEMPTY"); //Elimina els esborrats
-				grO.addQuery('accio_millora.state', '!=', -5);
+                grM2m.addQuery('accio_millora.tancament!=-5^ORaccio_millora.tancamentISEMPTY'); //Elimina els esborrats
+                grM2m.addQuery('accio_millora.state', '!=', -5);
                 grM2m.orderBy('order');
                 grM2m.orderBy('accio_millora.number');
                 grM2m.setWorkflow(false); //No executar la query rule del filtre
                 grM2m.query();
+                var countAccions = 0;
                 while (grM2m.next()) {
+                    countAccions++;
                     xml.addTag('accio');
                     var grA = new GlideRecord('x_udg_q_acciomillora');
                     grA.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
                     grA.get(grM2m.accio_millora);
                     xml.addTag('numero', grA.number)
+                        .addTag('sgq', grA.getDisplayValue('sgq'))
+                        .addTag('estat', grA.getDisplayValue('state'))
                         .addTag('descripciocurta', grA.short_description)
                         .addTag('responsable', grA.getDisplayValue('responsable'))
-                        .addTag('estat', grA.getDisplayValue('state'))
                         .addTag('execucio', grA.percentatge + '%');
                     xml.addTag('/accio');
                 }
+                xml.addTag('numeroAccions', countAccions);
                 xml.addTag('/objectiu');
             }
             if (grO.getRowCount() > 0) {
                 xml.addTag('/estandard');
             }
         }
+        xml.addTag('indicadors')
+            .addTag('indicador')
+            .addTag('descripcio', "Objectius en curs")
+            .addTag('valor', countObjEnCurs)
+            .addTag('/indicador');
+
+        xml.addTag('indicador')
+            .addTag('descripcio', "Objectius tancars darrer any")
+            .addTag('valor', countObjTancats)
+            .addTag('/indicador');
+
+        xml.addTag('/indicadors');
         xml.addTag('/pm');
     } else {
         xml.add('Aquest SGQ no existeix');
@@ -113,7 +143,7 @@
         <sys_created_on>2021-05-19 14:50:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>74ee8e98dbd43010a96b09b1ba961935</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>PmxEstandard</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -121,7 +151,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_74ee8e98dbd43010a96b09b1ba961935</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-19 15:47:33</sys_updated_on>
+        <sys_updated_on>2021-05-24 10:03:39</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
