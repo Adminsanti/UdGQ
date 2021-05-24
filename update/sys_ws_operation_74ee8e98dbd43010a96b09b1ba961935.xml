@@ -29,7 +29,7 @@
     if (grSgq.next()) {
         xml.addTag('pm');
         xml.addTag('sgq', grSgq.codi);
-        xml.addTag('nom', grSgq.nom);
+        xml.addTag('nomsgq', grSgq.nom);
         var grEstandard = new GlideRecord('x_udg_q_estandard');
         grEstandard.addEncodedQuery('sgqsISEMPTY^ORsgqsLIKE' + grSgq.getUniqueValue());
         grEstandard.orderBy('num');
@@ -55,14 +55,12 @@
                 if (grO.state == 2) countObjEnCurs++;
                 if (grO.state == 3) countObjTancats++;
 
-
                 xml.addTag('objectiu');
                 xml.addTag('numero', grO.number)
                     .addTag('sgq', grO.sgq.codi)
                     .addTag('estat', grO.getDisplayValue('state'))
                     .addTag('descripciocurta', grO.getValue('short_description'))
-                    .addTag('responsable', grO.getDisplayValue('responsable'))
-
+                    .addTag('responsable', grO.responsable.nomformal)
                     .addTag('prioritat', grO.priority.getDisplayValue());
 
                 if (grO.state == 2) {
@@ -96,7 +94,7 @@
                         .addTag('sgq', grA.getDisplayValue('sgq'))
                         .addTag('estat', grA.getDisplayValue('state'))
                         .addTag('descripciocurta', grA.short_description)
-                        .addTag('responsable', grA.getDisplayValue('responsable'))
+                        .addTag('responsable', grA.responsable.nomformal)
                         .addTag('execucio', grA.percentatge + '%');
                     xml.addTag('/accio');
                 }
@@ -127,8 +125,7 @@
     var str = GlideXMLUtil.removeInvalidChars(xml.toString()); //cal passar el resultat abans per una variable string
     response.setContentType('application/xml');
     response.setStatus(200);
-    var writer = response.getStreamWriter();
-    writer.writeString(str);
+    response.getStreamWriter().writeString(str);
 
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_udg_q/sgq/pmxestandard</operation_uri>
@@ -145,7 +142,7 @@
         <sys_created_on>2021-05-19 14:50:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>74ee8e98dbd43010a96b09b1ba961935</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>PmxEstandard</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -153,7 +150,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_74ee8e98dbd43010a96b09b1ba961935</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-24 10:12:13</sys_updated_on>
+        <sys_updated_on>2021-05-24 10:53:17</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
