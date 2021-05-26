@@ -95,10 +95,10 @@
                     grA.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
                     grA.get(grM2m.accio_millora);
                     xml.addTag('accio');
-                    xml.addTag('dreta', grA.number);
+                    xml.addTag('esquerra', grA.number);
 
-                    if (grA.state == 2) xml.addTag('esquerra', grA.short_description + ' - ' + grA.percentatge + '%');
-                    if (grA.state == 3) xml.addTag('esquerra', grA.short_description + ' (Tancada)');
+                    if (grA.state == 2) xml.addTag('dreta', grA.short_description + ' - ' + grA.percentatge + '%');
+                    if (grA.state == 3) xml.addTag('dreta', grA.short_description + ' (Tancada)');
 
                     xml.addTag('pastilles');
                     if (grA.state == 3) xml.addPastilla('Tancat', 'vermella');
@@ -143,7 +143,7 @@
         <sys_created_on>2021-05-19 14:50:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>74ee8e98dbd43010a96b09b1ba961935</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>PmX</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -151,7 +151,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_74ee8e98dbd43010a96b09b1ba961935</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-26 10:09:17</sys_updated_on>
+        <sys_updated_on>2021-05-26 10:47:14</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
