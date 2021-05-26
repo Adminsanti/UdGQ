@@ -6,7 +6,7 @@
         <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>GET</http_method>
-        <name>PmxEstandard</name>
+        <name>PmX</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
     function girardata(d) {
         var tall = d.split('-');
@@ -14,11 +14,13 @@
     }
     var countObjEnCurs = 0;
     var countObjTancats = 0;
+    var countAccions = 0;
     var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
     var queryParams = request.queryParams;
     new log('/api/x_udg_q/sgq/pmsestandard ' + queryParams.sgq + " - " + queryParams.centre);
     //Els paràmetres obligatoris són centre (amb el codi dels atributs) o sgq (amb el nom del sgq), un o els dos si lliguen.
     if (!queryParams.centre && !queryParams.sgq) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre o sgq'));
+    if (!queryParams.separador || queryParams.separador != 'estandard') return response.setError(new sn_ws_err.NotFoundError('Falta parematre separador vàlid'));
 
     var grSgq = new GlideRecord('x_udg_q_sgq');
     if (queryParams.centre && queryParams.centre != '') grSgq.addQuery('qid', queryParams.centre);
@@ -48,33 +50,37 @@
             grO.query();
 
             if (grO.getRowCount() > 0) { // Si hi ha objectius d'aquest estàndard
-                xml.addTag('estandard id="' + grEstandard.getValue('num') + '"')
-                    .addTag('nom', grEstandard.getValue('nom'));
+                xml.addTag('separador id="' + grEstandard.getValue('num') + '"');
+                if (queryParams.separador == 'estandard') xml.addTag('texte', grEstandard.getValue('nom'));
             }
             while (grO.next()) {
                 if (grO.state == 2) countObjEnCurs++;
                 if (grO.state == 3) countObjTancats++;
 
-                xml.addTag('objectiu');
-                xml.addTag('numero', grO.number)
-                    .addTag('sgq', grO.sgq.codi)
-                    .addTag('estat', grO.getDisplayValue('state'))
-                    .addTag('descripciocurta', grO.getValue('short_description'))
-                    .addTag('responsable', grO.responsable.nomformal)
-                    .addTag('prioritat', grO.priority.getDisplayValue());
+                xml.addTag('objectiu')
+                    .addTag('titol', grO.number + " - " + grO.getValue('short_description'))
+                    .addTag('complement', grO.getDisplayValue('state'));
 
-                if (grO.state == 2) {
-                    xml.addTag('dataprevista', girardata(grO.due_date.substring(0, 10)))
-                        .addTag('assoliment', grO.getDisplayValue('assoliment') + "%");
-                }
-                if (grO.state == 3) {
-                    xml.addTag('datatancament', girardata(grO.closed_at.substring(0, 10)))
-                        .addTag('tancament', grO.getDisplayValue('tancament'));
-                }
-                if (grO.getValue('implica_titulacions')) xml.addTag('titulacions', grO.implica_titulacions.getDisplayValue());
-                if (grO.getValue('description')) xml.addTag('descripcio', grO.getValue('description'));
-                if (grO.getValue('diagnostic')) xml.addTag('diagnostic', grO.getValue('diagnostic'));
-                if (grO.getValue('valoracio')) xml.addTag('valoracio', grO.getValue('valoracio'));
+                xml.addTag('pastilles');
+                if (grO.state == 3) xml.addPastilla('Tancat', 'vermella');
+                if (grO.sgq != grSgq.getUniqueValue()) xml.addPastilla(grO.sgq.getDisplayValue(), 'verda');
+                xml.addTag('/pastilles');
+
+                xml.addTag('caixa');
+
+                xml.addFilera('Responsable:', grO.responsable.nomformal);
+                if (grO.state == 2) xml.addFilera('Data prevista:', girardata(grO.due_date.substring(0, 10)));
+                if (grO.state == 2) xml.addFilera('Assoliment:', grO.getDisplayValue('assoliment') + "%");
+                if (grO.state == 2) xml.addFilera('Prioritat', grO.priority.getDisplayValue());
+                if (grO.state == 3) xml.addFilera('Data de tancament:', girardata(grO.closed_at.substring(0, 10)));
+                if (grO.state == 3) xml.addFilera('Tancament:', grO.getDisplayValue('tancament'));
+                if (grO.getValue('implica_titulacions') != '') xml.addFilera('Titulacions:', grO.implica_titulacions.getDisplayValue());
+                else xml.addFilera('Titulacions', 'Totes');
+                if (grO.getValue('description')) xml.addFilera('Descripció:', grO.getValue('description'));
+                if (grO.getValue('diagnostic')) xml.addFilera('Diagnòstic:', grO.getValue('diagnostic'));
+                if (grO.getValue('valoracio')) xml.addFilera('Valoració:', grO.getValue('valoracio'));
+                xml.addTag('/caixa');
+
                 var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
                 grM2m.addQuery('objectiu_millora', grO.getUniqueValue());
                 grM2m.addQuery('accio_millora.tancament!=-5^ORaccio_millora.tancamentISEMPTY'); //Elimina els esborrats
@@ -83,39 +89,34 @@
                 grM2m.orderBy('accio_millora.number');
                 grM2m.setWorkflow(false); //No executar la query rule del filtre
                 grM2m.query();
-                var countAccions = 0;
                 while (grM2m.next()) {
                     countAccions++;
-                    xml.addTag('accio');
                     var grA = new GlideRecord('x_udg_q_acciomillora');
                     grA.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
                     grA.get(grM2m.accio_millora);
-                    xml.addTag('numero', grA.number)
-                        .addTag('sgq', grA.getDisplayValue('sgq'))
-                        .addTag('estat', grA.getDisplayValue('state'))
-                        .addTag('descripciocurta', grA.short_description)
-                        .addTag('responsable', grA.responsable.nomformal)
-                        .addTag('execucio', grA.percentatge + '%');
+                    xml.addTag('accio');
+                    xml.addTag('dreta', grA.number);
+
+                    if (grA.state == 2) xml.addTag('esquerra', grA.short_description + ' - ' + grA.percentatge + '%');
+                    if (grA.state == 3) xml.addTag('esquerra', grA.short_description + ' (Tancada)');
+
+                    xml.addTag('pastilles');
+                    if (grA.state == 3) xml.addPastilla('Tancat', 'vermella');
+                    if (grA.sgq != grSgq.getUniqueValue()) xml.addPastilla(grA.sgq.getDisplayValue(), 'verda');
+                    xml.addTag('/pastilles');
+
                     xml.addTag('/accio');
                 }
                 xml.addTag('numeroAccions', countAccions);
                 xml.addTag('/objectiu');
             }
-            if (grO.getRowCount() > 0) {
-                xml.addTag('/estandard');
-            }
+            if (grO.getRowCount() > 0) xml.addTag('/separador');
         }
-        xml.addTag('indicadors')
-            .addTag('indicador')
-            .addTag('descripcio', "Objectius en curs")
-            .addTag('valor', countObjEnCurs)
-            .addTag('/indicador');
 
-        xml.addTag('indicador')
-            .addTag('descripcio', "Objectius tancars darrer any")
-            .addTag('valor', countObjTancats)
-            .addTag('/indicador');
-
+        xml.addTag('indicadors');
+        xml.addIndicador("Objectius en curs", countObjEnCurs)
+            .addIndicador("Objectius tancats darrer any", countObjTancats)
+            .addIndicador("Accions totals", countAccions);
         xml.addTag('/indicadors');
         xml.addTag('/pm');
     } else {
@@ -128,10 +129,10 @@
     response.getStreamWriter().writeString(str);
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_udg_q/sgq/pmxestandard</operation_uri>
-        <produces>application/json,application/xml,text/xml</produces>
+        <operation_uri>/api/x_udg_q/sgq/pmx</operation_uri>
+        <produces>application/xml,text/xml</produces>
         <produces_customized>true</produces_customized>
-        <relative_path>/pmxestandard</relative_path>
+        <relative_path>/pmx</relative_path>
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
@@ -142,15 +143,15 @@
         <sys_created_on>2021-05-19 14:50:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>74ee8e98dbd43010a96b09b1ba961935</sys_id>
-        <sys_mod_count>42</sys_mod_count>
-        <sys_name>PmxEstandard</sys_name>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_name>PmX</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_74ee8e98dbd43010a96b09b1ba961935</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-24 10:53:17</sys_updated_on>
+        <sys_updated_on>2021-05-26 10:09:17</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
