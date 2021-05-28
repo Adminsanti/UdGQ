@@ -3,11 +3,11 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>30d213a0db98b010a96b09b1ba9619d4</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>574e93c7db1cf050a96b09b1ba9619f6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <text>Informeu aquí del CAE només quan totes les titulacions a acreditar comparteixen un mateix CAE. Altrament informeu-ne a cada registre d'acreditació</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
@@ -15,13 +15,13 @@
             <element>inici_proces</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>78d213a0db98b010a96b09b1ba9619df</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>234ed3c7db1cf050a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -29,13 +29,13 @@
             <element>aprovacio_autoinforme_cai</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f8d213a0db98b010a96b09b1ba9619df</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>a34ed3c7db1cf050a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -43,13 +43,13 @@
             <element>aprovacio_autoinforme_cq_centre</element>
             <position>2</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>7cd213a0db98b010a96b09b1ba9619df</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>274ed3c7db1cf050a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -57,13 +57,13 @@
             <element>aprovacio_autoinforme_junta_centre</element>
             <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>fcd213a0db98b010a96b09b1ba9619df</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>a74ed3c7db1cf050a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -71,13 +71,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>70d213a0db98b010a96b09b1ba9619e0</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>2b4ed3c7db1cf050a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -85,13 +85,13 @@
             <element>inici_proces_definitiu</element>
             <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f0d213a0db98b010a96b09b1ba9619e0</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>ab4ed3c7db1cf050a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -99,13 +99,13 @@
             <element>aprovacio_autoinforme_cai_exacta</element>
             <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>74d213a0db98b010a96b09b1ba9619e0</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>2f4ed3c7db1cf050a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -113,13 +113,13 @@
             <element>aprovacio_autoinforme_cq_centre_exacta</element>
             <position>7</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f4d213a0db98b010a96b09b1ba9619e0</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>af4ed3c7db1cf050a96b09b1ba961902</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -127,13 +127,13 @@
             <element>aprovacio_autoinforme_junta_centre_exacta</element>
             <position>8</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>78d213a0db98b010a96b09b1ba9619e0</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>234ed3c7db1cf050a96b09b1ba961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -141,13 +141,13 @@
             <element>.end_split</element>
             <position>9</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f8d213a0db98b010a96b09b1ba9619e0</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>a34ed3c7db1cf050a96b09b1ba961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -155,13 +155,13 @@
             <element>.begin_split</element>
             <position>10</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>7cd213a0db98b010a96b09b1ba9619e0</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>274ed3c7db1cf050a96b09b1ba961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -169,13 +169,13 @@
             <element>inici_exposicio_publica</element>
             <position>11</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>fcd213a0db98b010a96b09b1ba9619e0</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>a74ed3c7db1cf050a96b09b1ba961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -183,13 +183,13 @@
             <element>final_exposicio_publica</element>
             <position>12</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>70d213a0db98b010a96b09b1ba9619e1</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>2b4ed3c7db1cf050a96b09b1ba961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -197,13 +197,13 @@
             <element>.split</element>
             <position>13</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f0d213a0db98b010a96b09b1ba9619e1</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>ab4ed3c7db1cf050a96b09b1ba961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -211,13 +211,13 @@
             <element>exposicio_publica_exacta</element>
             <position>14</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>74d213a0db98b010a96b09b1ba9619e1</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>2f4ed3c7db1cf050a96b09b1ba961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -225,13 +225,13 @@
             <element>.end_split</element>
             <position>15</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f4d213a0db98b010a96b09b1ba9619e1</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>af4ed3c7db1cf050a96b09b1ba961903</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -239,13 +239,13 @@
             <element>.begin_split</element>
             <position>16</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>78d213a0db98b010a96b09b1ba9619e1</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>234ed3c7db1cf050a96b09b1ba961904</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -253,13 +253,13 @@
             <element>aprovacio_cq_udg</element>
             <position>17</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f8d213a0db98b010a96b09b1ba9619e1</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>a34ed3c7db1cf050a96b09b1ba961904</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -267,13 +267,13 @@
             <element>enviament_informe_aqu</element>
             <position>18</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>7cd213a0db98b010a96b09b1ba9619e1</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>274ed3c7db1cf050a96b09b1ba961904</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -281,13 +281,13 @@
             <element>.split</element>
             <position>19</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>fcd213a0db98b010a96b09b1ba9619e1</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>a74ed3c7db1cf050a96b09b1ba961904</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -295,13 +295,13 @@
             <element>aprovacio_cq_udg_exacta</element>
             <position>20</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>70d213a0db98b010a96b09b1ba9619e2</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>2b4ed3c7db1cf050a96b09b1ba961904</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -309,13 +309,13 @@
             <element>enviament_informe_aqu_exacta</element>
             <position>21</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f0d213a0db98b010a96b09b1ba9619e2</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>ab4ed3c7db1cf050a96b09b1ba961904</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -323,27 +323,27 @@
             <element>.end_split</element>
             <position>22</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>74d213a0db98b010a96b09b1ba9619e2</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>2f4ed3c7db1cf050a96b09b1ba961904</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>30d213a0db98b010a96b09b1ba9619d4</element>
+            <element>574e93c7db1cf050a96b09b1ba9619f6</element>
             <position>23</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f4d213a0db98b010a96b09b1ba9619e2</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>af4ed3c7db1cf050a96b09b1ba961904</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -351,13 +351,13 @@
             <element>.begin_split</element>
             <position>24</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>78d213a0db98b010a96b09b1ba9619e2</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>234ed3c7db1cf050a96b09b1ba961905</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -365,13 +365,13 @@
             <element>visita_cae</element>
             <position>25</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>f8d213a0db98b010a96b09b1ba9619e2</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>a34ed3c7db1cf050a96b09b1ba961905</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -379,13 +379,13 @@
             <element>visita_cae_max</element>
             <position>26</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>7cd213a0db98b010a96b09b1ba9619e2</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>274ed3c7db1cf050a96b09b1ba961905</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -393,13 +393,13 @@
             <element>.split</element>
             <position>27</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>fcd213a0db98b010a96b09b1ba9619e2</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>a74ed3c7db1cf050a96b09b1ba961905</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -407,13 +407,13 @@
             <element>visita_cae_exacte</element>
             <position>28</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:25:41</sys_created_on>
-            <sys_id>70d213a0db98b010a96b09b1ba9619e3</sys_id>
+            <sys_created_on>2021-05-28 09:40:39</sys_created_on>
+            <sys_id>2b4ed3c7db1cf050a96b09b1ba961905</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_udg_q_cai" sys_domain="global" view="Default view">a2f19e651baaa410c851a64fad4bcb0e</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:25:41</sys_updated_on>
+            <sys_updated_on>2021-05-28 09:40:39</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

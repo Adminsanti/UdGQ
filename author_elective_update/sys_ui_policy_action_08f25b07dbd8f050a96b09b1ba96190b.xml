@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>acreditacio</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-05-28 08:51:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>08f25b07dbd8f050a96b09b1ba96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>acreditacio</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_ui_policy_action_08f25b07dbd8f050a96b09b1ba96190b</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-05-28 08:51:06</sys_updated_on>
+        <table>x_udg_q_acreditacio</table>
+        <ui_policy display_value="Acreditacio - resultat manatory si acreditacio">6eb21307dbd8f050a96b09b1ba9619d3</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_ui_policy_action_08f25b07dbd8f050a96b09b1ba96190b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>acreditacio</field><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2021-05-28 08:51:06</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>08f25b07dbd8f050a96b09b1ba96190b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>acreditacio</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_ui_policy_action_08f25b07dbd8f050a96b09b1ba96190b</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2021-05-28 08:51:06</sys_updated_on><table>x_udg_q_acreditacio</table><ui_policy display_value="Acreditacio - resultat manatory si acreditacio">6eb21307dbd8f050a96b09b1ba9619d3</ui_policy><visible>ignore</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1091971310</payload_hash>
+        <record_name>acreditacio</record_name>
+        <reverted_from/>
+        <source>f19553a1db447010a96b09b1ba9619ca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-05-28 08:51:06</sys_created_on>
+        <sys_id>adf2db07dbd8f050a96b09b1ba9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179b22b833e0000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-05-28 08:51:06</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>a5f2db07e8d8f050681b90e6b3d7cbda</update_guid>
+        <update_guid_history>a5f2db07e8d8f050681b90e6b3d7cbda:-1091971310</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-05-28 08:51:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>0db0d386c1114edc9012297d066c0a61</sys_id>
+        <sys_metadata>08f25b07dbd8f050a96b09b1ba96190b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>acreditacio</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent display_value="Acreditacio - resultat manatory si acreditacio">6eb21307dbd8f050a96b09b1ba9619d3</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_08f25b07dbd8f050a96b09b1ba96190b</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_08f25b07dbd8f050a96b09b1ba96190b">adf2db07dbd8f050a96b09b1ba9619da</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-05-28 08:51:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
