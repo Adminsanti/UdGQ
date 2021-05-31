@@ -108,33 +108,32 @@ ObjectiuUtils.prototype = {
         }
     },
 
-    getRtfperSubestandard: function(sysidSubestandard, filtre, status, sgq) {
-		//gs.addInfoMessage("getRtfperSubestandard: "+sysidSubestandard+ " f: "+filtre+ " s: "+ status + " sgq: "+sgq);
+    getRtfperSubestandard: function(sysidSubestandard, filtre, status, sgq, grPlantilla) {
+        //gs.addInfoMessage("getRtfperSubestandard: "+sysidSubestandard+ " f: "+filtre+ " s: "+ status + " sgq: "+sgq);
         //inner function
-        function textestatA(estat) {
+
+        /*function textestatA(estat) {
             if (estat == -5) return "Esborrany";
             if (estat == 2) return "En curs";
-            if (estat == 3) return "Tancada";
-            return "ERROR!!!!";
-        }
+            return "Tancada";
+        }*/
 
         function sgqSiNoActual(x) {
             var text = "";
             if (x.sgq != sgq) text = " (" + x.sgq.getDisplayValue() + ")";
             return text;
         }
-
         //new x_udg_q.log("Generant detall informe per " + sgq + " per l'estandard " + sysidSubestandard);
         var col = [7600, 9100, 9700];
         var grObj = new GlideRecord('x_udg_q_objectiumillora');
         var r = new rtf("");
-        var filtreplus = "subestandard=" + sysidSubestandard + "^state=" + status ;
-		if (filtre && filtre!='') filtreplus += "^" + filtre;
+        var filtreplus = "subestandard=" + sysidSubestandard + "^state=" + status;
+        if (filtre && filtre != '') filtreplus += "^" + filtre;
         grObj.addEncodedQuery(filtreplus);
         grObj.orderBy('number');
         grObj.query();
         if (grObj.hasNext() && status == 2) r.add("Objectius vigents al pla de millora:\\par\\par");
-		if (grObj.hasNext() && status == 3) r.add("Objectius tancats en el període:\\par\\par");
+        if (grObj.hasNext() && status == 3) r.add("Objectius tancats en el període:\\par\\par");
         while (grObj.next()) {
             r.tablestart();
             r.rowstart(col, 36);
@@ -147,19 +146,37 @@ ObjectiuUtils.prototype = {
             r.add("\\intbl\\ql").cellend();
             r.add(parseInt(grObj.assoliment) + "%\\intbl\\qr"); //  \qr alinea a dreta
             r.cellend().rowend();
-            r.rowstart([col[2]]); //comença filera de valoració
+
+            if (grPlantilla.longDescription && grObj.description != '') {
+                r.rowstart([col[2]])
+                    .add('{\\b Descripció llarga: \\b0')
+                    .add(grObj.description.toString().replace("\n", " \\ql\\par "))
+                    .add("}\\intbl\\ql")
+                    .cellend().rowend();
+            }
+
+            if (grPlantilla.diagnostic && grObj.diagnostic != '') {
+                r.rowstart([col[2]])
+                    .add('{\\b Diagnòstic: \\b0')
+                    .add(grObj.diagnostic.toString().replace("\n", " \\ql\\par "))
+                    .add("}\\intbl\\ql")
+                    .cellend().rowend();
+            }
 
             var venciment = new GlideDateTime();
             venciment.setYearLocalTime(venciment.getYearLocalTime() - 1); // venciment fa un any
             var valorat = new GlideDateTime(grObj.valorat);
 
-            if (grObj.valoracio != "") {
-                if (valorat > venciment || grObj.state == 3) r.add("{Valoració: ");
-                else r.add("{\\cf6 Valoració vençuda: ");
-                r.add(grObj.valoracio.replace("\n", " \\ql\\par ")); //Per incloure els retorns de linia
-            } else r.add("{\\cf6 Manca Valoració");
-            r.add("}\\intbl\\ql");
-            r.cellend().rowend();
+            if (grObj.getValue('declarat') < venciment || grObj.valoracio != '') {
+                r.rowstart([col[2]]); //comença filera de valoració
+                if (grObj.valoracio != '') {
+                    if (valorat > venciment || grObj.state == 3) r.add('{\\b Valoració: \\b0');
+                    else r.add("{\\cf6 Valoració vençuda: ");
+                    r.add(grObj.valoracio.replace("\n", " \\ql\\par ")); //Per incloure els retorns de linia
+                } else r.add("{\\cf6 Manca Valoració");
+                r.add("}\\intbl\\ql")
+                .cellend().rowend();
+            }
 
             var grM2m = new GlideRecord('x_udg_q_m2m_accions_objectius');
             grM2m.addQuery('objectiu_millora', grObj.sys_id);
@@ -168,12 +185,12 @@ ObjectiuUtils.prototype = {
             grM2m.query();
             while (grM2m.next()) {
                 if (grM2m.accio_millora.state != -5 && grM2m.accio_millora.number != '') { //cal assegurar que l'acció és accesible
-                    r.rowstart(col);
-                    r.add(" \\b " + grM2m.accio_millora.number + " \\b0");
-                    r.add(sgqSiNoActual(grM2m.accio_millora));
-                    r.add(" - " + grM2m.accio_millora.short_description + "\\intbl\\ql").cellend();
-                    r.add(textestatA(grM2m.accio_millora.state) + "\\intbl\\ql").cellend();
-                    r.add(parseInt(grM2m.accio_millora.percentatge) + "%\\intbl\\qr"); //  \qr alinea a dreta
+                    r.rowstart(col)
+                    .add(" \\b " + grM2m.accio_millora.number + " \\b0")
+                    .add(sgqSiNoActual(grM2m.accio_millora))
+                    .add(" - " + grM2m.accio_millora.short_description + "\\intbl\\ql").cellend()
+                    .add(grM2m.accio_millora.state.getDisplayValue() + "\\intbl\\ql").cellend()
+                    .add(parseInt(grM2m.accio_millora.percentatge) + "%\\intbl\\qr"); //  \qr alinea a dreta
                     r.cellend().rowend();
                 }
             }
@@ -290,7 +307,7 @@ ObjectiuUtils.prototype = {
         <sys_created_on>2018-11-06 16:28:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfb376aedbe923009fd1f57eaf9619e4</sys_id>
-        <sys_mod_count>489</sys_mod_count>
+        <sys_mod_count>514</sys_mod_count>
         <sys_name>ObjectiuUtils</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -298,6 +315,6 @@ ObjectiuUtils.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_cfb376aedbe923009fd1f57eaf9619e4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-03-03 13:48:03</sys_updated_on>
+        <sys_updated_on>2021-05-31 15:53:40</sys_updated_on>
     </sys_script_include>
 </record_update>

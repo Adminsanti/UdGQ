@@ -2,8 +2,10 @@
     <element extends="x_udg_q_plantillacomu" label="Plantilla VSMA" max_length="40" name="x_udg_q_plantillavsma" sizeclass="14" type="collection">
         <element attributes="readable=true,show_condition_count=true" choice_field="state" dependent="taula" dependent_on_field="taula" label="Condicions" max_length="4000" name="condicions" reference="x_udg_q_objectiumillora" type="conditions" use_dependent_field="true"/>
         <element label="Desde" max_length="40" name="desde" type="glide_date"/>
+        <element label="Incloure diagnòstic" max_length="40" name="diagnostic" type="boolean"/>
         <element label="Incloure esborranys" max_length="40" name="incloure_esborranys" type="boolean"/>
         <element label="Incloure esborrats" max_length="40" name="incloure_esborrats" type="boolean"/>
+        <element label="Incloure descripció llarga" max_length="40" name="longdescription" type="boolean"/>
         <element default="x_udg_q_objectiumillora" label="Taula" mandatory="true" max_length="80" name="taula" read_only="true" type="table_name"/>
         <element choice="3" default="1" label="Tipus" max_length="140" name="tipus" type="string">
             <choice>
