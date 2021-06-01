@@ -11,7 +11,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_ui_action display_value="Crea nova funció pel CAI">b2d66fb4dbd43410a96b09b1ba9619e2</sys_ui_action>
+        <sys_ui_action display_value="Crea nova funció per al CAI">b2d66fb4dbd43410a96b09b1ba9619e2</sys_ui_action>
         <sys_update_name>sys_ui_action_role_9f5cafbcdbd43410a96b09b1ba961949</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
         <sys_updated_on>2021-05-21 10:55:58</sys_updated_on>
