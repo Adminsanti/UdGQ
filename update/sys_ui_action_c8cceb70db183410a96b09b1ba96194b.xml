@@ -35,7 +35,7 @@ grF.setValue('sgq', current.sgq);
 grF.setValue('gestionada_per', current.getUniqueValue());
 grF.setValue('nom', "CAE "+ current.number.substring(3,10) + ' (' + current.titulacions.getDisplayValue() + ")");
 grF.setValue('nomformal', 'Membres del CAE '+ current.number.substring(3,10) + ' (' + current.titulacions.getDisplayValue() + ")");
-grF.setValue('usuari', current.sgq.responsable.usuari);
+//grF.setValue('usuari', current.sgq.responsable.usuari);
 grF.setValue('tipus','Col·lectiva');
 grF.setValue('assignable',false);
 grF.setValue('readonly',true);
@@ -55,7 +55,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c8cceb70db183410a96b09b1ba96194b</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Crea nova funció per al CAE</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -64,7 +64,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_c8cceb70db183410a96b09b1ba96194b</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-01 16:20:56</sys_updated_on>
+        <sys_updated_on>2021-06-01 16:52:54</sys_updated_on>
         <table>x_udg_q_cai</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
