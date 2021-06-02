@@ -32,13 +32,13 @@
             <element name="responsable_sgq"/>
         </index>
         <index name="index2">
-            <element name="responsable"/>
+            <element name="cq"/>
         </index>
         <index name="index3">
-            <element name="propietari"/>
+            <element name="responsable"/>
         </index>
         <index name="index4">
-            <element name="cq"/>
+            <element name="propietari"/>
         </index>
         <index name="index5">
             <element name="responsable_organic"/>
