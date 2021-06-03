@@ -7,6 +7,7 @@
         <element label="QID" max_length="40" name="qid" read_only="true" type="string" unique="true"/>
         <element label="QMS" max_length="32" name="qms" reference="x_udg_q_titulacio" type="reference"/>
         <element label="Responsable" max_length="32" name="responsable" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Segell AQU" max_length="40" name="segellaqu" type="user_image"/>
         <element choice="1" label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference">
             <choice/>
         </element>
