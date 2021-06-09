@@ -4,13 +4,13 @@
             <element>propietari</element>
             <position>0</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:31:55</sys_created_on>
-            <sys_id>00445b24db98b010a96b09b1ba9619f5</sys_id>
+            <sys_created_on>2021-06-09 07:21:20</sys_created_on>
+            <sys_id>3f713c0fdb203410a96b09b1ba9619ce</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:31:55</sys_updated_on>
+            <sys_updated_on>2021-06-09 07:21:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,97 @@
             <element>responsable</element>
             <position>1</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:31:55</sys_created_on>
-            <sys_id>80445b24db98b010a96b09b1ba9619f5</sys_id>
+            <sys_created_on>2021-06-09 07:21:20</sys_created_on>
+            <sys_id>b3713c0fdb203410a96b09b1ba9619cf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:31:55</sys_updated_on>
+            <sys_updated_on>2021-06-09 07:21:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>suport</element>
+            <position>2</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-06-09 07:21:20</sys_created_on>
+            <sys_id>3b713c0fdb203410a96b09b1ba9619cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-06-09 07:21:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cq</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:31:55</sys_created_on>
-            <sys_id>04445b24db98b010a96b09b1ba9619f5</sys_id>
+            <sys_created_on>2021-06-09 07:21:20</sys_created_on>
+            <sys_id>bf713c0fdb203410a96b09b1ba9619cf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:31:55</sys_updated_on>
+            <sys_updated_on>2021-06-09 07:21:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:31:55</sys_created_on>
-            <sys_id>84445b24db98b010a96b09b1ba9619f5</sys_id>
+            <sys_created_on>2021-06-09 07:21:20</sys_created_on>
+            <sys_id>37713c0fdb203410a96b09b1ba9619d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:31:55</sys_updated_on>
+            <sys_updated_on>2021-06-09 07:21:20</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>propietari.usuari.name</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:31:55</sys_created_on>
-            <sys_id>08445b24db98b010a96b09b1ba9619f5</sys_id>
+            <sys_created_on>2021-06-09 07:21:20</sys_created_on>
+            <sys_id>bb713c0fdb203410a96b09b1ba9619d0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:31:55</sys_updated_on>
+            <sys_updated_on>2021-06-09 07:21:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>responsable.usuari.name</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>adminsanti</sys_created_by>
-            <sys_created_on>2021-05-20 14:31:55</sys_created_on>
-            <sys_id>88445b24db98b010a96b09b1ba9619f5</sys_id>
+            <sys_created_on>2021-06-09 07:21:20</sys_created_on>
+            <sys_id>33713c0fdb203410a96b09b1ba9619d1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-05-20 14:31:55</sys_updated_on>
+            <sys_updated_on>2021-06-09 07:21:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>suport.usuari.name</element>
+            <position>7</position>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-06-09 07:21:20</sys_created_on>
+            <sys_id>b7713c0fdb203410a96b09b1ba9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Responsabilitats sobre el SGQ" display_value="Responsabilitats sobre el SGQ" name="x_udg_q_sgq" sys_domain="global" view="Default view">1481c514db0123409fd1f57eaf96191f</sys_ui_section>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-06-09 07:21:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

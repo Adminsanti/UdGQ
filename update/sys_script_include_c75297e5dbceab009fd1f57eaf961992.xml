@@ -19,8 +19,7 @@ Usuari.prototype = {
             var l = new ListUtil(gr.x_udg_q_sgq_visibles);
             if (!l.isInList(sgq_id)) { //no esta inclós, encara
                 l.addToList(sgq_id);
-                if (gr.x_udg_q_sgq_actual == '')
-                    gr.x_udg_q_sgq_actual = sgq_id;
+                if (gr.x_udg_q_sgq_actual == '') gr.x_udg_q_sgq_actual = sgq_id;
                 gr.x_udg_q_sgq_visibles = l.getList();
                 gr.update();
             }
@@ -172,9 +171,19 @@ Usuari.prototype = {
         gr.addQuery('sys_id', sgq);
         gr.addQuery('actiu', true);
         var qc = gr.addQuery('responsable.usuari', this.usuari);
-        qc.addOrCondition('responsable.suport', 'CONTAINS', this.usuari);
         qc.addOrCondition('propietari.usuari', this.usuari);
-        qc.addOrCondition('propietari.suport', 'CONTAINS', this.usuari);
+        gr.setLimit(1);
+        gr.query();
+        var itIs = gr.next();
+        return itIs;
+    },
+
+    isSuportSGQ: function(sgq) {
+        var gr = new GlideRecord("x_udg_q_sgq");
+        if (!sgq) return false;
+        gr.addQuery('sys_id', sgq);
+        gr.addQuery('actiu', true);
+        gr.addQuery('suport.usuari', this.usuari);
         gr.setLimit(1);
         gr.query();
         var itIs = gr.next();
@@ -205,6 +214,7 @@ Usuari.prototype = {
             if (this.isManagerUniversitat() ||
                 this.isManagerModificacio() ||
                 this.isManager(grSgq.sys_id) ||
+                this.isSuportSGQ(grSgq.sys_id) ||
                 this.isUser(grSgq.sys_id) ||
                 this.isObservador(grSgq.sys_id)) {
                 llistaSgq.push(grSgq.sys_id.toString());
@@ -218,7 +228,7 @@ Usuari.prototype = {
         if (gr.get(this.usuari) && gr.x_udg_q_degradat != '') {
             gr.x_udg_q_degradat = '';
             gr.update();
-			new log ('x_udg_q.Usuari.desdegrada() per '+ gr.name +' '+ gr.user_name);
+            new log('x_udg_q.Usuari.desdegrada() per ' + gr.name + ' ' + gr.user_name);
         }
     },
 
@@ -237,6 +247,11 @@ Usuari.prototype = {
         } else
             this.delRol('x_udg_q.User');
 
+        if (this.isSuportSGQ(sgq))
+            this.setRol('x_udg_q.SuportSGQ');
+        else
+            this.delRol('x_udg_q.SuportSGQ');
+
         if (this.isManager(sgq) || this.isManagerUniversitat())
             this.setRol('x_udg_q.Manager');
         else
@@ -252,8 +267,8 @@ Usuari.prototype = {
 
         if (this.usuari != gr.sys_id) { //per seguretat, no hauria de passar
             this.usuari = gr.sys_id;
-            new log("Error al cridar Usuari.actualitzaGR per " +
-                this.usuari + " i " + gr.sys_id, "error");
+            new log("Error al cridar Usuari.actualitzaGR per " + this.usuari +
+                " i " + gr.sys_id, "error");
         }
 
         gr.x_udg_q_sgq_visibles = this.sgqVisibles();
@@ -295,7 +310,7 @@ Usuari.prototype = {
         <sys_created_on>2018-11-28 12:02:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c75297e5dbceab009fd1f57eaf961992</sys_id>
-        <sys_mod_count>169</sys_mod_count>
+        <sys_mod_count>173</sys_mod_count>
         <sys_name>Usuari</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -303,6 +318,6 @@ Usuari.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_c75297e5dbceab009fd1f57eaf961992</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-02-19 10:58:45</sys_updated_on>
+        <sys_updated_on>2021-06-09 08:01:03</sys_updated_on>
     </sys_script_include>
 </record_update>
