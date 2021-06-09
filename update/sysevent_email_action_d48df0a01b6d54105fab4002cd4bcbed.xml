@@ -41,7 +41,7 @@
 <p>${mail_script:disclaimer udg}<br />&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Novetat ServiceNow</name>
+        <name>Novetat nova</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -52,7 +52,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Novetat ServiceNow ${number} - ${short_description}</subject>
+        <subject>Novetat Servicenow ${number} - ${short_description}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
@@ -61,8 +61,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d48df0a01b6d54105fab4002cd4bcbed</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Novetat ServiceNow</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Novetat nova</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -70,7 +70,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sysevent_email_action_d48df0a01b6d54105fab4002cd4bcbed</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-21 12:13:05</sys_updated_on>
+        <sys_updated_on>2021-06-01 07:31:25</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

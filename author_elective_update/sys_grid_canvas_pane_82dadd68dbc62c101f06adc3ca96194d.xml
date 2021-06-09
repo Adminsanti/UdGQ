@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas>
+        <height>3</height>
+        <portal_widget display_value="Created 28/01/2021 10:20:13">cedadd68dbc62c101f06adc3ca96194a</portal_widget>
+        <posx>2</posx>
+        <posy>18</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-01-28 09:20:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>82dadd68dbc62c101f06adc3ca96194d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_82dadd68dbc62c101f06adc3ca96194d</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-28 09:20:42</sys_updated_on>
+        <width>2</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>b2e8620e6f9c560023b2a9cc5d3ee43a</instance_id>
+        <instance_name>universitatdegirona</instance_name>
+        <name>sys_grid_canvas_pane_82dadd68dbc62c101f06adc3ca96194d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA New Tab">28009baedb2d23009fd1f57eaf961909</grid_canvas><height>3</height><portal_widget display_value="Created 28/01/2021 10:20:13">cedadd68dbc62c101f06adc3ca96194a</portal_widget><posx>2</posx><posy>18</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2021-01-28 09:20:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>82dadd68dbc62c101f06adc3ca96194d</sys_id><sys_mod_count>6</sys_mod_count><sys_name>28009baedb2d23009fd1f57eaf961909</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_grid_canvas_pane_82dadd68dbc62c101f06adc3ca96194d</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2021-01-28 09:20:42</sys_updated_on><width>2</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>913087304</payload_hash>
+        <record_name>28009baedb2d23009fd1f57eaf961909</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-01-28 09:20:42</sys_created_on>
+        <sys_id>c1fad5a8dbc62c101f06adc3ca96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177484b7a820000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-28 09:20:42</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>89fad5a8ecc62c104a8142e230075d69</update_guid>
+        <update_guid_history>89fad5a8ecc62c104a8142e230075d69:913087304,18fad5a870c62c103ad55eb212df1302:1957988268,7eea95a801c62c10a75c438b0f87d294:-1918241975,b4ead1a817c62c10e090826e666757a7:913087304,10ea15a8fac62c107e8baf123f4e86be:-56493719,83da55a83ec62c10c5d7b2deba45bf3c:-1169630322,86dadd68a7c62c1085d6d289a201074e:24848240</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-01-28 09:47:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>26711e6c1ef5413e87061abd57067911</sys_id>
+        <sys_metadata>82dadd68dbc62c101f06adc3ca96194d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>28009baedb2d23009fd1f57eaf961909</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_82dadd68dbc62c101f06adc3ca96194d</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_82dadd68dbc62c101f06adc3ca96194d">c1fad5a8dbc62c101f06adc3ca96196a</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-01-28 09:47:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

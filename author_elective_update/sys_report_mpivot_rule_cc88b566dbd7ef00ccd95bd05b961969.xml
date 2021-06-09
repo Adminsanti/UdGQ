@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_mpivot_rule">
+    <sys_report_mpivot_rule action="DELETE">
+        <bg_color>background-color:</bg_color>
+        <bg_color_id/>
+        <color>background-color:#FF0000</color>
+        <color_id display_value="Red">65b30395a9fe3dba003277a7b660b5db</color_id>
+        <operator>&gt;</operator>
+        <order/>
+        <report_id display_value="Objectius en curs no planificats">526875e2dbd7ef00ccd95bd05b9619bb</report_id>
+        <sys_class_name>sys_report_mpivot_rule</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-02-01 11:11:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cc88b566dbd7ef00ccd95bd05b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>&gt;</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_report_mpivot_rule_cc88b566dbd7ef00ccd95bd05b961969</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-02-01 11:11:42</sys_updated_on>
+        <value1>0</value1>
+        <value2/>
+    </sys_report_mpivot_rule>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>b2e8620e6f9c560023b2a9cc5d3ee43a</instance_id>
+        <instance_name>universitatdegirona</instance_name>
+        <name>sys_report_mpivot_rule_cc88b566dbd7ef00ccd95bd05b961969</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_mpivot_rule"><sys_report_mpivot_rule action="INSERT_OR_UPDATE"><bg_color>background-color:</bg_color><bg_color_id/><color>background-color:#FF0000</color><color_id display_value="Red">65b30395a9fe3dba003277a7b660b5db</color_id><operator>&gt;</operator><order/><report_id display_value="Objectius en curs no planificats">526875e2dbd7ef00ccd95bd05b9619bb</report_id><sys_class_name>sys_report_mpivot_rule</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2019-02-01 11:11:42</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>cc88b566dbd7ef00ccd95bd05b961969</sys_id><sys_mod_count>0</sys_mod_count><sys_name>&gt;</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_report_mpivot_rule_cc88b566dbd7ef00ccd95bd05b961969</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2019-02-01 11:11:42</sys_updated_on><value1>0</value1><value2/></sys_report_mpivot_rule></record_update>]]></payload>
+        <payload_hash>-1475325865</payload_hash>
+        <record_name>&gt;</record_name>
+        <reverted_from/>
+        <source>2e48e3cfdbe82b80ccd95bd05b9619af</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-02-01 11:11:42</sys_created_on>
+        <sys_id>cf88b566dbd7ef00ccd95bd05b9619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>168a8c1d6c00000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-02-01 11:11:42</sys_updated_on>
+        <type>Multilevel Pivot Rule</type>
+        <update_guid>c788b56643d7ef00c3490f5164bdf7fb</update_guid>
+        <update_guid_history>c788b56643d7ef00c3490f5164bdf7fb:-1475325865</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2019-02-01 12:52:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_report_mpivot_rule">sys_report_mpivot_rule</sys_db_object>
+        <sys_id>204980e19bb84ad084435b46e5a56440</sys_id>
+        <sys_metadata>cc88b566dbd7ef00ccd95bd05b961969</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>&gt;</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_report_mpivot_rule_cc88b566dbd7ef00ccd95bd05b961969</sys_update_name>
+        <sys_update_version display_value="sys_report_mpivot_rule_cc88b566dbd7ef00ccd95bd05b961969">cf88b566dbd7ef00ccd95bd05b9619fb</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2019-02-01 12:52:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

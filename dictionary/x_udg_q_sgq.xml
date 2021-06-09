@@ -46,7 +46,7 @@
         <index name="index5">
             <element name="propietari"/>
         </index>
-        <index name="index5">
+        <index name="index6">
             <element name="responsable_organic"/>
         </index>
     </element>
