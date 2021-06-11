@@ -2,7 +2,7 @@
     <element audit="true" label="Degree" max_length="40" name="x_udg_q_titulacio" sizeclass="222" type="collection">
         <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" read_only="true" type="string" unique="true"/>
-        <element label="ID Gausnet" max_length="40" name="idgausnet" read_only="true" type="string"/>
+        <element label="ID Gausnet" mandatory="true" max_length="40" name="idgausnet" read_only="true" type="string"/>
         <element display="true" label="Memo" max_length="40" name="memo" read_only="true" type="string" unique="true"/>
         <element attributes="no_truncate=true" label="Nom" max_length="140" name="nom" read_only="true" type="string"/>
         <element label="QID" max_length="40" name="qid" read_only="true" type="string" unique="true"/>
@@ -45,6 +45,9 @@
         </index>
         <index name="index9">
             <element name="memo"/>
+        </index>
+        <index name="index10">
+            <element name="idgausnet"/>
         </index>
     </element>
 </database>
