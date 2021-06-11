@@ -6,7 +6,7 @@
         <default_operation_uri/>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>GET</http_method>
-        <name>vsma</name>
+        <name>Titulacions</name>
         <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
     var xml = new x_udg_q.Xml('<?xml version="1.0" encoding="UTF-8"?>');
@@ -14,48 +14,36 @@
 
     //Els paràmetres poden ser centre (amb el codi dels atributs) o sgq (amb el nom del sgq), un dels dos.
     if (!queryParams.centre && !queryParams.sgq) return response.setError(new sn_ws_err.NotFoundError('Falta codi del centre o sgq'));
-    new log('/api/x_udg_q/sgq/processosSGQ ' + queryParams.centre + queryParams.sgq);
+    new log('/api/x_udg_q/sgq/titulacions ' + queryParams.centre + queryParams.sgq);
     var grSgq = new GlideRecord('x_udg_q_sgq');
     if (queryParams.centre && queryParams.centre != '') grSgq.addQuery('qid', queryParams.centre);
     if (queryParams.sgq && queryParams.sgq != '') grSgq.addQuery('codi', queryParams.sgq);
     grSgq.addActiveQuery();
     grSgq.query();
-    var ordre = 1;
-    xml.addTag('sgq');
+    xml.addTag('titulacions');
     if (grSgq.next()) {
-        xml.addTag('nom', grSgq.nom)
-            .addTag('codi', grSgq.codi);
+        xml.addTag('sgqnom', grSgq.nom)
+            .addTag('sgqcodi', grSgq.codi);
 
-        var grCai = new GlideRecord('x_udg_q_cai');
-        grCai.addQuery('sgq', grSgq.getUniqueValue());
-        grCai.addActiveQuery();
-        grCai.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
-        //grCai.orderBy('num');
-        grCai.query();
-        while (grCai.next()) {
-            xml.addTag('proces')
-                .addTag('tipus', 'Acreditació')
-                .addTag('estat', grCai.state.getDisplayValue())
-                .addTag('titulacions', grCai.titulacions.getDisplayValue())
-                .addTag('comentaris', '')
-                .addTag('ordre', ordre++);
-
-            var grTit = new GlideRecord ('x_udg_q_titulacio');
-			grTit.addQuery('sys_id','IN',grCai.titulacions);
-			grTit.query();
-			while (grTit.next()) {
-				xml.addTag('titulacio')
-				.addTag('memo',grTit.memo)
-				.addTag('hoover',grTit.nom)
-				.addTag('/titulacio');
-			}
+        var grTit = new GlideRecord('x_udg_q_titulacio');
+		grTit.addQuery('sgq',grSgq.getUniqueValue());
+		grTit.addQuery('activa',true);
+		grTit.query();
+		while (grTit.next()) {
+			var url = "";
+            if (grTit.segellaqu != '')
+                url = gs.getProperty("glide.servlet.uri") + '/sys_attachment.do?sys_id=' + grTit.segellaqu;
 			
-            xml.addTag('/proces');
-        }
-    } else {
-        xml.add('Aquest SGQ no existeix');
+			xml.addTag('titulacio')
+			.addTag('nom',grTit.nom)
+			.addTag('memo',grTit.memo)
+			.addTag('tipus',grTit.tipus.getDisplayValue())
+			.addTag('urlsegellaqu',url)
+			.addTag('/titulacio');
+		}
     }
-    xml.addTag('/sgq');
+
+    xml.addTag('/titulacions');
 
     var str = GlideXMLUtil.removeInvalidChars(xml.toString()); //cal passar el resultat abans per una variable string
     response.setContentType('application/xml');
@@ -64,29 +52,29 @@
     writer.writeString(str);
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_udg_q/sgq/vsma</operation_uri>
-        <produces>application/xml,text/xml</produces>
-        <produces_customized>true</produces_customized>
-        <relative_path>/vsma</relative_path>
+        <operation_uri>/api/x_udg_q/sgq/titulacions</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/titulacions</relative_path>
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
-        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2021-04-15 08:45:53</sys_created_on>
+        <sys_created_on>2021-06-11 08:05:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>42657dd1dbebe450a96b09b1ba9619f7</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>vsma</sys_name>
+        <sys_id>852d8323db28f410a96b09b1ba96198d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Titulacions</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
-        <sys_update_name>sys_ws_operation_42657dd1dbebe450a96b09b1ba9619f7</sys_update_name>
+        <sys_update_name>sys_ws_operation_852d8323db28f410a96b09b1ba96198d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-11 08:51:37</sys_updated_on>
+        <sys_updated_on>2021-06-11 08:32:55</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

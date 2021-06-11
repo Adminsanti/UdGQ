@@ -42,7 +42,7 @@
             <element>tipus</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Màsters oficials</label>
+            <label>Màster oficial</label>
             <language>en</language>
             <name>x_udg_q_titulacio</name>
             <sequence/>
@@ -51,9 +51,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>3ff7a7cfdbe82b80ccd95bd05b96190c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-09-19 15:42:56</sys_updated_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-06-11 09:09:42</sys_updated_on>
             <value>Màsters oficials</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
