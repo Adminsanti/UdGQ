@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Pla d'estudis" max_length="40" name="x_udg_q_pla" type="collection">
+        <element label="Titulació" max_length="32" name="titulacio" reference="x_udg_q_titulacio" type="reference"/>
+        <element label="UniversitatCoordinadora" max_length="140" name="universitatcoordinadora" type="string"/>
+        <index name="index">
+            <element name="titulacio"/>
+        </index>
+    </element>
+</database>

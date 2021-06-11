@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="DELETE">
+        <coalesce>true</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>titulacio</field>
+        <name>Titulacio</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-06-11 12:17:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>60680c7fdb2cf410a96b09b1ba9619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Titulacio</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_rte_eb_definition display_value="Plans RTL">d7bbb76fdbe8f410a96b09b1ba961980</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="ImportSet">6ac74c3fdb2cf410a96b09b1ba9619aa</sys_rte_eb_entity>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_60680c7fdb2cf410a96b09b1ba9619ba</sys_update_name>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-06-11 12:17:43</sys_updated_on>
+    </sys_rte_eb_etl_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</application>
+        <file_path/>
+        <instance_id>1d3a59664faf9ac094ac220f0310c776</instance_id>
+        <instance_name>udgdev</instance_name>
+        <name>sys_rte_eb_etl_field_60680c7fdb2cf410a96b09b1ba9619ba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field"><sys_rte_eb_etl_field action="INSERT_OR_UPDATE"><coalesce>true</coalesce><coercion_action>create</coercion_action><field>titulacio</field><name>Titulacio</name><sys_class_name>sys_rte_eb_etl_field</sys_class_name><sys_created_by>adminsanti</sys_created_by><sys_created_on>2021-06-11 12:17:43</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>60680c7fdb2cf410a96b09b1ba9619ba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Titulacio</sys_name><sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_rte_eb_definition display_value="Plans RTL">d7bbb76fdbe8f410a96b09b1ba961980</sys_rte_eb_definition><sys_rte_eb_entity display_value="ImportSet">6ac74c3fdb2cf410a96b09b1ba9619aa</sys_rte_eb_entity><sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope><sys_update_name>sys_rte_eb_etl_field_60680c7fdb2cf410a96b09b1ba9619ba</sys_update_name><sys_updated_by>adminsanti</sys_updated_by><sys_updated_on>2021-06-11 12:17:43</sys_updated_on></sys_rte_eb_etl_field></record_update>]]></payload>
+        <payload_hash>1638316493</payload_hash>
+        <record_name>Titulacio</record_name>
+        <reverted_from/>
+        <source>e264b8a6db647010a96b09b1ba961971</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-06-11 12:17:43</sys_created_on>
+        <sys_id>3888c87fdb2cf410a96b09b1ba961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179fb01b4600000001</sys_recorded_at>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-06-11 12:17:43</sys_updated_on>
+        <type>ETL Entity field</type>
+        <update_guid>3088c87f0d2cf410a0f4d1db7977d714</update_guid>
+        <update_guid_history>3088c87f0d2cf410a0f4d1db7977d714:1638316493</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>adminsanti</sys_created_by>
+        <sys_created_on>2021-06-11 12:22:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_rte_eb_etl_field">sys_rte_eb_etl_field</sys_db_object>
+        <sys_id>7c35bd41720f4abdbe088e985181ce31</sys_id>
+        <sys_metadata>60680c7fdb2cf410a96b09b1ba9619ba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Titulacio</sys_name>
+        <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+        <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_etl_field_60680c7fdb2cf410a96b09b1ba9619ba</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_etl_field_60680c7fdb2cf410a96b09b1ba9619ba">3888c87fdb2cf410a96b09b1ba961914</sys_update_version>
+        <sys_updated_by>adminsanti</sys_updated_by>
+        <sys_updated_on>2021-06-11 12:22:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -9,9 +9,8 @@
         <reference_value_field/>
         <source_field>[Script]</source_field>
         <source_script><![CDATA[answer = (function transformEntry(source, target) {
- if (target.middle_name==="") 
-		 return source.u_codi;
-	return target.u_codi; // return the value to be put into the target field
+    if (target.memo === "") return source.u_codi.toString();
+    return target.memo; // return the value to be put into the target field
 
 })(source);]]></source_script>
         <source_table>x_udg_q_carregatitulacions</source_table>
@@ -20,7 +19,7 @@
         <sys_created_on>2018-09-06 10:35:20</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1fe4673237d4eb401acdf01643990e8f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>[Script]</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -28,7 +27,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_transform_entry_1fe4673237d4eb401acdf01643990e8f</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2020-02-12 10:30:29</sys_updated_on>
+        <sys_updated_on>2021-06-11 10:48:47</sys_updated_on>
         <target_field>memo</target_field>
         <target_table>x_udg_q_titulacio</target_table>
         <use_source_script>true</use_source_script>

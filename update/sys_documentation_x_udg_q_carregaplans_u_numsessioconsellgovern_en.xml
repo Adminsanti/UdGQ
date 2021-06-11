@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_numsessioconsellgovern" label="NumSessioConsellGovern" language="en" table="x_udg_q_carregaplans">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_numsessioconsellgovern</element>
+            <help/>
+            <hint/>
+            <label>NumSessioConsellGovern</label>
+            <language>en</language>
+            <name>x_udg_q_carregaplans</name>
+            <plural>NumSessioConsellGoverns</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminsanti</sys_created_by>
+            <sys_created_on>2021-06-11 11:12:36</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>4b99fbabdbe8f410a96b09b1ba96198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>NumSessioConsellGovern</sys_name>
+            <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
+            <sys_update_name>sys_documentation_x_udg_q_carregaplans_u_numsessioconsellgovern_en</sys_update_name>
+            <sys_updated_by>adminsanti</sys_updated_by>
+            <sys_updated_on>2021-06-11 11:12:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
