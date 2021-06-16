@@ -39,15 +39,18 @@
             <element name="memo"/>
         </index>
         <index name="index7">
-            <element name="sgq"/>
+            <element name="planaweb"/>
         </index>
         <index name="index8">
-            <element name="qid"/>
+            <element name="sgq"/>
         </index>
         <index name="index9">
-            <element name="memo"/>
+            <element name="qid"/>
         </index>
         <index name="index10">
+            <element name="memo"/>
+        </index>
+        <index name="index11">
             <element name="idgausnet"/>
         </index>
     </element>
