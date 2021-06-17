@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Degree" max_length="40" name="x_udg_q_titulacio" sizeclass="208" type="collection">
+    <element audit="true" label="Degree" max_length="40" name="x_udg_q_titulacio" sizeclass="209" type="collection">
         <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" read_only="true" type="string" unique="true"/>
         <element label="ID Gausnet" mandatory="true" max_length="40" name="idgausnet" read_only="true" type="string"/>
