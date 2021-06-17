@@ -6,7 +6,7 @@
         <condition table="x_udg_q_acciomillora">sgq=javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();^EQ<item endquery="false" field="sgq" goto="false" newquery="false" operator="=" or="false" value="javascript:new  x_udg_q.Usuari(gs.getUserID()).getSgqActual();"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
-        <description>Manager poden escriure a totes les accions del SGQ actual</description>
+        <description>Manager i suportpoden escriure a totes les accions del SGQ actual</description>
         <name>x_udg_q_acciomillora</name>
         <operation display_value="write">write</operation>
         <script/>
@@ -15,7 +15,7 @@
         <sys_created_on>2018-10-09 10:57:31</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4e762d2d3701e3004ccbd0d543990eee</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>x_udg_q_acciomillora</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -23,7 +23,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_security_acl_4e762d2d3701e3004ccbd0d543990eee</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-07 16:41:15</sys_updated_on>
+        <sys_updated_on>2021-06-17 10:16:25</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
