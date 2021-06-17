@@ -6,7 +6,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -33,7 +33,6 @@
 
     var grMem = new GlideRecord('x_udg_q_fmember');
     grMem.addQuery('funcio', current.getUniqueValue());
-	grMem.addQuery('usuari', 'NOT', current.getValue('user'));
 	grMem.deleteMultiple();
 
 })(current, previous);]]></script>
@@ -44,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>014e796d1b2aa410c851a64fad4bcba4</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Funcio unipersonal esborra membres</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -53,7 +52,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_014e796d1b2aa410c851a64fad4bcba4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-20 16:13:26</sys_updated_on>
+        <sys_updated_on>2021-06-17 09:27:53</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

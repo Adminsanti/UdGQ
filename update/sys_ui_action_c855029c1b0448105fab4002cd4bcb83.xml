@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>sysverb_Genera</action_name>
-        <active>false</active>
+        <action_name>sysverb_membres</action_name>
+        <active>true</active>
         <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.parent=="" &amp;&amp; current.attachment!=""&amp;&amp;current.active==true</condition>
+        <condition/>
         <form_action>true</form_action>
-        <form_button>true</form_button>
+        <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
-        <form_link>false</form_link>
+        <form_link>true</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style>primary</form_style>
         <hint/>
@@ -26,70 +26,12 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>RECYCLE Genera Doc Vell</name>
+        <name>Funcio refes membres</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var SGQpref = gs.getUser().getPreference('qualitat.sgqActual');
-var SGQprefCodi = gs.getUser().getPreference('qualitat.sgqActualCodi');
-var grSGQ = new GlideRecord('x_udg_q_sgq');
-grSGQ.get(SGQpref);
-var ObjUtils = new ObjectiuUtils();
-
-var grDG = new GlideRecord('x_udg_q_docgeneratvsma');
-grDG.initialize();
-grDG.insert();
-
-var grPlantilla = new GlideRecord('sys_attachment');
-grPlantilla.get(current.file); //GlideRecord del fitxer del camp file
-var gsaPlantilla = new GlideSysAttachment();
-var contingut = gsaPlantilla.getContent(grPlantilla);
-
-var rtf1 = new rtf(contingut);
-rtf1.clearTag('FiltreMillora'); // Netejar filtre si és que encara hi és
-rtf1.replace(/##NomSGQ##/g, grSGQ.nom);
-rtf1.replace(/##LlistaTitulacions##/g, rtf1.llista(new Sgq().getLlistaNomsTitulacionsSgqActual()));
-
-rtf1.replace('##ResumMillora##', "Objectius en Curs - Pla de Millora Actiu\\par\\par" +
-    ObjUtils.getRtfResumMillora(current.condicions + "^state=2", SGQpref) +
-    "\\par\\par Objectius Tancats en el període\\par\\par" +
-    ObjUtils.getRtfResumMillora(current.condicions + "^state=3", SGQpref)
-);
-
-rtf1.replace('##MilloraCurs##', ObjUtils.getRtfMilloraComprimit(current.condicions + '^state=2', SGQpref));
-rtf1.replace('##MilloraTancat##', ObjUtils.getRtfMilloraComprimit(current.condicions + "^state=3^tancament!=-5", SGQpref));
-
-if (rtf1.getContent().match(/##TSubestandard#.\..##/g)) {
-    var subestandards = rtf1.getContent().match(/##TSubestandard#.\..##/g).toString().match(/.\../g);
-    for (index = 0; index < subestandards.length; ++index) {
-        var sysidS = new EstandardVSMA().getSysidSubestandardNum(subestandards[index]);
-        var nom = new EstandardVSMA().getNomSubestandard(sysidS);
-        rtf1.replace("##TSubestandard#" + subestandards[index] + "##", nom);
-    }
-}
-
-if (rtf1.getContent().match(/##DSubestandard#.\..##/g)) {
-    var Dsubestandards = rtf1.getContent().match(/##DSubestandard#.\..##/g).toString().match(/.\../g);
-    for (index = 0; index < Dsubestandards.length; ++index) {
-        var sysidS2 = new EstandardVSMA().getSysidSubestandardNum(Dsubestandards[index]);
-        var textstring = "";
-        textstring += ObjUtils.getRtfperSubestandard(sysidS2, current.condicions, 2, SGQpref);
-        textstring += ObjUtils.getRtfperSubestandard(sysidS2, current.condicions, 3, SGQpref);
-        rtf1.replace("##DSubestandard#" + Dsubestandards[index] + "##", textstring);
-    }
-}
-var newDocAttachment = new GlideSysAttachment();
-var newDocAttachment_sys_id = newDocAttachment.write(grDG, grDG.number + ".rtf", "text/rtf", rtf1.escape().getContent());
-grDG.fitxer = newDocAttachment_sys_id;
-grDG.sgq = SGQpref;
-grDG.nom = current.short_description + " " + SGQprefCodi + " " + grDG.sys_created_on.getDisplayValue();
-grDG.tipus = current.tipus;
-grDG.plantilla = current.sys_id;
-grDG.filtre = current.condicions;
-grDG.update();
-gs.addInfoMessage("Generat <B> <A HREF=" + gs.getProperty('glide.servlet.uri') + "sys_attachment.do?sys_id=" + newDocAttachment_sys_id + ">" + grDG.number + "</A></B> - " + grDG.nom);
-new log().preU("Generat " + grDG.number + " - " + grDG.nom);
-action.setRedirectURL(current); //Roman a la plantilla
-//action.setRedirectURL(grDG);]]></script>
+        <script><![CDATA[var f = new x_udg_q.Funcio(current);
+f.updateMembres(current.getUniqueValue());
+action.setRedirectURL(current);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -101,8 +43,8 @@ action.setRedirectURL(current); //Roman a la plantilla
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c855029c1b0448105fab4002cd4bcb83</sys_id>
-        <sys_mod_count>257</sys_mod_count>
-        <sys_name>RECYCLE Genera Doc Vell</sys_name>
+        <sys_mod_count>261</sys_mod_count>
+        <sys_name>Funcio refes membres</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -110,8 +52,8 @@ action.setRedirectURL(current); //Roman a la plantilla
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ui_action_c855029c1b0448105fab4002cd4bcb83</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-03-03 08:34:32</sys_updated_on>
-        <table>x_udg_q_plantillavsma</table>
+        <sys_updated_on>2021-06-17 09:26:01</sys_updated_on>
+        <table>x_udg_q_funcio</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
     </sys_ui_action>
