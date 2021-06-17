@@ -47,7 +47,7 @@
 				xml.addTag('titulacio')&#13;
 				.addTag('memo',grTit.memo)&#13;
 				.addTag('hoover',grTit.nom)&#13;
-				.addTag('url','http://www.udg.edu/') //Url a la web de la titulació&#13;
+				.addTag('url',grTit.planaweb) //Url a la web de la titulació&#13;
 				.addTag('/titulacio');&#13;
 			}&#13;
 			&#13;
@@ -79,7 +79,7 @@
         <sys_created_on>2021-04-15 08:45:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>42657dd1dbebe450a96b09b1ba9619f7</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>vsma</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -87,7 +87,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_42657dd1dbebe450a96b09b1ba9619f7</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-16 11:25:01</sys_updated_on>
+        <sys_updated_on>2021-06-17 10:27:22</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
