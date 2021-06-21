@@ -34,19 +34,6 @@
         gs.addInfoMessage("El nom formal s'ha emplenat com a còpia del nom curt");
     }
 
-    //Si no hi és, afegim l'usuari del camp usuari com a membre
-    var grMem = new GlideRecord('x_udg_q_fmember');
-    grMem.addQuery('funcio', current.getUniqueValue());
-    grMem.addQuery('usuari', current.usuari);
-    grMem.query();
-    if (!grMem.next() && current.usuari != '') {
-        grMem.newRecord();
-        grMem.setValue('funcio', current.getUniqueValue());
-        grMem.setValue('usuari', current.usuari);
-        grMem.insert();
-        gs.addInfoMessage("Afegit " + current.usuari.name + " com a membre de " + current.nom);
-    }
-
     //Netejem els membres sobrants de les funcions unipersonals
     if (current.tipus == "Unipersonal") {
         var grMem2 = new GlideRecord('x_udg_q_fmember');
@@ -65,6 +52,9 @@
     while (grMem3.next()) {
         membres.push(grMem.getUniqueValue());
     }
+	
+	if (membres.indexOf(current.usuari) == -1) membres.push(current.usuari); //cal que la funció after incloqui el registre;
+	
     current.membres = membres.join(",");
 
 
@@ -76,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>014e796d1b2aa410c851a64fad4bcba4</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Funcio canvia before</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -85,7 +75,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_014e796d1b2aa410c851a64fad4bcba4</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-17 11:03:41</sys_updated_on>
+        <sys_updated_on>2021-06-21 09:30:11</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

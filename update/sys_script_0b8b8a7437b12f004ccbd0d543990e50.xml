@@ -30,6 +30,20 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
 
+	//Si no hi és, afegim l'usuari del camp usuari com a membre
+    var grMem = new GlideRecord('x_udg_q_fmember');
+    grMem.addQuery('funcio', current.getUniqueValue());
+    grMem.addQuery('usuari', current.usuari);
+    grMem.query();
+    if (!grMem.next() && current.usuari != '') {
+        grMem.newRecord();
+        grMem.setValue('funcio', current.getUniqueValue());
+        grMem.setValue('usuari', current.usuari);
+        grMem.insert();
+		//PENDENT cal afegir-ho també a la llista de membres
+        gs.addInfoMessage("Afegit " + current.usuari.name + " com a membre de " + current.nom);
+    }
+	
     var usuarisNousiVells = new x_udg_q.ListUtil([]);
     if (previous.membres) usuarisNousiVells.addListToList(previous.membres);
     if (current.membres) usuarisNousiVells.addListToList(current.membres);
@@ -55,7 +69,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0b8b8a7437b12f004ccbd0d543990e50</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>Funcio canvia after</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -64,7 +78,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_0b8b8a7437b12f004ccbd0d543990e50</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-17 10:59:10</sys_updated_on>
+        <sys_updated_on>2021-06-21 09:26:44</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

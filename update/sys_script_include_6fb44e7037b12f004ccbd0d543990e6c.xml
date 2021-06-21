@@ -47,14 +47,21 @@ Funcio.prototype = {
         var membres = [];
         var grMem = new GlideRecord('x_udg_q_fmember');
         grMem.addQuery('funcio', sys_id_Funcio);
-		grMem.addEncodedQuery('usuariANYTHING');
+        grMem.addEncodedQuery('usuariANYTHING');
         grMem.query();
         while (grMem.next()) {
-            if (membres.indexOf(grMem.getValue('usuari'))==-1) membres.push(grMem.getValue('usuari'));
+            if (membres.indexOf(grMem.getValue('usuari')) == -1) membres.push(grMem.getValue('usuari'));
         }
-		var grFun = new GlideRecord('x_udg_q_funcio');
-		grFun.get(sys_id_Funcio);
-		if (membres.indexOf(grFun.getValue('usuari'))==-1) membres.push(grFun.getValue('usuari'));
+        var grFun = new GlideRecord('x_udg_q_funcio');
+        grFun.get(sys_id_Funcio);
+        if (membres.indexOf(grFun.getValue('usuari')) == -1) {
+            membres.push(grFun.getValue('usuari'));
+            grMem.newRecord();
+            grMem.setValue('funcio', grFun.getUniqueValue());
+            grMem.setValue('usuari', grFun.usuari);
+            grMem.insert();
+            gs.addInfoMessage("Afegit " + current.usuari.name + " que apareix com usuari principal, com a membre de " + current.nom);
+        }
         grFun.setValue('membres', membres.join(','));
         grFun.update();
     },
@@ -66,7 +73,7 @@ Funcio.prototype = {
         <sys_created_on>2018-11-13 12:28:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6fb44e7037b12f004ccbd0d543990e6c</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>Funcio</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -74,6 +81,6 @@ Funcio.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_6fb44e7037b12f004ccbd0d543990e6c</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-17 09:16:56</sys_updated_on>
+        <sys_updated_on>2021-06-21 09:37:37</sys_updated_on>
     </sys_script_include>
 </record_update>
