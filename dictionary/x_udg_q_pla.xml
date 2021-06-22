@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Pla d'estudis" max_length="40" name="x_udg_q_pla" sizeclass="315" type="collection">
-        <element label="Codi" max_length="10" name="codi" type="string"/>
-        <element label="Codi Beques" max_length="10" name="codibeques" type="string"/>
+        <element label="Codi" max_length="10" name="codi" read_only="true" type="string"/>
+        <element label="Codi Beques" max_length="10" name="codibeques" read_only="true" type="string"/>
         <element label="Codi Uneix" max_length="10" name="codiuneix" read_only="true" type="string"/>
         <element label="Credits" max_length="40" name="credits" read_only="true" type="integer"/>
         <element label="Estat" max_length="40" name="estat" read_only="true" type="string"/>
