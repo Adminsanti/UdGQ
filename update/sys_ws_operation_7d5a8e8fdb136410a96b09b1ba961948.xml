@@ -33,11 +33,11 @@
         grO.addQuery('state', 2); //Només en curs, mentre no tinguem un parametre per indicar una altra cosa
         grO.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
         grO.query();
-        xml.addTag('pm');
+        xml.addSingleTag('pm');
         xml.addTag('sgq', grSgq.codi);
         xml.addTag('nom', grSgq.nom);
         while (grO.next()) {
-            xml.addTag('objectiu');
+            xml.addSingleTag('objectiu');
             xml.addTag('numero', grO.number)
                 .addTag('sgq', grO.sgq.codi)
                 .addTag('estat', grO.getDisplayValue('state'))
@@ -57,7 +57,7 @@
             grM2m.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
             grM2m.query();
             while (grM2m.next()) {
-                xml.addTag('accio');
+                xml.addSingleTag('accio');
                 var grA = new GlideRecord('x_udg_q_acciomillora');
                 grA.setWorkflow(false); //No executar la query rule del filtre -- ATENCIÓ!!!
                 grA.get(grM2m.accio_millora);
@@ -66,11 +66,11 @@
                     .addTag('responsable', grA.getDisplayValue('responsable'))
                     .addTag('estat', grA.getDisplayValue('state'))
                     .addTag('execucio', grA.percentatge + '%');
-                xml.addTag('/accio');
+                xml.addSingleTag('/accio');
             }
-            xml.addTag('/objectiu');
+            xml.addSingleTag('/objectiu');
         }
-        xml.addTag('/pm');
+        xml.addSingleTag('/pm');
     } else {
         xml.add('Aquest SGQ no existeix');
     }
@@ -96,7 +96,7 @@
         <sys_created_on>2021-04-08 10:32:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7d5a8e8fdb136410a96b09b1ba961948</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name>Pm</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -104,7 +104,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_7d5a8e8fdb136410a96b09b1ba961948</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-12 17:51:24</sys_updated_on>
+        <sys_updated_on>2021-06-21 11:05:35</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

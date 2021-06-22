@@ -26,11 +26,11 @@
         </element>
         <element choice="3" default="Propi" label="Tipus" mandatory="true" max_length="30" name="tipus" read_only="true" type="string">
             <choice>
-                <element inactive_on_update="false" label="Procediment" value="Procediment"/>
-                <element inactive_on_update="false" label="Procés" value="Procés"/>
-                <element inactive="true" inactive_on_update="true" label="Procediment" sequence="0" value="Procediment"/>
+                <element inactive_on_update="false" label="Adaptat" value="Adaptat"/>
+                <element inactive_on_update="false" label="Llegat" value="Llegat"/>
+                <element inactive_on_update="false" label="Propi" sequence="0" value="Propi"/>
                 <element inactive="true" inactive_on_update="true" label="Procés" sequence="1" value="Procés"/>
-                <element inactive_on_update="false" label="Subprocés" sequence="2" value="Subprocés"/>
+                <element inactive="true" inactive_on_update="true" label="Subprocés" sequence="2" value="Subprocés"/>
             </choice>
         </element>
         <element label="Titol" mandatory="true" max_length="180" name="titol" type="string"/>

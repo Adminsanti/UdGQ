@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="URL Titulacions" max_length="40" name="x_udg_q_carregaurltitulacions" sizeclass="752" type="collection">
+    <element extends="sys_import_set_row" label="URL Titulacions" max_length="40" name="x_udg_q_carregaurltitulacions" sizeclass="1304" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=codi" label="codi" max_length="50" name="u_codi" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=estudi" label="estudi" max_length="50" name="u_estudi" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=nom" label="nom" max_length="255" name="u_nom" type="string"/>

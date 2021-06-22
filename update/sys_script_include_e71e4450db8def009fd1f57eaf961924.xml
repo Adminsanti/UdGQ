@@ -59,11 +59,14 @@ ProcesSGQ.prototype = {
                 gs.addInfoMessage(grPare.num + " cal crear fill a sgq " + llegatsaSGQ[i]);
                 this.creaFill(grPare, llegatsaSGQ[i]); //si el fill no existeix el creem mitg buit
             } else {
+                //Entra aquí quan troba un fill existent.
+                /*
                 gs.addInfoMessage(llegatsaSGQ[i] + " s'ha hagut de sincronitzar amb el pare");
                 if (grF.sincronitzat_amb != grPare.sys_id) {
                     grF.sincronitzat_amb = grPare.sys_id;
                     grF.update();
-                }
+					
+                } */
             }
             if (grF.next()) { //mai hauria d'entrar en aquest segon next(), vol dir que té dos fills en el mateix SGQ
                 gs.addErrorMessage('Atenció ' + grPare.nom + 'te més d\'un fill al sgq ' + llegats[i]);
@@ -127,22 +130,39 @@ ProcesSGQ.prototype = {
         grFill.update();
     },
 
-    actualitzaTot: function(proces_sys_id) { //Probablement aquesta funci no s'utilitza
-        //Actualitza el procés en base a les versions
+
+
+    actualitzaProces: function(proces_sys_id) { //Actualitza el procés en base a les versions
+
         var grProc = new GlideRecord('x_udg_q_proces');
         var grVersio = new GlideRecord('x_udg_q_versioproces');
         grProc.get(proces_sys_id);
         grVersio.addQuery('proces', proces_sys_id);
         grVersio.addQuery('state', 2); //Versió vigent
         grVersio.query();
-        if (grVersio.next()) {
+        if (grVersio.next()) { //Hi ha una versió vigent d'aquest procés
             grProc.document = grVersio.document;
             grProc.fitxerdocument = grVersio.fitxer;
             grProc.versio = grVersio.versio;
+            grProc.sincronitzat = false;
+            if (grProc.getValue('sincronitzat_amb') == '') grProc.tituls = 'Propi';
+            else grProc.tituls = 'Adaptat';
         } else { //No hi ha versió vigent
-            grProc.document = "";
-            grProc.fitxerdocument = "";
-            grProc.versio = "";
+            if (grProc.getValue('sincronitzat_amb') != '' && grProc.getValue('actiu')) {
+                this.actualitzaProces(grProc.getValue('sincronitzat_amb')); //recursiu, abans actualitza el pare
+                var grProcPare = new GlideRecord('x_udg_q_proces');
+                grProcPare.get(grProc.sincronitzat_amb);
+                grProc.fitxerdocument = grProcPare.fitxerdocument;
+                grProc.versio = grProcPare.versio;
+                grProc.sincronitzat = true;
+                grProc.tipus = 'Llegat';
+            } else {
+                grProc.document = "";
+                grProc.fitxerdocument = "";
+                grProc.versio = "";
+                grProc.sincronitzat = false;
+                grProc.tipus = '';
+            }
         }
         grProc.update();
     },
@@ -239,7 +259,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>162</sys_mod_count>
+        <sys_mod_count>166</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -247,6 +267,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 16:02:16</sys_updated_on>
+        <sys_updated_on>2021-06-21 11:22:43</sys_updated_on>
     </sys_script_include>
 </record_update>
