@@ -24,26 +24,34 @@
     if (grSgq.next()) {
         xml.addTag('sgqnom', grSgq.nom)
             .addTag('sgqcodi', grSgq.codi);
-		xml.add('\n');
+        xml.add('\n');
 
-        var grTit = new GlideRecord('x_udg_q_titulacio');
-		grTit.addQuery('sgq',grSgq.getUniqueValue());
-		grTit.addQuery('activa',true);
-		grTit.query();
-		while (grTit.next()) {		
-			xml.addSingleTag('titulacio')
-			.addTag('nom',grTit.nom)
-			.addTag('memo',grTit.memo)
-			.addTag('tipus',grTit.tipus.getDisplayValue())
-			.addTag('idsegellaqu',grTit.segellaqu)
-			.addTag('url',grTit.planaweb.toString().replace('&','&amp;'))
-			.addTag('idgausnet',grTit.idgausent)
-			.addTag('qid',grTit.qid)
-			.addSingleTag('/titulacio');
-			xml.add('\n');
-		}
+        var tipusTitulacio = ['Grau', 'Màsters oficials', 'Doctorat'];
+
+        for (var i = 0; i < tipusTitulacio.length; i++) {
+
+            xml.addSingleTag('apartat titol="' + tipusTitulacio[i] + '"');
+
+            var grTit = new GlideRecord('x_udg_q_titulacio');
+            grTit.addQuery('sgq', grSgq.getUniqueValue());
+            grTit.addQuery('activa', true);
+            grTit.addQuery('tipus', tipusTitulacio[i]);
+            grTit.query();
+            while (grTit.next()) {
+                xml.addSingleTag('titulacio')
+                    .addTag('nom', grTit.nom)
+                    .addTag('memo', grTit.memo)
+                    .addTag('tipus', grTit.tipus.getDisplayValue())
+                    .addTag('idsegellaqu', grTit.segellaqu)
+                    .addTag('url', grTit.planaweb.toString().replace('&', '&amp;'))
+                    .addTag('idgausnet', grTit.idgausent)
+                    .addTag('qid', grTit.qid)
+                    .addSingleTag('/titulacio');
+                xml.add('\n');
+            }
+            xml.addSingleTag('/apartat');
+        }
     }
-
     xml.addSingleTag('/titulacions');
 
     var str = GlideXMLUtil.removeInvalidChars(xml.toString()); //cal passar el resultat abans per una variable string
@@ -67,7 +75,7 @@
         <sys_created_on>2021-06-11 08:05:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>852d8323db28f410a96b09b1ba96198d</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>Titulacions</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
@@ -75,7 +83,7 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_ws_operation_852d8323db28f410a96b09b1ba96198d</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-21 11:08:14</sys_updated_on>
+        <sys_updated_on>2021-06-22 15:39:51</sys_updated_on>
         <web_service_definition display_value="SGQ">ad5222aa1b0f20505fab4002cd4bcb69</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
