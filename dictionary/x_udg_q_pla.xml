@@ -10,5 +10,8 @@
         <index name="index">
             <element name="titulacio"/>
         </index>
+        <index name="index2">
+            <element name="codi"/>
+        </index>
     </element>
 </database>

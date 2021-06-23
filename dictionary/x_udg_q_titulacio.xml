@@ -13,13 +13,8 @@
         <element choice="1" label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference">
             <choice/>
         </element>
-        <element attributes="no_truncate=true" choice="3" default="Grau" label="Tipus" max_length="40" name="tipus" read_only="true" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Grau" value="Grau"/>
-                <element inactive_on_update="false" label="Màster oficial" value="Màsters oficials"/>
-                <element inactive_on_update="false" label="Doctorat" sequence="0" value="Doctorat"/>
-            </choice>
-        </element>
+        <element label="Tipus" max_length="40" name="tipus" type="integer"/>
+        <element label="Url AQU" max_length="1024" name="urlaqu" type="url"/>
         <index name="index">
             <element name="responsable"/>
         </index>
