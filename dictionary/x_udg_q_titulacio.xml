@@ -13,7 +13,7 @@
         <element choice="1" label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference">
             <choice/>
         </element>
-        <element label="Tipus String" max_length="40" name="tipusstring" read_only="true" type="string"/>
+        <element label="Tipus" max_length="40" name="tipusstring" read_only="true" type="string"/>
         <element label="Url AQU" max_length="1024" name="urlaqu" read_only="true" type="url"/>
         <index name="index">
             <element name="responsable"/>
