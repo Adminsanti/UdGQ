@@ -5,5 +5,6 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=nom" label="nom" max_length="255" name="u_nom" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=tipus" label="tipus" max_length="50" name="u_tipus" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=url" label="url" max_length="4000" name="u_url" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=url_aqu" label="url_aqu" max_length="40" name="u_url_aqu" type="string"/>
     </element>
 </database>
