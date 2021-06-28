@@ -20,7 +20,7 @@
         <format>com.microsoft.sqlserver.jdbc.SQLServerDriver</format>
         <glide_keystore>false</glide_keystore>
         <header_row>0</header_row>
-        <import_set_table_label>CarregaPlansDEstudi</import_set_table_label>
+        <import_set_table_label>CarregaPlans</import_set_table_label>
         <import_set_table_name>x_udg_q_carregaplans</import_set_table_name>
         <instance_name/>
         <jdbc_password/>
@@ -36,7 +36,7 @@
         <limit/>
         <maximum_rows/>
         <mid_server display_value="midserverdev">6a487e5a3776a6001acdf01643990e84</mid_server>
-        <name>Plans d'estudi</name>
+        <name>Plans</name>
         <offset>0</offset>
         <oracle_port>1521</oracle_port>
         <oracle_sid>orcl</oracle_sid>
@@ -60,14 +60,14 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b6d57f27dbe8f410a96b09b1ba961915</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Plans d'estudi</sys_name>
+        <sys_name>Plans</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_data_source_b6d57f27dbe8f410a96b09b1ba961915</sys_update_name>
-        <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-16 10:45:46</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-06-28 06:47:48</sys_updated_on>
         <table_name>dbo.ServiceNowPlans</table_name>
         <type>JDBC</type>
         <use_integrated_authentication>true</use_integrated_authentication>

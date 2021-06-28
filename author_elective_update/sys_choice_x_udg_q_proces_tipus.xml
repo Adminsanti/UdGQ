@@ -23,7 +23,7 @@
             <element>tipus</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Adaptat</label>
+            <label>Procediment</label>
             <language>en</language>
             <name>x_udg_q_proces</name>
             <sequence/>
@@ -32,17 +32,17 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d2fda6efdbbc23c01f06adc3ca961961</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-06-21 10:53:17</sys_updated_on>
-            <value>Adaptat</value>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-03 11:02:05</sys_updated_on>
+            <value>Procediment</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>tipus</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Llegat</label>
+            <label>Procés</label>
             <language>en</language>
             <name>x_udg_q_proces</name>
             <sequence/>
@@ -51,17 +51,17 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>96fda6efdbbc23c01f06adc3ca961961</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-06-21 10:52:25</sys_updated_on>
-            <value>Llegat</value>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-10-03 11:02:05</sys_updated_on>
+            <value>Procés</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>tipus</element>
             <hint/>
-            <inactive>false</inactive>
-            <label>Propi</label>
+            <inactive>true</inactive>
+            <label>Procediment</label>
             <language>en</language>
             <name>x_udg_q_proces</name>
             <sequence>0</sequence>
@@ -70,10 +70,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>16fda6efdbbc23c01f06adc3ca961961</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-06-21 10:53:45</sys_updated_on>
-            <value>Propi</value>
+            <sys_updated_on>2018-11-05 10:23:28</sys_updated_on>
+            <value>Procediment</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -98,7 +98,7 @@
             <dependent_value/>
             <element>tipus</element>
             <hint/>
-            <inactive>true</inactive>
+            <inactive>false</inactive>
             <label>Subprocés</label>
             <language>en</language>
             <name>x_udg_q_proces</name>
@@ -108,9 +108,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a2759d30dbd9e7001f06adc3ca9619d4</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>adminsanti</sys_updated_by>
-            <sys_updated_on>2021-06-21 10:54:18</sys_updated_on>
+            <sys_updated_on>2018-11-05 10:23:28</sys_updated_on>
             <value>Subprocés</value>
         </sys_choice>
     </sys_choice>

@@ -3,6 +3,7 @@
         <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" read_only="true" type="string" unique="true"/>
         <element label="ID Gausnet" mandatory="true" max_length="40" name="idgausnet" read_only="true" type="string"/>
+        <element active="false" label="IDGaussnet" max_length="10" name="idgaussnet" type="string"/>
         <element display="true" label="Memo" max_length="40" name="memo" read_only="true" type="string" unique="true"/>
         <element attributes="no_truncate=true" label="Nom" max_length="140" name="nom" read_only="true" type="string"/>
         <element label="Plana web" max_length="1024" name="planaweb" read_only="true" type="url"/>
@@ -14,7 +15,11 @@
             <choice/>
         </element>
         <element attributes="no_truncate=true" choice="3" default="Grau" label="Tipus" max_length="40" name="tipus" read_only="true" type="string">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="Grau" value="Grau"/>
+                <element inactive_on_update="false" label="Màsters oficials" value="Màsters oficials"/>
+                <element inactive_on_update="false" label="Doctorat" sequence="0" value="Doctorat"/>
+            </choice>
         </element>
         <element label="Tipus" max_length="40" name="tipusstring" read_only="true" type="string"/>
         <element label="Url AQU" max_length="1024" name="urlaqu" read_only="true" type="url"/>
@@ -47,6 +52,9 @@
         </index>
         <index name="index10">
             <element name="planaweb"/>
+        </index>
+        <index name="index11">
+            <element name="idgaussnet"/>
         </index>
         <index name="index12">
             <element name="sgq"/>
