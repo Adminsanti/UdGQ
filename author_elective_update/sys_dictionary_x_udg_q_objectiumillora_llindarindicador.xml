@@ -96,20 +96,20 @@
         <state>previous</state>
         <sys_created_by/>
         <sys_created_on>2021-05-19 11:39:15</sys_created_on>
-        <sys_id>0820f84bdb203410a96b09b1ba9619d4</sys_id>
+        <sys_id>d64c5bcddb493010a96b09b1ba9619ef</sys_id>
         <sys_mod_count/>
         <sys_recorded_at>179846c36b80000000</sys_recorded_at>
         <sys_updated_by/>
         <sys_updated_on/>
         <type>Dictionary</type>
-        <update_guid>c420f84b5e203410a9c2e31c9d9332d4</update_guid>
-        <update_guid_history>c420f84b5e203410a9c2e31c9d9332d4:-1516180251</update_guid_history>
+        <update_guid>964c5bcd2b4930109091fd17607e1fef</update_guid>
+        <update_guid_history>964c5bcd2b4930109091fd17607e1fef:-1516180251</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
         <sys_audit_delete/>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>adminsanti</sys_created_by>
-        <sys_created_on>2021-06-09 07:15:20</sys_created_on>
+        <sys_created_on>2021-06-28 11:11:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
         <sys_id>54ce44be89d848609b9975775bcc9100</sys_id>
@@ -123,8 +123,8 @@
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_scope_delete display_value="">71d31d5e300547b0b2e95043440f3991</sys_scope_delete>
         <sys_update_name>sys_dictionary_x_udg_q_objectiumillora_llindarindicador</sys_update_name>
-        <sys_update_version display_value="sys_dictionary_x_udg_q_objectiumillora_llindarindicador">0820f84bdb203410a96b09b1ba9619d4</sys_update_version>
+        <sys_update_version display_value="sys_dictionary_x_udg_q_objectiumillora_llindarindicador">d64c5bcddb493010a96b09b1ba9619ef</sys_update_version>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-09 07:15:20</sys_updated_on>
+        <sys_updated_on>2021-06-28 11:11:04</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

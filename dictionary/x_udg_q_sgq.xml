@@ -35,13 +35,13 @@
             <element name="responsable_sgq"/>
         </index>
         <index name="index2">
-            <element name="suport"/>
-        </index>
-        <index name="index3">
             <element name="cq"/>
         </index>
-        <index name="index4">
+        <index name="index3">
             <element name="responsable"/>
+        </index>
+        <index name="index4">
+            <element name="suport"/>
         </index>
         <index name="index5">
             <element name="propietari"/>

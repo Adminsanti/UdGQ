@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Carrega Plans" max_length="40" name="x_udg_q_carregaplans" sizeclass="2702" type="collection">
+    <element extends="sys_import_set_row" label="Carrega Plans" max_length="40" name="x_udg_q_carregaplans" sizeclass="242" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=AltresUniversitats" label="AltresUniversitats" max_length="500" name="u_altresuniversitats" type="string"/>
         <element attributes="import_attribute_name=AnyAprovacio" label="AnyAprovacio" max_length="40" name="u_anyaprovacio" type="integer"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Branca" label="Branca" max_length="8000" name="u_branca" type="string"/>

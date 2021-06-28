@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
     <sys_index action="INSERT_OR_UPDATE">
         <col_name_string>idgaussnet</col_name_string>
-        <index_col_name>84272f63dba8f410a96b09b1ba961981</index_col_name>
+        <index_col_name element="idgaussnet" name="x_udg_q_titulacio">821be32fdb6c7850b2bbf03a68961997</index_col_name>
         <logical_table_name>x_udg_q_titulacio</logical_table_name>
         <sys_class_name>sys_index</sys_class_name>
         <sys_created_by>system</sys_created_by>

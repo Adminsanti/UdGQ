@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Degree" max_length="40" name="x_udg_q_titulacio" sizeclass="210" type="collection">
+    <element audit="true" label="Degree" max_length="40" name="x_udg_q_titulacio" sizeclass="223" type="collection">
         <element default="true" label="Activa" max_length="40" name="activa" read_only="true" type="boolean"/>
         <element label="Codi MECD" max_length="10" name="codi_mecd" read_only="true" type="string" unique="true"/>
         <element label="ID Gausnet" mandatory="true" max_length="40" name="idgausnet" read_only="true" type="string"/>
@@ -13,40 +13,43 @@
         <element choice="1" label="SGQ" max_length="32" name="sgq" reference="x_udg_q_sgq" type="reference">
             <choice/>
         </element>
+        <element attributes="no_truncate=true" choice="3" default="Grau" label="Tipus" max_length="40" name="tipus" read_only="true" type="string">
+            <choice/>
+        </element>
         <element label="Tipus" max_length="40" name="tipusstring" read_only="true" type="string"/>
         <element label="Url AQU" max_length="1024" name="urlaqu" read_only="true" type="url"/>
         <index name="index">
             <element name="responsable"/>
         </index>
         <index name="index2">
-            <element name="codi_mecd"/>
+            <element name="idgausnet"/>
         </index>
         <index name="index3">
-            <element name="qid"/>
+            <element name="codi_mecd"/>
         </index>
         <index name="index4">
-            <element name="qms"/>
+            <element name="memo"/>
         </index>
         <index name="index5">
-            <element name="codi_mecd"/>
+            <element name="qid"/>
         </index>
         <index name="index6">
             <element name="memo"/>
         </index>
         <index name="index7">
-            <element name="planaweb"/>
-        </index>
-        <index name="index8">
-            <element name="sgq"/>
-        </index>
-        <index name="index9">
             <element name="qid"/>
         </index>
-        <index name="index10">
-            <element name="memo"/>
+        <index name="index8">
+            <element name="qms"/>
         </index>
-        <index name="index11">
-            <element name="idgausnet"/>
+        <index name="index9">
+            <element name="codi_mecd"/>
+        </index>
+        <index name="index10">
+            <element name="planaweb"/>
+        </index>
+        <index name="index12">
+            <element name="sgq"/>
         </index>
     </element>
 </database>

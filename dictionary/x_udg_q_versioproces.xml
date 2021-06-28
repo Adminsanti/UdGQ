@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="use_document_viewer=true" label="Versió Procés" max_length="40" name="x_udg_q_versioproces" sizeclass="37" type="collection">
+    <element attributes="use_document_viewer=true" label="Versió Procés" max_length="40" name="x_udg_q_versioproces" sizeclass="34" type="collection">
         <element attributes="html_sanitize=false" label="Document" max_length="8000" name="document" read_only="true" type="html"/>
         <element label="Final Vigència" max_length="40" name="finalvigencia" type="glide_date"/>
         <element label="Fitxer" max_length="40" name="fitxer" read_only="true" type="file_attachment"/>
