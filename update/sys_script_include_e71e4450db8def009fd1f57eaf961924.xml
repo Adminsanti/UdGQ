@@ -117,6 +117,7 @@ ProcesSGQ.prototype = {
                 grFill.sincronitzat = true;
                 grFill.dimensiosgiqaqu = grPare.dimensiosgiqaqu;
                 grFill.criteriaudit = grPare.criteriaudit;
+				grFill.fitxerdocument = grPare.fitxerdocument;
             }
             if (grFill.tipus == 'Adaptat') {
                 grFill.nom = grPare.nom;
@@ -259,7 +260,7 @@ ProcesSGQ.prototype = {
         <sys_created_on>2018-10-05 07:29:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e71e4450db8def009fd1f57eaf961924</sys_id>
-        <sys_mod_count>166</sys_mod_count>
+        <sys_mod_count>167</sys_mod_count>
         <sys_name>ProcesSGQ</sys_name>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
         <sys_policy>read</sys_policy>
@@ -267,6 +268,6 @@ ProcesSGQ.prototype = {
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_include_e71e4450db8def009fd1f57eaf961924</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-06-21 11:22:43</sys_updated_on>
+        <sys_updated_on>2021-06-29 11:42:49</sys_updated_on>
     </sys_script_include>
 </record_update>

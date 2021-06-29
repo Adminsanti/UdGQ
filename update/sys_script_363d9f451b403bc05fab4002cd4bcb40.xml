@@ -32,6 +32,7 @@
 var p = new x_udg_q.ProcesSGQ();
 p.creaFillsInexistents(current);
 p.sincroTotsFills(current);
+actualitzaProces(current.getUniqueValue());
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -41,7 +42,7 @@ p.sincroTotsFills(current);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>363d9f451b403bc05fab4002cd4bcb40</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Procés canvia</sys_name>
         <sys_overrides/>
         <sys_package display_value="UdG Qualitat" source="x_udg_q">29219b8737df5f001acdf01643990e33</sys_package>
@@ -50,7 +51,7 @@ p.sincroTotsFills(current);
         <sys_scope display_value="UdG Qualitat">29219b8737df5f001acdf01643990e33</sys_scope>
         <sys_update_name>sys_script_363d9f451b403bc05fab4002cd4bcb40</sys_update_name>
         <sys_updated_by>adminsanti</sys_updated_by>
-        <sys_updated_on>2021-05-14 17:16:10</sys_updated_on>
+        <sys_updated_on>2021-06-29 11:41:09</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
