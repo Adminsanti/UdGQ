@@ -8,5 +8,6 @@
         <element attributes="import_attribute_name=Nom,edge_encryption_enabled=true" label="Nom" max_length="200" name="u_nom" type="string"/>
         <element attributes="import_attribute_name=Responsable,edge_encryption_enabled=true" label="Responsable" max_length="40" name="u_responsable" type="string"/>
         <element attributes="import_attribute_name=Tipus,edge_encryption_enabled=true" label="Tipus" max_length="8000" name="u_tipus" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=TipusId" label="TipusId" max_length="40" name="u_tipusid" type="string"/>
     </element>
 </database>
